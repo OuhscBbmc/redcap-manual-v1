@@ -8,12 +8,17 @@ Draft of Book
     1.  Chapter: Creating records
     1.  Chapter: Record Status Dashboard
     1.  Chapter: Randomizing Participants
+    1.  Chapter: Data Entry via CDIS & FHIR
     1.  Chapter: security consideration for beginners
     1.  Internal notes for this part:
         1.  Keep these chapters short & sweet so you don't overwhelm new users
 
 1.  Part: Project Design (Basic)
     1. Chapter: Vocabulary for project design
+    1. Chapter: Variable Decisions
+       1.  Name
+       1.  Data type
+       1.  Validation
     1. Chapter: security consideration for basic design
    
 1.  Part: Project Design (Advanced)
@@ -30,9 +35,13 @@ Draft of Book
     1. Chapter: security consideration for advanced design
 
 1.  Part: Project Admin
-    1. Chapter: Vocabulary for project administrator
-    1. Chapter: Life cycle of user
-    1. Chapter: security consideration for project administration
+    1.  Chapter: Vocabulary for project administrator
+    1.  Chapter: User Admin
+        1.  Life cycle of user
+        1.  User roles
+        1.  Data Access Groups (DAG)
+        1.  Principle of least privilege
+    1.  Chapter: security consideration for project administration
 
 1.  Part: External Connectivity
     1.  Chapter: Mosio
