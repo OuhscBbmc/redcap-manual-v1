@@ -15,7 +15,6 @@ author:
     affiliation-url: https://ouhsc.edu/bbmc/
     email: wibeasley@hotmail.com
     orcid: 0000-0002-5613-5006
-    attributes:
 
 
 csl: ../assets/csl/apa-7e.csl
