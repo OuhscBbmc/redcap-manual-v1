@@ -3,7 +3,7 @@ Draft of Book
 
 1.  Part: Data Entry for beginning users
     1.  Chapter: Accessing REDCap
-        1. 
+        1.
     1.  Chapter: Vocabulary for beginning users
     1.  Chapter: Creating records
     1.  Chapter: Record Status Dashboard
@@ -20,7 +20,7 @@ Draft of Book
        1.  Data type
        1.  Validation
     1. Chapter: security consideration for basic design
-   
+
 1.  Part: Project Design (Advanced)
     1. Chapter: Calculations
     1. Chapter: Action Tags
@@ -30,7 +30,7 @@ Draft of Book
     1. Chapter: Longitudinal Events
     1. Chapter: Repeating Events
     1. Chapter: Repeating Instruments
-    1. Chapter: Static Randomization 
+    1. Chapter: Static Randomization
     1. Chapter: Dynamic Randomization
     1. Chapter: security consideration for advanced design
 
@@ -54,10 +54,10 @@ Draft of Book
 1.  Part: Server Admin
     1.  Chapter: Vocabulary for server administration
     1.  Chapter: security consideration for Server Admin
-  
+
 1.  Part: FAQ
-    1.  Can't log in: see troublshooters (each troubleshooter has a FAQ entry that hyperlinks to the full troubleshooter)
-  
+    1.  Can't log in: see troubleshooters (each troubleshooter has a FAQ entry that hyperlinks to the full troubleshooter)
+
 1.  Troubleshooter
     1.  Chapter: Can't log in
     1.  Chapter: Branching logic isn't working
