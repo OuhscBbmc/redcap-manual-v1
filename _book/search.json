@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "REDCap Manual for OU",
+    "section": "",
+    "text": "Welcome\nWelcome to REDCap Manual for OU: Training Material for REDCap users. This collection of documents will help you learn how to use REDCap for research and operations.\nJust as the REDCap software expands to meet the needs of more people, this book will grow to accommodate help more types of users learn these tools more efficiently. As you read the following chapters and sections, we hope you feel comfortable editing existing material or adding new lessons, in order to improve the quality of all our work.\nSincerely,\nThe Editorial Committee",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#sec-welcome-contribute",
+    "href": "index.html#sec-welcome-contribute",
+    "title": "REDCap Manual for OU",
+    "section": "How to Contribute",
+    "text": "How to Contribute\nWe welcome suggestions, edits, and larger contributions to this guide. This book is typeset in Markdown, rendered with Quarto, and hosted on GitHub. For errors or requests, please submit an Issue to the book’s issue tracker. To make larger or direct contributions, please make a pull request using the standard GitHub workflow.\nIf you would like to contribute but are unfamiliar with any of these technologies, please feel free to email &lt;to be created: redcap@ouhsc.edu&gt; with comments and suggestions for changes. If you would like to discuss the content or receive further help, see the Help and Support Chapter.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#sec-welcome-cite",
+    "href": "index.html#sec-welcome-cite",
+    "title": "REDCap Manual for OU",
+    "section": "How to Cite this Work",
+    "text": "How to Cite this Work\nBeasley WH, Wilson T (Eds.) (2023). REDCap Manual for OU: Training Material for REDCap users. \nEditorial Committee:\n\nWilliam H. Beasley: October 2024 - present\nThomas Wilson: October 2024 - present",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#sec-welcome-licensing",
+    "href": "index.html#sec-welcome-licensing",
+    "title": "REDCap Manual for OU",
+    "section": "Licensing",
+    "text": "Licensing\nThis book is licensed under the Creative Commons Attribution-NoDerivatives 4.0. Individual chapters are as well, unless otherwise noted.",
+    "crumbs": [
+      "Welcome"
+    ]
+  }
+]

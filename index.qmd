@@ -1,0 +1,49 @@
+# Welcome {.unnumbered #sec-welcome}
+
+Welcome to [*REDCap Manual for OU: Training Material for REDCap users*](https://OuhscBbmc.github.io/redcap-manual-1/).
+This collection of documents will help you learn how to use REDCap for research and operations.
+
+Just as the REDCap software expands to meet the needs of more people, this book will grow to accommodate help more types of users learn these tools more efficiently.
+As you read the following chapters and sections,
+we hope you feel comfortable editing existing material or adding new lessons,
+in order to improve the quality of all our work.
+
+Sincerely,
+
+_The Editorial Committee_
+
+## How to Contribute {#sec-welcome-contribute}
+
+We welcome suggestions, edits, and larger contributions to this guide.
+This book is typeset in Markdown, rendered with [Quarto](https://quarto.org/), and hosted on GitHub.
+For errors or requests, please submit an [Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+to the book's [issue tracker](https://github.com/OuhscBbmc/redcap-manual-1/issues).
+To make larger or direct contributions, please make a [pull request](https://github.com/OuhscBbmc/redcap-manual-1/pulls) using the standard [GitHub workflow](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
+
+If you would like to contribute but are unfamiliar with any of these technologies, please feel free to email <to be created: redcap@ouhsc.edu> with comments and suggestions for changes.
+If you would like to discuss the content or receive further help, see the [Help and Support Chapter](chapters/support.md).
+
+## How to Cite this Work {#sec-welcome-cite}
+
+Beasley WH, Wilson T (Eds.) (2023).
+_REDCap Manual for OU: Training Material for REDCap users_.
+<!--DOI: [10.5281/zenodo.7749367](https://zenodo.org/record/7749367#.ZEgPD3bMJmM)-->
+
+Editorial Committee:
+
+* [William H. Beasley](https://orcid.org/0000-0002-5613-5006): October 2024 - present
+* [Thomas Wilson](https://orcid.org/0000-0000-0000-0000): October 2024 - present
+
+## Licensing {#sec-welcome-licensing}
+
+This book is licensed under the [Creative Commons Attribution-NoDerivatives 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
+Individual chapters are as well, unless otherwise noted.
+
+<!-- ## Funding {#sec-welcome-funding}
+
+This content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health or the N3C program.
+
+Any analyses herein were conducted using the NCATS N3C Data Enclave supported by NCATS U24 TR002306, Axel Informatics Subcontract Number: NCATS-P00438-B and made possible because of the patients whose data was contributed by [partner organizations](https://covid.cd2h.org/dtas).
+We gratefully acknowledge the [scientists](https://covid.cd2h.org/acknowledgements) who have contributed to the on-going development of this community resource [@haendel_2020].
+
+Funding and support for individual authors is listed in @sec-funding. -->
