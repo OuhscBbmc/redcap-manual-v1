@@ -55,6 +55,8 @@ Make sure the field type is what you had meant to select. For instance, is the d
 * Many surveys/instruments are completed or used by people of different literacy levels or for whom English is a second language, so it is crucial to be as clear as possible.
 * Make sure labels are clear and the logic between items is easy to follow. Vague labels and difficult-to-follow logic can lead to items being skipped and data to be missing, or incorrect responses may be entered. Example:
 
+![Ambiguous "Name".](images/testing/fig-check-testing-010-name.png){#fig-check-testing-010-name fig-alt="Name"}
+
 Whose name? The person filling out the form? Their first name? Last name? The last name of a family in the home? What if they have different last names? The survey might be clear to the person creating the project, but a second or third set of eyes may catch items that are unclear.
 
 ### Inspect each field and think about what the data will look like for the person eventually analyzing the data {#sec-check-testing-before-analysis}
