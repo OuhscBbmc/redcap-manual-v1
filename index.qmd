@@ -1,6 +1,6 @@
 # Welcome {.unnumbered #sec-welcome}
 
-Welcome to [*REDCap Manual for OU: Training Material for REDCap users*](https://OuhscBbmc.github.io/redcap-manual-v1/).
+Welcome to [*REDCap Manual for OU: Training Material for REDCap Users*](https://OuhscBbmc.github.io/redcap-manual-v1/).
 This collection of documents will help you learn how to use REDCap for research and operations.
 
 Just as the REDCap software expands to meet the needs of more people, this book will grow to accommodate help more types of users learn these tools more efficiently.
@@ -25,9 +25,9 @@ If you would like to discuss the content or receive further help, see the [Help 
 
 ## How to Cite this Work {#sec-welcome-cite}
 
-Beasley WH, Wilson T (Eds.) (2023).
+Beasley WH, Wilson T (Eds.) (2024).
 _REDCap Manual for OU: Training Material for REDCap users_.
-<!--DOI: [10.5281/zenodo.7749367](https://zenodo.org/record/7749367#.ZEgPD3bMJmM)-->
+<!--DOI: [10.5281/zenodo.14003228](https://zenodo.org/record/14003228)-->
 
 Editorial Committee:
 

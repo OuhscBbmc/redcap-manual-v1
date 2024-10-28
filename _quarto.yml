@@ -35,9 +35,9 @@ format:
 
 book:
   title: "REDCap Manual for OU"
-  subtitle: "Training Material for REDCap users"
+  subtitle: "Training Material for REDCap Users"
   date: last-modified
-  # doi: 10.5281/zenodo.6506790
+  doi: 10.5281/zenodo.14003228
 
   # logo: images/n3c-logo-circle-large-0.png
   # favicon: images/logo.png

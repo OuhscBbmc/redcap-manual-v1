@@ -4,7 +4,6 @@ Draft of Book
 1.  Part: Data Entry for beginning users
     1.  Chapter: Support for REDCap at OU
     1.  Chapter: Accessing REDCap
-        1.
     1.  Chapter: Vocabulary for beginning users
     1.  Chapter: Creating records
     1.  Chapter: Record Status Dashboard
