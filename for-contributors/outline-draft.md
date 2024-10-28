@@ -23,6 +23,7 @@ Draft of Book
 
 1.  Part: Project Design (Advanced)
     1. Chapter: Calculations
+       1. Include a bank of snippets that readers can copy & paste
     1. Chapter: Action Tags
     1. Chapter: Branching logic
     1. Chapter: Private Surveys
@@ -30,6 +31,7 @@ Draft of Book
     1. Chapter: Longitudinal Events
     1. Chapter: Repeating Events
     1. Chapter: Repeating Instruments
+    1. Chapter: Reporting
     1. Chapter: Static Randomization
     1. Chapter: Dynamic Randomization
     1. Chapter: security consideration for advanced design
