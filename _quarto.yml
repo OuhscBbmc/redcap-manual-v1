@@ -74,9 +74,9 @@ book:
 
   chapters:
   - index.qmd
-  # - part: Getting Started
-  #   chapters:
-  #   - chapters/intro.md
+  - part: Data Entry for Beginning Users
+    chapters:
+    - begin/support.md
   #   - chapters/story.md
   #   - chapters/cycle.md
   #   - chapters/governance.md
@@ -89,11 +89,6 @@ book:
   #   - chapters/practices.md
   #   - chapters/publishing.md
   # - part: Special Topics
-  #   chapters:
-  #   - chapters/support.md
-  #   - chapters/ml.md
-  #   # - chapters/advanced.md
-  #   # - chapters/examples.md
   #   - chapters/upcoming.md
   - part: Checklists
     chapters:
