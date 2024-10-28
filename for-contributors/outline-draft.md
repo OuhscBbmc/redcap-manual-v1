@@ -58,6 +58,9 @@ Draft of Book
 1.  Part: FAQ
     1.  Can't log in: see troubleshooters (each troubleshooter has a FAQ entry that hyperlinks to the full troubleshooter)
 
+1.  Part: Checklists
+    1.  Chapter: Before moving to production
+
 1.  Troubleshooter
     1.  Chapter: Can't log in
     1.  Chapter: Branching logic isn't working
