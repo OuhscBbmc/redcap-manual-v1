@@ -44,7 +44,7 @@ book:
   # cover-image: images/n3c_logo_slim.png
   # cover-image-alt: images/n3c-logo-circle-large-0.png
   # favicon: images/n3c-logo-circle-large-0.png
-  repo-url: https://github.com/OuhscBbmc/redcap-manual-1
+  repo-url: https://github.com/OuhscBbmc/redcap-manual-v1
   repo-branch: main
   repo-actions: [edit, issue, source]
   sharing: [twitter, facebook]

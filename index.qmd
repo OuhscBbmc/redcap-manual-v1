@@ -1,6 +1,6 @@
 # Welcome {.unnumbered #sec-welcome}
 
-Welcome to [*REDCap Manual for OU: Training Material for REDCap users*](https://OuhscBbmc.github.io/redcap-manual-1/).
+Welcome to [*REDCap Manual for OU: Training Material for REDCap users*](https://OuhscBbmc.github.io/redcap-manual-v1/).
 This collection of documents will help you learn how to use REDCap for research and operations.
 
 Just as the REDCap software expands to meet the needs of more people, this book will grow to accommodate help more types of users learn these tools more efficiently.
@@ -17,8 +17,8 @@ _The Editorial Committee_
 We welcome suggestions, edits, and larger contributions to this guide.
 This book is typeset in Markdown, rendered with [Quarto](https://quarto.org/), and hosted on GitHub.
 For errors or requests, please submit an [Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
-to the book's [issue tracker](https://github.com/OuhscBbmc/redcap-manual-1/issues).
-To make larger or direct contributions, please make a [pull request](https://github.com/OuhscBbmc/redcap-manual-1/pulls) using the standard [GitHub workflow](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
+to the book's [issue tracker](https://github.com/OuhscBbmc/redcap-manual-v1/issues).
+To make larger or direct contributions, please make a [pull request](https://github.com/OuhscBbmc/redcap-manual-v1/pulls) using the standard [GitHub workflow](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
 
 If you would like to contribute but are unfamiliar with any of these technologies, please feel free to email <to be created: redcap@ouhsc.edu> with comments and suggestions for changes.
 If you would like to discuss the content or receive further help, see the [Help and Support Chapter](chapters/support.md).
