@@ -95,6 +95,9 @@ book:
   #   # - chapters/advanced.md
   #   # - chapters/examples.md
   #   - chapters/upcoming.md
+  - part: Checklists
+    chapters:
+    - check/testing.md
   - part: Troubleshooting
     chapters:
     - trouble/login.md
