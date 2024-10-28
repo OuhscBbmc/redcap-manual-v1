@@ -12,13 +12,13 @@ author:
   - name: Carol Kuplicki
     affiliation: University of Oklahoma Health Sciences
     # affiliation-url: https://ouhsc.edu/bbmc/
-    orcid: 0000-0000-0000-0000
+    # orcid: 0000-0000-0000-0000
 
   - name: Thomas Wilson
     affiliation: University of Oklahoma Health Sciences
     affiliation-url: https://ouhsc.edu/bbmc/
     email: thomas-wilson@ouhsc.edu
-    orcid: 0000-0000-0000-0000
+    orcid: 0009-0009-1239-1348
 
 
 csl: ../assets/csl/apa-7e.csl

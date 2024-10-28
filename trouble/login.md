@@ -6,7 +6,7 @@ author:
     affiliation: University of Oklahoma Health Sciences
     affiliation-url: https://ouhsc.edu/bbmc/
     email: thomas-wilson@ouhsc.edu.
-    orcid: 0000-0000-0000-0000
+    orcid: 0009-0009-1239-1348
     attributes:
       corresponding: true
 

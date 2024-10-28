@@ -32,7 +32,7 @@ _REDCap Manual for OU: Training Material for REDCap users_.
 Editorial Committee:
 
 * [William H. Beasley](https://orcid.org/0000-0002-5613-5006): October 2024 - present
-* [Thomas Wilson](https://orcid.org/0000-0000-0000-0000): October 2024 - present
+* [Thomas Wilson](https://orcid.org/0009-0009-1239-1348): October 2024 - present
 
 ## Licensing {#sec-welcome-licensing}
 

@@ -70,7 +70,7 @@ book:
     affiliation: University of Oklahoma Health Sciences
     affiliation-url: https://research.ouhsc.edu/ocri
     email: thomas-wilson@ouhsc.edu
-    # orcid: 0000-0000-0000-0000
+    orcid: 0009-0009-1239-1348
 
   chapters:
   - index.qmd
