@@ -58,8 +58,12 @@ The terms _instrument_ and _form_ are used interchangeably in REDCap...
 ### Event {#sec-begin-vocab-general-event}
 
 A REDCap _event_ is a nested inside a [record](vocab.md#sec-begin-vocab-general-record),
-typically to facilitate longitudinal data collection within the same @sec-begin-vocab-general-record
+typically to facilitate longitudinal data collection within the same [participant](vocab.md#sec-begin-vocab-general-participant).
 
+### User {#sec-begin-vocab-general-user}
+
+Many types of REDCap *user*s can be interact with a single [project](vocab.md#sec-begin-vocab-general-project).
+See @sec-adminpr-user-role-research for a list of common roles, ranging from a participant responding to a public survey to a project administrator.
 
 ::: {.callout-note appearance="simple"}
 

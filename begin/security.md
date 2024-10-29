@@ -1,5 +1,5 @@
 ---
-abstract: Security Consideration for Beginners to Protect your Participants .
+abstract: Security considerations for beginners to protect your participants.
 
 author:
   - name: Thomas Wilson

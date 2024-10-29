@@ -74,7 +74,8 @@ book:
 
   chapters:
   - index.qmd
-  - part: Data Entry for Beginning Users
+
+  - part: Data Entry for New Users
     chapters:
     - begin/support.md
     - begin/access.md
@@ -85,19 +86,15 @@ book:
     - begin/cdis.md
     - begin/security.md
 
-  # - part: Investigating
-  #   chapters:
-  #   - chapters/access.md
-  #   - chapters/understanding.md
-  #   - chapters/tools.md
-  #   - chapters/practices.md
-  #   - chapters/publishing.md
-  # - part: Special Topics
-  #   - chapters/upcoming.md
+  - part: Project Admin
+    chapters:
+    - adminpr/user.md
+
   - part: Checklists
     chapters:
     - check/testing.md
     - check/testing2.md
+
   - part: Troubleshooting
     chapters:
     - trouble/login.md
