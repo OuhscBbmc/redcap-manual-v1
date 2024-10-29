@@ -28,12 +28,19 @@ csl: ../assets/csl/apa-7e.csl
 
 ## Office Hours {#sec-begin-support-office}
 
-The OU REDCap teams hosts office hours on QQQ and QQQ of most weeks, at 10a central.
-The join link can be found at qqqq.
+The OU REDCap teams hosts online office hours on Tuesday (10:30-11:30am) and Thursday (10:30-11:30am) most weeks.
+But this is subject to change, so check with Thomas if it is important.
+Please contact [Thomas](mailto:thomas-wilson@ouhsc.edu) for the Zoom link.
+
 All are welcome to join,
 from experienced project admins wanting to tweak an existing feature,
 to newly-hired data entry personnel wanting to be more comfortable with an unfamiliar assignment.
 Experienced vets are willing to help with most questions.
+
+No PHI is shared during office hours,
+because people from different projects won't necessarily be permitted to see your participant data.
+If possible, create a test record to your project for the sake of the meeting.
+This will allow attendees to see and learn from your question.
 
 ## Embedded Resources {#sec-begin-support-embedded}
 
