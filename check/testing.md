@@ -55,7 +55,7 @@ Make sure the field type is what you had meant to select. For instance, is the d
 * Many surveys/instruments are completed or used by people of different literacy levels or for whom English is a second language, so it is crucial to be as clear as possible.
 * Make sure labels are clear and the logic between items is easy to follow. Vague labels and difficult-to-follow logic can lead to items being skipped and data to be missing, or incorrect responses may be entered. Example:
 
-![Ambiguous "Name".](images/testing/fig-check-testing-010-name.png){#fig-check-testing-010-name fig-alt="Name"}
+![Ambiguous "Name."](images/testing/fig-check-testing-010-name.png){#fig-check-testing-010-name fig-alt="Name"}
 
 Whose name? The person filling out the form? Their first name? Last name? The last name of a family in the home? What if they have different last names? The survey might be clear to the person creating the project, but a second or third set of eyes may catch items that are unclear.
 
@@ -71,7 +71,7 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99
 ```
 
 A subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birth date.
-And forget about being able to calculate someone's current age based on these data! Use data validation in REDCap whenever possible.
+And forget about being able to calculate someone's current age based on these data! Use REDCap's built-in data validation capability whenever possible.
 Go through your items and figure out if you can validate each field in some way.
 Even something like "Child's age" could be entered numerous ways in a free-text field:
 
@@ -96,13 +96,13 @@ You might modify your item to specify "Child's age (in years)" and use data vali
 
 ## When you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project {#sec-check-testing-others}
 
-### Have Ask at least one other person to enter test data in your instruments or survey. {#sec-check-testing-others-person}
+### Have at least one other person enter test data in your instruments or survey. {#sec-check-testing-others-person}
 
 * Sometimes the person creating the project is too close to it and can't see its limitations. A second, third or fourth set of eyes is crucial, and they can enter many test records with different scenarios in mind.
 * Could any of the items be misunderstood by a naïve user?
-* Check the data entered to see if the questions meet goals of the project? Example:
+* Check the data entered to see if the questions meet the goals of the project? Example:
   * If people with diabetes need to answer extra questions, has the branching logic been set up correctly so that those items only appear when someone says they have diabetes? Your tester(s) should enter data for different kinds of study participants. This step is important to complete before a project is moved into production because you may not be able to test changes in branching logic at a later point.
-* Does the survey work equally well on a cell phone vs. a computer? Having multiple testers will allow you to have them test the project on different platforms.
+* Does the survey work equally well on a cell phone vs. a computer? Having multiple testers will allow testing on different platforms.
 * Is there enough room in the text box for answers or do you need to change it to a notes box?
 
 _Testing a public survey_
@@ -115,8 +115,8 @@ _Testing a public survey_
 _Testing data collection forms that are not surveys_
 
 * Testing data collection forms in REDCap (i.e., it is not a public survey),
-  will need to be done by individuals within your group or by individuals that who have access in the project
-  for testing only and will need to be removed from the project
+  will need to be done by individuals within your group or by individuals who will have temporary access to the project
+  for testing only. They will need to be removed from the project
   prior to pushing the project to production and prior to collecting data collection.
 
 ### Have at least one other person who is familiar with the study or investigation check whether the REDCap project matches any printed documents, like IRB protocols and approved procedures.   {#sec-check-testing-others-printed}
