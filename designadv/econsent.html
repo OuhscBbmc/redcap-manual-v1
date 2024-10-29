@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Vignesh Murugan">
 <meta name="author" content="Thomas Wilson">
 
-<title>11&nbsp; Mosio – REDCap Manual for OU</title>
+<title>9&nbsp; Electronic Consent – REDCap Manual for OU</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../check/testing.html" rel="next">
-<link href="../adminpr/user.html" rel="prev">
+<link href="../adminpr/user.html" rel="next">
+<link href="../begin/security.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -84,8 +85,9 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="../assets/font-awesome.css">
 <link rel="stylesheet" href="../assets/tables.css">
-<meta name="citation_title" content="[[11]{.chapter-number}&nbsp; [Mosio]{.chapter-title}]{#sec-external-mosio .quarto-section-identifier}">
-<meta name="citation_abstract" content="You can integrate Mosio into your REDCap project to communicate with participants via text messaging.">
+<meta name="citation_title" content="[[9]{.chapter-number}&nbsp; [Electronic Consent]{.chapter-title}]{#sec-designadv-econsent .quarto-section-identifier}">
+<meta name="citation_abstract" content="Use e-consents to reduce paperwork and increase compliance.">
+<meta name="citation_author" content="Vignesh Murugan">
 <meta name="citation_author" content="Thomas Wilson">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=The elements of statistical learning: Data mining, inference, and prediction;,citation_author=Trevor Hastie;,citation_author=Robert Tibshirani;,citation_author=Jerome H Friedman;,citation_author=Jerome H Friedman;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_volume=2;">
@@ -178,7 +180,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../external/mosio.html">External Connectivity</a></li><li class="breadcrumb-item"><a href="../external/mosio.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mosio</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../designadv/econsent.html">Project Design (Advanced)</a></li><li class="breadcrumb-item"><a href="../designadv/econsent.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Electronic Consent</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -300,7 +302,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../designadv/econsent.html" class="sidebar-item-text sidebar-link">
+  <a href="../designadv/econsent.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Electronic Consent</span></span></a>
   </div>
 </li>
@@ -334,7 +336,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../external/mosio.html" class="sidebar-item-text sidebar-link active">
+  <a href="../external/mosio.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mosio</span></span></a>
   </div>
 </li>
@@ -385,31 +387,30 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#sec-external-mosio-motivation" id="toc-sec-external-mosio-motivation" class="nav-link active" data-scroll-target="#sec-external-mosio-motivation"><span class="header-section-number">11.1</span> Motivation &amp; Overview</a></li>
-  <li><a href="#sec-external-mosio-create" id="toc-sec-external-mosio-create" class="nav-link" data-scroll-target="#sec-external-mosio-create"><span class="header-section-number">11.2</span> Create Mosio Account</a></li>
-  <li><a href="#sec-external-mosio-connect" id="toc-sec-external-mosio-connect" class="nav-link" data-scroll-target="#sec-external-mosio-connect"><span class="header-section-number">11.3</span> Connect Project</a></li>
-  <li><a href="#sec-external-mosio-config" id="toc-sec-external-mosio-config" class="nav-link" data-scroll-target="#sec-external-mosio-config"><span class="header-section-number">11.4</span> Configure Communication Pattern</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/external/mosio.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/external/mosio.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../external/mosio.html">External Connectivity</a></li><li class="breadcrumb-item"><a href="../external/mosio.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mosio</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../designadv/econsent.html">Project Design (Advanced)</a></li><li class="breadcrumb-item"><a href="../designadv/econsent.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Electronic Consent</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-external-mosio" class="quarto-section-identifier"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mosio</span></span></h1>
+<h1 class="title"><span id="sec-designadv-econsent" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Electronic Consent</span></span></h1>
 </div>
 
 
 <div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
   
+    <div class="quarto-title-meta-contents">
+    <p class="author">Vignesh Murugan </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            University of Oklahoma Health Sciences
+          </p>
+      </div>
     <div class="quarto-title-meta-contents">
     <p class="author">Thomas Wilson <a href="mailto:thomas-wilson@ouhsc.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0009-0009-1239-1348" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
@@ -432,7 +433,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    You can integrate Mosio into your REDCap project to communicate with participants via text messaging.
+    Use e-consents to reduce paperwork and increase compliance.
   </div>
 </div>
 
@@ -440,23 +441,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </header>
 
 
-<section id="sec-external-mosio-motivation" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="sec-external-mosio-motivation"><span class="header-section-number">11.1</span> Motivation &amp; Overview</h2>
-<p>In recent years, many researchers have found that texting is a productive channel for keeping in touch with participants, either by itself or as a supplement to conventional communication. <a href="https://www.mosio.com/">Mosio</a> is a company that develops, supports, and licenses a product called <a href="https://www.mosio.com/redcap/">REDCap Direct</a>.</p>
-<p>The <a href="https://www.mosio.com/redcap/">REDCap Direct</a> website provides a lot of current information that we won’t try to replicate in this manual. Instead we’ll outline when you might consider it, and how to ask OU’s <a href="../adminpr/user.html#sec-adminpr-user-role-ocri">Server Administrators</a> for help establishing for your project.</p>
-</section>
-<section id="sec-external-mosio-create" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="sec-external-mosio-create"><span class="header-section-number">11.2</span> Create Mosio Account</h2>
-<p>Your team must create your own account with its own credit card…</p>
-</section>
-<section id="sec-external-mosio-connect" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="sec-external-mosio-connect"><span class="header-section-number">11.3</span> Connect Project</h2>
-<p>Within your REDCap project…</p>
-</section>
-<section id="sec-external-mosio-config" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="sec-external-mosio-config"><span class="header-section-number">11.4</span> Configure Communication Pattern</h2>
-<p>To schedule actual text messages…</p>
-<p><strong>Chapter Leads</strong>: Thomas Wilson</p>
+<p><strong>Chapter Leads</strong>: Vignesh Murugan, Thomas Wilson</p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -472,7 +457,6 @@ Additional Chapter Details
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1046,13 +1030,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../adminpr/user.html" class="pagination-link" aria-label="User Admin">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">User Admin</span></span>
+      <a href="../begin/security.html" class="pagination-link" aria-label="Security Consideration for Beginners">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Security Consideration for Beginners</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../check/testing.html" class="pagination-link" aria-label="Checklist for Testing a REDCap Project">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Checklist for Testing a REDCap Project</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../adminpr/user.html" class="pagination-link" aria-label="User Admin">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">User Admin</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1064,7 +1048,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/external/mosio.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/external/mosio.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designadv/econsent.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designadv/econsent.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Part of <a href="https://ouhsc.edu/">OU Health Sciences</a>.</p>
 </div>
