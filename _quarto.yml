@@ -86,6 +86,14 @@ book:
     - begin/cdis.md
     - begin/security.md
 
+  # - part: Project Design (Basic)
+  #   chapters:
+  #   - designbas/vocab.md
+
+  - part: Project Design (Advanced)
+    chapters:
+    - designadv/econsent.md
+
   - part: Project Admin
     chapters:
     - adminpr/user.md
