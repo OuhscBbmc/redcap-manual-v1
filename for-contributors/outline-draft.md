@@ -32,17 +32,25 @@ Draft of Book
     1. Chapter: Repeating Events
     1. Chapter: Repeating Instruments
     1. Chapter: Reporting
+    1. Chapter: E-consents
     1. Chapter: Static Randomization
     1. Chapter: Dynamic Randomization
+    1. Chapter: Copying Project Structure
     1. Chapter: security consideration for advanced design
 
 1.  Part: Project Admin
     1.  Chapter: Vocabulary for project administrator
     1.  Chapter: User Admin
-        1.  Life cycle of user
+        1.  Principle of least privilege
         1.  User roles
         1.  Data Access Groups (DAG)
-        1.  Principle of least privilege
+        1.  Life cycle of user
+    1.  Chapter: Multi-site studies
+        1.  Multiple sites, one central project
+        1.  Multiple sites, duplicated distributed project
+        1.  Creating a training project
+            To allow recent sites to practice on a fake project,
+            while existing sites continue to use the production project.
     1.  Chapter: security consideration for project administration
 
 1.  Part: External Connectivity
@@ -61,7 +69,8 @@ Draft of Book
     1.  Can't log in: see troubleshooters (each troubleshooter has a FAQ entry that hyperlinks to the full troubleshooter)
 
 1.  Part: Checklists
-    1.  Chapter: Before moving to production
+    1.  Chapter: Before starting a project (irb, etc)
+    1.  Chapter: Testing a REDCap Project before production
 
 1.  Troubleshooter
     1.  Chapter: Can't log in

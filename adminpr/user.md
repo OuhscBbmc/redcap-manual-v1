@@ -23,7 +23,7 @@ csl: ../assets/csl/apa-7e.csl
 
 ### Research Team  {#sec-adminpr-user-role-research}
 
-* _principle investigator (PI)_:
+* _principal investigator (PI)_:
 * _project coordinator_:
 * _analyst_:
 * _nurse_:
