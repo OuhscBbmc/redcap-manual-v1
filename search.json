@@ -176,124 +176,168 @@
     ]
   },
   {
+    "objectID": "external/mosio.html",
+    "href": "external/mosio.html",
+    "title": "10  Mosio",
+    "section": "",
+    "text": "10.1 Motivation & Overview\nIn recent years, many researchers have found that texting is a productive channel for keeping in touch with participants, either by itself or as a supplement to conventional communication. Mosio is a company that develops, supports, and licenses a product called REDCap Direct.\nThe REDCap Direct website provides a lot of current information that we won’t try to replicate in this manual. Instead we’ll outline when you might consider it, and how to ask OU’s Server Administrators for help establishing for your project.",
+    "crumbs": [
+      "External Connectivity",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mosio</span>"
+    ]
+  },
+  {
+    "objectID": "external/mosio.html#sec-external-mosio-create",
+    "href": "external/mosio.html#sec-external-mosio-create",
+    "title": "10  Mosio",
+    "section": "10.2 Create Mosio Account",
+    "text": "10.2 Create Mosio Account\nYour team must create your own account with its own credit card…",
+    "crumbs": [
+      "External Connectivity",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mosio</span>"
+    ]
+  },
+  {
+    "objectID": "external/mosio.html#sec-external-mosio-connect",
+    "href": "external/mosio.html#sec-external-mosio-connect",
+    "title": "10  Mosio",
+    "section": "10.3 Connect Project",
+    "text": "10.3 Connect Project\nWithin your REDCap project…",
+    "crumbs": [
+      "External Connectivity",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mosio</span>"
+    ]
+  },
+  {
+    "objectID": "external/mosio.html#sec-external-mosio-config",
+    "href": "external/mosio.html#sec-external-mosio-config",
+    "title": "10  Mosio",
+    "section": "10.4 Configure Communication Pattern",
+    "text": "10.4 Configure Communication Pattern\nTo schedule actual text messages…\nChapter Leads: Thomas Wilson\n\n\n\n\n\n\nAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "crumbs": [
+      "External Connectivity",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mosio</span>"
+    ]
+  },
+  {
     "objectID": "check/testing.html",
     "href": "check/testing.html",
-    "title": "10  Checklist for Testing a REDCap Project",
+    "title": "11  Checklist for Testing a REDCap Project",
     "section": "",
-    "text": "10.1 Before sending your instruments or survey for testing, the designer (you) will need to:",
+    "text": "11.1 Before sending your instruments or survey for testing, the designer (you) will need to:",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing.html#sec-check-testing-before",
     "href": "check/testing.html#sec-check-testing-before",
-    "title": "10  Checklist for Testing a REDCap Project",
+    "title": "11  Checklist for Testing a REDCap Project",
     "section": "",
-    "text": "10.1.1 Check the field type for every variable\nMake sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as MM/DD/YYYY? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button. A checkbox field allows multiple responses to be chosen on a multiple-choice item.\n\n\n10.1.2 Use clear language\n\nMany surveys/instruments are completed or used by people of different literacy levels or for whom English is a second language, so it is crucial to be as clear as possible.\nMake sure labels are clear and the logic between items is easy to follow. Vague labels and difficult-to-follow logic can lead to items being skipped and data to be missing, or incorrect responses may be entered. Example:\n\n\n\n\n\n\n\nFigure 10.1: Ambiguous “Name”.\n\n\n\nWhose name? The person filling out the form? Their first name? Last name? The last name of a family in the home? What if they have different last names? The survey might be clear to the person creating the project, but a second or third set of eyes may catch items that are unclear.\n\n\n10.1.3 Inspect each field and think about what the data will look like for the person eventually analyzing the data\nExample:\nWith a fill-in-the-blank text field like the one above, here are some of the ways that someone may report a birthday:\nJanuary 8, 1999    08 January 1999    Jan 8, 99   1-8-1999\nJan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99\nA subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birthdate. And forget about being able to calculate someone’s current age based on these data! Use data validation in REDCap whenever possible. Go through your items and figure out if you can validate each field in some way. Even something like “Child’s age” could be entered numerous ways in a free-text field:\nSeven    7 years old        Don't know      8 on his next birthday\n7        7 years, 4 months  I don't know\nYou might modify your item to specify “Child’s age (in years)” and use data validation to require the person to enter an integer.\n\n\n10.1.4 Check whether your project is failing to collect necessary data, either by fields not being completed or fields being left off the form\n\nGo back to the original plan for the project and check your work.\nWhat was the purpose of the project? Did every needed field get included in your instruments/survey?\nWill the fields in your instruments/survey collect the information required to to fulfill the needs that motivated the project?\n\n\n\n10.1.5 Test the survey yourself\n\nMany times, omissions or errors can be found by testing the survey/instrument yourself.\nEnter test data. If you are testing a survey, follow along with the paper survey and see if it matches with what is in REDCap.\nReview the data you just entered and see if the data is what you expected.",
+    "text": "11.1.1 Check the field type for every variable\nMake sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as MM/DD/YYYY? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button. A checkbox field allows multiple responses to be chosen on a multiple-choice item.\n\n\n11.1.2 Use clear language\n\nMany surveys/instruments are completed or used by people of different literacy levels or for whom English is a second language, so it is crucial to be as clear as possible.\nMake sure labels are clear and the logic between items is easy to follow. Vague labels and difficult-to-follow logic can lead to items being skipped and data to be missing, or incorrect responses may be entered. Example:\n\n\n\n\n\n\n\nFigure 11.1: Ambiguous “Name”.\n\n\n\nWhose name? The person filling out the form? Their first name? Last name? The last name of a family in the home? What if they have different last names? The survey might be clear to the person creating the project, but a second or third set of eyes may catch items that are unclear.\n\n\n11.1.3 Inspect each field and think about what the data will look like for the person eventually analyzing the data\nExample:\nWith a fill-in-the-blank text field like the one above, here are some of the ways that someone may report a birthday:\nJanuary 8, 1999    08 January 1999    Jan 8, 99   1-8-1999\nJan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99\nA subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birth date. And forget about being able to calculate someone’s current age based on these data! Use data validation in REDCap whenever possible. Go through your items and figure out if you can validate each field in some way. Even something like “Child’s age” could be entered numerous ways in a free-text field:\nSeven    7 years old        Don't know      8 on his next birthday\n7        7 years, 4 months  I don't know\nYou might modify your item to specify “Child’s age (in years)” and use data validation to require the person to enter an integer.\n\n\n11.1.4 Check whether your project is failing to collect necessary data, either by fields not being completed or fields being left off the form\n\nGo back to the original plan for the project and check your work.\nWhat was the purpose of the project? Did every needed field get included in your instruments/survey?\nWill the fields in your instruments/survey collect the information required to to fulfill the needs that motivated the project?\n\n\n\n11.1.5 Test the survey yourself\n\nMany times, omissions or errors can be found by testing the survey/instrument yourself.\nEnter test data. If you are testing a survey, follow along with the paper survey and see if it matches with what is in REDCap.\nReview the data you just entered and see if the data is what you expected.",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing.html#sec-check-testing-others",
     "href": "check/testing.html#sec-check-testing-others",
-    "title": "10  Checklist for Testing a REDCap Project",
-    "section": "10.2 When you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project",
-    "text": "10.2 When you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project\n\n10.2.1 Have Ask at least one other person to enter test data in your instruments or survey.\n\nSometimes the person creating the project is too close to it and can’t see its limitations. A second, third or fourth set of eyes is crucial, and they can enter many test records with different scenarios in mind.\nCould any of the items be misunderstood by a naïve user?\nCheck the data entered to see if the questions meet goals of the project? Example:\n\nIf people with diabetes need to answer extra questions, has the branching logic been set up correctly so that those items only appear when someone says they have diabetes? Your tester(s) should enter data for different kinds of study participants. This step is important to complete before a project is moved into production because you may not be able to test changes in branching logic at a later point.\n\nDoes the survey work equally well on a cell phone vs. a computer? Having multiple testers will allow you to have them test the project on different platforms.\nIs there enough room in the text box for answers or do you need to change it to a notes box?\n\nTesting a public survey\n\nPublic surveys can be distributed from REDCap email or through an OU email with an embedded link. The tester’s email address is required.\nIf there is a paper survey, send selected individuals a copy and have them check to see if it matches what they see in REDCap. Other testers can test the survey without using the paper survey.\n\nTesting data collection forms that are not surveys\n\nTesting data collection forms in REDCap (i.e., it is not a public survey), will need to be done by individuals within your group or by individuals that who have access in the project for testing only and will need to be removed from the project prior to pushing the project to production and prior to collecting data collection.\n\n\n\n10.2.2 Have at least one other person who is familiar with the study or investigation check whether the REDCap project matches any printed documents, like IRB protocols and approved procedures.\n\nIs the project accurate and staying within the bounds of what has been intended or IRB-approved?\nIs the wording correct on all instruments?\nIs everything spelled correctly?\nIs the skip logic correct? Does the skip logic match what is in the printed survey?\nAre all the items present?\nHave any items been added that were not approved by the IRB (and therefore should be deleted)?\nAre calculated variables producing correct answers?\n\n\n\n10.2.3 Ask the individuals testing your instruments/survey if the forms/surveys are user-friendly in its appearance\n\nAre the colors easy on the eyes?\nAre colors acceptable for people who are color-blind?\nIf a team will be entering data directly into REDCap (i.e., it is not a public survey), are the instruments too long? Could the instrument be broken up into shorter instruments so the data entry person doesn’t feel like they’re working on the Great Wall of China?\nCould some items be put into a table using the rich text editor in a descriptive field? These tables can save space and require less scrolling by the data entry person. Ask your REDCap Administrator how to do that.",
+    "title": "11  Checklist for Testing a REDCap Project",
+    "section": "11.2 When you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project",
+    "text": "11.2 When you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project\n\n11.2.1 Have Ask at least one other person to enter test data in your instruments or survey.\n\nSometimes the person creating the project is too close to it and can’t see its limitations. A second, third or fourth set of eyes is crucial, and they can enter many test records with different scenarios in mind.\nCould any of the items be misunderstood by a naïve user?\nCheck the data entered to see if the questions meet goals of the project? Example:\n\nIf people with diabetes need to answer extra questions, has the branching logic been set up correctly so that those items only appear when someone says they have diabetes? Your tester(s) should enter data for different kinds of study participants. This step is important to complete before a project is moved into production because you may not be able to test changes in branching logic at a later point.\n\nDoes the survey work equally well on a cell phone vs. a computer? Having multiple testers will allow you to have them test the project on different platforms.\nIs there enough room in the text box for answers or do you need to change it to a notes box?\n\nTesting a public survey\n\nPublic surveys can be distributed from REDCap email or through an OU email with an embedded link. The tester’s email address is required.\nIf there is a paper survey, send selected individuals a copy and have them check to see if it matches what they see in REDCap. Other testers can test the survey without using the paper survey.\n\nTesting data collection forms that are not surveys\n\nTesting data collection forms in REDCap (i.e., it is not a public survey), will need to be done by individuals within your group or by individuals that who have access in the project for testing only and will need to be removed from the project prior to pushing the project to production and prior to collecting data collection.\n\n\n\n11.2.2 Have at least one other person who is familiar with the study or investigation check whether the REDCap project matches any printed documents, like IRB protocols and approved procedures.\n\nIs the project accurate and staying within the bounds of what has been intended or IRB-approved?\nIs the wording correct on all instruments?\nIs everything spelled correctly?\nIs the skip logic correct? Does the skip logic match what is in the printed survey?\nAre all the items present?\nHave any items been added that were not approved by the IRB (and therefore should be deleted)?\nAre calculated variables producing correct answers?\n\n\n\n11.2.3 Ask the individuals testing your instruments/survey if the forms/surveys are user-friendly in its appearance\n\nAre the colors easy on the eyes?\nAre colors acceptable for people who are color-blind?\nIf a team will be entering data directly into REDCap (i.e., it is not a public survey), are the instruments too long? Could the instrument be broken up into shorter instruments so the data entry person doesn’t feel like they’re working on the Great Wall of China?\nCould some items be put into a table using the rich text editor in a descriptive field? These tables can save space and require less scrolling by the data entry person. Ask your REDCap Administrator how to do that.",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing.html#sec-check-testing-completed",
     "href": "check/testing.html#sec-check-testing-completed",
-    "title": "10  Checklist for Testing a REDCap Project",
-    "section": "10.3 When the testers have completed their testing",
-    "text": "10.3 When the testers have completed their testing\n\n10.3.1 Make any necessary changes to the survey or data instrument.\n\n\n10.3.2 Review suggested changes and make changes based on their feedback.\n\n\n10.3.3 Look at the data that the testers entered into REDCap\n\nDoes any of the information look like it would be unusable or not as expected?\nCan the field be modified with data validation settings?\nMake corrections to the field if necessary.\n\n\n\n10.3.4 Are there any text boxes that need to be turned into notes fields?",
+    "title": "11  Checklist for Testing a REDCap Project",
+    "section": "11.3 When the testers have completed their testing",
+    "text": "11.3 When the testers have completed their testing\n\n11.3.1 Make any necessary changes to the survey or data instrument.\n\n\n11.3.2 Review suggested changes and make changes based on their feedback.\n\n\n11.3.3 Look at the data that the testers entered into REDCap\n\nDoes any of the information look like it would be unusable or not as expected?\nCan the field be modified with data validation settings?\nMake corrections to the field if necessary.\n\n\n\n11.3.4 Are there any text boxes that need to be turned into notes fields?",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing.html#sec-check-testing-satisfied",
     "href": "check/testing.html#sec-check-testing-satisfied",
-    "title": "10  Checklist for Testing a REDCap Project",
-    "section": "10.4 When you are satisfied that everything is perfect",
-    "text": "10.4 When you are satisfied that everything is perfect\n\n10.4.1 Move your project to production status by (1) clicking on “Project Setup” tab:\n\n\n10.4.2 Then scroll down, and (2) click on the button “Move project to production.”\n\n\n10.4.3 If you have real data entered and don’t want to lose it, click on “Keep ALL data saved so far.”\n\n\n10.4.4 If everything is test data,\nremember to click on “Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys, and all archived data export files stored in the File Repository, and any logged events that pertain to data collection.”\n\n\n10.4.5 Click on the button “Yes, Request Admin to Move to Production Status.”",
+    "title": "11  Checklist for Testing a REDCap Project",
+    "section": "11.4 When you are satisfied that everything is perfect",
+    "text": "11.4 When you are satisfied that everything is perfect\n\n11.4.1 Move your project to production status by (1) clicking on “Project Setup” tab:\n\n\n11.4.2 Then scroll down, and (2) click on the button “Move project to production.”\n\n\n11.4.3 If you have real data entered and don’t want to lose it, click on “Keep ALL data saved so far.”\n\n\n11.4.4 If everything is test data,\nremember to click on “Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys, and all archived data export files stored in the File Repository, and any logged events that pertain to data collection.”\n\n\n11.4.5 Click on the button “Yes, Request Admin to Move to Production Status.”",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing2.html",
     "href": "check/testing2.html",
-    "title": "11  Checklist for Testing a REDCap Project",
+    "title": "12  Checklist for Testing a REDCap Project",
     "section": "",
-    "text": "11.1 Before Testing\nBefore sending your instruments or survey for testing, the designer (you) will need to:",
+    "text": "12.1 Before Testing\nBefore sending your instruments or survey for testing, the designer (you) will need to:",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing2.html#sec-check-testing-before",
     "href": "check/testing2.html#sec-check-testing-before",
-    "title": "11  Checklist for Testing a REDCap Project",
+    "title": "12  Checklist for Testing a REDCap Project",
     "section": "",
-    "text": "11.1.1 Field Type\nCheck the field type for every variable\nMake sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as MM/DD/YYYY? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button. A checkbox field allows multiple responses to be chosen on a multiple-choice item.\n\n\n11.1.2 Use clear language\n\nMany surveys/instruments are completed or used by people of different literacy levels or for whom English is a second language, so it is crucial to be as clear as possible.\nMake sure labels are clear and the logic between items is easy to follow. Vague labels and difficult-to-follow logic can lead to items being skipped and data to be missing, or incorrect responses may be entered. Example:\n\n\n\n\n\n\n\nFigure 11.1: Ambiguous “Name”.\n\n\n\nWhose name? The person filling out the form? Their first name? Last name? The last name of a family in the home? What if they have different last names? The survey might be clear to the person creating the project, but a second or third set of eyes may catch items that are unclear.\n\n\n11.1.3 Anticipate Analysis\nInspect each field and think about what the data will look like for the person eventually analyzing the data\nExample:\nWith a fill-in-the-blank text field like the one above, here are some of the ways that someone may report a birthday:\nJanuary 8, 1999    08 January 1999    Jan 8, 99   1-8-1999\nJan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99\nA subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birth date. And forget about being able to calculate someone’s current age based on these data! Use data validation in REDCap whenever possible. Go through your items and figure out if you can validate each field in some way. Even something like “Child’s age” could be entered numerous ways in a free-text field:\nSeven    7 years old        Don't know      8 on his next birthday\n7        7 years, 4 months  I don't know\nYou might modify your item to specify “Child’s age (in years)” and use data validation to require the person to enter an integer.\n\n\n11.1.4 Necessary Data\nCheck whether your project is failing to collect necessary data, either by fields not being completed or fields being left off the form\n\nGo back to the original plan for the project and check your work.\nWhat was the purpose of the project? Did every needed field get included in your instruments/survey?\nWill the fields in your instruments/survey collect the information required to to fulfill the needs that motivated the project?\n\n\n\n11.1.5 Test the survey yourself\nTest the survey yourself\n\nMany times, omissions or errors can be found by testing the survey/instrument yourself.\nEnter test data. If you are testing a survey, follow along with the paper survey and see if it matches with what is in REDCap.\nReview the data you just entered and see if the data is what you expected.",
+    "text": "12.1.1 Field Type\nCheck the field type for every variable\nMake sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as MM/DD/YYYY? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button. A checkbox field allows multiple responses to be chosen on a multiple-choice item.\n\n\n12.1.2 Use clear language\n\nMany surveys/instruments are completed or used by people of different literacy levels or for whom English is a second language, so it is crucial to be as clear as possible.\nMake sure labels are clear and the logic between items is easy to follow. Vague labels and difficult-to-follow logic can lead to items being skipped and data to be missing, or incorrect responses may be entered. Example:\n\n\n\n\n\n\n\nFigure 12.1: Ambiguous “Name”.\n\n\n\nWhose name? The person filling out the form? Their first name? Last name? The last name of a family in the home? What if they have different last names? The survey might be clear to the person creating the project, but a second or third set of eyes may catch items that are unclear.\n\n\n12.1.3 Anticipate Analysis\nInspect each field and think about what the data will look like for the person eventually analyzing the data\nExample:\nWith a fill-in-the-blank text field like the one above, here are some of the ways that someone may report a birthday:\nJanuary 8, 1999    08 January 1999    Jan 8, 99   1-8-1999\nJan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99\nA subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birth date. And forget about being able to calculate someone’s current age based on these data! Use data validation in REDCap whenever possible. Go through your items and figure out if you can validate each field in some way. Even something like “Child’s age” could be entered numerous ways in a free-text field:\nSeven    7 years old        Don't know      8 on his next birthday\n7        7 years, 4 months  I don't know\nYou might modify your item to specify “Child’s age (in years)” and use data validation to require the person to enter an integer.\n\n\n12.1.4 Necessary Data\nCheck whether your project is failing to collect necessary data, either by fields not being completed or fields being left off the form\n\nGo back to the original plan for the project and check your work.\nWhat was the purpose of the project? Did every needed field get included in your instruments/survey?\nWill the fields in your instruments/survey collect the information required to to fulfill the needs that motivated the project?\n\n\n\n12.1.5 Test the survey yourself\nTest the survey yourself\n\nMany times, omissions or errors can be found by testing the survey/instrument yourself.\nEnter test data. If you are testing a survey, follow along with the paper survey and see if it matches with what is in REDCap.\nReview the data you just entered and see if the data is what you expected.",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing2.html#sec-check-testing-others",
     "href": "check/testing2.html#sec-check-testing-others",
-    "title": "11  Checklist for Testing a REDCap Project",
-    "section": "11.2 Select Testers",
-    "text": "11.2 Select Testers\nWhen you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project\n\n11.2.1 First Tester\nHave Ask at least one other person to enter test data in your instruments or survey\n\nSometimes the person creating the project is too close to it and can’t see its limitations. A second, third or fourth set of eyes is crucial, and they can enter many test records with different scenarios in mind.\nCould any of the items be misunderstood by a naïve user?\nCheck the data entered to see if the questions meet goals of the project? Example:\n\nIf people with diabetes need to answer extra questions, has the branching logic been set up correctly so that those items only appear when someone says they have diabetes? Your tester(s) should enter data for different kinds of study participants. This step is important to complete before a project is moved into production because you may not be able to test changes in branching logic at a later point.\n\nDoes the survey work equally well on a cell phone vs. a computer? Having multiple testers will allow you to have them test the project on different platforms.\nIs there enough room in the text box for answers or do you need to change it to a notes box?\n\nTesting a public survey\n\nPublic surveys can be distributed from REDCap email or through an OU email with an embedded link. The tester’s email address is required.\nIf there is a paper survey, send selected individuals a copy and have them check to see if it matches what they see in REDCap. Other testers can test the survey without using the paper survey.\n\nTesting data collection forms that are not surveys\n\nTesting data collection forms in REDCap (i.e., it is not a public survey), will need to be done by individuals within your group or by individuals that who have access in the project for testing only and will need to be removed from the project prior to pushing the project to production and prior to collecting data collection.\n\n\n\n11.2.2 Compared to Printed Versions\nHave at least one other person who is familiar with the study or investigation check whether the REDCap project matches any printed documents, like IRB protocols and approved procedures\n\nIs the project accurate and staying within the bounds of what has been intended or IRB-approved?\nIs the wording correct on all instruments?\nIs everything spelled correctly?\nIs the skip logic correct? Does the skip logic match what is in the printed survey?\nAre all the items present?\nHave any items been added that were not approved by the IRB (and therefore should be deleted)?\nAre calculated variables producing correct answers?\n\n\n\n11.2.3 User-Friendly Appearance\nAsk the individuals testing your instruments/survey if the forms/surveys are user-friendly in its appearance\n\nAre the colors easy on the eyes?\nAre colors acceptable for people who are color-blind?\nIf a team will be entering data directly into REDCap (i.e., it is not a public survey), are the instruments too long? Could the instrument be broken up into shorter instruments so the data entry person doesn’t feel like they’re working on the Great Wall of China?\nCould some items be put into a table using the rich text editor in a descriptive field? These tables can save space and require less scrolling by the data entry person. Ask your REDCap Administrator how to do that.",
+    "title": "12  Checklist for Testing a REDCap Project",
+    "section": "12.2 Select Testers",
+    "text": "12.2 Select Testers\nWhen you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project\n\n12.2.1 First Tester\nHave Ask at least one other person to enter test data in your instruments or survey\n\nSometimes the person creating the project is too close to it and can’t see its limitations. A second, third or fourth set of eyes is crucial, and they can enter many test records with different scenarios in mind.\nCould any of the items be misunderstood by a naïve user?\nCheck the data entered to see if the questions meet goals of the project? Example:\n\nIf people with diabetes need to answer extra questions, has the branching logic been set up correctly so that those items only appear when someone says they have diabetes? Your tester(s) should enter data for different kinds of study participants. This step is important to complete before a project is moved into production because you may not be able to test changes in branching logic at a later point.\n\nDoes the survey work equally well on a cell phone vs. a computer? Having multiple testers will allow you to have them test the project on different platforms.\nIs there enough room in the text box for answers or do you need to change it to a notes box?\n\nTesting a public survey\n\nPublic surveys can be distributed from REDCap email or through an OU email with an embedded link. The tester’s email address is required.\nIf there is a paper survey, send selected individuals a copy and have them check to see if it matches what they see in REDCap. Other testers can test the survey without using the paper survey.\n\nTesting data collection forms that are not surveys\n\nTesting data collection forms in REDCap (i.e., it is not a public survey), will need to be done by individuals within your group or by individuals that who have access in the project for testing only and will need to be removed from the project prior to pushing the project to production and prior to collecting data collection.\n\n\n\n12.2.2 Compared to Printed Versions\nHave at least one other person who is familiar with the study or investigation check whether the REDCap project matches any printed documents, like IRB protocols and approved procedures\n\nIs the project accurate and staying within the bounds of what has been intended or IRB-approved?\nIs the wording correct on all instruments?\nIs everything spelled correctly?\nIs the skip logic correct? Does the skip logic match what is in the printed survey?\nAre all the items present?\nHave any items been added that were not approved by the IRB (and therefore should be deleted)?\nAre calculated variables producing correct answers?\n\n\n\n12.2.3 User-Friendly Appearance\nAsk the individuals testing your instruments/survey if the forms/surveys are user-friendly in its appearance\n\nAre the colors easy on the eyes?\nAre colors acceptable for people who are color-blind?\nIf a team will be entering data directly into REDCap (i.e., it is not a public survey), are the instruments too long? Could the instrument be broken up into shorter instruments so the data entry person doesn’t feel like they’re working on the Great Wall of China?\nCould some items be put into a table using the rich text editor in a descriptive field? These tables can save space and require less scrolling by the data entry person. Ask your REDCap Administrator how to do that.",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing2.html#sec-check-testing-completed",
     "href": "check/testing2.html#sec-check-testing-completed",
-    "title": "11  Checklist for Testing a REDCap Project",
-    "section": "11.3 After testing",
-    "text": "11.3 After testing\nWhen the testers have completed their testing\n\n11.3.1 Necessary Changes\nMake any necessary changes to the survey or data instrument\n\n\n11.3.2 Respond to Feedback\nReview suggested changes and make changes based on their feedback\n\n\n11.3.3 Inspect Test Data\nLook at the data that the testers entered into REDCap\n\nDoes any of the information look like it would be unusable or not as expected?\nCan the field be modified with data validation settings?\nMake corrections to the field if necessary.\n\n\n\n11.3.4 Convert to Notes\nAre there any text boxes that need to be turned into notes fields?",
+    "title": "12  Checklist for Testing a REDCap Project",
+    "section": "12.3 After testing",
+    "text": "12.3 After testing\nWhen the testers have completed their testing\n\n12.3.1 Necessary Changes\nMake any necessary changes to the survey or data instrument\n\n\n12.3.2 Respond to Feedback\nReview suggested changes and make changes based on their feedback\n\n\n12.3.3 Inspect Test Data\nLook at the data that the testers entered into REDCap\n\nDoes any of the information look like it would be unusable or not as expected?\nCan the field be modified with data validation settings?\nMake corrections to the field if necessary.\n\n\n\n12.3.4 Convert to Notes\nAre there any text boxes that need to be turned into notes fields?",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing2.html#sec-check-testing-satisfied",
     "href": "check/testing2.html#sec-check-testing-satisfied",
-    "title": "11  Checklist for Testing a REDCap Project",
-    "section": "11.4 Once Satisfied",
-    "text": "11.4 Once Satisfied\nWhen you are satisfied that everything is perfect\n\n11.4.1 Project Setup\nMove your project to production status by (1) clicking on “Project Setup” tab\n\n\n11.4.2 Move project to production\nThen scroll down, and (2) click on the button “Move project to production.”\n\n\n11.4.3 Keep ALL data saved so far\nIf you have real data entered and don’t want to lose it, click on “Keep ALL data saved so far.”\n\n\n11.4.4 If everything is test data,\nremember to click on “Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys, and all archived data export files stored in the File Repository, and any logged events that pertain to data collection.”\n\n\n11.4.5 Request Admin to Move\nClick on the button “Yes, Request Admin to Move to Production Status.”",
+    "title": "12  Checklist for Testing a REDCap Project",
+    "section": "12.4 Once Satisfied",
+    "text": "12.4 Once Satisfied\nWhen you are satisfied that everything is perfect\n\n12.4.1 Project Setup\nMove your project to production status by (1) clicking on “Project Setup” tab\n\n\n12.4.2 Move project to production\nThen scroll down, and (2) click on the button “Move project to production.”\n\n\n12.4.3 Keep ALL data saved so far\nIf you have real data entered and don’t want to lose it, click on “Keep ALL data saved so far.”\n\n\n12.4.4 If everything is test data,\nremember to click on “Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys, and all archived data export files stored in the File Repository, and any logged events that pertain to data collection.”\n\n\n12.4.5 Request Admin to Move\nClick on the button “Yes, Request Admin to Move to Production Status.”",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "trouble/login.html",
     "href": "trouble/login.html",
-    "title": "12  Can’t log in",
+    "title": "13  Can’t log in",
     "section": "",
     "text": "Chapter Leads: Thomas Wilson",
     "crumbs": [
       "Troubleshooting",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Can't log in</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Can't log in</span>"
     ]
   },
   {
