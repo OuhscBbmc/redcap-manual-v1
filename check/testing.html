@@ -390,7 +390,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   </ul></li>
   <li><a href="#sec-check-testing-others" id="toc-sec-check-testing-others" class="nav-link" data-scroll-target="#sec-check-testing-others"><span class="header-section-number">11.2</span> When you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project</a>
   <ul class="collapse">
-  <li><a href="#sec-check-testing-others-person" id="toc-sec-check-testing-others-person" class="nav-link" data-scroll-target="#sec-check-testing-others-person"><span class="header-section-number">11.2.1</span> Have Ask at least one other person to enter test data in your instruments or survey.</a></li>
+  <li><a href="#sec-check-testing-others-person" id="toc-sec-check-testing-others-person" class="nav-link" data-scroll-target="#sec-check-testing-others-person"><span class="header-section-number">11.2.1</span> Have at least one other person enter test data in your instruments or survey.</a></li>
   <li><a href="#sec-check-testing-others-printed" id="toc-sec-check-testing-others-printed" class="nav-link" data-scroll-target="#sec-check-testing-others-printed"><span class="header-section-number">11.2.2</span> Have at least one other person who is familiar with the study or investigation check whether the REDCap project matches any printed documents, like IRB protocols and approved procedures.</a></li>
   <li><a href="#sec-check-testing-others-appearance" id="toc-sec-check-testing-others-appearance" class="nav-link" data-scroll-target="#sec-check-testing-others-appearance"><span class="header-section-number">11.2.3</span> Ask the individuals testing your instruments/survey if the forms/surveys are user-friendly in its appearance</a></li>
   </ul></li>
@@ -493,10 +493,10 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <div id="fig-check-testing-010-name" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Name">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-check-testing-010-name-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/testing/fig-check-testing-010-name.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;11.1: Ambiguous “Name”."><img src="images/testing/fig-check-testing-010-name.png" class="img-fluid figure-img" alt="Name"></a>
+<a href="images/testing/fig-check-testing-010-name.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;11.1: Ambiguous “Name.”"><img src="images/testing/fig-check-testing-010-name.png" class="img-fluid figure-img" alt="Name"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-check-testing-010-name-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11.1: Ambiguous “Name”.
+Figure&nbsp;11.1: Ambiguous “Name.”
 </figcaption>
 </figure>
 </div>
@@ -508,7 +508,7 @@ Figure&nbsp;11.1: Ambiguous “Name”.
 <p>With a fill-in-the-blank text field like the one above, here are some of the ways that someone may report a birthday:</p>
 <pre class="csv"><code>January 8, 1999    08 January 1999    Jan 8, 99   1-8-1999
 Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
-<p>A subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birth date. And forget about being able to calculate someone’s current age based on these data! Use data validation in REDCap whenever possible. Go through your items and figure out if you can validate each field in some way. Even something like “Child’s age” could be entered numerous ways in a free-text field:</p>
+<p>A subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birth date. And forget about being able to calculate someone’s current age based on these data! Use REDCap’s built-in data validation capability whenever possible. Go through your items and figure out if you can validate each field in some way. Even something like “Child’s age” could be entered numerous ways in a free-text field:</p>
 <pre class="csv"><code>Seven    7 years old        Don't know      8 on his next birthday
 7        7 years, 4 months  I don't know</code></pre>
 <p>You might modify your item to specify “Child’s age (in years)” and use data validation to require the person to enter an integer.</p>
@@ -533,15 +533,15 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
 <section id="sec-check-testing-others" class="level2" data-number="11.2">
 <h2 data-number="11.2" class="anchored" data-anchor-id="sec-check-testing-others"><span class="header-section-number">11.2</span> When you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project</h2>
 <section id="sec-check-testing-others-person" class="level3" data-number="11.2.1">
-<h3 data-number="11.2.1" class="anchored" data-anchor-id="sec-check-testing-others-person"><span class="header-section-number">11.2.1</span> Have Ask at least one other person to enter test data in your instruments or survey.</h3>
+<h3 data-number="11.2.1" class="anchored" data-anchor-id="sec-check-testing-others-person"><span class="header-section-number">11.2.1</span> Have at least one other person enter test data in your instruments or survey.</h3>
 <ul>
 <li>Sometimes the person creating the project is too close to it and can’t see its limitations. A second, third or fourth set of eyes is crucial, and they can enter many test records with different scenarios in mind.</li>
 <li>Could any of the items be misunderstood by a naïve user?</li>
-<li>Check the data entered to see if the questions meet goals of the project? Example:
+<li>Check the data entered to see if the questions meet the goals of the project? Example:
 <ul>
 <li>If people with diabetes need to answer extra questions, has the branching logic been set up correctly so that those items only appear when someone says they have diabetes? Your tester(s) should enter data for different kinds of study participants. This step is important to complete before a project is moved into production because you may not be able to test changes in branching logic at a later point.</li>
 </ul></li>
-<li>Does the survey work equally well on a cell phone vs.&nbsp;a computer? Having multiple testers will allow you to have them test the project on different platforms.</li>
+<li>Does the survey work equally well on a cell phone vs.&nbsp;a computer? Having multiple testers will allow testing on different platforms.</li>
 <li>Is there enough room in the text box for answers or do you need to change it to a notes box?</li>
 </ul>
 <p><em>Testing a public survey</em></p>
@@ -551,7 +551,7 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
 </ul>
 <p><em>Testing data collection forms that are not surveys</em></p>
 <ul>
-<li>Testing data collection forms in REDCap (i.e., it is not a public survey), will need to be done by individuals within your group or by individuals that who have access in the project for testing only and will need to be removed from the project prior to pushing the project to production and prior to collecting data collection.</li>
+<li>Testing data collection forms in REDCap (i.e., it is not a public survey), will need to be done by individuals within your group or by individuals who will have temporary access to the project for testing only. They will need to be removed from the project prior to pushing the project to production and prior to collecting data collection.</li>
 </ul>
 </section>
 <section id="sec-check-testing-others-printed" class="level3" data-number="11.2.2">
@@ -1214,7 +1214,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","loop":false,"closeEffect":"zoom","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
