@@ -93,6 +93,7 @@ book:
   - part: Checklists
     chapters:
     - check/testing.md
+    - check/testing2.md
   - part: Troubleshooting
     chapters:
     - trouble/login.md

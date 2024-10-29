@@ -27,7 +27,7 @@ If you would like to discuss the content or receive further help, see the [Help 
 
 Beasley WH, Wilson T (Eds.) (2024).
 _REDCap Manual for OU: Training Material for REDCap users_.
-<!--DOI: [10.5281/zenodo.14003228](https://zenodo.org/record/14003228)-->
+DOI: [10.5281/zenodo.14003228](https://zenodo.org/record/14003228)
 
 Editorial Committee:
 
