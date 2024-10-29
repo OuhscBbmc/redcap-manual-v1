@@ -48,7 +48,6 @@ This group of people is vital to the operation of a REDCap instance,
 but distinguishing their roles probably isn't helpful to most readers of this manual.
 The group is composed of experts in security, databases, operating systems, web servers, networking, storage, and virtual machines.
 
-
 ## Data Access Group (DAG) {#sec-adminpr-user-dag}
 
 ## Principle of least privilege {#sec-adminpr-user-plp}
