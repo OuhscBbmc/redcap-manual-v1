@@ -70,7 +70,7 @@ January 8, 1999    08 January 1999    Jan 8, 99   1-8-1999
 Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99
 ```
 
-A subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birthdate.
+A subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birth date.
 And forget about being able to calculate someone's current age based on these data! Use data validation in REDCap whenever possible.
 Go through your items and figure out if you can validate each field in some way.
 Even something like "Child's age" could be entered numerous ways in a free-text field:
@@ -158,7 +158,8 @@ _Testing data collection forms that are not surveys_
 
 ### If you have real data entered and don't want to lose it, click on "Keep ALL data saved so far." {#sec-check-testing-satisfied-keep}
 
-### If everything is test data,  {#sec-check-testing-satisfied-fake}
+### If everything is test data, {#sec-check-testing-satisfied-fake}
+
   remember to click on "Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys,
   and all archived data export files stored in the File Repository, and any logged events that pertain to data collection."
 

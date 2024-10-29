@@ -90,6 +90,10 @@ book:
     chapters:
     - adminpr/user.md
 
+  - part: External Connectivity
+    chapters:
+    - external/mosio.md
+
   - part: Checklists
     chapters:
     - check/testing.md
