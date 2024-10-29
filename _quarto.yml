@@ -25,9 +25,9 @@ format:
     # title-block-banner-color: "#FCB754" # N3C gold
     # filters:
     # - lightbox
-    # lightbox:
-    #   match: auto
-    #   effect: zoom
+    lightbox:
+      match: auto
+      effect: zoom
   # pdf:
   #   documentclass: scrreprt
   # epub:
@@ -50,7 +50,7 @@ book:
   sharing: [twitter, facebook]
   # downloads: [epub]
   # downloads: [pdf, epub]
-  # google-analytics: G-5F685V8M7X
+  google-analytics: G-H3G33LRV8Y
 
   # abstract: "Eder, Franz. 2022. *Politikwissenschaftliches Arbeiten: Eine Einführung*. Innsbruck: Institut für Politikwissenschaft, Universität Innsbruck. [https://doi.org/10.25651/4.2022.0001](https://doi.org/10.25651/4.2022.0001)."
 
