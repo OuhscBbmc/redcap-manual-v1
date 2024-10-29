@@ -77,10 +77,14 @@ book:
   - part: Data Entry for Beginning Users
     chapters:
     - begin/support.md
-  #   - chapters/story.md
-  #   - chapters/cycle.md
-  #   - chapters/governance.md
-  #   - chapters/onboarding.md
+    - begin/access.md
+    - begin/vocab.md
+    - begin/create.md
+    - begin/dashboard.md
+    - begin/randomize.md
+    - begin/cdis.md
+    - begin/security.md
+
   # - part: Investigating
   #   chapters:
   #   - chapters/access.md

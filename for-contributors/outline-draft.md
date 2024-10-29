@@ -9,7 +9,7 @@ Draft of Book
     1.  Chapter: Record Status Dashboard
     1.  Chapter: Randomizing Participants
     1.  Chapter: Data Entry via CDIS & FHIR
-    1.  Chapter: security consideration for beginners
+    1.  Chapter: Security Consideration for Beginners
     1.  Internal notes for this part:
         1.  Keep these chapters short & sweet so you don't overwhelm new users
 
