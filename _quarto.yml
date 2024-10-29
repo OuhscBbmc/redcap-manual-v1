@@ -86,9 +86,10 @@ book:
     - begin/cdis.md
     - begin/security.md
 
-  # - part: Project Design (Basic)
-  #   chapters:
+  - part: Project Design (Basic)
+    chapters:
   #   - designbas/vocab.md
+    - designbas/variable.md
 
   - part: Project Design (Advanced)
     chapters:
