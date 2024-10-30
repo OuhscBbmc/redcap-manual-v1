@@ -21,6 +21,10 @@ csl: ../assets/csl/apa-7e.csl
 
 These general terms for beginners reading Chapters [-@sec-begin-support] through [-@sec-begin-security].
 
+### Username {#sec-begin-vocab-general-username}
+
+The credential required to login to REDCap.  This username will be one of three things: OUHSC username, OU username, or a table-based username for non-OUHSC collaborators.  Tabled-based accounts are created and maintained by OUHSC REDCap admins.
+
 ### Project {#sec-begin-vocab-general-project}
 
 A REDCap project is a self-contained entity used for collecting and managing data.  Many people use the term, database, interchangeably.  REDCap users may have access to or may have created multiple REDCap projects.
