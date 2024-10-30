@@ -55,9 +55,13 @@ but not always...
 
 An electronic form used to collect data.  An instrument can have one of two configurations: an data collection form or a survey.
 
-### Data Collection Form (DCI or Instrument) {#sec-begin-vocab-general-form}
+### Data Collection Form {#sec-begin-vocab-general-form}
+
+Instrument used to collect data from behind the REDCap login.  To enter data using a data collection form, individuals must login to REDCap using their username and password.
 
 ### Survey {#sec-begin-vocab-general-survey}
+
+Instrument used to collect data without a REDCap login.  Surveys are most often used to collect data from research participants and/or patients.  Surveys can have a unique link for each participant or a generic public survey link.
 
 ### Event {#sec-begin-vocab-general-event}
 
