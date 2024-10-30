@@ -23,7 +23,7 @@ These general terms for beginners reading Chapters [-@sec-begin-support] through
 
 ### Project {#sec-begin-vocab-general-project}
 
-A REDCap _project_ is a self-contained ...
+A REDCap project is a self-contained entity used for collecting and managing data.  Many people use the term, database, interchangeably.  REDCap users may have access to or may have created multiple REDCap projects.
 
 ### Server {#sec-begin-vocab-general-server}
 
@@ -51,9 +51,13 @@ Beginning users will rarely encounter OU's "development" server, which is <https
 A _participant_ is sometimes synonymous with [record](vocab.md#sec-begin-vocab-general-record),
 but not always...
 
-### Instrument/Form {#sec-begin-vocab-general-instrument}
+### Data Collection Instrument (DCI or Instrument) {#sec-begin-vocab-general-instrument}
 
-The terms _instrument_ and _form_ are used interchangeably in REDCap...
+An electronic form used to collect data.  An instrument can have one of two configurations: an data collection form or a survey.
+
+### Data Collection Form (DCI or Instrument) {#sec-begin-vocab-general-form}
+
+### Survey {#sec-begin-vocab-general-survey}
 
 ### Event {#sec-begin-vocab-general-event}
 
