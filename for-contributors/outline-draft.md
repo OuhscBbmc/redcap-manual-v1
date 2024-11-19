@@ -28,6 +28,7 @@ Draft of Book
     1. Chapter: Branching logic
     1. Chapter: Private Surveys
     1. Chapter: Public Surveys
+    1. Chapter: Automated Invitations
     1. Chapter: Longitudinal Events
     1. Chapter: Repeating Events
     1. Chapter: Repeating Instruments
