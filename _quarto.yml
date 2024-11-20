@@ -94,6 +94,7 @@ book:
   - part: Project Design (Advanced)
     chapters:
     - designadv/econsent.md
+    - designadv/autoinvite.md
 
   - part: Project Admin
     chapters:
