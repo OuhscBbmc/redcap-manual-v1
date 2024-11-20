@@ -143,11 +143,11 @@
     ]
   },
   {
-    "objectID": "designadv/econsent.html#additional-chapter-details",
-    "href": "designadv/econsent.html#additional-chapter-details",
+    "objectID": "designadv/econsent.html",
+    "href": "designadv/econsent.html",
     "title": "10  Electronic Consent",
-    "section": "10.1 Additional Chapter Details",
-    "text": "10.1 Additional Chapter Details\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "section": "",
+    "text": "Chapter Leads: Vignesh Murugan, Thomas Wilson\n\n\n\n\n\n\nAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Project Design (Advanced)",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
