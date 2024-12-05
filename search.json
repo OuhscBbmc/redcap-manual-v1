@@ -1,10 +1,50 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "REDCap Manual for OU",
+    "section": "",
+    "text": "Welcome\nWelcome to REDCap Manual for OU: Training Material for REDCap Users. This collection of documents will help you learn how to use REDCap for research and operations.\nJust as the REDCap software expands to meet the needs of more people, this book will grow to accommodate help more types of users learn these tools more efficiently. As you read the following chapters and sections, we hope you feel comfortable editing existing material or adding new lessons, in order to improve the quality of all our work.\nSincerely,\nThe Editorial Committee",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#sec-welcome-contribute",
+    "href": "index.html#sec-welcome-contribute",
+    "title": "REDCap Manual for OU",
+    "section": "How to Contribute",
+    "text": "How to Contribute\nWe welcome suggestions, edits, and larger contributions to this guide. This book is typeset in Markdown, rendered with Quarto, and hosted on GitHub. For errors or requests, please submit an Issue to the book’s issue tracker. To make larger or direct contributions, please make a pull request using the standard GitHub workflow.\nIf you would like to contribute but are unfamiliar with any of these technologies, please feel free to email &lt;to be created: redcap@ouhsc.edu&gt; with comments and suggestions for changes. If you would like to discuss the content or receive further help, see the Help and Support Chapter.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#sec-welcome-cite",
+    "href": "index.html#sec-welcome-cite",
+    "title": "REDCap Manual for OU",
+    "section": "How to Cite this Work",
+    "text": "How to Cite this Work\nBeasley WH, Wilson T (Eds.) (2024). REDCap Manual for OU: Training Material for REDCap users. DOI: 10.5281/zenodo.14003228\nEditorial Committee:\n\nWilliam H. Beasley: October 2024 - present\nThomas Wilson: October 2024 - present",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#sec-welcome-licensing",
+    "href": "index.html#sec-welcome-licensing",
+    "title": "REDCap Manual for OU",
+    "section": "Licensing",
+    "text": "Licensing\nThis book is licensed under the Creative Commons Attribution-NoDerivatives 4.0. Individual chapters are as well, unless otherwise noted.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
     "objectID": "begin/support.html",
     "href": "begin/support.html",
     "title": "1  Help and Support",
     "section": "",
-    "text": "1.1 Support Tickets",
+    "text": "1.1 Support Tickets\nChapter Leads: Thomas Wilson",
     "crumbs": [
       "Data Entry for New Users",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Help and Support</span>"
@@ -59,7 +99,7 @@
     "href": "begin/vocab.html",
     "title": "3  Vocabulary",
     "section": "",
-    "text": "3.1 General\nThese general terms for beginners reading Chapters 1 through 8.",
+    "text": "3.1 General\nChapter Leads: Thomas Wilson\nThese general terms for beginners reading Chapters 1 through 8.",
     "crumbs": [
       "Data Entry for New Users",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Vocabulary</span>"
@@ -147,7 +187,18 @@
     "href": "designadv/econsent.html",
     "title": "10  Electronic Consent",
     "section": "",
-    "text": "Chapter Leads: Vignesh Murugan, Thomas Wilson\n\n\n\n\n\n\nAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "text": "Chapter Leads: Vignesh Murugan, Thomas Wilson",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/econsent.html#additional-chapter-details",
+    "href": "designadv/econsent.html#additional-chapter-details",
+    "title": "10  Electronic Consent",
+    "section": "10.1 Additional Chapter Details",
+    "text": "10.1 Additional Chapter Details\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Project Design (Advanced)",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
@@ -169,7 +220,7 @@
     "href": "adminpr/user.html",
     "title": "12  User Admin",
     "section": "",
-    "text": "12.1 Life cycle of user",
+    "text": "12.1 Life cycle of user\nChapter Leads: Thomas Wilson",
     "crumbs": [
       "Project Admin",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>User Admin</span>"
@@ -257,7 +308,7 @@
     "href": "check/testing.html",
     "title": "14  Checklist for Testing a REDCap Project",
     "section": "",
-    "text": "14.1 Before sending your instruments or survey for testing, the designer (you) will need to:",
+    "text": "14.1 Before sending your instruments or survey for testing, the designer (you) will need to:\nChapter Leads: Lise DeShea\nCongratulations on completing your REDCap project! When someone requests a REDCap project to be moved into production (i.e., to go live for data collection) the REDCap Administrator must ask: Has this project been adequately tested? Just as a company will test a new product and all of its parts before going into mass production, your REDCap project needs to be well-tested before going live.\nThoroughly testing your REDCap project before going live is important because you can lose data if you make changes to the survey/form after data collection has begun. If skip patterns are not correct, necessary questions can be skipped or data may be collected that is not required. If the question format is not correct, it may be difficult to analyze after data collection ends.\nWhy do we tell project developers to try to break their REDCap project?\nBreaking a project means testing your survey from a perspective of a naïve user who knows nothing about the project’s purpose or the data being collected. You need to think of all the ways the project could fail or be misunderstood, and try to make that happen. We created this checklist to guide your REDCap testing:",
     "crumbs": [
       "Checklists",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
@@ -312,7 +363,7 @@
     "href": "check/testing2.html",
     "title": "15  Checklist for Testing a REDCap Project",
     "section": "",
-    "text": "15.1 Before Testing\nBefore sending your instruments or survey for testing, the designer (you) will need to:",
+    "text": "15.1 Before Testing\nChapter Leads: Lise DeShea\nCongratulations on completing your REDCap project! When someone requests a REDCap project to be moved into production (i.e., to go live for data collection) the REDCap Administrator must ask: Has this project been adequately tested? Just as a company will test a new product and all of its parts before going into mass production, your REDCap project needs to be well-tested before going live.\nThoroughly testing your REDCap project before going live is important because you can lose data if you make changes to the survey/form after data collection has begun. If skip patterns are not correct, necessary questions can be skipped or data may be collected that is not required. If the question format is not correct, it may be difficult to analyze after data collection ends.\nWhy do we tell project developers to try to break their REDCap project?\nBreaking a project means testing your survey from a perspective of a naïve user who knows nothing about the project’s purpose or the data being collected. You need to think of all the ways the project could fail or be misunderstood, and try to make that happen. We created this checklist to guide your REDCap testing:\nBefore sending your instruments or survey for testing, the designer (you) will need to:",
     "crumbs": [
       "Checklists",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
@@ -371,46 +422,6 @@
     "crumbs": [
       "Troubleshooting",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Can't log in</span>"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "REDCap Manual for OU",
-    "section": "",
-    "text": "Welcome\nWelcome to REDCap Manual for OU: Training Material for REDCap Users. This collection of documents will help you learn how to use REDCap for research and operations.\nJust as the REDCap software expands to meet the needs of more people, this book will grow to accommodate help more types of users learn these tools more efficiently. As you read the following chapters and sections, we hope you feel comfortable editing existing material or adding new lessons, in order to improve the quality of all our work.\nSincerely,\nThe Editorial Committee",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#sec-welcome-contribute",
-    "href": "index.html#sec-welcome-contribute",
-    "title": "REDCap Manual for OU",
-    "section": "How to Contribute",
-    "text": "How to Contribute\nWe welcome suggestions, edits, and larger contributions to this guide. This book is typeset in Markdown, rendered with Quarto, and hosted on GitHub. For errors or requests, please submit an Issue to the book’s issue tracker. To make larger or direct contributions, please make a pull request using the standard GitHub workflow.\nIf you would like to contribute but are unfamiliar with any of these technologies, please feel free to email &lt;to be created: redcap@ouhsc.edu&gt; with comments and suggestions for changes. If you would like to discuss the content or receive further help, see the Help and Support Chapter.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#sec-welcome-cite",
-    "href": "index.html#sec-welcome-cite",
-    "title": "REDCap Manual for OU",
-    "section": "How to Cite this Work",
-    "text": "How to Cite this Work\nBeasley WH, Wilson T (Eds.) (2024). REDCap Manual for OU: Training Material for REDCap users. DOI: 10.5281/zenodo.14003228\nEditorial Committee:\n\nWilliam H. Beasley: October 2024 - present\nThomas Wilson: October 2024 - present",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#sec-welcome-licensing",
-    "href": "index.html#sec-welcome-licensing",
-    "title": "REDCap Manual for OU",
-    "section": "Licensing",
-    "text": "Licensing\nThis book is licensed under the Creative Commons Attribution-NoDerivatives 4.0. Individual chapters are as well, unless otherwise noted.",
-    "crumbs": [
-      "Welcome"
     ]
   }
 ]

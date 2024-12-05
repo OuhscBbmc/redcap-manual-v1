@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,12 +39,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-c27e8183b45a9843caea850aa85f01fd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c85d066a98ff94359d3e6e417dda436e.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -471,11 +471,50 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Additional Chapter Details
+How to Set Up an e-Consent Framework in REDCap
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<section id="enabling-the-e-consent-framework" class="level4" data-number="10.0.0.1">
+<h4 data-number="10.0.0.1" class="anchored" data-anchor-id="enabling-the-e-consent-framework"><span class="header-section-number">10.0.0.1</span> Enabling the e-Consent Framework</h4>
+<ol type="1">
+<li>Navigate to the <em>Online Designer</em>.<br>
+</li>
+<li>Click on <strong>e-Consent and PDF Snapshots</strong> in the <em>Data Collection Instruments</em> header box.<br>
+</li>
+<li>Enable the e-Consent Framework for a survey.</li>
+</ol>
+</section>
+<section id="configuring-settings" class="level4" data-number="10.0.0.2">
+<h4 data-number="10.0.0.2" class="anchored" data-anchor-id="configuring-settings"><span class="header-section-number">10.0.0.2</span> Configuring Settings</h4>
+<ul>
+<li><strong>Primary Settings:</strong>
+<ul>
+<li>Allow user edits and specify name fields.<br>
+</li>
+</ul></li>
+<li><strong>Additional Settings:</strong>
+<ul>
+<li>Add a <em>Date of Birth</em> field, custom headers/footers, and signature settings.<br>
+</li>
+<li>Specify save locations and customize file names.</li>
+</ul></li>
+</ul>
+</section>
+<section id="adding-consent-versions" class="level4" data-number="10.0.0.3">
+<h4 data-number="10.0.0.3" class="anchored" data-anchor-id="adding-consent-versions"><span class="header-section-number">10.0.0.3</span> Adding Consent Versions</h4>
+<ol type="1">
+<li>Click <strong>Add Consent Form</strong>.<br>
+</li>
+<li>Specify the version number and upload the consent form.<br>
+</li>
+<li>Save the new version.</li>
+</ol>
+</section>
+<section id="additional-chapter-details" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="additional-chapter-details"><span class="header-section-number">10.1</span> Additional Chapter Details</h2>
 <p>This chapter was started in October 2024. If you have suggested modifications or additions, please see <a href="../index.html#sec-welcome-contribute">How to Contribute</a> on the book’s welcome page.</p>
+</section>
 </div>
 </div>
 
@@ -708,8 +747,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -825,7 +862,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
