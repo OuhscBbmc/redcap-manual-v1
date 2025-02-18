@@ -330,7 +330,40 @@
     "href": "external/mosio.html#sec-external-mosio-sendingmessages",
     "title": "13  Mosio",
     "section": "13.7 Sending Messages",
-    "text": "13.7 Sending Messages\n\nHow do I send Mosio messages in REDCap?\n\nTo send Mosio messages in REDCap, follow these steps:\n\nEnable Mosio Module in REDCap:\n\nGo to the ‘External Modules’ section in your REDCap project.\nFind and enable the Mosio module.\n\nConfigure Mosio Settings:\n\nEnter your Mosio API credentials in the module settings. (This is done by the REDCap admin)\nConfigure the messaging parameters, such as sender ID and message templates.\n\nSet Up Survey Invitations:\n\nIn the ‘Survey Distribution Tools’ section, select ‘SMS’ as the distribution method.\nEnter the participants’ phone numbers and customize the invitation message.\n\nSchedule Alerts and Notifications:\n\nUse the ‘Alerts & Notifications’ feature to schedule automated messages.\nDefine the conditions under which messages should be sent (e.g., survey completion reminders).\n\nAutomated Messaging:\n\nSet up automated messaging sequences (Storylines) for interventions or follow-ups.\nConfigure the timing and content of each message in the sequence.\n\n\nFor detailed instructions, you can refer to the Mosio REDCap Direct guide\nIf you encounter any specific issues or need further assistance, feel free to ask!\n\n\n\n\n\n\nAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "text": "13.7 Sending Messages\n\nHow do I send Mosio messages in REDCap?\n\nTo send Mosio messages in REDCap, follow these steps:\n\nEnable Mosio Module in REDCap:\n\nGo to the ‘External Modules’ section in your REDCap project.\nFind and enable the Mosio module.\n\nConfigure Mosio Settings:\n\nEnter your Mosio API credentials in the module settings. (This is done by the REDCap admin)\nConfigure the messaging parameters, such as sender ID and message templates.\n\nSet Up Survey Invitations:\n\nIn the ‘Survey Distribution Tools’ section, select ‘SMS’ as the distribution method.\nEnter the participants’ phone numbers and customize the invitation message.\n\nSchedule Alerts and Notifications:\n\nUse the ‘Alerts & Notifications’ feature to schedule automated messages.\nDefine the conditions under which messages should be sent (e.g., survey completion reminders).\n\nAutomated Messaging:\n\nSet up automated messaging sequences (Storylines) for interventions or follow-ups.\nConfigure the timing and content of each message in the sequence.\n\n\nFor detailed instructions, you can refer to the Mosio REDCap Direct guide\nIf you encounter any specific issues or need further assistance, feel free to ask!",
+    "crumbs": [
+      "External Connectivity",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Mosio</span>"
+    ]
+  },
+  {
+    "objectID": "external/mosio.html#sec-external-mosio-monitoring",
+    "href": "external/mosio.html#sec-external-mosio-monitoring",
+    "title": "13  Mosio",
+    "section": "13.8 Monitoring Usage",
+    "text": "13.8 Monitoring Usage\n\nHow can I monitor my Mosio usage?\n\nTo monitor your Mosio usage, you can use the following methods:\n\nDashboard Overview:\n\nLog into your Mosio account and access the dashboard.\nThe dashboard provides a summary of your messaging activity, including the number of messages sent, received, and scheduled\n\nStorylines Monitoring:\n\nUse the Storylines module to track the progress of automated messaging sequences.\nIn the Monitor section, you can view the real-time status of message history, survey completions, and participant engagement\n\nMessage History:\n\nAccess the message history to see detailed logs of all messages sent and received.\nThis includes timestamps, message content, and participant responses\n\nUsage Reports:\n\nGenerate usage reports to get a comprehensive view of your messaging activity over a specific period.\nThese reports can help you analyze trends and optimize your communication strategy\n\nAlerts and Notifications:\n\nSet up alerts and notifications to receive updates on key metrics, such as message delivery rates and participant responses\n\n\nFor more detailed instructions, you can refer to the Mosio Training Guides.",
+    "crumbs": [
+      "External Connectivity",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Mosio</span>"
+    ]
+  },
+  {
+    "objectID": "external/mosio.html#sec-external-mosio-examples",
+    "href": "external/mosio.html#sec-external-mosio-examples",
+    "title": "13  Mosio",
+    "section": "13.9 Usage Examples",
+    "text": "13.9 Usage Examples\n\nWhat are some examples of using Mosio?\n\nPeople are using Mosio in REDCap for various purposes to enhance their research projects. Here are some common uses:\n\nSurvey Distribution:\n\nResearchers send survey invitations via text message, ensuring participants receive timely reminders and links to complete surveys\n\nAutomated Reminders:\n\nAutomated reminders are set up to nudge participants to complete surveys, attend appointments, or adhere to study protocols\n\nData Collection:\n\nText messages are used to collect data directly from participants, which can then be automatically imported into REDCap\n\nIntervention Campaigns:\n\nResearchers deploy text-based interventions, such as health tips or motivational messages, to improve participant outcomes\n\nIncentives and Rewards:\n\nParticipants receive gift codes or other incentives via text message for completing surveys or other study tasks\n\n\nThese features help streamline communication, improve participant engagement, and enhance data collection efficiency. If you have a specific use case in mind, feel free to share, and I can provide more detailed guidance!",
+    "crumbs": [
+      "External Connectivity",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Mosio</span>"
+    ]
+  },
+  {
+    "objectID": "external/mosio.html#sec-external-mosio-privacy",
+    "href": "external/mosio.html#sec-external-mosio-privacy",
+    "title": "13  Mosio",
+    "section": "13.10 Privacy Policy",
+    "text": "13.10 Privacy Policy\n\nWhat is Mosio’s privacy policy?\n\nMosio does not sell or share any data with third parties, except to perform the services of the platform. This means text messages will be sent to mobile carriers so they can be delivered to the participants’ phones. Emails will also route through our email providers. Mosio only works with vendors who also do not resell any information. The full details are in the Mosio privacy policy.\n\n\n\n\n\n\nAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "External Connectivity",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Mosio</span>"
