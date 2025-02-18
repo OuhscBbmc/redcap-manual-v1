@@ -21,6 +21,8 @@ csl: ../assets/csl/apa-7e.csl
 
 # Mosio {#sec-external-mosio}
 
+**Chapter Leads**: Thomas Wilson
+
 ## Motivation & Overview {#sec-external-mosio-motivation}
 
 In recent years, many researchers have found that texting is a productive channel for keeping in touch with participants,
@@ -35,6 +37,8 @@ and how to ask OU's [Server Administrators](../adminpr/user.md#sec-adminpr-user-
 
 ## Pricing {#sec-external-mosio-pricing}
 
+> How much does Mosio Cost?
+
 Mosio offers several pricing plans tailored to different needs.
 Outbound messages beyond what is listed below can be purchased at an addition price.
 For exact pricing and to get a quote tailored to your specific needs, it's best to contact Mosio directly through their
@@ -42,22 +46,24 @@ For exact pricing and to get a quote tailored to your specific needs, it's best 
 
 Here is a list of some of the details:
 
-### Basic Plan: {#sec-external-mosio-pricing-basic}
+### Basic Plan {#sec-external-mosio-pricing-basic}
 
 * Projects: Up to 4
 * Outbound Messages: 1,000 per month
 
-### Plus Plan: {#sec-external-mosio-pricing-plus}
+### Plus Plan {#sec-external-mosio-pricing-plus}
 
 * Projects: Up to 10
 * Outbound Messages: 3,000 per month
 
-### Pro Plan: {#sec-external-mosio-pricing-pro}
+### Pro Plan {#sec-external-mosio-pricing-pro}
 
 * Projects: Up to 30
 * Outbound Messages: 7,500 per month
 
 ## Access {#sec-external-mosio-access}
+
+> How do I get access to Mosio?
 
 To connect Mosio with REDCap, follow these steps:
 
@@ -82,9 +88,107 @@ To connect Mosio with REDCap, follow these steps:
    * Define the messaging parameters within Mosio.
    * Set up various types of messages, such as survey invitations, reminders, and follow-ups
 
-This integration allows you to send automated text messages to participants, improving engagement and data collection. If you need more detailed instructions, you can refer to the Mosio REDCap Direct guide
+This integration allows you to send automated text messages to participants, improving engagement and data collection. If you need more detailed instructions, you can refer to the
+[Mosio REDCap Direct guide](https://mosio.zendesk.com/hc/en-us/articles/19320839259789-Mosio-REDCap-Direct-How-to-Configure-REDCap-to-send-SMS-through-Mosio).
 
-**Chapter Leads**: Thomas Wilson
+## Limitations {#sec-external-mosio-limitation}
+
+> What are the limitations of using Mosio?
+
+Using Mosio for text messaging in clinical trials and other applications has several limitations:
+
+1. Message Length:
+  Text messages are limited to 160 characters,
+  which can restrict the amount of information that can be conveyed in a single message
+
+1. User Engagement:
+  Not all participants may be comfortable or familiar with text messaging,
+  potentially leading to lower engagement rates
+
+1. Data Privacy:
+  Ensuring the privacy and security of sensitive information transmitted via text messages can be challenging.
+  While the transmission utilizing Mosio with REDCap is secure,
+  you cannot ensure the security of the message when it reaches the recipient's phone.
+
+1. Cost:
+  Depending on the volume of messages sent, the cost of using Mosio can add up,
+  especially for large-scale studies
+
+Despite these limitations,
+Mosio remains a valuable tool for improving participant engagement and data collection in various settings.
+If you have any specific concerns or need help with a particular aspect, feel free to ask!
+
+## Message Types {#sec-external-mosio-messagetypes}
+
+> What types of messages can I send with Mosio?
+
+With Mosio, you can send a variety of messages to enhance participant engagement and data collection. Here are some types of messages you can send:
+
+1. Survey Invitations:
+  Send links to surveys or questionnaires directly to participants' mobile phones
+
+1. Reminders:
+  Schedule automated reminders for appointments, medication adherence, or survey completions
+
+1. Alerts and Notifications:
+  Notify participants about important updates or actions they need to take
+
+1. Compliance Confirmations:
+  Request participants to confirm they have completed a specific action
+
+1. Automated Messaging (Storylines):
+  Set up automated sequences of messages for interventions, follow-ups, and engagement
+
+1. Incentives and Gift Codes:
+  Send participants incentives or gift codes as part of your study
+
+## After Approval {#sec-external-mosio-afterapproval}
+
+> I have approval and am ready to use Mosio. What is the next step?
+
+{Thomas will write this paragraph, and will be bugged by Vignesh & James every two weeks until he does.}
+
+## Sending Messages {#sec-external-mosio-sendingmessages}
+
+> How do I send Mosio messages in REDCap?
+
+To send Mosio messages in REDCap, follow these steps:
+
+1. Enable Mosio Module in REDCap:
+
+   * Go to the 'External Modules' section in your REDCap project.
+   * Find and enable the Mosio module.
+
+1. Configure Mosio Settings:
+
+   * Enter your Mosio API credentials in the module settings.
+     (This is done by the REDCap admin)
+
+   * Configure the messaging parameters,
+    such as sender ID and message templates.
+
+1. Set Up Survey Invitations:
+
+   * In the 'Survey Distribution Tools' section,
+     select 'SMS' as the distribution method.
+   * Enter the participants' phone numbers and customize the invitation message.
+
+1. Schedule Alerts and Notifications:
+
+   * Use the 'Alerts & Notifications' feature to schedule automated messages.
+   * Define the conditions under which messages should be sent
+     (e.g., survey completion reminders).
+
+1. Automated Messaging:
+
+   * Set up automated messaging sequences
+     (Storylines) for interventions or follow-ups.
+   * Configure the timing and content of each message in the sequence.
+
+For detailed instructions, you can refer to the
+[Mosio REDCap Direct guide](https://mosio.zendesk.com/hc/en-us/articles/19320839259789-Mosio-REDCap-Direct-How-to-Configure-REDCap-to-send-SMS-through-Mosio)
+
+If you encounter any specific issues or need further assistance, feel free to ask!
 
 ::: {.callout-note appearance="simple"}
 
