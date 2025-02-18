@@ -1,10 +1,11 @@
 ---
-abstract: Mosio is a leading text messaging software designed primarily for clinical research. 
-It helps improve participant engagement and adherence in studies through automated text messages. 
-Researchers can use Mosio to send reminders, alerts, and surveys,
-making it easier to collect data and keep participants on track.
+abstract: >
+  Mosio is a leading text messaging software designed primarily for clinical research.
+  It helps improve participant engagement and adherence in studies through automated text messages.
+  Researchers can use Mosio to send reminders, alerts, and surveys,
+  making it easier to collect data and keep participants on track.
 
-<!-- You can integrate Mosio into your REDCap project to communicate with participants via text messaging. -->
+  <!-- You can integrate Mosio into your REDCap project to communicate with participants via text messaging. -->
 
 author:
   - name: Thomas Wilson
@@ -34,12 +35,12 @@ and how to ask OU's [Server Administrators](../adminpr/user.md#sec-adminpr-user-
 
 ## Pricing {#sec-external-mosio-pricing}
 
-Mosio offers several pricing plans tailored to different needs.  
+Mosio offers several pricing plans tailored to different needs.
 Outbound messages beyond what is listed below can be purchased at an addition price.
 For exact pricing and to get a quote tailored to your specific needs, it's best to contact Mosio directly through their
 [website](https://www.mosio.com/).
 
-Here is a list of some of the details:  
+Here is a list of some of the details:
 
 ### Basic Plan: {#sec-external-mosio-pricing-basic}
 
@@ -62,24 +63,24 @@ To connect Mosio with REDCap, follow these steps:
 
 1. Set Up Your REDCap Project:
 
-  * Log into REDCap and create a new project.
-  * Define your variables using the Data Dictionary or Online Designer.
-  * Design your survey and enable surveys under the 'Project Setup' tab.
+   * Log into REDCap and create a new project.
+   * Define your variables using the Data Dictionary or Online Designer.
+   * Design your survey and enable surveys under the 'Project Setup' tab.
 
 1. Mosio Account Setup:
 
-  * Ensure you have a Mosio account.
-  * Log into your Mosio dashboard and navigate to the integration settings.
-  
+   * Ensure you have a Mosio account.
+   * Log into your Mosio dashboard and navigate to the integration settings.
+
 1. API Configuration:
 
-  * In REDCap, go to the 'External Modules' section and enable the Mosio module.
-  * Enter your Mosio API credentials to link the two platforms.
+   * In REDCap, go to the 'External Modules' section and enable the Mosio module.
+   * Enter your Mosio API credentials to link the two platforms.
 
-4. Configure Messaging:
+1. Configure Messaging:
 
-  * Define the messaging parameters within Mosio.
-  * Set up various types of messages, such as survey invitations, reminders, and follow-ups
+   * Define the messaging parameters within Mosio.
+   * Set up various types of messages, such as survey invitations, reminders, and follow-ups
 
 This integration allows you to send automated text messages to participants, improving engagement and data collection. If you need more detailed instructions, you can refer to the Mosio REDCap Direct guide
 
