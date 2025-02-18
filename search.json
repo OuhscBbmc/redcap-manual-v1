@@ -271,33 +271,22 @@
     ]
   },
   {
-    "objectID": "external/mosio.html#sec-external-mosio-create",
-    "href": "external/mosio.html#sec-external-mosio-create",
+    "objectID": "external/mosio.html#sec-external-mosio-pricing",
+    "href": "external/mosio.html#sec-external-mosio-pricing",
     "title": "13  Mosio",
-    "section": "13.2 Create Mosio Account",
-    "text": "13.2 Create Mosio Account\nYour team must create your own account with its own credit card…",
+    "section": "13.2 Pricing",
+    "text": "13.2 Pricing\nMosio offers several pricing plans tailored to different needs. Outbound messages beyond what is listed below can be purchased at an addition price. For exact pricing and to get a quote tailored to your specific needs, it’s best to contact Mosio directly through their website.\nHere is a list of some of the details:\n\n13.2.1 Basic Plan:\n\nProjects: Up to 4\nOutbound Messages: 1,000 per month\n\n\n\n13.2.2 Plus Plan:\n\nProjects: Up to 10\nOutbound Messages: 3,000 per month\n\n\n\n13.2.3 Pro Plan:\n\nProjects: Up to 30\nOutbound Messages: 7,500 per month",
     "crumbs": [
       "External Connectivity",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Mosio</span>"
     ]
   },
   {
-    "objectID": "external/mosio.html#sec-external-mosio-connect",
-    "href": "external/mosio.html#sec-external-mosio-connect",
+    "objectID": "external/mosio.html#sec-external-mosio-access",
+    "href": "external/mosio.html#sec-external-mosio-access",
     "title": "13  Mosio",
-    "section": "13.3 Connect Project",
-    "text": "13.3 Connect Project\nWithin your REDCap project…",
-    "crumbs": [
-      "External Connectivity",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Mosio</span>"
-    ]
-  },
-  {
-    "objectID": "external/mosio.html#sec-external-mosio-config",
-    "href": "external/mosio.html#sec-external-mosio-config",
-    "title": "13  Mosio",
-    "section": "13.4 Configure Communication Pattern",
-    "text": "13.4 Configure Communication Pattern\nTo schedule actual text messages…\nChapter Leads: Thomas Wilson\n\n\n\n\n\n\nAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "section": "13.3 Access",
+    "text": "13.3 Access\nTo connect Mosio with REDCap, follow these steps:\n\nSet Up Your REDCap Project:\n\nLog into REDCap and create a new project.\nDefine your variables using the Data Dictionary or Online Designer.\nDesign your survey and enable surveys under the ‘Project Setup’ tab.\n\nMosio Account Setup:\n\nEnsure you have a Mosio account.\nLog into your Mosio dashboard and navigate to the integration settings.\n\nAPI Configuration:\n\nIn REDCap, go to the ‘External Modules’ section and enable the Mosio module.\nEnter your Mosio API credentials to link the two platforms.\n\nConfigure Messaging:\n\nDefine the messaging parameters within Mosio.\nSet up various types of messages, such as survey invitations, reminders, and follow-ups\n\n\nThis integration allows you to send automated text messages to participants, improving engagement and data collection. If you need more detailed instructions, you can refer to the Mosio REDCap Direct guide\nChapter Leads: Thomas Wilson\n\n\n\n\n\n\nAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "External Connectivity",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Mosio</span>"

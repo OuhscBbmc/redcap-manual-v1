@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -38,12 +38,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c27e8183b45a9843caea850aa85f01fd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-c85d066a98ff94359d3e6e417dda436e.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4b4c2c2c46fdd006d842a4661abc5442.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-90e842840d28dff320524ad625aae78f.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -85,7 +85,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../assets/font-awesome.css">
 <link rel="stylesheet" href="../assets/tables.css">
 <meta name="citation_title" content="[[13]{.chapter-number}&nbsp; [Mosio]{.chapter-title}]{#sec-external-mosio .quarto-section-identifier}">
-<meta name="citation_abstract" content="You can integrate Mosio into your REDCap project to communicate with participants via text messaging.">
+<meta name="citation_abstract" content="Mosio is a leading text messaging software designed primarily for clinical research. It helps improve participant engagement and adherence in studies through automated text messages. Researchers can use Mosio to send reminders, alerts, and surveys, making it easier to collect data and keep participants on track.
+">
 <meta name="citation_author" content="Thomas Wilson">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=The elements of statistical learning: Data mining, inference, and prediction;,citation_author=Trevor Hastie;,citation_author=Robert Tibshirani;,citation_author=Jerome H Friedman;,citation_author=Jerome H Friedman;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_volume=2;">
@@ -414,9 +415,13 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
    
   <ul>
   <li><a href="#sec-external-mosio-motivation" id="toc-sec-external-mosio-motivation" class="nav-link active" data-scroll-target="#sec-external-mosio-motivation"><span class="header-section-number">13.1</span> Motivation &amp; Overview</a></li>
-  <li><a href="#sec-external-mosio-create" id="toc-sec-external-mosio-create" class="nav-link" data-scroll-target="#sec-external-mosio-create"><span class="header-section-number">13.2</span> Create Mosio Account</a></li>
-  <li><a href="#sec-external-mosio-connect" id="toc-sec-external-mosio-connect" class="nav-link" data-scroll-target="#sec-external-mosio-connect"><span class="header-section-number">13.3</span> Connect Project</a></li>
-  <li><a href="#sec-external-mosio-config" id="toc-sec-external-mosio-config" class="nav-link" data-scroll-target="#sec-external-mosio-config"><span class="header-section-number">13.4</span> Configure Communication Pattern</a></li>
+  <li><a href="#sec-external-mosio-pricing" id="toc-sec-external-mosio-pricing" class="nav-link" data-scroll-target="#sec-external-mosio-pricing"><span class="header-section-number">13.2</span> Pricing</a>
+  <ul class="collapse">
+  <li><a href="#sec-external-mosio-pricing-basic" id="toc-sec-external-mosio-pricing-basic" class="nav-link" data-scroll-target="#sec-external-mosio-pricing-basic"><span class="header-section-number">13.2.1</span> Basic Plan:</a></li>
+  <li><a href="#sec-external-mosio-pricing-plus" id="toc-sec-external-mosio-pricing-plus" class="nav-link" data-scroll-target="#sec-external-mosio-pricing-plus"><span class="header-section-number">13.2.2</span> Plus Plan:</a></li>
+  <li><a href="#sec-external-mosio-pricing-pro" id="toc-sec-external-mosio-pricing-pro" class="nav-link" data-scroll-target="#sec-external-mosio-pricing-pro"><span class="header-section-number">13.2.3</span> Pro Plan:</a></li>
+  </ul></li>
+  <li><a href="#sec-external-mosio-access" id="toc-sec-external-mosio-access" class="nav-link" data-scroll-target="#sec-external-mosio-access"><span class="header-section-number">13.3</span> Access</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/external/mosio.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/external/mosio.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -455,7 +460,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    You can integrate Mosio into your REDCap project to communicate with participants via text messaging.
+    <p>Mosio is a leading text messaging software designed primarily for clinical research. It helps improve participant engagement and adherence in studies through automated text messages. Researchers can use Mosio to send reminders, alerts, and surveys, making it easier to collect data and keep participants on track.</p>
   </div>
 </div>
 
@@ -468,17 +473,59 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>In recent years, many researchers have found that texting is a productive channel for keeping in touch with participants, either by itself or as a supplement to conventional communication. <a href="https://www.mosio.com/">Mosio</a> is a company that develops, supports, and licenses a product called <a href="https://www.mosio.com/redcap/">REDCap Direct</a>.</p>
 <p>The <a href="https://www.mosio.com/redcap/">REDCap Direct</a> website provides a lot of current information that we won’t try to replicate in this manual. Instead we’ll outline when you might consider it, and how to ask OU’s <a href="../adminpr/user.html#sec-adminpr-user-role-ocri">Server Administrators</a> for help establishing for your project.</p>
 </section>
-<section id="sec-external-mosio-create" class="level2" data-number="13.2">
-<h2 data-number="13.2" class="anchored" data-anchor-id="sec-external-mosio-create"><span class="header-section-number">13.2</span> Create Mosio Account</h2>
-<p>Your team must create your own account with its own credit card…</p>
+<section id="sec-external-mosio-pricing" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="sec-external-mosio-pricing"><span class="header-section-number">13.2</span> Pricing</h2>
+<p>Mosio offers several pricing plans tailored to different needs. Outbound messages beyond what is listed below can be purchased at an addition price. For exact pricing and to get a quote tailored to your specific needs, it’s best to contact Mosio directly through their <a href="https://www.mosio.com/">website</a>.</p>
+<p>Here is a list of some of the details:</p>
+<section id="sec-external-mosio-pricing-basic" class="level3" data-number="13.2.1">
+<h3 data-number="13.2.1" class="anchored" data-anchor-id="sec-external-mosio-pricing-basic"><span class="header-section-number">13.2.1</span> Basic Plan:</h3>
+<ul>
+<li>Projects: Up to 4</li>
+<li>Outbound Messages: 1,000 per month</li>
+</ul>
 </section>
-<section id="sec-external-mosio-connect" class="level2" data-number="13.3">
-<h2 data-number="13.3" class="anchored" data-anchor-id="sec-external-mosio-connect"><span class="header-section-number">13.3</span> Connect Project</h2>
-<p>Within your REDCap project…</p>
+<section id="sec-external-mosio-pricing-plus" class="level3" data-number="13.2.2">
+<h3 data-number="13.2.2" class="anchored" data-anchor-id="sec-external-mosio-pricing-plus"><span class="header-section-number">13.2.2</span> Plus Plan:</h3>
+<ul>
+<li>Projects: Up to 10</li>
+<li>Outbound Messages: 3,000 per month</li>
+</ul>
 </section>
-<section id="sec-external-mosio-config" class="level2" data-number="13.4">
-<h2 data-number="13.4" class="anchored" data-anchor-id="sec-external-mosio-config"><span class="header-section-number">13.4</span> Configure Communication Pattern</h2>
-<p>To schedule actual text messages…</p>
+<section id="sec-external-mosio-pricing-pro" class="level3" data-number="13.2.3">
+<h3 data-number="13.2.3" class="anchored" data-anchor-id="sec-external-mosio-pricing-pro"><span class="header-section-number">13.2.3</span> Pro Plan:</h3>
+<ul>
+<li>Projects: Up to 30</li>
+<li>Outbound Messages: 7,500 per month</li>
+</ul>
+</section>
+</section>
+<section id="sec-external-mosio-access" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="sec-external-mosio-access"><span class="header-section-number">13.3</span> Access</h2>
+<p>To connect Mosio with REDCap, follow these steps:</p>
+<ol type="1">
+<li><p>Set Up Your REDCap Project:</p>
+<ul>
+<li>Log into REDCap and create a new project.</li>
+<li>Define your variables using the Data Dictionary or Online Designer.</li>
+<li>Design your survey and enable surveys under the ‘Project Setup’ tab.</li>
+</ul></li>
+<li><p>Mosio Account Setup:</p>
+<ul>
+<li>Ensure you have a Mosio account.</li>
+<li>Log into your Mosio dashboard and navigate to the integration settings.</li>
+</ul></li>
+<li><p>API Configuration:</p>
+<ul>
+<li>In REDCap, go to the ‘External Modules’ section and enable the Mosio module.</li>
+<li>Enter your Mosio API credentials to link the two platforms.</li>
+</ul></li>
+<li><p>Configure Messaging:</p>
+<ul>
+<li>Define the messaging parameters within Mosio.</li>
+<li>Set up various types of messages, such as survey invitations, reminders, and follow-ups</li>
+</ul></li>
+</ol>
+<p>This integration allows you to send automated text messages to participants, improving engagement and data collection. If you need more detailed instructions, you can refer to the Mosio REDCap Direct guide</p>
 <p><strong>Chapter Leads</strong>: Thomas Wilson</p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
