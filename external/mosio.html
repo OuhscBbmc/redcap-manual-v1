@@ -44,6 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-4b4c2c2c46fdd006d842a4661abc5442.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-90e842840d28dff320524ad625aae78f.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -479,6 +482,16 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <section id="sec-external-mosio-motivation" class="level2" data-number="13.1">
 <h2 data-number="13.1" class="anchored" data-anchor-id="sec-external-mosio-motivation"><span class="header-section-number">13.1</span> Motivation &amp; Overview</h2>
 <p>In recent years, many researchers have found that texting is a productive channel for keeping in touch with participants, either by itself or as a supplement to conventional communication. <a href="https://www.mosio.com/">Mosio</a> is a company that develops, supports, and licenses a product called <a href="https://www.mosio.com/redcap/">REDCap Direct</a>.</p>
+<div id="fig-mosio-010-test" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Caption of Test Figure">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mosio-010-test-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/mosio/fig-mosio-010-test.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;13.1: Caption of Test Figure."><img src="images/mosio/fig-mosio-010-test.png" class="img-fluid figure-img" alt="Caption of Test Figure"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mosio-010-test-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.1: Caption of Test Figure.
+</figcaption>
+</figure>
+</div>
 <p>The <a href="https://www.mosio.com/redcap/">REDCap Direct</a> website provides a lot of current information that we won’t try to replicate in this manual. Instead we’ll outline when you might consider it, and how to ask OU’s <a href="../adminpr/user.html#sec-adminpr-user-role-ocri">Server Administrators</a> for help establishing for your project.</p>
 </section>
 <section id="sec-external-mosio-pricing" class="level2" data-number="13.2">
@@ -548,10 +561,10 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </blockquote>
 <p>Using Mosio for text messaging in clinical trials and other applications has several limitations:</p>
 <ol type="1">
-<li><p>Message Length: Text messages are limited to 160 characters, which can restrict the amount of information that can be conveyed in a single message</p></li>
-<li><p>User Engagement: Not all participants may be comfortable or familiar with text messaging, potentially leading to lower engagement rates</p></li>
+<li><p>Message Length: Text messages are limited to 160 characters, which can restrict the amount of information that can be conveyed in a single message.</p></li>
+<li><p>User Engagement: Not all participants may be comfortable or familiar with text messaging, potentially leading to lower engagement rates.</p></li>
 <li><p>Data Privacy: Ensuring the privacy and security of sensitive information transmitted via text messages can be challenging. While the transmission utilizing Mosio with REDCap is secure, you cannot ensure the security of the message when it reaches the recipient’s phone.</p></li>
-<li><p>Cost: Depending on the volume of messages sent, the cost of using Mosio can add up, especially for large-scale studies</p></li>
+<li><p>Cost: Depending on the volume of messages sent, the cost of using Mosio can add up, especially for large-scale studies.</p></li>
 </ol>
 <p>Despite these limitations, Mosio remains a valuable tool for improving participant engagement and data collection in various settings. If you have any specific concerns or need help with a particular aspect, feel free to ask!</p>
 </section>
@@ -562,12 +575,12 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </blockquote>
 <p>With Mosio, you can send a variety of messages to enhance participant engagement and data collection. Here are some types of messages you can send:</p>
 <ol type="1">
-<li><p>Survey Invitations: Send links to surveys or questionnaires directly to participants’ mobile phones</p></li>
-<li><p>Reminders: Schedule automated reminders for appointments, medication adherence, or survey completions</p></li>
-<li><p>Alerts and Notifications: Notify participants about important updates or actions they need to take</p></li>
-<li><p>Compliance Confirmations: Request participants to confirm they have completed a specific action</p></li>
-<li><p>Automated Messaging (Storylines): Set up automated sequences of messages for interventions, follow-ups, and engagement</p></li>
-<li><p>Incentives and Gift Codes: Send participants incentives or gift codes as part of your study</p></li>
+<li><p>Survey Invitations: Send links to surveys or questionnaires directly to participants’ mobile phones.</p></li>
+<li><p>Reminders: Schedule automated reminders for appointments, medication adherence, or survey completions.</p></li>
+<li><p>Alerts and Notifications: Notify participants about important updates or actions they need to take.</p></li>
+<li><p>Compliance Confirmations: Request participants to confirm they have completed a specific action.</p></li>
+<li><p>Automated Messaging (Storylines): Set up automated sequences of messages for interventions, follow-ups, and engagement.</p></li>
+<li><p>Incentives and Gift Codes: Send participants incentives or gift codes as part of your study.</p></li>
 </ol>
 </section>
 <section id="sec-external-mosio-afterapproval" class="level2" data-number="13.6">
@@ -591,7 +604,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </ul></li>
 <li><p>Configure Mosio Settings:</p>
 <ul>
-<li><p>Enter your Mosio API credentials in the module settings. (This is done by the REDCap admin)</p></li>
+<li><p>Enter your Mosio API credentials in the module settings. (This is done by the REDCap admin.)</p></li>
 <li><p>Configure the messaging parameters, such as sender ID and message templates.</p></li>
 </ul></li>
 <li><p>Set Up Survey Invitations:</p>
@@ -606,7 +619,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </ul></li>
 <li><p>Automated Messaging:</p>
 <ul>
-<li>Set up automated messaging sequences (Storylines) for interventions or follow-ups.</li>
+<li>Set up automated messaging sequences. (Storylines) for interventions or follow-ups.</li>
 <li>Configure the timing and content of each message in the sequence.</li>
 </ul></li>
 </ol>
@@ -623,22 +636,22 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <li><p>Dashboard Overview:</p>
 <ul>
 <li>Log into your Mosio account and access the dashboard.</li>
-<li>The dashboard provides a summary of your messaging activity, including the number of messages sent, received, and scheduled</li>
+<li>The dashboard provides a summary of your messaging activity, including the number of messages sent, received, and scheduled.</li>
 </ul></li>
 <li><p>Storylines Monitoring:</p>
 <ul>
 <li>Use the Storylines module to track the progress of automated messaging sequences.</li>
-<li>In the Monitor section, you can view the real-time status of message history, survey completions, and participant engagement</li>
+<li>In the Monitor section, you can view the real-time status of message history, survey completions, and participant engagement.</li>
 </ul></li>
 <li><p>Message History:</p>
 <ul>
 <li>Access the message history to see detailed logs of all messages sent and received.</li>
-<li>This includes timestamps, message content, and participant responses</li>
+<li>This includes timestamps, message content, and participant responses.</li>
 </ul></li>
 <li><p>Usage Reports:</p>
 <ul>
 <li>Generate usage reports to get a comprehensive view of your messaging activity over a specific period.</li>
-<li>These reports can help you analyze trends and optimize your communication strategy</li>
+<li>These reports can help you analyze trends and optimize your communication strategy.</li>
 </ul></li>
 <li><p>Alerts and Notifications:</p>
 <ul>
@@ -656,23 +669,23 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <ol type="1">
 <li><p>Survey Distribution:</p>
 <ul>
-<li>Researchers send survey invitations via text message, ensuring participants receive timely reminders and links to complete surveys</li>
+<li>Researchers send survey invitations via text message, ensuring participants receive timely reminders and links to complete surveys.</li>
 </ul></li>
 <li><p>Automated Reminders:</p>
 <ul>
-<li>Automated reminders are set up to nudge participants to complete surveys, attend appointments, or adhere to study protocols</li>
+<li>Automated reminders are set up to nudge participants to complete surveys, attend appointments, or adhere to study protocols.</li>
 </ul></li>
 <li><p>Data Collection:</p>
 <ul>
-<li>Text messages are used to collect data directly from participants, which can then be automatically imported into REDCap</li>
+<li>Text messages are used to collect data directly from participants, which can then be automatically imported into REDCap.</li>
 </ul></li>
 <li><p>Intervention Campaigns:</p>
 <ul>
-<li>Researchers deploy text-based interventions, such as health tips or motivational messages, to improve participant outcomes</li>
+<li>Researchers deploy text-based interventions, such as health tips or motivational messages, to improve participant outcomes.</li>
 </ul></li>
 <li><p>Incentives and Rewards:</p>
 <ul>
-<li>Participants receive gift codes or other incentives via text message for completing surveys or other study tasks</li>
+<li>Participants receive gift codes or other incentives via text message for completing surveys or other study tasks.</li>
 </ul></li>
 </ol>
 <p>These features help streamline communication, improve participant engagement, and enhance data collection efficiency. If you have a specific use case in mind, feel free to share, and I can provide more detailed guidance!</p>
@@ -1293,6 +1306,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
