@@ -190,6 +190,86 @@ For detailed instructions, you can refer to the
 
 If you encounter any specific issues or need further assistance, feel free to ask!
 
+## Monitoring Usage {#sec-external-mosio-monitoring}
+
+> How can I monitor my Mosio usage?
+
+To monitor your Mosio usage, you can use the following methods:
+
+1. Dashboard Overview:
+
+   * Log into your Mosio account and access the dashboard.
+   * The dashboard provides a summary of your messaging activity, including the number of messages sent, received, and scheduled
+
+1. Storylines Monitoring:
+
+   * Use the Storylines module to track the progress of automated messaging sequences.
+   * In the Monitor section, you can view the real-time status of message history, survey completions, and participant engagement
+
+1. Message History:
+
+   * Access the message history to see detailed logs of all messages sent and received.
+   * This includes timestamps, message content, and participant responses
+
+1. Usage Reports:
+
+   * Generate usage reports to get a comprehensive view of your messaging activity over a specific period.
+   * These reports can help you analyze trends and optimize your communication strategy
+
+1. Alerts and Notifications:
+
+   * Set up alerts and notifications to receive updates on key metrics, such as message delivery rates and participant responses
+
+For more detailed instructions, you can refer to the
+[Mosio Training Guides](https://www.mosio.com/t/).
+
+## Usage Examples {#sec-external-mosio-examples}
+
+> What are some examples of using Mosio?
+
+People are using Mosio in REDCap for various purposes to enhance their research projects. Here are some common uses:
+
+1. Survey Distribution:
+
+   * Researchers send survey invitations via text message,
+   ensuring participants receive timely reminders and links to complete surveys
+
+1. Automated Reminders:
+
+   * Automated reminders are set up to nudge participants to complete surveys,
+   attend appointments, or adhere to study protocols
+
+1. Data Collection:
+
+   * Text messages are used to collect data directly from participants,
+   which can then be automatically imported into REDCap
+
+1. Intervention Campaigns:
+
+   * Researchers deploy text-based interventions, such as health tips or motivational messages, to improve participant outcomes
+
+1. Incentives and Rewards:
+
+   * Participants receive gift codes or other incentives via text message for completing surveys or other study tasks
+
+These features help streamline communication, improve participant engagement,
+and enhance data collection efficiency.
+If you have a specific use case in mind, feel free to share,
+and I can provide more detailed guidance!
+
+## Privacy Policy {#sec-external-mosio-privacy}
+
+> What is Mosio's privacy policy?
+
+Mosio does not sell or share any data with third parties,
+except to perform the services of the platform.
+This means text messages will be sent to mobile carriers
+so they can be delivered to the participants' phones.
+Emails will also route through our email providers.
+Mosio only works with vendors who also do not resell any information.
+The full details are in the
+[Mosio privacy policy](https://www.mosio.com/privacy/).
+
 ::: {.callout-note appearance="simple"}
 
 ## Additional Chapter Details
