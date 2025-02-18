@@ -99,11 +99,11 @@ Using Mosio for text messaging in clinical trials and other applications has sev
 
 1. Message Length:
   Text messages are limited to 160 characters,
-  which can restrict the amount of information that can be conveyed in a single message
+  which can restrict the amount of information that can be conveyed in a single message.
 
 1. User Engagement:
   Not all participants may be comfortable or familiar with text messaging,
-  potentially leading to lower engagement rates
+  potentially leading to lower engagement rates.
 
 1. Data Privacy:
   Ensuring the privacy and security of sensitive information transmitted via text messages can be challenging.
@@ -112,7 +112,7 @@ Using Mosio for text messaging in clinical trials and other applications has sev
 
 1. Cost:
   Depending on the volume of messages sent, the cost of using Mosio can add up,
-  especially for large-scale studies
+  especially for large-scale studies.
 
 Despite these limitations,
 Mosio remains a valuable tool for improving participant engagement and data collection in various settings.
@@ -125,22 +125,22 @@ If you have any specific concerns or need help with a particular aspect, feel fr
 With Mosio, you can send a variety of messages to enhance participant engagement and data collection. Here are some types of messages you can send:
 
 1. Survey Invitations:
-  Send links to surveys or questionnaires directly to participants' mobile phones
+  Send links to surveys or questionnaires directly to participants' mobile phones.
 
 1. Reminders:
-  Schedule automated reminders for appointments, medication adherence, or survey completions
+  Schedule automated reminders for appointments, medication adherence, or survey completions.
 
 1. Alerts and Notifications:
-  Notify participants about important updates or actions they need to take
+  Notify participants about important updates or actions they need to take.
 
 1. Compliance Confirmations:
-  Request participants to confirm they have completed a specific action
+  Request participants to confirm they have completed a specific action.
 
 1. Automated Messaging (Storylines):
-  Set up automated sequences of messages for interventions, follow-ups, and engagement
+  Set up automated sequences of messages for interventions, follow-ups, and engagement.
 
 1. Incentives and Gift Codes:
-  Send participants incentives or gift codes as part of your study
+  Send participants incentives or gift codes as part of your study.
 
 ## After Approval {#sec-external-mosio-afterapproval}
 
@@ -162,7 +162,7 @@ To send Mosio messages in REDCap, follow these steps:
 1. Configure Mosio Settings:
 
    * Enter your Mosio API credentials in the module settings.
-     (This is done by the REDCap admin)
+     (This is done by the REDCap admin.)
 
    * Configure the messaging parameters,
     such as sender ID and message templates.
@@ -181,7 +181,7 @@ To send Mosio messages in REDCap, follow these steps:
 
 1. Automated Messaging:
 
-   * Set up automated messaging sequences
+   * Set up automated messaging sequences.
      (Storylines) for interventions or follow-ups.
    * Configure the timing and content of each message in the sequence.
 
@@ -199,22 +199,22 @@ To monitor your Mosio usage, you can use the following methods:
 1. Dashboard Overview:
 
    * Log into your Mosio account and access the dashboard.
-   * The dashboard provides a summary of your messaging activity, including the number of messages sent, received, and scheduled
+   * The dashboard provides a summary of your messaging activity, including the number of messages sent, received, and scheduled.
 
 1. Storylines Monitoring:
 
    * Use the Storylines module to track the progress of automated messaging sequences.
-   * In the Monitor section, you can view the real-time status of message history, survey completions, and participant engagement
+   * In the Monitor section, you can view the real-time status of message history, survey completions, and participant engagement.
 
 1. Message History:
 
    * Access the message history to see detailed logs of all messages sent and received.
-   * This includes timestamps, message content, and participant responses
+   * This includes timestamps, message content, and participant responses.
 
 1. Usage Reports:
 
    * Generate usage reports to get a comprehensive view of your messaging activity over a specific period.
-   * These reports can help you analyze trends and optimize your communication strategy
+   * These reports can help you analyze trends and optimize your communication strategy.
 
 1. Alerts and Notifications:
 
@@ -232,25 +232,25 @@ People are using Mosio in REDCap for various purposes to enhance their research 
 1. Survey Distribution:
 
    * Researchers send survey invitations via text message,
-   ensuring participants receive timely reminders and links to complete surveys
+   ensuring participants receive timely reminders and links to complete surveys.
 
 1. Automated Reminders:
 
    * Automated reminders are set up to nudge participants to complete surveys,
-   attend appointments, or adhere to study protocols
+   attend appointments, or adhere to study protocols.
 
 1. Data Collection:
 
    * Text messages are used to collect data directly from participants,
-   which can then be automatically imported into REDCap
+   which can then be automatically imported into REDCap.
 
 1. Intervention Campaigns:
 
-   * Researchers deploy text-based interventions, such as health tips or motivational messages, to improve participant outcomes
+   * Researchers deploy text-based interventions, such as health tips or motivational messages, to improve participant outcomes.
 
 1. Incentives and Rewards:
 
-   * Participants receive gift codes or other incentives via text message for completing surveys or other study tasks
+   * Participants receive gift codes or other incentives via text message for completing surveys or other study tasks.
 
 These features help streamline communication, improve participant engagement,
 and enhance data collection efficiency.
