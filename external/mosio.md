@@ -30,6 +30,8 @@ either by itself or as a supplement to conventional communication.
 [Mosio](https://www.mosio.com/) is a company that develops, supports, and licenses a product called
 [REDCap Direct](https://www.mosio.com/redcap/).
 
+![Caption of Test Figure.](images/mosio/fig-mosio-010-test.png){#fig-mosio-010-test fig-alt="Caption of Test Figure"}
+
 The [REDCap Direct](https://www.mosio.com/redcap/) website provides a lot of current information
 that we won't try to replicate in this manual.
 Instead we'll outline when you might consider it,
