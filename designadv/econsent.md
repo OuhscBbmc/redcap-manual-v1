@@ -25,21 +25,55 @@ csl: ../assets/csl/apa-7e.csl
 
 ::: {.callout-note appearance="simple"}
 
-### How to Set Up an e-Consent Framework in REDCap
+# How to Set Up an e-Consent Framework in REDCap
 
-#### Enabling the e-Consent Framework  
-1. Navigate to the *Online Designer*.  
-2. Click on **e-Consent and PDF Snapshots** in the *Data Collection Instruments* header box.  
-3. Enable the e-Consent Framework for a survey.  
+## Enabling the e-Consent Framework
 
-#### Configuring Settings  
-- **Primary Settings:**  
-  - Allow user edits and specify name fields.  
-- **Additional Settings:**  
-  - Add a *Date of Birth* field, custom headers/footers, and signature settings.  
-  - Specify save locations and customize file names.  
+1. Navigate to the **Online Designer**.  
 
-#### Adding Consent Versions  
+   <p align="center">
+      <img src="./Screenshots/frame_0007.jpg" alt="Online Designer" width="600">
+   </p>
+
+   <p align="center">
+      <img src="./Screenshots/frame_0341.jpg" alt="Online Designer 2" width="600">
+   </p>
+
+2. Enable the e-Consent Framework for a survey.  
+
+   <p align="center">
+      <img src="./Screenshots/frame_0395.jpg" alt="Enable e-Consent" width="600">
+   </p>
+
+3. Click on **e-Consent and PDF Snapshots** in the *Data Collection Instruments* header box.  
+
+   <p align="center">
+      <img src="./Screenshots/frame_0348.jpg" alt="e-Consent and PDF Snapshots" width="600">
+   </p>
+
+   <p align="center">
+      <img src="./Screenshots/frame_0434.jpg" alt="Data Collection Instruments" width="600">
+   </p>
+
+   <p align="center">
+      <img src="./Screenshots/frame_0439.jpg" alt="e-Consent Settings" width="600">
+   </p>
+
+## Configuring Settings
+
+### Primary Settings:
+- Allow user edits and specify name fields.  
+
+### Additional Settings:
+- Add a **Date of Birth** field, custom headers/footers, and signature settings.  
+- Specify save locations and customize file names.  
+
+   <p align="center">
+      <img src="./Screenshots/frame_0439.jpg" alt="Settings" width="600">
+   </p>
+
+## Adding Consent Versions
+
 1. Click **Add Consent Form**.  
 2. Specify the version number and upload the consent form.  
 3. Save the new version.  
