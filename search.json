@@ -194,11 +194,44 @@
     ]
   },
   {
+    "objectID": "designadv/econsent.html#enabling-the-e-consent-framework",
+    "href": "designadv/econsent.html#enabling-the-e-consent-framework",
+    "title": "10  Electronic Consent",
+    "section": "10.1 Enabling the e-Consent Framework",
+    "text": "10.1 Enabling the e-Consent Framework\n\nNavigate to the Online Designer.\n\n\n\n\n\n\nEnable the e-Consent Framework for a survey.\n\n\n\nClick on e-Consent and PDF Snapshots in the Data Collection Instruments header box.",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/econsent.html#configuring-settings",
+    "href": "designadv/econsent.html#configuring-settings",
+    "title": "10  Electronic Consent",
+    "section": "10.2 Configuring Settings",
+    "text": "10.2 Configuring Settings\n\n10.2.1 Primary Settings:\n\nAllow user edits and specify name fields.\n\n\n\n10.2.2 Additional Settings:\n\nAdd a Date of Birth field, custom headers/footers, and signature settings.\n\nSpecify save locations and customize file names.",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/econsent.html#adding-consent-versions",
+    "href": "designadv/econsent.html#adding-consent-versions",
+    "title": "10  Electronic Consent",
+    "section": "10.3 Adding Consent Versions",
+    "text": "10.3 Adding Consent Versions\n\nClick Add Consent Form.\n\nSpecify the version number and upload the consent form.\n\nSave the new version.",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
+    ]
+  },
+  {
     "objectID": "designadv/econsent.html#additional-chapter-details",
     "href": "designadv/econsent.html#additional-chapter-details",
     "title": "10  Electronic Consent",
-    "section": "10.1 Additional Chapter Details",
-    "text": "10.1 Additional Chapter Details\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "section": "10.4 Additional Chapter Details",
+    "text": "10.4 Additional Chapter Details\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Project Design (Advanced)",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
