@@ -31,33 +31,34 @@ csl: ../assets/csl/apa-7e.csl
 
 1. Navigate to the **Online Designer**.  
 
-   <p align="center">
-      <img src="./Screenshots/frame_0007.jpg" alt="Online Designer" width="600">
-   </p>
+<p align="center">
+   <img src="./Screenshots/frame_0007.jpg" alt="Online Designer" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+</p>
 
-   <p align="center">
-      <img src="./Screenshots/frame_0341.jpg" alt="Online Designer 2" width="600">
-   </p>
+<p align="center">
+   <img src="./Screenshots/frame_0341.jpg" alt="Online Designer 2" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+</p>
 
-2. Enable the e-Consent Framework for a survey.  
+## 2. Enable the e-Consent Framework for a Survey
 
-   <p align="center">
-      <img src="./Screenshots/frame_0395.jpg" alt="Enable e-Consent" width="600">
-   </p>
+<p align="center">
+   <img src="./Screenshots/frame_0395.jpg" alt="Enable e-Consent" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+</p>
 
-3. Click on **e-Consent and PDF Snapshots** in the *Data Collection Instruments* header box.  
+## 3. Click on **e-Consent and PDF Snapshots** in the *Data Collection Instruments* header box
 
-   <p align="center">
-      <img src="./Screenshots/frame_0348.jpg" alt="e-Consent and PDF Snapshots" width="600">
-   </p>
+<p align="center">
+   <img src="./Screenshots/frame_0348.jpg" alt="e-Consent and PDF Snapshots" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+</p>
 
-   <p align="center">
-      <img src="./Screenshots/frame_0434.jpg" alt="Data Collection Instruments" width="600">
-   </p>
+<p align="center">
+   <img src="./Screenshots/frame_0434.jpg" alt="Data Collection Instruments" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+</p>
 
-   <p align="center">
-      <img src="./Screenshots/frame_0439.jpg" alt="e-Consent Settings" width="600">
-   </p>
+<p align="center">
+   <img src="./Screenshots/frame_0439.jpg" alt="e-Consent Settings" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+</p>
+
 
 ## Configuring Settings
 
@@ -69,7 +70,7 @@ csl: ../assets/csl/apa-7e.csl
 - Specify save locations and customize file names.  
 
    <p align="center">
-      <img src="./Screenshots/frame_0439.jpg" alt="Settings" width="600">
+      <img src="./Screenshots/frame_0439.jpg" alt="Settings" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
    </p>
 
 ## Adding Consent Versions
