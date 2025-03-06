@@ -19,3 +19,19 @@ csl: ../assets/csl/apa-7e.csl
 # 21 CFR Part 11 Requirements of the Researcher {#sec-check-part11}
 
 **Chapter Leads**: Thomas Wilson
+
+## G. RECORD RETENTION
+
+### 2. LONG-TERM ACCESSIBILITY
+
+#### c. Are file formats chosen to ensure long-term readability (e.g., PDF, CSV)?
+
+REDCap provides at least 10 different export formats,
+ranging from the highly-portable (_e.g._, *.csv: comma separate value)
+to specialized and proprietary (_e.g._, *.sas7bdat: SAS files).
+
+To promote portability and long-term usefulness,
+we recommend exporting data as a csv.
+Even if you want something specialized in the short-term (_e.g._, an SPSS file),
+we recommend exporting and storing second copy (as a csv) to improve the options available
+to others in the future.
