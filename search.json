@@ -550,29 +550,29 @@
     "href": "check/part11.html",
     "title": "16  21 CFR Part 11 Requirements of the Researcher",
     "section": "",
-    "text": "16.1 System Validation And Change Control (Section A)\nChapter Leads: Thomas Wilson\nGlossary:\nRTs are not responsible for content in this section.",
+    "text": "16.1 System Validation And Change Control (Sec A)\nChapter Leads: Thomas Wilson\nGlossary:\nRTs are not responsible for content in this section.",
     "crumbs": [
       "Checklists",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
     ]
   },
   {
-    "objectID": "check/part11.html#access-control-and-security-section-b",
-    "href": "check/part11.html#access-control-and-security-section-b",
+    "objectID": "check/part11.html#sec-check-part11-access",
+    "href": "check/part11.html#sec-check-part11-access",
     "title": "16  21 CFR Part 11 Requirements of the Researcher",
-    "section": "16.2 Access Control And Security (Section B)",
-    "text": "16.2 Access Control And Security (Section B)\n\n16.2.1 User Authentication (Subsection B1)\nRTs are not responsible for content in this section.\n\n\n16.2.2 Role-Based Permissions (Subsection B2)\n\n16.2.2.1 Are roles and permissions in REDCap configured to ensure that users only have the minimum necessary access to perform their job functions?\nREDCap allows fine-grained permissions to users and groups within each project.\nIt is the RT’s responsibility to assign other study team members the appropriate permissions, while following the principles of least privilege.\n\n\n16.2.2.2 Are permission sets periodically reviewed to confirm they still align with user job functions?\nYes, the REDCap dashboard to allow someone to quickly review the study’s users, groups, and permissions. It is the RT’s responsibility to periodically review this dashboard.\n\n\n16.2.2.3 Do you enforce the principle of least privilege (admins vs. data entry vs. monitors)?\nThe RT works with their team members and should be aware of their roles approved by the IRB.\nIt is the RT’s responsibility to assign the appropriate levels of privileges.",
+    "section": "16.2 Access Control And Security (Sec B)",
+    "text": "16.2 Access Control And Security (Sec B)\n\n16.2.1 User Authentication (Subsec B1)\nRTs are not responsible for content in this section.\n\n\n16.2.2 Role-Based Permissions (Subsec B2)\n\n16.2.2.1 Are roles and permissions in REDCap configured to ensure that users only have the minimum necessary access to perform their job functions?\nREDCap allows fine-grained permissions to users and groups within each project.\nIt is the RT’s responsibility to assign other study team members the appropriate permissions, while following the principles of least privilege.\n\n\n16.2.2.2 Are permission sets periodically reviewed to confirm they still align with user job functions?\nYes, the REDCap dashboard to allow someone to quickly review the study’s users, groups, and permissions. It is the RT’s responsibility to periodically review this dashboard.\n\n\n16.2.2.3 Do you enforce the principle of least privilege (admins vs. data entry vs. monitors)?\nThe RT works with their team members and should be aware of their roles approved by the IRB.\nIt is the RT’s responsibility to assign the appropriate levels of privileges.",
     "crumbs": [
       "Checklists",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
     ]
   },
   {
-    "objectID": "check/part11.html#record-retention-section-g",
-    "href": "check/part11.html#record-retention-section-g",
+    "objectID": "check/part11.html#sec-check-part11-retention",
+    "href": "check/part11.html#sec-check-part11-retention",
     "title": "16  21 CFR Part 11 Requirements of the Researcher",
-    "section": "16.3 Record Retention (Section G)",
-    "text": "16.3 Record Retention (Section G)\n\n16.3.1 Long-Term Accessibility (Subsection G2)\n\n16.3.1.1 Are file formats chosen to ensure long-term readability (e.g., PDF, CSV)?\nREDCap provides the export formats shown in Figure 16.1, ranging from the highly-portable (e.g., .csv: comma separate value) to the specialized and proprietary (e.g., .sas7bdat: SAS files).\nTo promote portability and long-term usefulness, we recommend exporting data as a csv. Even if you want something specialized in the short-term (e.g., an SPSS file), we recommend exporting and storing second copy (as a csv) to improve the options available to others in the future.\n\n\n\n\n\n\nFigure 16.1: Data Export Formats.",
+    "section": "16.3 Record Retention (Sec G)",
+    "text": "16.3 Record Retention (Sec G)\n\n16.3.1 Long-Term Accessibility (Subsec G2)\n\n16.3.1.1 Are file formats chosen to ensure long-term readability (e.g., PDF, CSV)?\nREDCap provides the export formats shown in Figure 16.1, ranging from the highly-portable (e.g., .csv: comma separate value) to the specialized and proprietary (e.g., .sas7bdat: SAS files).\nTo promote portability and long-term usefulness, we recommend exporting data as a csv. Even if you want something specialized in the short-term (e.g., an SPSS file), we recommend exporting and storing second copy (as a csv) to improve the options available to others in the future.\n\n\n\n\n\n\nFigure 16.1: Data Export Formats.",
     "crumbs": [
       "Checklists",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
