@@ -430,6 +430,9 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#sec-check-part11-access-authentication" id="toc-sec-check-part11-access-authentication" class="nav-link" data-scroll-target="#sec-check-part11-access-authentication"><span class="header-section-number">16.2.1</span> User Authentication (Subsec B1)</a></li>
   <li><a href="#sec-check-part11-access-role" id="toc-sec-check-part11-access-role" class="nav-link" data-scroll-target="#sec-check-part11-access-role"><span class="header-section-number">16.2.2</span> Role-Based Permissions (Subsec B2)</a></li>
+  <li><a href="#sec-check-part11-role-privisioning" id="toc-sec-check-part11-role-privisioning" class="nav-link" data-scroll-target="#sec-check-part11-role-privisioning"><span class="header-section-number">16.2.3</span> Account Provisioning and Deprivisioning (Subsec B3)</a></li>
+  <li><a href="#sec-check-part11-audit-trail" id="toc-sec-check-part11-audit-trail" class="nav-link" data-scroll-target="#sec-check-part11-audit-trail"><span class="header-section-number">16.2.4</span> Audit Trail Review (Subsec C3)</a></li>
+  <li><a href="#sec-check-part11-dataentry-validation" id="toc-sec-check-part11-dataentry-validation" class="nav-link" data-scroll-target="#sec-check-part11-dataentry-validation"><span class="header-section-number">16.2.5</span> Data Entry and Validation Checks (Subsec C4)</a></li>
   </ul></li>
   <li><a href="#sec-check-part11-retention" id="toc-sec-check-part11-retention" class="nav-link" data-scroll-target="#sec-check-part11-retention"><span class="header-section-number">16.3</span> Record Retention (Sec G)</a>
   <ul class="collapse">
@@ -525,6 +528,57 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <h4 data-number="16.2.2.3" class="anchored" data-anchor-id="sec-check-part11-access-role-least"><span class="header-section-number">16.2.2.3</span> Do you enforce the principle of least privilege (admins vs.&nbsp;data entry vs.&nbsp;monitors)?</h4>
 <p>The RT works with their team members and should be aware of their roles approved by the IRB.</p>
 <p>It is the RT’s responsibility to assign the appropriate levels of privileges.</p>
+</section>
+</section>
+<section id="sec-check-part11-role-privisioning" class="level3" data-number="16.2.3">
+<h3 data-number="16.2.3" class="anchored" data-anchor-id="sec-check-part11-role-privisioning"><span class="header-section-number">16.2.3</span> Account Provisioning and Deprivisioning (Subsec B3)</h3>
+<section id="sec-check-part11-role-privisioning-access" class="level4" data-number="16.2.3.1">
+<h4 data-number="16.2.3.1" class="anchored" data-anchor-id="sec-check-part11-role-privisioning-access"><span class="header-section-number">16.2.3.1</span> Is there a clear process to grant, modify, or revoke system access when personnel changes roles or leave the organization?</h4>
+<p>Yes, the REDCap user rights dashboard allows RT staff to easily grant, modify, or revoke system access when personnel changes occur.</p>
+<p>It is the RT’s responsibility to monitor staff changes and make the appropriate system access modifications when necessary.</p>
+</section>
+<section id="sec-check-part11-role-privisioning-departure" class="level4" data-number="16.2.3.2">
+<h4 data-number="16.2.3.2" class="anchored" data-anchor-id="sec-check-part11-role-privisioning-departure"><span class="header-section-number">16.2.3.2</span> Must accounts be removed within a certain time frame (e.g., 24 hours) after staff departure</h4>
+<p>Yes, REDCap allows for the expedient removal of staff from the appropriate REDCap projects..</p>
+<p>It is the RT’s responsibility to monitor staff changes and remove accounts from the projects.</p>
+</section>
+<section id="sec-check-part11-role-privisioning-training" class="level4" data-number="16.2.3.3">
+<h4 data-number="16.2.3.3" class="anchored" data-anchor-id="sec-check-part11-role-privisioning-training"><span class="header-section-number">16.2.3.3</span> Do new users undergo formal training or competency checks before access is granted?</h4>
+<p>Yes, the RA team provides general REDCap training on how to operate the system. The RT will be responsible for training and competency check for the specific project that new staff will be using.</p>
+</section>
+</section>
+<section id="sec-check-part11-audit-trail" class="level3" data-number="16.2.4">
+<h3 data-number="16.2.4" class="anchored" data-anchor-id="sec-check-part11-audit-trail"><span class="header-section-number">16.2.4</span> Audit Trail Review (Subsec C3)</h3>
+<section id="sec-check-part11-audit-trail-review" class="level4" data-number="16.2.4.1">
+<h4 data-number="16.2.4.1" class="anchored" data-anchor-id="sec-check-part11-audit-trail-review"><span class="header-section-number">16.2.4.1</span> Is there a process for periodically reviewing audit trails and investigating any anomalies?</h4>
+<p>Yes, REDCap maintains an audit log for all transactions within a specific project. It is easily accessible and downloadable as a .csv file.</p>
+<p>It is the responsibility of the RT to review the audit logs and investigate any anomalies.</p>
+</section>
+<section id="sec-check-part11-audit-trail-schedule" class="level4" data-number="16.2.4.2">
+<h4 data-number="16.2.4.2" class="anchored" data-anchor-id="sec-check-part11-audit-trail-schedule"><span class="header-section-number">16.2.4.2</span> Is there a routine schedule (monthly, quarterly) for audit trail reviews?</h4>
+<p>With the accessibility of the REDCap audit log, scheduling of reviews can be done at any appropriate schedule.</p>
+<p>It is the responsibility of the RT to schedule the audit trail reviews.</p>
+</section>
+<section id="sec-check-part11-audit-trail-responsibility" class="level4" data-number="16.2.4.3">
+<h4 data-number="16.2.4.3" class="anchored" data-anchor-id="sec-check-part11-audit-trail-responsibility"><span class="header-section-number">16.2.4.3</span> Who is responsible for these reviews, and are they qualified to interpret logs?</h4>
+<p>REDCap maintains the audit log in an accessible and downloadable format.</p>
+<p>The RT is responsible for assigned the reviewer and determining their qualification to interpret the logs.</p>
+</section>
+<section id="sec-check-part11-audit-trail-forensicreview" class="level4" data-number="16.2.4.4">
+<h4 data-number="16.2.4.4" class="anchored" data-anchor-id="sec-check-part11-audit-trail-forensicreview"><span class="header-section-number">16.2.4.4</span> Do you conduct forensic reviews if suspicious activity is detected?</h4>
+<p>The RT is responsible for conducting forensic reviews if suspicious activity is detected.</p>
+</section>
+</section>
+<section id="sec-check-part11-dataentry-validation" class="level3" data-number="16.2.5">
+<h3 data-number="16.2.5" class="anchored" data-anchor-id="sec-check-part11-dataentry-validation"><span class="header-section-number">16.2.5</span> Data Entry and Validation Checks (Subsec C4)</h3>
+<section id="sec-check-part11-dataentry-validation-preventerrors" class="level4" data-number="16.2.5.1">
+<h4 data-number="16.2.5.1" class="anchored" data-anchor-id="sec-check-part11-dataentry-validation-preventerrors"><span class="header-section-number">16.2.5.1</span> Do you conduct forensic reviews if suspicious activity is detected?</h4>
+<p>Yes, REDCap allows data fields to be configured with multiple data validation rules. These rules include format checks, ranges for dates and numeric entries, required fields, and designating that a field is an identifier. REDCap also utilizes functionality called “Action Tags” to further ensure that data are collected in an accurate efficient manner. The RA team can train the RT on all of these features, but it is the responsibility of the RT to implement the features into their projects.</p>
+</section>
+<section id="sec-check-part11-dataentry-validation-corrections" class="level4" data-number="16.2.5.2">
+<h4 data-number="16.2.5.2" class="anchored" data-anchor-id="sec-check-part11-dataentry-validation-corrections"><span class="header-section-number">16.2.5.2</span> How do you handle data corrections or errors (formal data query, edit check process?</h4>
+<p>REDCap allows for users with appropriate permissions to correct data or errors within a project. Any changes to the data are recorded in the REDCap audit log. Additionally, REDCap has a field comment log for each for field. The field comment log allows users to record the reason they are making a modification to the data for each field that needs to be corrected.</p>
+<p>It is the responsibilty of the RT to make data corrections or address errors.</p>
 </section>
 </section>
 </section>
