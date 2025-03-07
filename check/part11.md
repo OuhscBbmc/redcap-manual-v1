@@ -130,6 +130,32 @@ record the reason they are making a modification to the data for each field that
 
 It is the responsibilty of the RT to make data corrections or address errors.
 
+#### When data collection instruments are updated, is the previous version retained to show how dat awas collected at any point in time? {#sec-check-part11-dataentry-validation-versioncontrol}
+
+Yes, REDCap, when in production mode, creates a snapshot of all data collection instruments whenever a changes is requested.  
+
+It is the responsibility of the RT to ensure that REDCap is in production mode prior to collecting research data.
+
+#### Does the system lock old forms when a new version is released, preventing retrospective changes? {#sec-check-part11-dataentry-validation-locking}
+
+Yes, when a new version of a form is released, the old form is retired from data entry.  
+
+#### How do you inform users about updated forms (e.g., release notes, training)? {#sec-check-part11-dataentry-validation-updates}
+
+When a REDCap project is in production and updates are requested, the individual on the RT requesting the changes will receive an email notification from the system when the changes
+have been approved.  
+
+It is the responsibility of the change requestor to inform the remainder of the RT of any changes that have been made.
+
+#### Do you use encryption of secure FTP for high-risk data transfers? {#sec-check-part11-dataentry-validation-datatransfer}
+
+REDCap stores data in secure vm's on the OUHSC campus.  It is the responsibility of the RT to ensure the security of that data when it has been
+extracted from REDCap.
+
+#### How do you ensure integrity if data are exported for analysis outside of REDCap? {#sec-check-part11-dataentry-validation-datatransfer}
+
+It is the responsibility of the RT to ensure the security of data if it has been exported outside of REDCap for analysis.
+
 ## Record Retention (Sec G) {#sec-check-part11-retention}
 
 ### Long-Term Accessibility (Subsec G2) {#sec-check-part11-retention-accessibility}
