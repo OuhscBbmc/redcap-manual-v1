@@ -580,6 +580,28 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>REDCap allows for users with appropriate permissions to correct data or errors within a project. Any changes to the data are recorded in the REDCap audit log. Additionally, REDCap has a field comment log for each for field. The field comment log allows users to record the reason they are making a modification to the data for each field that needs to be corrected.</p>
 <p>It is the responsibilty of the RT to make data corrections or address errors.</p>
 </section>
+<section id="sec-check-part11-dataentry-validation-versioncontrol" class="level4" data-number="16.2.5.3">
+<h4 data-number="16.2.5.3" class="anchored" data-anchor-id="sec-check-part11-dataentry-validation-versioncontrol"><span class="header-section-number">16.2.5.3</span> When data collection instruments are updated, is the previous version retained to show how dat awas collected at any point in time?</h4>
+<p>Yes, REDCap, when in production mode, creates a snapshot of all data collection instruments whenever a changes is requested.</p>
+<p>It is the responsibility of the RT to ensure that REDCap is in production mode prior to collecting research data.</p>
+</section>
+<section id="sec-check-part11-dataentry-validation-locking" class="level4" data-number="16.2.5.4">
+<h4 data-number="16.2.5.4" class="anchored" data-anchor-id="sec-check-part11-dataentry-validation-locking"><span class="header-section-number">16.2.5.4</span> Does the system lock old forms when a new version is released, preventing retrospective changes?</h4>
+<p>Yes, when a new version of a form is released, the old form is retired from data entry.</p>
+</section>
+<section id="sec-check-part11-dataentry-validation-updates" class="level4" data-number="16.2.5.5">
+<h4 data-number="16.2.5.5" class="anchored" data-anchor-id="sec-check-part11-dataentry-validation-updates"><span class="header-section-number">16.2.5.5</span> How do you inform users about updated forms (e.g., release notes, training)?</h4>
+<p>When a REDCap project is in production and updates are requested, the individual on the RT requesting the changes will receive an email notification from the system when the changes have been approved.</p>
+<p>It is the responsibility of the change requestor to inform the remainder of the RT of any changes that have been made.</p>
+</section>
+<section id="sec-check-part11-dataentry-validation-datatransfer" class="level4" data-number="16.2.5.6">
+<h4 data-number="16.2.5.6" class="anchored" data-anchor-id="sec-check-part11-dataentry-validation-datatransfer"><span class="header-section-number">16.2.5.6</span> Do you use encryption of secure FTP for high-risk data transfers?</h4>
+<p>REDCap stores data in secure vm’s on the OUHSC campus. It is the responsibility of the RT to ensure the security of that data when it has been extracted from REDCap.</p>
+</section>
+<section id="sec-check-part11-dataentry-validation-datatransfer" class="level4" data-number="16.2.5.7">
+<h4 data-number="16.2.5.7" class="anchored" data-anchor-id="sec-check-part11-dataentry-validation-datatransfer"><span class="header-section-number">16.2.5.7</span> How do you ensure integrity if data are exported for analysis outside of REDCap?</h4>
+<p>It is the responsibility of the RT to ensure the security of data if it has been exported outside of REDCap for analysis.</p>
+</section>
 </section>
 </section>
 <section id="sec-check-part11-retention" class="level2" data-number="16.3">
