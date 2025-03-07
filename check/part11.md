@@ -71,6 +71,65 @@ The RT works with their team members and should be aware of their roles approved
 
 It is the RT's responsibility to assign the appropriate levels of privileges.
 
+### Account Provisioning and Deprivisioning (Subsec B3) {#sec-check-part11-role-privisioning}
+
+#### Is there a clear process to grant, modify, or revoke system access when personnel changes roles or leave the organization? {#sec-check-part11-role-privisioning-access}
+
+Yes, the REDCap user rights dashboard allows RT staff to easily grant, modify, or revoke system access when personnel changes occur.
+
+It is the RT's responsibility to monitor staff changes and make the appropriate system access modifications when necessary.
+
+#### Must accounts be removed within a certain time frame (e.g., 24 hours) after staff departure {#sec-check-part11-role-privisioning-departure}
+
+Yes, REDCap allows for the expedient removal of staff from the appropriate REDCap projects..
+
+It is the RT's responsibility to monitor staff changes and remove accounts from the projects. 
+
+#### Do new users undergo formal training or competency checks before access is granted? {#sec-check-part11-role-privisioning-training}
+
+Yes, the RA team provides general REDCap training on how to operate the system.  The RT will be responsible for training and competency check for the specific project that new staff will be using.
+
+### Audit Trail Review (Subsec C3) {#sec-check-part11-audit-trail}
+
+#### Is there a process for periodically reviewing audit trails and investigating any anomalies? {#sec-check-part11-audit-trail-review}
+
+Yes, REDCap maintains an audit log for all transactions within a specific project.  It is easily accessible and downloadable as a .csv file.
+
+It is the responsibility of the RT to review the audit logs and investigate any anomalies.
+
+#### Is there a routine schedule (monthly, quarterly) for audit trail reviews? {#sec-check-part11-audit-trail-schedule}
+
+With the accessibility of the REDCap audit log, scheduling of reviews can be done at any appropriate schedule.
+
+It is the responsibility of the RT to schedule the audit trail reviews.
+
+#### Who is responsible for these reviews, and are they qualified to interpret logs? {#sec-check-part11-audit-trail-responsibility}
+
+REDCap maintains the audit log in an accessible and downloadable format. 
+
+The RT is responsible for assigned the reviewer and determining their qualification to interpret the logs.  
+
+#### Do you conduct forensic reviews if suspicious activity is detected? {#sec-check-part11-audit-trail-forensicreview}
+
+The RT is responsible for conducting forensic reviews if suspicious activity is detected.
+
+### Data Entry and Validation Checks (Subsec C4) {#sec-check-part11-dataentry-validation}
+
+#### Do you conduct forensic reviews if suspicious activity is detected? {#sec-check-part11-dataentry-validation-preventerrors}
+
+Yes, REDCap allows data fields to be configured with multiple data validation rules.  These rules include format checks, ranges for dates
+and numeric entries, required fields, and designating that a field is an identifier.  REDCap also utilizes functionality called "Action Tags"
+to further ensure that data are collected in an accurate efficient manner.  The RA team can train the RT on all of these features,
+but it is the responsibility of the RT to implement the features into their projects.
+
+#### How do you handle data corrections or errors (formal data query, edit check process? {#sec-check-part11-dataentry-validation-corrections}
+
+REDCap allows for users with appropriate permissions to correct data or errors within a project.  Any changes to the data are recorded in
+the REDCap audit log.  Additionally, REDCap has a field comment log for each for field.  The field comment log allows users to
+record the reason they are making a modification to the data for each field that needs to be corrected.
+
+It is the responsibilty of the RT to make data corrections or address errors.
+
 ## Record Retention (Sec G) {#sec-check-part11-retention}
 
 ### Long-Term Accessibility (Subsec G2) {#sec-check-part11-retention-accessibility}
