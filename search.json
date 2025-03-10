@@ -568,11 +568,22 @@
     ]
   },
   {
-    "objectID": "check/part11.html#sec-check-part11-retention",
-    "href": "check/part11.html#sec-check-part11-retention",
+    "objectID": "check/part11.html#sec-check-part11-esignatures",
+    "href": "check/part11.html#sec-check-part11-esignatures",
     "title": "16  21 CFR Part 11 Requirements of the Researcher",
-    "section": "16.3 Record Retention (Sec G)",
-    "text": "16.3 Record Retention (Sec G)\n\n16.3.1 Long-Term Accessibility (Subsec G2)\n\n16.3.1.1 Are file formats chosen to ensure long-term readability (e.g., PDF, CSV)?\nREDCap provides the export formats shown in Figure 16.1, ranging from the highly-portable (e.g., .csv: comma separate value) to the specialized and proprietary (e.g., .sas7bdat: SAS files).\nTo promote portability and long-term usefulness, we recommend exporting data as a csv. Even if you want something specialized in the short-term (e.g., an SPSS file), we recommend exporting and storing second copy (as a csv) to improve the options available to others in the future.\n\n\n\n\n\n\nFigure 16.1: Data Export Formats.",
+    "section": "16.3 Electronic Signatures (Sec E)",
+    "text": "16.3 Electronic Signatures (Sec E)\n\n16.3.1 Long-Term Accessibility (Subsec E2)\n\n16.3.1.1 Does the signature record include the printed name of the signer, date/time of signing, and the meaning of the signature (e.g., review, approval)?\nYes, REDCap has the capability of collecting all of these various signature components. These components must be incorporated into the design of the REDCap survey.\nIt is the responsbility of the RT to ensure that all required signature components are included in their REDCap survey.\n\n\n16.3.1.2 Is the date/time automatically captured by the system (vs. user-entered)?\nYes, REDCap automatically captures the survey completion date/time. REDCap also has the capability of capturing the date in a separate field which can either be manually entered or automatically captured.\nIt is the responsibility of the RT to design and implement the appropriate date/time capture as is appropriate for their study.\n\n\n16.3.1.3 Can different signature “meanings” be captured (reviewed, approved, verified)?\nYes, REDCap can have multiple signature field meanings. Each signature meaning can have a custom definition based on the specific needs of the study.\nIt is the responsibility of the RT to design and define any and all signature fields for their study.",
+    "crumbs": [
+      "Checklists",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
+    ]
+  },
+  {
+    "objectID": "check/part11.html#sec-check-part11-sop",
+    "href": "check/part11.html#sec-check-part11-sop",
+    "title": "16  21 CFR Part 11 Requirements of the Researcher",
+    "section": "16.4 Organizational Policies and SOPs (Sec F)",
+    "text": "16.4 Organizational Policies and SOPs (Sec F)\n\n16.4.1 User Training (Subsec F2)\n\n16.4.1.1 Are all users (administrators and end-users) trained on system use, Part 11 awareness, and data integrity principles?\nYes, the REDCap admin team offers training on system use and data integrity principles. It is the responsibility of the RT to schedule training for their staff.\n\n\n16.4.1.2 Is there role-specific training (admin vs. standard user vs. data manager)?\nIt is the responsibility of the RT to determine the role-based needs for their staff and implement training.\n\n\n16.4.1.3 Are competency tests used to confirm user understanding of Part 11 principles?\nIt is the responsibility of the RT to confirm user understanding of Part 11 principles. ## Record Retention (Sec G) {#sec-check-part11-retention}\n\n\n\n16.4.2 Long-Term Accessibility (Subsec G2)\n\n16.4.2.1 Are file formats chosen to ensure long-term readability (e.g., PDF, CSV)?\nREDCap provides the export formats shown in Figure 16.1, ranging from the highly-portable (e.g., .csv: comma separate value) to the specialized and proprietary (e.g., .sas7bdat: SAS files).\nTo promote portability and long-term usefulness, we recommend exporting data as a csv. Even if you want something specialized in the short-term (e.g., an SPSS file), we recommend exporting and storing second copy (as a csv) to improve the options available to others in the future.\n\n\n\n\n\n\nFigure 16.1: Data Export Formats.",
     "crumbs": [
       "Checklists",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"

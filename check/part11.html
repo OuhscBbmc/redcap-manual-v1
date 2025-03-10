@@ -434,9 +434,14 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <li><a href="#sec-check-part11-audit-trail" id="toc-sec-check-part11-audit-trail" class="nav-link" data-scroll-target="#sec-check-part11-audit-trail"><span class="header-section-number">16.2.4</span> Audit Trail Review (Subsec C3)</a></li>
   <li><a href="#sec-check-part11-dataentry-validation" id="toc-sec-check-part11-dataentry-validation" class="nav-link" data-scroll-target="#sec-check-part11-dataentry-validation"><span class="header-section-number">16.2.5</span> Data Entry and Validation Checks (Subsec C4)</a></li>
   </ul></li>
-  <li><a href="#sec-check-part11-retention" id="toc-sec-check-part11-retention" class="nav-link" data-scroll-target="#sec-check-part11-retention"><span class="header-section-number">16.3</span> Record Retention (Sec G)</a>
+  <li><a href="#sec-check-part11-esignatures" id="toc-sec-check-part11-esignatures" class="nav-link" data-scroll-target="#sec-check-part11-esignatures"><span class="header-section-number">16.3</span> Electronic Signatures (Sec E)</a>
   <ul class="collapse">
-  <li><a href="#sec-check-part11-retention-accessibility" id="toc-sec-check-part11-retention-accessibility" class="nav-link" data-scroll-target="#sec-check-part11-retention-accessibility"><span class="header-section-number">16.3.1</span> Long-Term Accessibility (Subsec G2)</a></li>
+  <li><a href="#sec-check-part11-esignatures-components" id="toc-sec-check-part11-esignatures-components" class="nav-link" data-scroll-target="#sec-check-part11-esignatures-components"><span class="header-section-number">16.3.1</span> Long-Term Accessibility (Subsec E2)</a></li>
+  </ul></li>
+  <li><a href="#sec-check-part11-sop" id="toc-sec-check-part11-sop" class="nav-link" data-scroll-target="#sec-check-part11-sop"><span class="header-section-number">16.4</span> Organizational Policies and SOPs (Sec F)</a>
+  <ul class="collapse">
+  <li><a href="#sec-check-part11-training" id="toc-sec-check-part11-training" class="nav-link" data-scroll-target="#sec-check-part11-training"><span class="header-section-number">16.4.1</span> User Training (Subsec F2)</a></li>
+  <li><a href="#sec-check-part11-retention-accessibility" id="toc-sec-check-part11-retention-accessibility" class="nav-link" data-scroll-target="#sec-check-part11-retention-accessibility"><span class="header-section-number">16.4.2</span> Long-Term Accessibility (Subsec G2)</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/check/part11.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/check/part11.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
@@ -604,12 +609,48 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </section>
 </section>
 </section>
-<section id="sec-check-part11-retention" class="level2" data-number="16.3">
-<h2 data-number="16.3" class="anchored" data-anchor-id="sec-check-part11-retention"><span class="header-section-number">16.3</span> Record Retention (Sec G)</h2>
-<section id="sec-check-part11-retention-accessibility" class="level3" data-number="16.3.1">
-<h3 data-number="16.3.1" class="anchored" data-anchor-id="sec-check-part11-retention-accessibility"><span class="header-section-number">16.3.1</span> Long-Term Accessibility (Subsec G2)</h3>
-<section id="sec-check-part11-retention-accessibility-longterm" class="level4" data-number="16.3.1.1">
-<h4 data-number="16.3.1.1" class="anchored" data-anchor-id="sec-check-part11-retention-accessibility-longterm"><span class="header-section-number">16.3.1.1</span> Are file formats chosen to ensure long-term readability (e.g., PDF, CSV)?</h4>
+<section id="sec-check-part11-esignatures" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="sec-check-part11-esignatures"><span class="header-section-number">16.3</span> Electronic Signatures (Sec E)</h2>
+<section id="sec-check-part11-esignatures-components" class="level3" data-number="16.3.1">
+<h3 data-number="16.3.1" class="anchored" data-anchor-id="sec-check-part11-esignatures-components"><span class="header-section-number">16.3.1</span> Long-Term Accessibility (Subsec E2)</h3>
+<section id="sec-check-part11-esignatures-components-datetime" class="level4" data-number="16.3.1.1">
+<h4 data-number="16.3.1.1" class="anchored" data-anchor-id="sec-check-part11-esignatures-components-datetime"><span class="header-section-number">16.3.1.1</span> Does the signature record include the printed name of the signer, date/time of signing, and the meaning of the signature (e.g., review, approval)?</h4>
+<p>Yes, REDCap has the capability of collecting all of these various signature components. These components must be incorporated into the design of the REDCap survey.</p>
+<p>It is the responsbility of the RT to ensure that all required signature components are included in their REDCap survey.</p>
+</section>
+<section id="sec-check-part11-esignatures-components-datetime" class="level4" data-number="16.3.1.2">
+<h4 data-number="16.3.1.2" class="anchored" data-anchor-id="sec-check-part11-esignatures-components-datetime"><span class="header-section-number">16.3.1.2</span> Is the date/time automatically captured by the system (vs.&nbsp;user-entered)?</h4>
+<p>Yes, REDCap automatically captures the survey completion date/time. REDCap also has the capability of capturing the date in a separate field which can either be manually entered or automatically captured.</p>
+<p>It is the responsibility of the RT to design and implement the appropriate date/time capture as is appropriate for their study.</p>
+</section>
+<section id="sec-check-part11-esignatures-components-multiple-signature" class="level4" data-number="16.3.1.3">
+<h4 data-number="16.3.1.3" class="anchored" data-anchor-id="sec-check-part11-esignatures-components-multiple-signature"><span class="header-section-number">16.3.1.3</span> Can different signature “meanings” be captured (reviewed, approved, verified)?</h4>
+<p>Yes, REDCap can have multiple signature field meanings. Each signature meaning can have a custom definition based on the specific needs of the study.</p>
+<p>It is the responsibility of the RT to design and define any and all signature fields for their study.</p>
+</section>
+</section>
+</section>
+<section id="sec-check-part11-sop" class="level2" data-number="16.4">
+<h2 data-number="16.4" class="anchored" data-anchor-id="sec-check-part11-sop"><span class="header-section-number">16.4</span> Organizational Policies and SOPs (Sec F)</h2>
+<section id="sec-check-part11-training" class="level3" data-number="16.4.1">
+<h3 data-number="16.4.1" class="anchored" data-anchor-id="sec-check-part11-training"><span class="header-section-number">16.4.1</span> User Training (Subsec F2)</h3>
+<section id="sec-check-part11-esignatures-training-part11" class="level4" data-number="16.4.1.1">
+<h4 data-number="16.4.1.1" class="anchored" data-anchor-id="sec-check-part11-esignatures-training-part11"><span class="header-section-number">16.4.1.1</span> Are all users (administrators and end-users) trained on system use, Part 11 awareness, and data integrity principles?</h4>
+<p>Yes, the REDCap admin team offers training on system use and data integrity principles. It is the responsibility of the RT to schedule training for their staff.</p>
+</section>
+<section id="sec-check-part11-esignatures-training-rolebased" class="level4" data-number="16.4.1.2">
+<h4 data-number="16.4.1.2" class="anchored" data-anchor-id="sec-check-part11-esignatures-training-rolebased"><span class="header-section-number">16.4.1.2</span> Is there role-specific training (admin vs.&nbsp;standard user vs.&nbsp;data manager)?</h4>
+<p>It is the responsibility of the RT to determine the role-based needs for their staff and implement training.</p>
+</section>
+<section id="sec-check-part11-esignatures-training-rolebased" class="level4" data-number="16.4.1.3">
+<h4 data-number="16.4.1.3" class="anchored" data-anchor-id="sec-check-part11-esignatures-training-rolebased"><span class="header-section-number">16.4.1.3</span> Are competency tests used to confirm user understanding of Part 11 principles?</h4>
+<p>It is the responsibility of the RT to confirm user understanding of Part 11 principles. ## Record Retention (Sec G) {#sec-check-part11-retention}</p>
+</section>
+</section>
+<section id="sec-check-part11-retention-accessibility" class="level3" data-number="16.4.2">
+<h3 data-number="16.4.2" class="anchored" data-anchor-id="sec-check-part11-retention-accessibility"><span class="header-section-number">16.4.2</span> Long-Term Accessibility (Subsec G2)</h3>
+<section id="sec-check-part11-retention-accessibility-longterm" class="level4" data-number="16.4.2.1">
+<h4 data-number="16.4.2.1" class="anchored" data-anchor-id="sec-check-part11-retention-accessibility-longterm"><span class="header-section-number">16.4.2.1</span> Are file formats chosen to ensure long-term readability (e.g., PDF, CSV)?</h4>
 <p>REDCap provides the export formats shown in <a href="#fig-check-part11-200-export-formats" class="quarto-xref">Figure&nbsp;<span>16.1</span></a>, ranging from the highly-portable (<em>e.g.</em>, .csv: comma separate value) to the specialized and proprietary (<em>e.g.</em>, .sas7bdat: SAS files).</p>
 <p>To promote portability and long-term usefulness, we recommend exporting data as a csv. Even if you want something specialized in the short-term (<em>e.g.</em>, an SPSS file), we recommend exporting and storing second copy (as a csv) to improve the options available to others in the future.</p>
 <div id="fig-check-part11-200-export-formats" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Data Export Formats">
