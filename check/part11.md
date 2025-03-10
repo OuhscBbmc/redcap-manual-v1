@@ -156,6 +156,43 @@ extracted from REDCap.
 
 It is the responsibility of the RT to ensure the security of data if it has been exported outside of REDCap for analysis.
 
+## Electronic Signatures (Sec E) {#sec-check-part11-esignatures}
+
+### Long-Term Accessibility (Subsec E2) {#sec-check-part11-esignatures-components}
+
+#### Does the signature record include the printed name of the signer, date/time of signing, and the meaning of the signature (e.g., review, approval)? {#sec-check-part11-esignatures-components-datetime}
+
+Yes, REDCap has the capability of collecting all of these various signature components.  These components must be incorporated into the design of the REDCap survey.  
+
+It is the responsbility of the RT to ensure that all required signature components are included in their REDCap survey.
+
+#### Is the date/time automatically captured by the system (vs. user-entered)? {#sec-check-part11-esignatures-components-datetime}
+
+Yes, REDCap automatically captures the survey completion date/time.  REDCap also has the capability of capturing the date in a separate field which can either be manually entered or automatically captured.
+
+It is the responsibility of the RT to design and implement the appropriate date/time capture as is appropriate for their study.
+
+#### Can different signature "meanings" be captured (reviewed, approved, verified)? {#sec-check-part11-esignatures-components-multiple-signature}
+
+Yes, REDCap can have multiple signature field meanings.  Each signature meaning can have a custom definition based on the specific needs of the study.
+
+It is the responsibility of the RT to design and define any and all signature fields for their study.
+
+## Organizational Policies and SOPs (Sec F) {#sec-check-part11-sop}
+
+### User Training (Subsec F2) {#sec-check-part11-training}
+
+#### Are all users (administrators and end-users) trained on system use, Part 11 awareness, and data integrity principles? {#sec-check-part11-esignatures-training-part11}
+
+Yes, the REDCap admin team offers training on system use and data integrity principles.  It is the responsibility of the RT to schedule training for their staff.
+
+#### Is there role-specific training (admin vs. standard user vs. data manager)? {#sec-check-part11-esignatures-training-rolebased}
+
+It is the responsibility of the RT to determine the role-based needs for their staff and implement training.
+
+#### Are competency tests used to confirm user understanding of Part 11 principles? {#sec-check-part11-esignatures-training-rolebased}
+
+It is the responsibility of the RT to confirm user understanding of Part 11 principles.
 ## Record Retention (Sec G) {#sec-check-part11-retention}
 
 ### Long-Term Accessibility (Subsec G2) {#sec-check-part11-retention-accessibility}
