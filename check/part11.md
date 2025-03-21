@@ -122,13 +122,13 @@ and numeric entries, required fields, and designating that a field is an identif
 to further ensure that data are collected in an accurate efficient manner.  The RA team can train the RT on all of these features,
 but it is the responsibility of the RT to implement the features into their projects.
 
-#### How do you handle data corrections or errors (formal data query, edit check process? {#sec-check-part11-dataentry-validation-corrections}
+#### How do you handle data corrections or errors (formal data query, edit check process)? {#sec-check-part11-dataentry-validation-corrections}
 
 REDCap allows for users with appropriate permissions to correct data or errors within a project.  Any changes to the data are recorded in
 the REDCap audit log.  Additionally, REDCap has a field comment log for each for field.  The field comment log allows users to
 record the reason they are making a modification to the data for each field that needs to be corrected.
 
-It is the responsibilty of the RT to make data corrections or address errors.
+It is the responsibility of the RT to make data corrections or address errors.
 
 #### When data collection instruments are updated, is the previous version retained to show how dat awas collected at any point in time? {#sec-check-part11-dataentry-validation-versioncontrol}
 
@@ -162,13 +162,16 @@ It is the responsibility of the RT to ensure the security of data if it has been
 
 #### Does the signature record include the printed name of the signer, date/time of signing, and the meaning of the signature (e.g., review, approval)? {#sec-check-part11-esignatures-components-datetime}
 
-Yes, REDCap has the capability of collecting all of these various signature components.  These components must be incorporated into the design of the REDCap survey.  
+Yes, REDCap has the capability of collecting all of these various signature components.  
+These components must be incorporated into the design of the REDCap survey.  
 
-It is the responsbility of the RT to ensure that all required signature components are included in their REDCap survey.
+It is the responsibility of the RT to ensure that all required signature components are included in their REDCap survey.
 
 #### Is the date/time automatically captured by the system (vs. user-entered)? {#sec-check-part11-esignatures-components-datetime}
 
-Yes, REDCap automatically captures the survey completion date/time.  REDCap also has the capability of capturing the date in a separate field which can either be manually entered or automatically captured.
+Yes, REDCap automatically captures the survey completion date/time.  
+REDCap also has the capability of capturing the date
+in a separate field which can either be manually entered or automatically captured.
 
 It is the responsibility of the RT to design and implement the appropriate date/time capture as is appropriate for their study.
 
@@ -193,6 +196,7 @@ It is the responsibility of the RT to determine the role-based needs for their s
 #### Are competency tests used to confirm user understanding of Part 11 principles? {#sec-check-part11-esignatures-training-rolebased}
 
 It is the responsibility of the RT to confirm user understanding of Part 11 principles.
+
 ## Record Retention (Sec G) {#sec-check-part11-retention}
 
 ### Long-Term Accessibility (Subsec G2) {#sec-check-part11-retention-accessibility}
