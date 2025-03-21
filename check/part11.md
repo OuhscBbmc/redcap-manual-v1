@@ -22,14 +22,14 @@ csl: ../assets/csl/apa-7e.csl
 
 # 21 CFR Part 11 Requirements of the Researcher {#sec-check-part11}
 
-**Chapter Leads**: Thomas Wilson
+**Chapter Leads**: Thomas Wilson and William H. Beasley
 
 Glossary:
 
 * _RA_: REDCap Administrators.
-  OU employees that are responsible for the overall instance on campus.
+  OU employees who are responsible for the overall instance on campus.
   This includes some [OCRI](https://research.ouhsc.edu/ocri) employees (like Thomas Wilson)
-  train users and manage the back-end servers.
+  who train users and manage the back-end servers.
   It also includes OU IT employees who are experts in virtual servers and Linux.
 
 * _RD_: REDCap Developer. Vandy {Come back to this.}
@@ -88,7 +88,7 @@ and make the appropriate system access modifications when necessary.
 
 #### Must accounts be removed within a certain time frame (e.g., 24 hours) after staff departure {#sec-check-part11-role-provisioning-departure}
 
-Yes, REDCap allows for the expedient removal of staff from the appropriate REDCap projects..
+Yes, REDCap allows for the expedient removal of staff from the appropriate REDCap projects.
 
 It is the RT's responsibility to monitor staff changes and remove accounts from the projects.
 
@@ -117,7 +117,7 @@ It is the responsibility of the RT to schedule the audit trail reviews.
 
 REDCap maintains the audit log in an accessible and downloadable format.
 
-The RT is responsible for assigned the reviewer and determining their qualification to interpret the logs.
+The RT is responsible for assigning the reviewer and determining their qualification to interpret the logs.
 
 #### Do you conduct forensic reviews if suspicious activity is detected? {#sec-check-part11-audit-trail-forensicreview}
 
@@ -131,7 +131,7 @@ Yes, REDCap allows data fields to be configured with multiple data validation ru
 These rules include format checks, ranges for dates
 and numeric entries, required fields, and designating that a field is an identifier.
 REDCap also utilizes functionality called "Action Tags"
-to further ensure that data are collected in an accurate efficient manner.
+to further ensure that data are collected in an accurate, efficient manner.
 The RA team can train the RT on all of these features,
 but it is the responsibility of the RT to implement the features into their projects.
 
@@ -139,16 +139,16 @@ but it is the responsibility of the RT to implement the features into their proj
 
 REDCap allows for users with appropriate permissions to correct data or errors within a project.
 Any changes to the data are recorded in the REDCap audit log.
-Additionally, REDCap has a field comment log for each for field.
+Additionally, REDCap has a field comment log for each field.
 The field comment log allows users to
 record the reason they are making a modification to the data for each field that needs to be corrected.
 
 It is the responsibility of the RT to make data corrections or address errors.
 
-#### When data collection instruments are updated, is the previous version retained to show how dat awas collected at any point in time? {#sec-check-part11-dataentry-validation-versioncontrol}
+#### When data collection instruments are updated, is the previous version retained to show how data were collected at any point in time? {#sec-check-part11-dataentry-validation-versioncontrol}
 
 Yes, REDCap, when in production mode, creates a snapshot
-of all data collection instruments whenever a changes is requested.
+of all data collection instruments whenever a change is requested.
 
 It is the responsibility of the RT to ensure that REDCap is in production mode prior to collecting research data.
 
@@ -191,7 +191,7 @@ It is the responsibility of the RT to ensure that all required signature compone
 
 Yes, REDCap automatically captures the survey completion date/time.
 REDCap also has the capability of capturing the date
-in a separate field which can either be manually entered or automatically captured.
+in a separate field, which can be either manually entered or automatically captured.
 
 It is the responsibility of the RT to design and implement the appropriate date/time capture
 as is appropriate for their study.
@@ -219,6 +219,7 @@ It is the responsibility of the RT to determine the role-based needs for their s
 #### Are competency tests used to confirm user understanding of Part 11 principles? {#sec-check-part11-esignatures-training-rolebased}
 
 It is the responsibility of the RT to confirm user understanding of Part 11 principles.
+The RT may develop a competency test for their team, if desired.
 
 ## Record Retention (Sec G) {#sec-check-part11-retention}
 
