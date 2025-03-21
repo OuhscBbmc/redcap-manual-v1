@@ -441,7 +441,10 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <li><a href="#sec-check-part11-sop" id="toc-sec-check-part11-sop" class="nav-link" data-scroll-target="#sec-check-part11-sop"><span class="header-section-number">16.4</span> Organizational Policies and SOPs (Sec F)</a>
   <ul class="collapse">
   <li><a href="#sec-check-part11-training" id="toc-sec-check-part11-training" class="nav-link" data-scroll-target="#sec-check-part11-training"><span class="header-section-number">16.4.1</span> User Training (Subsec F2)</a></li>
-  <li><a href="#sec-check-part11-retention-accessibility" id="toc-sec-check-part11-retention-accessibility" class="nav-link" data-scroll-target="#sec-check-part11-retention-accessibility"><span class="header-section-number">16.4.2</span> Long-Term Accessibility (Subsec G2)</a></li>
+  </ul></li>
+  <li><a href="#sec-check-part11-retention" id="toc-sec-check-part11-retention" class="nav-link" data-scroll-target="#sec-check-part11-retention"><span class="header-section-number">16.5</span> Record Retention (Sec G)</a>
+  <ul class="collapse">
+  <li><a href="#sec-check-part11-retention-accessibility" id="toc-sec-check-part11-retention-accessibility" class="nav-link" data-scroll-target="#sec-check-part11-retention-accessibility"><span class="header-section-number">16.5.1</span> Long-Term Accessibility (Subsec G2)</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/check/part11.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/check/part11.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
@@ -581,9 +584,9 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>Yes, REDCap allows data fields to be configured with multiple data validation rules. These rules include format checks, ranges for dates and numeric entries, required fields, and designating that a field is an identifier. REDCap also utilizes functionality called “Action Tags” to further ensure that data are collected in an accurate efficient manner. The RA team can train the RT on all of these features, but it is the responsibility of the RT to implement the features into their projects.</p>
 </section>
 <section id="sec-check-part11-dataentry-validation-corrections" class="level4" data-number="16.2.5.2">
-<h4 data-number="16.2.5.2" class="anchored" data-anchor-id="sec-check-part11-dataentry-validation-corrections"><span class="header-section-number">16.2.5.2</span> How do you handle data corrections or errors (formal data query, edit check process?</h4>
+<h4 data-number="16.2.5.2" class="anchored" data-anchor-id="sec-check-part11-dataentry-validation-corrections"><span class="header-section-number">16.2.5.2</span> How do you handle data corrections or errors (formal data query, edit check process)?</h4>
 <p>REDCap allows for users with appropriate permissions to correct data or errors within a project. Any changes to the data are recorded in the REDCap audit log. Additionally, REDCap has a field comment log for each for field. The field comment log allows users to record the reason they are making a modification to the data for each field that needs to be corrected.</p>
-<p>It is the responsibilty of the RT to make data corrections or address errors.</p>
+<p>It is the responsibility of the RT to make data corrections or address errors.</p>
 </section>
 <section id="sec-check-part11-dataentry-validation-versioncontrol" class="level4" data-number="16.2.5.3">
 <h4 data-number="16.2.5.3" class="anchored" data-anchor-id="sec-check-part11-dataentry-validation-versioncontrol"><span class="header-section-number">16.2.5.3</span> When data collection instruments are updated, is the previous version retained to show how dat awas collected at any point in time?</h4>
@@ -615,12 +618,14 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <h3 data-number="16.3.1" class="anchored" data-anchor-id="sec-check-part11-esignatures-components"><span class="header-section-number">16.3.1</span> Long-Term Accessibility (Subsec E2)</h3>
 <section id="sec-check-part11-esignatures-components-datetime" class="level4" data-number="16.3.1.1">
 <h4 data-number="16.3.1.1" class="anchored" data-anchor-id="sec-check-part11-esignatures-components-datetime"><span class="header-section-number">16.3.1.1</span> Does the signature record include the printed name of the signer, date/time of signing, and the meaning of the signature (e.g., review, approval)?</h4>
-<p>Yes, REDCap has the capability of collecting all of these various signature components. These components must be incorporated into the design of the REDCap survey.</p>
-<p>It is the responsbility of the RT to ensure that all required signature components are included in their REDCap survey.</p>
+<p>Yes, REDCap has the capability of collecting all of these various signature components.<br>
+These components must be incorporated into the design of the REDCap survey.</p>
+<p>It is the responsibility of the RT to ensure that all required signature components are included in their REDCap survey.</p>
 </section>
 <section id="sec-check-part11-esignatures-components-datetime" class="level4" data-number="16.3.1.2">
 <h4 data-number="16.3.1.2" class="anchored" data-anchor-id="sec-check-part11-esignatures-components-datetime"><span class="header-section-number">16.3.1.2</span> Is the date/time automatically captured by the system (vs.&nbsp;user-entered)?</h4>
-<p>Yes, REDCap automatically captures the survey completion date/time. REDCap also has the capability of capturing the date in a separate field which can either be manually entered or automatically captured.</p>
+<p>Yes, REDCap automatically captures the survey completion date/time.<br>
+REDCap also has the capability of capturing the date in a separate field which can either be manually entered or automatically captured.</p>
 <p>It is the responsibility of the RT to design and implement the appropriate date/time capture as is appropriate for their study.</p>
 </section>
 <section id="sec-check-part11-esignatures-components-multiple-signature" class="level4" data-number="16.3.1.3">
@@ -644,13 +649,16 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </section>
 <section id="sec-check-part11-esignatures-training-rolebased" class="level4" data-number="16.4.1.3">
 <h4 data-number="16.4.1.3" class="anchored" data-anchor-id="sec-check-part11-esignatures-training-rolebased"><span class="header-section-number">16.4.1.3</span> Are competency tests used to confirm user understanding of Part 11 principles?</h4>
-<p>It is the responsibility of the RT to confirm user understanding of Part 11 principles. ## Record Retention (Sec G) {#sec-check-part11-retention}</p>
+<p>It is the responsibility of the RT to confirm user understanding of Part 11 principles.</p>
 </section>
 </section>
-<section id="sec-check-part11-retention-accessibility" class="level3" data-number="16.4.2">
-<h3 data-number="16.4.2" class="anchored" data-anchor-id="sec-check-part11-retention-accessibility"><span class="header-section-number">16.4.2</span> Long-Term Accessibility (Subsec G2)</h3>
-<section id="sec-check-part11-retention-accessibility-longterm" class="level4" data-number="16.4.2.1">
-<h4 data-number="16.4.2.1" class="anchored" data-anchor-id="sec-check-part11-retention-accessibility-longterm"><span class="header-section-number">16.4.2.1</span> Are file formats chosen to ensure long-term readability (e.g., PDF, CSV)?</h4>
+</section>
+<section id="sec-check-part11-retention" class="level2" data-number="16.5">
+<h2 data-number="16.5" class="anchored" data-anchor-id="sec-check-part11-retention"><span class="header-section-number">16.5</span> Record Retention (Sec G)</h2>
+<section id="sec-check-part11-retention-accessibility" class="level3" data-number="16.5.1">
+<h3 data-number="16.5.1" class="anchored" data-anchor-id="sec-check-part11-retention-accessibility"><span class="header-section-number">16.5.1</span> Long-Term Accessibility (Subsec G2)</h3>
+<section id="sec-check-part11-retention-accessibility-longterm" class="level4" data-number="16.5.1.1">
+<h4 data-number="16.5.1.1" class="anchored" data-anchor-id="sec-check-part11-retention-accessibility-longterm"><span class="header-section-number">16.5.1.1</span> Are file formats chosen to ensure long-term readability (e.g., PDF, CSV)?</h4>
 <p>REDCap provides the export formats shown in <a href="#fig-check-part11-200-export-formats" class="quarto-xref">Figure&nbsp;<span>16.1</span></a>, ranging from the highly-portable (<em>e.g.</em>, .csv: comma separate value) to the specialized and proprietary (<em>e.g.</em>, .sas7bdat: SAS files).</p>
 <p>To promote portability and long-term usefulness, we recommend exporting data as a csv. Even if you want something specialized in the short-term (<em>e.g.</em>, an SPSS file), we recommend exporting and storing second copy (as a csv) to improve the options available to others in the future.</p>
 <div id="fig-check-part11-200-export-formats" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Data Export Formats">
