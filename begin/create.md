@@ -32,9 +32,18 @@ all information you may see is
 pretend data made up by the people learning how to use the practice REDCap project before starting
 real data collection with the study's actual REDCap for entering patient data.
 
+After you have opened a REDCap project, you will see several links on the left side of the 
+screen. One of them is labeled *Add/Edit Records*:
 
+<!--put add-edit-records.jpg here-->
 
+Clicking the Add/Edit Records link typically opens a screen where the new record is created.
+This screen also assigns a unique identifying number to each record. Look for a green button 
+labeled *Add new record*:
 
+<!--put add-new-records.jpg here-->
+
+After clicking that button, we see the *Record Home Page* for the new record:
 
 
 
