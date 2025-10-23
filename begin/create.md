@@ -45,7 +45,68 @@ labeled *Add new record*:
 
 After clicking that button, we see the *Record Home Page* for the new record:
 
+<!--put record-home-page.jpg here-->
 
+This page summarizes the status of the forms for Record ID 51. We see a list of 7 instruments. The
+gray circles to the right of each instrument is a link to that instrument. Notice the 
+*Legend for status icons* box. It shows different colors of circles. A gray circle means the 
+form has no data saved in it. 
+
+The Record Home Page is like a folder in which a clinic 
+would keep all the forms for a given patient -- except everything is blank, and all we have
+is a patient number (Record ID 51). We have created a record, but we need to go into each 
+instrument to enter data. When we click on the gray dot next to the first instrument under XXXXX, 
+we are taken to the Enrollment instrument for this project.
+
+<!--put enrollment.jpg here-->
+
+After filling out the form for the 51st mother in this study, we come to the *Form Status*
+section:
+
+<!--put form-status.jpg here-->
+
+This field has a drop-down menu. By clicking on the downward-pointing arrowhead next to the
+Incomplete, we see the menu of options:
+
+<!--put incomplete-dropdown.jpg here-->
+
+If all the information has been included in this form, you will select Complete. 
+The Incomplete option is good for situations where the form has fields for information
+that has to be entered later, and Unverified can be used for special situations in a study,
+such as an investigator needing to check a data entry person's interpretation of an X-ray. 
+Whatever status you choose will determine which color
+of button will be shown on the Record Status Dashboard. For this example, we will select 
+Complete and click the blue button for *Save & Exit Form.* REDCap next will return you to the 
+*Record Home Page*.
+
+<!--put record-home-page-2.jpg here-->
+
+Now the button next to Enrollment is green, which the Legend for status icons tells us
+is Complete. We can repeat this process for each of the other forms. In fact, we can go from 
+saving one form directly into the next form. By clicking the green button next to Enrollment,
+we go back into Record ID 51's Enrollment form. At the bottom of the page, the blue button
+labeled *Save & Go To Next Form* has a drop-down menu with three options:
+
+<!--put next-form.jpg here-->
+
+*Save & Stay* stores the entered data but leaves the form open on your screen. *Save & Exit Record* 
+does the same thing as the blue *Save & Exit* button: it returns us to the Record Home Page.
+*Save & Go To Next Record* would take us to Record 52, if it existed in this project. 
+Clicking on the blue *Save & Go To Next Form* button keeps us in Record 51 and opens the
+next instrument in the project.
+
+Sometimes forms are set up as repeating instruments. In this practice project, the study 
+allowed twins to be enrolled. The initial Enrollment form pertained to the mother, but the 
+DR (Delivery Room) Information form is a repeating instrument, which the data entry person
+completes once for each twin. After all, the twins will have different birth weights and
+may receive different kinds of respiratory support.
+
+Let's look at a list of the records already created for this project. We will click the 
+Record Status Dashboard link on the left side of the page, shown in the first screenshot 
+in this chapter. This dashboard shows different forms with different statuses, and to the right of 
+some of the circles, there is a plus sign in a little gray box.
+
+<!--put record-status-dashboard.jpg here-->
 
 ::: {.callout-note appearance="simple"}
 
