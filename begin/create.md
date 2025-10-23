@@ -15,12 +15,33 @@ csl: ../assets/csl/apa-7e.csl
 
 # Creating Records {#sec-begin-create}
 
-**Chapter Leads**: Thomas Wilson
+<!--comment-->
+<!--two # = 2nd level heading-->
+
+**Chapter Leads**: Lise DeShea & Thomas Wilson
+
+Creating records is analogous to taking out a copy of a form and starting to fill it out. 
+In REDCap, forms (also called instruments) are nested within projects. You might create a 
+record while testing a project during the development phase or after the project has been
+put into production and data collection has begun for a study or investigation.
+
+This chapter will show screenshots from a REDCap project that was created for the purpose of
+letting data entry people practice. It is a copy of a real REDCap project involving a multi-site 
+randomized controlled trial. These images do not show any protected health information (PHI); 
+all information you may see is
+pretend data made up by the people learning how to use the practice REDCap project before starting
+real data collection with the study's actual REDCap for entering patient data.
+
+
+
+
+
+
 
 ::: {.callout-note appearance="simple"}
 
 ## Additional Chapter Details
 
-This chapter was started in October 2024.
+This chapter was last edited in October 2025.
 If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's welcome page.
 :::
