@@ -41,7 +41,7 @@ Clicking the Add/Edit Records link typically opens a screen where the new record
 This screen also assigns a unique identifying number to each record. Look for a green button 
 labeled *Add new record*:
 
-<!--put add-new-records.jpg here-->
+<!--put add-new-record.jpg here-->
 
 After clicking that button, we see the *Record Home Page* for the new record:
 
@@ -55,8 +55,8 @@ form has no data saved in it.
 The Record Home Page is like a folder in which a clinic 
 would keep all the forms for a given patient -- except everything is blank, and all we have
 is a patient number (Record ID 51). We have created a record, but we need to go into each 
-instrument to enter data. When we click on the gray dot next to the first instrument under XXXXX, 
-we are taken to the Enrollment instrument for this project.
+instrument to enter data. When we click on the gray dot next to the first instrument under 
+*Data Collection Instrument*, we are taken to the Enrollment form for this project.
 
 <!--put enrollment.jpg here-->
 
@@ -104,9 +104,22 @@ may receive different kinds of respiratory support.
 Let's look at a list of the records already created for this project. We will click the 
 Record Status Dashboard link on the left side of the page, shown in the first screenshot 
 in this chapter. This dashboard shows different forms with different statuses, and to the right of 
-some of the circles, there is a plus sign in a little gray box.
+some of the circles, there is a plus sign in a little gray box. We have drawn a yellow line
+next to three of these plus signs.
 
 <!--put record-status-dashboard.jpg here-->
+
+The plus sign is a link to create another instance (copy) of that form. We might want to do 
+that if the form has been filled out for one twin and we were ready to complete the instrument
+for the other twin.
+
+The Record Status Dashboard also has a green button labeled *Add new record*. That is another 
+avenue for creating a record.
+
+<!--put add-new-record-2.jpg here-->
+
+New records also are created when someone completes a REDCap survey. Those records would
+appear under the Record Status Dashboard. Our example project does not involve surveys.
 
 ::: {.callout-note appearance="simple"}
 
