@@ -585,8 +585,25 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-begin-dashboard-purpose" id="toc-sec-begin-dashboard-purpose" class="nav-link active" data-scroll-target="#sec-begin-dashboard-purpose"><span class="header-section-number">5.1</span> Purpose</a></li>
+  <li><a href="#sec-begin-dashboard-complex" id="toc-sec-begin-dashboard-complex" class="nav-link" data-scroll-target="#sec-begin-dashboard-complex"><span class="header-section-number">5.2</span> A more complex dashboard</a></li>
+  <li><a href="#sec-begin-dashboard-parsing" id="toc-sec-begin-dashboard-parsing" class="nav-link" data-scroll-target="#sec-begin-dashboard-parsing"><span class="header-section-number">5.3</span> Parsing the dashboard</a></li>
+  <li><a href="#sec-begin-dashboard-customizingrecords" id="toc-sec-begin-dashboard-customizingrecords" class="nav-link" data-scroll-target="#sec-begin-dashboard-customizingrecords"><span class="header-section-number">5.4</span> Customizing Records</a></li>
+  <li><a href="#sec-begin-dashboard-homepage" id="toc-sec-begin-dashboard-homepage" class="nav-link" data-scroll-target="#sec-begin-dashboard-homepage"><span class="header-section-number">5.5</span> Navigating a record’s homepage</a></li>
+  <li><a href="#sec-begin-dashboard-homepage" id="toc-sec-begin-dashboard-homepage" class="nav-link" data-scroll-target="#sec-begin-dashboard-homepage"><span class="header-section-number">5.6</span> Buttons on a dashboard</a></li>
+  <li><a href="#sec-begin-dashboard-repeated" id="toc-sec-begin-dashboard-repeated" class="nav-link" data-scroll-target="#sec-begin-dashboard-repeated"><span class="header-section-number">5.7</span> Repeated instances of a form</a></li>
+  <li><a href="#sec-begin-dashboard-customizindashboard" id="toc-sec-begin-dashboard-customizindashboard" class="nav-link" data-scroll-target="#sec-begin-dashboard-customizindashboard"><span class="header-section-number">5.8</span> Customizing the dashboard</a></li>
+  <li><a href="#sec-begin-dashboard-trouble" id="toc-sec-begin-dashboard-trouble" class="nav-link" data-scroll-target="#sec-begin-dashboard-trouble"><span class="header-section-number">5.9</span> Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#sec-begin-dashboard-trouble-notallrecords" id="toc-sec-begin-dashboard-trouble-notallrecords" class="nav-link" data-scroll-target="#sec-begin-dashboard-trouble-notallrecords"><span class="header-section-number">5.9.1</span> Can’t see all your records?</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/begin/dashboard.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/begin/dashboard.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -633,6 +650,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 
 
 <p><strong>Chapter Leads</strong>: Lise DeShea and Thomas Wilson</p>
+<section id="sec-begin-dashboard-purpose" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="sec-begin-dashboard-purpose"><span class="header-section-number">5.1</span> Purpose</h2>
 <p>Imagine you are in a building with several floors. You want to know about all the offices in the building. Where might you look? One place you could look is near the elevator, where you often will find a directory listing everyone with offices in the building.</p>
 <p>That directory is similar to the Record Status Dashboard within a REDCap project. When you want to find all the records in a project, you can navigate to the Record Status Dashboard by going into the project and following the link on the left side of your screen.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -648,6 +667,9 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <figcaption>Initial view of the dashboard</figcaption>
 </figure>
 </div>
+</section>
+<section id="sec-begin-dashboard-complex" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="sec-begin-dashboard-complex"><span class="header-section-number">5.2</span> A more complex dashboard</h2>
 <p>Let’s look at a dashboard with many more records. Will all of them show up on one page? It depends. Take a look at the screenshot below. (FYI, no private health information, PHI, will appear in these screenshots.)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -656,11 +678,18 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </figure>
 </div>
 <p>It appears there are 103 records in the project, and this screen is showing the first of three pages of records. The drop-down menu at the right shows the page was set to display 50 records at a time. But the “Displaying record” field shows the records are numbered 1 through 54. That is because the creator of this project deleted a few records. The drop-down menu on the right can be set to show all records in the project.</p>
+</section>
+<section id="sec-begin-dashboard-parsing" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="sec-begin-dashboard-parsing"><span class="header-section-number">5.3</span> Parsing the dashboard</h2>
 <p>What else can we learn from this page? Well, the first column of the table is labeled Project. The purpose of this REDCap project is to track the status of all research projects that involve a specific statistician at OUHC; she created the REDCap to make notes on the status of all active projects. The column label, Project, is the label on the record number. As you recall, a record is where we save all the information about a specific person or entity. Here, the entity is the name of the project. So “Record ID” was changed to “Project” to be more descriptive for the user who is tracking many research projects.</p>
-<p>By default, nothing is shown but the number, as we see in the second screenshot on this page. With this study tracking REDCap, the first column has the number assigned to each research project, as well as the name of the research project. Displaying the name of the research project is a customization of this REDCap project. On another project, you might want the customization to show the date that a patient enrolled in a study, or some other data point that was collected. Here is how to customize what is shown next to the record ID. On the left side of the screen, look for the link called <em>Setup</em>.</p>
+<p>By default, nothing is shown but the number, as we see in the second screenshot on this page. With this study tracking REDCap, the first column has the number assigned to each research project, as well as the name of the research project. Displaying the name of the research project is a customization of this REDCap project. On another project, you might want the customization to show the date that a patient enrolled in a study, or some other data point that was collected.</p>
+</section>
+<section id="sec-begin-dashboard-customizingrecords" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="sec-begin-dashboard-customizingrecords"><span class="header-section-number">5.4</span> Customizing Records</h2>
+<p>Here is how to customize what is shown next to the record ID. On the left side of the screen, look for the link called <em>Setup</em>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/dashboard/setup.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Navigating to Project Setup"><img src="images/dashboard/setup.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Navigating to Project Setup"></a></p>
+<p><a href="images/dashboard/setup.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Navigating to Project Setup"><img src="images/dashboard/setup.jpg" class="img-fluid figure-img" style="width:40.0%" alt="Navigating to Project Setup"></a></p>
 <figcaption>Navigating to Project Setup</figcaption>
 </figure>
 </div>
@@ -680,11 +709,14 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 <p>In the box labeled Custom Record Label, you can see that two variable names have been listed inside square brackets, <code>[last_name_primary_contact]</code> and <code>[project_name]</code>, with a comma and a space between the variable names. Any words typed that are not variable names inside square brackets also can be typed there. After you have decided on your custom label for each record, click Save and go back to the Record Status Dashboard to see how the custom label looks.</p>
 <p>Each record on the Dashboard has a Record ID, usually a number automatically assigned by REDCap. Each number is a link to that record. The REDCap that tracks research studies has another link on the same row. Look for the column labeled Support Request. That is the only instrument in this project. As researchers request the statistician’s services, information is collected about that request. The green circles in the Support Request column are links to each project.</p>
+</section>
+<section id="sec-begin-dashboard-homepage" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="sec-begin-dashboard-homepage"><span class="header-section-number">5.5</span> Navigating a record’s homepage</h2>
 <p>Clicking the record number takes you to the <em>Record Home Page</em>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/dashboard/record-home-page.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Record Home Page"><img src="images/dashboard/record-home-page.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Record Home Page"></a></p>
-<figcaption>Record Home Page</figcaption>
+<p><a href="images/dashboard/record-home-page.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="A record’s home page"><img src="images/dashboard/record-home-page.jpg" class="img-fluid figure-img" style="width:80.0%" alt="A record’s home page"></a></p>
+<figcaption>A record’s home page</figcaption>
 </figure>
 </div>
 <p>The legend in the top right of the following screenshot tells us the meaning of the Status circle’s color. A green circle, or button, means the record has been saved as complete. Clicking the green button takes us into the form for this research project. Let’s look at where the button’s color was determined. Look for the word Complete at the bottom of the form; that setting is responsible for the button’s color.</p>
@@ -694,6 +726,9 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <figcaption>Complete the data entry for a record</figcaption>
 </figure>
 </div>
+</section>
+<section id="sec-begin-dashboard-homepage" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="sec-begin-dashboard-homepage"><span class="header-section-number">5.6</span> Buttons on a dashboard</h2>
 <p>Let’s take a look at a more complicated REDCap project with many instruments. The project we will examine was created for data entry people in a certain research study to practice entering data in a REDCap project identical to the one that was going to be used to collect actual data from patients. This practice project has made-up data.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -702,6 +737,9 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </figure>
 </div>
 <p>The first column of this dashboard is labeled Record ID, the default name used by REDCap for assigning unique record numbers to each patient or entity for data collection. This column also has the word “Enrolled” followed by a date. This information was specified as an additional customization. This study had seven instruments: Enrollment, Randomize, Demographics, DR Information, Outcomes, Serious Adverse Event Form, and Protocol Deviations. Now we see many colors of buttons. The legend tells use red means Incomplete, yellow means Unverified, green means Complete, gray means no data was saved on that form for that patient, and overlapping buttons mean there is more than one copy of that form saved in the project. Blue overlapping buttons mean the multiple copies of the form have different statuses. If the overlapping buttons are red, yellow, or green, the multiple copies have the same status, as indicated by the color.</p>
+</section>
+<section id="sec-begin-dashboard-repeated" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="sec-begin-dashboard-repeated"><span class="header-section-number">5.7</span> Repeated instances of a form</h2>
 <p>When would you have multiple copies of the same form? Let’s use this REDCap project as an example. The study involved enrolling those who were about to have a baby. Those expecting twins could participate in the study. Once the twins were born, data were collected about each twin separately – birth weight, kind of respiratory support given immediately after birth, etc.</p>
 <p>Suppose you have entered the data on the first twin and you need to enter data about the second twin. You would find the row for that mother, go to a form you needed to complete about what happened to the second twin in the delivery room (the DR Information form), and look for the plus sign in the gray box.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -711,6 +749,9 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </figure>
 </div>
 <p>Clicking that plus sign creates another copy of the same DR Information form and is a link to that copy. Data entry can proceed from there.</p>
+</section>
+<section id="sec-begin-dashboard-customizindashboard" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="sec-begin-dashboard-customizindashboard"><span class="header-section-number">5.8</span> Customizing the dashboard</h2>
 <p>The Record Status Dashboard can be used to create custom dashboards as well. Look for the box toward the top of the page.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -760,6 +801,11 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <figcaption>Viewing our customizing a dashboard</figcaption>
 </figure>
 </div>
+</section>
+<section id="sec-begin-dashboard-trouble" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="sec-begin-dashboard-trouble"><span class="header-section-number">5.9</span> Troubleshooting</h2>
+<section id="sec-begin-dashboard-trouble-notallrecords" class="level3" data-number="5.9.1">
+<h3 data-number="5.9.1" class="anchored" data-anchor-id="sec-begin-dashboard-trouble-notallrecords"><span class="header-section-number">5.9.1</span> Can’t see all your records?</h3>
 <p>If you ever look in your REDCap project and can’t see all your records, check the settings at the top of the Record Status Dashboard and see if you have navigated to a custom dashboard that shows only some of the records. You can switch dashboards by using the drop-down menu toward the top of the page and selecting <em>Default dashboard</em>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -782,6 +828,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1222,7 +1270,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/begin/dashboard.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/begin/dashboard.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/begin/dashboard.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/begin/dashboard.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Part of <a href="https://ouhsc.edu/">OU Health Sciences</a>.</p>
 </div>
