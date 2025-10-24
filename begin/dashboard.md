@@ -17,6 +17,8 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Lise DeShea and Thomas Wilson
 
+## Purpose {#sec-begin-dashboard-purpose}
+
 Imagine you are in a building with several floors. You want to know about all the offices
 in the building. Where might you look? One place you could look is near the elevator, where
 you often will find a directory listing everyone with offices in the building.
@@ -34,6 +36,8 @@ example project illustrated here, there are only three records and three forms:
 
 ![Initial view of the dashboard](images/dashboard/dashboard-2.jpg){width=80%}
 
+## A more complex dashboard {#sec-begin-dashboard-complex}
+
 Let's look at a dashboard with many more records. Will all of them show up on one page?
 It depends. Take a look at the screenshot below. (FYI, no private health information, PHI,
 will appear in these screenshots.)
@@ -45,6 +49,8 @@ three pages of records. The drop-down menu at the right shows the page was set
 to display 50 records at a time. But the "Displaying record" field shows the records
 are numbered 1 through 54. That is because the creator of this project deleted a few records.
 The drop-down menu on the right can be set to show all records in the project.
+
+## Parsing the dashboard {#sec-begin-dashboard-parsing}
 
 What else can we learn from this page? Well, the first column of the table is labeled Project.
 The purpose of this REDCap project is to track the status of all research projects that
@@ -60,10 +66,14 @@ has the number assigned to each research project, as well as the name of the
 research project. Displaying the name of the research project is a
 customization of this REDCap project. On another project, you might want the
 customization to show the date that a patient enrolled in a study, or some other
-data point that was collected. Here is how to customize what is shown next to the
+data point that was collected.
+
+## Customizing Records {#sec-begin-dashboard-customizingrecords}
+
+Here is how to customize what is shown next to the
 record ID. On the left side of the screen, look for the link called *Setup*.
 
-![Navigating to Project Setup](images/dashboard/setup.jpg){width=80%}
+![Navigating to Project Setup](images/dashboard/setup.jpg){width=40%}
 
 Then look for the button that says *Additional customizations*.
 
@@ -88,9 +98,11 @@ Support Request. That is the only instrument in this project. As researchers req
 the statistician's services, information is collected about that request. The green
 circles in the Support Request column are links to each project.
 
+## Navigating a record's homepage {#sec-begin-dashboard-homepage}
+
 Clicking the record number takes you to the *Record Home Page*.
 
-![Record Home Page](images/dashboard/record-home-page.jpg){width=80%}
+![A record's home page](images/dashboard/record-home-page.jpg){width=80%}
 
 The legend in the top
 right of the following screenshot tells us the meaning of the Status circle's color. A green
@@ -100,6 +112,8 @@ determined. Look for the word Complete at the bottom of the form; that setting i
 for the button's color.
 
 ![Complete the data entry for a record](images/dashboard/complete.jpg){width=80%}
+
+## Buttons on a dashboard {#sec-begin-dashboard-homepage}
 
 Let's take a look at a more complicated REDCap project with many instruments. The
 project we will examine was created for data entry people in a certain research study
@@ -120,6 +134,8 @@ saved in the project. Blue overlapping buttons mean the multiple copies of the f
 have different statuses. If the overlapping buttons are red, yellow, or green, the multiple
 copies have the same status, as indicated by the color.
 
+## Repeated instances of a form {#sec-begin-dashboard-repeated}
+
 When would you have multiple copies of the same form? Let's use this REDCap project
 as an example. The study involved enrolling those who were about to have a baby.
 Those expecting twins could participate in the study. Once the twins were born,
@@ -135,6 +151,8 @@ for the plus sign in the gray box.
 
 Clicking that plus sign creates another copy of the same DR Information form and is a link
 to that copy. Data entry can proceed from there.
+
+## Customizing the dashboard {#sec-begin-dashboard-customizindashboard}
 
 The Record Status Dashboard can be used to create custom dashboards as well. Look
 for the box toward the top of the page.
@@ -176,6 +194,10 @@ that says *View dashboard*.
 Then we will see the custom dashboard that we created.
 
 ![Viewing our customizing a dashboard](images/dashboard/oklahoma-mothers.jpg){width=80%}
+
+## Troubleshooting {#sec-begin-dashboard-trouble}
+
+### Can't see all your records? {#sec-begin-dashboard-trouble-notallrecords}
 
 If you ever look in your REDCap project and can't see all your records, check the settings
 at the top of the Record Status Dashboard and see if you have navigated to a custom
