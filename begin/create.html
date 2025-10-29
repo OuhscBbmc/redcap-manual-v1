@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lise DeShea">
 <meta name="author" content="Thomas Wilson">
 
 <title>4&nbsp; Creating Records – REDCap Manual for OU</title>
@@ -48,6 +49,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-0335da99e58d06b9c236affcca9ba23e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-55d7498cdf590d62a1df282b72c362b6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-0335da99e58d06b9c236affcca9ba23e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -90,6 +94,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../assets/tables.css">
 <meta name="citation_title" content="[[4]{.chapter-number}&nbsp; [Creating Records]{.chapter-title}]{#sec-begin-create .quarto-section-identifier}">
 <meta name="citation_abstract" content="Creating records in an established project.">
+<meta name="citation_author" content="Lise DeShea">
 <meta name="citation_author" content="Thomas Wilson">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=The elements of statistical learning: Data mining, inference, and prediction;,citation_author=Trevor Hastie;,citation_author=Robert Tibshirani;,citation_author=Jerome H Friedman;,citation_author=Jerome H Friedman;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_volume=2;">
@@ -582,8 +587,19 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-begin-create-definerecord" id="toc-sec-begin-create-definerecord" class="nav-link active" data-scroll-target="#sec-begin-create-definerecord"><span class="header-section-number">4.1</span> What is a record?</a></li>
+  <li><a href="#sec-begin-create-createrecord" id="toc-sec-begin-create-createrecord" class="nav-link" data-scroll-target="#sec-begin-create-createrecord"><span class="header-section-number">4.2</span> Creating a record</a></li>
+  <li><a href="#sec-begin-create-enterrecord" id="toc-sec-begin-create-enterrecord" class="nav-link" data-scroll-target="#sec-begin-create-enterrecord"><span class="header-section-number">4.3</span> Entering a record</a></li>
+  <li><a href="#sec-begin-create-jumprecords" id="toc-sec-begin-create-jumprecords" class="nav-link" data-scroll-target="#sec-begin-create-jumprecords"><span class="header-section-number">4.4</span> Navigate from one record to another</a></li>
+  <li><a href="#sec-begin-create-repeatinstance" id="toc-sec-begin-create-repeatinstance" class="nav-link" data-scroll-target="#sec-begin-create-repeatinstance"><span class="header-section-number">4.5</span> Repeating instances of a form</a></li>
+  <li><a href="#sec-begin-create-addrecord2" id="toc-sec-begin-create-addrecord2" class="nav-link" data-scroll-target="#sec-begin-create-addrecord2"><span class="header-section-number">4.6</span> Other ways to add records</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/begin/create.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/begin/create.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -596,9 +612,19 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 
 
 <div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Authors</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
+    <div class="quarto-title-meta-contents">
+    <p class="author">Lise DeShea <a href="mailto:lise-deshea@ouhsc.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0003-3232-5216" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://ouhsc.edu/bbmc/">
+            University of Oklahoma Health Sciences
+            </a>
+          </p>
+      </div>
     <div class="quarto-title-meta-contents">
     <p class="author">Thomas Wilson <a href="mailto:thomas-wilson@ouhsc.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0009-0009-1239-1348" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
@@ -632,33 +658,101 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <!--comment-->
 <!--two # = 2nd level heading-->
 <p><strong>Chapter Leads</strong>: Lise DeShea &amp; Thomas Wilson</p>
-<p>Creating records is analogous to taking out a copy of a form and starting to fill it out. In REDCap, forms (also called instruments) are nested within projects. You might create a record while testing a project during the development phase or after the project has been put into production and data collection has begun for a study or investigation.</p>
-<p>This chapter will show screenshots from a REDCap project that was created for the purpose of letting data entry people practice. It is a copy of a real REDCap project involving a multi-site randomized controlled trial. These images do not show any protected health information (PHI); all information you may see is pretend data made up by the people learning how to use the practice REDCap project before starting real data collection with the study’s actual REDCap for entering patient data.</p>
+<section id="sec-begin-create-definerecord" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sec-begin-create-definerecord"><span class="header-section-number">4.1</span> What is a record?</h2>
+<p>Creating records is analogous to taking out a copy of a form and starting to fill it out. In REDCap, forms (also called instruments) are nested within projects. A record is all the information in REDCap about one entity, like one participant in a study or one person who completed a survey. Someone filling out an online survey that was created in REDCap would create a record by completing the survey. You might create a record while testing a project while the project is being developed. Or you might create a record after the project has been put into production and data collection has begun for a study or investigation.</p>
+<p>This chapter will show screenshots from a REDCap project that was created for the purpose of letting data entry people practice. It is an exact copy of another REDCap project that was used by people entering data from a multi-site randomized controlled trial. The screenshots will not show any protected health information (PHI); all information you may see is pretend data made up by the people learning how to use the practice REDCap project. After they had practiced, their access to the practice project was turned off, and they were allowed access to the study’s actual REDCap for entering patient data.</p>
+</section>
+<section id="sec-begin-create-createrecord" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-begin-create-createrecord"><span class="header-section-number">4.2</span> Creating a record</h2>
 <p>After you have opened a REDCap project, you will see several links on the left side of the screen. One of them is labeled <em>Add/Edit Records</em>:</p>
-<!--put add-edit-records.jpg here-->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/create/add-edit-records.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Add or edit records"><img src="images/create/add-edit-records.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Add or edit records"></a></p>
+<figcaption>Add or edit records</figcaption>
+</figure>
+</div>
 <p>Clicking the Add/Edit Records link typically opens a screen where the new record is created. This screen also assigns a unique identifying number to each record. Look for a green button labeled <em>Add new record</em>:</p>
-<!--put add-new-record.jpg here-->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/create/add-new-record.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Add new record"><img src="images/create/add-new-record.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Add new record"></a></p>
+<figcaption>Add new record</figcaption>
+</figure>
+</div>
 <p>After clicking that button, we see the <em>Record Home Page</em> for the new record:</p>
-<!--put record-home-page.jpg here-->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/create/record-home-page.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Record home page"><img src="images/create/record-home-page.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Record home page"></a></p>
+<figcaption>Record home page</figcaption>
+</figure>
+</div>
 <p>This page summarizes the status of the forms for Record ID 51. We see a list of 7 instruments. The gray circles to the right of each instrument is a link to that instrument. Notice the <em>Legend for status icons</em> box. It shows different colors of circles. A gray circle means the form has no data saved in it.</p>
+</section>
+<section id="sec-begin-create-enterrecord" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-begin-create-enterrecord"><span class="header-section-number">4.3</span> Entering a record</h2>
 <p>The Record Home Page is like a folder in which a clinic would keep all the forms for a given patient – except everything is blank, and all we have is a patient number (Record ID 51). We have created a record, but we need to go into each instrument to enter data. When we click on the gray dot next to the first instrument under <em>Data Collection Instrument</em>, we are taken to the Enrollment form for this project.</p>
-<!--put enrollment.jpg here-->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/create/enrollment.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Example enrollment form"><img src="images/create/enrollment.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Example enrollment form"></a></p>
+<figcaption>Example enrollment form</figcaption>
+</figure>
+</div>
 <p>After filling out the form for the 51st mother in this study, we come to the <em>Form Status</em> section:</p>
-<!--put form-status.jpg here-->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/create/form-status.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Form status"><img src="images/create/form-status.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Form status"></a></p>
+<figcaption>Form status</figcaption>
+</figure>
+</div>
 <p>This field has a drop-down menu. By clicking on the downward-pointing arrowhead next to the Incomplete, we see the menu of options:</p>
-<!--put incomplete-dropdown.jpg here-->
-<p>If all the information has been included in this form, you will select Complete. The Incomplete option is good for situations where the form has fields for information that has to be entered later, and Unverified can be used for special situations in a study, such as an investigator needing to check a data entry person’s interpretation of an X-ray. Whatever status you choose will determine which color of button will be shown on the Record Status Dashboard. For this example, we will select Complete and click the blue button for <em>Save &amp; Exit Form.</em> REDCap next will return you to the <em>Record Home Page</em>.</p>
-<!--put record-home-page-2.jpg here-->
-<p>Now the button next to Enrollment is green, which the Legend for status icons tells us is Complete. We can repeat this process for each of the other forms. In fact, we can go from saving one form directly into the next form. By clicking the green button next to Enrollment, we go back into Record ID 51’s Enrollment form. At the bottom of the page, the blue button labeled <em>Save &amp; Go To Next Form</em> has a drop-down menu with three options:</p>
-<!--put next-form.jpg here-->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/create/incomplete-dropdown.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Options for saving data"><img src="images/create/incomplete-dropdown.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Options for saving data"></a></p>
+<figcaption>Options for saving data</figcaption>
+</figure>
+</div>
+<p>If all the information has been included in this form, you will select Complete. The Incomplete option is good for situations where the form has fields for information that has to be entered later. Unverified can be used for special situations in a study, such as an investigator needing to check a data entry person’s interpretation of an X-ray. Whatever status you choose will determine which color of button will be shown on the Record Status Dashboard. For this example, we will select Complete and click the blue button for <em>Save &amp; Exit Form.</em> REDCap next will return you to the <em>Record Home Page</em>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/create/record-home-page-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Return to record home page"><img src="images/create/record-home-page-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Return to record home page"></a></p>
+<figcaption>Return to record home page</figcaption>
+</figure>
+</div>
+<p>Now the button next to Enrollment is green, which the Legend for status icons tells us is Complete. We can repeat this process for each of the other forms. In fact, we can go from saving one form directly into the next form.</p>
+</section>
+<section id="sec-begin-create-jumprecords" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="sec-begin-create-jumprecords"><span class="header-section-number">4.4</span> Navigate from one record to another</h2>
+<p>By clicking the green button next to Enrollment, we go back into Record ID 51’s Enrollment form. At the bottom of the page, the blue button labeled <em>Save &amp; Go To Next Form</em> has a drop-down menu with three options:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/create/next-form.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Go to next form"><img src="images/create/next-form.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Go to next form"></a></p>
+<figcaption>Go to next form</figcaption>
+</figure>
+</div>
 <p><em>Save &amp; Stay</em> stores the entered data but leaves the form open on your screen. <em>Save &amp; Exit Record</em> does the same thing as the blue <em>Save &amp; Exit</em> button: it returns us to the Record Home Page. <em>Save &amp; Go To Next Record</em> would take us to Record 52, if it existed in this project. Clicking on the blue <em>Save &amp; Go To Next Form</em> button keeps us in Record 51 and opens the next instrument in the project.</p>
-<p>Sometimes forms are set up as repeating instruments. In this practice project, the study allowed twins to be enrolled. The initial Enrollment form pertained to the mother, but the DR (Delivery Room) Information form is a repeating instrument, which the data entry person completes once for each twin. After all, the twins will have different birth weights and may receive different kinds of respiratory support.</p>
-<p>Let’s look at a list of the records already created for this project. We will click the Record Status Dashboard link on the left side of the page, shown in the first screenshot in this chapter. This dashboard shows different forms with different statuses, and to the right of some of the circles, there is a plus sign in a little gray box. We have drawn a yellow line next to three of these plus signs.</p>
-<!--put record-status-dashboard.jpg here-->
+</section>
+<section id="sec-begin-create-repeatinstance" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="sec-begin-create-repeatinstance"><span class="header-section-number">4.5</span> Repeating instances of a form</h2>
+<p>Sometimes forms are set up as repeating instruments, meaning it can be completed more than one for the same person. In this practice project, the study allowed twins to be enrolled. The initial Enrollment form pertained to the mother, but the DR (Delivery Room) Information form is a repeating instrument, which the data entry person completes once for each twin. After all, the twins will have different birth weights and may receive different kinds of respiratory support.</p>
+<p>Let’s look at a list of the records already created for this project. We will click the Record Status Dashboard link on the left side of the page, shown in the first screenshot in this chapter. This dashboard shows different forms with different statuses, and to the right of some of the circles, there is a plus sign in a little gray box. We have drawn a box around three of these plus signs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/create/record-status-dashboard.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Plus signs for adding instances"><img src="images/create/record-status-dashboard.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Plus signs for adding instances"></a></p>
+<figcaption>Plus signs for adding instances</figcaption>
+</figure>
+</div>
 <p>The plus sign is a link to create another instance (copy) of that form. We might want to do that if the form has been filled out for one twin and we were ready to complete the instrument for the other twin.</p>
-<p>The Record Status Dashboard also has a green button labeled <em>Add new record</em>. That is another avenue for creating a record.</p>
-<!--put add-new-record-2.jpg here-->
-<p>New records also are created when someone completes a REDCap survey. Those records would appear under the Record Status Dashboard. Our example project does not involve surveys.</p>
+</section>
+<section id="sec-begin-create-addrecord2" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="sec-begin-create-addrecord2"><span class="header-section-number">4.6</span> Other ways to add records</h2>
+<p>New records can be created at least two other ways. The Record Status Dashboard has a green button labeled <em>Add new record</em>. That is another avenue for creating a record.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/create/add-new-record-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Add new record button"><img src="images/create/add-new-record-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Add new record button"></a></p>
+<figcaption>Add new record button</figcaption>
+</figure>
+</div>
+<p>A new record also can be created when someone completes a REDCap survey. Those records would appear under the Record Status Dashboard. Our example project does not involve surveys.</p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -674,6 +768,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1114,12 +1209,44 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/begin/create.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/begin/create.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/begin/create.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/begin/create.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Part of <a href="https://ouhsc.edu/">OU Health Sciences</a>.</p>
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
