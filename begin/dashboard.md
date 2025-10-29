@@ -1,5 +1,5 @@
 ---
-abstract: Learn how the Record Status Dashboard helps you to qqq.
+abstract: Learn about the Record Status Dashboard helps you to find and edit records in a REDCap project.
 
 author:
   - name: Lise DeShea
