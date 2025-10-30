@@ -319,7 +319,40 @@
     "href": "designbas/variable.html",
     "title": "9  Variable Decisions",
     "section": "",
-    "text": "Chapter Leads: Lise DeShea, Thomas Wilson\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "text": "9.1 Variable decisions\nChapter Leads: Lise DeShea & Thomas Wilson\nWhen you are creating and managing a database, many decisions must be made about variables. A variable is a quantity or property that can take on different values. “Name” is a variable. “Age” is a variable. These are two kinds of variables. REDCap accepts all kinds of variables, including file uploads and signatures. But you have to tell REDCap what to expect when you create variables. Further, you need to think about what to name a variable. If you named everything “item_1,” “item_2,” “item_3,” etc., whoever analyzes the data will have a hard time keeping track of what variable is being referenced. This chapter will lead you through these many decisions about variables.",
+    "crumbs": [
+      "Project Design (Basic)",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Variable Decisions</span>"
+    ]
+  },
+  {
+    "objectID": "designbas/variable.html#sec-designbas-variable-variablenames",
+    "href": "designbas/variable.html#sec-designbas-variable-variablenames",
+    "title": "9  Variable Decisions",
+    "section": "9.2 Variable names",
+    "text": "9.2 Variable names\nThe most basic detail to decide about a variable is what to call it: the variable name. We will show you how to create a variable inside an existing form in a practicee project. We also will explain the difference between a variable name and its label.\nWe need to go into the Online Designer. When you log into REDCap and click on a project name, you will have two ways to get into Designer. One is in the top left corner of your screen, with a link called Designer.\n\n\n\nEnter Designer\n\n\nThe other way is on the same screen in the middle of the page with a box labeled Online Designer.\n\n\n\nEnter Online Designer\n\n\nEither way, you end up on the same page, which lists the forms in the project.\n\n\n\nList of forms\n\n\nClicking on any form name will open it. Form 1 in this project already has five variables in it: the Record ID and four other variables. The Record ID cannot be deleted. It is a unique identifier for each record entered in the project. It can be renamed, but we will leave ours alone.",
+    "crumbs": [
+      "Project Design (Basic)",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Variable Decisions</span>"
+    ]
+  },
+  {
+    "objectID": "designbas/variable.html#sec-designbas-variable-namesvslabels",
+    "href": "designbas/variable.html#sec-designbas-variable-namesvslabels",
+    "title": "9  Variable Decisions",
+    "section": "9.3 Variable names vs. labels",
+    "text": "9.3 Variable names vs. labels\nTo edit a variable, click on the little pencil icon.\n\n\n\nPencil icon\n\n\nWe get a new window labeled Edit Field. We can learn several things about this variable from this window. First, it is a Notes Box (Paragraph Text) field. That means it could be used to enter a description of a clinic visit, for example.\n\n\n\nEdit Field\n\n\nYou see that the large box under Field Label is blank. No label has been created for this variable. Further, on the right side of the window is the Variable Name. The Field Label is what shows up to the person filling out the form. The Variable Name is used to store the data entered. An analyst will use the variable name.\nvariable_1 is a poor name for a variable because an analyst would not know anything about the data simply by looking at that variable name. Let’s change it to visit_note and add a label to match, then click Save.\n\n\n\nChange variable name\n\n\nLet’s look at variable_2 and see what kinds of variables can be created. This variable was created as a Text Box (Short Text, Number, Date/Time, …). Let’s change it to capture a participant’s first name\n\n\n\nChange variable name\n\n\nNote that we did not name the variable first_name. We recommend starting the variable name with something general, then getting more specific. Then the analyst could see all the variables involving someone’s name and distinguish among them. When you are creating variables in REDCap, it’s a good idea for you to be quite familiar with the study, survey, or investigation before you start creating variable names. If this study collected data for a parent and a child, then name_first would be a poor choice. A better choice might be name_parent_first.\n\n\n\nParent’s first name",
+    "crumbs": [
+      "Project Design (Basic)",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Variable Decisions</span>"
+    ]
+  },
+  {
+    "objectID": "designbas/variable.html#sec-designbas-variable-variabletypes",
+    "href": "designbas/variable.html#sec-designbas-variable-variabletypes",
+    "title": "9  Variable Decisions",
+    "section": "9.4 Types of variable",
+    "text": "9.4 Types of variable\nAs mentioned above, REDCap can capture many kinds of variables. Let’s look at variable_3 and see what kinds of variables are available. Next to the words Field Type is a drop-down menu of kinds of variables.\n\n\n\nField type dropdown\n\n\nAs the creator of a REDCap project, you are on the front line of ensuring data quality. The specifications you enter for each variable can make a world of difference. Your specifications can keep someone from having to type an address, or they could force a data entry person to enter a number with two decimal places. The specs also can set limits on numbers so a data entry person would not accidentally enter that a person was 150 years old, instead of 15.\nA Text Box field can handle many kinds of data. Let’s look at how to specify which kind of entries will be valid. Suppose we want the data entry person to enter a child’s age for a study involving only children ages 2 through 8 years. Further, two children from the same family could be involved in the study. So we will name the variable to specify we are talking about the first child, and we will use a setting called Validation, which has a drop-down menu beside it.\n\n\n\nValidation settings\n\n\nYou can see in the above image there is a scroll bar on the right side of the drop-down menu. So there are many validation types that can be chosen. For child’s age in years, we will choose Integer. After we do that, we see options pop up for Minimum and Maximum. We will enter the minimum and maximum ages possible for this study.\n\n\n\nValidation range\n\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was last edited in October 2025. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Project Design (Basic)",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Variable Decisions</span>"
