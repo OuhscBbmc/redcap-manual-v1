@@ -3,14 +3,14 @@ abstract: Design variables to increase data quality and fidelity.
 
 author:
   - name: Lise DeShea
-    affiliation: University of Oklahoma Health Sciences
+    affiliation: University of Oklahoma Health Campus
     affiliation-url: https://ouhsc.edu/bbmc/
     email: lise-deshea@ou.edu
     orcid: 0000-0003-3232-5216
     attributes:
       corresponding: true
   - name: Thomas Wilson
-    affiliation: University of Oklahoma Health Sciences
+    affiliation: University of Oklahoma Health Campus
     affiliation-url: https://ouhsc.edu/bbmc/
     email: thomas-wilson@ou.edu
     orcid: 0009-0009-1239-1348
