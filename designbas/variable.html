@@ -595,7 +595,9 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <li><a href="#sec-designbas-variable-decisions" id="toc-sec-designbas-variable-decisions" class="nav-link active" data-scroll-target="#sec-designbas-variable-decisions"><span class="header-section-number">9.1</span> Variable decisions</a></li>
   <li><a href="#sec-designbas-variable-variablenames" id="toc-sec-designbas-variable-variablenames" class="nav-link" data-scroll-target="#sec-designbas-variable-variablenames"><span class="header-section-number">9.2</span> Variable names</a></li>
   <li><a href="#sec-designbas-variable-namesvslabels" id="toc-sec-designbas-variable-namesvslabels" class="nav-link" data-scroll-target="#sec-designbas-variable-namesvslabels"><span class="header-section-number">9.3</span> Variable names vs.&nbsp;labels</a></li>
-  <li><a href="#sec-designbas-variable-variabletypes" id="toc-sec-designbas-variable-variabletypes" class="nav-link" data-scroll-target="#sec-designbas-variable-variabletypes"><span class="header-section-number">9.4</span> Types of variable</a></li>
+  <li><a href="#sec-designbas-variable-variabletypes" id="toc-sec-designbas-variable-variabletypes" class="nav-link" data-scroll-target="#sec-designbas-variable-variabletypes"><span class="header-section-number">9.4</span> Types of variables</a></li>
+  <li><a href="#sec-designbas-variable-datevariables" id="toc-sec-designbas-variable-datevariables" class="nav-link" data-scroll-target="#sec-designbas-variable-datevariables"><span class="header-section-number">9.5</span> Date variables</a></li>
+  <li><a href="#sec-designbas-variable-newvariables" id="toc-sec-designbas-variable-newvariables" class="nav-link" data-scroll-target="#sec-designbas-variable-newvariables"><span class="header-section-number">9.6</span> Creating a new variable</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designbas/variable.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designbas/variable.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -656,29 +658,29 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p><strong>Chapter Leads</strong>: Lise DeShea &amp; Thomas Wilson</p>
 <section id="sec-designbas-variable-decisions" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="sec-designbas-variable-decisions"><span class="header-section-number">9.1</span> Variable decisions</h2>
-<p>When you are creating and managing a database, many decisions must be made about variables. A variable is a quantity or property that can take on different values. “Name” is a variable. “Age” is a variable. These are two kinds of variables. REDCap accepts all kinds of variables, including file uploads and signatures. But you have to tell REDCap what to expect when you create variables. Further, you need to think about what to name a variable. If you named everything “item_1,” “item_2,” “item_3,” etc., whoever analyzes the data will have a hard time keeping track of what variable is being referenced. This chapter will lead you through these many decisions about variables.</p>
+<p>When you are creating and managing a database, many decisions must be made about variables. A variable is a quantity or property that can take on different values. “Name” is a variable. “Age” is a variable. These are two kinds of variables. Data are stored in variables. REDCap accepts many kinds of data, including file uploads and signatures. But you have to tell REDCap what to expect when you create variables. Further, you need to think about what to name a variable. If you named everything “item_1,” “item_2,” “item_3,” etc., whoever analyzes the data will have a hard time keeping track of what variable is being referenced. This chapter will lead you through many decisions about variables.</p>
 </section>
 <section id="sec-designbas-variable-variablenames" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="sec-designbas-variable-variablenames"><span class="header-section-number">9.2</span> Variable names</h2>
-<p>The most basic detail to decide about a variable is what to call it: the variable name. We will show you how to create a variable inside an existing form in a practicee project. We also will explain the difference between a variable <em>name</em> and its <em>label</em>.</p>
+<p>The most basic detail to decide about a variable is what to call it: the variable name. That decision often is tied up in what kind of variable it is. We will show you how to create a variable inside an existing form in a practice project. We also will explain the difference between a variable <em>name</em> and its <em>label</em>.</p>
 <p>We need to go into the Online Designer. When you log into REDCap and click on a project name, you will have two ways to get into Designer. One is in the top left corner of your screen, with a link called <em>Designer</em>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/designbas/designer-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Enter Designer"><img src="images/designbas/designer-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enter Designer"></a></p>
+<p><a href="images/designbas/variables/designer-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Enter Designer"><img src="images/designbas/variables/designer-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enter Designer"></a></p>
 <figcaption>Enter Designer</figcaption>
 </figure>
 </div>
 <p>The other way is on the same screen in the middle of the page with a box labeled <em>Online Designer</em>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/designbas/designer-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Enter Online Designer"><img src="images/designbas/designer-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enter Online Designer"></a></p>
+<p><a href="images/designbas/variables/designer-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Enter Online Designer"><img src="images/designbas/variables/designer-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enter Online Designer"></a></p>
 <figcaption>Enter Online Designer</figcaption>
 </figure>
 </div>
 <p>Either way, you end up on the same page, which lists the forms in the project.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/designbas/forms.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="List of forms"><img src="images/designbas/forms.jpg" class="img-fluid figure-img" style="width:80.0%" alt="List of forms"></a></p>
+<p><a href="images/designbas/variables/forms.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="List of forms"><img src="images/designbas/variables/forms.jpg" class="img-fluid figure-img" style="width:80.0%" alt="List of forms"></a></p>
 <figcaption>List of forms</figcaption>
 </figure>
 </div>
@@ -689,62 +691,111 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>To edit a variable, click on the little pencil icon.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/designbas/pencilicon.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Pencil icon"><img src="images/designbas/pencilicon.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Pencil icon"></a></p>
+<p><a href="images/designbas/variables/pencilicon.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Pencil icon"><img src="images/designbas/variables/pencilicon.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Pencil icon"></a></p>
 <figcaption>Pencil icon</figcaption>
 </figure>
 </div>
 <p>We get a new window labeled <em>Edit Field</em>. We can learn several things about this variable from this window. First, it is a Notes Box (Paragraph Text) field. That means it could be used to enter a description of a clinic visit, for example.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/designbas/editfield.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Edit Field"><img src="images/designbas/editfield.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Edit Field"></a></p>
+<p><a href="images/designbas/variables/editfield.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Edit Field"><img src="images/designbas/variables/editfield.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Edit Field"></a></p>
 <figcaption>Edit Field</figcaption>
 </figure>
 </div>
-<p>You see that the large box under <em>Field Label</em> is blank. No label has been created for this variable. Further, on the right side of the window is the <em>Variable Name</em>. The Field Label is what shows up to the person filling out the form. The Variable Name is used to store the data entered. An analyst will use the variable name.</p>
+<p>You see that the large box under <em>Field Label</em> is blank. No label has been created for this variable. Further, on the right side of the window is the <em>Variable Name</em>. The Field Label is what shows up to the person filling out the form. The Variable Name is used to store the data inside REDCap. An analyst will use the variable name.</p>
 <p><em>variable_1</em> is a poor name for a variable because an analyst would not know anything about the data simply by looking at that variable name. Let’s change it to <em>visit_note</em> and add a label to match, then click Save.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/designbas/visitnote.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Change variable name"><img src="images/designbas/visitnote.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Change variable name"></a></p>
+<p><a href="images/designbas/variables/visitnote.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Change variable name"><img src="images/designbas/variables/visitnote.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Change variable name"></a></p>
 <figcaption>Change variable name</figcaption>
 </figure>
 </div>
 <p>Let’s look at <em>variable_2</em> and see what kinds of variables can be created. This variable was created as a <em>Text Box (Short Text, Number, Date/Time, …)</em>. Let’s change it to capture a participant’s first name</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/designbas/name-first.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Change variable name"><img src="images/designbas/name-first.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Change variable name"></a></p>
+<p><a href="images/designbas/variables/name-first.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Change variable name"><img src="images/designbas/variables/name-first.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Change variable name"></a></p>
 <figcaption>Change variable name</figcaption>
 </figure>
 </div>
 <p>Note that we did not name the variable first_name. We recommend starting the variable name with something general, then getting more specific. Then the analyst could see all the variables involving someone’s name and distinguish among them. When you are creating variables in REDCap, it’s a good idea for you to be quite familiar with the study, survey, or investigation <em>before</em> you start creating variable names. If this study collected data for a parent and a child, then <em>name_first</em> would be a poor choice. A better choice might be <em>name_parent_first.</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/designbas/parent-first-name.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Parent’s first name"><img src="images/designbas/parent-first-name.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Parent’s first name"></a></p>
+<p><a href="images/designbas/variables/parent-first-name.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Parent’s first name"><img src="images/designbas/variables/parent-first-name.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Parent’s first name"></a></p>
 <figcaption>Parent’s first name</figcaption>
 </figure>
 </div>
 </section>
 <section id="sec-designbas-variable-variabletypes" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="sec-designbas-variable-variabletypes"><span class="header-section-number">9.4</span> Types of variable</h2>
-<p>As mentioned above, REDCap can capture many kinds of variables. Let’s look at variable_3 and see what kinds of variables are available. Next to the words <em>Field Type</em> is a drop-down menu of kinds of variables.</p>
+<h2 data-number="9.4" class="anchored" data-anchor-id="sec-designbas-variable-variabletypes"><span class="header-section-number">9.4</span> Types of variables</h2>
+<p>As mentioned above, REDCap can capture many kinds of data. Let’s look at variable_3 and see what kinds of variables are available. Next to the words <em>Field Type</em> is a drop-down menu of kinds of variables.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/designbas/kinds-of-variables.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Field type dropdown"><img src="images/designbas/kinds-of-variables.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Field type dropdown"></a></p>
+<p><a href="images/designbas/variables/kinds-of-variables.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Field type dropdown"><img src="images/designbas/variables/kinds-of-variables.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Field type dropdown"></a></p>
 <figcaption>Field type dropdown</figcaption>
 </figure>
 </div>
-<p>As the creator of a REDCap project, you are on the front line of ensuring data quality. The specifications you enter for each variable can make a world of difference. Your specifications can keep someone from having to type an address, or they could force a data entry person to enter a number with two decimal places. The specs also can set limits on numbers so a data entry person would not accidentally enter that a person was 150 years old, instead of 15.</p>
+<p>As the creator of a REDCap project, you are on the front line of ensuring data quality. The specifications you enter for each variable can make a world of difference. Your specifications can force a data entry person to enter a number with two decimal places or ensure that an email address is in a valid format. The specs also can set limits on numbers so a data entry person would not accidentally enter that a person was 150 years old, instead of 15.</p>
 <p>A <em>Text Box</em> field can handle many kinds of data. Let’s look at how to specify which kind of entries will be valid. Suppose we want the data entry person to enter a child’s age for a study involving only children ages 2 through 8 years. Further, two children from the same family could be involved in the study. So we will name the variable to specify we are talking about the first child, and we will use a setting called <em>Validation</em>, which has a drop-down menu beside it.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/designbas/validation-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Validation settings"><img src="images/designbas/validation-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Validation settings"></a></p>
+<p><a href="images/designbas/variables/validation-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Validation settings"><img src="images/designbas/variables/validation-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Validation settings"></a></p>
 <figcaption>Validation settings</figcaption>
 </figure>
 </div>
-<p>You can see in the above image there is a scroll bar on the right side of the drop-down menu. So there are many validation types that can be chosen. For child’s age in years, we will choose Integer. After we do that, we see options pop up for <em>Minimum</em> and <em>Maximum</em>. We will enter the minimum and maximum ages possible for this study.</p>
+<p>You can see a scroll bar on the right side of the drop-down menu. So there are many validation types from which to choose. For child’s age in years, we will choose Integer. After we do that, we see options pop up for <em>Minimum</em> and <em>Maximum</em>. We will enter the minimum and maximum ages possible for this study.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/designbas/validation-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Validation range"><img src="images/designbas/validation-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Validation range"></a></p>
+<p><a href="images/designbas/variables/validation-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Validation range"><img src="images/designbas/variables/validation-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Validation range"></a></p>
 <figcaption>Validation range</figcaption>
+</figure>
+</div>
+<p>Now someone entering data who typed an age outside that range will get an error message, saying that the number is beyond the limits you set.</p>
+</section>
+<section id="sec-designbas-variable-datevariables" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="sec-designbas-variable-datevariables"><span class="header-section-number">9.5</span> Date variables</h2>
+<p>Let’s look at one more kind of variable: a date field. We will change variable_4 on our example project to the date of birth for the first child in our study.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/designbas/variables/date_birth_child_1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Kinds of date variables"><img src="images/designbas/variables/date_birth_child_1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Kinds of date variables"></a></p>
+<figcaption>Kinds of date variables</figcaption>
+</figure>
+</div>
+<p>Date validation can be as general as a date or as specific as the date and time down to the second. For a birth date, we only need the date. We have 3 format options available to us: day-month-year, month-day-year, or year-month-day. Keeping with our recommendation of going from general to specific, we will choose Y-M-D. (This recommendation is in keeping with the International Organization for Standardization 8601, which you can google. This format eases sorting data by earliest to latest date.)</p>
+</section>
+<section id="sec-designbas-variable-newvariables" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="sec-designbas-variable-newvariables"><span class="header-section-number">9.6</span> Creating a new variable</h2>
+<p>Our examples so far have involved modifying variables that already existed in a REDCap project. Let’s create a new variable. Look for the buttons that say “Add Field”:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/designbas/variables/add-field.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="The Add Field button"><img src="images/designbas/variables/add-field.jpg" class="img-fluid figure-img" style="width:80.0%" alt="The Add Field button"></a></p>
+<figcaption>The Add Field button</figcaption>
+</figure>
+</div>
+<p>We can insert a field after any of the existing fields in the project by clicking one of those buttons. Doing so opens a window called Add New Field. Let’s create a field for the best contact phone number:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/designbas/variables/phone-contact-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Creating a new variable"><img src="images/designbas/variables/phone-contact-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Creating a new variable"></a></p>
+<figcaption>Creating a new variable</figcaption>
+</figure>
+</div>
+<p>We named it phone_contact_1 to indicate it is the best number for contacting the family. Then we click Save, and the new variable now appears on the form. Note that we chose Phone (North America) as the Validation standard. Now, if someone enters a phone number without an area code, an error message will say an invalid number was entered.</p>
+<p>We recommend when you are learning about REDCap, request a practice project, then go into Form 1, which gets created automatically, and play around with creating different kinds of variables. A practice project is the best way to learn by doing. To request a practice project, click on My Projects in the top left corner of the page, then click on the link at the top of the next page that says “+ New Project.” Fill out the form and a REDCap administrator will create a “Practice/Just For Fun” project for you. You will get an email when the project has been created and is available to you.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/designbas/variables/my-projects.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Go to My Projects"><img src="images/designbas/variables/my-projects.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Go to My Projects"></a></p>
+<figcaption>Go to My Projects</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/designbas/variables/new-project.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Go to New Project"><img src="images/designbas/variables/new-project.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Go to New Project"></a></p>
+<figcaption>Go to New Project</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/designbas/variables/request-project.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Request practice project"><img src="images/designbas/variables/request-project.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Request practice project"></a></p>
+<figcaption>Request practice project</figcaption>
 </figure>
 </div>
 <div class="callout callout-style-simple callout-note callout-titled">
@@ -757,7 +808,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This chapter was last edited in October 2025. If you have suggested modifications or additions, please see <a href="../index.html#sec-welcome-contribute">How to Contribute</a> on the book’s welcome page.</p>
+<p>This chapter was last edited in November 2025. If you have suggested modifications or additions, please see <a href="../index.html#sec-welcome-contribute">How to Contribute</a> on the book’s welcome page.</p>
 </div>
 </div>
 
