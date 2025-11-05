@@ -48,7 +48,7 @@ Breaking a project means testing your survey from a perspective of a naïve user
 
 ### Check the field type for every variable {#sec-check-testing-before-type}
 
-Make sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as MM/DD/YYYY? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button. A checkbox field allows multiple responses to be chosen on a multiple-choice item.
+Make sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as YYYY-MM-DD? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button or a drop-down menu. In contrast, a checkbox field allows multiple responses to be chosen on a multiple-choice item.
 
 ### Use clear language {#sec-check-testing-before-language}
 
@@ -76,11 +76,12 @@ Go through your items and figure out if you can validate each field in some way.
 Even something like "Child's age" could be entered numerous ways in a free-text field:
 
 ```csv
-Seven    7 years old        Don't know      8 on his next birthday
+Seven    7 years old        Don't know      
 7        7 years, 4 months  I don't know
+8 on his next birthday
 ```
 
-You might modify your item to specify "Child's age (in years)" and use data validation to require the person to enter an integer.
+You might modify your item to specify "Child's age (in years)" and use data validation to require the person to enter an integer greater than 0 and less than 18.
 
 ### Check whether your project is failing to collect necessary data, either by fields not being completed or fields being left off the form  {#sec-check-testing-before-necessary}
 
@@ -93,6 +94,7 @@ You might modify your item to specify "Child's age (in years)" and use data vali
 * Many times, omissions or errors can be found by testing the survey/instrument yourself.
 * Enter test data. If you are testing a survey, follow along with the paper survey and see if it matches with what is in REDCap.
 * Review the data you just entered and see if the data is what you expected.
+* Check all branching logic and make sure the fields that are supposed to become available to the respondent actually open up for data entry.
 
 ## When you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project {#sec-check-testing-others}
 
@@ -107,17 +109,16 @@ You might modify your item to specify "Child's age (in years)" and use data vali
 
 _Testing a public survey_
 
-* Public surveys can be distributed from REDCap email or through an OU email with an embedded link.
+* Public surveys can be distributed from the REDCap email system or through an OU email with an embedded link.
   The tester's email address is required.
 * If there is a paper survey, send selected individuals a copy and have them check to see if it matches what they see in REDCap.
   Other testers can test the survey without using the paper survey.
 
 _Testing data collection forms that are not surveys_
 
-* Testing data collection forms in REDCap (i.e., it is not a public survey),
-  will need to be done by individuals within your group or by individuals who will have temporary access to the project
+* Testing data collection forms used only within REDCap (i.e., it is not a public survey) will need to be done by individuals within your group or by individuals who will have temporary access to the project
   for testing only. They will need to be removed from the project
-  prior to pushing the project to production and prior to collecting data collection.
+  prior to pushing the project to production and prior to starting actual data collection.
 
 ### Have at least one other person who is familiar with the study or investigation check whether the REDCap project matches any printed documents, like IRB protocols and approved procedures.   {#sec-check-testing-others-printed}
 
@@ -128,8 +129,9 @@ _Testing data collection forms that are not surveys_
 * Are all the items present?
 * Have any items been added that were not approved by the IRB (and therefore should be deleted)?
 * Are calculated variables producing correct answers?
+* Can the investigators confirm who has been approved as key personnel by the IRB so only those people are given access to the REDCap project?
 
-### Ask the individuals testing your instruments/survey if the forms/surveys are user-friendly in its appearance {#sec-check-testing-others-appearance}
+### Ask the individuals testing your instruments/survey if the forms/surveys are user-friendly in appearance {#sec-check-testing-others-appearance}
 
 * Are the colors easy on the eyes?
 * Are colors acceptable for people who are color-blind?
@@ -144,9 +146,10 @@ _Testing data collection forms that are not surveys_
 
 ### Look at the data that the testers entered into REDCap  {#sec-check-testing-completed-inspect}
 
-* Does any of the  information look like it would be unusable or not as expected?
+* Click on Data Exports, Reports and Stats on the left side of your screen, then click on the View Report button to see the entered data.
+* Does any of the  information look like it would be unusable or is not as expected?
 * Can the field be modified with data validation settings?
-* Make corrections to the field if necessary.
+* Make corrections to the field if necessary. These corrections need to be done before the project is in production for actual data collection because you can lose data by changing the variables in production.
 
 ### Are there any text boxes that need to be turned into notes fields? {#sec-check-testing-completed-notes}
 
@@ -158,9 +161,9 @@ _Testing data collection forms that are not surveys_
 
 ### If you have real data entered and don't want to lose it, click on "Keep ALL data saved so far." {#sec-check-testing-satisfied-keep}
 
-### If everything is test data, {#sec-check-testing-satisfied-fake}
+### Is everything test data? {#sec-check-testing-satisfied-fake}
 
-  remember to click on "Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys,
+  * If so, remember to click on "Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys,
   and all archived data export files stored in the File Repository, and any logged events that pertain to data collection."
 
 ### Click on the button "Yes, Request Admin to Move to Production Status."  {#sec-check-testing-satisfied-request}
