@@ -606,7 +606,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#sec-check-testing-others-person" id="toc-sec-check-testing-others-person" class="nav-link" data-scroll-target="#sec-check-testing-others-person"><span class="header-section-number">14.2.1</span> Have at least one other person enter test data in your instruments or survey.</a></li>
   <li><a href="#sec-check-testing-others-printed" id="toc-sec-check-testing-others-printed" class="nav-link" data-scroll-target="#sec-check-testing-others-printed"><span class="header-section-number">14.2.2</span> Have at least one other person who is familiar with the study or investigation check whether the REDCap project matches any printed documents, like IRB protocols and approved procedures.</a></li>
-  <li><a href="#sec-check-testing-others-appearance" id="toc-sec-check-testing-others-appearance" class="nav-link" data-scroll-target="#sec-check-testing-others-appearance"><span class="header-section-number">14.2.3</span> Ask the individuals testing your instruments/survey if the forms/surveys are user-friendly in its appearance</a></li>
+  <li><a href="#sec-check-testing-others-appearance" id="toc-sec-check-testing-others-appearance" class="nav-link" data-scroll-target="#sec-check-testing-others-appearance"><span class="header-section-number">14.2.3</span> Ask the individuals testing your instruments/survey if the forms/surveys are user-friendly in appearance</a></li>
   </ul></li>
   <li><a href="#sec-check-testing-completed" id="toc-sec-check-testing-completed" class="nav-link" data-scroll-target="#sec-check-testing-completed"><span class="header-section-number">14.3</span> When the testers have completed their testing</a>
   <ul class="collapse">
@@ -620,7 +620,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <li><a href="#sec-check-testing-satisfied-setup" id="toc-sec-check-testing-satisfied-setup" class="nav-link" data-scroll-target="#sec-check-testing-satisfied-setup"><span class="header-section-number">14.4.1</span> Move your project to production status by (1) clicking on “Project Setup” tab:</a></li>
   <li><a href="#sec-check-testing-satisfied-move" id="toc-sec-check-testing-satisfied-move" class="nav-link" data-scroll-target="#sec-check-testing-satisfied-move"><span class="header-section-number">14.4.2</span> Then scroll down, and (2) click on the button “Move project to production.”</a></li>
   <li><a href="#sec-check-testing-satisfied-keep" id="toc-sec-check-testing-satisfied-keep" class="nav-link" data-scroll-target="#sec-check-testing-satisfied-keep"><span class="header-section-number">14.4.3</span> If you have real data entered and don’t want to lose it, click on “Keep ALL data saved so far.”</a></li>
-  <li><a href="#sec-check-testing-satisfied-fake" id="toc-sec-check-testing-satisfied-fake" class="nav-link" data-scroll-target="#sec-check-testing-satisfied-fake"><span class="header-section-number">14.4.4</span> If everything is test data,</a></li>
+  <li><a href="#sec-check-testing-satisfied-fake" id="toc-sec-check-testing-satisfied-fake" class="nav-link" data-scroll-target="#sec-check-testing-satisfied-fake"><span class="header-section-number">14.4.4</span> Is everything test data?</a></li>
   <li><a href="#sec-check-testing-satisfied-request" id="toc-sec-check-testing-satisfied-request" class="nav-link" data-scroll-target="#sec-check-testing-satisfied-request"><span class="header-section-number">14.4.5</span> Click on the button “Yes, Request Admin to Move to Production Status.”</a></li>
   </ul></li>
   </ul>
@@ -697,7 +697,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <h2 data-number="14.1" class="anchored" data-anchor-id="sec-check-testing-before"><span class="header-section-number">14.1</span> Before sending your instruments or survey for testing, the designer (you) will need to:</h2>
 <section id="sec-check-testing-before-type" class="level3" data-number="14.1.1">
 <h3 data-number="14.1.1" class="anchored" data-anchor-id="sec-check-testing-before-type"><span class="header-section-number">14.1.1</span> Check the field type for every variable</h3>
-<p>Make sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as MM/DD/YYYY? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button. A checkbox field allows multiple responses to be chosen on a multiple-choice item.</p>
+<p>Make sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as YYYY-MM-DD? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button or a drop-down menu. In contrast, a checkbox field allows multiple responses to be chosen on a multiple-choice item.</p>
 </section>
 <section id="sec-check-testing-before-language" class="level3" data-number="14.1.2">
 <h3 data-number="14.1.2" class="anchored" data-anchor-id="sec-check-testing-before-language"><span class="header-section-number">14.1.2</span> Use clear language</h3>
@@ -724,9 +724,10 @@ Figure&nbsp;14.1: Ambiguous “Name.”
 <pre class="csv"><code>January 8, 1999    08 January 1999    Jan 8, 99   1-8-1999
 Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
 <p>A subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birth date. And forget about being able to calculate someone’s current age based on these data! Use REDCap’s built-in data validation capability whenever possible. Go through your items and figure out if you can validate each field in some way. Even something like “Child’s age” could be entered numerous ways in a free-text field:</p>
-<pre class="csv"><code>Seven    7 years old        Don't know      8 on his next birthday
-7        7 years, 4 months  I don't know</code></pre>
-<p>You might modify your item to specify “Child’s age (in years)” and use data validation to require the person to enter an integer.</p>
+<pre class="csv"><code>Seven    7 years old        Don't know      
+7        7 years, 4 months  I don't know
+8 on his next birthday</code></pre>
+<p>You might modify your item to specify “Child’s age (in years)” and use data validation to require the person to enter an integer greater than 0 and less than 18.</p>
 </section>
 <section id="sec-check-testing-before-necessary" class="level3" data-number="14.1.4">
 <h3 data-number="14.1.4" class="anchored" data-anchor-id="sec-check-testing-before-necessary"><span class="header-section-number">14.1.4</span> Check whether your project is failing to collect necessary data, either by fields not being completed or fields being left off the form</h3>
@@ -742,6 +743,7 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
 <li>Many times, omissions or errors can be found by testing the survey/instrument yourself.</li>
 <li>Enter test data. If you are testing a survey, follow along with the paper survey and see if it matches with what is in REDCap.</li>
 <li>Review the data you just entered and see if the data is what you expected.</li>
+<li>Check all branching logic and make sure the fields that are supposed to become available to the respondent actually open up for data entry.</li>
 </ul>
 </section>
 </section>
@@ -761,12 +763,12 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
 </ul>
 <p><em>Testing a public survey</em></p>
 <ul>
-<li>Public surveys can be distributed from REDCap email or through an OU email with an embedded link. The tester’s email address is required.</li>
+<li>Public surveys can be distributed from the REDCap email system or through an OU email with an embedded link. The tester’s email address is required.</li>
 <li>If there is a paper survey, send selected individuals a copy and have them check to see if it matches what they see in REDCap. Other testers can test the survey without using the paper survey.</li>
 </ul>
 <p><em>Testing data collection forms that are not surveys</em></p>
 <ul>
-<li>Testing data collection forms in REDCap (i.e., it is not a public survey), will need to be done by individuals within your group or by individuals who will have temporary access to the project for testing only. They will need to be removed from the project prior to pushing the project to production and prior to collecting data collection.</li>
+<li>Testing data collection forms used only within REDCap (i.e., it is not a public survey) will need to be done by individuals within your group or by individuals who will have temporary access to the project for testing only. They will need to be removed from the project prior to pushing the project to production and prior to starting actual data collection.</li>
 </ul>
 </section>
 <section id="sec-check-testing-others-printed" class="level3" data-number="14.2.2">
@@ -779,10 +781,11 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
 <li>Are all the items present?</li>
 <li>Have any items been added that were not approved by the IRB (and therefore should be deleted)?</li>
 <li>Are calculated variables producing correct answers?</li>
+<li>Can the investigators confirm who has been approved as key personnel by the IRB so only those people are given access to the REDCap project?</li>
 </ul>
 </section>
 <section id="sec-check-testing-others-appearance" class="level3" data-number="14.2.3">
-<h3 data-number="14.2.3" class="anchored" data-anchor-id="sec-check-testing-others-appearance"><span class="header-section-number">14.2.3</span> Ask the individuals testing your instruments/survey if the forms/surveys are user-friendly in its appearance</h3>
+<h3 data-number="14.2.3" class="anchored" data-anchor-id="sec-check-testing-others-appearance"><span class="header-section-number">14.2.3</span> Ask the individuals testing your instruments/survey if the forms/surveys are user-friendly in appearance</h3>
 <ul>
 <li>Are the colors easy on the eyes?</li>
 <li>Are colors acceptable for people who are color-blind?</li>
@@ -802,9 +805,10 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
 <section id="sec-check-testing-completed-inspect" class="level3" data-number="14.3.3">
 <h3 data-number="14.3.3" class="anchored" data-anchor-id="sec-check-testing-completed-inspect"><span class="header-section-number">14.3.3</span> Look at the data that the testers entered into REDCap</h3>
 <ul>
-<li>Does any of the information look like it would be unusable or not as expected?</li>
+<li>Click on Data Exports, Reports and Stats on the left side of your screen, then click on the View Report button to see the entered data.</li>
+<li>Does any of the information look like it would be unusable or is not as expected?</li>
 <li>Can the field be modified with data validation settings?</li>
-<li>Make corrections to the field if necessary.</li>
+<li>Make corrections to the field if necessary. These corrections need to be done before the project is in production for actual data collection because you can lose data by changing the variables in production.</li>
 </ul>
 </section>
 <section id="sec-check-testing-completed-notes" class="level3" data-number="14.3.4">
@@ -823,8 +827,10 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
 <h3 data-number="14.4.3" class="anchored" data-anchor-id="sec-check-testing-satisfied-keep"><span class="header-section-number">14.4.3</span> If you have real data entered and don’t want to lose it, click on “Keep ALL data saved so far.”</h3>
 </section>
 <section id="sec-check-testing-satisfied-fake" class="level3" data-number="14.4.4">
-<h3 data-number="14.4.4" class="anchored" data-anchor-id="sec-check-testing-satisfied-fake"><span class="header-section-number">14.4.4</span> If everything is test data,</h3>
-<p>remember to click on “Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys, and all archived data export files stored in the File Repository, and any logged events that pertain to data collection.”</p>
+<h3 data-number="14.4.4" class="anchored" data-anchor-id="sec-check-testing-satisfied-fake"><span class="header-section-number">14.4.4</span> Is everything test data?</h3>
+<ul>
+<li>If so, remember to click on “Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys, and all archived data export files stored in the File Repository, and any logged events that pertain to data collection.”</li>
+</ul>
 </section>
 <section id="sec-check-testing-satisfied-request" class="level3" data-number="14.4.5">
 <h3 data-number="14.4.5" class="anchored" data-anchor-id="sec-check-testing-satisfied-request"><span class="header-section-number">14.4.5</span> Click on the button “Yes, Request Admin to Move to Production Status.”</h3>
