@@ -3,7 +3,7 @@ abstract: Distribute private surveys efficiently.
 
 author:
   - name: M. Connor Garbe
-    affiliation: University of Oklahoma Health Sciences
+    affiliation: University of Oklahoma Health Campus
     # affiliation-url: https://ouhsc.edu/bbmc/
     email: michael-garbe@ouhsc.edu
     orcid: 0000-0001-6879-4853
@@ -11,7 +11,7 @@ author:
       corresponding: true
 
   - name: Thomas Wilson
-    affiliation: University of Oklahoma Health Sciences
+    affiliation: University of Oklahoma Health Campus
     affiliation-url: https://ouhsc.edu/bbmc/
     email: thomas-wilson@ouhsc.edu
     orcid: 0009-0009-1239-1348

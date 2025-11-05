@@ -3,7 +3,7 @@ abstract: Accessing REDCap for the first time.
 
 author:
   - name: Thomas Wilson
-    affiliation: University of Oklahoma Health Sciences
+    affiliation: University of Oklahoma Health Campus
     affiliation-url: https://ouhsc.edu/bbmc/
     email: thomas-wilson@ouhsc.edu
     orcid: 0009-0009-1239-1348

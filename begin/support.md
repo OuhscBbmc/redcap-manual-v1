@@ -3,7 +3,7 @@ abstract: OU offers many paths for researchers seeking support to make the most 
 
 author:
   - name: Thomas Wilson
-    affiliation: University of Oklahoma Health Sciences
+    affiliation: University of Oklahoma Health Campus
     affiliation-url: https://ouhsc.edu/bbmc/
     email: thomas-wilson@ouhsc.edu
     orcid: 0009-0009-1239-1348
@@ -11,7 +11,7 @@ author:
       corresponding: true
 
   - name: William H Beasley
-    affiliation: University of Oklahoma Health Sciences
+    affiliation: University of Oklahoma Health Campus
     affiliation-url: https://ouhsc.edu/bbmc/
     email: wibeasley@hotmail.com
     orcid: 0000-0002-5613-5006
