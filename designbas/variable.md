@@ -50,15 +50,15 @@ When you log into REDCap and click on a project name, you will have two ways to 
 into Designer.
 One is in the top left corner of your screen, with a link called *Designer*.
 
-![Enter Designer](images/designbas/variables/designer-1.jpg){width=80%}
+![Enter Designer](images/variables/designer-1.jpg){width=80%}
 
 The other way is on the same screen in the middle of the page with a box labeled *Online Designer*.
 
-![Enter Online Designer](images/designbas/variables/designer-2.jpg){width=80%}
+![Enter Online Designer](images/variables/designer-2.jpg){width=80%}
 
 Either way, you end up on the same page, which lists the forms in the project.
 
-![List of forms](images/designbas/variables/forms.jpg){width=80%}
+![List of forms](images/variables/forms.jpg){width=80%}
 
 Clicking on any form name will open it.
 Form 1 in this project already has five variables in it: the Record ID and four other variables.
@@ -70,14 +70,14 @@ It can be renamed, but we will leave ours alone.
 
 To edit a variable, click on the little pencil icon.
 
-![Pencil icon](images/designbas/variables/pencilicon.jpg){width=80%}
+![Pencil icon](images/variables/pencilicon.jpg){width=80%}
 
 We get a new window labeled *Edit Field*.
 We can learn several things about this variable from this window.
 First, it is a Notes Box (Paragraph Text) field.
 That means it could be used to enter a description of a clinic visit, for example.
 
-![Edit Field](images/designbas/variables/editfield.jpg){width=80%}
+![Edit Field](images/variables/editfield.jpg){width=80%}
 
 You see that the large box under *Field Label* is blank.
 No label has been created for this variable.
@@ -90,13 +90,13 @@ An analyst will use the variable name.
 anything about the data simply by looking at that variable name.
 Let's change it to *visit_note* and add a label to match, then click Save.
 
-![Change variable name](images/designbas/variables/visitnote.jpg){width=80%}
+![Change variable name](images/variables/visitnote.jpg){width=80%}
 
 Let's look at *variable_2* and see what kinds of variables can be created.
 This variable was created as a *Text Box (Short Text, Number, Date/Time, ...)*.
 Let's change it to capture a participant's first name
 
-![Change variable name](images/designbas/variables/name-first.jpg){width=80%}
+![Change variable name](images/variables/name-first.jpg){width=80%}
 
 Note that we did not name the variable first_name.
 We recommend starting the variable name with something general, then getting more
@@ -108,7 +108,7 @@ creating variable names.
 If this study collected data for a parent and a child, then *name_first* would be a poor choice.
 A better choice might be *name_parent_first.*
 
-![Parent's first name](images/designbas/variables/parent-first-name.jpg){width=80%}
+![Parent's first name](images/variables/parent-first-name.jpg){width=80%}
 
 ## Types of variables {#sec-designbas-variable-variabletypes}
 
@@ -116,7 +116,7 @@ As mentioned above, REDCap can capture many kinds of data.
 Let's look at variable_3 and see what kinds of variables are available.
 Next to the words *Field Type* is a drop-down menu of kinds of variables.
 
-![Field type dropdown](images/designbas/variables/kinds-of-variables.jpg){width=80%}
+![Field type dropdown](images/variables/kinds-of-variables.jpg){width=80%}
 
 As the creator of a REDCap project, you are on the front line of ensuring data quality.
 The specifications you enter for each variable can make a world of difference.
@@ -133,7 +133,7 @@ Further, two children from the same family could be involved in the study.
 So we will name the variable to specify we are talking about the first child,
 and we will use a setting called *Validation*, which has a drop-down menu beside it.
 
-![Validation settings](images/designbas/variables/validation-1.jpg){width=80%}
+![Validation settings](images/variables/validation-1.jpg){width=80%}
 
 You can see a scroll bar on the right side of the drop-down menu.
 So there are many validation types from which to choose.
@@ -141,7 +141,7 @@ For child's age in years, we will choose Integer.
 After we do that, we see options pop up for *Minimum* and *Maximum*.
 We will enter the minimum and maximum ages possible for this study.
 
-![Validation range](images/designbas/variables/validation-2.jpg){width=80%}
+![Validation range](images/variables/validation-2.jpg){width=80%}
 
 Now someone entering data who typed an age outside that range will get an error message,
 saying that the number is beyond the limits you set.
@@ -151,7 +151,7 @@ saying that the number is beyond the limits you set.
 Let's look at one more kind of variable: a date field. We will change variable_4
 on our example project to the date of birth for the first child in our study.
 
-![Kinds of date variables](images/designbas/variables/date_birth_child_1.jpg){width=80%}
+![Kinds of date variables](images/variables/date_birth_child_1.jpg){width=80%}
 
 Date validation can be as general as a date or as specific as the date and time down to the second.
 For a birth date, we only need the date. We have 3 format options available to us: day-month-year,
@@ -166,13 +166,13 @@ Our examples so far have involved modifying variables that already existed in a 
 project.
 Let's create a new variable. Look for the buttons that say "Add Field":
 
-![The Add Field button](images/designbas/variables/add-field.jpg){width=80%}
+![The Add Field button](images/variables/add-field.jpg){width=80%}
 
 We can insert a field after any of the existing fields in the project by clicking one
 of those buttons. Doing so opens a window called Add New Field. Let's create a field for
 the best contact phone number:
 
-![Creating a new variable](images/designbas/variables/phone-contact-1.jpg){width=80%}
+![Creating a new variable](images/variables/phone-contact-1.jpg){width=80%}
 
 We named it phone_contact_1 to indicate it is the best number for contacting the family.
 Then we click Save, and the new variable now appears on the form.
@@ -189,18 +189,13 @@ Fill out the form and a REDCap administrator will create a "Practice/Just For Fu
 project for you.
 You will get an email when the project has been created and is available to you.
 
-![Go to My Projects](images/designbas/variables/my-projects.jpg){width=80%}
+![Go to My Projects](images/variables/my-projects.jpg){width=80%}
 
-![Go to New Project](images/designbas/variables/new-project.jpg){width=80%}
+![Go to New Project](images/variables/new-project.jpg){width=80%}
 
-![Request practice project](images/designbas/variables/request-project.jpg){width=80%}
-
+![Request practice project](images/variables/request-project.jpg){width=80%}
 
 ::: {.callout-note appearance="simple"}
-
-
-
-
 
 ## Additional Chapter Details
 
