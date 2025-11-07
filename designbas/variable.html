@@ -595,7 +595,14 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <li><a href="#sec-designbas-variable-decisions" id="toc-sec-designbas-variable-decisions" class="nav-link active" data-scroll-target="#sec-designbas-variable-decisions"><span class="header-section-number">9.1</span> Variable decisions</a></li>
   <li><a href="#sec-designbas-variable-variablenames" id="toc-sec-designbas-variable-variablenames" class="nav-link" data-scroll-target="#sec-designbas-variable-variablenames"><span class="header-section-number">9.2</span> Variable names</a></li>
   <li><a href="#sec-designbas-variable-namesvslabels" id="toc-sec-designbas-variable-namesvslabels" class="nav-link" data-scroll-target="#sec-designbas-variable-namesvslabels"><span class="header-section-number">9.3</span> Variable names vs.&nbsp;labels</a></li>
-  <li><a href="#sec-designbas-variable-variabletypes" id="toc-sec-designbas-variable-variabletypes" class="nav-link" data-scroll-target="#sec-designbas-variable-variabletypes"><span class="header-section-number">9.4</span> Types of variables</a></li>
+  <li><a href="#sec-designbas-variable-fieldtypes" id="toc-sec-designbas-variable-fieldtypes" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes"><span class="header-section-number">9.4</span> Field Types</a>
+  <ul class="collapse">
+  <li><a href="#sec-designbas-variable-fieldtypes-textbox" id="toc-sec-designbas-variable-fieldtypes-textbox" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes-textbox"><span class="header-section-number">9.4.1</span> Text Box</a></li>
+  <li><a href="#sec-designbas-variable-fieldtypes-notesbox" id="toc-sec-designbas-variable-fieldtypes-notesbox" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes-notesbox"><span class="header-section-number">9.4.2</span> Notes Box</a></li>
+  <li><a href="#sec-designbas-variable-fieldtypes-calculatedfield" id="toc-sec-designbas-variable-fieldtypes-calculatedfield" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes-calculatedfield"><span class="header-section-number">9.4.3</span> Calculate Field</a></li>
+  <li><a href="#sec-designbas-variable-fieldtypes-multiplechoicedropdown" id="toc-sec-designbas-variable-fieldtypes-multiplechoicedropdown" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes-multiplechoicedropdown"><span class="header-section-number">9.4.4</span> Multiple Choice - Drop-down list</a></li>
+  <li><a href="#sec-designbas-variable-fieldtypes-multiplechoiceradio" id="toc-sec-designbas-variable-fieldtypes-multiplechoiceradio" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes-multiplechoiceradio"><span class="header-section-number">9.4.5</span> Multiple Choice - Radio Buttons</a></li>
+  </ul></li>
   <li><a href="#sec-designbas-variable-datevariables" id="toc-sec-designbas-variable-datevariables" class="nav-link" data-scroll-target="#sec-designbas-variable-datevariables"><span class="header-section-number">9.5</span> Date variables</a></li>
   <li><a href="#sec-designbas-variable-newvariables" id="toc-sec-designbas-variable-newvariables" class="nav-link" data-scroll-target="#sec-designbas-variable-newvariables"><span class="header-section-number">9.6</span> Creating a new variable</a></li>
   </ul>
@@ -725,8 +732,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </figure>
 </div>
 </section>
-<section id="sec-designbas-variable-variabletypes" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="sec-designbas-variable-variabletypes"><span class="header-section-number">9.4</span> Types of variables</h2>
+<section id="sec-designbas-variable-fieldtypes" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes"><span class="header-section-number">9.4</span> Field Types</h2>
 <p>As mentioned above, REDCap can capture many kinds of data. Let’s look at variable_3 and see what kinds of variables are available. Next to the words <em>Field Type</em> is a drop-down menu of kinds of variables.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -735,6 +742,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </figure>
 </div>
 <p>As the creator of a REDCap project, you are on the front line of ensuring data quality. The specifications you enter for each variable can make a world of difference. Your specifications can force a data entry person to enter a number with two decimal places or ensure that an email address is in a valid format. The specs also can set limits on numbers so a data entry person would not accidentally enter that a person was 150 years old, instead of 15.</p>
+<section id="sec-designbas-variable-fieldtypes-textbox" class="level3" data-number="9.4.1">
+<h3 data-number="9.4.1" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes-textbox"><span class="header-section-number">9.4.1</span> Text Box</h3>
 <p>A <em>Text Box</em> field can handle many kinds of data. Let’s look at how to specify which kind of entries will be valid. Suppose we want the data entry person to enter a child’s age for a study involving only children ages 2 through 8 years. Further, two children from the same family could be involved in the study. So we will name the variable to specify we are talking about the first child, and we will use a setting called <em>Validation</em>, which has a drop-down menu beside it.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -750,6 +759,20 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </figure>
 </div>
 <p>Now someone entering data who typed an age outside that range will get an error message, saying that the number is beyond the limits you set.</p>
+</section>
+<section id="sec-designbas-variable-fieldtypes-notesbox" class="level3" data-number="9.4.2">
+<h3 data-number="9.4.2" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes-notesbox"><span class="header-section-number">9.4.2</span> Notes Box</h3>
+</section>
+<section id="sec-designbas-variable-fieldtypes-calculatedfield" class="level3" data-number="9.4.3">
+<h3 data-number="9.4.3" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes-calculatedfield"><span class="header-section-number">9.4.3</span> Calculate Field</h3>
+<p>{This will be just a sentence or two, then refere to the dedicated chater in the “Advanced Project Design” part}</p>
+</section>
+<section id="sec-designbas-variable-fieldtypes-multiplechoicedropdown" class="level3" data-number="9.4.4">
+<h3 data-number="9.4.4" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes-multiplechoicedropdown"><span class="header-section-number">9.4.4</span> Multiple Choice - Drop-down list</h3>
+</section>
+<section id="sec-designbas-variable-fieldtypes-multiplechoiceradio" class="level3" data-number="9.4.5">
+<h3 data-number="9.4.5" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes-multiplechoiceradio"><span class="header-section-number">9.4.5</span> Multiple Choice - Radio Buttons</h3>
+</section>
 </section>
 <section id="sec-designbas-variable-datevariables" class="level2" data-number="9.5">
 <h2 data-number="9.5" class="anchored" data-anchor-id="sec-designbas-variable-datevariables"><span class="header-section-number">9.5</span> Date variables</h2>
