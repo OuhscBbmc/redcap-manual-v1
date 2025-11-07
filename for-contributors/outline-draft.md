@@ -8,37 +8,42 @@ Draft of Book
     1.  Chapter: Creating records
     1.  Chapter: Record Status Dashboard
     1.  Chapter: Randomizing Participants
-    1.  Chapter: Data Entry via CDIS & FHIR
     1.  Chapter: Security Consideration for Beginners
     1.  Internal notes for this part:
         1.  Keep these chapters short & sweet so you don't overwhelm new users
 
 1.  Part: Project Design (Basic)
-    1. Chapter: Vocabulary for project design
+    1. Chapter: Vocabulary For Project Design
     1. Chapter: Variable Decisions
        1.  Name
-       1.  Data type
+       1.  Data Type
        1.  Validation
-    1. Chapter: security consideration for basic design
+    1. Chapter: Security Consideration For Basic Design
 
-1.  Part: Project Design (Advanced)
+1.  Part: Project Design (Intermediate)
     1. Chapter: Calculations
-       1. Include a bank of snippets that readers can copy & paste
+       1. Include A Bank of Snippets that Readers Can Copy & Paste
     1. Chapter: Action Tags
-    1. Chapter: Branching logic
+    1. Chapter: Branching Logic
+    1. Chapter: Piping
     1. Chapter: Private Surveys
     1. Chapter: Public Surveys
+    1. Chapter: Aesthetics and Ergonomics
+    1. Chapter: Copying Project Structure
+    1. Chapter: Security Consideration For Intermediate Design
+
+1.  Part: Project Design (Advanced)
     1. Chapter: Automated Invitations
     1. Chapter: Longitudinal Events
     1. Chapter: Repeating Events
     1. Chapter: Repeating Instruments
-    1. Chapter: Reporting
-    1. Chapter: E-consents
+    1. Chapter: Smart Variables
+    1. Chapter: Custom Reports and Dashboards
+    1. Chapter: E-Consents
     1. Chapter: Static Randomization
     1. Chapter: Dynamic Randomization
-    1. Chapter: Copying Project Structure
-    1. Chapter: Dynamic SQL Field
-    1. Chapter: security consideration for advanced design
+    1. Chapter: Dynamic Sql Field
+    1. Chapter: Security Consideration For Advanced Design
 
 1.  Part: Project Admin
     1.  Chapter: Vocabulary for project administrator
