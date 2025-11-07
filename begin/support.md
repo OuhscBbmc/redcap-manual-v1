@@ -5,7 +5,7 @@ author:
   - name: Thomas Wilson
     affiliation: University of Oklahoma Health Campus
     affiliation-url: https://ouhsc.edu/bbmc/
-    email: thomas-wilson@ouhsc.edu
+    email: thomas-wilson@ou.edu
     orcid: 0009-0009-1239-1348
     attributes:
       corresponding: true
@@ -30,7 +30,7 @@ csl: ../assets/csl/apa-7e.csl
 
 The OU REDCap teams hosts online office hours on Tuesday (10:30-11:30am) and Thursday (10:30-11:30am) most weeks.
 But this is subject to change, so check with Thomas if it is important.
-Please contact [Thomas](mailto:thomas-wilson@ouhsc.edu) for the Zoom link.
+Please contact [Thomas](mailto:thomas-wilson@ou.edu) for the Zoom link.
 
 All are welcome to join,
 from experienced project admins wanting to tweak an existing feature,

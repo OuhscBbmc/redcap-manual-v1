@@ -5,7 +5,7 @@ author:
   - name: M. Connor Garbe
     affiliation: University of Oklahoma Health Campus
     # affiliation-url: https://ouhsc.edu/bbmc/
-    email: michael-garbe@ouhsc.edu
+    email: michael-garbe@ou.edu
     orcid: 0000-0001-6879-4853
     attributes:
       corresponding: true
@@ -13,7 +13,7 @@ author:
   - name: Thomas Wilson
     affiliation: University of Oklahoma Health Campus
     affiliation-url: https://ouhsc.edu/bbmc/
-    email: thomas-wilson@ouhsc.edu
+    email: thomas-wilson@ou.edu
     orcid: 0009-0009-1239-1348
 
 csl: ../assets/csl/apa-7e.csl

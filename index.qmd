@@ -20,7 +20,7 @@ For errors or requests, please submit an [Issue](https://docs.github.com/en/issu
 to the book's [issue tracker](https://github.com/OuhscBbmc/redcap-manual-v1/issues).
 To make larger or direct contributions, please make a [pull request](https://github.com/OuhscBbmc/redcap-manual-v1/pulls) using the standard [GitHub workflow](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
 
-If you would like to contribute but are unfamiliar with any of these technologies, please feel free to email <to be created: redcap@ouhsc.edu> with comments and suggestions for changes.
+If you would like to contribute but are unfamiliar with any of these technologies, please feel free to email <to be created: redcap@ou.edu> with comments and suggestions for changes.
 If you would like to discuss the content or receive further help, see the [Help and Support Chapter](begin/support.md).
 
 ## How to Cite this Work {#sec-welcome-cite}

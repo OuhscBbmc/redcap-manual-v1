@@ -5,7 +5,7 @@ author:
   - name: Vignesh Murugan
     affiliation: University of Oklahoma Health Campus
     # affiliation-url: https://ouhsc.edu/bbmc/
-    # email: thomas-wilson@ouhsc.edu
+    # email: thomas-wilson@ou.edu
     # orcid: 0000-0000-0000-0000
     attributes:
       corresponding: true
@@ -13,7 +13,7 @@ author:
   - name: Thomas Wilson
     affiliation: University of Oklahoma Health Campus
     affiliation-url: https://ouhsc.edu/bbmc/
-    email: thomas-wilson@ouhsc.edu
+    email: thomas-wilson@ou.edu
     orcid: 0009-0009-1239-1348
 
 csl: ../assets/csl/apa-7e.csl
