@@ -110,7 +110,7 @@ A better choice might be *name_parent_first.*
 
 ![Parent's first name](images/variables/parent-first-name.jpg){width=80%}
 
-## Types of variables {#sec-designbas-variable-variabletypes}
+## Field Types {#sec-designbas-variable-fieldtypes}
 
 As mentioned above, REDCap can capture many kinds of data.
 Let's look at variable_3 and see what kinds of variables are available.
@@ -124,6 +124,8 @@ Your specifications can force a data entry person to enter a number with two dec
 or ensure that an email address is in a valid format.
 The specs also can set limits on numbers so a data entry person would not
 accidentally enter that a person was 150 years old, instead of 15.
+
+### Text Box {#sec-designbas-variable-fieldtypes-textbox}
 
 A *Text Box* field can handle many kinds of data.
 Let's look at how to specify which kind of entries will be valid.
@@ -145,6 +147,16 @@ We will enter the minimum and maximum ages possible for this study.
 
 Now someone entering data who typed an age outside that range will get an error message,
 saying that the number is beyond the limits you set.
+
+### Notes Box {#sec-designbas-variable-fieldtypes-notesbox}
+
+### Calculate Field {#sec-designbas-variable-fieldtypes-calculatedfield}
+
+{This will be just a sentence or two, then refere to the dedicated chater in the "Advanced Project Design" part}
+
+### Multiple Choice - Drop-down list {#sec-designbas-variable-fieldtypes-multiplechoicedropdown}
+
+### Multiple Choice - Radio Buttons {#sec-designbas-variable-fieldtypes-multiplechoiceradio}
 
 ## Date variables {#sec-designbas-variable-datevariables}
 
