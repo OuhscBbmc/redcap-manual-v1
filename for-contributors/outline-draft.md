@@ -37,6 +37,7 @@ Draft of Book
     1. Chapter: Static Randomization
     1. Chapter: Dynamic Randomization
     1. Chapter: Copying Project Structure
+    1. Chapter: Dynamic SQL Field
     1. Chapter: security consideration for advanced design
 
 1.  Part: Project Admin
