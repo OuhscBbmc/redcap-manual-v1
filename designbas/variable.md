@@ -151,7 +151,7 @@ saying that the number is beyond the limits you set.
 Let's look at one more kind of variable: a date field. We will change variable_4
 on our example project to the date of birth for the first child in our study.
 
-![Kinds of date variables](images/variables/date_birth_child_1.jpg){width=80%}
+![Kinds of date variables](images/variables/date-variable-1.jpg){width=80%}
 
 Date validation can be as general as a date or as specific as the date and time down to the second.
 For a birth date, we only need the date. We have 3 format options available to us: day-month-year,
