@@ -31,16 +31,15 @@ csl: ../assets/csl/apa-7e.csl
 
 ## Common {#sec-designint-action-common}
 
-### @HIDEBUTTON {#sec-designint-action-common-hide}
+### `@HIDEBUTTON` {#sec-designint-action-common-hide}
 
-### @DEFAULT {#sec-designint-action-common-default}
+### `@DEFAULT` {#sec-designint-action-common-default}
 
 ## Less Common {#sec-designint-action-lesscommon}
 
-### @SETVALUE {#sec-designint-action-lesscommon-setvalue}
+### `@SETVALUE` {#sec-designint-action-lesscommon-setvalue}
 
-### @PLACEHOLDER {#sec-designint-action-lesscommon-placeholder}
-
+### `@PLACEHOLDER` {#sec-designint-action-lesscommon-placeholder}
 
 ::: {.callout-note appearance="simple"}
 
