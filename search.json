@@ -14,7 +14,7 @@
     "href": "index.html#sec-welcome-contribute",
     "title": "REDCap Manual for OU",
     "section": "How to Contribute",
-    "text": "How to Contribute\nWe welcome suggestions, edits, and larger contributions to this guide. This book is typeset in Markdown, rendered with Quarto, and hosted on GitHub. For errors or requests, please submit an Issue to the book’s issue tracker. To make larger or direct contributions, please make a pull request using the standard GitHub workflow.\nIf you would like to contribute but are unfamiliar with any of these technologies, please feel free to email &lt;to be created: redcap@ouhsc.edu&gt; with comments and suggestions for changes. If you would like to discuss the content or receive further help, see the Help and Support Chapter.",
+    "text": "How to Contribute\nWe welcome suggestions, edits, and larger contributions to this guide. This book is typeset in Markdown, rendered with Quarto, and hosted on GitHub. For errors or requests, please submit an Issue to the book’s issue tracker. To make larger or direct contributions, please make a pull request using the standard GitHub workflow.\nIf you would like to contribute but are unfamiliar with any of these technologies, please feel free to email &lt;to be created: redcap@ou.edu&gt; with comments and suggestions for changes. If you would like to discuss the content or receive further help, see the Help and Support Chapter.",
     "crumbs": [
       "Welcome"
     ]
@@ -99,7 +99,7 @@
     "href": "begin/vocab.html",
     "title": "3  Vocabulary",
     "section": "",
-    "text": "3.1 General\nChapter Leads: Thomas Wilson\nThese general terms for beginners reading Chapters 1 through 8.",
+    "text": "3.1 General\nChapter Leads: Thomas Wilson\nThese general terms for beginners reading Chapters 1 through 7.",
     "crumbs": [
       "Data Entry for New Users",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Vocabulary</span>"
@@ -241,6 +241,17 @@
     "objectID": "begin/dashboard.html#sec-begin-dashboard-homepage",
     "href": "begin/dashboard.html#sec-begin-dashboard-homepage",
     "title": "5  Record Status Dashboard",
+    "section": "5.5 Navigating a record’s homepage",
+    "text": "5.5 Navigating a record’s homepage\nClicking the record number takes you to the Record Home Page.\n\n\n\nA record’s home page\n\n\nThe legend in the top right of the following screenshot tells us the meaning of the Status circle’s color. A green circle, or button, means the record has been saved as complete. Clicking the green button takes us into the form for this research project. Let’s look at where the button’s color was determined. Look for the word Complete at the bottom of the form; that setting is responsible for the button’s color.\n\n\n\nComplete the data entry for a record",
+    "crumbs": [
+      "Data Entry for New Users",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Record Status Dashboard</span>"
+    ]
+  },
+  {
+    "objectID": "begin/dashboard.html#sec-begin-dashboard-buttons",
+    "href": "begin/dashboard.html#sec-begin-dashboard-buttons",
+    "title": "5  Record Status Dashboard",
     "section": "5.6 Buttons on a dashboard",
     "text": "5.6 Buttons on a dashboard\nLet’s take a look at a more complicated REDCap project with many instruments. The project we will examine was created for data entry people in a certain research study to practice entering data in a REDCap project identical to the one that was going to be used to collect actual data from patients. This practice project has made-up data.\n\n\n\nA dashboard with many instruments\n\n\nThe first column of this dashboard is labeled Record ID, the default name used by REDCap for assigning unique record numbers to each patient or entity for data collection. This column also has the word “Enrolled” followed by a date. This information was specified as an additional customization. This study had seven instruments: Enrollment, Randomize, Demographics, DR Information, Outcomes, Serious Adverse Event Form, and Protocol Deviations. Now we see many colors of buttons. The legend tells use red means Incomplete, yellow means Unverified, green means Complete, gray means no data was saved on that form for that patient, and overlapping buttons mean there is more than one copy of that form saved in the project. Blue overlapping buttons mean the multiple copies of the form have different statuses. If the overlapping buttons are red, yellow, or green, the multiple copies have the same status, as indicated by the color.",
     "crumbs": [
@@ -293,91 +304,124 @@
     ]
   },
   {
-    "objectID": "begin/cdis.html",
-    "href": "begin/cdis.html",
-    "title": "7  Data Entry via CDIS & FHIR",
-    "section": "",
-    "text": "Chapter Leads: Thomas Wilson\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
-    "crumbs": [
-      "Data Entry for New Users",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data Entry via CDIS & FHIR</span>"
-    ]
-  },
-  {
     "objectID": "begin/security.html",
     "href": "begin/security.html",
-    "title": "8  Security Consideration for Beginners",
+    "title": "7  Security Consideration for Beginners",
     "section": "",
     "text": "Chapter Leads: Thomas Wilson\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Data Entry for New Users",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Security Consideration for Beginners</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Security Consideration for Beginners</span>"
     ]
   },
   {
     "objectID": "designbas/variable.html",
     "href": "designbas/variable.html",
-    "title": "9  Variable Decisions",
+    "title": "8  Variable Decisions",
     "section": "",
-    "text": "9.1 Variable decisions\nChapter Leads: Lise DeShea & Thomas Wilson\nWhen you are creating and managing a database, many decisions must be made about variables. A variable is a quantity or property that can take on different values. “Name” is a variable. “Age” is a variable. These are two kinds of variables. Data are stored in variables. REDCap accepts many kinds of data, including file uploads and signatures. But you have to tell REDCap what to expect when you create variables. Further, you need to think about what to name a variable. If you named everything “item_1,” “item_2,” “item_3,” etc., whoever analyzes the data will have a hard time keeping track of what variable is being referenced. This chapter will lead you through many decisions about variables.",
+    "text": "8.1 Variable decisions\nChapter Leads: Lise DeShea & Thomas Wilson\nWhen you are creating and managing a database, many decisions must be made about variables. A variable is a quantity or property that can take on different values. “Name” is a variable. “Age” is a variable. These are two kinds of variables. Data are stored in variables. REDCap accepts many kinds of data, including file uploads and signatures. But you have to tell REDCap what to expect when you create variables. Further, you need to think about what to name a variable. If you named everything “item_1,” “item_2,” “item_3,” etc., whoever analyzes the data will have a hard time keeping track of what variable is being referenced. This chapter will lead you through many decisions about variables.",
     "crumbs": [
       "Project Design (Basic)",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Variable Decisions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Variable Decisions</span>"
     ]
   },
   {
     "objectID": "designbas/variable.html#sec-designbas-variable-variablenames",
     "href": "designbas/variable.html#sec-designbas-variable-variablenames",
-    "title": "9  Variable Decisions",
-    "section": "9.2 Variable names",
-    "text": "9.2 Variable names\nThe most basic detail to decide about a variable is what to call it: the variable name. That decision often is tied up in what kind of variable it is. We will show you how to create a variable inside an existing form in a practice project. We also will explain the difference between a variable name and its label.\nWe need to go into the Online Designer. When you log into REDCap and click on a project name, you will have two ways to get into Designer. One is in the top left corner of your screen, with a link called Designer.\n\n\n\nEnter Designer\n\n\nThe other way is on the same screen in the middle of the page with a box labeled Online Designer.\n\n\n\nEnter Online Designer\n\n\nEither way, you end up on the same page, which lists the forms in the project.\n\n\n\nList of forms\n\n\nClicking on any form name will open it. Form 1 in this project already has five variables in it: the Record ID and four other variables. The Record ID cannot be deleted. It is a unique identifier for each record entered in the project. It can be renamed, but we will leave ours alone.",
+    "title": "8  Variable Decisions",
+    "section": "8.2 Variable names",
+    "text": "8.2 Variable names\nThe most basic detail to decide about a variable is what to call it: the variable name. That decision often is tied up in what kind of variable it is. We will show you how to create a variable inside an existing form in a practice project. We also will explain the difference between a variable name and its label.\nWe need to go into the Online Designer. When you log into REDCap and click on a project name, you will have two ways to get into Designer. One is in the top left corner of your screen, with a link called Designer.\n\n\n\nEnter Designer\n\n\nThe other way is on the same screen in the middle of the page with a box labeled Online Designer.\n\n\n\nEnter Online Designer\n\n\nEither way, you end up on the same page, which lists the forms in the project.\n\n\n\nList of forms\n\n\nClicking on any form name will open it. Form 1 in this project already has five variables in it: the Record ID and four other variables. The Record ID cannot be deleted. It is a unique identifier for each record entered in the project. It can be renamed, but we will leave ours alone.",
     "crumbs": [
       "Project Design (Basic)",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Variable Decisions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Variable Decisions</span>"
     ]
   },
   {
     "objectID": "designbas/variable.html#sec-designbas-variable-namesvslabels",
     "href": "designbas/variable.html#sec-designbas-variable-namesvslabels",
-    "title": "9  Variable Decisions",
-    "section": "9.3 Variable names vs. labels",
-    "text": "9.3 Variable names vs. labels\nTo edit a variable, click on the little pencil icon.\n\n\n\nPencil icon\n\n\nWe get a new window labeled Edit Field. We can learn several things about this variable from this window. First, it is a Notes Box (Paragraph Text) field. That means it could be used to enter a description of a clinic visit, for example.\n\n\n\nEdit Field\n\n\nYou see that the large box under Field Label is blank. No label has been created for this variable. Further, on the right side of the window is the Variable Name. The Field Label is what shows up to the person filling out the form. The Variable Name is used to store the data inside REDCap. An analyst will use the variable name.\nvariable_1 is a poor name for a variable because an analyst would not know anything about the data simply by looking at that variable name. Let’s change it to visit_note and add a label to match, then click Save.\n\n\n\nChange variable name\n\n\nLet’s look at variable_2 and see what kinds of variables can be created. This variable was created as a Text Box (Short Text, Number, Date/Time, …). Let’s change it to capture a participant’s first name\n\n\n\nChange variable name\n\n\nNote that we did not name the variable first_name. We recommend starting the variable name with something general, then getting more specific. Then the analyst could see all the variables involving someone’s name and distinguish among them. When you are creating variables in REDCap, it’s a good idea for you to be quite familiar with the study, survey, or investigation before you start creating variable names. If this study collected data for a parent and a child, then name_first would be a poor choice. A better choice might be name_parent_first.\n\n\n\nParent’s first name",
+    "title": "8  Variable Decisions",
+    "section": "8.3 Variable names vs. labels",
+    "text": "8.3 Variable names vs. labels\nTo edit a variable, click on the little pencil icon.\n\n\n\nPencil icon\n\n\nWe get a new window labeled Edit Field. We can learn several things about this variable from this window. First, it is a Notes Box (Paragraph Text) field. That means it could be used to enter a description of a clinic visit, for example.\n\n\n\nEdit Field\n\n\nYou see that the large box under Field Label is blank. No label has been created for this variable. Further, on the right side of the window is the Variable Name. The Field Label is what shows up to the person filling out the form. The Variable Name is used to store the data inside REDCap. An analyst will use the variable name.\nvariable_1 is a poor name for a variable because an analyst would not know anything about the data simply by looking at that variable name. Let’s change it to visit_note and add a label to match, then click Save.\n\n\n\nChange variable name\n\n\nLet’s look at variable_2 and see what kinds of variables can be created. This variable was created as a Text Box (Short Text, Number, Date/Time, …). Let’s change it to capture a participant’s first name\n\n\n\nChange variable name\n\n\nNote that we did not name the variable first_name. We recommend starting the variable name with something general, then getting more specific. Then the analyst could see all the variables involving someone’s name and distinguish among them. When you are creating variables in REDCap, it’s a good idea for you to be quite familiar with the study, survey, or investigation before you start creating variable names. If this study collected data for a parent and a child, then name_first would be a poor choice. A better choice might be name_parent_first.\n\n\n\nParent’s first name",
     "crumbs": [
       "Project Design (Basic)",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Variable Decisions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Variable Decisions</span>"
     ]
   },
   {
     "objectID": "designbas/variable.html#sec-designbas-variable-fieldtypes",
     "href": "designbas/variable.html#sec-designbas-variable-fieldtypes",
-    "title": "9  Variable Decisions",
-    "section": "9.4 Field Types",
-    "text": "9.4 Field Types\nAs mentioned above, REDCap can capture many kinds of data. Let’s look at variable_3 and see what kinds of variables are available. Next to the words Field Type is a drop-down menu of kinds of variables.\n\n\n\nField type dropdown\n\n\nAs the creator of a REDCap project, you are on the front line of ensuring data quality. The specifications you enter for each variable can make a world of difference. Your specifications can force a data entry person to enter a number with two decimal places or ensure that an email address is in a valid format. The specs also can set limits on numbers so a data entry person would not accidentally enter that a person was 150 years old, instead of 15.\n\n9.4.1 Text Box\nA Text Box field can handle many kinds of data. Let’s look at how to specify which kind of entries will be valid. Suppose we want the data entry person to enter a child’s age for a study involving only children ages 2 through 8 years. Further, two children from the same family could be involved in the study. So we will name the variable to specify we are talking about the first child, and we will use a setting called Validation, which has a drop-down menu beside it.\n\n\n\nValidation settings\n\n\nYou can see a scroll bar on the right side of the drop-down menu. So there are many validation types from which to choose. For child’s age in years, we will choose Integer. After we do that, we see options pop up for Minimum and Maximum. We will enter the minimum and maximum ages possible for this study.\n\n\n\nValidation range\n\n\nNow someone entering data who typed an age outside that range will get an error message, saying that the number is beyond the limits you set.\n\n\n9.4.2 Notes Box\n\n\n9.4.3 Calculate Field\n{This will be just a sentence or two, then refere to the dedicated chater in the “Advanced Project Design” part}\n\n\n9.4.4 Multiple Choice - Drop-down list\n\n\n9.4.5 Multiple Choice - Radio Buttons",
+    "title": "8  Variable Decisions",
+    "section": "8.4 Field Types",
+    "text": "8.4 Field Types\nAs mentioned above, REDCap can capture many kinds of data. Let’s look at variable_3 and see what kinds of variables are available. Next to the words Field Type is a drop-down menu of kinds of variables.\n\n\n\nField type dropdown\n\n\nAs the creator of a REDCap project, you are on the front line of ensuring data quality. The specifications you enter for each variable can make a world of difference. Your specifications can force a data entry person to enter a number with two decimal places or ensure that an email address is in a valid format. The specs also can set limits on numbers so a data entry person would not accidentally enter that a person was 150 years old, instead of 15.\n\n8.4.1 Text Box\nA Text Box field can handle many kinds of data. Let’s look at how to specify which kind of entries will be valid. Suppose we want the data entry person to enter a child’s age for a study involving only children ages 2 through 8 years. Further, two children from the same family could be involved in the study. So we will name the variable to specify we are talking about the first child, and we will use a setting called Validation, which has a drop-down menu beside it.\n\n\n\nValidation settings\n\n\nYou can see a scroll bar on the right side of the drop-down menu. So there are many validation types from which to choose. For child’s age in years, we will choose Integer. After we do that, we see options pop up for Minimum and Maximum. We will enter the minimum and maximum ages possible for this study.\n\n\n\nValidation range\n\n\nNow someone entering data who typed an age outside that range will get an error message, saying that the number is beyond the limits you set.\n\n\n8.4.2 Notes Box\n\n\n8.4.3 Calculate Field\n{This will be just a sentence or two, then refere to the dedicated chater in the “Advanced Project Design” part}\n\n\n8.4.4 Multiple Choice - Drop-down list\n\n\n8.4.5 Multiple Choice - Radio Buttons",
     "crumbs": [
       "Project Design (Basic)",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Variable Decisions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Variable Decisions</span>"
     ]
   },
   {
     "objectID": "designbas/variable.html#sec-designbas-variable-datevariables",
     "href": "designbas/variable.html#sec-designbas-variable-datevariables",
-    "title": "9  Variable Decisions",
-    "section": "9.5 Date variables",
-    "text": "9.5 Date variables\nLet’s look at one more kind of variable: a date field. We will change variable_4 on our example project to the date of birth for the first child in our study.\n\n\n\nKinds of date variables\n\n\nDate validation can be as general as a date or as specific as the date and time down to the second. For a birth date, we only need the date. We have 3 format options available to us: day-month-year, month-day-year, or year-month-day. Keeping with our recommendation of going from general to specific, we will choose Y-M-D. (This recommendation is in keeping with the International Organization for Standardization 8601, which you can google. This format eases sorting data by earliest to latest date.)",
+    "title": "8  Variable Decisions",
+    "section": "8.5 Date variables",
+    "text": "8.5 Date variables\nLet’s look at one more kind of variable: a date field. We will change variable_4 on our example project to the date of birth for the first child in our study.\n\n\n\nKinds of date variables\n\n\nDate validation can be as general as a date or as specific as the date and time down to the second. For a birth date, we only need the date. We have 3 format options available to us: day-month-year, month-day-year, or year-month-day. Keeping with our recommendation of going from general to specific, we will choose Y-M-D. (This recommendation is in keeping with the International Organization for Standardization 8601, which you can google. This format eases sorting data by earliest to latest date.)",
     "crumbs": [
       "Project Design (Basic)",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Variable Decisions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Variable Decisions</span>"
     ]
   },
   {
     "objectID": "designbas/variable.html#sec-designbas-variable-newvariables",
     "href": "designbas/variable.html#sec-designbas-variable-newvariables",
-    "title": "9  Variable Decisions",
-    "section": "9.6 Creating a new variable",
-    "text": "9.6 Creating a new variable\nOur examples so far have involved modifying variables that already existed in a REDCap project. Let’s create a new variable. Look for the buttons that say “Add Field”:\n\n\n\nThe Add Field button\n\n\nWe can insert a field after any of the existing fields in the project by clicking one of those buttons. Doing so opens a window called Add New Field. Let’s create a field for the best contact phone number:\n\n\n\nCreating a new variable\n\n\nWe named it phone_contact_1 to indicate it is the best number for contacting the family. Then we click Save, and the new variable now appears on the form. Note that we chose Phone (North America) as the Validation standard. Now, if someone enters a phone number without an area code, an error message will say an invalid number was entered.\nWe recommend when you are learning about REDCap, request a practice project, then go into Form 1, which gets created automatically, and play around with creating different kinds of variables. A practice project is the best way to learn by doing. To request a practice project, click on My Projects in the top left corner of the page, then click on the link at the top of the next page that says “+ New Project.” Fill out the form and a REDCap administrator will create a “Practice/Just For Fun” project for you. You will get an email when the project has been created and is available to you.\n\n\n\nGo to My Projects\n\n\n\n\n\nGo to New Project\n\n\n\n\n\nRequest practice project\n\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was last edited in November 2025. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "title": "8  Variable Decisions",
+    "section": "8.6 Creating a new variable",
+    "text": "8.6 Creating a new variable\nOur examples so far have involved modifying variables that already existed in a REDCap project. Let’s create a new variable. Look for the buttons that say “Add Field”:\n\n\n\nThe Add Field button\n\n\nWe can insert a field after any of the existing fields in the project by clicking one of those buttons. Doing so opens a window called Add New Field. Let’s create a field for the best contact phone number:\n\n\n\nCreating a new variable\n\n\nWe named it phone_contact_1 to indicate it is the best number for contacting the family. Then we click Save, and the new variable now appears on the form. Note that we chose Phone (North America) as the Validation standard. Now, if someone enters a phone number without an area code, an error message will say an invalid number was entered.\nWe recommend when you are learning about REDCap, request a practice project, then go into Form 1, which gets created automatically, and play around with creating different kinds of variables. A practice project is the best way to learn by doing. To request a practice project, click on My Projects in the top left corner of the page, then click on the link at the top of the next page that says “+ New Project.” Fill out the form and a REDCap administrator will create a “Practice/Just For Fun” project for you. You will get an email when the project has been created and is available to you.\n\n\n\nGo to My Projects\n\n\n\n\n\nGo to New Project\n\n\n\n\n\nRequest practice project\n\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was last edited in November 2025. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Project Design (Basic)",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Variable Decisions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Variable Decisions</span>"
+    ]
+  },
+  {
+    "objectID": "designint/actiontag.html",
+    "href": "designint/actiontag.html",
+    "title": "9  Action Tags",
+    "section": "",
+    "text": "9.1 Purpose\nChapter Leads: Lise DeShea & Thomas Wilson",
+    "crumbs": [
+      "Project Design (Intermediate)",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Action Tags</span>"
+    ]
+  },
+  {
+    "objectID": "designint/actiontag.html#sec-designint-action-purpose",
+    "href": "designint/actiontag.html#sec-designint-action-purpose",
+    "title": "9  Action Tags",
+    "section": "",
+    "text": "Add new record",
+    "crumbs": [
+      "Project Design (Intermediate)",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Action Tags</span>"
+    ]
+  },
+  {
+    "objectID": "designint/actiontag.html#sec-designint-action-common",
+    "href": "designint/actiontag.html#sec-designint-action-common",
+    "title": "9  Action Tags",
+    "section": "9.2 Common",
+    "text": "9.2 Common\n\n9.2.1 @HIDEBUTTON\n\n\n9.2.2 @DEFAULT",
+    "crumbs": [
+      "Project Design (Intermediate)",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Action Tags</span>"
+    ]
+  },
+  {
+    "objectID": "designint/actiontag.html#sec-designint-action-lesscommon",
+    "href": "designint/actiontag.html#sec-designint-action-lesscommon",
+    "title": "9  Action Tags",
+    "section": "9.3 Less Common",
+    "text": "9.3 Less Common\n\n9.3.1 @SETVALUE\n\n\n9.3.2 @PLACEHOLDER\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was last edited in November 2025. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "crumbs": [
+      "Project Design (Intermediate)",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Action Tags</span>"
     ]
   },
   {
@@ -759,7 +803,7 @@
     "href": "check/part11.html#sec-check-part11-access",
     "title": "16  21 CFR Part 11 Requirements of the Researcher",
     "section": "16.2 Access Control And Security (Sec B)",
-    "text": "16.2 Access Control And Security (Sec B)\n\n16.2.1 User Authentication (Subsec B1)\nRTs are not responsible for content in this section.\n\n\n16.2.2 Role-Based Permissions (Subsec B2)\n\n16.2.2.1 Are roles and permissions in REDCap configured to ensure that users only have the minimum necessary access to perform their job functions?\nREDCap allows fine-grained permissions to users and groups within each project.\nIt is the RT’s responsibility to assign other study team members the appropriate permissions, while following the principles of least privilege.\n\n\n16.2.2.2 Are permission sets periodically reviewed to confirm they still align with user job functions?\nYes, the REDCap dashboard to allow someone to quickly review the study’s users, groups, and permissions. It is the RT’s responsibility to periodically review this dashboard.\n\n\n16.2.2.3 Do you enforce the principle of least privilege (admins vs. data entry vs. monitors)?\nThe RT works with their team members and should be aware of their roles approved by the IRB.\nIt is the RT’s responsibility to assign the appropriate levels of privileges.\n\n\n\n16.2.3 Account Provisioning and Deprovisioning (Subsec B3)\n\n16.2.3.1 Is there a clear process to grant, modify, or revoke system access when personnel changes roles or leave the organization?\nYes, the REDCap user rights dashboard allows RT staff to easily grant, modify, or revoke system access when personnel changes occur.\nIt is the RT’s responsibility to monitor staff changes and make the appropriate system access modifications when necessary.\n\n\n16.2.3.2 Must accounts be removed within a certain time frame (e.g., 24 hours) after staff departure\nYes, REDCap allows for the expedient removal of staff from the appropriate REDCap projects.\nIt is the RT’s responsibility to monitor staff changes and remove accounts from the projects.\n\n\n16.2.3.3 Do new users undergo formal training or competency checks before access is granted?\nYes, the RA team provides general REDCap training on how to operate the system. The RT will be responsible for training and competency check for the specific project that new staff will be using.\n\n\n\n16.2.4 Audit Trail Review (Subsec C3)\n\n16.2.4.1 Is there a process for periodically reviewing audit trails and investigating any anomalies?\nYes, REDCap maintains an audit log for all transactions within a specific project. It is easily accessible and downloadable as a .csv file.\nIt is the responsibility of the RT to review the audit logs and investigate any anomalies.\n\n\n16.2.4.2 Is there a routine schedule (monthly, quarterly) for audit trail reviews?\nWith the accessibility of the REDCap audit log, scheduling of reviews can be done at any appropriate schedule.\nIt is the responsibility of the RT to schedule the audit trail reviews.\n\n\n16.2.4.3 Who is responsible for these reviews, and are they qualified to interpret logs?\nREDCap maintains the audit log in an accessible and downloadable format.\nThe RT is responsible for assigning the reviewer and determining their qualification to interpret the logs.\n\n\n16.2.4.4 Do you conduct forensic reviews if suspicious activity is detected?\nThe RT is responsible for conducting forensic reviews if suspicious activity is detected.\n\n\n\n16.2.5 Data Entry and Validation Checks (Subsec C4)\n\n16.2.5.1 Do you conduct forensic reviews if suspicious activity is detected?\nYes, REDCap allows data fields to be configured with multiple data validation rules. These rules include format checks, ranges for dates and numeric entries, required fields, and designating that a field is an identifier. REDCap also utilizes functionality called “Action Tags” to further ensure that data are collected in an accurate, efficient manner. The RA team can train the RT on all of these features, but it is the responsibility of the RT to implement the features into their projects.\n\n\n16.2.5.2 How do you handle data corrections or errors (formal data query, edit check process)?\nREDCap allows for users with appropriate permissions to correct data or errors within a project. Any changes to the data are recorded in the REDCap audit log. Additionally, REDCap has a field comment log for each field. The field comment log allows users to record the reason they are making a modification to the data for each field that needs to be corrected.\nIt is the responsibility of the RT to make data corrections or address errors.\n\n\n16.2.5.3 When data collection instruments are updated, is the previous version retained to show how data were collected at any point in time?\nYes, REDCap, when in production mode, creates a snapshot of all data collection instruments whenever a change is requested.\nIt is the responsibility of the RT to ensure that REDCap is in production mode prior to collecting research data.\n\n\n16.2.5.4 Does the system lock old forms when a new version is released, preventing retrospective changes?\nYes, when a new version of a form is released, the old form is retired from data entry.\n\n\n16.2.5.5 How do you inform users about updated forms (e.g., release notes, training)?\nWhen a REDCap project is in production and updates are requested, the individual on the RT requesting the changes will receive an email notification from the system when the changes have been approved.\nIt is the responsibility of the change requestor to inform the remainder of the RT of any changes that have been made.\n\n\n16.2.5.6 Do you use encryption of secure FTP for high-risk data transfers?\nREDCap stores data in secure vm’s on the OUHSC campus. It is the responsibility of the RT to ensure the security of that data when it has been extracted from REDCap.\n\n\n16.2.5.7 How do you ensure integrity if data are exported for analysis outside of REDCap?\nIt is the responsibility of the RT to ensure the security of data if it has been exported outside of REDCap for analysis.",
+    "text": "16.2 Access Control And Security (Sec B)\n\n16.2.1 User Authentication (Subsec B1)\nRTs are not responsible for content in this section.\n\n\n16.2.2 Role-Based Permissions (Subsec B2)\n\n16.2.2.1 Are roles and permissions in REDCap configured to ensure that users only have the minimum necessary access to perform their job functions?\nREDCap allows fine-grained permissions to users and groups within each project.\nIt is the RT’s responsibility to assign other study team members the appropriate permissions, while following the principles of least privilege.\n\n\n16.2.2.2 Are permission sets periodically reviewed to confirm they still align with user job functions?\nYes, the REDCap dashboard to allow someone to quickly review the study’s users, groups, and permissions. It is the RT’s responsibility to periodically review this dashboard.\n\n\n16.2.2.3 Do you enforce the principle of least privilege (admins vs. data entry vs. monitors)?\nThe RT works with their team members and should be aware of their roles approved by the IRB.\nIt is the RT’s responsibility to assign the appropriate levels of privileges.\n\n\n\n16.2.3 Account Provisioning and Deprovisioning (Subsec B3)\n\n16.2.3.1 Is there a clear process to grant, modify, or revoke system access when personnel changes roles or leave the organization?\nYes, the REDCap user rights dashboard allows RT staff to easily grant, modify, or revoke system access when personnel changes occur.\nIt is the RT’s responsibility to monitor staff changes and make the appropriate system access modifications when necessary.\n\n\n16.2.3.2 Must accounts be removed within a certain time frame (e.g., 24 hours) after staff departure\nYes, REDCap allows for the expedient removal of staff from the appropriate REDCap projects.\nIt is the RT’s responsibility to monitor staff changes and remove accounts from the projects.\n\n\n16.2.3.3 Do new users undergo formal training or competency checks before access is granted?\nYes, the RA team provides general REDCap training on how to operate the system. The RT will be responsible for training and competency check for the specific project that new staff will be using.\n\n\n\n16.2.4 Audit Trail Review (Subsec C3)\n\n16.2.4.1 Is there a process for periodically reviewing audit trails and investigating any anomalies?\nYes, REDCap maintains an audit log for all transactions within a specific project. It is easily accessible and downloadable as a .csv file.\nIt is the responsibility of the RT to review the audit logs and investigate any anomalies.\n\n\n16.2.4.2 Is there a routine schedule (monthly, quarterly) for audit trail reviews?\nWith the accessibility of the REDCap audit log, scheduling of reviews can be done at any appropriate schedule.\nIt is the responsibility of the RT to schedule the audit trail reviews.\n\n\n16.2.4.3 Who is responsible for these reviews, and are they qualified to interpret logs?\nREDCap maintains the audit log in an accessible and downloadable format.\nThe RT is responsible for assigning the reviewer and determining their qualification to interpret the logs.\n\n\n16.2.4.4 Do you conduct forensic reviews if suspicious activity is detected?\nThe RT is responsible for conducting forensic reviews if suspicious activity is detected.\n\n\n\n16.2.5 Data Entry and Validation Checks (Subsec C4)\n\n16.2.5.1 Do you conduct forensic reviews if suspicious activity is detected?\nYes, REDCap allows data fields to be configured with multiple data validation rules. These rules include format checks, ranges for dates and numeric entries, required fields, and designating that a field is an identifier. REDCap also utilizes functionality called “Action Tags” to further ensure that data are collected in an accurate, efficient manner. The RA team can train the RT on all of these features, but it is the responsibility of the RT to implement the features into their projects.\n\n\n16.2.5.2 How do you handle data corrections or errors (formal data query, edit check process)?\nREDCap allows for users with appropriate permissions to correct data or errors within a project. Any changes to the data are recorded in the REDCap audit log. Additionally, REDCap has a field comment log for each field. The field comment log allows users to record the reason they are making a modification to the data for each field that needs to be corrected.\nIt is the responsibility of the RT to make data corrections or address errors.\n\n\n16.2.5.3 When data collection instruments are updated, is the previous version retained to show how data were collected at any point in time?\nYes, REDCap, when in production mode, creates a snapshot of all data collection instruments whenever a change is requested.\nIt is the responsibility of the RT to ensure that REDCap is in production mode prior to collecting research data.\n\n\n16.2.5.4 Does the system lock old forms when a new version is released, preventing retrospective changes?\nYes, when a new version of a form is released, the old form is retired from data entry.\n\n\n16.2.5.5 How do you inform users about updated forms (e.g., release notes, training)?\nWhen a REDCap project is in production and updates are requested, the individual on the RT requesting the changes will receive an email notification from the system when the changes have been approved.\nIt is the responsibility of the change requestor to inform the remainder of the RT of any changes that have been made.\n\n\n16.2.5.6 Do you use encryption of secure FTP for high-risk data transfers?\nREDCap stores data in secure VMs (virtual machines) on the OU campus. It is the responsibility of the RT to ensure the security of that data when it has been extracted from REDCap.\n\n\n16.2.5.7 How do you ensure integrity if data are exported for analysis outside of REDCap?\nIt is the responsibility of the RT to ensure the security of data if it has been exported outside of REDCap for analysis.",
     "crumbs": [
       "Checklists",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
