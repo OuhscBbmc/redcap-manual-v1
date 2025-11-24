@@ -56,3 +56,5 @@ vignettes/*.pdf
 
 # Mac Files
 .idea/
+
+**/*.quarto_ipynb
