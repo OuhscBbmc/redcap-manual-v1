@@ -149,7 +149,7 @@ for the button's color.
 
 ![Complete the data entry for a record](images/dashboard/complete.jpg){width=80%}
 
-## Buttons on a dashboard {#sec-begin-dashboard-homepage}
+## Buttons on a dashboard {#sec-begin-dashboard-buttons}
 
 Let's take a look at a more complicated REDCap project with many instruments.
 The project we will examine was created for data entry people in a certain research study
