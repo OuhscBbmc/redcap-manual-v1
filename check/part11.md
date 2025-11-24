@@ -165,13 +165,13 @@ from the system when the changes have been approved.
 It is the responsibility of the change requestor to inform the remainder of the RT
 of any changes that have been made.
 
-#### Do you use encryption of secure FTP for high-risk data transfers? {#sec-check-part11-dataentry-validation-datatransfer}
+#### Do you use encryption of secure FTP for high-risk data transfers? {#sec-check-part11-dataentry-validation-transferencryption}
 
-REDCap stores data in secure vm's on the OUHSC campus.
+REDCap stores data in secure VMs (virtual machines) on the OU campus.
 It is the responsibility of the RT to ensure the security of that data when it has been
 extracted from REDCap.
 
-#### How do you ensure integrity if data are exported for analysis outside of REDCap? {#sec-check-part11-dataentry-validation-datatransfer}
+#### How do you ensure integrity if data are exported for analysis outside of REDCap? {#sec-check-part11-dataentry-validation-transferintegrity}
 
 It is the responsibility of the RT to ensure the security of data
 if it has been exported outside of REDCap for analysis.
@@ -180,7 +180,7 @@ if it has been exported outside of REDCap for analysis.
 
 ### Long-Term Accessibility (Subsec E2) {#sec-check-part11-esignatures-components}
 
-#### Does the signature record include the printed name of the signer, date/time of signing, and the meaning of the signature (e.g., review, approval)? {#sec-check-part11-esignatures-components-datetime}
+#### Does the signature record include the printed name of the signer, date/time of signing, and the meaning of the signature (e.g., review, approval)? {#sec-check-part11-esignatures-components-signature}
 
 Yes, REDCap has the capability of collecting all of these various signature components.
 These components must be incorporated into the design of the REDCap survey.
@@ -216,7 +216,7 @@ It is the responsibility of the RT to schedule training for their staff.
 
 It is the responsibility of the RT to determine the role-based needs for their staff and implement training.
 
-#### Are competency tests used to confirm user understanding of Part 11 principles? {#sec-check-part11-esignatures-training-rolebased}
+#### Are competency tests used to confirm user understanding of Part 11 principles? {#sec-check-part11-esignatures-training-competencytests}
 
 It is the responsibility of the RT to confirm user understanding of Part 11 principles.
 The RT may develop a competency test for their team, if desired.
