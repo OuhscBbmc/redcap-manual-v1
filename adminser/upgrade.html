@@ -663,19 +663,18 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <li><a href="#offline-vs-online-upgrade" id="toc-offline-vs-online-upgrade" class="nav-link" data-scroll-target="#offline-vs-online-upgrade"><span class="header-section-number">15.1.3</span> Offline vs Online Upgrade</a></li>
   <li><a href="#version-skipping" id="toc-version-skipping" class="nav-link" data-scroll-target="#version-skipping"><span class="header-section-number">15.1.4</span> Version Skipping</a></li>
   </ul></li>
-  <li><a href="#sec-adminser-snapshot" id="toc-sec-adminser-snapshot" class="nav-link" data-scroll-target="#sec-adminser-snapshot"><span class="header-section-number">15.2</span> Snapshot VM</a></li>
+  <li><a href="#test-and-production-instances" id="toc-test-and-production-instances" class="nav-link" data-scroll-target="#test-and-production-instances"><span class="header-section-number">15.2</span> Test and Production Instances</a></li>
   <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps"><span class="header-section-number">15.3</span> Steps</a>
   <ul class="collapse">
-  <li><a href="#download" id="toc-download" class="nav-link" data-scroll-target="#download"><span class="header-section-number">15.3.1</span> Download</a></li>
-  <li><a href="#transfer-file" id="toc-transfer-file" class="nav-link" data-scroll-target="#transfer-file"><span class="header-section-number">15.3.2</span> Transfer file</a></li>
-  <li><a href="#update-web-server" id="toc-update-web-server" class="nav-link" data-scroll-target="#update-web-server"><span class="header-section-number">15.3.3</span> Update Web Server</a></li>
-  <li><a href="#obtain-sql-update-code" id="toc-obtain-sql-update-code" class="nav-link" data-scroll-target="#obtain-sql-update-code"><span class="header-section-number">15.3.4</span> Obtain SQL Update Code</a></li>
-  <li><a href="#update-database-server" id="toc-update-database-server" class="nav-link" data-scroll-target="#update-database-server"><span class="header-section-number">15.3.5</span> Update Database Server</a></li>
-  <li><a href="#delete-previous-versions" id="toc-delete-previous-versions" class="nav-link" data-scroll-target="#delete-previous-versions"><span class="header-section-number">15.3.6</span> Delete Previous Versions</a></li>
-  <li><a href="#test-and-validate" id="toc-test-and-validate" class="nav-link" data-scroll-target="#test-and-validate"><span class="header-section-number">15.3.7</span> Test and Validate</a></li>
+  <li><a href="#sec-adminser-snapshot" id="toc-sec-adminser-snapshot" class="nav-link" data-scroll-target="#sec-adminser-snapshot"><span class="header-section-number">15.3.1</span> Snapshot VM</a></li>
+  <li><a href="#download" id="toc-download" class="nav-link" data-scroll-target="#download"><span class="header-section-number">15.3.2</span> Download</a></li>
+  <li><a href="#transfer-file" id="toc-transfer-file" class="nav-link" data-scroll-target="#transfer-file"><span class="header-section-number">15.3.3</span> Transfer file</a></li>
+  <li><a href="#update-web-server" id="toc-update-web-server" class="nav-link" data-scroll-target="#update-web-server"><span class="header-section-number">15.3.4</span> Update Web Server</a></li>
+  <li><a href="#obtain-sql-update-code" id="toc-obtain-sql-update-code" class="nav-link" data-scroll-target="#obtain-sql-update-code"><span class="header-section-number">15.3.5</span> Obtain SQL Update Code</a></li>
+  <li><a href="#update-database-server" id="toc-update-database-server" class="nav-link" data-scroll-target="#update-database-server"><span class="header-section-number">15.3.6</span> Update Database Server</a></li>
+  <li><a href="#verify-installation" id="toc-verify-installation" class="nav-link" data-scroll-target="#verify-installation"><span class="header-section-number">15.3.7</span> Verify Installation</a></li>
   <li><a href="#clean-up" id="toc-clean-up" class="nav-link" data-scroll-target="#clean-up"><span class="header-section-number">15.3.8</span> Clean Up</a></li>
   </ul></li>
-  <li><a href="#test-and-production-instances" id="toc-test-and-production-instances" class="nav-link" data-scroll-target="#test-and-production-instances"><span class="header-section-number">15.4</span> Test and Production Instances</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/adminser/upgrade.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/adminser/upgrade.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -760,23 +759,31 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </section>
 </section>
 </section>
-<section id="sec-adminser-snapshot" class="level2" data-number="15.2">
-<h2 data-number="15.2" class="anchored" data-anchor-id="sec-adminser-snapshot"><span class="header-section-number">15.2</span> Snapshot VM</h2>
-<p>In addition to any MariaDB-level backup, we recommend taking a snapshot immediately before upgrading. This should involve a snapshot of both the database server and the web server.</p>
-<p>For cost and performance considerations, we typically retain only the most recent snapshot of each server.</p>
+<section id="test-and-production-instances" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="test-and-production-instances"><span class="header-section-number">15.2</span> Test and Production Instances</h2>
+<p>The steps above pertain to updating a single instance of REDCap. In addition to your <em>production</em> instance, we strongly suggest you host a <em>test</em> or <em>development</em> too. If so, perform these steps on the non-production server and verify things operate correctly to minimize the chance the research will be disrupted when you upgrade the production instance.</p>
+<p>TODO: add footnote</p>
+<blockquote class="blockquote">
+<p>The distinction between a test instance and development instance is important to some aspects of server administration, but not to this aspect. Update all the nonproduction servers you have before your production servers.</p>
+</blockquote>
 </section>
 <section id="steps" class="level2" data-number="15.3">
 <h2 data-number="15.3" class="anchored" data-anchor-id="steps"><span class="header-section-number">15.3</span> Steps</h2>
-<section id="download" class="level3" data-number="15.3.1">
-<h3 data-number="15.3.1" class="anchored" data-anchor-id="download"><span class="header-section-number">15.3.1</span> Download</h3>
+<section id="sec-adminser-snapshot" class="level3" data-number="15.3.1">
+<h3 data-number="15.3.1" class="anchored" data-anchor-id="sec-adminser-snapshot"><span class="header-section-number">15.3.1</span> Snapshot VM</h3>
+<p>In addition to any MariaDB-level backup, we recommend taking a snapshot immediately before upgrading. This should involve a snapshot of both the database server and the web server.</p>
+<p>For cost and performance considerations, we typically retain only the most recent snapshot of each server.</p>
+</section>
+<section id="download" class="level3" data-number="15.3.2">
+<h3 data-number="15.3.2" class="anchored" data-anchor-id="download"><span class="header-section-number">15.3.2</span> Download</h3>
 <p>Log into the REDCap Community site and download the latest version. Make sure you select the correct value among these three dimensions: (i) LTS vs Standard, (ii) “Update” (as opposed to the “Fresh Installation”), and (iii) version number.</p>
 </section>
-<section id="transfer-file" class="level3" data-number="15.3.2">
-<h3 data-number="15.3.2" class="anchored" data-anchor-id="transfer-file"><span class="header-section-number">15.3.2</span> Transfer file</h3>
+<section id="transfer-file" class="level3" data-number="15.3.3">
+<h3 data-number="15.3.3" class="anchored" data-anchor-id="transfer-file"><span class="header-section-number">15.3.3</span> Transfer file</h3>
 <p>Transfer the zipped file from your client machine to the web server, using a tool like WinSCP. For this scenario, say it’s transferred to the “Downloads” directory of the “eaglesmith” account.</p>
 </section>
-<section id="update-web-server" class="level3" data-number="15.3.3">
-<h3 data-number="15.3.3" class="anchored" data-anchor-id="update-web-server"><span class="header-section-number">15.3.3</span> Update Web Server</h3>
+<section id="update-web-server" class="level3" data-number="15.3.4">
+<h3 data-number="15.3.4" class="anchored" data-anchor-id="update-web-server"><span class="header-section-number">15.3.4</span> Update Web Server</h3>
 <p>The first component to be upgraded is the PHP code residing on the web server, so log into the web server.</p>
 <p>Decompressed the files and move them to the appropriate REDCap folder where they are visible and available to users.</p>
 <p>On a Linux distribution like RHEL, the code is:</p>
@@ -787,18 +794,18 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Move the directory to a redcap subdirectory.</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> /usr/eaglesmith/Downloads/redcap_ /var/www/html/redcap</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="obtain-sql-update-code" class="level3" data-number="15.3.4">
-<h3 data-number="15.3.4" class="anchored" data-anchor-id="obtain-sql-update-code"><span class="header-section-number">15.3.4</span> Obtain SQL Update Code</h3>
+<section id="obtain-sql-update-code" class="level3" data-number="15.3.5">
+<h3 data-number="15.3.5" class="anchored" data-anchor-id="obtain-sql-update-code"><span class="header-section-number">15.3.5</span> Obtain SQL Update Code</h3>
 <p>The second component to upgrade is the database, which involves executing SQL code that REDCap’s installation process provides you.</p>
 <p>TODO: replace with the real link:</p>
 <p>After moving the PHP code, go to <code>&lt;redcap-installation&gt;/upgrade.php</code>, from your desktop. The page should indicate that the previous step was successful and provide SQL code.</p>
 <p>Save the code as a sql file, then transfer the file from your desktop to the database server, specifically <code>usr/eaglesmith/redcap-upgrades</code>. For the sake of consistency, use the same approach as you transferred the PHP code to the web server in the previous step.</p>
 <p>TODO: add as a foot note &gt; It may be possible to copy the code from the web page and &gt; paste it into the database IDE, &gt; but we prefer the proposed approach for two reasons: &gt; &gt; 1. the sql file helps document changes if you need to reconstruct something &gt; 1. It’s tricky moving the code across machines if &gt; the linux server-client procotol doesn’t support copy-paste operations.</p>
 </section>
-<section id="update-database-server" class="level3" data-number="15.3.5">
-<h3 data-number="15.3.5" class="anchored" data-anchor-id="update-database-server"><span class="header-section-number">15.3.5</span> Update Database Server</h3>
+<section id="update-database-server" class="level3" data-number="15.3.6">
+<h3 data-number="15.3.6" class="anchored" data-anchor-id="update-database-server"><span class="header-section-number">15.3.6</span> Update Database Server</h3>
 <p>Log into the database server and open a database IDE. Open the new upgrade sql file. Execute the entire file.</p>
-<p>Although the entire file should be executed eventually, but you can chose either line-by-line or all-at-once. If it’s a small hop between versions and the upgrade went smoothly on the non-production instance, consider making your life easier hitting run once.</p>
+<p>Although the entire file should be executed eventually, but you can chose either line-by-line or all-at-once. If it’s a small hop between versions and the upgrade went smoothly on the non-production instance, consider making your life easier and hitting the Run button just once.</p>
 <p>However if there were previous problems, we recommend a more conservative approach. Possibly there were problems upgrading the non-production instance. Or perhaps that ran smoothly, but the production upgrade failed, so you rolled back to your VM snapshot. Run small snippets of the code individually. This incremental approach will help you identify where the code failed, and therefore be more suggestive how to solve the problem.</p>
 <p>TODO: footnote: &gt; MySQL Workbench is a popular IDE for MariaDB/MySQL databases. &gt; Our slight preference is DBeaver.</p>
 <div class="callout callout-style-simple callout-note callout-titled">
@@ -817,23 +824,18 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 </div>
 </section>
-<section id="delete-previous-versions" class="level3" data-number="15.3.6">
-<h3 data-number="15.3.6" class="anchored" data-anchor-id="delete-previous-versions"><span class="header-section-number">15.3.6</span> Delete Previous Versions</h3>
-</section>
-<section id="test-and-validate" class="level3" data-number="15.3.7">
-<h3 data-number="15.3.7" class="anchored" data-anchor-id="test-and-validate"><span class="header-section-number">15.3.7</span> Test and Validate</h3>
+<section id="verify-installation" class="level3" data-number="15.3.7">
+<h3 data-number="15.3.7" class="anchored" data-anchor-id="verify-installation"><span class="header-section-number">15.3.7</span> Verify Installation</h3>
+<ol type="1">
+<li>Config Check page</li>
+<li>Test and Validate</li>
+</ol>
 </section>
 <section id="clean-up" class="level3" data-number="15.3.8">
 <h3 data-number="15.3.8" class="anchored" data-anchor-id="clean-up"><span class="header-section-number">15.3.8</span> Clean Up</h3>
-</section>
-</section>
-<section id="test-and-production-instances" class="level2" data-number="15.4">
-<h2 data-number="15.4" class="anchored" data-anchor-id="test-and-production-instances"><span class="header-section-number">15.4</span> Test and Production Instances</h2>
-<p>The steps above pertain to updating a single instance of REDCap. In addition to your <em>production</em> instance, we strongly suggest you host a <em>test</em> or <em>development</em> too. If so, perform these steps on the non production server and verify things operate correct to minimize the chance the research will be disrupted when you upgrade the production instance.</p>
-<p>TODO: add footnote</p>
-<blockquote class="blockquote">
-<p>The distinction between a test instance and development instance is important to some aspects of server administration, but not to this aspect. Update all the nonproduction servers you have before your production servers.</p>
-</blockquote>
+<ol type="1">
+<li>Delete Previous Versions</li>
+</ol>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -849,6 +851,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
