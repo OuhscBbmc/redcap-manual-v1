@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Thomas Wilson">
+<meta name="author" content="Will Beasley">
 
-<title>19&nbsp; Can’t log in – REDCap Manual for OU</title>
+<title>15&nbsp; Upgrade REDCap Version – REDCap Manual for OU</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,6 +24,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -34,7 +69,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../check/part11.html" rel="prev">
+<link href="../check/testing.html" rel="next">
+<link href="../adminser/security.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -89,9 +125,9 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="../assets/font-awesome.css">
 <link rel="stylesheet" href="../assets/tables.css">
-<meta name="citation_title" content="[[19]{.chapter-number}&nbsp; [Can&amp;amp;#039;t log in]{.chapter-title}]{#sec-trouble-login .quarto-section-identifier}">
-<meta name="citation_abstract" content="Help logging to a REDCap Server">
-<meta name="citation_author" content="Thomas Wilson">
+<meta name="citation_title" content="[[15]{.chapter-number}&nbsp; [Upgrade REDCap Version]{.chapter-title}]{#sec-adminser-upgrade .quarto-section-identifier}">
+<meta name="citation_abstract" content="Upgrade REDCap Version">
+<meta name="citation_author" content="Will Beasley">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=The elements of statistical learning: Data mining, inference, and prediction;,citation_author=Trevor Hastie;,citation_author=Robert Tibshirani;,citation_author=Jerome H Friedman;,citation_author=Jerome H Friedman;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_volume=2;">
 <meta name="citation_reference" content="citation_title=Hands-on machine learning with scikit-learn, keras, and TensorFlow;,citation_author=Aurélien Géron;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;">
@@ -345,7 +381,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trouble/login.html">Troubleshooting</a></li><li class="breadcrumb-item"><a href="../trouble/login.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Can’t log in</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../adminser/security.html">Server Admin</a></li><li class="breadcrumb-item"><a href="../adminser/upgrade.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Upgrade REDCap Version</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -558,7 +594,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../adminser/upgrade.html" class="sidebar-item-text sidebar-link">
+  <a href="../adminser/upgrade.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Upgrade REDCap Version</span></span></a>
   </div>
 </li>
@@ -604,7 +640,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../trouble/login.html" class="sidebar-item-text sidebar-link active">
+  <a href="../trouble/login.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Can’t log in</span></span></a>
   </div>
 </li>
@@ -615,16 +651,41 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-adminser-upgrade-prep" id="toc-sec-adminser-upgrade-prep" class="nav-link active" data-scroll-target="#sec-adminser-upgrade-prep"><span class="header-section-number">15.1</span> Preparation</a>
+  <ul class="collapse">
+  <li><a href="#release-cadence" id="toc-release-cadence" class="nav-link" data-scroll-target="#release-cadence"><span class="header-section-number">15.1.1</span> Release Cadence</a></li>
+  <li><a href="#avoid-easy-upgrade-feature" id="toc-avoid-easy-upgrade-feature" class="nav-link" data-scroll-target="#avoid-easy-upgrade-feature"><span class="header-section-number">15.1.2</span> Avoid Easy Upgrade Feature</a></li>
+  <li><a href="#offline-vs-online-upgrade" id="toc-offline-vs-online-upgrade" class="nav-link" data-scroll-target="#offline-vs-online-upgrade"><span class="header-section-number">15.1.3</span> Offline vs Online Upgrade</a></li>
+  <li><a href="#version-skipping" id="toc-version-skipping" class="nav-link" data-scroll-target="#version-skipping"><span class="header-section-number">15.1.4</span> Version Skipping</a></li>
+  </ul></li>
+  <li><a href="#sec-adminser-snapshot" id="toc-sec-adminser-snapshot" class="nav-link" data-scroll-target="#sec-adminser-snapshot"><span class="header-section-number">15.2</span> Snapshot VM</a></li>
+  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps"><span class="header-section-number">15.3</span> Steps</a>
+  <ul class="collapse">
+  <li><a href="#download" id="toc-download" class="nav-link" data-scroll-target="#download"><span class="header-section-number">15.3.1</span> Download</a></li>
+  <li><a href="#transfer-file" id="toc-transfer-file" class="nav-link" data-scroll-target="#transfer-file"><span class="header-section-number">15.3.2</span> Transfer file</a></li>
+  <li><a href="#update-web-server" id="toc-update-web-server" class="nav-link" data-scroll-target="#update-web-server"><span class="header-section-number">15.3.3</span> Update Web Server</a></li>
+  <li><a href="#obtain-sql-update-code" id="toc-obtain-sql-update-code" class="nav-link" data-scroll-target="#obtain-sql-update-code"><span class="header-section-number">15.3.4</span> Obtain SQL Update Code</a></li>
+  <li><a href="#update-database-server" id="toc-update-database-server" class="nav-link" data-scroll-target="#update-database-server"><span class="header-section-number">15.3.5</span> Update Database Server</a></li>
+  <li><a href="#delete-previous-versions" id="toc-delete-previous-versions" class="nav-link" data-scroll-target="#delete-previous-versions"><span class="header-section-number">15.3.6</span> Delete Previous Versions</a></li>
+  <li><a href="#test-and-validate" id="toc-test-and-validate" class="nav-link" data-scroll-target="#test-and-validate"><span class="header-section-number">15.3.7</span> Test and Validate</a></li>
+  <li><a href="#clean-up" id="toc-clean-up" class="nav-link" data-scroll-target="#clean-up"><span class="header-section-number">15.3.8</span> Clean Up</a></li>
+  </ul></li>
+  <li><a href="#test-and-production-instances" id="toc-test-and-production-instances" class="nav-link" data-scroll-target="#test-and-production-instances"><span class="header-section-number">15.4</span> Test and Production Instances</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/adminser/upgrade.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/adminser/upgrade.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trouble/login.html">Troubleshooting</a></li><li class="breadcrumb-item"><a href="../trouble/login.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Can’t log in</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../adminser/security.html">Server Admin</a></li><li class="breadcrumb-item"><a href="../adminser/upgrade.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Upgrade REDCap Version</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-trouble-login" class="quarto-section-identifier"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Can’t log in</span></span></h1>
+<h1 class="title"><span id="sec-adminser-upgrade" class="quarto-section-identifier"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Upgrade REDCap Version</span></span></h1>
 </div>
 
 
@@ -633,12 +694,12 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Thomas Wilson <a href="mailto:thomas-wilson@ou.edu." class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0009-0009-1239-1348" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    <p class="author">Will Beasley <a href="mailto:wibeasley@hotmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-5613-5006" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
             <a href="https://ouhsc.edu/bbmc/">
-            University of Oklahoma Health Sciences
+            University of Oklahoma Health Campus
             </a>
           </p>
       </div>
@@ -654,7 +715,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    Help logging to a REDCap Server
+    Upgrade REDCap Version
   </div>
 </div>
 
@@ -662,9 +723,133 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </header>
 
 
-<p><strong>Chapter Leads</strong>: Thomas Wilson</p>
+<p><strong>Chapter Leads</strong>: Will Beasley</p>
+<section id="sec-adminser-upgrade-prep" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="sec-adminser-upgrade-prep"><span class="header-section-number">15.1</span> Preparation</h2>
+<section id="release-cadence" class="level3" data-number="15.1.1">
+<h3 data-number="15.1.1" class="anchored" data-anchor-id="release-cadence"><span class="header-section-number">15.1.1</span> Release Cadence</h3>
+<p>For these reasons explained in <a href="security.html" class="quarto-xref"><span>Chapter 14</span></a>, it is vital that REDCap is upgraded soon after versions are released.</p>
+<p>Notifications that a new version has been released will appear in the control center. So as the server administrator is attending to the TODO list periodically in the day, they should check for updates as well.</p>
+<p>However most regular releases occur Friday afternoons, so your admin team should schedule time to upgrade the server during this window.</p>
+<p>Allowing for a minimal regiment of testing and validation (say, 15 minutes), the following procedure should take about 30 minutes per server after you’ve performed it a few weeks. It can be completed faster if you rush, but we suggest blocking off at least 30 minutes so you can be more observant and patient if something doesn’t look right.</p>
+</section>
+<section id="avoid-easy-upgrade-feature" class="level3" data-number="15.1.2">
+<h3 data-number="15.1.2" class="anchored" data-anchor-id="avoid-easy-upgrade-feature"><span class="header-section-number">15.1.2</span> Avoid Easy Upgrade Feature</h3>
+<p>As of February 2026, best practices recommended <em>not</em> using the “Easy Upgrade” procedure. See Community Post qqqq for further details.</p>
+</section>
+<section id="offline-vs-online-upgrade" class="level3" data-number="15.1.3">
+<h3 data-number="15.1.3" class="anchored" data-anchor-id="offline-vs-online-upgrade"><span class="header-section-number">15.1.3</span> Offline vs Online Upgrade</h3>
+</section>
+<section id="version-skipping" class="level3" data-number="15.1.4">
+<h3 data-number="15.1.4" class="anchored" data-anchor-id="version-skipping"><span class="header-section-number">15.1.4</span> Version Skipping</h3>
+<section id="little-skips" class="level4" data-number="15.1.4.1">
+<h4 data-number="15.1.4.1" class="anchored" data-anchor-id="little-skips"><span class="header-section-number">15.1.4.1</span> Little Skips</h4>
+<p>If you upgrade every week, there won’t be much opportunity to skip over versions, say from 10.2.3 to 10.2.6. Go ahead and make a small jump like this, especially if the versions were released quickly in succession to address bugs.</p>
+</section>
+<section id="big-hops" class="level4" data-number="15.1.4.2">
+<h4 data-number="15.1.4.2" class="anchored" data-anchor-id="big-hops"><span class="header-section-number">15.1.4.2</span> Big Hops</h4>
+<p>However if your installation is months behind, say from 10.2.3 to 12.4.2, the chance of an unhappy upgrade increases. Not only is more PHP code changing, which is interacting with external components like LDAP or FHIR, but the MariaDB database structure is changing more too.</p>
+<p>So given the larger risks of big hops we recommend:</p>
+<ol type="1">
+<li>Upgrading and validating the non-production instances first.</li>
+<li>Taking the production instance offline.</li>
+<li>Upgrading only ~3 months of versions at a time.</li>
+<li>Snapshotting before each jump (and don’t delete them until the entire upgrade process is complete)</li>
+<li>Validating after each jump.</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="sec-adminser-snapshot" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="sec-adminser-snapshot"><span class="header-section-number">15.2</span> Snapshot VM</h2>
+<p>In addition to any MariaDB-level backup, we recommend taking a snapshot immediately before upgrading. This should involve a snapshot of both the database server and the web server.</p>
+<p>For cost and performance considerations, we typically retain only the most recent snapshot of each server.</p>
+</section>
+<section id="steps" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="steps"><span class="header-section-number">15.3</span> Steps</h2>
+<section id="download" class="level3" data-number="15.3.1">
+<h3 data-number="15.3.1" class="anchored" data-anchor-id="download"><span class="header-section-number">15.3.1</span> Download</h3>
+<p>Log into the REDCap Community site and download the latest version. Make sure you select the correct value among these three dimensions: (i) LTS vs Standard, (ii) “Update” (as opposed to the “Fresh Installation”), and (iii) version number.</p>
+</section>
+<section id="transfer-file" class="level3" data-number="15.3.2">
+<h3 data-number="15.3.2" class="anchored" data-anchor-id="transfer-file"><span class="header-section-number">15.3.2</span> Transfer file</h3>
+<p>Transfer the zipped file from your client machine to the web server, using a tool like WinSCP. For this scenario, say it’s transferred to the “Downloads” directory of the “eaglesmith” account.</p>
+</section>
+<section id="update-web-server" class="level3" data-number="15.3.3">
+<h3 data-number="15.3.3" class="anchored" data-anchor-id="update-web-server"><span class="header-section-number">15.3.3</span> Update Web Server</h3>
+<p>The first component to be upgraded is the PHP code residing on the web server, so log into the web server.</p>
+<p>Decompressed the files and move them to the appropriate REDCap folder where they are visible and available to users.</p>
+<p>On a Linux distribution like RHEL, the code is:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># !! This is rough from memory.  I haven't tested it yet. !!</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Unzip the file into a directory.</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">unzip</span> /usr/eaglesmith/Downloads/redcap_<span class="pp">*</span>.zip</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Move the directory to a redcap subdirectory.</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> /usr/eaglesmith/Downloads/redcap_ /var/www/html/redcap</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="obtain-sql-update-code" class="level3" data-number="15.3.4">
+<h3 data-number="15.3.4" class="anchored" data-anchor-id="obtain-sql-update-code"><span class="header-section-number">15.3.4</span> Obtain SQL Update Code</h3>
+<p>The second component to upgrade is the database, which involves executing SQL code that REDCap’s installation process provides you.</p>
+<p>TODO: replace with the real link:</p>
+<p>After moving the PHP code, go to <code>&lt;redcap-installation&gt;/upgrade.php</code>, from your desktop. The page should indicate that the previous step was successful and provide SQL code.</p>
+<p>Save the code as a sql file, then transfer the file from your desktop to the database server, specifically <code>usr/eaglesmith/redcap-upgrades</code>. For the sake of consistency, use the same approach as you transferred the PHP code to the web server in the previous step.</p>
+<p>TODO: add as a foot note &gt; It may be possible to copy the code from the web page and &gt; paste it into the database IDE, &gt; but we prefer the proposed approach for two reasons: &gt; &gt; 1. the sql file helps document changes if you need to reconstruct something &gt; 1. It’s tricky moving the code across machines if &gt; the linux server-client procotol doesn’t support copy-paste operations.</p>
+</section>
+<section id="update-database-server" class="level3" data-number="15.3.5">
+<h3 data-number="15.3.5" class="anchored" data-anchor-id="update-database-server"><span class="header-section-number">15.3.5</span> Update Database Server</h3>
+<p>Log into the database server and open a database IDE. Open the new upgrade sql file. Execute the entire file.</p>
+<p>Although the entire file should be executed eventually, but you can chose either line-by-line or all-at-once. If it’s a small hop between versions and the upgrade went smoothly on the non-production instance, consider making your life easier hitting run once.</p>
+<p>However if there were previous problems, we recommend a more conservative approach. Possibly there were problems upgrading the non-production instance. Or perhaps that ran smoothly, but the production upgrade failed, so you rolled back to your VM snapshot. Run small snippets of the code individually. This incremental approach will help you identify where the code failed, and therefore be more suggestive how to solve the problem.</p>
+<p>TODO: footnote: &gt; MySQL Workbench is a popular IDE for MariaDB/MySQL databases. &gt; Our slight preference is DBeaver.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Database Context
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You don’t need to learn SQL to upgrade REDCap, but a little understanding of the process could help if the process doesn’t go smoothly.</p>
+<p>All upgrades will involve a least one line of <a href="">DML SQL</a> code that adjust configuration values, like the one that increases <code>redcap_version</code>.</p>
+<p>More substantial upgrades involve <a href="">DDL SQL</a> code that modifies the structure of the database, like adding a table to support a new feature.</p>
+</div>
+</div>
+</section>
+<section id="delete-previous-versions" class="level3" data-number="15.3.6">
+<h3 data-number="15.3.6" class="anchored" data-anchor-id="delete-previous-versions"><span class="header-section-number">15.3.6</span> Delete Previous Versions</h3>
+</section>
+<section id="test-and-validate" class="level3" data-number="15.3.7">
+<h3 data-number="15.3.7" class="anchored" data-anchor-id="test-and-validate"><span class="header-section-number">15.3.7</span> Test and Validate</h3>
+</section>
+<section id="clean-up" class="level3" data-number="15.3.8">
+<h3 data-number="15.3.8" class="anchored" data-anchor-id="clean-up"><span class="header-section-number">15.3.8</span> Clean Up</h3>
+</section>
+</section>
+<section id="test-and-production-instances" class="level2" data-number="15.4">
+<h2 data-number="15.4" class="anchored" data-anchor-id="test-and-production-instances"><span class="header-section-number">15.4</span> Test and Production Instances</h2>
+<p>The steps above pertain to updating a single instance of REDCap. In addition to your <em>production</em> instance, we strongly suggest you host a <em>test</em> or <em>development</em> too. If so, perform these steps on the non production server and verify things operate correct to minimize the chance the research will be disrupted when you upgrade the production instance.</p>
+<p>TODO: add footnote</p>
+<blockquote class="blockquote">
+<p>The distinction between a test instance and development instance is important to some aspects of server administration, but not to this aspect. Update all the nonproduction servers you have before your production servers.</p>
+</blockquote>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Additional Chapter Details
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This chapter was started in March 2026. If you have suggested modifications or additions, please see <a href="../index.html#sec-welcome-contribute">How to Contribute</a> on the book’s welcome page.</p>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1087,11 +1272,14 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../check/part11.html" class="pagination-link" aria-label="21 CFR Part 11 Requirements of the Researcher">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">21 CFR Part 11 Requirements of the Researcher</span></span>
+      <a href="../adminser/security.html" class="pagination-link" aria-label="Security Considerations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Security Considerations</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../check/testing.html" class="pagination-link" aria-label="Checklist for Testing a REDCap Project">
+        <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Checklist for Testing a REDCap Project</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -1102,7 +1290,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/trouble/login.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/trouble/login.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/adminser/upgrade.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/adminser/upgrade.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Part of <a href="https://ouhsc.edu/">OU Health Sciences</a>.</p>
 </div>
