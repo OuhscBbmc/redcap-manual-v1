@@ -159,7 +159,7 @@ Although the entire file should be executed eventually,
 but you can chose either line-by-line or all-at-once.
 If it's a small hop between versions and the upgrade went smoothly
 on the non-production instance,
-consider making your life easier hitting run once.
+consider making your life easier and hitting the Run button just once.
 
 However if there were previous problems, we recommend a more conservative approach.
 Possibly there were problems upgrading the non-production instance.
@@ -190,11 +190,14 @@ code that modifies the structure of the database,
 like adding a table to support a new feature.
 :::
 
-### Delete Previous Versions
+### Verify Installation
 
-### Test and Validate
+1. Config Check page
+1. Test and Validate
 
 ### Clean Up
+
+1. Delete Previous Versions
 
 ## Test and Production Instances
 
@@ -202,7 +205,7 @@ The steps above pertain to updating a single instance of REDCap.
 In addition to your _production_ instance,
 we strongly suggest you host a _test_ or _development_ too.
 If so, perform these steps on the non production server
-and verify things operate correct
+and verify things operate correctly
 to minimize the chance the research will be disrupted
 when you upgrade the production instance.
 
