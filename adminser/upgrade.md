@@ -74,7 +74,26 @@ So given the larger risks of big hops we recommend:
 1. Snapshotting before each jump (and don't delete them until the entire upgrade process is complete)
 1. Validating after each jump.
 
-## Snapshot VM {#sec-adminser-snapshot}
+## Test and Production Instances
+
+The steps above pertain to updating a single instance of REDCap.
+In addition to your _production_ instance,
+we strongly suggest you host a _test_ or _development_ too.
+If so, perform these steps on the non-production server
+and verify things operate correctly
+to minimize the chance the research will be disrupted
+when you upgrade the production instance.
+
+TODO: add footnote
+
+> The distinction between a test instance and development instance
+> is important to some aspects of server administration,
+> but not to this aspect.
+> Update all the nonproduction servers you have before your production servers.
+
+## Steps
+
+### Snapshot VM {#sec-adminser-snapshot}
 
 In addition to any MariaDB-level backup,
 we recommend taking a snapshot immediately before upgrading.
@@ -83,8 +102,6 @@ the database server and the web server.
 
 For cost and performance considerations,
 we typically retain only the most recent snapshot of each server.
-
-## Steps
 
 ### Download
 
@@ -198,23 +215,6 @@ like adding a table to support a new feature.
 ### Clean Up
 
 1. Delete Previous Versions
-
-## Test and Production Instances
-
-The steps above pertain to updating a single instance of REDCap.
-In addition to your _production_ instance,
-we strongly suggest you host a _test_ or _development_ too.
-If so, perform these steps on the non production server
-and verify things operate correctly
-to minimize the chance the research will be disrupted
-when you upgrade the production instance.
-
-TODO: add footnote
-
-> The distinction between a test instance and development instance
-> is important to some aspects of server administration,
-> but not to this aspect.
-> Update all the nonproduction servers you have before your production servers.
 
 ::: {.callout-note appearance="simple"}
 
