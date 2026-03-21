@@ -15,6 +15,8 @@ csl: ../assets/csl/apa-7e.csl
 
 # Security Considerations {#sec-adminser-security}
 
+**Chapter Leads**: Will Beasley
+
 ## Motivations {#sec-adminser-security-motivations}
 
 Security is one of the most important roles as a REDCap administrator.
@@ -34,9 +36,6 @@ Google Threat Intelligence Group, 2026).
 * Review community posts for relevant question
 * Ask if in doubt
 * Document the installation steps
-
-
-**Chapter Leads**: Will Beasley
 
 ::: {.callout-note appearance="simple"}
 
