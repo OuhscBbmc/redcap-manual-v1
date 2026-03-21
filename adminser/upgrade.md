@@ -19,6 +19,8 @@ csl: ../assets/csl/apa-7e.csl
 
 ## Preparation {#sec-adminser-upgrade-prep}
 
+### Release Cadence
+
 For these reasons explained in @sec-adminser-security,
 it is vital that REDCap is upgraded soon after versions are released.
 
@@ -39,6 +41,39 @@ but we suggest blocking off at least 30 minutes
 so you can be more observant and patient if something
 doesn't look right.
 
+### Avoid Easy Upgrade Feature
+
+As of February 2026, best practices recommended _not_ using
+the "Easy Upgrade" procedure.
+See Community Post qqqq for further details.
+
+### Offline vs Online Upgrade
+
+### Version Skipping
+
+#### Little Skips
+
+If you upgrade every week, there won't be much opportunity to skip over versions,
+say from 10.2.3 to 10.2.6.
+Go ahead and make a small jump like this,
+especially if the versions were released quickly in succession to address bugs.
+
+#### Big Hops
+
+However if your installation is months behind, say from 10.2.3 to 12.4.2,
+the chance of an unhappy upgrade increases.
+Not only is more PHP code changing,
+which is interacting with external components like LDAP or FHIR,
+but the MariaDB database structure is changing more too.
+
+So given the larger risks of big hops we recommend:
+
+1. Upgrading and validating the non-production instances first.
+1. Taking the production instance offline.
+1. Upgrading only ~3 months of versions at a time.
+1. Snapshotting before each jump (and don't delete them until the entire upgrade process is complete)
+1. Validating after each jump.
+
 ## Snapshot VM {#sec-adminser-snapshot}
 
 In addition to any MariaDB-level backup,
@@ -49,15 +84,21 @@ the database server and the web server.
 For cost and performance considerations,
 we typically retain only the most recent snapshot of each server.
 
-## Download
+## Steps
 
-## Install
+### Download
 
-## Delete Previous Versions
+Log into the REDCap Community site and download the latest version.
+Make sure you select the correct
 
-## Test and Validate
 
-## Clean Up
+### Install
+
+### Delete Previous Versions
+
+### Test and Validate
+
+### Clean Up
 
 ## Test and Production Instances
 
