@@ -71,6 +71,8 @@ Draft of Book
 1.  Part: Server Admin
     1.  Chapter: Vocabulary for server administration
     1.  Chapter: security consideration for Server Admin
+    1.  Chapter: Installing fresh REDCap instance
+    1.  Chapter: Upgrade REDCap version
 
 1.  Part: FAQ
     1.  Can't log in: see troubleshooters (each troubleshooter has a FAQ entry that hyperlinks to the full troubleshooter)

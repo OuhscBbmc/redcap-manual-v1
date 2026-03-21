@@ -25,7 +25,7 @@ If you would like to discuss the content or receive further help, see the [Help 
 
 ## How to Cite this Work {#sec-welcome-cite}
 
-Beasley WH, Wilson T (Eds.) (2024).
+Beasley WH, Wilson T (Eds.) (2026).
 _REDCap Manual for OU: Training Material for REDCap users_.
 DOI: [10.5281/zenodo.14003228](https://zenodo.org/record/14003228)
 
@@ -39,9 +39,10 @@ Editorial Committee:
 This book is licensed under the [Creative Commons Attribution-NoDerivatives 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 Individual chapters are as well, unless otherwise noted.
 
+This content is solely the responsibility of the authors and does not necessarily represent the official views of Vanderbilt University or the REDCap developers.
+
 <!-- ## Funding {#sec-welcome-funding}
 
-This content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health or the N3C program.
 
 Any analyses herein were conducted using the NCATS N3C Data Enclave supported by NCATS U24 TR002306, Axel Informatics Subcontract Number: NCATS-P00438-B and made possible because of the patients whose data was contributed by [partner organizations](https://covid.cd2h.org/dtas).
 We gratefully acknowledge the [scientists](https://covid.cd2h.org/acknowledgements) who have contributed to the on-going development of this community resource [@haendel_2020].

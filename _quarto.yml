@@ -109,6 +109,11 @@ book:
     chapters:
     - external/mosio.md
 
+  - part: Server Admin
+    chapters:
+    - adminser/security.md
+    - adminser/upgrade.md
+
   - part: Checklists
     chapters:
     - check/testing.md
