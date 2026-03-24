@@ -21,10 +21,10 @@ csl: ../assets/csl/apa-7e.csl
 
 ### Release Cadence
 
-For these reasons explained in @sec-adminser-security,
-it is vital that REDCap is upgraded soon after versions are released.
+For the reasons explained in @sec-adminser-security,
+REDCap should be upgraded soon after versions are released.
 
-Notifications that a new version has been released will appear in
+A notification that a new version has been released will appear in
 the control center.
 So as the server administrator is attending to the TODO list periodically in the day,
 they should check for updates as well.
@@ -35,7 +35,7 @@ during this window.
 
 Allowing for a minimal regiment of testing and validation (say, 15 minutes),
 the following procedure should take about 30 minutes per server
-after you've performed it a few weeks.
+after you've performed for it a few weeks.
 It can be completed faster if you rush,
 but we suggest blocking off at least 30 minutes
 so you can be more observant and patient if something
@@ -48,6 +48,14 @@ the "Easy Upgrade" procedure.
 See Community Post qqqq for further details.
 
 ### Offline vs Online Upgrade
+
+Most upgrades require minor changes to the underlying MariaDB database,
+and the developers do not recommend taking the server offline during the process.
+However occasional upgrades are substantial enough,
+and the upgrade process will warn the administrator it is recommended.
+
+In these cases, consider upgrading the nonproduction instance during the week,
+and the production instance during the weekends or nights to minimize
 
 ### Version Skipping
 
