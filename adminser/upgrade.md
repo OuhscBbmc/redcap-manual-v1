@@ -175,7 +175,7 @@ TODO: add as a foot note
 >
 > 1. the sql file helps document changes if you need to reconstruct something
 > 1. It's tricky moving the code across machines if
->    the linux server-client procotol doesn't support copy-paste operations.
+>    the linux server-client protocol doesn't support copy-paste operations.
 
 ### Update Database Server
 
@@ -209,11 +209,13 @@ You don't need to learn SQL to upgrade REDCap,
 but a little understanding of the process
 could help if the process doesn't go smoothly.
 
-All upgrades will involve a least one line of [DML SQL]()
+All upgrades will involve a least one line of
+[DML SQL](https://www.datacamp.com/tutorial/sql-dml-commands-mastering-data-manipulation-in-sql)
 code that adjust configuration values,
 like the one that increases `redcap_version`.
 
-More substantial upgrades involve [DDL SQL]()
+More substantial upgrades involve
+[DDL SQL](https://www.dbvis.com/thetable/sql-ddl-the-definitive-guide-on-data-definition-language/)
 code that modifies the structure of the database,
 like adding a table to support a new feature.
 :::
