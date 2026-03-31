@@ -138,12 +138,13 @@ where they are visible and available to users.
 On a Linux distribution like RHEL, the code is:
 
 ```bash
-# !! This is rough from memory.  I haven't tested it yet. !!
+# Delete any 'redcap' directory unzipped from previous upgrades
+
 # Unzip the file into a directory.
-unzip /usr/eaglesmith/Downloads/redcap_*.zip
+unzip /home/eaglesmith/Downloads/redcap_*upgrade.zip
 
 # Move the directory to a redcap subdirectory.
-mv /usr/eaglesmith/Downloads/redcap_ /var/www/html/redcap
+sudo mv /home/eaglesmith/Downloads/redcap/redcap_v*/ /var/www/html/redcap/
 ```
 
 ### Obtain SQL Update Code
@@ -152,16 +153,18 @@ The second component to upgrade is the database,
 which involves executing SQL code that
 REDCap's installation process provides you.
 
-TODO: replace with the real link:
-
-After moving the PHP code, go to `<redcap-installation>/upgrade.php`,
+After moving the PHP code, go to `<redcap-installation>/<redcap_version/ControlCenter/`,
 from your desktop.
-The page should indicate that the previous step was successful
-and provide SQL code.
+Near the top of the page,
+click a green banner proclaiming something like,
+"Ready to upgrade to REDcap 12.3.4! Click Here to navigate to the REDCap upgrade page."
 
-Save the code as a sql file,
-then transfer the file from your desktop to the database server,
-specifically `usr/eaglesmith/redcap-upgrades`.
+The page should indicate that the previous step was successful and provide SQL code.
+Choose Option C to save the code as a sql file to your desktop machine
+along the lines of "redcap_upgrade_120304.sql".
+
+Transfer the file from your desktop to the database server,
+specifically `home/eaglesmith/redcap-upgrades`.
 For the sake of consistency,
 use the same approach as you transferred the PHP code to the web server in the previous step.
 
