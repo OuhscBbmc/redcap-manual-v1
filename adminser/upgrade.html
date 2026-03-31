@@ -82,9 +82,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8cbcc89c79bdf9f2e89c282c6cbf9f3a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-f93b2654cd28644982b8f2999c9b73db.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-8cbcc89c79bdf9f2e89c282c6cbf9f3a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-67d6e7587673c6dd8dd02c3f6986f6b1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-4fbb2e965ba93ad3b5f40636439971e8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-67d6e7587673c6dd8dd02c3f6986f6b1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -789,19 +789,20 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>The first component to be upgraded is the PHP code residing on the web server, so log into the web server.</p>
 <p>Decompressed the files and move them to the appropriate REDCap folder where they are visible and available to users.</p>
 <p>On a Linux distribution like RHEL, the code is:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># !! This is rough from memory.  I haven't tested it yet. !!</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Unzip the file into a directory.</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">unzip</span> /usr/eaglesmith/Downloads/redcap_<span class="pp">*</span>.zip</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Move the directory to a redcap subdirectory.</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> /usr/eaglesmith/Downloads/redcap_ /var/www/html/redcap</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Delete any 'redcap' directory unzipped from previous upgrades</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Unzip the file into a directory.</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">unzip</span> /home/eaglesmith/Downloads/redcap_<span class="pp">*</span>upgrade.zip</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Move the directory to a redcap subdirectory.</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> mv /home/eaglesmith/Downloads/redcap/redcap_v<span class="pp">*</span>/ /var/www/html/redcap/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="obtain-sql-update-code" class="level3" data-number="15.3.5">
 <h3 data-number="15.3.5" class="anchored" data-anchor-id="obtain-sql-update-code"><span class="header-section-number">15.3.5</span> Obtain SQL Update Code</h3>
 <p>The second component to upgrade is the database, which involves executing SQL code that REDCap’s installation process provides you.</p>
-<p>TODO: replace with the real link:</p>
-<p>After moving the PHP code, go to <code>&lt;redcap-installation&gt;/upgrade.php</code>, from your desktop. The page should indicate that the previous step was successful and provide SQL code.</p>
-<p>Save the code as a sql file, then transfer the file from your desktop to the database server, specifically <code>usr/eaglesmith/redcap-upgrades</code>. For the sake of consistency, use the same approach as you transferred the PHP code to the web server in the previous step.</p>
+<p>After moving the PHP code, go to <code>&lt;redcap-installation&gt;/&lt;redcap_version/ControlCenter/</code>, from your desktop. Near the top of the page, click a green banner proclaiming something like, “Ready to upgrade to REDcap 12.3.4! Click Here to navigate to the REDCap upgrade page.”</p>
+<p>The page should indicate that the previous step was successful and provide SQL code. Choose Option C to save the code as a sql file to your desktop machine along the lines of “redcap_upgrade_120304.sql”.</p>
+<p>Transfer the file from your desktop to the database server, specifically <code>home/eaglesmith/redcap-upgrades</code>. For the sake of consistency, use the same approach as you transferred the PHP code to the web server in the previous step.</p>
 <p>TODO: add as a foot note &gt; It may be possible to copy the code from the web page and &gt; paste it into the database IDE, &gt; but we prefer the proposed approach for two reasons: &gt; &gt; 1. the sql file helps document changes if you need to reconstruct something &gt; 1. It’s tricky moving the code across machines if &gt; the linux server-client procotol doesn’t support copy-paste operations.</p>
 </section>
 <section id="update-database-server" class="level3" data-number="15.3.6">
