@@ -139,12 +139,23 @@ On a Linux distribution like RHEL, the code is:
 
 ```bash
 # Delete any 'redcap' directory unzipped from previous upgrades
+cd /home/eaglesmith/Downloads
 
 # Unzip the file into a directory.
+# If sudo is required, you're probably in the wrong directory
+# If you unzipped previous versions, you'll be asked to override
+# * Upgrade_Instructions.txt and
+# * REDCap_License.txt.
 unzip /home/eaglesmith/Downloads/redcap_*upgrade.zip
 
 # Move the directory to a redcap subdirectory.
 sudo mv /home/eaglesmith/Downloads/redcap/redcap_v*/ /var/www/html/redcap/
+
+# Verify it was moved to the correct location.
+cd /var/www/html/redcap/
+
+# Should see the new directory, as well as the existing one
+ls
 ```
 
 ### Obtain SQL Update Code
