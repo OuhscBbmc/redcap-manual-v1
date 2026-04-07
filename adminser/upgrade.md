@@ -240,6 +240,11 @@ like adding a table to support a new feature.
 
 1. Delete Previous Versions
 
+```bash
+# Be very careful that you specify the *previous/old* version(s) correctly.
+sudo rm -rf /var/www/html/redcap/redcap_v12.1.2
+```
+
 ::: {.callout-note appearance="simple"}
 
 ## Additional Chapter Details
