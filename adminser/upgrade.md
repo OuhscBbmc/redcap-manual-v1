@@ -164,17 +164,17 @@ The second component to upgrade is the database,
 which involves executing SQL code that
 REDCap's installation process provides you.
 
-After moving the PHP code, go to `<redcap-installation>/<redcap_version/ControlCenter/`,
+After moving the PHP code, go to `<redcap-installation>/<redcap_version>/ControlCenter/`,
 from your desktop.
 Near the top of the page,
 click a green banner proclaiming something like,
-"Ready to upgrade to REDcap 12.3.4! Click Here to navigate to the REDCap upgrade page."
+"Ready to upgrade to REDCap 12.3.4! Click here to navigate to the REDCap upgrade page."
 
 The page should indicate that the previous step was successful and provide SQL code.
 Choose Option C to save the code as a sql file to your desktop machine
 along the lines of "redcap_upgrade_120304.sql".
 
-Transfer the file from your desktop to the database server,
+Transfer the file from your desktop to the _database_ server,
 specifically `home/eaglesmith/redcap-upgrades`.
 For the sake of consistency,
 use the same approach as you transferred the PHP code to the web server in the previous step.
