@@ -82,6 +82,15 @@ So given the larger risks of big hops we recommend:
 1. Snapshotting before each jump (and don't delete them until the entire upgrade process is complete)
 1. Validating after each jump.
 
+### OS Updates
+
+Consider checking if your OS and related packages are up-to-date.
+On RHEL, use the `dnf` command.
+
+```bash
+sudo dnf upgrade
+```
+
 ## Test and Production Instances
 
 The steps above pertain to updating a single instance of REDCap.
