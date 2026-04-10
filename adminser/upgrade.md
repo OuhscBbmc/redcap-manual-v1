@@ -155,7 +155,7 @@ cd /home/eaglesmith/Downloads
 # If you unzipped previous versions, you'll be asked to override
 # * Upgrade_Instructions.txt and
 # * REDCap_License.txt.
-unzip /home/eaglesmith/Downloads/redcap_*upgrade.zip
+unzip /home/eaglesmith/Downloads/redcap*_upgrade.zip
 
 # Move the directory to a redcap subdirectory.
 sudo mv /home/eaglesmith/Downloads/redcap/redcap_v*/ /var/www/html/redcap/
