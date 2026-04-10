@@ -788,7 +788,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </section>
 <section id="transfer-file" class="level3" data-number="15.3.3">
 <h3 data-number="15.3.3" class="anchored" data-anchor-id="transfer-file"><span class="header-section-number">15.3.3</span> Transfer file</h3>
-<p>Transfer the zipped file from your client machine to the web server, using a tool like WinSCP. For this scenario, say it’s transferred to the “Downloads” directory of the “eaglesmith” account.</p>
+<p>Transfer the zipped file from your client machine to the web server, using a tool like WinSCP. For this scenario, say it’s transferred to the “Downloads/upgrades” directory of the “eaglesmith” account.</p>
 </section>
 <section id="update-web-server" class="level3" data-number="15.3.4">
 <h3 data-number="15.3.4" class="anchored" data-anchor-id="update-web-server"><span class="header-section-number">15.3.4</span> Update Web Server</h3>
@@ -796,17 +796,17 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>Decompressed the files and move them to the appropriate REDCap folder where they are visible and available to users.</p>
 <p>On a Linux distribution like RHEL, the code is:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Delete any 'redcap' directory unzipped from previous upgrades</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /home/eaglesmith/Downloads</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /home/eaglesmith/Downloads/upgrades</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Unzip the file into a directory.</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># If sudo is required, you're probably in the wrong directory</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># If you unzipped previous versions, you'll be asked to override</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># * Upgrade_Instructions.txt and</span></span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># * REDCap_License.txt.</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">unzip</span> /home/eaglesmith/Downloads/redcap<span class="pp">*</span>_upgrade.zip</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">unzip</span> /home/eaglesmith/Downloads/upgrades/redcap<span class="pp">*</span>_upgrade.zip</span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Move the directory to a redcap subdirectory.</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> mv /home/eaglesmith/Downloads/redcap/redcap_v<span class="pp">*</span>/ /var/www/html/redcap/</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> mv /home/eaglesmith/Downloads/upgrades/redcap/redcap_v<span class="pp">*</span>/ /var/www/html/redcap/</span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify it was moved to the correct location.</span></span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /var/www/html/redcap/</span>
