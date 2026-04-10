@@ -132,7 +132,7 @@ Make sure you select the correct value among these three dimensions:
 
 Transfer the zipped file from your client machine to the web server,
 using a tool like WinSCP.
-For this scenario, say it's transferred to the "Downloads" directory
+For this scenario, say it's transferred to the "Downloads/upgrades" directory
 of the "eaglesmith" account.
 
 ### Update Web Server
@@ -148,17 +148,17 @@ On a Linux distribution like RHEL, the code is:
 
 ```bash
 # Delete any 'redcap' directory unzipped from previous upgrades
-cd /home/eaglesmith/Downloads
+cd /home/eaglesmith/Downloads/upgrades
 
 # Unzip the file into a directory.
 # If sudo is required, you're probably in the wrong directory
 # If you unzipped previous versions, you'll be asked to override
 # * Upgrade_Instructions.txt and
 # * REDCap_License.txt.
-unzip /home/eaglesmith/Downloads/redcap*_upgrade.zip
+unzip /home/eaglesmith/Downloads/upgrades/redcap*_upgrade.zip
 
 # Move the directory to a redcap subdirectory.
-sudo mv /home/eaglesmith/Downloads/redcap/redcap_v*/ /var/www/html/redcap/
+sudo mv /home/eaglesmith/Downloads/upgrades/redcap/redcap_v*/ /var/www/html/redcap/
 
 # Verify it was moved to the correct location.
 cd /var/www/html/redcap/
