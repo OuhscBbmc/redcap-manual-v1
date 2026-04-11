@@ -23,13 +23,11 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Vignesh Murugan, Thomas Wilson
 
-::: {.callout-note appearance="simple"}
-
 # How to Set Up an e-Consent Framework in REDCap
 
 ## Enabling the e-Consent Framework
 
-1. Navigate to the **Online Designer**.  
+1. Navigate to the **Online Designer**.
 
 <p align="center">
    <img src="./Screenshots/frame_0007.jpg" alt="Online Designer" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
@@ -63,11 +61,11 @@ csl: ../assets/csl/apa-7e.csl
 ## Configuring Settings
 
 ### Primary Settings:
-- Allow user edits and specify name fields.  
+- Allow user edits and specify name fields.
 
 ### Additional Settings:
-- Add a **Date of Birth** field, custom headers/footers, and signature settings.  
-- Specify save locations and customize file names.  
+- Add a **Date of Birth** field, custom headers/footers, and signature settings.
+- Specify save locations and customize file names.
 
    <p align="center">
       <img src="./Screenshots/frame_0439.jpg" alt="Settings" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
@@ -75,10 +73,12 @@ csl: ../assets/csl/apa-7e.csl
 
 ## Adding Consent Versions
 
-1. Click **Add Consent Form**.  
-2. Specify the version number and upload the consent form.  
-3. Save the new version.  
+1. Click **Add Consent Form**.
+2. Specify the version number and upload the consent form.
+3. Save the new version.
 
+
+::: {.callout-note appearance="simple"}
 
 ## Additional Chapter Details
 
