@@ -96,17 +96,14 @@ sudo dnf upgrade
 The steps above pertain to updating a single instance of REDCap.
 In addition to your _production_ instance,
 we strongly suggest you host a _test_ or _development_ too.
+^[The distinction between a test instance and development instance
+is important to some aspects of server administration,
+but not to this aspect.
+Update all the nonproduction servers you have before your production servers.]
 If so, perform these steps on the non-production server
 and verify things operate correctly
 to minimize the chance the research will be disrupted
 when you upgrade the production instance.
-
-TODO: add footnote
-
-> The distinction between a test instance and development instance
-> is important to some aspects of server administration,
-> but not to this aspect.
-> Update all the nonproduction servers you have before your production servers.
 
 ## Steps
 
