@@ -129,7 +129,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../assets/font-awesome.css">
 <link rel="stylesheet" href="../assets/tables.css">
 <meta name="citation_title" content="[[15]{.chapter-number}&nbsp; [Upgrade REDCap Version]{.chapter-title}]{#sec-adminser-upgrade .quarto-section-identifier}">
-<meta name="citation_abstract" content="Upgrade REDCap Version">
+<meta name="citation_abstract" content="This chapter discusses important decisions during the planning process, as well as the specific steps to regularly update REDCap efficiently.
+">
 <meta name="citation_author" content="Will Beasley">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=The elements of statistical learning: Data mining, inference, and prediction;,citation_author=Trevor Hastie;,citation_author=Robert Tibshirani;,citation_author=Jerome H Friedman;,citation_author=Jerome H Friedman;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_volume=2;">
@@ -718,7 +719,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    Upgrade REDCap Version
+    <p>This chapter discusses important decisions during the planning process, as well as the specific steps to regularly update REDCap efficiently.</p>
   </div>
 </div>
 
@@ -818,7 +819,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <h3 data-number="15.3.5" class="anchored" data-anchor-id="obtain-sql-update-code"><span class="header-section-number">15.3.5</span> Obtain SQL Update Code</h3>
 <p>The second component to upgrade is the database, which involves executing SQL code that REDCap’s installation process provides you.</p>
 <p>After moving the PHP code, go to <code>&lt;redcap-installation&gt;/&lt;redcap_version&gt;/ControlCenter/</code>, from your desktop. Near the top of the page, click a green banner proclaiming something like, “Ready to upgrade to REDCap 12.3.4! Click here to navigate to the REDCap upgrade page.”</p>
-<p>This will take you to the “Upgrade Module”, which should indicate that the previous step was successful and provide SQL code. Choose “Option C” to save the code as a sql file to your desktop machine along the lines of “redcap_upgrade_120304.sql”.</p>
+<p>This will take you to the “Upgrade Module”, which should indicate that the previous step was successful and provide SQL code. Choose “Option C: Download the SQL upgrade script as a file” to save the code as a sql file to your desktop machine along the lines of “redcap_upgrade_120304.sql”.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="images/upgrade/upgrade-module-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Upgrade Module"><img src="images/upgrade/upgrade-module-1.png" class="img-fluid figure-img" style="width:80.0%" alt="Upgrade Module"></a></p>
@@ -850,10 +851,21 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </section>
 <section id="verify-installation" class="level3" data-number="15.3.7">
 <h3 data-number="15.3.7" class="anchored" data-anchor-id="verify-installation"><span class="header-section-number">15.3.7</span> Verify Installation</h3>
-<ol type="1">
-<li>Config Check page</li>
-<li>Test and Validate</li>
-</ol>
+<section id="configuration-check" class="level4" data-number="15.3.7.1">
+<h4 data-number="15.3.7.1" class="anchored" data-anchor-id="configuration-check"><span class="header-section-number">15.3.7.1</span> Configuration Check</h4>
+<p>After updating the database, the Upgrade Module will redirect to the Configuration Check. Inspect that all the “Basic” and “Secondary” tests pass.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/upgrade/config-check-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Configuration Check"><img src="images/upgrade/config-check-1.png" class="img-fluid figure-img" style="width:80.0%" alt="Configuration Check"></a></p>
+<figcaption>Configuration Check</figcaption>
+</figure>
+</div>
+</section>
+<section id="test-and-validate" class="level4" data-number="15.3.7.2">
+<h4 data-number="15.3.7.2" class="anchored" data-anchor-id="test-and-validate"><span class="header-section-number">15.3.7.2</span> Test and Validate</h4>
+<p>The next step should be to follow your institution’s procedure for testing the instance again. Furthermore, we recommend reading the ChangeLog on the Community site, and focusing on any new features within the release.</p>
+<p>For example, if some features or fixes involve the Clinical Data Interoperability Services (CDIS), check that the basic FHIR operations are performing as you expect.</p>
+</section>
 </section>
 <section id="clean-up" class="level3" data-number="15.3.8">
 <h3 data-number="15.3.8" class="anchored" data-anchor-id="clean-up"><span class="header-section-number">15.3.8</span> Clean Up</h3>

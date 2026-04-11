@@ -51,6 +51,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-b6a6750502247783af92f3817d3a54b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-b04aaf2ec0371c49da615fb95a701e32.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-b6a6750502247783af92f3817d3a54b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -618,8 +621,20 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#enabling-the-e-consent-framework" id="toc-enabling-the-e-consent-framework" class="nav-link active" data-scroll-target="#enabling-the-e-consent-framework"><span class="header-section-number">10.1</span> Enabling the e-Consent Framework</a></li>
+  <li><a href="#configuring-settings" id="toc-configuring-settings" class="nav-link" data-scroll-target="#configuring-settings"><span class="header-section-number">10.2</span> Configuring Settings</a>
+  <ul class="collapse">
+  <li><a href="#primary-settings" id="toc-primary-settings" class="nav-link" data-scroll-target="#primary-settings"><span class="header-section-number">10.2.1</span> Primary Settings</a></li>
+  <li><a href="#additional-settings" id="toc-additional-settings" class="nav-link" data-scroll-target="#additional-settings"><span class="header-section-number">10.2.2</span> Additional Settings</a></li>
+  </ul></li>
+  <li><a href="#adding-consent-versions" id="toc-adding-consent-versions" class="nav-link" data-scroll-target="#adding-consent-versions"><span class="header-section-number">10.3</span> Adding Consent Versions</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designadv/econsent.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designadv/econsent.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -674,84 +689,95 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 
 
 <p><strong>Chapter Leads</strong>: Vignesh Murugan, Thomas Wilson</p>
+<section id="enabling-the-e-consent-framework" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="enabling-the-e-consent-framework"><span class="header-section-number">10.1</span> Enabling the e-Consent Framework</h2>
+<ol type="1">
+<li><p>Navigate to the <strong>Online Designer</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/online-designer-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Online Designer"><img src="images/econsent/online-designer-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Online Designer"></a></p>
+<figcaption>Online Designer</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/online-designer-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Online Designer 2"><img src="images/econsent/online-designer-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Online Designer 2"></a></p>
+<figcaption>Online Designer 2</figcaption>
+</figure>
+</div></li>
+<li><p>Enable the e-Consent Framework for a Survey</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/enable-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Enable e-Consent"><img src="images/econsent/enable-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enable e-Consent"></a></p>
+<figcaption>Enable e-Consent</figcaption>
+</figure>
+</div></li>
+<li><p>Click on <strong>e-Consent and PDF Snapshots</strong> in the <em>Data Collection Instruments</em> header box</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/enable-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="e-Consent and PDF Snapshots"><img src="images/econsent/enable-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent and PDF Snapshots"></a></p>
+<figcaption>e-Consent and PDF Snapshots</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/instruments-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Data Collection Instruments"><img src="images/econsent/instruments-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Data Collection Instruments"></a></p>
+<figcaption>Data Collection Instruments</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="e-Consent Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent Settings"></a></p>
+<figcaption>e-Consent Settings</figcaption>
+</figure>
+</div></li>
+</ol>
+</section>
+<section id="configuring-settings" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="configuring-settings"><span class="header-section-number">10.2</span> Configuring Settings</h2>
+<section id="primary-settings" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="primary-settings"><span class="header-section-number">10.2.1</span> Primary Settings</h3>
+<ul>
+<li>Allow user edits and specify name fields.</li>
+</ul>
+</section>
+<section id="additional-settings" class="level3" data-number="10.2.2">
+<h3 data-number="10.2.2" class="anchored" data-anchor-id="additional-settings"><span class="header-section-number">10.2.2</span> Additional Settings</h3>
+<ul>
+<li><p>Add a <strong>Date of Birth</strong> field, custom headers/footers, and signature settings.</p></li>
+<li><p>Specify save locations and customize file names.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Settings"></a></p>
+<figcaption>Settings</figcaption>
+</figure>
+</div></li>
+</ul>
+</section>
+</section>
+<section id="adding-consent-versions" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="adding-consent-versions"><span class="header-section-number">10.3</span> Adding Consent Versions</h2>
+<ol type="1">
+<li>Click <strong>Add Consent Form</strong>.</li>
+<li>Specify the version number and upload the consent form.</li>
+<li>Save the new version.</li>
+</ol>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>How to Set Up an e-Consent Framework in REDCap
+<span class="screen-reader-only">Note</span>Additional Chapter Details
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<section id="enabling-the-e-consent-framework" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="enabling-the-e-consent-framework"><span class="header-section-number">10.1</span> Enabling the e-Consent Framework</h2>
-<ol type="1">
-<li>Navigate to the <strong>Online Designer</strong>.</li>
-</ol>
-<p align="center">
-<img src="./Screenshots/frame_0007.jpg" alt="Online Designer" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-</p>
-<p align="center">
-<img src="./Screenshots/frame_0341.jpg" alt="Online Designer 2" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-</p>
-</section>
-<section id="enable-the-e-consent-framework-for-a-survey" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="enable-the-e-consent-framework-for-a-survey"><span class="header-section-number">10.2</span> 2. Enable the e-Consent Framework for a Survey</h2>
-<p align="center">
-<img src="./Screenshots/frame_0395.jpg" alt="Enable e-Consent" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-</p>
-</section>
-<section id="click-on-e-consent-and-pdf-snapshots-in-the-data-collection-instruments-header-box" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="click-on-e-consent-and-pdf-snapshots-in-the-data-collection-instruments-header-box"><span class="header-section-number">10.3</span> 3. Click on <strong>e-Consent and PDF Snapshots</strong> in the <em>Data Collection Instruments</em> header box</h2>
-<p align="center">
-<img src="./Screenshots/frame_0348.jpg" alt="e-Consent and PDF Snapshots" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-</p>
-<p align="center">
-<img src="./Screenshots/frame_0434.jpg" alt="Data Collection Instruments" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-</p>
-<p align="center">
-<img src="./Screenshots/frame_0439.jpg" alt="e-Consent Settings" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-</p>
-</section>
-<section id="configuring-settings" class="level2" data-number="10.4">
-<h2 data-number="10.4" class="anchored" data-anchor-id="configuring-settings"><span class="header-section-number">10.4</span> Configuring Settings</h2>
-<section id="primary-settings" class="level3" data-number="10.4.1">
-<h3 data-number="10.4.1" class="anchored" data-anchor-id="primary-settings"><span class="header-section-number">10.4.1</span> Primary Settings:</h3>
-<ul>
-<li>Allow user edits and specify name fields.</li>
-</ul>
-</section>
-<section id="additional-settings" class="level3" data-number="10.4.2">
-<h3 data-number="10.4.2" class="anchored" data-anchor-id="additional-settings"><span class="header-section-number">10.4.2</span> Additional Settings:</h3>
-<ul>
-<li><p>Add a <strong>Date of Birth</strong> field, custom headers/footers, and signature settings.<br>
-</p></li>
-<li><p>Specify save locations and customize file names.</p>
-<p align="center">
-</p><p><img src="./Screenshots/frame_0439.jpg" alt="Settings" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"></p>
-<p></p></li>
-</ul>
-</section>
-</section>
-<section id="adding-consent-versions" class="level2" data-number="10.5">
-<h2 data-number="10.5" class="anchored" data-anchor-id="adding-consent-versions"><span class="header-section-number">10.5</span> Adding Consent Versions</h2>
-<ol type="1">
-<li>Click <strong>Add Consent Form</strong>.<br>
-</li>
-<li>Specify the version number and upload the consent form.<br>
-</li>
-<li>Save the new version.</li>
-</ol>
-</section>
-<section id="additional-chapter-details" class="level2" data-number="10.6">
-<h2 data-number="10.6" class="anchored" data-anchor-id="additional-chapter-details"><span class="header-section-number">10.6</span> Additional Chapter Details</h2>
 <p>This chapter was started in October 2024. If you have suggested modifications or additions, please see <a href="../index.html#sec-welcome-contribute">How to Contribute</a> on the book’s welcome page.</p>
+</div>
+</div>
+
+
 </section>
-</div>
-</div>
-
-
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1192,12 +1218,44 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designadv/econsent.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designadv/econsent.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designadv/econsent.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designadv/econsent.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Part of <a href="https://ouhsc.edu/">OU Health Sciences</a>.</p>
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
