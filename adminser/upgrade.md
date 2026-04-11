@@ -54,6 +54,7 @@ Most upgrades require minor changes to the underlying MariaDB database,
 and the developers do not recommend taking the server offline during the process.
 However occasional upgrades are substantial enough,
 and the upgrade process will warn the administrator it is recommended.
+The warning appears in the "Obtain SQL Update Code" section.
 
 In these cases, consider upgrading the nonproduction instance during the week,
 and the production instance during the weekends or nights to minimize
@@ -129,7 +130,7 @@ Make sure you select the correct value among these three dimensions:
 ### Transfer file
 
 Transfer the zipped file from your client machine to the web server,
-using a tool like WinSCP.
+using a tool like [WinSCP](https://winscp.net/).
 For this scenario, say it's transferred to the "Downloads/upgrades" directory
 of the "eaglesmith" account.
 
@@ -147,6 +148,7 @@ On a Linux distribution like RHEL, the code is:
 ```bash
 # Delete any 'redcap' directory unzipped from previous upgrades
 cd /home/eaglesmith/Downloads/upgrades
+rm -rf redcap
 
 # Unzip the file into a directory.
 # If sudo is required, you're probably in the wrong directory
@@ -178,7 +180,7 @@ click a green banner proclaiming something like,
 "Ready to upgrade to REDCap 12.3.4! Click here to navigate to the REDCap upgrade page."
 
 The page should indicate that the previous step was successful and provide SQL code.
-Choose Option C to save the code as a sql file to your desktop machine
+Choose "Option C" to save the code as a sql file to your desktop machine
 along the lines of "redcap_upgrade_120304.sql".
 
 Transfer the file from your desktop to the _database_ server,
@@ -196,8 +198,10 @@ but we prefer the proposed approach for two reasons:
 ### Update Database Server
 
 Log into the database server and open a database IDE.
-Open the new upgrade sql file.^[MySQL Workbench is a popular IDE for MariaDB/MySQL databases.
-Our slight preference is DBeaver.]
+Open the new upgrade sql file.^[[MySQL Workbench](https://www.mysql.com/products/workbench/)
+and [phpMyAdmin](https://www.phpmyadmin.net/)
+are popular tools for MariaDB/MySQL databases.
+Our slight preference is [DBeaver](https://dbeaver.io/).]
 Execute the entire file.
 
 Although the entire file should be executed eventually,
