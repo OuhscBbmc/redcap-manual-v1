@@ -1,5 +1,7 @@
 ---
-abstract: Upgrade REDCap Version
+abstract: >
+  This chapter discusses important decisions during the planning process,
+  as well as the specific steps to regularly update REDCap efficiently.
 
 author:
   - name: Will Beasley
