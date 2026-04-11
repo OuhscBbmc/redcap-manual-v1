@@ -181,11 +181,11 @@ click a green banner proclaiming something like,
 
 This will take you to the "Upgrade Module",
 which should indicate that the previous step was successful and provide SQL code.
-Choose "Option C" to save the code as a sql file to your desktop machine
+Choose "Option C: Download the SQL upgrade script as a file"
+to save the code as a sql file to your desktop machine
 along the lines of "redcap_upgrade_120304.sql".
 
 ![Upgrade Module](images/upgrade/upgrade-module-1.png){width=80%}
-
 
 Transfer the file from your desktop to the _database_ server,
 specifically `home/eaglesmith/redcap-upgrades`.
@@ -248,8 +248,23 @@ like adding a table to support a new feature.
 
 ### Verify Installation
 
-1. Config Check page
-1. Test and Validate
+#### Configuration Check
+
+After updating the database, the Upgrade Module will redirect to the Configuration Check.
+Inspect that all the "Basic" and "Secondary" tests pass.
+
+![Configuration Check](images/upgrade/config-check-1.png){width=80%}
+
+#### Test and Validate
+
+The next step should be to follow your institution's procedure for testing
+the instance again.
+Furthermore, we recommend reading the ChangeLog on the Community site,
+and focusing on any new features within the release.
+
+For example, if some features or fixes involve the
+Clinical Data Interoperability Services (CDIS),
+check that the basic FHIR operations are performing as you expect.
 
 ### Clean Up
 
