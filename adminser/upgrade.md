@@ -186,14 +186,19 @@ along the lines of "redcap_upgrade_120304.sql".
 Transfer the file from your desktop to the _database_ server,
 specifically `home/eaglesmith/redcap-upgrades`.
 For the sake of consistency,
-use the same approach as you transferred the PHP code to the web server in the previous step.^[It
-may be possible to copy the code from the web page and
-paste it into the database IDE,
-but we prefer the proposed approach for two reasons:
+use the same approach as you transferred the PHP code to the web server in the previous step.[^sql-transfer]
 
-1. The sql file helps document changes if you need to reconstruct something.
-1. It's tricky moving the code across machines if
-   the Linux server-client protocol doesn't support copy-paste operations.]
+[^sql-transfer]:
+  It may be possible to copy the code from the web page and
+  paste it into the database IDE,
+  but we prefer the proposed approach for two reasons:
+
+    1. The sql file helps document changes
+       if you need to reconstruct something.
+
+    1. It's tricky moving the code across machines if
+       the Linux server-client protocol doesn't support
+       copy-paste operations.
 
 ### Update Database Server
 
