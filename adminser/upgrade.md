@@ -183,21 +183,20 @@ along the lines of "redcap_upgrade_120304.sql".
 Transfer the file from your desktop to the _database_ server,
 specifically `home/eaglesmith/redcap-upgrades`.
 For the sake of consistency,
-use the same approach as you transferred the PHP code to the web server in the previous step.
+use the same approach as you transferred the PHP code to the web server in the previous step.^[It
+may be possible to copy the code from the web page and
+paste it into the database IDE,
+but we prefer the proposed approach for two reasons:
 
-TODO: add as a foot note
-> It may be possible to copy the code from the web page and
-> paste it into the database IDE,
-> but we prefer the proposed approach for two reasons:
->
-> 1. the sql file helps document changes if you need to reconstruct something
-> 1. It's tricky moving the code across machines if
->    the linux server-client protocol doesn't support copy-paste operations.
+1. The sql file helps document changes if you need to reconstruct something.
+1. It's tricky moving the code across machines if
+   the Linux server-client protocol doesn't support copy-paste operations.]
 
 ### Update Database Server
 
 Log into the database server and open a database IDE.
-Open the new upgrade sql file.
+Open the new upgrade sql file.^[MySQL Workbench is a popular IDE for MariaDB/MySQL databases.
+Our slight preference is DBeaver.]
 Execute the entire file.
 
 Although the entire file should be executed eventually,
@@ -213,10 +212,6 @@ so you rolled back to your VM snapshot.
 Run small snippets of the code individually.
 This incremental approach will help you identify where the code failed,
 and therefore be more suggestive how to solve the problem.
-
-TODO: footnote:
-> MySQL Workbench is a popular IDE for MariaDB/MySQL databases.
-> Our slight preference is DBeaver.
 
 ::: {.callout-note appearance="simple"}
 
