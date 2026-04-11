@@ -53,7 +53,7 @@ for further details.
 Most upgrades require minor changes to the underlying MariaDB database,
 and the developers do not recommend taking the server offline during the process.
 However occasional upgrades are substantial enough,
-and the upgrade process will warn the administrator it is recommended.
+and the Upgrade Module will recommend the administrator take the instance offline.
 The warning appears in the "Obtain SQL Update Code" section.
 
 In these cases, consider upgrading the nonproduction instance during the week,
@@ -179,9 +179,13 @@ Near the top of the page,
 click a green banner proclaiming something like,
 "Ready to upgrade to REDCap 12.3.4! Click here to navigate to the REDCap upgrade page."
 
-The page should indicate that the previous step was successful and provide SQL code.
+This will take you to the "Upgrade Module",
+which should indicate that the previous step was successful and provide SQL code.
 Choose "Option C" to save the code as a sql file to your desktop machine
 along the lines of "redcap_upgrade_120304.sql".
+
+![Upgrade Module](images/upgrade/upgrade-module-1.png){width=80%}
+
 
 Transfer the file from your desktop to the _database_ server,
 specifically `home/eaglesmith/redcap-upgrades`.
