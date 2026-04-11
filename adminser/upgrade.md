@@ -45,7 +45,8 @@ doesn't look right.
 
 As of February 2026, best practices recommended _not_ using
 the "Easy Upgrade" procedure.
-See Community Post qqqq for further details.
+See Community Post [272424](https://redcap.vumc.org/community/post.php?id=272424&comment=272776)
+for further details.
 
 ### Offline vs Online Upgrade
 
