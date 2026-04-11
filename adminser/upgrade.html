@@ -85,6 +85,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/bootstrap/bootstrap-b6a6750502247783af92f3817d3a54b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-b04aaf2ec0371c49da615fb95a701e32.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-b6a6750502247783af92f3817d3a54b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -739,7 +742,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </section>
 <section id="offline-vs-online-upgrade" class="level3" data-number="15.1.3">
 <h3 data-number="15.1.3" class="anchored" data-anchor-id="offline-vs-online-upgrade"><span class="header-section-number">15.1.3</span> Offline vs Online Upgrade</h3>
-<p>Most upgrades require minor changes to the underlying MariaDB database, and the developers do not recommend taking the server offline during the process. However occasional upgrades are substantial enough, and the upgrade process will warn the administrator it is recommended. The warning appears in the “Obtain SQL Update Code” section.</p>
+<p>Most upgrades require minor changes to the underlying MariaDB database, and the developers do not recommend taking the server offline during the process. However occasional upgrades are substantial enough, and the Upgrade Module will recommend the administrator take the instance offline. The warning appears in the “Obtain SQL Update Code” section.</p>
 <p>In these cases, consider upgrading the nonproduction instance during the week, and the production instance during the weekends or nights to minimize</p>
 </section>
 <section id="version-skipping" class="level3" data-number="15.1.4">
@@ -815,7 +818,13 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <h3 data-number="15.3.5" class="anchored" data-anchor-id="obtain-sql-update-code"><span class="header-section-number">15.3.5</span> Obtain SQL Update Code</h3>
 <p>The second component to upgrade is the database, which involves executing SQL code that REDCap’s installation process provides you.</p>
 <p>After moving the PHP code, go to <code>&lt;redcap-installation&gt;/&lt;redcap_version&gt;/ControlCenter/</code>, from your desktop. Near the top of the page, click a green banner proclaiming something like, “Ready to upgrade to REDCap 12.3.4! Click here to navigate to the REDCap upgrade page.”</p>
-<p>The page should indicate that the previous step was successful and provide SQL code. Choose “Option C” to save the code as a sql file to your desktop machine along the lines of “redcap_upgrade_120304.sql”.</p>
+<p>This will take you to the “Upgrade Module”, which should indicate that the previous step was successful and provide SQL code. Choose “Option C” to save the code as a sql file to your desktop machine along the lines of “redcap_upgrade_120304.sql”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/upgrade/upgrade-module-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Upgrade Module"><img src="images/upgrade/upgrade-module-1.png" class="img-fluid figure-img" style="width:80.0%" alt="Upgrade Module"></a></p>
+<figcaption>Upgrade Module</figcaption>
+</figure>
+</div>
 <p>Transfer the file from your desktop to the <em>database</em> server, specifically <code>home/eaglesmith/redcap-upgrades</code>. For the sake of consistency, use the same approach as you transferred the PHP code to the web server in the previous step.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 </section>
 <section id="update-database-server" class="level3" data-number="15.3.6">
@@ -1329,6 +1338,38 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
