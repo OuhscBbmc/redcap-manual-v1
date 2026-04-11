@@ -11,3 +11,10 @@ $title-color: #b6b7b9; // From https://bootswatch.com/slate/
 
 // $link-color: #287bb5; // From Zephyr's "info" shade: https://bootswatch.com/zephyr/
 $link-color: #64296B; // N3C purple
+
+/*-- scss:rules --*/
+
+.sidebar-item.sidebar-item-section > .sidebar-item-container > .sidebar-item-text .menu-text {
+  color: #9a6700;
+  font-weight: 600;
+}
