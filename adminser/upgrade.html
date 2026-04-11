@@ -815,15 +815,17 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>The second component to upgrade is the database, which involves executing SQL code that REDCap’s installation process provides you.</p>
 <p>After moving the PHP code, go to <code>&lt;redcap-installation&gt;/&lt;redcap_version&gt;/ControlCenter/</code>, from your desktop. Near the top of the page, click a green banner proclaiming something like, “Ready to upgrade to REDCap 12.3.4! Click here to navigate to the REDCap upgrade page.”</p>
 <p>The page should indicate that the previous step was successful and provide SQL code. Choose Option C to save the code as a sql file to your desktop machine along the lines of “redcap_upgrade_120304.sql”.</p>
-<p>Transfer the file from your desktop to the <em>database</em> server, specifically <code>home/eaglesmith/redcap-upgrades</code>. For the sake of consistency, use the same approach as you transferred the PHP code to the web server in the previous step.</p>
-<p>TODO: add as a foot note &gt; It may be possible to copy the code from the web page and &gt; paste it into the database IDE, &gt; but we prefer the proposed approach for two reasons: &gt; &gt; 1. the sql file helps document changes if you need to reconstruct something &gt; 1. It’s tricky moving the code across machines if &gt; the linux server-client protocol doesn’t support copy-paste operations.</p>
+<p>Transfer the file from your desktop to the <em>database</em> server, specifically <code>home/eaglesmith/redcap-upgrades</code>. For the sake of consistency, use the same approach as you transferred the PHP code to the web server in the previous step.^[It may be possible to copy the code from the web page and paste it into the database IDE, but we prefer the proposed approach for two reasons:</p>
+<ol type="1">
+<li>The sql file helps document changes if you need to reconstruct something.</li>
+<li>It’s tricky moving the code across machines if the Linux server-client protocol doesn’t support copy-paste operations.]</li>
+</ol>
 </section>
 <section id="update-database-server" class="level3" data-number="15.3.6">
 <h3 data-number="15.3.6" class="anchored" data-anchor-id="update-database-server"><span class="header-section-number">15.3.6</span> Update Database Server</h3>
-<p>Log into the database server and open a database IDE. Open the new upgrade sql file. Execute the entire file.</p>
+<p>Log into the database server and open a database IDE. Open the new upgrade sql file.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Execute the entire file.</p>
 <p>Although the entire file should be executed eventually, but you can chose either line-by-line or all-at-once. If it’s a small hop between versions and the upgrade went smoothly on the non-production instance, consider making your life easier and hitting the Run button just once.</p>
 <p>However if there were previous problems, we recommend a more conservative approach. Possibly there were problems upgrading the non-production instance. Or perhaps that ran smoothly, but the production upgrade failed, so you rolled back to your VM snapshot. Run small snippets of the code individually. This incremental approach will help you identify where the code failed, and therefore be more suggestive how to solve the problem.</p>
-<p>TODO: footnote: &gt; MySQL Workbench is a popular IDE for MariaDB/MySQL databases. &gt; Our slight preference is DBeaver.</p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -875,6 +877,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <hr>
 <ol>
 <li id="fn1"><p>The distinction between a test instance and development instance is important to some aspects of server administration, but not to this aspect. Update all the nonproduction servers you have before your production servers.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>MySQL Workbench is a popular IDE for MariaDB/MySQL databases. Our slight preference is DBeaver.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
