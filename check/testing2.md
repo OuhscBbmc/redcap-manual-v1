@@ -11,9 +11,9 @@ author:
       corresponding: true
 
   - name: Carol Kuplicki
-    affiliation: University of Oklahoma Health Sciences
-    # affiliation-url: https://ouhsc.edu/bbmc/
-    # orcid: 0000-0000-0000-0000
+    affiliation: OU School of Community Medicine
+    affiliation-url: https://www.ou.edu/tulsa/residency/about-medical-informatics
+    orcid: 0009-0008-9265-0882
 
   - name: Thomas Wilson
     affiliation: University of Oklahoma Health Sciences
