@@ -35,7 +35,7 @@ REDCap accepts many kinds of data, including file uploads and signatures.
 But you have to tell REDCap what to expect when you create variables.
 Further, you need to think about what to name a variable.
 If you named everything "item_1," "item_2," "item_3," etc., whoever analyzes the data
-will have a hard time keeping track of what variable is being referenced.
+will have a hard time understanding what the variables mean.
 This chapter will lead you through many decisions about variables.
 
 ## Variable names {#sec-designbas-variable-variablenames}
@@ -122,7 +122,7 @@ As the creator of a REDCap project, you are on the front line of ensuring data q
 The specifications you enter for each variable can make a world of difference.
 Your specifications can force a data entry person to enter a number with two decimal places
 or ensure that an email address is in a valid format.
-The specs also can set limits on numbers so a data entry person would not
+The specs also can set limits on numbers so a data entry person could not
 accidentally enter that a person was 150 years old, instead of 15.
 
 ### Text Box {#sec-designbas-variable-fieldtypes-textbox}
@@ -138,25 +138,49 @@ and we will use a setting called *Validation*, which has a drop-down menu beside
 ![Validation settings](images/variable/validation-1.jpg){width=80%}
 
 You can see a scroll bar on the right side of the drop-down menu.
-So there are many validation types from which to choose.
+There are many validation types from which to choose.
 For child's age in years, we will choose Integer.
 After we do that, we see options pop up for *Minimum* and *Maximum*.
 We will enter the minimum and maximum ages possible for this study.
 
 ![Validation range](images/variable/validation-2.jpg){width=80%}
 
-Now someone entering data who typed an age outside that range will get an error message,
-saying that the number is beyond the limits you set.
+If someone entering data typed an age outside that range, an error message will appear,
+saying the number is beyond the limits you set.
 
 ### Notes Box {#sec-designbas-variable-fieldtypes-notesbox}
 
-### Calculate Field {#sec-designbas-variable-fieldtypes-calculatedfield}
+### Calculated Field {#sec-designbas-variable-fieldtypes-calculatedfield}
 
-{This will be just a sentence or two, then refere to the dedicated chater in the "Advanced Project Design" part}
+A Calculated Field can take a number from a previously entered variable and perform a calculation. 
+For example, the project may have a variable for an infant's number of weeks and days of gestation.
+A data analyst might prefer to have gestation in total days.
+A formula can be written to take the previously entered weeks of gestation, multiply it by 7, then add the days (partial week) of gestation to get total days of gestation. Please see the "Advanced Project Design" part of the book for more details.
 
 ### Multiple Choice - Drop-down list {#sec-designbas-variable-fieldtypes-multiplechoicedropdown}
 
+Now we will explain the three kinds of multiple-choice fields available in REDCap. 
+A drop-down list of response options is helpful when you have a long list of options because it saves space. 
+It also is helpful when the project has specified values for missing values, which can automatically appear as options in the list. 
+(See QQQQQQQ section on this topic)
+Click the Add Field where you want to insert the new variable, then select the Field Type: Multiple Choice - Drop-down List (Single Answer). 
+
+![Drop-down list variable](images/variable/dropdown-1.jpg){width=80%}
+
+Type the Field Label and the Variable Name.
+In the space at the bottom of the window, called "Choices (one choice per line)," you will type the state abbreviation that you want to be saved in the data, followed by a comma, then the state name, with one state per line, as shown below.
+
+![Enter drop-down values](images/variable/dropdown-2.jpg){width=80%}
+
 ### Multiple Choice - Radio Buttons {#sec-designbas-variable-fieldtypes-multiplechoiceradio}
+
+When you have fewer multiple-choice options, you can choose a Multiple Choice - Radio Buttons field. Everything else about creating that field is the same as the drop-down list option. 
+
+### Multiple Choice - Checkboxes {#sec-designbas-variable-fieldtypes-multiplechoicecheckbox}
+
+Checkboxes for a multiple choice item are different.
+Checkboxes allow for multiple responses, such as you would need for an item saying, "Check all that apply."
+You create this field exactly as you did the other two multiple-choice fields, except you select "Checkboxes (Multiple Answers)" for the Field Type.
 
 ## Date variables {#sec-designbas-variable-datevariables}
 
