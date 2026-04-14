@@ -633,9 +633,10 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#sec-designbas-variable-fieldtypes-textbox" id="toc-sec-designbas-variable-fieldtypes-textbox" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes-textbox"><span class="header-section-number">8.4.1</span> Text Box</a></li>
   <li><a href="#sec-designbas-variable-fieldtypes-notesbox" id="toc-sec-designbas-variable-fieldtypes-notesbox" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes-notesbox"><span class="header-section-number">8.4.2</span> Notes Box</a></li>
-  <li><a href="#sec-designbas-variable-fieldtypes-calculatedfield" id="toc-sec-designbas-variable-fieldtypes-calculatedfield" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes-calculatedfield"><span class="header-section-number">8.4.3</span> Calculate Field</a></li>
+  <li><a href="#sec-designbas-variable-fieldtypes-calculatedfield" id="toc-sec-designbas-variable-fieldtypes-calculatedfield" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes-calculatedfield"><span class="header-section-number">8.4.3</span> Calculated Field</a></li>
   <li><a href="#sec-designbas-variable-fieldtypes-multiplechoicedropdown" id="toc-sec-designbas-variable-fieldtypes-multiplechoicedropdown" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes-multiplechoicedropdown"><span class="header-section-number">8.4.4</span> Multiple Choice - Drop-down list</a></li>
   <li><a href="#sec-designbas-variable-fieldtypes-multiplechoiceradio" id="toc-sec-designbas-variable-fieldtypes-multiplechoiceradio" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes-multiplechoiceradio"><span class="header-section-number">8.4.5</span> Multiple Choice - Radio Buttons</a></li>
+  <li><a href="#sec-designbas-variable-fieldtypes-multiplechoicecheckbox" id="toc-sec-designbas-variable-fieldtypes-multiplechoicecheckbox" class="nav-link" data-scroll-target="#sec-designbas-variable-fieldtypes-multiplechoicecheckbox"><span class="header-section-number">8.4.6</span> Multiple Choice - Checkboxes</a></li>
   </ul></li>
   <li><a href="#sec-designbas-variable-datevariables" id="toc-sec-designbas-variable-datevariables" class="nav-link" data-scroll-target="#sec-designbas-variable-datevariables"><span class="header-section-number">8.5</span> Date variables</a></li>
   <li><a href="#sec-designbas-variable-newvariables" id="toc-sec-designbas-variable-newvariables" class="nav-link" data-scroll-target="#sec-designbas-variable-newvariables"><span class="header-section-number">8.6</span> Creating a new variable</a></li>
@@ -699,7 +700,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p><strong>Chapter Leads</strong>: Lise DeShea &amp; Thomas Wilson</p>
 <section id="sec-designbas-variable-decisions" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="sec-designbas-variable-decisions"><span class="header-section-number">8.1</span> Variable decisions</h2>
-<p>When you are creating and managing a database, many decisions must be made about variables. A variable is a quantity or property that can take on different values. “Name” is a variable. “Age” is a variable. These are two kinds of variables. Data are stored in variables. REDCap accepts many kinds of data, including file uploads and signatures. But you have to tell REDCap what to expect when you create variables. Further, you need to think about what to name a variable. If you named everything “item_1,” “item_2,” “item_3,” etc., whoever analyzes the data will have a hard time keeping track of what variable is being referenced. This chapter will lead you through many decisions about variables.</p>
+<p>When you are creating and managing a database, many decisions must be made about variables. A variable is a quantity or property that can take on different values. “Name” is a variable. “Age” is a variable. These are two kinds of variables. Data are stored in variables. REDCap accepts many kinds of data, including file uploads and signatures. But you have to tell REDCap what to expect when you create variables. Further, you need to think about what to name a variable. If you named everything “item_1,” “item_2,” “item_3,” etc., whoever analyzes the data will have a hard time understanding what the variables mean. This chapter will lead you through many decisions about variables.</p>
 </section>
 <section id="sec-designbas-variable-variablenames" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="sec-designbas-variable-variablenames"><span class="header-section-number">8.2</span> Variable names</h2>
@@ -775,7 +776,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <figcaption>Field type dropdown</figcaption>
 </figure>
 </div>
-<p>As the creator of a REDCap project, you are on the front line of ensuring data quality. The specifications you enter for each variable can make a world of difference. Your specifications can force a data entry person to enter a number with two decimal places or ensure that an email address is in a valid format. The specs also can set limits on numbers so a data entry person would not accidentally enter that a person was 150 years old, instead of 15.</p>
+<p>As the creator of a REDCap project, you are on the front line of ensuring data quality. The specifications you enter for each variable can make a world of difference. Your specifications can force a data entry person to enter a number with two decimal places or ensure that an email address is in a valid format. The specs also can set limits on numbers so a data entry person could not accidentally enter that a person was 150 years old, instead of 15.</p>
 <section id="sec-designbas-variable-fieldtypes-textbox" class="level3" data-number="8.4.1">
 <h3 data-number="8.4.1" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes-textbox"><span class="header-section-number">8.4.1</span> Text Box</h3>
 <p>A <em>Text Box</em> field can handle many kinds of data. Let’s look at how to specify which kind of entries will be valid. Suppose we want the data entry person to enter a child’s age for a study involving only children ages 2 through 8 years. Further, two children from the same family could be involved in the study. So we will name the variable to specify we are talking about the first child, and we will use a setting called <em>Validation</em>, which has a drop-down menu beside it.</p>
@@ -785,27 +786,46 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <figcaption>Validation settings</figcaption>
 </figure>
 </div>
-<p>You can see a scroll bar on the right side of the drop-down menu. So there are many validation types from which to choose. For child’s age in years, we will choose Integer. After we do that, we see options pop up for <em>Minimum</em> and <em>Maximum</em>. We will enter the minimum and maximum ages possible for this study.</p>
+<p>You can see a scroll bar on the right side of the drop-down menu. There are many validation types from which to choose. For child’s age in years, we will choose Integer. After we do that, we see options pop up for <em>Minimum</em> and <em>Maximum</em>. We will enter the minimum and maximum ages possible for this study.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="images/variable/validation-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Validation range"><img src="images/variable/validation-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Validation range"></a></p>
 <figcaption>Validation range</figcaption>
 </figure>
 </div>
-<p>Now someone entering data who typed an age outside that range will get an error message, saying that the number is beyond the limits you set.</p>
+<p>If someone entering data typed an age outside that range, an error message will appear, saying the number is beyond the limits you set.</p>
 </section>
 <section id="sec-designbas-variable-fieldtypes-notesbox" class="level3" data-number="8.4.2">
 <h3 data-number="8.4.2" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes-notesbox"><span class="header-section-number">8.4.2</span> Notes Box</h3>
 </section>
 <section id="sec-designbas-variable-fieldtypes-calculatedfield" class="level3" data-number="8.4.3">
-<h3 data-number="8.4.3" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes-calculatedfield"><span class="header-section-number">8.4.3</span> Calculate Field</h3>
-<p>{This will be just a sentence or two, then refere to the dedicated chater in the “Advanced Project Design” part}</p>
+<h3 data-number="8.4.3" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes-calculatedfield"><span class="header-section-number">8.4.3</span> Calculated Field</h3>
+<p>A Calculated Field can take a number from a previously entered variable and perform a calculation. For example, the project may have a variable for an infant’s number of weeks and days of gestation. A data analyst might prefer to have gestation in total days. A formula can be written to take the previously entered weeks of gestation, multiply it by 7, then add the days (partial week) of gestation to get total days of gestation. Please see the “Advanced Project Design” part of the book for more details.</p>
 </section>
 <section id="sec-designbas-variable-fieldtypes-multiplechoicedropdown" class="level3" data-number="8.4.4">
 <h3 data-number="8.4.4" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes-multiplechoicedropdown"><span class="header-section-number">8.4.4</span> Multiple Choice - Drop-down list</h3>
+<p>Now we will explain the three kinds of multiple-choice fields available in REDCap. A drop-down list of response options is helpful when you have a long list of options because it saves space. It also is helpful when the project has specified values for missing values, which can automatically appear as options in the list. (See QQQQQQQ section on this topic) Click the Add Field where you want to insert the new variable, then select the Field Type: Multiple Choice - Drop-down List (Single Answer).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/variable/dropdown-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Drop-down list variable"><img src="images/variable/dropdown-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Drop-down list variable"></a></p>
+<figcaption>Drop-down list variable</figcaption>
+</figure>
+</div>
+<p>Type the Field Label and the Variable Name. In the space at the bottom of the window, called “Choices (one choice per line),” you will type the state abbreviation that you want to be saved in the data, followed by a comma, then the state name, with one state per line, as shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/variable/dropdown-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Enter drop-down values"><img src="images/variable/dropdown-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enter drop-down values"></a></p>
+<figcaption>Enter drop-down values</figcaption>
+</figure>
+</div>
 </section>
 <section id="sec-designbas-variable-fieldtypes-multiplechoiceradio" class="level3" data-number="8.4.5">
 <h3 data-number="8.4.5" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes-multiplechoiceradio"><span class="header-section-number">8.4.5</span> Multiple Choice - Radio Buttons</h3>
+<p>When you have fewer multiple-choice options, you can choose a Multiple Choice - Radio Buttons field. Everything else about creating that field is the same as the drop-down list option.</p>
+</section>
+<section id="sec-designbas-variable-fieldtypes-multiplechoicecheckbox" class="level3" data-number="8.4.6">
+<h3 data-number="8.4.6" class="anchored" data-anchor-id="sec-designbas-variable-fieldtypes-multiplechoicecheckbox"><span class="header-section-number">8.4.6</span> Multiple Choice - Checkboxes</h3>
+<p>Checkboxes for a multiple choice item are different. Checkboxes allow for multiple responses, such as you would need for an item saying, “Check all that apply.” You create this field exactly as you did the other two multiple-choice fields, except you select “Checkboxes (Multiple Answers)” for the Field Type.</p>
 </section>
 </section>
 <section id="sec-designbas-variable-datevariables" class="level2" data-number="8.5">
@@ -813,7 +833,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>Let’s look at one more kind of variable: a date field. We will change variable_4 on our example project to the date of birth for the first child in our study.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/variable/date-variable-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Kinds of date variables"><img src="images/variable/date-variable-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Kinds of date variables"></a></p>
+<p><a href="images/variable/date-variable-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Kinds of date variables"><img src="images/variable/date-variable-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Kinds of date variables"></a></p>
 <figcaption>Kinds of date variables</figcaption>
 </figure>
 </div>
@@ -824,14 +844,14 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>Our examples so far have involved modifying variables that already existed in a REDCap project. Let’s create a new variable. Look for the buttons that say “Add Field”:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/variable/add-field.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="The Add Field button"><img src="images/variable/add-field.jpg" class="img-fluid figure-img" style="width:80.0%" alt="The Add Field button"></a></p>
+<p><a href="images/variable/add-field.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="The Add Field button"><img src="images/variable/add-field.jpg" class="img-fluid figure-img" style="width:80.0%" alt="The Add Field button"></a></p>
 <figcaption>The Add Field button</figcaption>
 </figure>
 </div>
 <p>We can insert a field after any of the existing fields in the project by clicking one of those buttons. Doing so opens a window called Add New Field. Let’s create a field for the best contact phone number:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/variable/phone-contact-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Creating a new variable"><img src="images/variable/phone-contact-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Creating a new variable"></a></p>
+<p><a href="images/variable/phone-contact-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Creating a new variable"><img src="images/variable/phone-contact-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Creating a new variable"></a></p>
 <figcaption>Creating a new variable</figcaption>
 </figure>
 </div>
@@ -839,19 +859,19 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>We recommend when you are learning about REDCap, request a practice project, then go into Form 1, which gets created automatically, and play around with creating different kinds of variables. A practice project is the best way to learn by doing. To request a practice project, click on My Projects in the top left corner of the page, then click on the link at the top of the next page that says “+ New Project.” Fill out the form and a REDCap administrator will create a “Practice/Just For Fun” project for you. You will get an email when the project has been created and is available to you.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/variable/my-projects.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Go to My Projects"><img src="images/variable/my-projects.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Go to My Projects"></a></p>
+<p><a href="images/variable/my-projects.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Go to My Projects"><img src="images/variable/my-projects.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Go to My Projects"></a></p>
 <figcaption>Go to My Projects</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/variable/new-project.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Go to New Project"><img src="images/variable/new-project.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Go to New Project"></a></p>
+<p><a href="images/variable/new-project.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Go to New Project"><img src="images/variable/new-project.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Go to New Project"></a></p>
 <figcaption>Go to New Project</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/variable/request-project.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Request practice project"><img src="images/variable/request-project.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Request practice project"></a></p>
+<p><a href="images/variable/request-project.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="Request practice project"><img src="images/variable/request-project.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Request practice project"></a></p>
 <figcaption>Request practice project</figcaption>
 </figure>
 </div>
