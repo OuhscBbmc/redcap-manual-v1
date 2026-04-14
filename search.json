@@ -385,7 +385,7 @@
     "href": "designint/actiontag.html",
     "title": "9  Action Tags",
     "section": "",
-    "text": "9.1 Purpose\nChapter Leads: Lise DeShea & Thomas Wilson",
+    "text": "9.1 Purpose\nChapter Leads: Lise DeShea & Thomas Wilson\nAction tags are used in REDCap to modify the appearance or behavior of items in a project. They are added to the Action Tags/Field Annotation box under the Field Label in the Edit Field window for each variable.",
     "crumbs": [
       "Project Design (Intermediate)",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Action Tags</span>"
@@ -396,7 +396,7 @@
     "href": "designint/actiontag.html#sec-designint-action-purpose",
     "title": "9  Action Tags",
     "section": "",
-    "text": "Add new record",
+    "text": "Action Tags box",
     "crumbs": [
       "Project Design (Intermediate)",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Action Tags</span>"
@@ -407,7 +407,7 @@
     "href": "designint/actiontag.html#sec-designint-action-common",
     "title": "9  Action Tags",
     "section": "9.2 Common",
-    "text": "9.2 Common\n\n9.2.1 @HIDEBUTTON\n\n\n9.2.2 @DEFAULT",
+    "text": "9.2 Common\nWe will explain some of the more common action tags, then we will cover a few of the less common ones. We will start with a simple example.\n\n9.2.1 @HIDEBUTTON\nBy default, date fields appear with a button labeled Today. Clicking that button fills in today’s date. Sometimes a project designer does not want that button available. A designer might want to force people reviewing past years’ medical records to enter that date’s year. The action tag to hide the Today button is an at-sign, followed by HIDEBUTTON: (HIDEBUTTON?). When you click inside the Action Tags/Field Annotation box, it then opens another window, called the Logic Editor.\n\n\n\nLogic Editor\n\n\nYou can see that we have typed (HIDEBUTTON?) in the Logic Editor. What if you cannot remember if this action tag has a hyphen in the middle? You can click the red “@ Action Tags” button at the top of the Logic Editor and see a list of action tags and explanations. To save this action tag, you click Update & Close Editor, then click the Save button on the Edit Field window. Now the Today button no longer appears next to the date field.\n\n\n9.2.2 @DEFAULT\nSometimes a project designer can use an action tag to make things easier for the people doing data entry inside REDCap. The action tag (DEFAULT?) = ‘????’ can be used to set the starting value for a variable. In this example, the ???? stands for a default value. Let’s say we expect most of the people in a study to be residents of Oklahoma. We could set (DEFAULT?) = ‘OK’ so that Oklahoma shows up as the default state when a new record is created in REDCap.\n\n\n\nDEFAULT action tag\n\n\nNotice that the value recorded in the data, OK, is the default value, not “Oklahoma.” This action tag works only once, when the record is created. If the data entry people or survey respondent needed to change it to Texas, they can use the drop-down menu to do so. Their entry will not be overwritten with Oklahoma at a later time. The default does not appear on the form you are creating in Online Designer. It appears in a record, if you click the Add/Edit Record link on the left side of the screen and create a new record.\nQQQQQQ Will, please add a link to the chapter on creating new records QQQQQ\n\n\n9.2.3 @NONEOFTHEABOVE\nLet’s say we have a REDCap project that allows people signing up for a conference to indicate their preferences for lunch. We create a checkbox multiple-choice item where the respondents can indicate all of the acceptable options for lunch. One option is none of the above.\n\n\n\nAction tag for checkbox field\n\n\nThe (NONEOFTHEABOVE?) action tag will prevent a respondent who answers “None of the above” from checking any other lunch item.\n\n\n\nNONEOFTHEABOVE action tag\n\n\nAs we saw for the (DEFAULT?) action tag, the (NONEOFTHEABOVE?) action tag is followed by an equals sign, then the value recorded in the data, ‘none’ – not the label “None of the above.” Generally speaking, when REDCap refers to character values like ‘none,’ the value is enclosed in single or double quotation marks. When a numeric value is used to indicate “None of the above,” then the number recorded in the data would follow the equals sign, without quotation marks.\n\n\n9.2.4 @MAXCHECKED\nSuppose we do not want everyone to check every option in our list of lunch choices in this checkbox field. We can use the (MAXCHECKED?) action tag to limit everyone to their top 2 or 3 preferences. We can change the Field label to “Indicate your top 3 preferences for lunch.” Then we click on the Action Tags/Field Annotation box to open the Logic Editor, where we list this action tag.\n\n\n\nMAXCHECKED action tag",
     "crumbs": [
       "Project Design (Intermediate)",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Action Tags</span>"
@@ -418,7 +418,7 @@
     "href": "designint/actiontag.html#sec-designint-action-lesscommon",
     "title": "9  Action Tags",
     "section": "9.3 Less Common",
-    "text": "9.3 Less Common\n\n9.3.1 @SETVALUE\n\n\n9.3.2 @PLACEHOLDER\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was last edited in November 2025. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "text": "9.3 Less Common\n\n9.3.1 @SETVALUE\n\n\n9.3.2 @PLACEHOLDER\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was last edited in April 2026. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Project Design (Intermediate)",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Action Tags</span>"
