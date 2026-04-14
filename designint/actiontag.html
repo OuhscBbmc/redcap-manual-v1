@@ -637,8 +637,10 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <li><a href="#sec-designint-action-lesscommon" id="toc-sec-designint-action-lesscommon" class="nav-link" data-scroll-target="#sec-designint-action-lesscommon"><span class="header-section-number">9.3</span> Less Common</a>
   <ul class="collapse">
   <li><a href="#sec-designint-action-lesscommon-setvalue" id="toc-sec-designint-action-lesscommon-setvalue" class="nav-link" data-scroll-target="#sec-designint-action-lesscommon-setvalue"><span class="header-section-number">9.3.1</span> <code>@SETVALUE</code></a></li>
-  <li><a href="#sec-designint-action-lesscommon-placeholder" id="toc-sec-designint-action-lesscommon-placeholder" class="nav-link" data-scroll-target="#sec-designint-action-lesscommon-placeholder"><span class="header-section-number">9.3.2</span> <code>@PLACEHOLDER</code></a></li>
+  <li><a href="#sec-designint-action-lesscommon-readonly" id="toc-sec-designint-action-lesscommon-readonly" class="nav-link" data-scroll-target="#sec-designint-action-lesscommon-readonly"><span class="header-section-number">9.3.2</span> <code>@READONLY</code></a></li>
+  <li><a href="#sec-designint-action-lesscommon-placeholder" id="toc-sec-designint-action-lesscommon-placeholder" class="nav-link" data-scroll-target="#sec-designint-action-lesscommon-placeholder"><span class="header-section-number">9.3.3</span> <code>@PLACEHOLDER</code></a></li>
   </ul></li>
+  <li><a href="#sec-designint-action-other" id="toc-sec-designint-action-other" class="nav-link" data-scroll-target="#sec-designint-action-other"><span class="header-section-number">9.4</span> Many Other Action Tags</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designint/actiontag.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designint/actiontag.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -768,9 +770,54 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <h2 data-number="9.3" class="anchored" data-anchor-id="sec-designint-action-lesscommon"><span class="header-section-number">9.3</span> Less Common</h2>
 <section id="sec-designint-action-lesscommon-setvalue" class="level3" data-number="9.3.1">
 <h3 data-number="9.3.1" class="anchored" data-anchor-id="sec-designint-action-lesscommon-setvalue"><span class="header-section-number">9.3.1</span> <code>@SETVALUE</code></h3>
+<p>Sometimes we want to help out the data entry people by setting the value of a field. A project may have a form especially for interviewing the first child in a family. We can use <em><span class="citation" data-cites="SETVALUE">(<a href="#ref-SETVALUE" role="doc-biblioref"><strong>SETVALUE?</strong></a>)</span></em> to specify the child being interviewed.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/action/setvalue-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="SETVALUE action tag"><img src="images/action/setvalue-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="SETVALUE action tag"></a></p>
+<figcaption>SETVALUE action tag</figcaption>
+</figure>
+</div>
+<p>Let’s say we have created a record for a family, and we have used Form 1 to enter some family information. Now we want the first child’s name to appear on the next form, which is being used to record data from interviewing Child 1. We go into the family’s record and click on the form for interviewing Child 1. We will find Child 1’s name, which was entered in the first form, automatically has been piped into this new form.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/action/setvalue-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="SETVALUE piped value"><img src="images/action/setvalue-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="SETVALUE piped value"></a></p>
+<figcaption>SETVALUE piped value</figcaption>
+</figure>
+</div>
+<p>One caution: If you change the name that is piped into this field, it will revert to the piped-in value every time the record is opened. If you want to keep the data entry people from changing this value, you can use the next action tag.</p>
 </section>
-<section id="sec-designint-action-lesscommon-placeholder" class="level3" data-number="9.3.2">
-<h3 data-number="9.3.2" class="anchored" data-anchor-id="sec-designint-action-lesscommon-placeholder"><span class="header-section-number">9.3.2</span> <code>@PLACEHOLDER</code></h3>
+<section id="sec-designint-action-lesscommon-readonly" class="level3" data-number="9.3.2">
+<h3 data-number="9.3.2" class="anchored" data-anchor-id="sec-designint-action-lesscommon-readonly"><span class="header-section-number">9.3.2</span> <code>@READONLY</code></h3>
+<p>Adding this action tag on the next line after <span class="citation" data-cites="SETVALUE">(<a href="#ref-SETVALUE" role="doc-biblioref"><strong>SETVALUE?</strong></a>)</span>=‘[variablename]’ will make the field read-only for the data entry people.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/action/readonly-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="READONLY action tag"><img src="images/action/readonly-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="READONLY action tag"></a></p>
+<figcaption>READONLY action tag</figcaption>
+</figure>
+</div>
+<p>The child’s name piped into the family’s record will be in slightly gray font and cannot be edited.</p>
+</section>
+<section id="sec-designint-action-lesscommon-placeholder" class="level3" data-number="9.3.3">
+<h3 data-number="9.3.3" class="anchored" data-anchor-id="sec-designint-action-lesscommon-placeholder"><span class="header-section-number">9.3.3</span> <code>@PLACEHOLDER</code></h3>
+<p>The <em><span class="citation" data-cites="PLACEHOLDER">(<a href="#ref-PLACEHOLDER" role="doc-biblioref"><strong>PLACEHOLDER?</strong></a>)</span></em> action tag will not record any data. It is used as a hint to the person filling out the form. We might have a multiple-choice item with “Other” as one of the options. If someone chooses Other, we may add a follow-up item asking for details. We can create gray text to appear in the box for their answer, giving a hint about what to put in the box. The words we want to appear in gray will be typed inside quotation marks after <span class="citation" data-cites="PLACEHOLDER">(<a href="#ref-PLACEHOLDER" role="doc-biblioref"><strong>PLACEHOLDER?</strong></a>)</span> = as shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/action/placeholder-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="PLACEHOLDER action tag"><img src="images/action/placeholder-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="PLACEHOLDER action tag"></a></p>
+<figcaption>PLACEHOLDER action tag</figcaption>
+</figure>
+</div>
+<p>And here is what the result will look like. The words in this action tag are not saved as data.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/action/placeholder-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Grayed-out hint as PLACEHOLDER"><img src="images/action/placeholder-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Grayed-out hint as PLACEHOLDER"></a></p>
+<figcaption>Grayed-out hint as PLACEHOLDER</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-designint-action-other" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="sec-designint-action-other"><span class="header-section-number">9.4</span> Many Other Action Tags</h2>
+<p>If you have a specification that you would like to make in a form, there may be an action tag to help. Just look through the available action tags by clicking on the red button inside the Logic Editor for action tags, clicking the link on the left side of the page for <em>Help &amp; FAQ</em>, or searching online.</p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -786,7 +833,6 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

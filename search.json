@@ -418,7 +418,18 @@
     "href": "designint/actiontag.html#sec-designint-action-lesscommon",
     "title": "9  Action Tags",
     "section": "9.3 Less Common",
-    "text": "9.3 Less Common\n\n9.3.1 @SETVALUE\n\n\n9.3.2 @PLACEHOLDER\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was last edited in April 2026. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "text": "9.3 Less Common\n\n9.3.1 @SETVALUE\nSometimes we want to help out the data entry people by setting the value of a field. A project may have a form especially for interviewing the first child in a family. We can use (SETVALUE?) to specify the child being interviewed.\n\n\n\nSETVALUE action tag\n\n\nLet’s say we have created a record for a family, and we have used Form 1 to enter some family information. Now we want the first child’s name to appear on the next form, which is being used to record data from interviewing Child 1. We go into the family’s record and click on the form for interviewing Child 1. We will find Child 1’s name, which was entered in the first form, automatically has been piped into this new form.\n\n\n\nSETVALUE piped value\n\n\nOne caution: If you change the name that is piped into this field, it will revert to the piped-in value every time the record is opened. If you want to keep the data entry people from changing this value, you can use the next action tag.\n\n\n9.3.2 @READONLY\nAdding this action tag on the next line after (SETVALUE?)=‘[variablename]’ will make the field read-only for the data entry people.\n\n\n\nREADONLY action tag\n\n\nThe child’s name piped into the family’s record will be in slightly gray font and cannot be edited.\n\n\n9.3.3 @PLACEHOLDER\nThe (PLACEHOLDER?) action tag will not record any data. It is used as a hint to the person filling out the form. We might have a multiple-choice item with “Other” as one of the options. If someone chooses Other, we may add a follow-up item asking for details. We can create gray text to appear in the box for their answer, giving a hint about what to put in the box. The words we want to appear in gray will be typed inside quotation marks after (PLACEHOLDER?) = as shown below.\n\n\n\nPLACEHOLDER action tag\n\n\nAnd here is what the result will look like. The words in this action tag are not saved as data.\n\n\n\nGrayed-out hint as PLACEHOLDER",
+    "crumbs": [
+      "Project Design (Intermediate)",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Action Tags</span>"
+    ]
+  },
+  {
+    "objectID": "designint/actiontag.html#sec-designint-action-other",
+    "href": "designint/actiontag.html#sec-designint-action-other",
+    "title": "9  Action Tags",
+    "section": "9.4 Many Other Action Tags",
+    "text": "9.4 Many Other Action Tags\nIf you have a specification that you would like to make in a form, there may be an action tag to help. Just look through the available action tags by clicking on the red button inside the Logic Editor for action tags, clicking the link on the left side of the page for Help & FAQ, or searching online.\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was last edited in April 2026. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Project Design (Intermediate)",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Action Tags</span>"
