@@ -179,7 +179,7 @@ Checkboxes for a multiple choice item are different.
 Checkboxes allow for multiple responses, such as you would need for an item saying, "Check all that apply."
 Other than specifying "Checkboxes (Multiple Answers)" for the Field Type, this kind of multiple-choice item is just like the other multiple-choice items.
 
-## Date variables {#sec-designbas-variable-datevariables}
+### Date variables {#sec-designbas-variable-datevariables}
 
 Let's look at a date field. 
 We will change variable_4 in our example project to the date of birth for the first child in our study.
@@ -195,7 +195,7 @@ specific, we will choose Y-M-D.
 (This recommendation is in keeping with the International Organization for Standardization 8601, which you can find online. 
 This format eases sorting data by earliest to latest date.)
 
-## True/False and Yes/No variables {#sec-designbas-variable-truefalseyesno}
+### True/False and Yes/No variables {#sec-designbas-variable-truefalseyesno}
 
 These two kinds of variables are like multiple-choice items, except REDCap creates the response options for you. 
 Examples are shown below.
@@ -204,7 +204,7 @@ Examples are shown below.
 
 ![Yes/No item](images/variable/yesno.jpg){width=80%}
 
-## Signature variable {#sec-designbas-variable-signature}
+### Signature variable {#sec-designbas-variable-signature}
 
 Sometimes an online survey will require a signature from the person completing it.
 REDCap allows you to do that. 
@@ -219,7 +219,7 @@ You could specify whether it is a required field, whether it contains personal i
 
 ![Signature field in editor](images/variable/signature-2.jpg){width=80%}
 
-## File upload {#sec-designbas-variable-upload}
+### File upload {#sec-designbas-variable-upload}
 
 Surveys sometimes require an image or document to be uploaded. Either kind of file can be uploaded with a File Upload field. 
 It looks a lot like a signature field when you are in the Online Designer.
@@ -231,7 +231,7 @@ It also looks like a signature field when you are in the Edit Variable window, w
 
 ![File upload field in editor](images/variable/upload-2.jpg){width=80%}
 
-## Slider/Visual Analog Scale {#sec-designbas-slider}
+### Slider/Visual Analog Scale {#sec-designbas-slider}
 
 Sometimes investigators like to ask questions on a survey that ask respondents to rate how they feel on a scale, such as 1 = Very unsatisfied to 7 = Very satisfied. 
 A Slider/Visual Analog Scale item allows the respondent to move a button on a slider from left to right and choose an answer. 
@@ -245,7 +245,7 @@ We can see the slider in Online Designer.
 
 ![Slider field in editor](images/variable/slider-2.jpg){width=80%}
 
-## Descriptive Text {#sec-designbas-descriptivetext}
+### Descriptive Text {#sec-designbas-descriptivetext}
 
 A Descriptive Text field allows the REDCap project designer to add notes or images that do not collect any data. 
 This kind of field can use HTML coding or rich-text editing (with the HTML hidden from you).
@@ -260,7 +260,7 @@ In the Edit Field window, you will see this item was created using HTML and imag
 
 The image above shows a red box around the HTML, a green box where the image, file, or audio was attached, and the blood box shows we have selected "Inline image/PDF" so that the uploaded image appears with the HTML note.
 
-## Begin New Section {#sec-designbas-beginnewsection}
+### Begin New Section {#sec-designbas-beginnewsection}
 
 The last option in the drop-down menu in the Edit Field window is Begin New Section. 
 This option is available for REDCap users who are implementing a long online survey that needs to break occasionally and carry over to subsequent webpages. 
@@ -286,7 +286,7 @@ Note that we chose Phone (North America) as the Validation standard.
 If someone enters a
 phone number without an area code, an error message will say an invalid number was entered.
 
-## Matrix of Fields {#sec-designbas-matrixoffields}
+### Matrix of Fields {#sec-designbas-matrixoffields}
 
 REDCap allows you to create a table that will hold many items similar to the slider field, except it has buttons and labels are possible for each rating. 
 This is called a *Matrix of Fields*. 
@@ -297,8 +297,22 @@ Here is a matrix of fields as it appears in Online Designer.
 
 ![Matrix of fields in Designer](images/variable/matrix-1.jpg){width=80%}
 
+The matrix group is called feelings.
+This group contains five items, each of which has a field name showing. 
+This is how the group will appear on a survey.
+It requires entering the five response options as you would on a multiple-choice item, but the same response options are used for all items in the group. 
+You cannot have items in the same group requiring different labels on the scale.
+Here is what the matrix group looks like in the Edit Field window. 
+The window had to be scrolled, so the screenshot is broken into two parts.
 
+![Matrix of fields in Editor, top half](images/variable/matrix-2.jpg){width=80%}
 
+![Matrix of fields in Editor, bottom half](images/variable/matrix-3.jpg){width=80%}
+
+You can click on the *Add another row* button to add another item to the matrix. 
+Each item's responses will be saved in its own variable.
+
+## Best Way to Learn {#sec-designbas-variable-howtolearn}
 
 We recommend when you are learning about REDCap, request a practice project, then
 go into Form 1, which gets created automatically.
