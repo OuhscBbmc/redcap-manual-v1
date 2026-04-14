@@ -61,8 +61,8 @@ Either way, you end up on the same page, which lists the forms in the project.
 ![List of forms](images/variable/forms.jpg){width=80%}
 
 Clicking on any form name will open it.
-Form 1 in this project already has five variables in it: the Record ID and four other variables.
-The Record ID cannot be deleted.
+Form 1 in this project already has variables in it.
+The Record ID is automatically created by REDCap and cannot be deleted.
 It is a unique identifier for each record entered in the project.
 It can be renamed, but we will leave ours alone.
 
@@ -74,7 +74,7 @@ To edit a variable, click on the little pencil icon.
 
 We get a new window labeled *Edit Field*.
 We can learn several things about this variable from this window.
-First, it is a Notes Box (Paragraph Text) field.
+First, it is a *Notes Box* (Paragraph Text) field.
 That means it could be used to enter a description of a clinic visit, for example.
 
 ![Edit Field](images/variable/editfield.jpg){width=80%}
@@ -92,13 +92,13 @@ Let's change it to *visit_note* and add a label to match, then click Save.
 
 ![Change variable name](images/variable/visitnote.jpg){width=80%}
 
-Let's look at *variable_2* and see what kinds of variables can be created.
+Let's look at *variable_2*.
 This variable was created as a *Text Box (Short Text, Number, Date/Time, ...)*.
-Let's change it to capture a participant's first name
+Let's change the variable name to capture a participant's first name
 
 ![Change variable name](images/variable/name-first.jpg){width=80%}
 
-Note that we did not name the variable first_name.
+Note that we did not name the variable *first_name*.
 We recommend starting the variable name with something general, then getting more
 specific.
 Then the analyst could see all the variables involving someone's name and distinguish among them.
@@ -123,16 +123,16 @@ The specifications you enter for each variable can make a world of difference.
 Your specifications can force a data entry person to enter a number with two decimal places
 or ensure that an email address is in a valid format.
 The specs also can set limits on numbers so a data entry person could not
-accidentally enter that a person was 150 years old, instead of 15.
+accidentally enter a person's age as 150 years old, instead of 15.
 
 ### Text Box {#sec-designbas-variable-fieldtypes-textbox}
 
 A *Text Box* field can handle many kinds of data.
-Let's look at how to specify which kind of entries will be valid.
+How do we specify which kind of entries will be valid?
 Suppose we want the data entry person to enter a child's age for a study
 involving only children ages 2 through 8 years.
 Further, two children from the same family could be involved in the study.
-So we will name the variable to specify we are talking about the first child,
+We will name the variable to specify we are talking about the first child,
 and we will use a setting called *Validation*, which has a drop-down menu beside it.
 
 ![Validation settings](images/variable/validation-1.jpg){width=80%}
@@ -148,57 +148,127 @@ We will enter the minimum and maximum ages possible for this study.
 If someone entering data typed an age outside that range, an error message will appear,
 saying the number is beyond the limits you set.
 
-### Notes Box {#sec-designbas-variable-fieldtypes-notesbox}
-
 ### Calculated Field {#sec-designbas-variable-fieldtypes-calculatedfield}
 
 A Calculated Field can take a number from a previously entered variable and perform a calculation. 
-For example, the project may have a variable for an infant's number of weeks and days of gestation.
-A data analyst might prefer to have gestation in total days.
+For example, the project already may have two variables capturing a newborn infant's number of weeks and number of days of gestation.
+A data analyst might prefer to have one variable for analyzing gestational age, such as total days of gestation.
 A formula can be written to take the previously entered weeks of gestation, multiply it by 7, then add the days (partial week) of gestation to get total days of gestation. Please see the "Advanced Project Design" part of the book for more details.
 
 ### Multiple Choice - Drop-down list {#sec-designbas-variable-fieldtypes-multiplechoicedropdown}
 
 Now we will explain the three kinds of multiple-choice fields available in REDCap. 
-A drop-down list of response options is helpful when you have a long list of options because it saves space. 
+A drop-down list of response options is helpful when you have a long list of options, such as state of residence, because it saves space. 
 It also is helpful when the project has specified values for missing values, which can automatically appear as options in the list. 
 (See QQQQQQQ section on this topic)
-Click the Add Field where you want to insert the new variable, then select the Field Type: Multiple Choice - Drop-down List (Single Answer). 
+The image below shows a variable with the Field Type: Multiple Choice - Drop-down List (Single Answer). 
 
 ![Drop-down list variable](images/variable/dropdown-1.jpg){width=80%}
 
-Type the Field Label and the Variable Name.
-In the space at the bottom of the window, called "Choices (one choice per line)," you will type the state abbreviation that you want to be saved in the data, followed by a comma, then the state name, with one state per line, as shown below.
+In the space at the bottom of the window, called "Choices (one choice per line)," you will see below that this field has the state abbreviation, followed by a comma, then the state name, with one state per line.
 
 ![Enter drop-down values](images/variable/dropdown-2.jpg){width=80%}
 
 ### Multiple Choice - Radio Buttons {#sec-designbas-variable-fieldtypes-multiplechoiceradio}
 
-When you have fewer multiple-choice options, you can choose a Multiple Choice - Radio Buttons field. Everything else about creating that field is the same as the drop-down list option. 
+When you need fewer multiple-choice options, you can choose a Multiple Choice - Radio Buttons field. Everything else about  that field is the same as the drop-down list option.
 
 ### Multiple Choice - Checkboxes {#sec-designbas-variable-fieldtypes-multiplechoicecheckbox}
 
 Checkboxes for a multiple choice item are different.
 Checkboxes allow for multiple responses, such as you would need for an item saying, "Check all that apply."
-You create this field exactly as you did the other two multiple-choice fields, except you select "Checkboxes (Multiple Answers)" for the Field Type.
+Other than specifying "Checkboxes (Multiple Answers)" for the Field Type, this kind of multiple-choice item is just like the other multiple-choice items.
 
 ## Date variables {#sec-designbas-variable-datevariables}
 
-Let's look at one more kind of variable: a date field. We will change variable_4
-on our example project to the date of birth for the first child in our study.
+Let's look at a date field. 
+We will change variable_4 in our example project to the date of birth for the first child in our study.
 
 ![Kinds of date variables](images/variable/date-variable-1.jpg){width=80%}
 
 Date validation can be as general as a date or as specific as the date and time down to the second.
-For a birth date, we only need the date. We have 3 format options available to us: day-month-year,
-month-day-year, or year-month-day. Keeping with our recommendation of going from general to
-specific, we will choose Y-M-D. (This recommendation is in keeping with the International
-Organization for Standardization 8601, which you can google. This format eases sorting data
-by earliest to latest date.)
+For a birth date, we usually only need the date. 
+We have 3 format options available to us: day-month-year,
+month-day-year, or year-month-day. 
+Keeping with our recommendation of going from general to
+specific, we will choose Y-M-D. 
+(This recommendation is in keeping with the International Organization for Standardization 8601, which you can find online. 
+This format eases sorting data by earliest to latest date.)
+
+## True/False and Yes/No variables {#sec-designbas-variable-truefalseyesno}
+
+These two kinds of variables are like multiple-choice items, except REDCap creates the response options for you. 
+Examples are shown below.
+
+![True/False item](images/variable/truefalse.jpg){width=80%}
+
+![Yes/No item](images/variable/yesno.jpg){width=80%}
+
+## Signature variable {#sec-designbas-variable-signature}
+
+Sometimes an online survey will require a signature from the person completing it.
+REDCap allows you to do that. 
+Here is a signature field as it appears in the Online Designer.
+There is a link at the bottom right that will be active when a survey is created.
+
+![Signature field in Designer](images/variable/signature-1.jpg){width=80%}
+
+Here is what the field looks like when you click the pencil icon to edit it. 
+You will see there are few specifications.
+You could specify whether it is a required field, whether it contains personal identifying information, where it appears relative to the variable name on a survey.
+
+![Signature field in editor](images/variable/signature-2.jpg){width=80%}
+
+## File upload {#sec-designbas-variable-upload}
+
+Surveys sometimes require an image or document to be uploaded. Either kind of file can be uploaded with a File Upload field. 
+It looks a lot like a signature field when you are in the Online Designer.
+There is an upload link at the bottom right that will be active when a survey is created.
+
+![File upload field in Designer](images/variable/upload-1.jpg){width=80%}
+
+It also looks like a signature field when you are in the Edit Variable window, with similar options available.
+
+![File upload field in editor](images/variable/upload-2.jpg){width=80%}
+
+## Slider/Visual Analog Scale {#sec-designbas-slider}
+
+Sometimes investigators like to ask questions on a survey that ask respondents to rate how they feel on a scale, such as 1 = Very unsatisfied to 7 = Very satisfied. 
+A Slider/Visual Analog Scale item allows the respondent to move a button on a slider from left to right and choose an answer. 
+Here is what this kind of variable looks like in the Edit Field window.
+
+![Slider field in editor](images/variable/slider-1.jpg){width=80%}
+
+We have specified the lowest possible value is 1, and the highest possible value is 7, and we have provided anchors for the ends and the middle of the scale. 
+We also have selected the option allowing the respondent to see the number associated with the place on the scale where they move the button. 
+We can see the slider in Online Designer.
+
+![Slider field in editor](images/variable/slider-2.jpg){width=80%}
+
+## Descriptive Text {#sec-designbas-descriptivetext}
+
+A Descriptive Text field allows the REDCap project designer to add notes or images that do not collect any data. 
+This kind of field can use HTML coding or rich-text editing (with the HTML hidden from you).
+It also allows you to upload an image to appear in a survey. 
+Here is what an example Descriptive Text field looks like in Online Designer.
+
+![Descriptive text field in Designer](images/variable/descriptivetext-1.jpg){width=80%}
+
+In the Edit Field window, you will see this item was created using HTML and image upload, with "inline" display chosen so that the image appears with the note written in HTML.
+
+![Descriptive text field in editor](images/variable/descriptivetext-2.jpg){width=80%}
+
+The image above shows a red box around the HTML, a green box where the image, file, or audio was attached, and the blood box shows we have selected "Inline image/PDF" so that the uploaded image appears with the HTML note.
+
+## Begin New Section {#sec-designbas-beginnewsection}
+
+The last option in the drop-down menu in the Edit Field window is Begin New Section. 
+This option is available for REDCap users who are implementing a long online survey that needs to break occasionally and carry over to subsequent webpages. 
+We will not illustrate this option, as it is rarely used.
 
 ## Creating a new variable {#sec-designbas-variable-newvariables}
 
-Our examples so far have involved modifying variables that already existed in a REDCap
+Our examples so far have shown variables that already existed in a REDCap
 project.
 Let's create a new variable. Look for the buttons that say "Add Field":
 
@@ -212,13 +282,28 @@ the best contact phone number:
 
 We named it phone_contact_1 to indicate it is the best number for contacting the family.
 Then we click Save, and the new variable now appears on the form.
-Note that we chose Phone (North America) as the Validation standard. Now, if someone enters a
+Note that we chose Phone (North America) as the Validation standard. 
+If someone enters a
 phone number without an area code, an error message will say an invalid number was entered.
 
+## Matrix of Fields {#sec-designbas-matrixoffields}
+
+REDCap allows you to create a table that will hold many items similar to the slider field, except it has buttons and labels are possible for each rating. 
+This is called a *Matrix of Fields*. 
+It is created in a different way from the Add Variable button. 
+You click the "Add Matrix of Fields" button.
+You get a window that asks you to name your table (matrix) of items. 
+Here is a matrix of fields as it appears in Online Designer.
+
+![Matrix of fields in Designer](images/variable/matrix-1.jpg){width=80%}
+
+
+
+
 We recommend when you are learning about REDCap, request a practice project, then
-go into Form 1, which gets created automatically, and play around with creating different
-kinds of variables.
+go into Form 1, which gets created automatically.
 A practice project is the best way to learn by doing.
+Play around with creating different kinds of variables.
 To request a practice project, click on My Projects in the top left corner of the page,
 then click on the link at the top of the next page that says "+ New Project."
 Fill out the form and a REDCap administrator will create a "Practice/Just For Fun"
@@ -235,6 +320,6 @@ You will get an email when the project has been created and is available to you.
 
 ## Additional Chapter Details
 
-This chapter was last edited in November 2025.
+This chapter was last edited in April 2026.
 If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's welcome page.
 :::
