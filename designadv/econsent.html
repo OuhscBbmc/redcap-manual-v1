@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vignesh Murugan">
+<meta name="author" content="Lise DeShea">
 <meta name="author" content="Thomas Wilson">
 
 <title>10&nbsp; Electronic Consent – REDCap Manual for OU</title>
@@ -97,6 +98,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <meta name="citation_title" content="[[10]{.chapter-number}&nbsp; [Electronic Consent]{.chapter-title}]{#sec-designadv-econsent .quarto-section-identifier}">
 <meta name="citation_abstract" content="Use e-consents to reduce paperwork and increase compliance.">
 <meta name="citation_author" content="Vignesh Murugan">
+<meta name="citation_author" content="Lise DeShea">
 <meta name="citation_author" content="Thomas Wilson">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=The elements of statistical learning: Data mining, inference, and prediction;,citation_author=Trevor Hastie;,citation_author=Robert Tibshirani;,citation_author=Jerome H Friedman;,citation_author=Jerome H Friedman;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_volume=2;">
@@ -626,13 +628,17 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#enabling-the-e-consent-framework" id="toc-enabling-the-e-consent-framework" class="nav-link active" data-scroll-target="#enabling-the-e-consent-framework"><span class="header-section-number">10.1</span> Enabling the e-Consent Framework</a></li>
-  <li><a href="#configuring-settings" id="toc-configuring-settings" class="nav-link" data-scroll-target="#configuring-settings"><span class="header-section-number">10.2</span> Configuring Settings</a>
+  <li><a href="#sec-designadv-purpose" id="toc-sec-designadv-purpose" class="nav-link active" data-scroll-target="#sec-designadv-purpose"><span class="header-section-number">10.1</span> What is the Purpose of e-Consent?</a></li>
+  <li><a href="#request-a-new-project" id="toc-request-a-new-project" class="nav-link" data-scroll-target="#request-a-new-project"><span class="header-section-number">10.2</span> Request a New Project</a></li>
+  <li><a href="#preparing-to-build-the-e-consent" id="toc-preparing-to-build-the-e-consent" class="nav-link" data-scroll-target="#preparing-to-build-the-e-consent"><span class="header-section-number">10.3</span> Preparing to Build the e-Consent</a></li>
+  <li><a href="#starting-an-e-consent-project" id="toc-starting-an-e-consent-project" class="nav-link" data-scroll-target="#starting-an-e-consent-project"><span class="header-section-number">10.4</span> Starting an e-Consent Project</a></li>
+  <li><a href="#modifying-the-redcap-instruments-for-consent-and-hipaa" id="toc-modifying-the-redcap-instruments-for-consent-and-hipaa" class="nav-link" data-scroll-target="#modifying-the-redcap-instruments-for-consent-and-hipaa"><span class="header-section-number">10.5</span> Modifying the REDCap Instruments for Consent and HIPAA</a></li>
+  <li><a href="#configuring-settings" id="toc-configuring-settings" class="nav-link" data-scroll-target="#configuring-settings"><span class="header-section-number">10.6</span> Configuring Settings</a>
   <ul class="collapse">
-  <li><a href="#primary-settings" id="toc-primary-settings" class="nav-link" data-scroll-target="#primary-settings"><span class="header-section-number">10.2.1</span> Primary Settings</a></li>
-  <li><a href="#additional-settings" id="toc-additional-settings" class="nav-link" data-scroll-target="#additional-settings"><span class="header-section-number">10.2.2</span> Additional Settings</a></li>
+  <li><a href="#primary-settings" id="toc-primary-settings" class="nav-link" data-scroll-target="#primary-settings"><span class="header-section-number">10.6.1</span> Primary Settings</a></li>
+  <li><a href="#additional-settings" id="toc-additional-settings" class="nav-link" data-scroll-target="#additional-settings"><span class="header-section-number">10.6.2</span> Additional Settings</a></li>
   </ul></li>
-  <li><a href="#adding-consent-versions" id="toc-adding-consent-versions" class="nav-link" data-scroll-target="#adding-consent-versions"><span class="header-section-number">10.3</span> Adding Consent Versions</a></li>
+  <li><a href="#updating-consent-forms" id="toc-updating-consent-forms" class="nav-link" data-scroll-target="#updating-consent-forms"><span class="header-section-number">10.7</span> Updating Consent Forms</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designadv/econsent.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designadv/econsent.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -656,6 +662,16 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
             University of Oklahoma Health Campus
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Lise DeShea <a href="mailto:lise-deshea@ou.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0003-3232-5216" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://ouhsc.edu/bbmc/">
+            University of Oklahoma Health Campus
+            </a>
           </p>
       </div>
     <div class="quarto-title-meta-contents">
@@ -688,11 +704,26 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </header>
 
 
-<p><strong>Chapter Leads</strong>: Vignesh Murugan, Thomas Wilson</p>
-<section id="enabling-the-e-consent-framework" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="enabling-the-e-consent-framework"><span class="header-section-number">10.1</span> Enabling the e-Consent Framework</h2>
+<p><strong>Chapter Leads</strong>: Vignesh Murugan, Lise DeShea, Thomas Wilson</p>
+<section id="sec-designadv-purpose" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="sec-designadv-purpose"><span class="header-section-number">10.1</span> What is the Purpose of e-Consent?</h2>
+<p>Many research studies conducted at the University of Oklahoma Health Campus involve obtaining participant consent. The Institutional Review Board examines and approves the protocol for research studies involving people. This approval includes a careful review of consent forms, which inform potential participants of their rights as well as the risks and benefits of participating in the study. Researchers increasingly are using electronic consent forms. The e-consent capability of REDCap provides the environment for collecting participants’ informed consent via electronic forms. This chapter will lead you through the process of setting up an e-consent project.</p>
+</section>
+<section id="request-a-new-project" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="request-a-new-project"><span class="header-section-number">10.2</span> Request a New Project</h2>
+<p>For most studies we recommend having the e-consent process separate from any REDCap project created for the purpose of collecting participant data. Data collection often is de-identified or has limited identifiers, such as a participant ID that the researchers link to the participants’ identities in a secure file outside of REDCap. Because participants are identified in consent forms, the e-consent should be in its own project.</p>
+<p>To learn how to request a new project, see <a href="variable.md#sec-designbas-variable-howtolearn">Best Way to Learn</a>.</p>
+</section>
+<section id="preparing-to-build-the-e-consent" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="preparing-to-build-the-e-consent"><span class="header-section-number">10.3</span> Preparing to Build the e-Consent</h2>
+<p>You will need pdf copies of the researchers’ <em>current</em> IRB-approved consent form and HIPAA form, which notifies potential participants of their rights to the privacy of their personal health information. It often is a good idea to obtain a copy of the IRB-approved protocol as well, so that you are familiar with the study and the role of e-consent within the study.</p>
+<p>To understand how the e-consent project will work, you should know that researchers typically email a link to an online survey containing the consent and HIPAA forms. There is a field for the signature of the person obtaining the consent. But the form is completed by the participant. The person obtaining consent will have access to the REDCap project and will add his/her signature inside REDCap after the participant submits the online forms.</p>
+</section>
+<section id="starting-an-e-consent-project" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="starting-an-e-consent-project"><span class="header-section-number">10.4</span> Starting an e-Consent Project</h2>
 <ol type="1">
-<li><p>Navigate to the <strong>Online Designer</strong>.</p>
+<li><p>Click on your list of projects at the top of the landing page for REDCap. Click on the name of the e-consent project name.</p></li>
+<li><p>Navigate to the <strong>Online Designer</strong> by clicking on either link shown in the blue boxes in the image below. Clicking one of those links will take you to a screen that looks somewhat like the one in the second image below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="images/econsent/online-designer-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Online Designer"><img src="images/econsent/online-designer-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Online Designer"></a></p>
@@ -701,62 +732,112 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/online-designer-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Online Designer 2"><img src="images/econsent/online-designer-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Online Designer 2"></a></p>
-<figcaption>Online Designer 2</figcaption>
+<p><a href="images/econsent/online-designer-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="View of existing project in Designer"><img src="images/econsent/online-designer-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="View of existing project in Designer"></a></p>
+<figcaption>View of existing project in Designer</figcaption>
 </figure>
 </div></li>
+<li><p>You will need two instruments: one for the consent form and one for the HIPAA form (if applicable). Change the name of Form 1 to Consent by clicking on the gray button labeled <em>Choose actions” to the right of Form 1. Select </em>Rename.<em> Modify the information in the window that pops up, as shown below. The first box is the name that will appear in Designer, and the second name is how the form will be referenced inside the REDCap data collection. Once these changes are made, click </em>Apply.* <img src="images/econsent/rename-form-1.jpg" class="img-fluid" style="width:80.0%" alt="Rename the default Form 1"></p></li>
+<li><p>Now create a new instrument called HIPAA by clicking on the button that says <em>Create.</em></p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/create-new-form-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Creating a new form"><img src="images/econsent/create-new-form-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Creating a new form"></a></p>
+<figcaption>Creating a new form</figcaption>
+</figure>
+</div>
+<p>A green button will appear, as shown below. Click that button and enter <em>HIPAA</em> as the form name.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/create-new-form-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Click the green button"><img src="images/econsent/create-new-form-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Click the green button"></a></p>
+<figcaption>Click the green button</figcaption>
+</figure>
+</div>
+<p>These two REDCap instruments will contain pdfs for the consent and HIPAA forms. Next we will create the fields needed for these forms to allow completion within REDCap.</p>
+</section>
+<section id="modifying-the-redcap-instruments-for-consent-and-hipaa" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="modifying-the-redcap-instruments-for-consent-and-hipaa"><span class="header-section-number">10.5</span> Modifying the REDCap Instruments for Consent and HIPAA</h2>
+<p>We will be collecting signatures electronically. The participants will not sign the pdf with a pen. Therefore, we need to create fields in REDCap that the participants would have filled out in ink on a paper form. The consent and HIPAA forms shown below are templates from the OUHC IRB. Please ignore the old dates.</p>
+<ol type="1">
+<li><p>Read the consent form and identify every field that a participant or researcher would have to complete. Often the only fields that will need to be completed appear at the end of the document, although occasionally researchers will list medical tests that require the participant’s initials.</p></li>
+<li><p>Let’s say participants in our example need to fill out only the fields shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/consent-form-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Consent Fields in pdf"><img src="images/econsent/consent-form-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Consent Fields in pdf"></a></p>
+<figcaption>Consent Fields in pdf</figcaption>
+</figure>
+</div></li>
+<li><p>In REDCap, click on Consent in Online Designer to get to the screen where we will create variables to replicate the fields shown above. We will have the following fields and variable types:</p></li>
+</ol>
+<ul>
+<li>A signature field for the participant’s signature</li>
+<li>A text variable for participant’s printed name</li>
+<li>A date variable for the date of signature</li>
+<li>A signature field for the person obtaining consent</li>
+<li>A text variable for the printed name of the person obtaining consent</li>
+<li>A date variable for the consent obtainer’s date of signature. Other consent forms also may have fields for a witness to sign and for a child to sign indicating his or her assent. (Children cannot sign a legal form granting consent; the parent or guardian must grant consent. But obtaining assent from a child old enough to understand that s/he will be participating in a study is the ethical choice.)</li>
+</ul>
+<ol type="1">
+<li><p>Create the need consent fields.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/consent-fields.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Consent Fields in REDCap"><img src="images/econsent/consent-fields.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Consent Fields in REDCap"></a></p>
+<figcaption>Consent Fields in REDCap</figcaption>
+</figure>
+</div></li>
+<li></li>
 <li><p>Enable the e-Consent Framework for a Survey</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/enable-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Enable e-Consent"><img src="images/econsent/enable-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enable e-Consent"></a></p>
+<p><a href="images/econsent/enable-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Enable e-Consent"><img src="images/econsent/enable-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enable e-Consent"></a></p>
 <figcaption>Enable e-Consent</figcaption>
 </figure>
 </div></li>
 <li><p>Click on <strong>e-Consent and PDF Snapshots</strong> in the <em>Data Collection Instruments</em> header box</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/enable-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="e-Consent and PDF Snapshots"><img src="images/econsent/enable-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent and PDF Snapshots"></a></p>
+<p><a href="images/econsent/enable-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="e-Consent and PDF Snapshots"><img src="images/econsent/enable-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent and PDF Snapshots"></a></p>
 <figcaption>e-Consent and PDF Snapshots</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/instruments-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Data Collection Instruments"><img src="images/econsent/instruments-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Data Collection Instruments"></a></p>
+<p><a href="images/econsent/instruments-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Data Collection Instruments"><img src="images/econsent/instruments-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Data Collection Instruments"></a></p>
 <figcaption>Data Collection Instruments</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="e-Consent Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent Settings"></a></p>
+<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="e-Consent Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent Settings"></a></p>
 <figcaption>e-Consent Settings</figcaption>
 </figure>
 </div></li>
 </ol>
 </section>
-<section id="configuring-settings" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="configuring-settings"><span class="header-section-number">10.2</span> Configuring Settings</h2>
-<section id="primary-settings" class="level3" data-number="10.2.1">
-<h3 data-number="10.2.1" class="anchored" data-anchor-id="primary-settings"><span class="header-section-number">10.2.1</span> Primary Settings</h3>
+<section id="configuring-settings" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="configuring-settings"><span class="header-section-number">10.6</span> Configuring Settings</h2>
+<section id="primary-settings" class="level3" data-number="10.6.1">
+<h3 data-number="10.6.1" class="anchored" data-anchor-id="primary-settings"><span class="header-section-number">10.6.1</span> Primary Settings</h3>
 <ul>
 <li>Allow user edits and specify name fields.</li>
 </ul>
 </section>
-<section id="additional-settings" class="level3" data-number="10.2.2">
-<h3 data-number="10.2.2" class="anchored" data-anchor-id="additional-settings"><span class="header-section-number">10.2.2</span> Additional Settings</h3>
+<section id="additional-settings" class="level3" data-number="10.6.2">
+<h3 data-number="10.6.2" class="anchored" data-anchor-id="additional-settings"><span class="header-section-number">10.6.2</span> Additional Settings</h3>
 <ul>
 <li><p>Add a <strong>Date of Birth</strong> field, custom headers/footers, and signature settings.</p></li>
 <li><p>Specify save locations and customize file names.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Settings"></a></p>
+<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Settings"></a></p>
 <figcaption>Settings</figcaption>
 </figure>
 </div></li>
 </ul>
 </section>
 </section>
-<section id="adding-consent-versions" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="adding-consent-versions"><span class="header-section-number">10.3</span> Adding Consent Versions</h2>
+<section id="updating-consent-forms" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="updating-consent-forms"><span class="header-section-number">10.7</span> Updating Consent Forms</h2>
+<p>Studies with IRB oversight must check in periodically and inform the IRB about the study’s status. Among other tasks the researchers must obtain re-approval of their consent form. When you create an e-consent project, it is a good idea to put a note on your Outlook calendar reminding you to check with the researchers before their consent form expires. Then you will be better prepared to replace the consent and HIPAA forms with the latest versions, with the new expiration date given.</p>
 <ol type="1">
 <li>Click <strong>Add Consent Form</strong>.</li>
 <li>Specify the version number and upload the consent form.</li>
@@ -772,7 +853,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This chapter was started in October 2024. If you have suggested modifications or additions, please see <a href="../index.html#sec-welcome-contribute">How to Contribute</a> on the book’s welcome page.</p>
+<p>This chapter was last edited in April 2026. If you have suggested modifications or additions, please see <a href="../index.html#sec-welcome-contribute">How to Contribute</a> on the book’s welcome page.</p>
 </div>
 </div>
 

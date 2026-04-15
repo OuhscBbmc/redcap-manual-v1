@@ -440,18 +440,51 @@
     "href": "designadv/econsent.html",
     "title": "10  Electronic Consent",
     "section": "",
-    "text": "10.1 Enabling the e-Consent Framework\nChapter Leads: Vignesh Murugan, Thomas Wilson",
+    "text": "10.1 What is the Purpose of e-Consent?\nChapter Leads: Vignesh Murugan, Lise DeShea, Thomas Wilson\nMany research studies conducted at the University of Oklahoma Health Campus involve obtaining participant consent. The Institutional Review Board examines and approves the protocol for research studies involving people. This approval includes a careful review of consent forms, which inform potential participants of their rights as well as the risks and benefits of participating in the study. Researchers increasingly are using electronic consent forms. The e-consent capability of REDCap provides the environment for collecting participants’ informed consent via electronic forms. This chapter will lead you through the process of setting up an e-consent project.",
     "crumbs": [
       "Project Design (Advanced)",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
     ]
   },
   {
-    "objectID": "designadv/econsent.html#enabling-the-e-consent-framework",
-    "href": "designadv/econsent.html#enabling-the-e-consent-framework",
+    "objectID": "designadv/econsent.html#request-a-new-project",
+    "href": "designadv/econsent.html#request-a-new-project",
     "title": "10  Electronic Consent",
-    "section": "",
-    "text": "Navigate to the Online Designer.\n\n\n\nOnline Designer\n\n\n\n\n\nOnline Designer 2\n\n\nEnable the e-Consent Framework for a Survey\n\n\n\nEnable e-Consent\n\n\nClick on e-Consent and PDF Snapshots in the Data Collection Instruments header box\n\n\n\ne-Consent and PDF Snapshots\n\n\n\n\n\nData Collection Instruments\n\n\n\n\n\ne-Consent Settings",
+    "section": "10.2 Request a New Project",
+    "text": "10.2 Request a New Project\nFor most studies we recommend having the e-consent process separate from any REDCap project created for the purpose of collecting participant data. Data collection often is de-identified or has limited identifiers, such as a participant ID that the researchers link to the participants’ identities in a secure file outside of REDCap. Because participants are identified in consent forms, the e-consent should be in its own project.\nTo learn how to request a new project, see Best Way to Learn.",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/econsent.html#preparing-to-build-the-e-consent",
+    "href": "designadv/econsent.html#preparing-to-build-the-e-consent",
+    "title": "10  Electronic Consent",
+    "section": "10.3 Preparing to Build the e-Consent",
+    "text": "10.3 Preparing to Build the e-Consent\nYou will need pdf copies of the researchers’ current IRB-approved consent form and HIPAA form, which notifies potential participants of their rights to the privacy of their personal health information. It often is a good idea to obtain a copy of the IRB-approved protocol as well, so that you are familiar with the study and the role of e-consent within the study.\nTo understand how the e-consent project will work, you should know that researchers typically email a link to an online survey containing the consent and HIPAA forms. There is a field for the signature of the person obtaining the consent. But the form is completed by the participant. The person obtaining consent will have access to the REDCap project and will add his/her signature inside REDCap after the participant submits the online forms.",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/econsent.html#starting-an-e-consent-project",
+    "href": "designadv/econsent.html#starting-an-e-consent-project",
+    "title": "10  Electronic Consent",
+    "section": "10.4 Starting an e-Consent Project",
+    "text": "10.4 Starting an e-Consent Project\n\nClick on your list of projects at the top of the landing page for REDCap. Click on the name of the e-consent project name.\nNavigate to the Online Designer by clicking on either link shown in the blue boxes in the image below. Clicking one of those links will take you to a screen that looks somewhat like the one in the second image below.\n\n\n\nOnline Designer\n\n\n\n\n\nView of existing project in Designer\n\n\nYou will need two instruments: one for the consent form and one for the HIPAA form (if applicable). Change the name of Form 1 to Consent by clicking on the gray button labeled Choose actions” to the right of Form 1. Select Rename. Modify the information in the window that pops up, as shown below. The first box is the name that will appear in Designer, and the second name is how the form will be referenced inside the REDCap data collection. Once these changes are made, click Apply.* \nNow create a new instrument called HIPAA by clicking on the button that says Create.\n\n\n\n\nCreating a new form\n\n\nA green button will appear, as shown below. Click that button and enter HIPAA as the form name.\n\n\n\nClick the green button\n\n\nThese two REDCap instruments will contain pdfs for the consent and HIPAA forms. Next we will create the fields needed for these forms to allow completion within REDCap.",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/econsent.html#modifying-the-redcap-instruments-for-consent-and-hipaa",
+    "href": "designadv/econsent.html#modifying-the-redcap-instruments-for-consent-and-hipaa",
+    "title": "10  Electronic Consent",
+    "section": "10.5 Modifying the REDCap Instruments for Consent and HIPAA",
+    "text": "10.5 Modifying the REDCap Instruments for Consent and HIPAA\nWe will be collecting signatures electronically. The participants will not sign the pdf with a pen. Therefore, we need to create fields in REDCap that the participants would have filled out in ink on a paper form. The consent and HIPAA forms shown below are templates from the OUHC IRB. Please ignore the old dates.\n\nRead the consent form and identify every field that a participant or researcher would have to complete. Often the only fields that will need to be completed appear at the end of the document, although occasionally researchers will list medical tests that require the participant’s initials.\nLet’s say participants in our example need to fill out only the fields shown below.\n\n\n\nConsent Fields in pdf\n\n\nIn REDCap, click on Consent in Online Designer to get to the screen where we will create variables to replicate the fields shown above. We will have the following fields and variable types:\n\n\nA signature field for the participant’s signature\nA text variable for participant’s printed name\nA date variable for the date of signature\nA signature field for the person obtaining consent\nA text variable for the printed name of the person obtaining consent\nA date variable for the consent obtainer’s date of signature. Other consent forms also may have fields for a witness to sign and for a child to sign indicating his or her assent. (Children cannot sign a legal form granting consent; the parent or guardian must grant consent. But obtaining assent from a child old enough to understand that s/he will be participating in a study is the ethical choice.)\n\n\nCreate the need consent fields.\n\n\n\nConsent Fields in REDCap\n\n\n\nEnable the e-Consent Framework for a Survey\n\n\n\nEnable e-Consent\n\n\nClick on e-Consent and PDF Snapshots in the Data Collection Instruments header box\n\n\n\ne-Consent and PDF Snapshots\n\n\n\n\n\nData Collection Instruments\n\n\n\n\n\ne-Consent Settings",
     "crumbs": [
       "Project Design (Advanced)",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
@@ -461,19 +494,19 @@
     "objectID": "designadv/econsent.html#configuring-settings",
     "href": "designadv/econsent.html#configuring-settings",
     "title": "10  Electronic Consent",
-    "section": "10.2 Configuring Settings",
-    "text": "10.2 Configuring Settings\n\n10.2.1 Primary Settings\n\nAllow user edits and specify name fields.\n\n\n\n10.2.2 Additional Settings\n\nAdd a Date of Birth field, custom headers/footers, and signature settings.\nSpecify save locations and customize file names.\n\n\n\nSettings",
+    "section": "10.6 Configuring Settings",
+    "text": "10.6 Configuring Settings\n\n10.6.1 Primary Settings\n\nAllow user edits and specify name fields.\n\n\n\n10.6.2 Additional Settings\n\nAdd a Date of Birth field, custom headers/footers, and signature settings.\nSpecify save locations and customize file names.\n\n\n\nSettings",
     "crumbs": [
       "Project Design (Advanced)",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
     ]
   },
   {
-    "objectID": "designadv/econsent.html#adding-consent-versions",
-    "href": "designadv/econsent.html#adding-consent-versions",
+    "objectID": "designadv/econsent.html#updating-consent-forms",
+    "href": "designadv/econsent.html#updating-consent-forms",
     "title": "10  Electronic Consent",
-    "section": "10.3 Adding Consent Versions",
-    "text": "10.3 Adding Consent Versions\n\nClick Add Consent Form.\nSpecify the version number and upload the consent form.\nSave the new version.\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "section": "10.7 Updating Consent Forms",
+    "text": "10.7 Updating Consent Forms\nStudies with IRB oversight must check in periodically and inform the IRB about the study’s status. Among other tasks the researchers must obtain re-approval of their consent form. When you create an e-consent project, it is a good idea to put a note on your Outlook calendar reminding you to check with the researchers before their consent form expires. Then you will be better prepared to replace the consent and HIPAA forms with the latest versions, with the new expiration date given.\n\nClick Add Consent Form.\nSpecify the version number and upload the consent form.\nSave the new version.\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was last edited in April 2026. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Project Design (Advanced)",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Electronic Consent</span>"
