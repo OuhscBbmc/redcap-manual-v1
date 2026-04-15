@@ -153,14 +153,14 @@ saying the number is beyond the limits you set.
 A Calculated Field can take a number from a previously entered variable and perform a calculation. 
 For example, the project already may have two variables capturing a newborn infant's number of weeks and number of days of gestation.
 A data analyst might prefer to have one variable for analyzing gestational age, such as total days of gestation.
-A formula can be written to take the previously entered weeks of gestation, multiply it by 7, then add the days (partial week) of gestation to get total days of gestation. Please see the "Advanced Project Design" part of the book for more details.
+A formula can be written to take the previously entered weeks of gestation, multiply it by 7, then add the days (partial week) of gestation to get total days of gestation. 
+Please see the "Advanced Project Design" part of the book for more details.
 
 ### Multiple Choice - Drop-down list {#sec-designbas-variable-fieldtypes-multiplechoicedropdown}
 
-Now we will explain the three kinds of multiple-choice fields available in REDCap. 
+Now we will explain the three kinds of multiple-choice fields available in REDCap.
 A drop-down list of response options is helpful when you have a long list of options, such as state of residence, because it saves space. 
 It also is helpful when the project has specified values for missing values, which can automatically appear as options in the list. 
-(See QQQQQQQ section on this topic)
 The image below shows a variable with the Field Type: Multiple Choice - Drop-down List (Single Answer). 
 
 ![Drop-down list variable](images/variable/dropdown-1.jpg){width=80%}
@@ -181,23 +181,23 @@ Other than specifying "Checkboxes (Multiple Answers)" for the Field Type, this k
 
 ### Date variables {#sec-designbas-variable-datevariables}
 
-Let's look at a date field. 
+Let's look at a date field.
 We will change variable_4 in our example project to the date of birth for the first child in our study.
 
 ![Kinds of date variables](images/variable/date-variable-1.jpg){width=80%}
 
 Date validation can be as general as a date or as specific as the date and time down to the second.
-For a birth date, we usually only need the date. 
+For a birth date, we usually only need the date.
 We have 3 format options available to us: day-month-year,
-month-day-year, or year-month-day. 
+month-day-year, or year-month-day.
 Keeping with our recommendation of going from general to
-specific, we will choose Y-M-D. 
-(This recommendation is in keeping with the International Organization for Standardization 8601, which you can find online. 
+specific, we will choose Y-M-D.
+(This recommendation is in keeping with the International Organization for Standardization 8601, which you can find online.
 This format eases sorting data by earliest to latest date.)
 
 ### True/False and Yes/No variables {#sec-designbas-variable-truefalseyesno}
 
-These two kinds of variables are like multiple-choice items, except REDCap creates the response options for you. 
+These two kinds of variables are like multiple-choice items, except REDCap creates the response options for you.
 Examples are shown below.
 
 ![True/False item](images/variable/truefalse.jpg){width=80%}
@@ -207,13 +207,13 @@ Examples are shown below.
 ### Signature variable {#sec-designbas-variable-signature}
 
 Sometimes an online survey will require a signature from the person completing it.
-REDCap allows you to do that. 
+REDCap allows you to do that.
 Here is a signature field as it appears in the Online Designer.
 There is a link at the bottom right that will be active when a survey is created.
 
 ![Signature field in Designer](images/variable/signature-1.jpg){width=80%}
 
-Here is what the field looks like when you click the pencil icon to edit it. 
+Here is what the field looks like when you click the pencil icon to edit it.
 You will see there are few specifications.
 You could specify whether it is a required field, whether it contains personal identifying information, where it appears relative to the variable name on a survey.
 
@@ -233,14 +233,14 @@ It also looks like a signature field when you are in the Edit Variable window, w
 
 ### Slider/Visual Analog Scale {#sec-designbas-slider}
 
-Sometimes investigators like to ask questions on a survey that ask respondents to rate how they feel on a scale, such as 1 = Very unsatisfied to 7 = Very satisfied. 
+Sometimes investigators like to ask questions on a survey that ask respondents to rate how they feel on a scale, such as 1 = Very unsatisfied to 7 = Very satisfied.
 A Slider/Visual Analog Scale item allows the respondent to move a button on a slider from left to right and choose an answer. 
 Here is what this kind of variable looks like in the Edit Field window.
 
 ![Slider field in editor](images/variable/slider-1.jpg){width=80%}
 
-We have specified the lowest possible value is 1, and the highest possible value is 7, and we have provided anchors for the ends and the middle of the scale. 
-We also have selected the option allowing the respondent to see the number associated with the place on the scale where they move the button. 
+We have specified the lowest possible value is 1, and the highest possible value is 7, and we have provided anchors for the ends and the middle of the scale.
+We also have selected the option allowing the respondent to see the number associated with the place on the scale where they move the button.
 We can see the slider in Online Designer.
 
 ![Slider field in editor](images/variable/slider-2.jpg){width=80%}
@@ -249,7 +249,7 @@ We can see the slider in Online Designer.
 
 A Descriptive Text field allows the REDCap project designer to add notes or images that do not collect any data. 
 This kind of field can use HTML coding or rich-text editing (with the HTML hidden from you).
-It also allows you to upload an image to appear in a survey. 
+It also allows you to upload an image to appear in a survey.
 Here is what an example Descriptive Text field looks like in Online Designer.
 
 ![Descriptive text field in Designer](images/variable/descriptivetext-1.jpg){width=80%}
@@ -263,7 +263,7 @@ The image above shows a red box around the HTML, a green box where the image, fi
 ### Begin New Section {#sec-designbas-beginnewsection}
 
 The last option in the drop-down menu in the Edit Field window is Begin New Section. 
-This option is available for REDCap users who are implementing a long online survey that needs to break occasionally and carry over to subsequent webpages. 
+This option is available for REDCap users who are implementing a long online survey that needs to break occasionally and carry over to subsequent webpages.
 We will not illustrate this option, as it is rarely used.
 
 ## Creating a new variable {#sec-designbas-variable-newvariables}
@@ -282,34 +282,34 @@ the best contact phone number:
 
 We named it phone_contact_1 to indicate it is the best number for contacting the family.
 Then we click Save, and the new variable now appears on the form.
-Note that we chose Phone (North America) as the Validation standard. 
+Note that we chose Phone (North America) as the Validation standard.
 If someone enters a
 phone number without an area code, an error message will say an invalid number was entered.
 
 ### Matrix of Fields {#sec-designbas-matrixoffields}
 
-REDCap allows you to create a table that will hold many items similar to the slider field, except it has buttons and labels are possible for each rating. 
-This is called a *Matrix of Fields*. 
-It is created in a different way from the Add Variable button. 
+REDCap allows you to create a table that will hold many items similar to the slider field, except it has buttons and labels are possible for each rating.
+This is called a *Matrix of Fields*.
+It is created in a different way from the Add Variable button.
 You click the "Add Matrix of Fields" button.
-You get a window that asks you to name your table (matrix) of items. 
+You get a window that asks you to name your table (matrix) of items.
 Here is a matrix of fields as it appears in Online Designer.
 
 ![Matrix of fields in Designer](images/variable/matrix-1.jpg){width=80%}
 
 The matrix group is called feelings.
-This group contains five items, each of which has a field name showing. 
+This group contains five items, each of which has a field name showing.
 This is how the group will appear on a survey.
-It requires entering the five response options as you would on a multiple-choice item, but the same response options are used for all items in the group. 
+It requires entering the five response options as you would on a multiple-choice item, but the same response options are used for all items in the group.
 You cannot have items in the same group requiring different labels on the scale.
-Here is what the matrix group looks like in the Edit Field window. 
+Here is what the matrix group looks like in the Edit Field window.
 The window had to be scrolled, so the screenshot is broken into two parts.
 
 ![Matrix of fields in Editor, top half](images/variable/matrix-2.jpg){width=80%}
 
 ![Matrix of fields in Editor, bottom half](images/variable/matrix-3.jpg){width=80%}
 
-You can click on the *Add another row* button to add another item to the matrix. 
+You can click on the *Add another row* button to add another item to the matrix.
 Each item's responses will be saved in its own variable.
 
 ## Best Way to Learn {#sec-designbas-variable-howtolearn}
