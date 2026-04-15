@@ -150,11 +150,23 @@ saying the number is beyond the limits you set.
 
 ### Calculated Field {#sec-designbas-variable-fieldtypes-calculatedfield}
 
-A Calculated Field can take a number from a previously entered variable and perform a calculation. 
+A Calculated Field can take a number from a previously entered variable and perform a calculation.
 For example, the project already may have two variables capturing a newborn infant's number of weeks and number of days of gestation.
 A data analyst might prefer to have one variable for analyzing gestational age, such as total days of gestation.
-A formula can be written to take the previously entered weeks of gestation, multiply it by 7, then add the days (partial week) of gestation to get total days of gestation. 
-Please see the "Advanced Project Design" part of the book for more details.
+A formula can be written to take the previously entered weeks of gestation, multiply it by 7, then add the days (partial week) of gestation to get total days of gestation.
+First, create a new variable and select Calculated Field as the field type.
+
+![Create a calculated variable](images/variable/calculated-1.jpg){width=80%}
+
+We have drawn a blue box around the field type and another one around the Calculation Equation box.
+Notice there is a link beside the words "Calculation Equation" to instructions for formatting equations.
+Click on the Calculation Equation box and enter your equation as shown in the example below.
+
+![Write your equation](images/variable/calculated-2.jpg){width=80%}
+
+Notice the use of square brackets around both variable names used in the equation.
+You can use parentheses liberally to make sure the order of mathematical operations is correct.
+The spaces in this formula could be removed and make no difference to the Logic Editor.
 
 ### Multiple Choice - Drop-down list {#sec-designbas-variable-fieldtypes-multiplechoicedropdown}
 
