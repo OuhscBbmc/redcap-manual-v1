@@ -706,7 +706,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>Action tags are used in REDCap to modify the appearance or behavior of items in a project. They are added to the <em>Action Tags/Field Annotation</em> box under the Field Label in the Edit Field window for each variable.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/variable/actiontag-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Action Tags box"><img src="images/variable/actiontag-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Action Tags box"></a></p>
+<p><a href="images/actiontag/actiontag-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Action Tags box"><img src="images/actiontag/actiontag-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Action Tags box"></a></p>
 <figcaption>Action Tags box</figcaption>
 </figure>
 </div>
@@ -719,7 +719,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>By default, date fields appear with a button labeled Today. Clicking that button fills in today’s date. Sometimes a project designer does not want that button available. A designer might want to force people reviewing past years’ medical records to enter that date’s year. Every action tag begins with an at-sign, @. The action tag to hide the Today button is <code>@HIDEBUTTON</code>. When you click inside the Action Tags/Field Annotation box, it then opens another window, called the <em>Logic Editor.</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/action/logiceditor-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Logic Editor"><img src="images/action/logiceditor-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Logic Editor"></a></p>
+<p><a href="images/actiontag/logiceditor-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Logic Editor"><img src="images/actiontag/logiceditor-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Logic Editor"></a></p>
 <figcaption>Logic Editor</figcaption>
 </figure>
 </div>
@@ -730,25 +730,25 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>Sometimes a project designer can use an action tag to make things easier for the people doing data entry inside REDCap. The action tag <code>@DEFAULT = '____'</code> can be used to set the starting value for a variable. In this example, you would put a default value in the blank. Let’s say we expect most of the people in a study to be residents of Oklahoma. We could set <code>@DEFAULT = 'OK'</code> so that Oklahoma shows up as the default state when a new record is created in REDCap.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/action/state-default-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="DEFAULT action tag"><img src="images/action/state-default-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="DEFAULT action tag"></a></p>
+<p><a href="images/actiontag/state-default-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="DEFAULT action tag"><img src="images/actiontag/state-default-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="DEFAULT action tag"></a></p>
 <figcaption>DEFAULT action tag</figcaption>
 </figure>
 </div>
-<p>Notice that the value recorded in the data, OK, is the default value, not “Oklahoma,” which is the label. This action tag works only once, when the record is created. If the data entry people or survey respondent needed to change it to Texas, they can use the drop-down menu to do so. Their entry will not be overwritten with Oklahoma at a later time. The default does not appear on the form you are creating in Online Designer. It appears in a record, if you click the <em>Add/Edit Record</em> link on the left side of the screen and create a new record (see <a href="begin/create.md">Creating Records</a>.).</p>
+<p>Notice that the value recorded in the data, OK, is the default value, not “Oklahoma,” which is the label. This action tag works only once, when the record is created. If the data entry people or survey respondent needed to change it to Texas, they can use the drop-down menu to do so. Their entry will not be overwritten with Oklahoma at a later time. The default does not appear on the form you are creating in Online Designer. It appears in a record, if you click the <em>Add/Edit Record</em> link on the left side of the screen and create a new record (see <a href="../index.qmd/create.md">Creating Records</a>).</p>
 </section>
 <section id="sec-designint-action-common-default" class="level3" data-number="9.2.3">
 <h3 data-number="9.2.3" class="anchored" data-anchor-id="sec-designint-action-common-default"><span class="header-section-number">9.2.3</span> <code>@NONEOFTHEABOVE</code></h3>
 <p>Let’s say we have a REDCap project that allows people signing up for a conference to indicate their preferences for lunch. We create a checkbox multiple-choice item where the respondents can indicate all of the acceptable options for lunch. One option is none of the above.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/action/noneoftheabove-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Action tag for checkbox field"><img src="images/action/noneoftheabove-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Action tag for checkbox field"></a></p>
+<p><a href="images/actiontag/noneoftheabove-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Action tag for checkbox field"><img src="images/actiontag/noneoftheabove-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Action tag for checkbox field"></a></p>
 <figcaption>Action tag for checkbox field</figcaption>
 </figure>
 </div>
 <p>The <code>@NONEOFTHEABOVE</code> action tag will prevent a respondent who answers “None of the above” from checking any other lunch item.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/action/noneoftheabove-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="NONEOFTHEABOVE action tag"><img src="images/action/noneoftheabove-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="NONEOFTHEABOVE action tag"></a></p>
+<p><a href="images/actiontag/noneoftheabove-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="NONEOFTHEABOVE action tag"><img src="images/actiontag/noneoftheabove-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="NONEOFTHEABOVE action tag"></a></p>
 <figcaption>NONEOFTHEABOVE action tag</figcaption>
 </figure>
 </div>
@@ -759,7 +759,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>Suppose we do not want everyone to check every option in our list of lunch choices in this checkbox field. We can use the <code>@MAXCHECKED</code> action tag to limit everyone to their top 2 or 3 preferences. We can change the Field label to “Indicate your top 3 preferences for lunch.” Then we click on the Action Tags/Field Annotation box to open the Logic Editor, where we list this action tag.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/action/maxchecked.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="MAXCHECKED action tag"><img src="images/action/maxchecked.jpg" class="img-fluid figure-img" style="width:80.0%" alt="MAXCHECKED action tag"></a></p>
+<p><a href="images/actiontag/maxchecked.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="MAXCHECKED action tag"><img src="images/actiontag/maxchecked.jpg" class="img-fluid figure-img" style="width:80.0%" alt="MAXCHECKED action tag"></a></p>
 <figcaption>MAXCHECKED action tag</figcaption>
 </figure>
 </div>
@@ -772,14 +772,14 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>Sometimes we want to help out the data entry people by setting the value of a field. A project may have a form especially for interviewing the first child in a family. We can use <code>@SETVALUE</code> to specify the child being interviewed.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/action/setvalue-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="SETVALUE action tag"><img src="images/action/setvalue-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="SETVALUE action tag"></a></p>
+<p><a href="images/actiontag/setvalue-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="SETVALUE action tag"><img src="images/actiontag/setvalue-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="SETVALUE action tag"></a></p>
 <figcaption>SETVALUE action tag</figcaption>
 </figure>
 </div>
 <p>Let’s say we have created a record for a family, and we have used Form 1 to enter some family information. Now we want the first child’s name to appear on the next form, which is being used to record data from interviewing Child 1. We go into the family’s record and click on the form for interviewing Child 1. We will find Child 1’s name, which was entered in the first form, automatically has been piped into this new form.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/action/setvalue-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="SETVALUE piped value"><img src="images/action/setvalue-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="SETVALUE piped value"></a></p>
+<p><a href="images/actiontag/setvalue-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="SETVALUE piped value"><img src="images/actiontag/setvalue-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="SETVALUE piped value"></a></p>
 <figcaption>SETVALUE piped value</figcaption>
 </figure>
 </div>
@@ -790,7 +790,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>Adding the <code>@READONLY</code> action tag on the next line after <code>@SETVALUE = '[variablename]'</code> will make the field read-only for the data entry people.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/action/readonly-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="READONLY action tag"><img src="images/action/readonly-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="READONLY action tag"></a></p>
+<p><a href="images/actiontag/readonly-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="READONLY action tag"><img src="images/actiontag/readonly-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="READONLY action tag"></a></p>
 <figcaption>READONLY action tag</figcaption>
 </figure>
 </div>
@@ -801,14 +801,14 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>The <code>@PLACEHOLDER</code> action tag will not record any data. It is used as a hint to the person filling out the form. We might have a multiple-choice item with “Other” as one of the options. If someone chooses Other, we may add a follow-up item asking for details. We can create gray text to appear in the box for their answer, giving a hint about what to put in the box. The words we want to appear in gray will be typed inside quotation marks after <code>@PLACEHOLDER =</code> as shown below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/action/placeholder-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="PLACEHOLDER action tag"><img src="images/action/placeholder-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="PLACEHOLDER action tag"></a></p>
+<p><a href="images/actiontag/placeholder-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="PLACEHOLDER action tag"><img src="images/actiontag/placeholder-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="PLACEHOLDER action tag"></a></p>
 <figcaption>PLACEHOLDER action tag</figcaption>
 </figure>
 </div>
 <p>And here is what the result will look like. The words in this action tag are not saved as data.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/action/placeholder-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Grayed-out hint as PLACEHOLDER"><img src="images/action/placeholder-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Grayed-out hint as PLACEHOLDER"></a></p>
+<p><a href="images/actiontag/placeholder-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Grayed-out hint as PLACEHOLDER"><img src="images/actiontag/placeholder-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Grayed-out hint as PLACEHOLDER"></a></p>
 <figcaption>Grayed-out hint as PLACEHOLDER</figcaption>
 </figure>
 </div>
