@@ -777,37 +777,59 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <li>A date variable for the consent obtainer’s date of signature. Other consent forms also may have fields for a witness to sign and for a child to sign indicating his or her assent. (Children cannot sign a legal form granting consent; the parent or guardian must grant consent. But obtaining assent from a child old enough to understand that s/he will be participating in a study is the ethical choice.)</li>
 </ul>
 <ol type="1">
-<li><p>Create the need consent fields.</p>
+<li><p>Create the needed consent fields listed above.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="images/econsent/consent-fields.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Consent Fields in REDCap"><img src="images/econsent/consent-fields.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Consent Fields in REDCap"></a></p>
 <figcaption>Consent Fields in REDCap</figcaption>
 </figure>
 </div></li>
-<li></li>
+<li><p>The project now has the parts of the consent form that need to be filled out. But our REDCap project needs to provide the potential participant with the pdf of the consent form. Create a new <em>Descriptive Text</em> variable at the top of the Consent instrument (after Record ID) by clicking the <em>Add Field</em> button, shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/add-field.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Add a Descriptive Text field"><img src="images/econsent/add-field.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Add a Descriptive Text field"></a></p>
+<figcaption>Add a Descriptive Text field</figcaption>
+</figure>
+</div></li>
+<li><p>You won’t put anything in the box called <em>Field Label.</em> Name this variable <em>consent</em>, then click the link <em>Upload file</em> just below the sentence <em>Attach an image, file, or embedded audio</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/attach-file.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Attach a file"><img src="images/econsent/attach-file.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Attach a file"></a></p>
+<figcaption>Attach a file</figcaption>
+</figure>
+</div></li>
+</ol>
+<p>After you upload the pdf of the consent form, you will need to select <em>Inline image/PDF,</em> as shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/inline-image-pdf.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Select Inline Image/PDF"><img src="images/econsent/inline-image-pdf.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Select Inline Image/PDF"></a></p>
+<figcaption>Select Inline Image/PDF</figcaption>
+</figure>
+</div>
+<ol type="1">
 <li><p>Enable the e-Consent Framework for a Survey</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/enable-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Enable e-Consent"><img src="images/econsent/enable-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enable e-Consent"></a></p>
+<p><a href="images/econsent/enable-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Enable e-Consent"><img src="images/econsent/enable-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enable e-Consent"></a></p>
 <figcaption>Enable e-Consent</figcaption>
 </figure>
 </div></li>
 <li><p>Click on <strong>e-Consent and PDF Snapshots</strong> in the <em>Data Collection Instruments</em> header box</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/enable-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="e-Consent and PDF Snapshots"><img src="images/econsent/enable-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent and PDF Snapshots"></a></p>
+<p><a href="images/econsent/enable-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="e-Consent and PDF Snapshots"><img src="images/econsent/enable-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent and PDF Snapshots"></a></p>
 <figcaption>e-Consent and PDF Snapshots</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/instruments-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Data Collection Instruments"><img src="images/econsent/instruments-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Data Collection Instruments"></a></p>
+<p><a href="images/econsent/instruments-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Data Collection Instruments"><img src="images/econsent/instruments-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Data Collection Instruments"></a></p>
 <figcaption>Data Collection Instruments</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="e-Consent Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent Settings"></a></p>
+<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="e-Consent Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent Settings"></a></p>
 <figcaption>e-Consent Settings</figcaption>
 </figure>
 </div></li>
@@ -828,7 +850,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <li><p>Specify save locations and customize file names.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Settings"></a></p>
+<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Settings"></a></p>
 <figcaption>Settings</figcaption>
 </figure>
 </div></li>
