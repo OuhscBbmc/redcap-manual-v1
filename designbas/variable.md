@@ -278,7 +278,7 @@ We can insert a field after any of the existing fields in the project by clickin
 of those buttons. Doing so opens a window called Add New Field. Let's create a field for
 the best contact phone number:
 
-![Creating a new variable](images/variable/phone-contact-1.jpg){width=80%}
+![Creating a new variable](images/variable/phone-1.jpg){width=80%}
 
 We named it phone_contact_1 to indicate it is the best number for contacting the family.
 Then we click Save, and the new variable now appears on the form.
