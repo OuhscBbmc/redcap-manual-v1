@@ -30,7 +30,7 @@ csl: ../assets/csl/apa-7e.csl
 Action tags are used in REDCap to modify the appearance or behavior of items in a project.
 They are added to the *Action Tags/Field Annotation* box under the Field Label in the Edit Field window for each variable.
 
-![Action Tags box](images/variable/actiontag-1.jpg){width=80%}
+![Action Tags box](images/actiontag/actiontag-1.jpg){width=80%}
 
 ## Common {#sec-designint-action-common}
 
@@ -46,7 +46,7 @@ Every action tag begins with an at-sign, @.
 The action tag to hide the Today button is `@HIDEBUTTON`.
 When you click inside the Action Tags/Field Annotation box, it then opens another window, called the *Logic Editor.*
 
-![Logic Editor](images/action/logiceditor-1.jpg){width=80%}
+![Logic Editor](images/actiontag/logiceditor-1.jpg){width=80%}
 
 You can see that we have typed `@HIDEBUTTON` in the Logic Editor.
 What if you cannot remember if this action tag has a hyphen in the middle?
@@ -62,14 +62,14 @@ In this example, you would put a default value in the blank.
 Let's say we expect most of the people in a study to be residents of Oklahoma.
 We could set `@DEFAULT = 'OK'` so that Oklahoma shows up as the default state when a new record is created in REDCap.
 
-![DEFAULT action tag](images/action/state-default-1.jpg){width=80%}
+![DEFAULT action tag](images/actiontag/state-default-1.jpg){width=80%}
 
 Notice that the value recorded in the data, OK, is the default value, not "Oklahoma," which is the label.
 This action tag works only once, when the record is created.
 If the data entry people or survey respondent needed to change it to Texas, they can use the drop-down menu to do so.
 Their entry will not be overwritten with Oklahoma at a later time.
 The default does not appear on the form you are creating in Online Designer.
-It appears in a record, if you click the *Add/Edit Record* link on the left side of the screen and create a new record (see [Creating Records](begin/create.md).).
+It appears in a record, if you click the *Add/Edit Record* link on the left side of the screen and create a new record (see [Creating Records](../index.qmd/create.md)).
 
 ### `@NONEOFTHEABOVE` {#sec-designint-action-common-default}
 
@@ -77,11 +77,11 @@ Let's say we have a REDCap project that allows people signing up for a conferenc
 We create a checkbox multiple-choice item where the respondents can indicate all of the acceptable options for lunch.
 One option is none of the above.
 
-![Action tag for checkbox field](images/action/noneoftheabove-1.jpg){width=80%}
+![Action tag for checkbox field](images/actiontag/noneoftheabove-1.jpg){width=80%}
 
 The `@NONEOFTHEABOVE` action tag will prevent a respondent who answers "None of the above" from checking any other lunch item.
 
-![NONEOFTHEABOVE action tag](images/action/noneoftheabove-2.jpg){width=80%}
+![NONEOFTHEABOVE action tag](images/actiontag/noneoftheabove-2.jpg){width=80%}
 
 As we saw for the `@DEFAULT` action tag, the `@NONEOFTHEABOVE` action tag is followed by an equals sign, then the value recorded in the data, 'none' -- not the label "None of the above."
 Generally speaking, when REDCap refers to character values like 'none,' the value is enclosed in single or double quotation marks.
@@ -94,7 +94,7 @@ We can use the `@MAXCHECKED` action tag to limit everyone to their top 2 or 3 pr
 We can change the Field label to "Indicate your top 3 preferences for lunch."
 Then we click on the Action Tags/Field Annotation box to open the Logic Editor, where we list this action tag.
 
-![MAXCHECKED action tag](images/action/maxchecked.jpg){width=80%}
+![MAXCHECKED action tag](images/actiontag/maxchecked.jpg){width=80%}
 
 ## Less Common {#sec-designint-action-lesscommon}
 
@@ -104,14 +104,14 @@ Sometimes we want to help out the data entry people by setting the value of a fi
 A project may have a form especially for interviewing the first child in a family.
 We can use `@SETVALUE` to specify the child being interviewed.
 
-![SETVALUE action tag](images/action/setvalue-1.jpg){width=80%}
+![SETVALUE action tag](images/actiontag/setvalue-1.jpg){width=80%}
 
 Let's say we have created a record for a family, and we have used Form 1 to enter some family information.
 Now we want the first child's name to appear on the next form, which is being used to record data from interviewing Child 1.
 We go into the family's record and click on the form for interviewing Child 1.
 We will find Child 1's name, which was entered in the first form, automatically has been piped into this new form.
 
-![SETVALUE piped value](images/action/setvalue-2.jpg){width=80%}
+![SETVALUE piped value](images/actiontag/setvalue-2.jpg){width=80%}
 
 One caution: If you change the name that is piped into this field, it will revert to the piped-in value every time the record is opened. If you want to keep the data entry people from changing this value, you can use the next action tag.
 
@@ -119,7 +119,7 @@ One caution: If you change the name that is piped into this field, it will rever
 
 Adding the `@READONLY` action tag on the next line after `@SETVALUE = '[variablename]'` will make the field read-only for the data entry people.
 
-![READONLY action tag](images/action/readonly-1.jpg){width=80%}
+![READONLY action tag](images/actiontag/readonly-1.jpg){width=80%}
 
 The child's name piped into the family's record will be in slightly gray font and cannot be edited.
 
@@ -132,11 +132,11 @@ If someone chooses Other, we may add a follow-up item asking for details.
 We can create gray text to appear in the box for their answer, giving a hint about what to put in the box.
 The words we want to appear in gray will be typed inside quotation marks after `@PLACEHOLDER = ` as shown below.
 
-![PLACEHOLDER action tag](images/action/placeholder-1.jpg){width=80%}
+![PLACEHOLDER action tag](images/actiontag/placeholder-1.jpg){width=80%}
 
 And here is what the result will look like. The words in this action tag are not saved as data.
 
-![Grayed-out hint as PLACEHOLDER](images/action/placeholder-2.jpg){width=80%}
+![Grayed-out hint as PLACEHOLDER](images/actiontag/placeholder-2.jpg){width=80%}
 
 ## Many Other Action Tags {#sec-designint-action-other}
 
