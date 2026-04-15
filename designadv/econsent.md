@@ -92,6 +92,8 @@ Therefore, we need to create fields in REDCap that the participants would have f
 The consent and HIPAA forms shown below are templates from the OUHC IRB.
 Please ignore the old dates.
 
+### Consent Form
+
 1. Read the consent form and identify every field that a participant or researcher would have to complete.
 Often the only fields that will need to be completed appear at the end of the document, although occasionally researchers will list medical tests that require the participant's initials.
 
@@ -129,6 +131,13 @@ Name this variable *consent*, then click the link *Upload file* just below the s
 After you upload the pdf of the consent form, you will need to select *Inline image/PDF,* as shown below.
 
    ![Select Inline Image/PDF](images/econsent/inline-image-pdf.jpg){width="80%"}
+
+### HIPAA Form
+
+Now do the same thing for the HIPAA form:
+- Identify all elements that would be filled in with a pen on a printed HIPAA form
+- Go into the HIPAA instrument and create those fields
+- Be sure to include the Descriptive Field called hipaa for uploading the pdf of the HIPAA form
 
 1. Enable the e-Consent Framework for a Survey
 
