@@ -43,12 +43,12 @@ Clicking that button fills in today's date.
 Sometimes a project designer does not want that button available.
 A designer might want to force people reviewing past years' medical records to enter that date's year.
 Every action tag begins with an at-sign, @.
-The action tag to hide the Today button is `\@HIDEBUTTON`.
+The action tag to hide the Today button is `@HIDEBUTTON`.
 When you click inside the Action Tags/Field Annotation box, it then opens another window, called the *Logic Editor.*
 
 ![Logic Editor](images/action/logiceditor-1.jpg){width=80%}
 
-You can see that we have typed `\@HIDEBUTTON` in the Logic Editor.
+You can see that we have typed `@HIDEBUTTON` in the Logic Editor.
 What if you cannot remember if this action tag has a hyphen in the middle?
 You can click the red "@ Action Tags" button at the top of the Logic Editor and see a list of action tags and explanations.
 To save this action tag, you click *Update & Close Editor*, then click the *Save* button on the Edit Field window.
