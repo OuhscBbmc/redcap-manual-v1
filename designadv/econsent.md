@@ -111,16 +111,30 @@ Other consent forms also may have fields for a witness to sign and for a child t
 (Children cannot sign a legal form granting consent; the parent or guardian must grant consent.
 But obtaining assent from a child old enough to understand that s/he will be participating in a study is the ethical choice.)
 
-1. Create the need consent fields.
+1. Create the needed consent fields listed above.
 
    ![Consent Fields in REDCap](images/econsent/consent-fields.jpg){width="80%"}
 
-2. 
-3. Enable the e-Consent Framework for a Survey
+1. The project now has the parts of the consent form that need to be filled out.
+But our REDCap project needs to provide the potential participant with the pdf of the consent form.
+Create a new *Descriptive Text* variable at the top of the Consent instrument (after Record ID) by clicking the *Add Field* button, shown below.
+
+   ![Add a Descriptive Text field](images/econsent/add-field.jpg){width="80%"}
+
+1. You won't put anything in the box called *Field Label.*
+Name this variable *consent*, then click the link *Upload file* just below the sentence *Attach an image, file, or embedded audio*
+
+   ![Attach a file](images/econsent/attach-file.jpg){width="80%"}
+
+After you upload the pdf of the consent form, you will need to select *Inline image/PDF,* as shown below.
+
+   ![Select Inline Image/PDF](images/econsent/inline-image-pdf.jpg){width="80%"}
+
+1. Enable the e-Consent Framework for a Survey
 
    ![Enable e-Consent](images/econsent/enable-1.jpg){width="80%"}
 
-4. Click on **e-Consent and PDF Snapshots** in the *Data Collection Instruments* header box
+2. Click on **e-Consent and PDF Snapshots** in the *Data Collection Instruments* header box
 
    ![e-Consent and PDF Snapshots](images/econsent/enable-2.jpg){width="80%"}
 
