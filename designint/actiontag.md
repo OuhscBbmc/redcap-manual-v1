@@ -38,16 +38,17 @@ We will explain some of the more common action tags, then we will cover a few of
 
 ### `@HIDEBUTTON` {#sec-designint-action-common-hide}
 
-By default, date fields appear with a button labeled Today. 
+By default, date fields appear with a button labeled Today.
 Clicking that button fills in today's date.
 Sometimes a project designer does not want that button available.
 A designer might want to force people reviewing past years' medical records to enter that date's year.
-The action tag to hide the Today button is an at-sign, followed by HIDEBUTTON: @HIDEBUTTON. 
+Every action tag begins with an at-sign, @.
+The action tag to hide the Today button is `@HIDEBUTTON`.
 When you click inside the Action Tags/Field Annotation box, it then opens another window, called the *Logic Editor.*
 
 ![Logic Editor](images/action/logiceditor-1.jpg){width=80%}
 
-You can see that we have typed @HIDEBUTTON in the Logic Editor. 
+You can see that we have typed `@HIDEBUTTON` in the Logic Editor.
 What if you cannot remember if this action tag has a hyphen in the middle?
 You can click the red "@ Action Tags" button at the top of the Logic Editor and see a list of action tags and explanations.
 To save this action tag, you click *Update & Close Editor*, then click the *Save* button on the Edit Field window.
@@ -55,22 +56,20 @@ Now the Today button no longer appears next to the date field.
 
 ### `@DEFAULT` {#sec-designint-action-common-default}
 
-Sometimes a project designer can use an action tag to make things easier for the people doing data entry inside REDCap. 
-The action tag *@DEFAULT = '????'* can be used to set the starting value for a variable.
-In this example, the *????* stands for a default value.
+Sometimes a project designer can use an action tag to make things easier for the people doing data entry inside REDCap.
+The action tag `@DEFAULT = '____'` can be used to set the starting value for a variable.
+In this example, you would put a default value in the blank.
 Let's say we expect most of the people in a study to be residents of Oklahoma.
-We could set @DEFAULT = 'OK' so that Oklahoma shows up as the default state when a new record is created in REDCap.
+We could set `@DEFAULT = 'OK'` so that Oklahoma shows up as the default state when a new record is created in REDCap.
 
 ![DEFAULT action tag](images/action/state-default-1.jpg){width=80%}
 
-Notice that the value recorded in the data, OK, is the default value, not "Oklahoma." 
+Notice that the value recorded in the data, OK, is the default value, not "Oklahoma," which is the label.
 This action tag works only once, when the record is created.
 If the data entry people or survey respondent needed to change it to Texas, they can use the drop-down menu to do so.
 Their entry will not be overwritten with Oklahoma at a later time.
 The default does not appear on the form you are creating in Online Designer.
-It appears in a record, if you click the *Add/Edit Record* link on the left side of the screen and create a new record. 
-
-QQQQQQ Will, please add a link to the chapter on creating new records QQQQQ
+It appears in a record, if you click the *Add/Edit Record* link on the left side of the screen and create a new record (see [Creating Records](begin/create.md).).
 
 ### `@NONEOFTHEABOVE` {#sec-designint-action-common-default}
 
@@ -80,17 +79,19 @@ One option is none of the above.
 
 ![Action tag for checkbox field](images/action/noneoftheabove-1.jpg){width=80%}
 
-The *@NONEOFTHEABOVE* action tag will prevent a respondent who answers "None of the above" from checking any other lunch item.
+The `@NONEOFTHEABOVE` action tag will prevent a respondent who answers "None of the above" from checking any other lunch item.
 
 ![NONEOFTHEABOVE action tag](images/action/noneoftheabove-2.jpg){width=80%}
 
-As we saw for the @DEFAULT action tag, the @NONEOFTHEABOVE action tag is followed by an equals sign, then the value recorded in the data, 'none' -- not the label "None of the above." Generally speaking, when REDCap refers to character values like 'none,' the value is enclosed in single or double quotation marks. When a numeric value is used to indicate "None of the above," then the number recorded in the data would follow the equals sign, without quotation marks.
+As we saw for the `@DEFAULT` action tag, the `@NONEOFTHEABOVE` action tag is followed by an equals sign, then the value recorded in the data, 'none' -- not the label "None of the above."
+Generally speaking, when REDCap refers to character values like 'none,' the value is enclosed in single or double quotation marks.
+When a numeric value is used to indicate "None of the above," then the number recorded in the data would follow the equals sign, without quotation marks.
 
 ### `@MAXCHECKED` {#sec-designint-action-common-default}
 
-Suppose we do not want everyone to check every option in our list of lunch choices in this checkbox field. 
-We can use the @MAXCHECKED action tag to limit everyone to their top 2 or 3 preferences.
-We can change the Field label to "Indicate your top 3 preferences for lunch." 
+Suppose we do not want everyone to check every option in our list of lunch choices in this checkbox field.
+We can use the `@MAXCHECKED` action tag to limit everyone to their top 2 or 3 preferences.
+We can change the Field label to "Indicate your top 3 preferences for lunch."
 Then we click on the Action Tags/Field Annotation box to open the Logic Editor, where we list this action tag.
 
 ![MAXCHECKED action tag](images/action/maxchecked.jpg){width=80%}
@@ -99,15 +100,15 @@ Then we click on the Action Tags/Field Annotation box to open the Logic Editor, 
 
 ### `@SETVALUE` {#sec-designint-action-lesscommon-setvalue}
 
-Sometimes we want to help out the data entry people by setting the value of a field. 
+Sometimes we want to help out the data entry people by setting the value of a field.
 A project may have a form especially for interviewing the first child in a family.
-We can use *@SETVALUE* to specify the child being interviewed.
+We can use `@SETVALUE` to specify the child being interviewed.
 
 ![SETVALUE action tag](images/action/setvalue-1.jpg){width=80%}
 
 Let's say we have created a record for a family, and we have used Form 1 to enter some family information.
 Now we want the first child's name to appear on the next form, which is being used to record data from interviewing Child 1.
-We go into the family's record and click on the form for interviewing Child 1. 
+We go into the family's record and click on the form for interviewing Child 1.
 We will find Child 1's name, which was entered in the first form, automatically has been piped into this new form.
 
 ![SETVALUE piped value](images/action/setvalue-2.jpg){width=80%}
@@ -116,20 +117,20 @@ One caution: If you change the name that is piped into this field, it will rever
 
 ### `@READONLY` {#sec-designint-action-lesscommon-readonly}
 
-Adding this action tag on the next line after @SETVALUE='[variablename]' will make the field read-only for the data entry people.
+Adding the `@READONLY` action tag on the next line after `@SETVALUE = '[variablename]'` will make the field read-only for the data entry people.
 
 ![READONLY action tag](images/action/readonly-1.jpg){width=80%}
 
-The child's name piped into the family's record will be in slightly gray font and cannot be edited. 
+The child's name piped into the family's record will be in slightly gray font and cannot be edited.
 
 ### `@PLACEHOLDER` {#sec-designint-action-lesscommon-placeholder}
 
-The *@PLACEHOLDER* action tag will not record any data.
+The `@PLACEHOLDER` action tag will not record any data.
 It is used as a hint to the person filling out the form.
-We might have a multiple-choice item with "Other" as one of the options. 
+We might have a multiple-choice item with "Other" as one of the options.
 If someone chooses Other, we may add a follow-up item asking for details.
 We can create gray text to appear in the box for their answer, giving a hint about what to put in the box.
-The words we want to appear in gray will be typed inside quotation marks after @PLACEHOLDER = as shown below.
+The words we want to appear in gray will be typed inside quotation marks after `@PLACEHOLDER = ` as shown below.
 
 ![PLACEHOLDER action tag](images/action/placeholder-1.jpg){width=80%}
 
@@ -139,8 +140,8 @@ And here is what the result will look like. The words in this action tag are not
 
 ## Many Other Action Tags {#sec-designint-action-other}
 
-If you have a specification that you would like to make in a form, there may be an action tag to help. 
-Just look through the available action tags by clicking on the red button inside the Logic Editor for action tags, clicking the link on the left side of the page for *Help & FAQ*, or searching online. 
+If you have a specification that you would like to make in a form, there may be an action tag to help.
+Just look through the available action tags by clicking on the red button inside the Logic Editor for action tags, clicking the link on the left side of the page in a REDCap project for *Help & FAQ*, or searching online.
 
 ::: {.callout-note appearance="simple"}
 
