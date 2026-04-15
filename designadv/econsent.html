@@ -632,7 +632,11 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <li><a href="#request-a-new-project" id="toc-request-a-new-project" class="nav-link" data-scroll-target="#request-a-new-project"><span class="header-section-number">10.2</span> Request a New Project</a></li>
   <li><a href="#preparing-to-build-the-e-consent" id="toc-preparing-to-build-the-e-consent" class="nav-link" data-scroll-target="#preparing-to-build-the-e-consent"><span class="header-section-number">10.3</span> Preparing to Build the e-Consent</a></li>
   <li><a href="#starting-an-e-consent-project" id="toc-starting-an-e-consent-project" class="nav-link" data-scroll-target="#starting-an-e-consent-project"><span class="header-section-number">10.4</span> Starting an e-Consent Project</a></li>
-  <li><a href="#modifying-the-redcap-instruments-for-consent-and-hipaa" id="toc-modifying-the-redcap-instruments-for-consent-and-hipaa" class="nav-link" data-scroll-target="#modifying-the-redcap-instruments-for-consent-and-hipaa"><span class="header-section-number">10.5</span> Modifying the REDCap Instruments for Consent and HIPAA</a></li>
+  <li><a href="#modifying-the-redcap-instruments-for-consent-and-hipaa" id="toc-modifying-the-redcap-instruments-for-consent-and-hipaa" class="nav-link" data-scroll-target="#modifying-the-redcap-instruments-for-consent-and-hipaa"><span class="header-section-number">10.5</span> Modifying the REDCap Instruments for Consent and HIPAA</a>
+  <ul class="collapse">
+  <li><a href="#consent-form" id="toc-consent-form" class="nav-link" data-scroll-target="#consent-form"><span class="header-section-number">10.5.1</span> Consent Form</a></li>
+  <li><a href="#hipaa-form" id="toc-hipaa-form" class="nav-link" data-scroll-target="#hipaa-form"><span class="header-section-number">10.5.2</span> HIPAA Form</a></li>
+  </ul></li>
   <li><a href="#configuring-settings" id="toc-configuring-settings" class="nav-link" data-scroll-target="#configuring-settings"><span class="header-section-number">10.6</span> Configuring Settings</a>
   <ul class="collapse">
   <li><a href="#primary-settings" id="toc-primary-settings" class="nav-link" data-scroll-target="#primary-settings"><span class="header-section-number">10.6.1</span> Primary Settings</a></li>
@@ -757,6 +761,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <section id="modifying-the-redcap-instruments-for-consent-and-hipaa" class="level2" data-number="10.5">
 <h2 data-number="10.5" class="anchored" data-anchor-id="modifying-the-redcap-instruments-for-consent-and-hipaa"><span class="header-section-number">10.5</span> Modifying the REDCap Instruments for Consent and HIPAA</h2>
 <p>We will be collecting signatures electronically. The participants will not sign the pdf with a pen. Therefore, we need to create fields in REDCap that the participants would have filled out in ink on a paper form. The consent and HIPAA forms shown below are templates from the OUHC IRB. Please ignore the old dates.</p>
+<section id="consent-form" class="level3" data-number="10.5.1">
+<h3 data-number="10.5.1" class="anchored" data-anchor-id="consent-form"><span class="header-section-number">10.5.1</span> Consent Form</h3>
 <ol type="1">
 <li><p>Read the consent form and identify every field that a participant or researcher would have to complete. Often the only fields that will need to be completed appear at the end of the document, although occasionally researchers will list medical tests that require the participant’s initials.</p></li>
 <li><p>Let’s say participants in our example need to fill out only the fields shown below.</p>
@@ -806,6 +812,10 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <figcaption>Select Inline Image/PDF</figcaption>
 </figure>
 </div>
+</section>
+<section id="hipaa-form" class="level3" data-number="10.5.2">
+<h3 data-number="10.5.2" class="anchored" data-anchor-id="hipaa-form"><span class="header-section-number">10.5.2</span> HIPAA Form</h3>
+<p>Now do the same thing for the HIPAA form: - Identify all elements that would be filled in with a pen on a printed HIPAA form - Go into the HIPAA instrument and create those fields - Be sure to include the Descriptive Field called hipaa for uploading the pdf of the HIPAA form</p>
 <ol type="1">
 <li><p>Enable the e-Consent Framework for a Survey</p>
 <div class="quarto-figure quarto-figure-center">
@@ -834,6 +844,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </figure>
 </div></li>
 </ol>
+</section>
 </section>
 <section id="configuring-settings" class="level2" data-number="10.6">
 <h2 data-number="10.6" class="anchored" data-anchor-id="configuring-settings"><span class="header-section-number">10.6</span> Configuring Settings</h2>
