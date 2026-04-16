@@ -104,7 +104,8 @@ Often the only fields that will need to be completed appear at the end of the do
 1. In REDCap, click on Consent in Online Designer to get to the screen where we will create variables to replicate the fields shown above.
 We will have the following fields and variable types:
 - A signature field for the participant's signature
-- A text variable for participant's printed name
+- A text variable for the participant's first name
+- A text variable for the participant's last name -- separate name fields are required, even if they do not appear that way on the pdf form
 - A date variable for the date of signature
 - A signature field for the person obtaining consent
 - A text variable for the printed name of the person obtaining consent
@@ -114,10 +115,13 @@ Other consent forms also may have fields for a witness to sign and for a child t
 But obtaining assent from a child old enough to understand that s/he will be participating in a study is the ethical choice.)
 
 1. Create the needed consent fields listed above.
+Make sure the participant's signature is **required** by clicking that button when creating the field.
+
+   ![Signature is required](images/econsent/signature-required.jpg){width="80%"}
 
    ![Consent Fields in REDCap](images/econsent/consent-fields.jpg){width="80%"}
 
-1. The project now has the parts of the consent form that need to be filled out.
+2. The project now has the parts of the consent form that need to be filled out.
 But our REDCap project needs to provide the potential participant with the pdf of the consent form.
 Create a new *Descriptive Text* variable at the top of the Consent instrument (after Record ID) by clicking the *Add Field* button, shown below.
 
@@ -135,13 +139,66 @@ After you upload the pdf of the consent form, you will need to select *Inline im
 ### HIPAA Form
 
 Now do the same thing for the HIPAA form:
-- Identify all elements that would be filled in with a pen on a printed HIPAA form
-- Go into the HIPAA instrument and create those fields
-- Be sure to include the Descriptive Field called hipaa for uploading the pdf of the HIPAA form
 
-1. Enable the e-Consent Framework for a Survey
+- Identify all elements that would be filled out on a printed HIPAA form
+- Go into the HIPAA instrument on REDCap and create those fields
+- Be sure to include the Descriptive Field called hipaa and upload the HIPAA pdf, setting it to appear inline
 
-   ![Enable e-Consent](images/econsent/enable-1.jpg){width="80%"}
+## Enabling Surveys
+
+Before the consent form can be designated as such in the e-consent framework (that is, the REDCap module for electronic consent), we must specify that the forms are on a survey.
+
+### Tell REDCap to Allow Surveys
+
+On the Project Setup tab, click the *Enable* button next to the words "Use surveys in this project."
+
+   ![Enable surveys on the project](images/econsent/enable-1.jpg){width="80%"}
+
+Return to Online Designer and click on the Enable button on the same line with the Consent form.
+
+   ![Enable Consent as a survey](images/econsent/enable-1.jpg){width="80%"}
+
+You will be taken to a new screen where you will specify how the survey will look and perform.
+We will illustrate only the most important details.
+
+   ![Editing survey details](images/econsent/enable-3.jpg){width="80%"}
+
+Scroll down to Survey Theme. The default theme is black, white, and light blue.
+A common choice for a theme at OU is Red Brick because the colors are similar to those of the university.
+The investigators running your study may have a preference.
+
+   ![Setting survey theme](images/econsent/survey-theme.jpg){width="80%"}
+
+Scroll down to *Survey Termination Options.*
+Place a checkmark in the box *Auto-continue to the next survey.*
+
+   ![Choose auto-continue](images/econsent/auto-continue.jpg){width="80%"}
+
+Click the *Save Changes* button at the bottom of the page.
+You will be taken back to Online Designer.
+Now click the *Enable* button on the HIPAA line.
+Select the Survey Theme to match the one you used on the conent form, then click Save Changes.
+
+## Enable e-Consent Framework
+
+Finally we can enable the e-Consent Framework, the module that was designed to handle electronic consenting processes.
+In Online Designer we do that by clicking the *Enable* button under Survey Options, shown above the list of instruments.
+
+   ![Enable e-consent](images/econsent/enable-4.jpg){width="80%"}
+
+You will be taken to a page called *Settings for e-Consent & PDF Snapshots.*
+
+   ![E-consent settings](images/econsent/enable-5.jpg){width="80%"}
+
+Click the big green button that says *Enable the e-Consent Framework for a survey.*
+You will get a window that says *Enable e-Consent for a Survey.*
+You will select Consent from the drop-down menu.
+
+   ![Select the consent form](images/econsent/choose-consent.jpg){width="80%"}
+
+Another window will open, called *Enable e-Consent.*
+The first two 
+
 
 2. Click on **e-Consent and PDF Snapshots** in the *Data Collection Instruments* header box
 
@@ -171,9 +228,15 @@ Among other tasks the researchers must obtain re-approval of their consent form.
 When you create an e-consent project, it is a good idea to put a note on your Outlook calendar reminding you to check with the researchers before their consent form expires.
 Then you will be better prepared to replace the consent and HIPAA forms with the latest versions, with the new expiration date given.
 
-1. Click **Add Consent Form**.
-1. Specify the version number and upload the consent form.
-1. Save the new version.
+1. Notify the people who will be collecting the study's informed consent that you will be working on the e-consent on REDCap and that they should pause using the e-consent until you inform them the new forms have been uploaded
+2. Go into Development Mode by such and such
+3. Go *** and *** then do such and such
+4. Click **Add Consent Form**
+5. Specify the version number and upload the consent form
+6. Save the new version
+7. Ask for the project to be moved back into Production Mode
+8. After being notified that the project is in production, go to the survey and create a test record by completing the forms, using a name like *Testing REDCap*
+9. If everything is working correctly, notify those collecting informed consent that the e-consent REDCap is back in production with the new forms, and they may see a test record in REDCap
 
 ::: {.callout-note appearance="simple"}
 
