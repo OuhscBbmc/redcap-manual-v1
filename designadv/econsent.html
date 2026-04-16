@@ -637,12 +637,17 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <li><a href="#consent-form" id="toc-consent-form" class="nav-link" data-scroll-target="#consent-form"><span class="header-section-number">10.5.1</span> Consent Form</a></li>
   <li><a href="#hipaa-form" id="toc-hipaa-form" class="nav-link" data-scroll-target="#hipaa-form"><span class="header-section-number">10.5.2</span> HIPAA Form</a></li>
   </ul></li>
-  <li><a href="#configuring-settings" id="toc-configuring-settings" class="nav-link" data-scroll-target="#configuring-settings"><span class="header-section-number">10.6</span> Configuring Settings</a>
+  <li><a href="#enabling-surveys" id="toc-enabling-surveys" class="nav-link" data-scroll-target="#enabling-surveys"><span class="header-section-number">10.6</span> Enabling Surveys</a>
   <ul class="collapse">
-  <li><a href="#primary-settings" id="toc-primary-settings" class="nav-link" data-scroll-target="#primary-settings"><span class="header-section-number">10.6.1</span> Primary Settings</a></li>
-  <li><a href="#additional-settings" id="toc-additional-settings" class="nav-link" data-scroll-target="#additional-settings"><span class="header-section-number">10.6.2</span> Additional Settings</a></li>
+  <li><a href="#tell-redcap-to-allow-surveys" id="toc-tell-redcap-to-allow-surveys" class="nav-link" data-scroll-target="#tell-redcap-to-allow-surveys"><span class="header-section-number">10.6.1</span> Tell REDCap to Allow Surveys</a></li>
   </ul></li>
-  <li><a href="#updating-consent-forms" id="toc-updating-consent-forms" class="nav-link" data-scroll-target="#updating-consent-forms"><span class="header-section-number">10.7</span> Updating Consent Forms</a></li>
+  <li><a href="#enable-e-consent-framework" id="toc-enable-e-consent-framework" class="nav-link" data-scroll-target="#enable-e-consent-framework"><span class="header-section-number">10.7</span> Enable e-Consent Framework</a></li>
+  <li><a href="#configuring-settings" id="toc-configuring-settings" class="nav-link" data-scroll-target="#configuring-settings"><span class="header-section-number">10.8</span> Configuring Settings</a>
+  <ul class="collapse">
+  <li><a href="#primary-settings" id="toc-primary-settings" class="nav-link" data-scroll-target="#primary-settings"><span class="header-section-number">10.8.1</span> Primary Settings</a></li>
+  <li><a href="#additional-settings" id="toc-additional-settings" class="nav-link" data-scroll-target="#additional-settings"><span class="header-section-number">10.8.2</span> Additional Settings</a></li>
+  </ul></li>
+  <li><a href="#updating-consent-forms" id="toc-updating-consent-forms" class="nav-link" data-scroll-target="#updating-consent-forms"><span class="header-section-number">10.9</span> Updating Consent Forms</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designadv/econsent.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designadv/econsent.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -776,31 +781,38 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </ol>
 <ul>
 <li>A signature field for the participant’s signature</li>
-<li>A text variable for participant’s printed name</li>
+<li>A text variable for the participant’s first name</li>
+<li>A text variable for the participant’s last name – separate name fields are required, even if they do not appear that way on the pdf form</li>
 <li>A date variable for the date of signature</li>
 <li>A signature field for the person obtaining consent</li>
 <li>A text variable for the printed name of the person obtaining consent</li>
 <li>A date variable for the consent obtainer’s date of signature. Other consent forms also may have fields for a witness to sign and for a child to sign indicating his or her assent. (Children cannot sign a legal form granting consent; the parent or guardian must grant consent. But obtaining assent from a child old enough to understand that s/he will be participating in a study is the ethical choice.)</li>
 </ul>
 <ol type="1">
-<li><p>Create the needed consent fields listed above.</p>
+<li><p>Create the needed consent fields listed above. Make sure the participant’s signature is <strong>required</strong> by clicking that button when creating the field.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/consent-fields.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Consent Fields in REDCap"><img src="images/econsent/consent-fields.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Consent Fields in REDCap"></a></p>
+<p><a href="images/econsent/signature-required.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Signature is required"><img src="images/econsent/signature-required.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Signature is required"></a></p>
+<figcaption>Signature is required</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/consent-fields.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Consent Fields in REDCap"><img src="images/econsent/consent-fields.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Consent Fields in REDCap"></a></p>
 <figcaption>Consent Fields in REDCap</figcaption>
 </figure>
 </div></li>
 <li><p>The project now has the parts of the consent form that need to be filled out. But our REDCap project needs to provide the potential participant with the pdf of the consent form. Create a new <em>Descriptive Text</em> variable at the top of the Consent instrument (after Record ID) by clicking the <em>Add Field</em> button, shown below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/add-field.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Add a Descriptive Text field"><img src="images/econsent/add-field.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Add a Descriptive Text field"></a></p>
+<p><a href="images/econsent/add-field.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Add a Descriptive Text field"><img src="images/econsent/add-field.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Add a Descriptive Text field"></a></p>
 <figcaption>Add a Descriptive Text field</figcaption>
 </figure>
 </div></li>
 <li><p>You won’t put anything in the box called <em>Field Label.</em> Name this variable <em>consent</em>, then click the link <em>Upload file</em> just below the sentence <em>Attach an image, file, or embedded audio</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/attach-file.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Attach a file"><img src="images/econsent/attach-file.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Attach a file"></a></p>
+<p><a href="images/econsent/attach-file.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Attach a file"><img src="images/econsent/attach-file.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Attach a file"></a></p>
 <figcaption>Attach a file</figcaption>
 </figure>
 </div></li>
@@ -808,73 +820,145 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>After you upload the pdf of the consent form, you will need to select <em>Inline image/PDF,</em> as shown below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/inline-image-pdf.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Select Inline Image/PDF"><img src="images/econsent/inline-image-pdf.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Select Inline Image/PDF"></a></p>
+<p><a href="images/econsent/inline-image-pdf.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Select Inline Image/PDF"><img src="images/econsent/inline-image-pdf.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Select Inline Image/PDF"></a></p>
 <figcaption>Select Inline Image/PDF</figcaption>
 </figure>
 </div>
 </section>
 <section id="hipaa-form" class="level3" data-number="10.5.2">
 <h3 data-number="10.5.2" class="anchored" data-anchor-id="hipaa-form"><span class="header-section-number">10.5.2</span> HIPAA Form</h3>
-<p>Now do the same thing for the HIPAA form: - Identify all elements that would be filled in with a pen on a printed HIPAA form - Go into the HIPAA instrument and create those fields - Be sure to include the Descriptive Field called hipaa for uploading the pdf of the HIPAA form</p>
-<ol type="1">
-<li><p>Enable the e-Consent Framework for a Survey</p>
+<p>Now do the same thing for the HIPAA form:</p>
+<ul>
+<li>Identify all elements that would be filled out on a printed HIPAA form</li>
+<li>Go into the HIPAA instrument on REDCap and create those fields</li>
+<li>Be sure to include the Descriptive Field called hipaa and upload the HIPAA pdf, setting it to appear inline</li>
+</ul>
+</section>
+</section>
+<section id="enabling-surveys" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="enabling-surveys"><span class="header-section-number">10.6</span> Enabling Surveys</h2>
+<p>Before the consent form can be designated as such in the e-consent framework (that is, the REDCap module for electronic consent), we must specify that the forms are on a survey.</p>
+<section id="tell-redcap-to-allow-surveys" class="level3" data-number="10.6.1">
+<h3 data-number="10.6.1" class="anchored" data-anchor-id="tell-redcap-to-allow-surveys"><span class="header-section-number">10.6.1</span> Tell REDCap to Allow Surveys</h3>
+<p>On the Project Setup tab, click the <em>Enable</em> button next to the words “Use surveys in this project.”</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/enable-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Enable e-Consent"><img src="images/econsent/enable-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enable e-Consent"></a></p>
-<figcaption>Enable e-Consent</figcaption>
+<p><a href="images/econsent/enable-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Enable surveys on the project"><img src="images/econsent/enable-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enable surveys on the project"></a></p>
+<figcaption>Enable surveys on the project</figcaption>
 </figure>
-</div></li>
+</div>
+<p>Return to Online Designer and click on the Enable button on the same line with the Consent form.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/enable-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Enable Consent as a survey"><img src="images/econsent/enable-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enable Consent as a survey"></a></p>
+<figcaption>Enable Consent as a survey</figcaption>
+</figure>
+</div>
+<p>You will be taken to a new screen where you will specify how the survey will look and perform. We will illustrate only the most important details.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/enable-3.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Editing survey details"><img src="images/econsent/enable-3.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Editing survey details"></a></p>
+<figcaption>Editing survey details</figcaption>
+</figure>
+</div>
+<p>Scroll down to Survey Theme. The default theme is black, white, and light blue. A common choice for a theme at OU is Red Brick because the colors are similar to those of the university. The investigators running your study may have a preference.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/survey-theme.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Setting survey theme"><img src="images/econsent/survey-theme.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Setting survey theme"></a></p>
+<figcaption>Setting survey theme</figcaption>
+</figure>
+</div>
+<p>Scroll down to <em>Survey Termination Options.</em> Place a checkmark in the box <em>Auto-continue to the next survey.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/auto-continue.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Choose auto-continue"><img src="images/econsent/auto-continue.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Choose auto-continue"></a></p>
+<figcaption>Choose auto-continue</figcaption>
+</figure>
+</div>
+<p>Click the <em>Save Changes</em> button at the bottom of the page. You will be taken back to Online Designer. Now click the <em>Enable</em> button on the HIPAA line. Select the Survey Theme to match the one you used on the conent form, then click Save Changes.</p>
+</section>
+</section>
+<section id="enable-e-consent-framework" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="enable-e-consent-framework"><span class="header-section-number">10.7</span> Enable e-Consent Framework</h2>
+<p>Finally we can enable the e-Consent Framework, the module that was designed to handle electronic consenting processes. In Online Designer we do that by clicking the <em>Enable</em> button under Survey Options, shown above the list of instruments.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/enable-4.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Enable e-consent"><img src="images/econsent/enable-4.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enable e-consent"></a></p>
+<figcaption>Enable e-consent</figcaption>
+</figure>
+</div>
+<p>You will be taken to a page called <em>Settings for e-Consent &amp; PDF Snapshots.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/enable-5.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="E-consent settings"><img src="images/econsent/enable-5.jpg" class="img-fluid figure-img" style="width:80.0%" alt="E-consent settings"></a></p>
+<figcaption>E-consent settings</figcaption>
+</figure>
+</div>
+<p>Click the big green button that says <em>Enable the e-Consent Framework for a survey.</em> You will get a window that says <em>Enable e-Consent for a Survey.</em> You will select Consent from the drop-down menu.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/choose-consent.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Select the consent form"><img src="images/econsent/choose-consent.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Select the consent form"></a></p>
+<figcaption>Select the consent form</figcaption>
+</figure>
+</div>
+<p>Another window will open, called <em>Enable e-Consent.</em> The first two</p>
+<ol start="2" type="1">
 <li><p>Click on <strong>e-Consent and PDF Snapshots</strong> in the <em>Data Collection Instruments</em> header box</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/enable-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="e-Consent and PDF Snapshots"><img src="images/econsent/enable-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent and PDF Snapshots"></a></p>
+<p><a href="images/econsent/enable-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="e-Consent and PDF Snapshots"><img src="images/econsent/enable-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent and PDF Snapshots"></a></p>
 <figcaption>e-Consent and PDF Snapshots</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/instruments-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Data Collection Instruments"><img src="images/econsent/instruments-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Data Collection Instruments"></a></p>
+<p><a href="images/econsent/instruments-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Data Collection Instruments"><img src="images/econsent/instruments-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Data Collection Instruments"></a></p>
 <figcaption>Data Collection Instruments</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="e-Consent Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent Settings"></a></p>
+<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-21" title="e-Consent Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="e-Consent Settings"></a></p>
 <figcaption>e-Consent Settings</figcaption>
 </figure>
 </div></li>
 </ol>
 </section>
-</section>
-<section id="configuring-settings" class="level2" data-number="10.6">
-<h2 data-number="10.6" class="anchored" data-anchor-id="configuring-settings"><span class="header-section-number">10.6</span> Configuring Settings</h2>
-<section id="primary-settings" class="level3" data-number="10.6.1">
-<h3 data-number="10.6.1" class="anchored" data-anchor-id="primary-settings"><span class="header-section-number">10.6.1</span> Primary Settings</h3>
+<section id="configuring-settings" class="level2" data-number="10.8">
+<h2 data-number="10.8" class="anchored" data-anchor-id="configuring-settings"><span class="header-section-number">10.8</span> Configuring Settings</h2>
+<section id="primary-settings" class="level3" data-number="10.8.1">
+<h3 data-number="10.8.1" class="anchored" data-anchor-id="primary-settings"><span class="header-section-number">10.8.1</span> Primary Settings</h3>
 <ul>
 <li>Allow user edits and specify name fields.</li>
 </ul>
 </section>
-<section id="additional-settings" class="level3" data-number="10.6.2">
-<h3 data-number="10.6.2" class="anchored" data-anchor-id="additional-settings"><span class="header-section-number">10.6.2</span> Additional Settings</h3>
+<section id="additional-settings" class="level3" data-number="10.8.2">
+<h3 data-number="10.8.2" class="anchored" data-anchor-id="additional-settings"><span class="header-section-number">10.8.2</span> Additional Settings</h3>
 <ul>
 <li><p>Add a <strong>Date of Birth</strong> field, custom headers/footers, and signature settings.</p></li>
 <li><p>Specify save locations and customize file names.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Settings"></a></p>
+<p><a href="images/econsent/settings-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-22" title="Settings"><img src="images/econsent/settings-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Settings"></a></p>
 <figcaption>Settings</figcaption>
 </figure>
 </div></li>
 </ul>
 </section>
 </section>
-<section id="updating-consent-forms" class="level2" data-number="10.7">
-<h2 data-number="10.7" class="anchored" data-anchor-id="updating-consent-forms"><span class="header-section-number">10.7</span> Updating Consent Forms</h2>
+<section id="updating-consent-forms" class="level2" data-number="10.9">
+<h2 data-number="10.9" class="anchored" data-anchor-id="updating-consent-forms"><span class="header-section-number">10.9</span> Updating Consent Forms</h2>
 <p>Studies with IRB oversight must check in periodically and inform the IRB about the study’s status. Among other tasks the researchers must obtain re-approval of their consent form. When you create an e-consent project, it is a good idea to put a note on your Outlook calendar reminding you to check with the researchers before their consent form expires. Then you will be better prepared to replace the consent and HIPAA forms with the latest versions, with the new expiration date given.</p>
 <ol type="1">
-<li>Click <strong>Add Consent Form</strong>.</li>
-<li>Specify the version number and upload the consent form.</li>
-<li>Save the new version.</li>
+<li>Notify the people who will be collecting the study’s informed consent that you will be working on the e-consent on REDCap and that they should pause using the e-consent until you inform them the new forms have been uploaded</li>
+<li>Go into Development Mode by such and such</li>
+<li>Go *** and *** then do such and such</li>
+<li>Click <strong>Add Consent Form</strong></li>
+<li>Specify the version number and upload the consent form</li>
+<li>Save the new version</li>
+<li>Ask for the project to be moved back into Production Mode</li>
+<li>After being notified that the project is in production, go to the survey and create a test record by completing the forms, using a name like <em>Testing REDCap</em></li>
+<li>If everything is working correctly, notify those collecting informed consent that the e-consent REDCap is back in production with the new forms, and they may see a test record in REDCap</li>
 </ol>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
