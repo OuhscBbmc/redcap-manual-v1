@@ -2,11 +2,6 @@
 abstract: Use e-consents to reduce paperwork and increase compliance.
 
 author:
-  - name: Vignesh Murugan
-    affiliation: University of Oklahoma Health Campus
-    attributes:
-      corresponding: true
-
   - name: Lise DeShea
     affiliation: University of Oklahoma Health Campus
     affiliation-url: https://ouhsc.edu/bbmc/
@@ -14,6 +9,9 @@ author:
     orcid: 0000-0003-3232-5216
     attributes:
       corresponding: true
+
+  - name: Vignesh Murugan
+    affiliation: University of Oklahoma Health Campus
 
   - name: Thomas Wilson
     affiliation: University of Oklahoma Health Campus
@@ -26,7 +24,7 @@ csl: ../assets/csl/apa-7e.csl
 
 # Electronic Consent {#sec-designadv-econsent}
 
-**Chapter Leads**: Vignesh Murugan, Lise DeShea, Thomas Wilson
+**Chapter Leads**: Lise DeShea, Vignesh Murugan, Thomas Wilson
 
 ## What is the Purpose of e-Consent? {#sec-designadv-purpose}
 
