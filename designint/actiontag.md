@@ -1,5 +1,5 @@
 ---
-abstract: Action tags 
+abstract: Action tags
 
 author:
   - name: Lise DeShea
@@ -71,9 +71,9 @@ Their entry will not be overwritten with Oklahoma at a later time.
 The default does not appear on the form you are creating in Online Designer.
 It appears in a record, if you click the *Add/Edit Record* link on the left side of the screen and create a new record (see [Creating Records](../index.qmd/create.md)).
 
-### `@NONEOFTHEABOVE` {#sec-designint-action-common-default}
+### `@NONEOFTHEABOVE` {#sec-designint-action-common-none}
 
-Let's say we have a REDCap project that allows people signing up for a conference to indicate their preferences for lunch. 
+Let's say we have a REDCap project that allows people signing up for a conference to indicate their preferences for lunch.
 We create a checkbox multiple-choice item where the respondents can indicate all of the acceptable options for lunch.
 One option is none of the above.
 
@@ -87,7 +87,7 @@ As we saw for the `@DEFAULT` action tag, the `@NONEOFTHEABOVE` action tag is fol
 Generally speaking, when REDCap refers to character values like 'none,' the value is enclosed in single or double quotation marks.
 When a numeric value is used to indicate "None of the above," then the number recorded in the data would follow the equals sign, without quotation marks.
 
-### `@MAXCHECKED` {#sec-designint-action-common-default}
+### `@MAXCHECKED` {#sec-designint-action-common-maxchecked}
 
 Suppose we do not want everyone to check every option in our list of lunch choices in this checkbox field.
 We can use the `@MAXCHECKED` action tag to limit everyone to their top 2 or 3 preferences.
