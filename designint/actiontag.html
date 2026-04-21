@@ -48,9 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b6a6750502247783af92f3817d3a54b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b04aaf2ec0371c49da615fb95a701e32.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-b6a6750502247783af92f3817d3a54b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5cf52aa591414b027f89c744fb3019cd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-02f9b826f3e302acbe33d831726c00e0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5cf52aa591414b027f89c744fb3019cd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -637,8 +637,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#sec-designint-action-common-hide" id="toc-sec-designint-action-common-hide" class="nav-link" data-scroll-target="#sec-designint-action-common-hide"><span class="header-section-number">9.2.1</span> <code>@HIDEBUTTON</code></a></li>
   <li><a href="#sec-designint-action-common-default" id="toc-sec-designint-action-common-default" class="nav-link" data-scroll-target="#sec-designint-action-common-default"><span class="header-section-number">9.2.2</span> <code>@DEFAULT</code></a></li>
-  <li><a href="#sec-designint-action-common-default" id="toc-sec-designint-action-common-default" class="nav-link" data-scroll-target="#sec-designint-action-common-default"><span class="header-section-number">9.2.3</span> <code>@NONEOFTHEABOVE</code></a></li>
-  <li><a href="#sec-designint-action-common-default" id="toc-sec-designint-action-common-default" class="nav-link" data-scroll-target="#sec-designint-action-common-default"><span class="header-section-number">9.2.4</span> <code>@MAXCHECKED</code></a></li>
+  <li><a href="#sec-designint-action-common-none" id="toc-sec-designint-action-common-none" class="nav-link" data-scroll-target="#sec-designint-action-common-none"><span class="header-section-number">9.2.3</span> <code>@NONEOFTHEABOVE</code></a></li>
+  <li><a href="#sec-designint-action-common-maxchecked" id="toc-sec-designint-action-common-maxchecked" class="nav-link" data-scroll-target="#sec-designint-action-common-maxchecked"><span class="header-section-number">9.2.4</span> <code>@MAXCHECKED</code></a></li>
   </ul></li>
   <li><a href="#sec-designint-action-lesscommon" id="toc-sec-designint-action-lesscommon" class="nav-link" data-scroll-target="#sec-designint-action-lesscommon"><span class="header-section-number">9.3</span> Less Common</a>
   <ul class="collapse">
@@ -740,10 +740,10 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <figcaption>DEFAULT action tag</figcaption>
 </figure>
 </div>
-<p>Notice that the value recorded in the data, OK, is the default value, not “Oklahoma,” which is the label. This action tag works only once, when the record is created. If the data entry people or survey respondent needed to change it to Texas, they can use the drop-down menu to do so. Their entry will not be overwritten with Oklahoma at a later time. The default does not appear on the form you are creating in Online Designer. It appears in a record, if you click the <em>Add/Edit Record</em> link on the left side of the screen and create a new record (see <a href="../index.qmd/create.md">Creating Records</a>).</p>
+<p>Notice that the value recorded in the data, OK, is the default value, not “Oklahoma,” which is the label. This action tag works only once, when the record is created. If the data entry people or survey respondent needed to change it to Texas, they can use the drop-down menu to do so. Their entry will not be overwritten with Oklahoma at a later time. The default does not appear on the form you are creating in Online Designer. It appears in a record, if you click the <em>Add/Edit Record</em> link on the left side of the screen and create a new record (see <a href="../begin/create.html">Creating Records</a>).</p>
 </section>
-<section id="sec-designint-action-common-default" class="level3" data-number="9.2.3">
-<h3 data-number="9.2.3" class="anchored" data-anchor-id="sec-designint-action-common-default"><span class="header-section-number">9.2.3</span> <code>@NONEOFTHEABOVE</code></h3>
+<section id="sec-designint-action-common-none" class="level3" data-number="9.2.3">
+<h3 data-number="9.2.3" class="anchored" data-anchor-id="sec-designint-action-common-none"><span class="header-section-number">9.2.3</span> <code>@NONEOFTHEABOVE</code></h3>
 <p>Let’s say we have a REDCap project that allows people signing up for a conference to indicate their preferences for lunch. We create a checkbox multiple-choice item where the respondents can indicate all of the acceptable options for lunch. One option is none of the above.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -760,8 +760,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 <p>As we saw for the <code>@DEFAULT</code> action tag, the <code>@NONEOFTHEABOVE</code> action tag is followed by an equals sign, then the value recorded in the data, ‘none’ – not the label “None of the above.” Generally speaking, when REDCap refers to character values like ‘none,’ the value is enclosed in single or double quotation marks. When a numeric value is used to indicate “None of the above,” then the number recorded in the data would follow the equals sign, without quotation marks.</p>
 </section>
-<section id="sec-designint-action-common-default" class="level3" data-number="9.2.4">
-<h3 data-number="9.2.4" class="anchored" data-anchor-id="sec-designint-action-common-default"><span class="header-section-number">9.2.4</span> <code>@MAXCHECKED</code></h3>
+<section id="sec-designint-action-common-maxchecked" class="level3" data-number="9.2.4">
+<h3 data-number="9.2.4" class="anchored" data-anchor-id="sec-designint-action-common-maxchecked"><span class="header-section-number">9.2.4</span> <code>@MAXCHECKED</code></h3>
 <p>Suppose we do not want everyone to check every option in our list of lunch choices in this checkbox field. We can use the <code>@MAXCHECKED</code> action tag to limit everyone to their top 2 or 3 preferences. We can change the Field label to “Indicate your top 3 preferences for lunch.” Then we click on the Action Tags/Field Annotation box to open the Logic Editor, where we list this action tag.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
