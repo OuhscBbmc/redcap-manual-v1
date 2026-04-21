@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Lise DeShea">
+<meta name="author" content="Steven Fowler">
 <meta name="author" content="Thomas Wilson">
 
-<title>9&nbsp; Action Tags – REDCap Manual for OU</title>
+<title>12&nbsp; Static Randomization of Patients – REDCap Manual for OU</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -35,8 +35,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../designadv/autoinvite.html" rel="next">
-<link href="../designbas/variable.html" rel="prev">
+<link href="../adminpr/user.html" rel="next">
+<link href="../designadv/econsent.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -94,9 +94,10 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="../assets/font-awesome.css">
 <link rel="stylesheet" href="../assets/tables.css">
-<meta name="citation_title" content="[[9]{.chapter-number}&nbsp; [Action Tags]{.chapter-title}]{#sec-designint-action .quarto-section-identifier}">
-<meta name="citation_abstract" content="Action tags">
-<meta name="citation_author" content="Lise DeShea">
+<meta name="citation_title" content="[[12]{.chapter-number}&nbsp; [Static Randomization of Patients]{.chapter-title}]{#sec-designadv-randomstatic .quarto-section-identifier}">
+<meta name="citation_abstract" content="Use the basic/static randomization features to assign patients to research groups, in order to increase the internal validity of a study. Static (as opposed to dynamic) randomization accommodates...
+">
+<meta name="citation_author" content="Steven Fowler">
 <meta name="citation_author" content="Thomas Wilson">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=The elements of statistical learning: Data mining, inference, and prediction;,citation_author=Trevor Hastie;,citation_author=Robert Tibshirani;,citation_author=Jerome H Friedman;,citation_author=Jerome H Friedman;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_volume=2;">
@@ -351,7 +352,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../designint/actiontag.html">Project Design (Intermediate)</a></li><li class="breadcrumb-item"><a href="../designint/actiontag.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Action Tags</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../designadv/autoinvite.html">Project Design (Advanced)</a></li><li class="breadcrumb-item"><a href="../designadv/randomstatic.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Static Randomization of Patients</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -484,7 +485,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../designint/actiontag.html" class="sidebar-item-text sidebar-link active">
+  <a href="../designint/actiontag.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Action Tags</span></span></a>
   </div>
 </li>
@@ -513,7 +514,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../designadv/randomstatic.html" class="sidebar-item-text sidebar-link">
+  <a href="../designadv/randomstatic.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Static Randomization of Patients</span></span></a>
   </div>
 </li>
@@ -632,46 +633,31 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-designint-action-purpose" id="toc-sec-designint-action-purpose" class="nav-link active" data-scroll-target="#sec-designint-action-purpose"><span class="header-section-number">9.1</span> Purpose</a></li>
-  <li><a href="#sec-designint-action-common" id="toc-sec-designint-action-common" class="nav-link" data-scroll-target="#sec-designint-action-common"><span class="header-section-number">9.2</span> Common</a>
-  <ul class="collapse">
-  <li><a href="#sec-designint-action-common-hide" id="toc-sec-designint-action-common-hide" class="nav-link" data-scroll-target="#sec-designint-action-common-hide"><span class="header-section-number">9.2.1</span> <code>@HIDEBUTTON</code></a></li>
-  <li><a href="#sec-designint-action-common-default" id="toc-sec-designint-action-common-default" class="nav-link" data-scroll-target="#sec-designint-action-common-default"><span class="header-section-number">9.2.2</span> <code>@DEFAULT</code></a></li>
-  <li><a href="#sec-designint-action-common-default" id="toc-sec-designint-action-common-default" class="nav-link" data-scroll-target="#sec-designint-action-common-default"><span class="header-section-number">9.2.3</span> <code>@NONEOFTHEABOVE</code></a></li>
-  <li><a href="#sec-designint-action-common-default" id="toc-sec-designint-action-common-default" class="nav-link" data-scroll-target="#sec-designint-action-common-default"><span class="header-section-number">9.2.4</span> <code>@MAXCHECKED</code></a></li>
-  </ul></li>
-  <li><a href="#sec-designint-action-lesscommon" id="toc-sec-designint-action-lesscommon" class="nav-link" data-scroll-target="#sec-designint-action-lesscommon"><span class="header-section-number">9.3</span> Less Common</a>
-  <ul class="collapse">
-  <li><a href="#sec-designint-action-lesscommon-setvalue" id="toc-sec-designint-action-lesscommon-setvalue" class="nav-link" data-scroll-target="#sec-designint-action-lesscommon-setvalue"><span class="header-section-number">9.3.1</span> <code>@SETVALUE</code></a></li>
-  <li><a href="#sec-designint-action-lesscommon-readonly" id="toc-sec-designint-action-lesscommon-readonly" class="nav-link" data-scroll-target="#sec-designint-action-lesscommon-readonly"><span class="header-section-number">9.3.2</span> <code>@READONLY</code></a></li>
-  <li><a href="#sec-designint-action-lesscommon-placeholder" id="toc-sec-designint-action-lesscommon-placeholder" class="nav-link" data-scroll-target="#sec-designint-action-lesscommon-placeholder"><span class="header-section-number">9.3.3</span> <code>@PLACEHOLDER</code></a></li>
-  </ul></li>
-  <li><a href="#sec-designint-action-other" id="toc-sec-designint-action-other" class="nav-link" data-scroll-target="#sec-designint-action-other"><span class="header-section-number">9.4</span> Many Other Action Tags</a></li>
+  <li><a href="#sec-designadv-randomstatic-purpose" id="toc-sec-designadv-randomstatic-purpose" class="nav-link active" data-scroll-target="#sec-designadv-randomstatic-purpose"><span class="header-section-number">12.1</span> What is the Purpose of Randomization?</a></li>
+  <li><a href="#preparing-to-build-the-e-consent" id="toc-preparing-to-build-the-e-consent" class="nav-link" data-scroll-target="#preparing-to-build-the-e-consent"><span class="header-section-number">12.2</span> Preparing to Build the e-Consent</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designint/actiontag.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designint/actiontag.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designadv/randomstatic.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designadv/randomstatic.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../designint/actiontag.html">Project Design (Intermediate)</a></li><li class="breadcrumb-item"><a href="../designint/actiontag.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Action Tags</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../designadv/autoinvite.html">Project Design (Advanced)</a></li><li class="breadcrumb-item"><a href="../designadv/randomstatic.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Static Randomization of Patients</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-designint-action" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Action Tags</span></span></h1>
+<h1 class="title"><span id="sec-designadv-randomstatic" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Static Randomization of Patients</span></span></h1>
 </div>
 
 
 <div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Lise DeShea <a href="mailto:lise-deshea@ou.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0003-3232-5216" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    <p class="author">Steven Fowler <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            <a href="https://ouhsc.edu/bbmc/">
             University of Oklahoma Health Campus
-            </a>
           </p>
       </div>
     <div class="quarto-title-meta-contents">
@@ -696,7 +682,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    Action tags
+    <p>Use the basic/static randomization features to assign patients to research groups, in order to increase the internal validity of a study. Static (as opposed to dynamic) randomization accommodates…</p>
   </div>
 </div>
 
@@ -704,125 +690,39 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </header>
 
 
-<!--comment-->
-<!--two # = 2nd level heading-->
-<p><strong>Chapter Leads</strong>: Lise DeShea &amp; Thomas Wilson</p>
-<section id="sec-designint-action-purpose" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="sec-designint-action-purpose"><span class="header-section-number">9.1</span> Purpose</h2>
-<p>Action tags are used in REDCap to modify the appearance or behavior of items in a project. They are added to the <em>Action Tags/Field Annotation</em> box under the Field Label in the Edit Field window for each variable.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/actiontag/actiontag-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Action Tags box"><img src="images/actiontag/actiontag-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Action Tags box"></a></p>
-<figcaption>Action Tags box</figcaption>
-</figure>
+<p><strong>Chapter Leads</strong>: Steven Fowler</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Chapter Draft
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This chapter is being written currently, as is available during development in case the preliminary version is helpful to someone.</p>
+<p>If you have suggested modifications or additions, please see <a href="../index.html#sec-welcome-contribute">How to Contribute</a> on the book’s welcome page.</p>
+</div>
+</div>
+<section id="sec-designadv-randomstatic-purpose" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="sec-designadv-randomstatic-purpose"><span class="header-section-number">12.1</span> What is the Purpose of Randomization?</h2>
+<p>To learn how to request a new project, see <a href="variable.md#sec-designbas-variable-howtolearn">Best Way to Learn</a>.</p>
 </section>
-<section id="sec-designint-action-common" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="sec-designint-action-common"><span class="header-section-number">9.2</span> Common</h2>
-<p>We will explain some of the more common action tags, then we will cover a few of the less common ones. We will start with a simple example.</p>
-<section id="sec-designint-action-common-hide" class="level3" data-number="9.2.1">
-<h3 data-number="9.2.1" class="anchored" data-anchor-id="sec-designint-action-common-hide"><span class="header-section-number">9.2.1</span> <code>@HIDEBUTTON</code></h3>
-<p>By default, date fields appear with a button labeled Today. Clicking that button fills in today’s date. Sometimes a project designer does not want that button available. A designer might want to force people reviewing past years’ medical records to enter that date’s year. Every action tag begins with an at-sign, @. The action tag to hide the Today button is <code>@HIDEBUTTON</code>. When you click inside the Action Tags/Field Annotation box, it then opens another window, called the <em>Logic Editor.</em></p>
+<section id="preparing-to-build-the-e-consent" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="preparing-to-build-the-e-consent"><span class="header-section-number">12.2</span> Preparing to Build the e-Consent</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/actiontag/logiceditor-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Logic Editor"><img src="images/actiontag/logiceditor-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Logic Editor"></a></p>
-<figcaption>Logic Editor</figcaption>
+<p><a href="images/randomstatic/placeholder-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="This is an example screenshot"><img src="images/randomstatic/placeholder-1.png" class="img-fluid figure-img" style="width:80.0%" alt="This is an example screenshot"></a></p>
+<figcaption>This is an example screenshot</figcaption>
 </figure>
 </div>
-<p>You can see that we have typed <code>@HIDEBUTTON</code> in the Logic Editor. What if you cannot remember if this action tag has a hyphen in the middle? You can click the red “@ Action Tags” button at the top of the Logic Editor and see a list of action tags and explanations. To save this action tag, you click <em>Update &amp; Close Editor</em>, then click the <em>Save</em> button on the Edit Field window. Now the Today button no longer appears next to the date field.</p>
-</section>
-<section id="sec-designint-action-common-default" class="level3" data-number="9.2.2">
-<h3 data-number="9.2.2" class="anchored" data-anchor-id="sec-designint-action-common-default"><span class="header-section-number">9.2.2</span> <code>@DEFAULT</code></h3>
-<p>Sometimes a project designer can use an action tag to make things easier for the people doing data entry inside REDCap. The action tag <code>@DEFAULT = '____'</code> can be used to set the starting value for a variable. In this example, you would put a default value in the blank. Let’s say we expect most of the people in a study to be residents of Oklahoma. We could set <code>@DEFAULT = 'OK'</code> so that Oklahoma shows up as the default state when a new record is created in REDCap.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/actiontag/state-default-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="DEFAULT action tag"><img src="images/actiontag/state-default-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="DEFAULT action tag"></a></p>
-<figcaption>DEFAULT action tag</figcaption>
+<p><a href="images/randomstatic/placeholder-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Here is another example"><img src="images/randomstatic/placeholder-2.png" class="img-fluid figure-img" style="width:80.0%" alt="Here is another example"></a></p>
+<figcaption>Here is another example</figcaption>
 </figure>
 </div>
-<p>Notice that the value recorded in the data, OK, is the default value, not “Oklahoma,” which is the label. This action tag works only once, when the record is created. If the data entry people or survey respondent needed to change it to Texas, they can use the drop-down menu to do so. Their entry will not be overwritten with Oklahoma at a later time. The default does not appear on the form you are creating in Online Designer. It appears in a record, if you click the <em>Add/Edit Record</em> link on the left side of the screen and create a new record (see <a href="../index.qmd/create.md">Creating Records</a>).</p>
-</section>
-<section id="sec-designint-action-common-default" class="level3" data-number="9.2.3">
-<h3 data-number="9.2.3" class="anchored" data-anchor-id="sec-designint-action-common-default"><span class="header-section-number">9.2.3</span> <code>@NONEOFTHEABOVE</code></h3>
-<p>Let’s say we have a REDCap project that allows people signing up for a conference to indicate their preferences for lunch. We create a checkbox multiple-choice item where the respondents can indicate all of the acceptable options for lunch. One option is none of the above.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/actiontag/noneoftheabove-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Action tag for checkbox field"><img src="images/actiontag/noneoftheabove-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Action tag for checkbox field"></a></p>
-<figcaption>Action tag for checkbox field</figcaption>
-</figure>
-</div>
-<p>The <code>@NONEOFTHEABOVE</code> action tag will prevent a respondent who answers “None of the above” from checking any other lunch item.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/actiontag/noneoftheabove-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="NONEOFTHEABOVE action tag"><img src="images/actiontag/noneoftheabove-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="NONEOFTHEABOVE action tag"></a></p>
-<figcaption>NONEOFTHEABOVE action tag</figcaption>
-</figure>
-</div>
-<p>As we saw for the <code>@DEFAULT</code> action tag, the <code>@NONEOFTHEABOVE</code> action tag is followed by an equals sign, then the value recorded in the data, ‘none’ – not the label “None of the above.” Generally speaking, when REDCap refers to character values like ‘none,’ the value is enclosed in single or double quotation marks. When a numeric value is used to indicate “None of the above,” then the number recorded in the data would follow the equals sign, without quotation marks.</p>
-</section>
-<section id="sec-designint-action-common-default" class="level3" data-number="9.2.4">
-<h3 data-number="9.2.4" class="anchored" data-anchor-id="sec-designint-action-common-default"><span class="header-section-number">9.2.4</span> <code>@MAXCHECKED</code></h3>
-<p>Suppose we do not want everyone to check every option in our list of lunch choices in this checkbox field. We can use the <code>@MAXCHECKED</code> action tag to limit everyone to their top 2 or 3 preferences. We can change the Field label to “Indicate your top 3 preferences for lunch.” Then we click on the Action Tags/Field Annotation box to open the Logic Editor, where we list this action tag.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/actiontag/maxchecked.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="MAXCHECKED action tag"><img src="images/actiontag/maxchecked.jpg" class="img-fluid figure-img" style="width:80.0%" alt="MAXCHECKED action tag"></a></p>
-<figcaption>MAXCHECKED action tag</figcaption>
-</figure>
-</div>
-</section>
-</section>
-<section id="sec-designint-action-lesscommon" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="sec-designint-action-lesscommon"><span class="header-section-number">9.3</span> Less Common</h2>
-<section id="sec-designint-action-lesscommon-setvalue" class="level3" data-number="9.3.1">
-<h3 data-number="9.3.1" class="anchored" data-anchor-id="sec-designint-action-lesscommon-setvalue"><span class="header-section-number">9.3.1</span> <code>@SETVALUE</code></h3>
-<p>Sometimes we want to help out the data entry people by setting the value of a field. A project may have a form especially for interviewing the first child in a family. We can use <code>@SETVALUE</code> to specify the child being interviewed.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/actiontag/setvalue-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="SETVALUE action tag"><img src="images/actiontag/setvalue-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="SETVALUE action tag"></a></p>
-<figcaption>SETVALUE action tag</figcaption>
-</figure>
-</div>
-<p>Let’s say we have created a record for a family, and we have used Form 1 to enter some family information. Now we want the first child’s name to appear on the next form, which is being used to record data from interviewing Child 1. We go into the family’s record and click on the form for interviewing Child 1. We will find Child 1’s name, which was entered in the first form, automatically has been piped into this new form.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/actiontag/setvalue-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="SETVALUE piped value"><img src="images/actiontag/setvalue-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="SETVALUE piped value"></a></p>
-<figcaption>SETVALUE piped value</figcaption>
-</figure>
-</div>
-<p>One caution: If you change the name that is piped into this field, it will revert to the piped-in value every time the record is opened. If you want to keep the data entry people from changing this value, you can use the next action tag.</p>
-</section>
-<section id="sec-designint-action-lesscommon-readonly" class="level3" data-number="9.3.2">
-<h3 data-number="9.3.2" class="anchored" data-anchor-id="sec-designint-action-lesscommon-readonly"><span class="header-section-number">9.3.2</span> <code>@READONLY</code></h3>
-<p>Adding the <code>@READONLY</code> action tag on the next line after <code>@SETVALUE = '[variablename]'</code> will make the field read-only for the data entry people.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/actiontag/readonly-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="READONLY action tag"><img src="images/actiontag/readonly-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="READONLY action tag"></a></p>
-<figcaption>READONLY action tag</figcaption>
-</figure>
-</div>
-<p>The child’s name piped into the family’s record will be in slightly gray font and cannot be edited.</p>
-</section>
-<section id="sec-designint-action-lesscommon-placeholder" class="level3" data-number="9.3.3">
-<h3 data-number="9.3.3" class="anchored" data-anchor-id="sec-designint-action-lesscommon-placeholder"><span class="header-section-number">9.3.3</span> <code>@PLACEHOLDER</code></h3>
-<p>The <code>@PLACEHOLDER</code> action tag will not record any data. It is used as a hint to the person filling out the form. We might have a multiple-choice item with “Other” as one of the options. If someone chooses Other, we may add a follow-up item asking for details. We can create gray text to appear in the box for their answer, giving a hint about what to put in the box. The words we want to appear in gray will be typed inside quotation marks after <code>@PLACEHOLDER =</code> as shown below.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/actiontag/placeholder-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="PLACEHOLDER action tag"><img src="images/actiontag/placeholder-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="PLACEHOLDER action tag"></a></p>
-<figcaption>PLACEHOLDER action tag</figcaption>
-</figure>
-</div>
-<p>And here is what the result will look like. The words in this action tag are not saved as data.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/actiontag/placeholder-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Grayed-out hint as PLACEHOLDER"><img src="images/actiontag/placeholder-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Grayed-out hint as PLACEHOLDER"></a></p>
-<figcaption>Grayed-out hint as PLACEHOLDER</figcaption>
-</figure>
-</div>
-</section>
-</section>
-<section id="sec-designint-action-other" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="sec-designint-action-other"><span class="header-section-number">9.4</span> Many Other Action Tags</h2>
-<p>If you have a specification that you would like to make in a form, there may be an action tag to help. Just look through the available action tags by clicking on the red button inside the Logic Editor for action tags, clicking the link on the left side of the page in a REDCap project for <em>Help &amp; FAQ</em>, or searching online.</p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1261,13 +1161,13 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../designbas/variable.html" class="pagination-link" aria-label="Variable Decisions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Variable Decisions</span></span>
+      <a href="../designadv/econsent.html" class="pagination-link" aria-label="Electronic Consent">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Electronic Consent</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../designadv/autoinvite.html" class="pagination-link" aria-label="Automated Invitations">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Automated Invitations</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../adminpr/user.html" class="pagination-link" aria-label="User Admin">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">User Admin</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1279,7 +1179,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designint/actiontag.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designint/actiontag.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designadv/randomstatic.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designadv/randomstatic.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Part of <a href="https://ouhsc.edu/">OU Health Sciences</a>.</p>
 </div>
