@@ -1,5 +1,7 @@
 ---
-abstract: Upgrade REDCap Version
+abstract: >
+  This chapter discusses important decisions during the planning process,
+  as well as the specific steps to regularly update REDCap efficiently.
 
 author:
   - name: Will Beasley
@@ -45,14 +47,16 @@ doesn't look right.
 
 As of February 2026, best practices recommended _not_ using
 the "Easy Upgrade" procedure.
-See Community Post qqqq for further details.
+See Community Post [272424](https://redcap.vumc.org/community/post.php?id=272424&comment=272776)
+for further details.
 
 ### Offline vs Online Upgrade
 
 Most upgrades require minor changes to the underlying MariaDB database,
 and the developers do not recommend taking the server offline during the process.
 However occasional upgrades are substantial enough,
-and the upgrade process will warn the administrator it is recommended.
+and the Upgrade Module will recommend the administrator take the instance offline.
+The warning appears in the "Obtain SQL Update Code" section.
 
 In these cases, consider upgrading the nonproduction instance during the week,
 and the production instance during the weekends or nights to minimize
@@ -82,22 +86,28 @@ So given the larger risks of big hops we recommend:
 1. Snapshotting before each jump (and don't delete them until the entire upgrade process is complete)
 1. Validating after each jump.
 
+### OS Updates
+
+Consider checking if your OS and related packages are up-to-date.
+On RHEL, use the `dnf` command.
+
+```bash
+sudo dnf upgrade
+```
+
 ## Test and Production Instances
 
 The steps above pertain to updating a single instance of REDCap.
 In addition to your _production_ instance,
 we strongly suggest you host a _test_ or _development_ too.
+^[The distinction between a test instance and development instance
+is important to some aspects of server administration,
+but not to this aspect.
+Update all the nonproduction servers you have before your production servers.]
 If so, perform these steps on the non-production server
 and verify things operate correctly
 to minimize the chance the research will be disrupted
 when you upgrade the production instance.
-
-TODO: add footnote
-
-> The distinction between a test instance and development instance
-> is important to some aspects of server administration,
-> but not to this aspect.
-> Update all the nonproduction servers you have before your production servers.
 
 ## Steps
 
@@ -122,8 +132,8 @@ Make sure you select the correct value among these three dimensions:
 ### Transfer file
 
 Transfer the zipped file from your client machine to the web server,
-using a tool like WinSCP.
-For this scenario, say it's transferred to the "Downloads" directory
+using a tool like [WinSCP](https://winscp.net/).
+For this scenario, say it's transferred to the "Downloads/upgrades" directory
 of the "eaglesmith" account.
 
 ### Update Web Server
@@ -138,12 +148,25 @@ where they are visible and available to users.
 On a Linux distribution like RHEL, the code is:
 
 ```bash
-# !! This is rough from memory.  I haven't tested it yet. !!
+# Delete any 'redcap' directory unzipped from previous upgrades
+cd /home/eaglesmith/Downloads/upgrades
+rm -rf redcap
+
 # Unzip the file into a directory.
-unzip /usr/eaglesmith/Downloads/redcap_*.zip
+# If sudo is required, you're probably in the wrong directory
+# If you unzipped previous versions, you'll be asked to override
+# * Upgrade_Instructions.txt and
+# * REDCap_License.txt.
+unzip /home/eaglesmith/Downloads/upgrades/redcap*_upgrade.zip
 
 # Move the directory to a redcap subdirectory.
-mv /usr/eaglesmith/Downloads/redcap_ /var/www/html/redcap
+sudo mv /home/eaglesmith/Downloads/upgrades/redcap/redcap_v*/ /var/www/html/redcap/
+
+# Verify it was moved to the correct location.
+cd /var/www/html/redcap/
+
+# Should see the new directory, as well as the existing one
+ls
 ```
 
 ### Obtain SQL Update Code
@@ -152,32 +175,44 @@ The second component to upgrade is the database,
 which involves executing SQL code that
 REDCap's installation process provides you.
 
-TODO: replace with the real link:
-
-After moving the PHP code, go to `<redcap-installation>/upgrade.php`,
+After moving the PHP code, go to `<redcap-installation>/<redcap_version>/ControlCenter/`,
 from your desktop.
-The page should indicate that the previous step was successful
-and provide SQL code.
+Near the top of the page,
+click a green banner proclaiming something like,
+"Ready to upgrade to REDCap 12.3.4! Click here to navigate to the REDCap upgrade page."
 
-Save the code as a sql file,
-then transfer the file from your desktop to the database server,
-specifically `usr/eaglesmith/redcap-upgrades`.
+This will take you to the "Upgrade Module",
+which should indicate that the previous step was successful and provide SQL code.
+Choose "Option C: Download the SQL upgrade script as a file"
+to save the code as a sql file to your desktop machine
+along the lines of "redcap_upgrade_120304.sql".
+
+![Upgrade Module](images/upgrade/upgrade-module-1.png){width=80%}
+
+Transfer the file from your desktop to the _database_ server,
+specifically `home/eaglesmith/redcap-upgrades`.
 For the sake of consistency,
-use the same approach as you transferred the PHP code to the web server in the previous step.
+use the same approach as you transferred the PHP code to the web server in the previous step.[^sql-transfer]
 
-TODO: add as a foot note
-> It may be possible to copy the code from the web page and
-> paste it into the database IDE,
-> but we prefer the proposed approach for two reasons:
->
-> 1. the sql file helps document changes if you need to reconstruct something
-> 1. It's tricky moving the code across machines if
->    the linux server-client procotol doesn't support copy-paste operations.
+[^sql-transfer]:
+  It may be possible to copy the code from the web page and
+  paste it into the database IDE,
+  but we prefer the proposed approach for two reasons:
+
+    1. The sql file helps document changes
+       if you need to reconstruct something.
+
+    1. It's tricky moving the code across machines if
+       the Linux server-client protocol doesn't support
+       copy-paste operations.
 
 ### Update Database Server
 
 Log into the database server and open a database IDE.
-Open the new upgrade sql file.
+Open the new upgrade sql file.^[[MySQL Workbench](https://www.mysql.com/products/workbench/)
+and [phpMyAdmin](https://www.phpmyadmin.net/)
+are popular tools for MariaDB/MySQL databases.
+Our slight preference is [DBeaver](https://dbeaver.io/).]
 Execute the entire file.
 
 Although the entire file should be executed eventually,
@@ -194,10 +229,6 @@ Run small snippets of the code individually.
 This incremental approach will help you identify where the code failed,
 and therefore be more suggestive how to solve the problem.
 
-TODO: footnote:
-> MySQL Workbench is a popular IDE for MariaDB/MySQL databases.
-> Our slight preference is DBeaver.
-
 ::: {.callout-note appearance="simple"}
 
 #### Database Context
@@ -206,23 +237,45 @@ You don't need to learn SQL to upgrade REDCap,
 but a little understanding of the process
 could help if the process doesn't go smoothly.
 
-All upgrades will involve a least one line of [DML SQL]()
+All upgrades will involve a least one line of
+[DML SQL](https://www.datacamp.com/tutorial/sql-dml-commands-mastering-data-manipulation-in-sql)
 code that adjust configuration values,
 like the one that increases `redcap_version`.
 
-More substantial upgrades involve [DDL SQL]()
+More substantial upgrades involve
+[DDL SQL](https://www.dbvis.com/thetable/sql-ddl-the-definitive-guide-on-data-definition-language/)
 code that modifies the structure of the database,
 like adding a table to support a new feature.
 :::
 
 ### Verify Installation
 
-1. Config Check page
-1. Test and Validate
+#### Configuration Check
+
+After updating the database, the Upgrade Module will redirect to the Configuration Check.
+Inspect that all the "Basic" and "Secondary" tests pass.
+
+![Configuration Check](images/upgrade/config-check-1.png){width=80%}
+
+#### Test and Validate
+
+The next step should be to follow your institution's procedure for testing
+the instance again.
+Furthermore, we recommend reading the ChangeLog on the Community site,
+and focusing on any new features within the release.
+
+For example, if some features or fixes involve the
+Clinical Data Interoperability Services (CDIS),
+check that the basic FHIR operations are performing as you expect.
 
 ### Clean Up
 
 1. Delete Previous Versions
+
+```bash
+# Be very careful that you specify the *previous/old* version(s) correctly.
+sudo rm -rf /var/www/html/redcap/redcap_v12.1.2
+```
 
 ::: {.callout-note appearance="simple"}
 
