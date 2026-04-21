@@ -39,7 +39,7 @@ If you have suggested modifications or additions, please see [How to Contribute]
 
 ## What is the Purpose of Randomization? {#sec-designadv-randomstatic-purpose}
 
-To learn how to request a new project, see [Best Way to Learn](variable.md#sec-designbas-variable-howtolearn).
+To learn how to request a new project, see [Best Way to Learn](../designbas/variable.md#sec-designbas-variable-howtolearn).
 
 ## Preparing to Build the e-Consent
 

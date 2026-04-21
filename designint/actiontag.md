@@ -69,7 +69,7 @@ This action tag works only once, when the record is created.
 If the data entry people or survey respondent needed to change it to Texas, they can use the drop-down menu to do so.
 Their entry will not be overwritten with Oklahoma at a later time.
 The default does not appear on the form you are creating in Online Designer.
-It appears in a record, if you click the *Add/Edit Record* link on the left side of the screen and create a new record (see [Creating Records](../index.qmd/create.md)).
+It appears in a record, if you click the *Add/Edit Record* link on the left side of the screen and create a new record (see [Creating Records](../begin/create.md)).
 
 ### `@NONEOFTHEABOVE` {#sec-designint-action-common-none}
 

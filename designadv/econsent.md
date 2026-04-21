@@ -40,7 +40,7 @@ For most studies we recommend having the e-consent process separate from any RED
 Data collection often is de-identified or has limited identifiers, such as a participant ID that the researchers link to the participants' identities in a secure file outside of REDCap.
 Because participants are identified in consent forms, the e-consent should be in its own project.
 
-To learn how to request a new project, see [Best Way to Learn](variable.md#sec-designbas-variable-howtolearn).
+To learn how to request a new project, see [Best Way to Learn](../designbas/variable.md#sec-designbas-variable-howtolearn).
 
 ## Preparing to Build the e-Consent
 
@@ -70,7 +70,7 @@ You will need to create two instruments: one for the consent form and one for th
 - Modify the information in the window that pops up, as shown below.
 - The first box is the name that will appear in Designer, and the second box is how the form will be referenced inside the REDCap data collection.
 - Once these changes are made, click *Apply.*
-- 
+-
    ![Rename the default Form 1](images/econsent/rename-form-1.jpg){width="80%"}
 
 Now create a new instrument called HIPAA by clicking on the button that says *Create.*
