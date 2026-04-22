@@ -17,6 +17,16 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Will Beasley
 
+::: {.callout-warning appearance="simple"}
+
+## Chapter Draft
+
+This chapter is being written currently,
+as is available during development in case the preliminary version is helpful to someone.
+
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's welcome page.
+:::
+
 ## Motivations {#sec-adminser-security-motivations}
 
 Security is one of the most important roles as a REDCap administrator.
