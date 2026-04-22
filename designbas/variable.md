@@ -38,7 +38,7 @@ If you named everything "item_1," "item_2," "item_3," etc., whoever analyzes the
 will have a hard time understanding what the variables mean.
 This chapter will lead you through many decisions about variables.
 
-## Variable names {#sec-designbas-variable-variablenames}
+## Variable names {#sec-designbas-variable-names}
 
 The most basic detail to decide about a variable is what to call it: the variable name.
 That decision often is tied up in what kind of variable it is.
@@ -110,7 +110,7 @@ A better choice might be *name_parent_first.*
 
 ![Parent's first name](images/variable/parent-first-name.jpg){width=80%}
 
-## Field Types {#sec-designbas-variable-fieldtypes}
+## Field Types {#sec-designbas-variable-types}
 
 As mentioned above, REDCap can capture many kinds of data.
 Let's look at variable_3 and see what kinds of variables are available.
@@ -125,7 +125,7 @@ or ensure that an email address is in a valid format.
 The specs also can set limits on numbers so a data entry person could not
 accidentally enter a person's age as 150 years old, instead of 15.
 
-### Text Box {#sec-designbas-variable-fieldtypes-textbox}
+### Text Box {#sec-designbas-variable-types-textbox}
 
 A *Text Box* field can handle many kinds of data.
 How do we specify which kind of entries will be valid?
@@ -148,7 +148,7 @@ We will enter the minimum and maximum ages possible for this study.
 If someone entering data typed an age outside that range, an error message will appear,
 saying the number is beyond the limits you set.
 
-### Calculated Field {#sec-designbas-variable-fieldtypes-calculatedfield}
+### Calculated Field {#sec-designbas-variable-types-calculated}
 
 A Calculated Field can take a number from a previously entered variable and perform a calculation.
 For example, the project already may have two variables capturing a newborn infant's number of weeks and number of days of gestation.
@@ -168,7 +168,7 @@ Notice the use of square brackets around both variable names used in the equatio
 You can use parentheses liberally to make sure the order of mathematical operations is correct.
 The spaces in this formula could be removed and make no difference to the Logic Editor.
 
-### Multiple Choice - Drop-down list {#sec-designbas-variable-fieldtypes-multiplechoicedropdown}
+### Multiple Choice - Drop-down list {#sec-designbas-variable-types-dropdown}
 
 Now we will explain the three kinds of multiple-choice fields available in REDCap.
 A drop-down list of response options is helpful when you have a long list of options, such as state of residence, because it saves space.
@@ -181,17 +181,17 @@ In the space at the bottom of the window, called "Choices (one choice per line),
 
 ![Enter drop-down values](images/variable/dropdown-2.jpg){width=80%}
 
-### Multiple Choice - Radio Buttons {#sec-designbas-variable-fieldtypes-multiplechoiceradio}
+### Multiple Choice - Radio Buttons {#sec-designbas-variable-fieldtypes-radio}
 
 When you need fewer multiple-choice options, you can choose a Multiple Choice - Radio Buttons field. Everything else about  that field is the same as the drop-down list option.
 
-### Multiple Choice - Checkboxes {#sec-designbas-variable-fieldtypes-multiplechoicecheckbox}
+### Multiple Choice - Checkboxes {#sec-designbas-variable-fieldtypes-checkbox}
 
 Checkboxes for a multiple choice item are different.
 Checkboxes allow for multiple responses, such as you would need for an item saying, "Check all that apply."
 Other than specifying "Checkboxes (Multiple Answers)" for the Field Type, this kind of multiple-choice item is just like the other multiple-choice items.
 
-### Date variables {#sec-designbas-variable-datevariables}
+### Date variables {#sec-designbas-variable-fieldtypes-date}
 
 Let's look at a date field.
 We will change variable_4 in our example project to the date of birth for the first child in our study.
@@ -207,7 +207,7 @@ specific, we will choose Y-M-D.
 (This recommendation is in keeping with the International Organization for Standardization 8601, which you can find online.
 This format eases sorting data by earliest to latest date.)
 
-### True/False and Yes/No variables {#sec-designbas-variable-truefalseyesno}
+### True/False and Yes/No variables {#sec-designbas-variable-fieldtypes-boolean}
 
 These two kinds of variables are like multiple-choice items, except REDCap creates the response options for you.
 Examples are shown below.
@@ -216,7 +216,7 @@ Examples are shown below.
 
 ![Yes/No item](images/variable/yesno.jpg){width=80%}
 
-### Signature variable {#sec-designbas-variable-signature}
+### Signature variable {#sec-designbas-variable-fieldtypes-signature}
 
 Sometimes an online survey will require a signature from the person completing it.
 REDCap allows you to do that.
@@ -231,7 +231,7 @@ You could specify whether it is a required field, whether it contains personal i
 
 ![Signature field in editor](images/variable/signature-2.jpg){width=80%}
 
-### File upload {#sec-designbas-variable-upload}
+### File upload {#sec-designbas-variable-fieldtypes-upload}
 
 Surveys sometimes require an image or document to be uploaded. Either kind of file can be uploaded with a File Upload field.
 It looks a lot like a signature field when you are in the Online Designer.
@@ -243,7 +243,7 @@ It also looks like a signature field when you are in the Edit Variable window, w
 
 ![File upload field in editor](images/variable/upload-2.jpg){width=80%}
 
-### Slider/Visual Analog Scale {#sec-designbas-slider}
+### Slider/Visual Analog Scale {#sec-designbas-variable-fieldtypes-slider}
 
 Sometimes investigators like to ask questions on a survey that ask respondents to rate how they feel on a scale, such as 1 = Very unsatisfied to 7 = Very satisfied.
 A Slider/Visual Analog Scale item allows the respondent to move a button on a slider from left to right and choose an answer.
@@ -257,7 +257,7 @@ We can see the slider in Online Designer.
 
 ![Slider field in editor](images/variable/slider-2.jpg){width=80%}
 
-### Descriptive Text {#sec-designbas-descriptivetext}
+### Descriptive Text {#sec-designbas-variable-fieldtypes-descriptive}
 
 A Descriptive Text field allows the REDCap project designer to add notes or images that do not collect any data.
 This kind of field can use HTML coding or rich-text editing (with the HTML hidden from you).
@@ -272,13 +272,13 @@ In the Edit Field window, you will see this item was created using HTML and imag
 
 The image above shows a red box around the HTML, a green box where the image, file, or audio was attached, and the blood box shows we have selected "Inline image/PDF" so that the uploaded image appears with the HTML note.
 
-### Begin New Section {#sec-designbas-beginnewsection}
+### Begin New Section {#sec-designbas-variable-fieldtypes-newsection}
 
 The last option in the drop-down menu in the Edit Field window is Begin New Section.
 This option is available for REDCap users who are implementing a long online survey that needs to break occasionally and carry over to subsequent webpages.
 We will not illustrate this option, as it is rarely used.
 
-## Creating a new variable {#sec-designbas-variable-newvariables}
+## Creating a new variable {#sec-designbas-variable-new}
 
 Our examples so far have shown variables that already existed in a REDCap
 project.
@@ -298,7 +298,7 @@ Note that we chose Phone (North America) as the Validation standard.
 If someone enters a
 phone number without an area code, an error message will say an invalid number was entered.
 
-### Matrix of Fields {#sec-designbas-matrixoffields}
+### Matrix of Fields {#sec-designbas-variable-new-matrix}
 
 REDCap allows you to create a table that will hold many items similar to the slider field, except it has buttons and labels are possible for each rating.
 This is called a *Matrix of Fields*.
