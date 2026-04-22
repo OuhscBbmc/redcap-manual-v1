@@ -171,9 +171,9 @@ The spaces in this formula could be removed and make no difference to the Logic 
 ### Multiple Choice - Drop-down list {#sec-designbas-variable-fieldtypes-multiplechoicedropdown}
 
 Now we will explain the three kinds of multiple-choice fields available in REDCap.
-A drop-down list of response options is helpful when you have a long list of options, such as state of residence, because it saves space. 
-It also is helpful when the project has specified values for missing values, which can automatically appear as options in the list. 
-The image below shows a variable with the Field Type: Multiple Choice - Drop-down List (Single Answer). 
+A drop-down list of response options is helpful when you have a long list of options, such as state of residence, because it saves space.
+It also is helpful when the project has specified values for missing values, which can automatically appear as options in the list.
+The image below shows a variable with the Field Type: Multiple Choice - Drop-down List (Single Answer).
 
 ![Drop-down list variable](images/variable/dropdown-1.jpg){width=80%}
 
@@ -233,7 +233,7 @@ You could specify whether it is a required field, whether it contains personal i
 
 ### File upload {#sec-designbas-variable-upload}
 
-Surveys sometimes require an image or document to be uploaded. Either kind of file can be uploaded with a File Upload field. 
+Surveys sometimes require an image or document to be uploaded. Either kind of file can be uploaded with a File Upload field.
 It looks a lot like a signature field when you are in the Online Designer.
 There is an upload link at the bottom right that will be active when a survey is created.
 
@@ -246,7 +246,7 @@ It also looks like a signature field when you are in the Edit Variable window, w
 ### Slider/Visual Analog Scale {#sec-designbas-slider}
 
 Sometimes investigators like to ask questions on a survey that ask respondents to rate how they feel on a scale, such as 1 = Very unsatisfied to 7 = Very satisfied.
-A Slider/Visual Analog Scale item allows the respondent to move a button on a slider from left to right and choose an answer. 
+A Slider/Visual Analog Scale item allows the respondent to move a button on a slider from left to right and choose an answer.
 Here is what this kind of variable looks like in the Edit Field window.
 
 ![Slider field in editor](images/variable/slider-1.jpg){width=80%}
@@ -259,7 +259,7 @@ We can see the slider in Online Designer.
 
 ### Descriptive Text {#sec-designbas-descriptivetext}
 
-A Descriptive Text field allows the REDCap project designer to add notes or images that do not collect any data. 
+A Descriptive Text field allows the REDCap project designer to add notes or images that do not collect any data.
 This kind of field can use HTML coding or rich-text editing (with the HTML hidden from you).
 It also allows you to upload an image to appear in a survey.
 Here is what an example Descriptive Text field looks like in Online Designer.
@@ -274,7 +274,7 @@ The image above shows a red box around the HTML, a green box where the image, fi
 
 ### Begin New Section {#sec-designbas-beginnewsection}
 
-The last option in the drop-down menu in the Edit Field window is Begin New Section. 
+The last option in the drop-down menu in the Edit Field window is Begin New Section.
 This option is available for REDCap users who are implementing a long online survey that needs to break occasionally and carry over to subsequent webpages.
 We will not illustrate this option, as it is rarely used.
 
