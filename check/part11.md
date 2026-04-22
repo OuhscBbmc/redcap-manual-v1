@@ -7,12 +7,12 @@ abstract: >
 
 author:
   - name: Thomas Wilson
-    affiliation: University of Oklahoma Health Sciences
+    affiliation: University of Oklahoma Health Campus
     affiliation-url: https://ouhsc.edu/bbmc/
     email: thomas-wilson@ou.edu
     orcid: 0009-0009-1239-1348
   - name: William H Beasley
-    affiliation: University of Oklahoma Health Sciences
+    affiliation: University of Oklahoma Health Campus
     affiliation-url: https://research.ouhsc.edu/ocri
     email: wibeasley@hotmail.com
     orcid: 0000-0002-5613-5006

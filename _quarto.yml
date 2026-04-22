@@ -5,9 +5,6 @@ bibliography: references.bib
 
 google-scholar: true
 
-# This is hack to make the
-# abstract: "Eder, Franz. 2022. *Politikwissenschaftliches Arbeiten: Eine Einführung*. Innsbruck: Institut für Politikwissenschaft, Universität Innsbruck. [https://doi.org/10.25651/4.2022.0001](https://doi.org/10.25651/4.2022.0001)."
-
 format:
   html:
     theme:
@@ -58,16 +55,16 @@ book:
     left: |
       <a href="https://research.ouhsc.edu/ocri">OCRI</a> &copy; <a href="https://creativecommons.org/licenses/by-nd/4.0/"> CC BY-ND 4</a>
     right: |
-      Part of <a href="https://ouhsc.edu/">OU Health Sciences</a>.
+      Part of <a href="https://ouhsc.edu/">OU Health Campus</a>.
 
   editor:
   - name: William H Beasley
-    affiliation: University of Oklahoma Health Sciences
+    affiliation: University of Oklahoma Health Campus
     affiliation-url: https://research.ouhsc.edu/ocri
     email: wibeasley@hotmail.com
     orcid: 0000-0002-5613-5006
   - name: Thomas Wilson
-    affiliation: University of Oklahoma Health Sciences
+    affiliation: University of Oklahoma Health Campus
     affiliation-url: https://research.ouhsc.edu/ocri
     email: thomas-wilson@ou.edu
     orcid: 0009-0009-1239-1348
