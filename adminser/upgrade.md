@@ -134,7 +134,7 @@ Make sure you select the correct value among these three dimensions:
 Transfer the zipped file from your client machine to the web server,
 using a tool like [WinSCP](https://winscp.net/).
 For this scenario, say it's transferred to the "Downloads/upgrades" directory
-of the "eaglesmith" account.
+of the user's home directory.
 
 ### Update Web Server
 
@@ -149,7 +149,7 @@ On a Linux distribution like RHEL, the code is:
 
 ```bash
 # Delete any 'redcap' directory unzipped from previous upgrades
-cd /home/eaglesmith/Downloads/upgrades
+cd ~/Downloads/upgrades
 rm -rf redcap
 
 # Unzip the file into a directory.
@@ -157,10 +157,10 @@ rm -rf redcap
 # If you unzipped previous versions, you'll be asked to override
 # * Upgrade_Instructions.txt and
 # * REDCap_License.txt.
-unzip /home/eaglesmith/Downloads/upgrades/redcap*_upgrade.zip
+unzip ~/Downloads/upgrades/redcap*_upgrade.zip
 
 # Move the directory to a redcap subdirectory.
-sudo mv /home/eaglesmith/Downloads/upgrades/redcap/redcap_v*/ /var/www/html/redcap/
+sudo mv ~/Downloads/upgrades/redcap/redcap_v*/ /var/www/html/redcap/
 
 # Verify it was moved to the correct location.
 cd /var/www/html/redcap/
@@ -190,7 +190,7 @@ along the lines of "redcap_upgrade_120304.sql".
 ![Upgrade Module](images/upgrade/upgrade-module-1.png){width=80%}
 
 Transfer the file from your desktop to the _database_ server,
-specifically `home/eaglesmith/redcap-upgrades`.
+specifically `~/redcap-upgrades`.
 For the sake of consistency,
 use the same approach as you transferred the PHP code to the web server in the previous step.[^sql-transfer]
 
