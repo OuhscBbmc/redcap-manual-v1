@@ -199,12 +199,9 @@ use the same approach as you transferred the PHP code to the web server in the p
   paste it into the database IDE,
   but we prefer the proposed approach for two reasons:
 
-    1. The sql file helps document changes
-       if you need to reconstruct something.
+    1. The sql file helps document changes if you need to reconstruct something.
 
-    1. It's tricky moving the code across machines if
-       the Linux server-client protocol doesn't support
-       copy-paste operations.
+    1. It's tricky moving the code across machines if the Linux server-client protocol doesn't support copy-paste operations.
 
 ### Update Database Server
 
