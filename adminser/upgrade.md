@@ -255,7 +255,7 @@ like adding a table to support a new feature.
 After updating the database, the Upgrade Module will redirect to the Configuration Check.
 Inspect that all the "Basic" and "Secondary" tests pass.
 
-![Configuration Check](images/upgrade/config-check-1.png){width=80%}
+![Configuration Check](images/upgrade/config-check-1.png){width=40%}
 
 #### Test and Validate
 
