@@ -115,7 +115,6 @@ book:
   - part: Checklists
     chapters:
     - check/testing.md
-    - check/testing2.md
     - check/part11.md
 
   - part: Troubleshooting
