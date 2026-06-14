@@ -53,7 +53,7 @@ Before sending your instruments or survey for testing, the designer (you) will n
 
 _Check the field type for every variable_
 
-Make sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as MM/DD/YYYY? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button. A checkbox field allows multiple responses to be chosen on a multiple-choice item.
+Make sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as YYYY-MM-DD? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button or a drop-down menu. In contrast, a checkbox field allows multiple responses to be chosen on a multiple-choice item.
 
 ### Use clear language {#sec-check-testing-before-language}
 
@@ -78,7 +78,7 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99
 ```
 
 A subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birth date.
-And forget about being able to calculate someone's current age based on these data! Use data validation in REDCap whenever possible.
+And forget about being able to calculate someone's current age based on these data! Use REDCap's built-in data validation capability whenever possible.
 Go through your items and figure out if you can validate each field in some way.
 Even something like "Child's age" could be entered numerous ways in a free-text field:
 
@@ -87,7 +87,8 @@ Seven    7 years old        Don't know      8 on his next birthday
 7        7 years, 4 months  I don't know
 ```
 
-You might modify your item to specify "Child's age (in years)" and use data validation to require the person to enter an integer.
+You might modify your item to specify "Child's age (in years)" and use data validation to require the person to enter an integer
+greater than 0 and less than 18.
 
 ### Necessary Data {#sec-check-testing-before-necessary}
 
@@ -104,6 +105,7 @@ _Test the survey yourself_
 * Many times, omissions or errors can be found by testing the survey/instrument yourself.
 * Enter test data. If you are testing a survey, follow along with the paper survey and see if it matches with what is in REDCap.
 * Review the data you just entered and see if the data is what you expected.
+* Check all branching logic and make sure the fields that are supposed to become available to the respondent actually open up for data entry.
 
 ## Select Testers {#sec-check-testing-others}
 
@@ -111,28 +113,27 @@ _When you decide you are ready to have individuals enter test data on your instr
 
 ### First Tester {#sec-check-testing-others-person}
 
-_Have Ask at least one other person to enter test data in your instruments or survey_
+Ask at least one other person to enter test data in your instruments or survey_
 
 * Sometimes the person creating the project is too close to it and can't see its limitations. A second, third or fourth set of eyes is crucial, and they can enter many test records with different scenarios in mind.
 * Could any of the items be misunderstood by a naïve user?
-* Check the data entered to see if the questions meet goals of the project? Example:
+* Check the data entered to see if the questions meet the goals of the project? Example:
   * If people with diabetes need to answer extra questions, has the branching logic been set up correctly so that those items only appear when someone says they have diabetes? Your tester(s) should enter data for different kinds of study participants. This step is important to complete before a project is moved into production because you may not be able to test changes in branching logic at a later point.
 * Does the survey work equally well on a cell phone vs. a computer? Having multiple testers will allow you to have them test the project on different platforms.
 * Is there enough room in the text box for answers or do you need to change it to a notes box?
 
 _Testing a public survey_
 
-* Public surveys can be distributed from REDCap email or through an OU email with an embedded link.
+* Public surveys can be distributed from the REDCap email system or through an OU email with an embedded link.
   The tester's email address is required.
 * If there is a paper survey, send selected individuals a copy and have them check to see if it matches what they see in REDCap.
   Other testers can test the survey without using the paper survey.
 
 _Testing data collection forms that are not surveys_
 
-* Testing data collection forms in REDCap (i.e., it is not a public survey),
-  will need to be done by individuals within your group or by individuals that who have access in the project
-  for testing only and will need to be removed from the project
-  prior to pushing the project to production and prior to collecting data collection.
+* Testing data collection forms used only within REDCap (i.e., it is not a public survey) will need to be done by individuals within your group or by individuals who will have temporary access to the project
+  for testing only. They will need to be removed from the project
+  prior to pushing the project to production and prior to starting actual data collection.
 
 ### Compared to Printed Versions {#sec-check-testing-others-printed}
 
@@ -145,6 +146,7 @@ _Have at least one other person who is familiar with the study or investigation 
 * Are all the items present?
 * Have any items been added that were not approved by the IRB (and therefore should be deleted)?
 * Are calculated variables producing correct answers?
+* Can the investigators confirm who has been approved as key personnel by the IRB so only those people are given access to the REDCap project?
 
 ### User-Friendly Appearance {#sec-check-testing-others-appearance}
 
@@ -171,9 +173,10 @@ _Review suggested changes and make changes based on their feedback_
 
 _Look at the data that the testers entered into REDCap_
 
-* Does any of the  information look like it would be unusable or not as expected?
+* Click on Data Exports, Reports and Stats on the left side of your screen, then click on the View Report button to see the entered data.
+* Does any of the  information look like it would be unusable or is not as expected?
 * Can the field be modified with data validation settings?
-* Make corrections to the field if necessary.
+* Make corrections to the field if necessary. These corrections need to be done before the project is in production for actual data collection because you can lose data by changing the variables in production.
 
 ### Convert to Notes {#sec-check-testing-completed-notes}
 
@@ -197,7 +200,7 @@ _If you have real data entered and don't want to lose it, click on "Keep ALL dat
 
 ### If everything is test data,  {#sec-check-testing-satisfied-fake}
 
-  remember to click on "Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys,
+* If so, remember to click on "Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys,
   and all archived data export files stored in the File Repository, and any logged events that pertain to data collection."
 
 ### Request Admin to Move  {#sec-check-testing-satisfied-request}

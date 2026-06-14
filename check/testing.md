@@ -5,6 +5,7 @@ author:
   - name: Lise DeShea
     affiliation: University of Oklahoma Health Campus
     affiliation-url: https://ouhsc.edu/bbmc/
+    email: lise-deshea@ou.edu
     orcid: 0000-0003-3232-5216
     attributes:
       corresponding: true
@@ -76,7 +77,7 @@ Go through your items and figure out if you can validate each field in some way.
 Even something like "Child's age" could be entered numerous ways in a free-text field:
 
 ```csv
-Seven    7 years old        Don't know      
+Seven    7 years old        Don't know
 7        7 years, 4 months  I don't know
 8 on his next birthday
 ```
