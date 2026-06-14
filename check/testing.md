@@ -45,9 +45,13 @@ _Why do we tell project developers to try to break their REDCap project?_
 
 Breaking a project means testing your survey from a perspective of a naïve user who knows nothing about the project's purpose or the data being collected. You need to think of all the ways the project could fail or be misunderstood, and try to make that happen. We created this checklist to guide your REDCap testing:
 
-## Before sending your instruments or survey for testing, the designer (you) will need to: {#sec-check-testing-before}
+## Before Testing {#sec-check-testing-before}
 
-### Check the field type for every variable {#sec-check-testing-before-type}
+Before sending your instruments or survey for testing, the designer (you) will need to:
+
+### Field Type {#sec-check-testing-before-type}
+
+_Check the field type for every variable_
 
 Make sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as YYYY-MM-DD? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button or a drop-down menu. In contrast, a checkbox field allows multiple responses to be chosen on a multiple-choice item.
 
@@ -56,11 +60,13 @@ Make sure the field type is what you had meant to select. For instance, is the d
 * Many surveys/instruments are completed or used by people of different literacy levels or for whom English is a second language, so it is crucial to be as clear as possible.
 * Make sure labels are clear and the logic between items is easy to follow. Vague labels and difficult-to-follow logic can lead to items being skipped and data to be missing, or incorrect responses may be entered. Example:
 
-![Ambiguous "Name."](images/testing/fig-check-testing-010-name.png){#fig-check-testing-010-name fig-alt="Name"}
+![Ambiguous "Name".](images/testing/fig-check-testing-010-name.png){#fig-check-testing-010-name fig-alt="Name"}
 
 Whose name? The person filling out the form? Their first name? Last name? The last name of a family in the home? What if they have different last names? The survey might be clear to the person creating the project, but a second or third set of eyes may catch items that are unclear.
 
-### Inspect each field and think about what the data will look like for the person eventually analyzing the data {#sec-check-testing-before-analysis}
+### Anticipate Analysis {#sec-check-testing-before-analysis}
+
+_Inspect each field and think about what the data will look like for the person eventually analyzing the data_
 
 Example:
 
@@ -77,14 +83,16 @@ Go through your items and figure out if you can validate each field in some way.
 Even something like "Child's age" could be entered numerous ways in a free-text field:
 
 ```csv
-Seven    7 years old        Don't know
+Seven    7 years old        Don't know      8 on his next birthday
 7        7 years, 4 months  I don't know
-8 on his next birthday
 ```
 
-You might modify your item to specify "Child's age (in years)" and use data validation to require the person to enter an integer greater than 0 and less than 18.
+You might modify your item to specify "Child's age (in years)" and use data validation to require the person to enter an integer
+greater than 0 and less than 18.
 
-### Check whether your project is failing to collect necessary data, either by fields not being completed or fields being left off the form  {#sec-check-testing-before-necessary}
+### Necessary Data {#sec-check-testing-before-necessary}
+
+_Check whether your project is failing to collect necessary data, either by fields not being completed or fields being left off the form_
 
 * Go back to the original plan for the project and check your work.
 * What was the purpose of the project? Did every needed field get included in your instruments/survey?
@@ -92,20 +100,26 @@ You might modify your item to specify "Child's age (in years)" and use data vali
 
 ### Test the survey yourself {#sec-check-testing-before-yourself}
 
+_Test the survey yourself_
+
 * Many times, omissions or errors can be found by testing the survey/instrument yourself.
 * Enter test data. If you are testing a survey, follow along with the paper survey and see if it matches with what is in REDCap.
 * Review the data you just entered and see if the data is what you expected.
 * Check all branching logic and make sure the fields that are supposed to become available to the respondent actually open up for data entry.
 
-## When you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project {#sec-check-testing-others}
+## Select Testers {#sec-check-testing-others}
 
-### Have at least one other person enter test data in your instruments or survey. {#sec-check-testing-others-person}
+_When you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project_
+
+### First Tester {#sec-check-testing-others-person}
+
+Ask at least one other person to enter test data in your instruments or survey_
 
 * Sometimes the person creating the project is too close to it and can't see its limitations. A second, third or fourth set of eyes is crucial, and they can enter many test records with different scenarios in mind.
 * Could any of the items be misunderstood by a naïve user?
 * Check the data entered to see if the questions meet the goals of the project? Example:
   * If people with diabetes need to answer extra questions, has the branching logic been set up correctly so that those items only appear when someone says they have diabetes? Your tester(s) should enter data for different kinds of study participants. This step is important to complete before a project is moved into production because you may not be able to test changes in branching logic at a later point.
-* Does the survey work equally well on a cell phone vs. a computer? Having multiple testers will allow testing on different platforms.
+* Does the survey work equally well on a cell phone vs. a computer? Having multiple testers will allow you to have them test the project on different platforms.
 * Is there enough room in the text box for answers or do you need to change it to a notes box?
 
 _Testing a public survey_
@@ -121,7 +135,9 @@ _Testing data collection forms that are not surveys_
   for testing only. They will need to be removed from the project
   prior to pushing the project to production and prior to starting actual data collection.
 
-### Have at least one other person who is familiar with the study or investigation check whether the REDCap project matches any printed documents, like IRB protocols and approved procedures.   {#sec-check-testing-others-printed}
+### Compared to Printed Versions {#sec-check-testing-others-printed}
+
+_Have at least one other person who is familiar with the study or investigation check whether the REDCap project matches any printed documents, like IRB protocols and approved procedures_
 
 * Is the project accurate and staying within the bounds of what has been intended or IRB-approved?
 * Is the wording correct on all instruments?
@@ -132,39 +148,61 @@ _Testing data collection forms that are not surveys_
 * Are calculated variables producing correct answers?
 * Can the investigators confirm who has been approved as key personnel by the IRB so only those people are given access to the REDCap project?
 
-### Ask the individuals testing your instruments/survey if the forms/surveys are user-friendly in appearance {#sec-check-testing-others-appearance}
+### User-Friendly Appearance {#sec-check-testing-others-appearance}
+
+_Ask the individuals testing your instruments/survey if the forms/surveys are user-friendly in its appearance_
 
 * Are the colors easy on the eyes?
 * Are colors acceptable for people who are color-blind?
 * If a team will be entering data directly into REDCap (i.e., it is not a public survey), are the instruments too long? Could the instrument be broken up into shorter instruments so the data entry person doesn't feel like they're working on the Great Wall of China?
 * Could some items be put into a table using the rich text editor in a descriptive field? These tables can save space and require less scrolling by the data entry person. Ask your REDCap Administrator how to do that.
 
-## When the testers have completed their testing {#sec-check-testing-completed}
+## After testing {#sec-check-testing-completed}
 
-### Make any necessary changes to the survey or data instrument. {#sec-check-testing-completed-necessary}
+_When the testers have completed their testing_
 
-### Review suggested changes and make changes based on their feedback. {#sec-check-testing-completed-feedback}
+### Necessary Changes {#sec-check-testing-completed-necessary}
 
-### Look at the data that the testers entered into REDCap  {#sec-check-testing-completed-inspect}
+_Make any necessary changes to the survey or data instrument_
+
+### Respond to Feedback {#sec-check-testing-completed-feedback}
+
+_Review suggested changes and make changes based on their feedback_
+
+### Inspect Test Data {#sec-check-testing-completed-inspect}
+
+_Look at the data that the testers entered into REDCap_
 
 * Click on Data Exports, Reports and Stats on the left side of your screen, then click on the View Report button to see the entered data.
 * Does any of the  information look like it would be unusable or is not as expected?
 * Can the field be modified with data validation settings?
 * Make corrections to the field if necessary. These corrections need to be done before the project is in production for actual data collection because you can lose data by changing the variables in production.
 
-### Are there any text boxes that need to be turned into notes fields? {#sec-check-testing-completed-notes}
+### Convert to Notes {#sec-check-testing-completed-notes}
 
-## When you are satisfied that everything is perfect {#sec-check-testing-satisfied}
+_Are there any text boxes that need to be turned into notes fields?_
 
-### Move your project to production status by (1) clicking on "Project Setup" tab:  {#sec-check-testing-satisfied-setup}
+## Once Satisfied {#sec-check-testing-satisfied}
 
-### Then scroll down, and (2) click on the button "Move project to production." {#sec-check-testing-satisfied-move}
+_When you are satisfied that everything is perfect_
 
-### If you have real data entered and don't want to lose it, click on "Keep ALL data saved so far." {#sec-check-testing-satisfied-keep}
+### Project Setup {#sec-check-testing-satisfied-setup}
 
-### Is everything test data? {#sec-check-testing-satisfied-fake}
+_Move your project to production status by (1) clicking on "Project Setup" tab_
 
-  * If so, remember to click on "Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys,
+### Move project to production {#sec-check-testing-satisfied-move}
+
+_Then scroll down, and (2) click on the button "Move project to production."_
+
+### Keep ALL data saved so far {#sec-check-testing-satisfied-keep}
+
+_If you have real data entered and don't want to lose it, click on "Keep ALL data saved so far."_
+
+### If everything is test data,  {#sec-check-testing-satisfied-fake}
+
+* If so, remember to click on "Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys,
   and all archived data export files stored in the File Repository, and any logged events that pertain to data collection."
 
-### Click on the button "Yes, Request Admin to Move to Production Status."  {#sec-check-testing-satisfied-request}
+### Request Admin to Move  {#sec-check-testing-satisfied-request}
+
+_Click on the button "Yes, Request Admin to Move to Production Status."_
