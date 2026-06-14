@@ -14,7 +14,13 @@ $link-color: #64296B; // N3C purple
 
 /*-- scss:rules --*/
 
+.sidebar .sidebar-title a,
+.sidebar-menu-container > .list-unstyled > .sidebar-item:first-child .menu-text {
+  color: #684601;
+  font-weight: 600;
+}
+
 .sidebar-item.sidebar-item-section > .sidebar-item-container > .sidebar-item-text .menu-text {
-  color: #9a6700;
+  color: #684601;
   font-weight: 600;
 }
