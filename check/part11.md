@@ -24,7 +24,24 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Thomas Wilson and William H. Beasley
 
-Glossary:
+## Background {#sec-check-part11-background}
+
+### Overview {#sec-check-part11-background-overview}
+
+21 CFR Part 11 (frequently shortened to just "Part 11") compliance is much more than just demonstrating a REDCap _instance_ is compliant.
+Your specific REDCap _project_ must be compliant too, as well as surrounding components
+like your procedures for data collections and training for the research team.
+
+This chapter helps walk you through the process.
+
+Begin by contacting IT security to receive their most recent Part 11 compliance document.
+Some parts will be completed by REDCap admin team,
+and other parts will be completed by your research team.
+
+See below for example responses by researchers using the OU REDCap instance.
+Of course, review each entry carefully, and tailor it to your specific research protocol.
+
+### Glossary {#sec-check-part11-background-glossary}
 
 * _RA_: REDCap Administrators.
   OU employees who are responsible for the overall instance on campus.
@@ -238,3 +255,11 @@ we recommend exporting and storing second copy (as a csv) to improve the options
 to others in the future.
 
 ![Data Export Formats.](images/part11/fig-check-part11-200-export-formats.png){#fig-check-part11-200-export-formats width=50% fig-alt="Data Export Formats"}
+
+::: {.callout-note appearance="simple"}
+
+## Additional Chapter Details
+
+This chapter was started in March 2025.
+If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's welcome page.
+:::
