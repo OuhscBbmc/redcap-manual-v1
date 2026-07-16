@@ -274,6 +274,18 @@ check that the basic FHIR operations are performing as you expect.
 sudo rm -rf /var/www/html/redcap/redcap_v12.1.2
 ```
 
+1. Update OS and packages
+
+   Upgrading REDCap may also be a good time to ensure that other layers of the software stack are up-to-date.
+   This includes things like MariaDB, PHP, and the OS.
+
+   If you're running RHEL, the following command will install dnf packages, and reboot the server at 3am that night.
+   Depending on the size and activity of your REDCap instance, consider if people should be notified ahead of time.
+   
+   ```bash
+   sudo bash -c 'command -v at >/dev/null 2>&1 || (yum -y install at || dnf -y install at || apt-get update -y && apt-get install -y at); systemctl enable --now atd; echo "reboot" | at 3am tomorrow'; exit 0
+   ```
+
 ::: {.callout-note appearance="simple"}
 
 ## Additional Chapter Details
