@@ -286,6 +286,9 @@ sudo rm -rf /var/www/html/redcap/redcap_v12.1.2
    sudo bash -c 'command -v at >/dev/null 2>&1 || (yum -y install at || dnf -y install at || apt-get update -y && apt-get install -y at); systemctl enable --now atd; echo "reboot" | at 3am tomorrow'; exit 0
    ```
 
+   Typically we'll initially upgrade the packages interactively with `sudo dnf upgrade` and confirm that everything completed successfully.
+   Then we'll terminate the session with the previous snippet to make sure any upgrades requiring a reboot are fulfilled.
+
 ::: {.callout-note appearance="simple"}
 
 ## Additional Chapter Details
