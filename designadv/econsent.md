@@ -86,7 +86,7 @@ Next we will create the fields needed for these forms to allow completion within
 
 ## Modifying the REDCap Instruments for Consent and HIPAA
 
-We will be collecting signatures electronically for the consent form, which participants typically have signed on paper.
+We will be collecting signatures electronically for the consent form, which participants previously would sign on paper.
 We need to create fields in REDCap that the participants would have filled out on paper.
 The consent and HIPAA forms shown below are templates from the OUHC IRB.
 Please ignore the old dates.
