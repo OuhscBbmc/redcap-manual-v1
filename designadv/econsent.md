@@ -175,6 +175,10 @@ Place a checkmark in the box *Auto-continue to the next survey* because we want 
 - Now click the *Enable* button on the HIPAA line.
 - Select the *Survey Theme* to match the one you used on the consent form, then click *Save Changes.*
 
+## Decide If You Need Multiple Languages
+
+**Before** you enable to e-Consent Framework, the REDcap module for this kind of project, check with the study team on whether multiple languages will be needed. If so, Multi-Language Management must be enabled before the e-Consent Framework. See our chapter on this process.
+
 ## Enable e-Consent Framework
 
 Finally we can enable the e-Consent Framework, the REDCap module that was designed to handle electronic consenting processes.
