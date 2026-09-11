@@ -637,7 +637,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-designadv-purpose" id="toc-sec-designadv-purpose" class="nav-link active" data-scroll-target="#sec-designadv-purpose"><span class="header-section-number">11.1</span> What is the Purpose of e-Consent?</a></li>
+  <li><a href="#sec-designadv-econsent-purpose" id="toc-sec-designadv-econsent-purpose" class="nav-link active" data-scroll-target="#sec-designadv-econsent-purpose"><span class="header-section-number">11.1</span> What is the Purpose of e-Consent?</a></li>
   <li><a href="#request-a-new-project" id="toc-request-a-new-project" class="nav-link" data-scroll-target="#request-a-new-project"><span class="header-section-number">11.2</span> Request a New Project</a></li>
   <li><a href="#preparing-to-build-the-e-consent" id="toc-preparing-to-build-the-e-consent" class="nav-link" data-scroll-target="#preparing-to-build-the-e-consent"><span class="header-section-number">11.3</span> Preparing to Build the e-Consent</a></li>
   <li><a href="#starting-an-e-consent-project" id="toc-starting-an-e-consent-project" class="nav-link" data-scroll-target="#starting-an-e-consent-project"><span class="header-section-number">11.4</span> Starting an e-Consent Project</a></li>
@@ -720,8 +720,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 
 
 <p><strong>Chapter Leads</strong>: Lise DeShea, Vignesh Murugan, Thomas Wilson</p>
-<section id="sec-designadv-purpose" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="sec-designadv-purpose"><span class="header-section-number">11.1</span> What is the Purpose of e-Consent?</h2>
+<section id="sec-designadv-econsent-purpose" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="sec-designadv-econsent-purpose"><span class="header-section-number">11.1</span> What is the Purpose of e-Consent?</h2>
 <p>Many research studies conducted at the University of Oklahoma Health Campus involve obtaining participant consent. The Institutional Review Board examines and approves the protocol for research studies involving people. This approval includes a careful review of consent forms, which inform potential participants of their rights as well as the risks and benefits of participating in the study. Researchers increasingly are using electronic consent forms. The e-consent capability of REDCap provides the environment for collecting participants’ informed consent via electronic forms. This chapter will lead you through the process of setting up an e-consent project.</p>
 </section>
 <section id="request-a-new-project" class="level2" data-number="11.2">
@@ -889,11 +889,11 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </section>
 <section id="decide-if-you-need-multiple-languages" class="level2" data-number="11.7">
 <h2 data-number="11.7" class="anchored" data-anchor-id="decide-if-you-need-multiple-languages"><span class="header-section-number">11.7</span> Decide If You Need Multiple Languages</h2>
-<p><strong>Before</strong> you enable to e-Consent Framework, which is the REDcap module for this kind of project, check with the study team on whether multiple languages will be needed. If so, Multi-Language Management must be enabled <strong>before</strong> the e-Consent Framework. If you need to have multiple languages in your e-consent, go to our chapter on this process, which will pick up at this point in your work. <strong>call-out to MLM chapter goes here</strong></p>
+<p><strong>Before</strong> you enable to e-Consent Framework, which is the REDcap module for this kind of project, check with the study team on whether multiple languages will be needed. If so, Multi-Language Management must be enabled <strong>before</strong> the e-Consent Framework. If you need to have multiple languages in your e-consent, go to our chapter on this process, which will pick up at this point in your work. <a href="multilanguage.html" class="quarto-xref"><span>Chapter 12</span></a></p>
 </section>
 <section id="enable-e-consent-framework" class="level2" data-number="11.8">
 <h2 data-number="11.8" class="anchored" data-anchor-id="enable-e-consent-framework"><span class="header-section-number">11.8</span> Enable e-Consent Framework</h2>
-<p>Finally we can enable the e-Consent Framework, the REDCap module that was designed to handle electronic consenting processes. This step must occur after the surveys (Consent and HIPAA) are created. In Online Designer we click the <em>Enable</em> button under Survey Options, shown above the list of instruments.</p>
+<p>Finally we can enable the e-Consent Framework, the REDCap module that was designed to handle electronic consenting processes. This step must occur after the surveys (Consent and HIPAA) are created (and, if applicable, Multilanguage Management settings have been saved). In Online Designer click the <em>Enable</em> button under Survey Options, shown above the list of instruments.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="images/econsent/enable-4.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Enable e-consent"><img src="images/econsent/enable-4.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enable e-consent"></a></p>
@@ -916,7 +916,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 <p>Another window will open, called <em>Enable e-Consent.</em></p>
 <ul>
-<li><p>Under <em>Primary settings,</em> the first two fields ask you to specify the variables for the first and last names of the participant.</p></li>
+<li><p>Under <em>Primary settings,</em> the first two fields ask you to specify the variables for the first and last names of the participant. If your consent form has only one field for the participant’s name, put it in the first name field.</p></li>
 <li><p>Scroll down to <em>Additional settings</em> and use the drop-down menu for <em>Signature field #1</em> to select the participant’s signature, as shown below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -944,7 +944,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <li><p>Number the consent form (e.g., 1.0) next to <em>Consent form version.</em></p></li>
 <li><p>Use the dropdown menu next to <em>Placement of consent form</em> to choose the placeholder variable you called <em>consent.</em></p></li>
 <li><p>Click on the tab for *Consent Form (Inline PDF).</p></li>
-<li><p>Click <em>Browse</em> and find the pdf on your computer.</p></li>
+<li><p>Click <em>Browse</em> and find the pdf on your computer. Open it.</p></li>
 <li><p>Click <em>Add new consent form</em> to save your work</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -966,7 +966,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <li><p>Name the trigger and select the HIPAA survey</p></li>
 <li><p>Under <em>STEP 2: Scope of the snapshot,</em> click the pencil in the box</p></li>
 <li><p>Deselect the consent form, leaving only the HIPAA form as a trigger; the consent form is being saved separately</p></li>
-<li><p>Save these settings</p>
+<li><p>Click Update, then Save</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="images/econsent/add-trigger-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-23" title="Name trigger, select HIPAA survey"><img src="images/econsent/add-trigger-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Name trigger, select HIPAA survey"></a></p>
