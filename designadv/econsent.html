@@ -52,9 +52,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9a7071177cd8c50e899e0c5afeac45d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-1ae2c8d36d018c45bb13fb6ccf04d4c1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-9a7071177cd8c50e899e0c5afeac45d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ffb0a06babcc4b522879a26088bebfe0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-7d967e198cb89ddbdcfd31cc41bd68f9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-ffb0a06babcc4b522879a26088bebfe0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -644,9 +644,10 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#tell-redcap-to-allow-surveys" id="toc-tell-redcap-to-allow-surveys" class="nav-link" data-scroll-target="#tell-redcap-to-allow-surveys"><span class="header-section-number">11.6.1</span> Tell REDCap to Allow Surveys</a></li>
   </ul></li>
-  <li><a href="#enable-e-consent-framework" id="toc-enable-e-consent-framework" class="nav-link" data-scroll-target="#enable-e-consent-framework"><span class="header-section-number">11.7</span> Enable e-Consent Framework</a></li>
-  <li><a href="#test-the-e-consent" id="toc-test-the-e-consent" class="nav-link" data-scroll-target="#test-the-e-consent"><span class="header-section-number">11.8</span> Test the e-Consent</a></li>
-  <li><a href="#updating-consent-forms" id="toc-updating-consent-forms" class="nav-link" data-scroll-target="#updating-consent-forms"><span class="header-section-number">11.9</span> Updating Consent Forms</a></li>
+  <li><a href="#decide-if-you-need-multiple-languages" id="toc-decide-if-you-need-multiple-languages" class="nav-link" data-scroll-target="#decide-if-you-need-multiple-languages"><span class="header-section-number">11.7</span> Decide If You Need Multiple Languages</a></li>
+  <li><a href="#enable-e-consent-framework" id="toc-enable-e-consent-framework" class="nav-link" data-scroll-target="#enable-e-consent-framework"><span class="header-section-number">11.8</span> Enable e-Consent Framework</a></li>
+  <li><a href="#test-the-e-consent" id="toc-test-the-e-consent" class="nav-link" data-scroll-target="#test-the-e-consent"><span class="header-section-number">11.9</span> Test the e-Consent</a></li>
+  <li><a href="#updating-consent-forms" id="toc-updating-consent-forms" class="nav-link" data-scroll-target="#updating-consent-forms"><span class="header-section-number">11.10</span> Updating Consent Forms</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designadv/econsent.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designadv/econsent.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -782,7 +783,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <p>We will be collecting signatures electronically for the consent form, which participants previously would sign on paper. We need to create fields in REDCap that the participants would have filled out on paper. The consent and HIPAA forms shown below are templates from the OUHC IRB. Please ignore the old dates.</p>
 <section id="consent-form" class="level3" data-number="11.5.1">
 <h3 data-number="11.5.1" class="anchored" data-anchor-id="consent-form"><span class="header-section-number">11.5.1</span> Consent Form</h3>
-<p>Read the consent form and identify every field that a participant or researcher would have to complete. Often the only fields that will need to be completed appear at the end of the document, although occasionally researchers will list medical tests in the middle of the document that require the participant’s initials.</p>
+<p>Read the consent form and identify every field that a participant or researcher would have to complete. Often the only fields to be completed appear at the end of the document, although occasionally researchers will list medical tests in the middle of the document that require the participant’s initials.</p>
 <p>Let’s say participants in our example need to fill out only the fields shown below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -792,7 +793,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 <p>In REDCap, click on the <em>Consent</em> form in Online Designer to get to the screen where we will create variables to replicate the fields shown above. We will have the following fields and variable types:</p>
 <ul>
-<li>A signature field for the participant’s signature</li>
+<li>A signature field for the participant’s signature.</li>
 <li>Separate text variables for the participant’s first and last names, even if they do not appear as separate fields on the pdf; separate fields are required in the e-Consent Framework in REDCap</li>
 <li>A date variable for the date of signature</li>
 <li>A signature field for the person obtaining consent</li>
@@ -880,8 +881,12 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </ul>
 </section>
 </section>
-<section id="enable-e-consent-framework" class="level2" data-number="11.7">
-<h2 data-number="11.7" class="anchored" data-anchor-id="enable-e-consent-framework"><span class="header-section-number">11.7</span> Enable e-Consent Framework</h2>
+<section id="decide-if-you-need-multiple-languages" class="level2" data-number="11.7">
+<h2 data-number="11.7" class="anchored" data-anchor-id="decide-if-you-need-multiple-languages"><span class="header-section-number">11.7</span> Decide If You Need Multiple Languages</h2>
+<p><strong>Before</strong> you enable to e-Consent Framework, which is the REDcap module for this kind of project, check with the study team on whether multiple languages will be needed. If so, Multi-Language Management must be enabled <strong>before</strong> the e-Consent Framework. If you need to have multiple languages in your e-consent, go to our chapter on this process, which will pick up at this point in your work. <strong>call-out to MLM chapter goes here</strong></p>
+</section>
+<section id="enable-e-consent-framework" class="level2" data-number="11.8">
+<h2 data-number="11.8" class="anchored" data-anchor-id="enable-e-consent-framework"><span class="header-section-number">11.8</span> Enable e-Consent Framework</h2>
 <p>Finally we can enable the e-Consent Framework, the REDCap module that was designed to handle electronic consenting processes. This step must occur after the surveys (Consent and HIPAA) are created. In Online Designer we click the <em>Enable</em> button under Survey Options, shown above the list of instruments.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -970,8 +975,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div></li>
 </ul>
 </section>
-<section id="test-the-e-consent" class="level2" data-number="11.8">
-<h2 data-number="11.8" class="anchored" data-anchor-id="test-the-e-consent"><span class="header-section-number">11.8</span> Test the e-Consent</h2>
+<section id="test-the-e-consent" class="level2" data-number="11.9">
+<h2 data-number="11.9" class="anchored" data-anchor-id="test-the-e-consent"><span class="header-section-number">11.9</span> Test the e-Consent</h2>
 <p>Before putting any REDCap project into production, it is important to test it and make sure everything is working right and looks correct. It is a good idea to enlist the researchers and those who will collect e-consent in the testing process.</p>
 <p>In the REDCap project, click on <em>Survey Distribution Tools</em> in the left column</p>
 <div class="quarto-figure quarto-figure-center">
@@ -1010,8 +1015,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div></li>
 </ul>
 </section>
-<section id="updating-consent-forms" class="level2" data-number="11.9">
-<h2 data-number="11.9" class="anchored" data-anchor-id="updating-consent-forms"><span class="header-section-number">11.9</span> Updating Consent Forms</h2>
+<section id="updating-consent-forms" class="level2" data-number="11.10">
+<h2 data-number="11.10" class="anchored" data-anchor-id="updating-consent-forms"><span class="header-section-number">11.10</span> Updating Consent Forms</h2>
 <p>Studies with IRB oversight must check in annually and update the IRB about the study’s status. Among other tasks the researchers must obtain re-approval of their consent form. When you create an e-consent project, it is a good idea to put a note on your Outlook calendar reminding you to check with the researchers before their consent form expires. Then you will be ready to replace the consent and HIPAA forms with the latest versions, with the new expiration date given.</p>
 <p>When it is time to replace the consent form with a new one:</p>
 <ol type="1">
