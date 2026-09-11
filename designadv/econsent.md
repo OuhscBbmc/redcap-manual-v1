@@ -94,7 +94,7 @@ Please ignore the old dates.
 ### Consent Form
 
 Read the consent form and identify every field that a participant or researcher would have to complete.
-Often the only fields that will need to be completed appear at the end of the document, although occasionally researchers will list medical tests in the middle of the document that require the participant's initials.
+Often the only fields to be completed appear at the end of the document, although occasionally researchers will list medical tests in the middle of the document that require the participant's initials.
 
 Let's say participants in our example need to fill out only the fields shown below.
 
@@ -103,7 +103,7 @@ Let's say participants in our example need to fill out only the fields shown bel
 In REDCap, click on the *Consent* form in Online Designer to get to the screen where we will create variables to replicate the fields shown above.
 We will have the following fields and variable types:
 
-- A signature field for the participant's signature
+- A signature field for the participant's signature.
 - Separate text variables for the participant's first and last names, even if they do not appear as separate fields on the pdf; separate fields are required in the e-Consent Framework in REDCap
 - A date variable for the date of signature
 - A signature field for the person obtaining consent
@@ -177,7 +177,7 @@ Place a checkmark in the box *Auto-continue to the next survey* because we want 
 
 ## Decide If You Need Multiple Languages
 
-**Before** you enable to e-Consent Framework, the REDcap module for this kind of project, check with the study team on whether multiple languages will be needed. If so, Multi-Language Management must be enabled before the e-Consent Framework. See our chapter on this process.
+**Before** you enable to e-Consent Framework, which is the REDcap module for this kind of project, check with the study team on whether multiple languages will be needed. If so, Multi-Language Management must be enabled **before** the e-Consent Framework. If you need to have multiple languages in your e-consent, go to our chapter on this process, which will pick up at this point in your work. **call-out to MLM chapter goes here**
 
 ## Enable e-Consent Framework
 
