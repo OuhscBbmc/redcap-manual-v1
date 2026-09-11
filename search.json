@@ -110,7 +110,7 @@
     "href": "begin/vocab.html#sec-begin-vocab-general",
     "title": "3  Vocabulary",
     "section": "",
-    "text": "3.1.1 Username\nThe credential required to login to REDCap. This username will be one of three things: OUHSC username, OU username, or a table-based username for non-OUHSC collaborators. Tabled-based accounts are created and maintained by OUHSC REDCap admins.\n\n\n3.1.2 Project\nA REDCap project is a self-contained entity used for collecting and managing data. Many people use the term, database, interchangeably. REDCap users may have access to or may have created multiple REDCap projects.\n\n\n3.1.3 Server\nA REDCap server hosts a collection of projects. Identifying the correct server is the first step to navigating to your desired project.\nAt OU, the two production servers are https://bbmc.ouhsc.edu and https://redcap.ouhsc.edu.\nThe first is the newer and larger instance, while the second one (sometimes called the “CoPH server”) is being phased out and no longer accepting new projects.\nBeginning users will rarely encounter OU’s “development” server, which is https://redcap-dev-2.ouhsc.edu.\n\n\n3.1.4 Record\n… distinguish w/ event and participant …\n\n\n3.1.5 Participant\nA participant is sometimes synonymous with record, but not always…\n\n\n3.1.6 Data Collection Instrument (DCI or Instrument)\nAn electronic form used to collect data. An instrument can have one of two configurations: an data collection form or a survey.\n\n\n3.1.7 Data Collection Form\nInstrument used to collect data from behind the REDCap login. To enter data using a data collection form, individuals must login to REDCap using their username and password.\n\n\n3.1.8 Survey\nInstrument used to collect data without a REDCap login. Surveys are most often used to collect data from research participants and/or patients. Surveys can have a unique link for each participant or a generic public survey link.\n\n\n3.1.9 Event\nA REDCap event is a nested inside a record, typically to facilitate longitudinal data collection within the same participant.\n\n\n3.1.10 User\nMany types of REDCap users can be interact with a single project. See Section 13.2.1 for a list of common roles, ranging from a participant responding to a public survey to a project administrator.\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "text": "3.1.1 Username\nThe credential required to login to REDCap. This username will be one of three things: OUHSC username, OU username, or a table-based username for non-OUHSC collaborators. Tabled-based accounts are created and maintained by OUHSC REDCap admins.\n\n\n3.1.2 Project\nA REDCap project is a self-contained entity used for collecting and managing data. Many people use the term, database, interchangeably. REDCap users may have access to or may have created multiple REDCap projects.\n\n\n3.1.3 Server\nA REDCap server hosts a collection of projects. Identifying the correct server is the first step to navigating to your desired project.\nAt OU, the two production servers are https://bbmc.ouhsc.edu and https://redcap.ouhsc.edu.\nThe first is the newer and larger instance, while the second one (sometimes called the “CoPH server”) is being phased out and no longer accepting new projects.\nBeginning users will rarely encounter OU’s “development” server, which is https://redcap-dev-2.ouhsc.edu.\n\n\n3.1.4 Record\n… distinguish w/ event and participant …\n\n\n3.1.5 Participant\nA participant is sometimes synonymous with record, but not always…\n\n\n3.1.6 Data Collection Instrument (DCI or Instrument)\nAn electronic form used to collect data. An instrument can have one of two configurations: an data collection form or a survey.\n\n\n3.1.7 Data Collection Form\nInstrument used to collect data from behind the REDCap login. To enter data using a data collection form, individuals must login to REDCap using their username and password.\n\n\n3.1.8 Survey\nInstrument used to collect data without a REDCap login. Surveys are most often used to collect data from research participants and/or patients. Surveys can have a unique link for each participant or a generic public survey link.\n\n\n3.1.9 Event\nA REDCap event is a nested inside a record, typically to facilitate longitudinal data collection within the same participant.\n\n\n3.1.10 User\nMany types of REDCap users can be interact with a single project. See Section 14.2.1 for a list of common roles, ranging from a participant responding to a public survey to a project administrator.\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Data Entry for New Users",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Vocabulary</span>"
@@ -557,410 +557,498 @@
     ]
   },
   {
-    "objectID": "designadv/randomstatic.html",
-    "href": "designadv/randomstatic.html",
-    "title": "12  Static Randomization of Patients",
+    "objectID": "designadv/multilanguage.html",
+    "href": "designadv/multilanguage.html",
+    "title": "12  Multi-Language Management",
     "section": "",
-    "text": "12.1 What is the Purpose of Randomization?\nChapter Leads: Steven Fowler\nTo learn how to request a new project, see Best Way to Learn.",
+    "text": "12.1 What is the Purpose of Multi-Language Management?\nChapter Leads: Lise DeShea, Thomas Wilson\nResearchers often need to recruit study participants from a variety of backgrounds. A study with greater variability in participants may be more generalizable to a larger population. Language can be a barrier to some participants joining a study. When researchers can offer a survey in the participants’ languages, there is a better chance of expanding the patient pool, which might be crucial if the researchers are studying a rare condition.\nThe first step toward enrolling patients in most studies is obtaining informed consent. Electronic consent is possible in REDCap, and we have provided a chapter on that topic callout here Creating an e-consent process that also allows multiple languages means the e-consent chapter must go hand-in-hand with this one. This chapter will assume you are at a spot in creating an e-consent where you need to enable Multi-Language Management (MLM) and will lead you through the process. MLM also can be used with surveys and other uses. The information presented here can be generalized beyond the e-consent process.",
     "crumbs": [
       "Project Design (Advanced)",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Static Randomization of Patients</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Multi-Language Management</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/multilanguage.html#sec-designadv-mlmtiming",
+    "href": "designadv/multilanguage.html#sec-designadv-mlmtiming",
+    "title": "12  Multi-Language Management",
+    "section": "12.2 When to Enable MLM in an e-Consent",
+    "text": "12.2 When to Enable MLM in an e-Consent\nWe will start at the point in an e-consent project where you already have created the instruments for Consent and HIPAA; uploaded pdf files of those forms; created fields for every spot where the patients will need to enter information or sign their names; and designated the forms as surveys.\nThe e-Consent Framework is the REDCap module that was designed to handle electronic consenting processes. Before you enable e-Consent Framework, you must enable Multi-Language Management (MLM). If you do these two steps in the wrong order, you will have to re-create a lot of the work you already completed.",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Multi-Language Management</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/multilanguage.html#sec-designadv-mlmenable",
+    "href": "designadv/multilanguage.html#sec-designadv-mlmenable",
+    "title": "12  Multi-Language Management",
+    "section": "12.3 Enabling MLM",
+    "text": "12.3 Enabling MLM\nThe left-hand column in your project has the REDCap logo. Under the second Applications you will see Multi-Language Management (MLM). Click that link.\n\n\n\nMulti-Language Management\n\n\nFollow the instructions in the Languages tab of the page, as shown below.\n\n\n\nREDCap MLM Instructions\n\n\nYou see the above instructions because no languages have been specified in the MLM. Read those instructions carefully. MLM is picky and has a lot of details. We will be following those steps: specifying the languages being used in the e-consent (or survey), providing translations of REDCap features, and testing the project. We will start by specifying a base language, which usually is English. Click the green button that says, “+ Add a new language.” You will see the window shown below.\n\n\n\nAdd New Language\n\n\nThere is a white button that is barely visible next to the red words “by creating the language from scratch.” Click there, then Continue. We are starting with English as the base language. Type the Language ID for English, which is en. “Language Display Name” is what will appear to people who will be asked to sign the e-consent. Type English there. So the window now looks like this.\n\n\n\nAdding English\n\n\nClick the blue “+ Add Language” button. The window will close, and now the page shows English as the base language. Let’s add Spanish as the next language. Click the green “+ Add a new language” button again. Again, click the nearly invisible button next to “by creating the language from scratch,” then Continue. We will use es as the Language ID. For Language Display Name, we need it in Spanish for those who will select that language: Español. To get the tilde over the n in this word, you can google Espanol and copy it from a webpage and paste it in this box. Then click the blue “+ Add Language” button.\n\n\n\nUpdated MLM Page\n\n\nYou may notice the yellow-orange button that says Save Changes. Unlike many functions in REDCap, this module has the save function at the top of the page, not the bottom. This same button will be used for changing any of the tabs to its left. If it is yellow, then changes have not been saved. Click it now to save the changes made so far. You should see the button change to gray font.",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Multi-Language Management</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/multilanguage.html#sec-designadv-mlmtabs",
+    "href": "designadv/multilanguage.html#sec-designadv-mlmtabs",
+    "title": "12  Multi-Language Management",
+    "section": "12.4 Touring the MLM Tabs",
+    "text": "12.4 Touring the MLM Tabs\nMLM has tabs embedded in tabs – and tabs embedded within those tabs! It is easy to get lost and sometimes hard to find certain functions. Let’s click through these tabs and familiarize ourselves with them.\nThe Forms/Surveys tab has two tabs embedded within it: English and Español. First you see the base language with a blue tab and an asterisk to the left of the word English. When you click on the word Español, you are switched to that tab, which now is the blue one.\nWe will not cover the next two tabs, Alerts and Misc because they usually are not used in e-consent projects.\nClick on the User Interface tab. If you left the Forms/Surveys tab on its embedded Español tab, then that’s the tab in blue here. The purpose of the User Interface tab is to translate some text that the user of the e-consent will see from the base language (English) to our second language (Spanish). Notice that this page has a third layer of embedded tabs, shown in the blue box below.\n\n\n\nEmbedded tabs\n\n\nLet’s click through those tabs.\n\nWe could look at everything option under the All tab, but that can be overwhelming.\nBy default the Common tab is selected. You can scroll down to see the kinds of notifications to the user that you could translate. For an e-consent project, you often have only a few of these notifications that need to be translated.\nNow click on the Field Types tab. If your project has Yes/No fields, then you would need to translate “Yes/No” on this tab. If your project has a Date field that uses a “Today” button, you will need to translate that word. There are far more options on this tab than you are likely to need to translate.\nLet’s click next on the Settings tab. We won’t make any changes on this tab in this chapter.\n\nAt this point we have put English as the base language and Spanish as the second language. But we have not activated them. On the Languages tab, toggle the sliders to Active.\n\n\n\nActivate the languages\n\n\nNotice the Save Changes button is yellow-orange again. Click it to save your current settings.",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Multi-Language Management</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/multilanguage.html#sec-designadv-mlmtranslations",
+    "href": "designadv/multilanguage.html#sec-designadv-mlmtranslations",
+    "title": "12  Multi-Language Management",
+    "section": "12.5 Creating Translations",
+    "text": "12.5 Creating Translations\nGo to the Forms/Surveys tab and select the Español tab. Toggle the sliders in the column under Survey. These sliders will enable the e-consent user to view the translated version of the instruments. Be sure to click the yellow-orange Save Changes button. It doesn’t hurt to click that button after every change you make! It’s better than losing your work.\n\n\n\nSave Changes Often\n\n\nNotice in the above screenshot that the word Translate appears next to each instrument in the Fields and Survey Settings columns. There are more functions to access by clicking each place that it says Translate. Let’s start with Translate under the Fields column on the Consent row. This page shows the variable names inside REDCap. The Spanish-speaking participant using the e-consent survey will never see those variable names. Unless you have staff needing translation inside the REDCap project, we don’t have to make any changes here. This Fields page will show a link to the Survey Settings for this instrument. Click that link.\n\n\n\nInside the Forms/Surveys Tab\n\n\nThis is where you can translate the survey title and prompts that users will see as they go through the e-consent process. For example, the e-consent used as an example in this chapter is set up so that upon completing the e-consent, the user sees a message, “Thank you!” Below is shown the translation of that message.\n\n\n\nTranslating Survey Completion Text\n\n\nAs always, click the yellow-orange Save Changes button. To look at translations needed on the HIPAA form, click the Languages tab and back to the Forms/Surveys tab. Now you will see the two rows marked Consent and HIPAA again. Click Translate in the Fields column to make any changes needed there. Then click Translate in the Survey Settings column to make any changes needed on the HIPPA instrument. If the Save Changes button has not turned yellow-orange, then click outside of the field your cursor was on, and the color will change.\nNow let’s do translations in the User Interface tab. Again, staying on Español next to Select a language, click the Common tab. Make any translations needed, then click Save Changes.\nThe next tab inside User Interface is Field Types. Look for any fields your e-consent or survey will need translated, enter the translations, and click Save Changes.\nWe will skip the Data Entry tab inside User Interface. In the Survey tab of User Interface, you may find several items that need to be translated. Here are some messages listed under the eConsent section of the Survey tab:\n\n\n\nMessages to user of e-consent\n\n\nLook for any fields that you need to translate. Here are a couple of common ones.\n\n\n\nTranslation for “Add signature”",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Multi-Language Management</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/multilanguage.html#enable-e-consent-framework",
+    "href": "designadv/multilanguage.html#enable-e-consent-framework",
+    "title": "12  Multi-Language Management",
+    "section": "12.6 Enable e-Consent Framework",
+    "text": "12.6 Enable e-Consent Framework\nFinally we can enable the e-Consent Framework, the REDCap module that was designed to handle electronic consenting processes. This step must occur after the surveys (Consent and HIPAA) are created. In Online Designer we click the Enable button under Survey Options, shown above the list of instruments.\n\n\n\nEnable e-consent\n\n\nYou will be taken to a page called Settings for e-Consent & PDF Snapshots.\n\n\n\nE-consent settings\n\n\nClick the big green button that says Enable the e-Consent Framework for a survey. You will get a window that says Enable e-Consent for a Survey. You will select Consent from the drop-down menu.\n\n\n\nSelect consent form\n\n\nAnother window will open, called Enable e-Consent.\n\nUnder Primary settings, the first two fields ask you to specify the variables for the first and last names of the participant.\nScroll down to Additional settings and use the drop-down menu for Signature field #1 to select the participant’s signature, as shown below.\n\n\n\nSelect participant’s signature field\n\n\nScroll down to Location(s) to save the signed consent snapshot.\nA copy of the signed form should be saved in the File Repository because the IRB sometimes audits these e-consent REDCaps to make sure the study’s protocol is being followed and patients’ rights have been respected.\n\n\n\nSave consent snapshot\n\n\n\nSave those settings to close the window. You will return to the page that says e-Consent Framework Settings. This is where you will upload the pdf of the consent form. Click on the link that says Add consent form.\n\n\n\nAdd consent form\n\n\n\nNumber the consent form (e.g., 1.0) next to Consent form version.\nUse the dropdown menu next to Placement of consent form to choose the placeholder variable you called consent.\nClick on the tab for *Consent Form (Inline PDF).\nClick Browse and find the pdf on your computer.\nClick Add new consent form to save your work\n\n\n\nUpload consent form\n\n\n\nNext we need to get a snapshot pdf of the signed HIPAA form.\n\nClick on the tab for PDF Snapshots of Records.\nClick on the button that says Add new trigger.\n\n\n\nAdd trigger for HIPAA snapshot\n\n\nName the trigger and select the HIPAA survey\nUnder STEP 2: Scope of the snapshot, click the pencil in the box\nDeselect the consent form, leaving only the HIPAA form as a trigger; the consent form is being saved separately\nSave these settings\n\n\n\nName trigger, select HIPAA survey\n\n\n\n\n\nLimit snapshot to HIPAA",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Multi-Language Management</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/multilanguage.html#test-the-e-consent",
+    "href": "designadv/multilanguage.html#test-the-e-consent",
+    "title": "12  Multi-Language Management",
+    "section": "12.7 Test the e-Consent",
+    "text": "12.7 Test the e-Consent\nBefore putting any REDCap project into production, it is important to test it and make sure everything is working right and looks correct. It is a good idea to enlist the researchers and those who will collect e-consent in the testing process.\nIn the REDCap project, click on Survey Distribution Tools in the left column\n\n\n\nSurvey Distribution Tools\n\n\nThis page will provide you with a public survey link that you can email to the researchers and consent collectors. To test the project yourself, click Open public survey.\n\n\n\nLink to the consent survey\n\n\nYou will be taken to the e-consent as it will appear to participants.\n\nScroll through pages, fill out the pertinent fields with names like Test Subject, and sign it.\nAfter you submit the HIPAA form, you will get an “end of survey” message.\nGo back into the REDCap project.\nOn the left side you will see a link for File Repository, which you will click.\n\n\n\nLink to File Repository\n\n\nClick on the folder labeled PDF Snapshot Archive.\nYou will see a list of pdfs that were automatically created for the test records.\nClick on any of those pdfs and see how REDCap saved the original pdf, plus the fields you created in REDCap, and the data and signature added by the participant or test subject.\n\n\n\nPDF Snapshots in File Repository",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Multi-Language Management</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/multilanguage.html#updating-consent-forms",
+    "href": "designadv/multilanguage.html#updating-consent-forms",
+    "title": "12  Multi-Language Management",
+    "section": "12.8 Updating Consent Forms",
+    "text": "12.8 Updating Consent Forms\nStudies with IRB oversight must check in annually and update the IRB about the study’s status. Among other tasks the researchers must obtain re-approval of their consent form. When you create an e-consent project, it is a good idea to put a note on your Outlook calendar reminding you to check with the researchers before their consent form expires. Then you will be ready to replace the consent and HIPAA forms with the latest versions, with the new expiration date given.\nWhen it is time to replace the consent form with a new one:\n\nNotify the people who will be collecting the study’s informed consent that you will be working on the e-consent in REDCap and that they should pause using the e-consent until you inform them the new forms have been uploaded\nIn Online Designer, there will be a yellow box at the top saying the project is in production status and asking if you want to enter draft mode to make changes; click the Enter Draft Mode button.\nWhere the Data Collection Instruments are listed in Designer, click on the e-Consent button under Survey Options.\nClick Add Consent Form\nSpecify the version number and upload the consent form\nSave the new version\nAsk for the project to be moved back into Production Mode\nAfter being notified that the project is in production, go to the survey and create a test record by completing the forms, using a name like Testing REDCap\nIf everything is working correctly, notify those collecting informed consent that the e-consent REDCap is back in production with the new forms, and they may see a test record in REDCap\nCongratulate yourself, because it is no small accomplishment to complete an e-consent REDCap project!\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was last edited in April 2026. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Multi-Language Management</span>"
+    ]
+  },
+  {
+    "objectID": "designadv/randomstatic.html",
+    "href": "designadv/randomstatic.html",
+    "title": "13  Static Randomization of Patients",
+    "section": "",
+    "text": "13.1 What is the Purpose of Randomization?\nChapter Leads: Steven Fowler\nTo learn how to request a new project, see Best Way to Learn.",
+    "crumbs": [
+      "Project Design (Advanced)",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Static Randomization of Patients</span>"
     ]
   },
   {
     "objectID": "designadv/randomstatic.html#preparing-to-build-the-e-consent",
     "href": "designadv/randomstatic.html#preparing-to-build-the-e-consent",
-    "title": "12  Static Randomization of Patients",
-    "section": "12.2 Preparing to Build the e-Consent",
-    "text": "12.2 Preparing to Build the e-Consent\n\n\n\nThis is an example screenshot\n\n\n\n\n\nHere is another example\n\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was last edited in April 2026. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "title": "13  Static Randomization of Patients",
+    "section": "13.2 Preparing to Build the e-Consent",
+    "text": "13.2 Preparing to Build the e-Consent\n\n\n\nThis is an example screenshot\n\n\n\n\n\nHere is another example\n\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was last edited in April 2026. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Project Design (Advanced)",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Static Randomization of Patients</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Static Randomization of Patients</span>"
     ]
   },
   {
     "objectID": "adminpr/user.html",
     "href": "adminpr/user.html",
-    "title": "13  User Admin",
+    "title": "14  User Admin",
     "section": "",
-    "text": "13.1 Life cycle of user\nChapter Leads: Thomas Wilson",
+    "text": "14.1 Life cycle of user\nChapter Leads: Thomas Wilson",
     "crumbs": [
       "Project Admin",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>User Admin</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>User Admin</span>"
     ]
   },
   {
     "objectID": "adminpr/user.html#sec-adminpr-user-role",
     "href": "adminpr/user.html#sec-adminpr-user-role",
-    "title": "13  User Admin",
-    "section": "13.2 User role",
-    "text": "13.2 User role\n\n13.2.1 Research Team\n\nprincipal investigator (PI):\nproject coordinator:\nanalyst:\nnurse:\ndata entry:\nbudget:\nproject admin:\naudit:\n\n\n\n13.2.2 Participants\n\npublic:\nprivate:\n\n\n\n13.2.3 OCRI\n\nREDCap Administrator:\ngraduate research assistant (GRA):\n\n\n\n13.2.4 Campus IT\nThis group of people is vital to the operation of a REDCap instance, but distinguishing their roles probably isn’t helpful to most readers of this manual. The group is composed of experts in security, databases, operating systems, web servers, networking, storage, and virtual machines.",
+    "title": "14  User Admin",
+    "section": "14.2 User role",
+    "text": "14.2 User role\n\n14.2.1 Research Team\n\nprincipal investigator (PI):\nproject coordinator:\nanalyst:\nnurse:\ndata entry:\nbudget:\nproject admin:\naudit:\n\n\n\n14.2.2 Participants\n\npublic:\nprivate:\n\n\n\n14.2.3 OCRI\n\nREDCap Administrator:\ngraduate research assistant (GRA):\n\n\n\n14.2.4 Campus IT\nThis group of people is vital to the operation of a REDCap instance, but distinguishing their roles probably isn’t helpful to most readers of this manual. The group is composed of experts in security, databases, operating systems, web servers, networking, storage, and virtual machines.",
     "crumbs": [
       "Project Admin",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>User Admin</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>User Admin</span>"
     ]
   },
   {
     "objectID": "adminpr/user.html#sec-adminpr-user-dag",
     "href": "adminpr/user.html#sec-adminpr-user-dag",
-    "title": "13  User Admin",
-    "section": "13.3 Data Access Group (DAG)",
-    "text": "13.3 Data Access Group (DAG)",
+    "title": "14  User Admin",
+    "section": "14.3 Data Access Group (DAG)",
+    "text": "14.3 Data Access Group (DAG)",
     "crumbs": [
       "Project Admin",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>User Admin</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>User Admin</span>"
     ]
   },
   {
     "objectID": "adminpr/user.html#sec-adminpr-user-plp",
     "href": "adminpr/user.html#sec-adminpr-user-plp",
-    "title": "13  User Admin",
-    "section": "13.4 Principle of least privilege",
-    "text": "13.4 Principle of least privilege\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "title": "14  User Admin",
+    "section": "14.4 Principle of least privilege",
+    "text": "14.4 Principle of least privilege\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Project Admin",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>User Admin</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>User Admin</span>"
     ]
   },
   {
     "objectID": "external/mosio.html",
     "href": "external/mosio.html",
-    "title": "14  Mosio",
+    "title": "15  Mosio",
     "section": "",
-    "text": "14.1 Motivation & Overview\nChapter Leads: Thomas Wilson\nIn recent years, many researchers have found that texting is a productive channel for keeping in touch with participants, either by itself or as a supplement to conventional communication. Mosio is a company that develops, supports, and licenses a product called REDCap Direct.\nThe REDCap Direct website provides a lot of current information that we won’t try to replicate in this manual. Instead we’ll outline when you might consider it, and how to ask OU’s Server Administrators for help establishing for your project.",
+    "text": "15.1 Motivation & Overview\nChapter Leads: Thomas Wilson\nIn recent years, many researchers have found that texting is a productive channel for keeping in touch with participants, either by itself or as a supplement to conventional communication. Mosio is a company that develops, supports, and licenses a product called REDCap Direct.\nThe REDCap Direct website provides a lot of current information that we won’t try to replicate in this manual. Instead we’ll outline when you might consider it, and how to ask OU’s Server Administrators for help establishing for your project.",
     "crumbs": [
       "External Connectivity",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mosio</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Mosio</span>"
     ]
   },
   {
     "objectID": "external/mosio.html#sec-external-mosio-motivation",
     "href": "external/mosio.html#sec-external-mosio-motivation",
-    "title": "14  Mosio",
+    "title": "15  Mosio",
     "section": "",
-    "text": "Figure 14.1: Caption of Test Figure.",
+    "text": "Figure 15.1: Caption of Test Figure.",
     "crumbs": [
       "External Connectivity",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mosio</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Mosio</span>"
     ]
   },
   {
     "objectID": "external/mosio.html#sec-external-mosio-pricing",
     "href": "external/mosio.html#sec-external-mosio-pricing",
-    "title": "14  Mosio",
-    "section": "14.2 Pricing",
-    "text": "14.2 Pricing\n\nHow much does Mosio Cost?\n\nMosio offers several pricing plans tailored to different needs. Outbound messages beyond what is listed below can be purchased at an addition price. For exact pricing and to get a quote tailored to your specific needs, it’s best to contact Mosio directly through their website.\nHere is a list of some of the details:\n\n14.2.1 Basic Plan\n\nProjects: Up to 4\nOutbound Messages: 1,000 per month\n\n\n\n14.2.2 Plus Plan\n\nProjects: Up to 10\nOutbound Messages: 3,000 per month\n\n\n\n14.2.3 Pro Plan\n\nProjects: Up to 30\nOutbound Messages: 7,500 per month",
+    "title": "15  Mosio",
+    "section": "15.2 Pricing",
+    "text": "15.2 Pricing\n\nHow much does Mosio Cost?\n\nMosio offers several pricing plans tailored to different needs. Outbound messages beyond what is listed below can be purchased at an addition price. For exact pricing and to get a quote tailored to your specific needs, it’s best to contact Mosio directly through their website.\nHere is a list of some of the details:\n\n15.2.1 Basic Plan\n\nProjects: Up to 4\nOutbound Messages: 1,000 per month\n\n\n\n15.2.2 Plus Plan\n\nProjects: Up to 10\nOutbound Messages: 3,000 per month\n\n\n\n15.2.3 Pro Plan\n\nProjects: Up to 30\nOutbound Messages: 7,500 per month",
     "crumbs": [
       "External Connectivity",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mosio</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Mosio</span>"
     ]
   },
   {
     "objectID": "external/mosio.html#sec-external-mosio-access",
     "href": "external/mosio.html#sec-external-mosio-access",
-    "title": "14  Mosio",
-    "section": "14.3 Access",
-    "text": "14.3 Access\n\nHow do I get access to Mosio?\n\nTo connect Mosio with REDCap, follow these steps:\n\nSet Up Your REDCap Project:\n\nLog into REDCap and create a new project.\nDefine your variables using the Data Dictionary or Online Designer.\nDesign your survey and enable surveys under the ‘Project Setup’ tab.\n\nMosio Account Setup:\n\nEnsure you have a Mosio account.\nLog into your Mosio dashboard and navigate to the integration settings.\n\nAPI Configuration:\n\nIn REDCap, go to the ‘External Modules’ section and enable the Mosio module.\nEnter your Mosio API credentials to link the two platforms.\n\nConfigure Messaging:\n\nDefine the messaging parameters within Mosio.\nSet up various types of messages, such as survey invitations, reminders, and follow-ups\n\n\nThis integration allows you to send automated text messages to participants, improving engagement and data collection. If you need more detailed instructions, you can refer to the Mosio REDCap Direct guide.",
+    "title": "15  Mosio",
+    "section": "15.3 Access",
+    "text": "15.3 Access\n\nHow do I get access to Mosio?\n\nTo connect Mosio with REDCap, follow these steps:\n\nSet Up Your REDCap Project:\n\nLog into REDCap and create a new project.\nDefine your variables using the Data Dictionary or Online Designer.\nDesign your survey and enable surveys under the ‘Project Setup’ tab.\n\nMosio Account Setup:\n\nEnsure you have a Mosio account.\nLog into your Mosio dashboard and navigate to the integration settings.\n\nAPI Configuration:\n\nIn REDCap, go to the ‘External Modules’ section and enable the Mosio module.\nEnter your Mosio API credentials to link the two platforms.\n\nConfigure Messaging:\n\nDefine the messaging parameters within Mosio.\nSet up various types of messages, such as survey invitations, reminders, and follow-ups\n\n\nThis integration allows you to send automated text messages to participants, improving engagement and data collection. If you need more detailed instructions, you can refer to the Mosio REDCap Direct guide.",
     "crumbs": [
       "External Connectivity",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mosio</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Mosio</span>"
     ]
   },
   {
     "objectID": "external/mosio.html#sec-external-mosio-limitation",
     "href": "external/mosio.html#sec-external-mosio-limitation",
-    "title": "14  Mosio",
-    "section": "14.4 Limitations",
-    "text": "14.4 Limitations\n\nWhat are the limitations of using Mosio?\n\nUsing Mosio for text messaging in clinical trials and other applications has several limitations:\n\nMessage Length: Text messages are limited to 160 characters, which can restrict the amount of information that can be conveyed in a single message.\nUser Engagement: Not all participants may be comfortable or familiar with text messaging, potentially leading to lower engagement rates.\nData Privacy: Ensuring the privacy and security of sensitive information transmitted via text messages can be challenging. While the transmission utilizing Mosio with REDCap is secure, you cannot ensure the security of the message when it reaches the recipient’s phone.\nCost: Depending on the volume of messages sent, the cost of using Mosio can add up, especially for large-scale studies.\n\nDespite these limitations, Mosio remains a valuable tool for improving participant engagement and data collection in various settings. If you have any specific concerns or need help with a particular aspect, feel free to ask!",
+    "title": "15  Mosio",
+    "section": "15.4 Limitations",
+    "text": "15.4 Limitations\n\nWhat are the limitations of using Mosio?\n\nUsing Mosio for text messaging in clinical trials and other applications has several limitations:\n\nMessage Length: Text messages are limited to 160 characters, which can restrict the amount of information that can be conveyed in a single message.\nUser Engagement: Not all participants may be comfortable or familiar with text messaging, potentially leading to lower engagement rates.\nData Privacy: Ensuring the privacy and security of sensitive information transmitted via text messages can be challenging. While the transmission utilizing Mosio with REDCap is secure, you cannot ensure the security of the message when it reaches the recipient’s phone.\nCost: Depending on the volume of messages sent, the cost of using Mosio can add up, especially for large-scale studies.\n\nDespite these limitations, Mosio remains a valuable tool for improving participant engagement and data collection in various settings. If you have any specific concerns or need help with a particular aspect, feel free to ask!",
     "crumbs": [
       "External Connectivity",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mosio</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Mosio</span>"
     ]
   },
   {
     "objectID": "external/mosio.html#sec-external-mosio-messagetypes",
     "href": "external/mosio.html#sec-external-mosio-messagetypes",
-    "title": "14  Mosio",
-    "section": "14.5 Message Types",
-    "text": "14.5 Message Types\n\nWhat types of messages can I send with Mosio?\n\nWith Mosio, you can send a variety of messages to enhance participant engagement and data collection. Here are some types of messages you can send:\n\nSurvey Invitations: Send links to surveys or questionnaires directly to participants’ mobile phones.\nReminders: Schedule automated reminders for appointments, medication adherence, or survey completions.\nAlerts and Notifications: Notify participants about important updates or actions they need to take.\nCompliance Confirmations: Request participants to confirm they have completed a specific action.\nAutomated Messaging (Storylines): Set up automated sequences of messages for interventions, follow-ups, and engagement.\nIncentives and Gift Codes: Send participants incentives or gift codes as part of your study.",
+    "title": "15  Mosio",
+    "section": "15.5 Message Types",
+    "text": "15.5 Message Types\n\nWhat types of messages can I send with Mosio?\n\nWith Mosio, you can send a variety of messages to enhance participant engagement and data collection. Here are some types of messages you can send:\n\nSurvey Invitations: Send links to surveys or questionnaires directly to participants’ mobile phones.\nReminders: Schedule automated reminders for appointments, medication adherence, or survey completions.\nAlerts and Notifications: Notify participants about important updates or actions they need to take.\nCompliance Confirmations: Request participants to confirm they have completed a specific action.\nAutomated Messaging (Storylines): Set up automated sequences of messages for interventions, follow-ups, and engagement.\nIncentives and Gift Codes: Send participants incentives or gift codes as part of your study.",
     "crumbs": [
       "External Connectivity",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mosio</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Mosio</span>"
     ]
   },
   {
     "objectID": "external/mosio.html#sec-external-mosio-afterapproval",
     "href": "external/mosio.html#sec-external-mosio-afterapproval",
-    "title": "14  Mosio",
-    "section": "14.6 After Approval",
-    "text": "14.6 After Approval\n\nI have approval and am ready to use Mosio. What is the next step?\n\n{Thomas will write this paragraph, and will be bugged by Vignesh & James every two weeks until he does.}",
+    "title": "15  Mosio",
+    "section": "15.6 After Approval",
+    "text": "15.6 After Approval\n\nI have approval and am ready to use Mosio. What is the next step?\n\n{Thomas will write this paragraph, and will be bugged by Vignesh & James every two weeks until he does.}",
     "crumbs": [
       "External Connectivity",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mosio</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Mosio</span>"
     ]
   },
   {
     "objectID": "external/mosio.html#sec-external-mosio-sendingmessages",
     "href": "external/mosio.html#sec-external-mosio-sendingmessages",
-    "title": "14  Mosio",
-    "section": "14.7 Sending Messages",
-    "text": "14.7 Sending Messages\n\nHow do I send Mosio messages in REDCap?\n\nTo send Mosio messages in REDCap, follow these steps:\n\nEnable Mosio Module in REDCap:\n\nGo to the ‘External Modules’ section in your REDCap project.\nFind and enable the Mosio module.\n\nConfigure Mosio Settings:\n\nEnter your Mosio API credentials in the module settings. (This is done by the REDCap admin.)\nConfigure the messaging parameters, such as sender ID and message templates.\n\nSet Up Survey Invitations:\n\nIn the ‘Survey Distribution Tools’ section, select ‘SMS’ as the distribution method.\nEnter the participants’ phone numbers and customize the invitation message.\n\nSchedule Alerts and Notifications:\n\nUse the ‘Alerts & Notifications’ feature to schedule automated messages.\nDefine the conditions under which messages should be sent (e.g., survey completion reminders).\n\nAutomated Messaging:\n\nSet up automated messaging sequences. (Storylines) for interventions or follow-ups.\nConfigure the timing and content of each message in the sequence.\n\n\nFor detailed instructions, you can refer to the Mosio REDCap Direct guide\nIf you encounter any specific issues or need further assistance, feel free to ask!",
+    "title": "15  Mosio",
+    "section": "15.7 Sending Messages",
+    "text": "15.7 Sending Messages\n\nHow do I send Mosio messages in REDCap?\n\nTo send Mosio messages in REDCap, follow these steps:\n\nEnable Mosio Module in REDCap:\n\nGo to the ‘External Modules’ section in your REDCap project.\nFind and enable the Mosio module.\n\nConfigure Mosio Settings:\n\nEnter your Mosio API credentials in the module settings. (This is done by the REDCap admin.)\nConfigure the messaging parameters, such as sender ID and message templates.\n\nSet Up Survey Invitations:\n\nIn the ‘Survey Distribution Tools’ section, select ‘SMS’ as the distribution method.\nEnter the participants’ phone numbers and customize the invitation message.\n\nSchedule Alerts and Notifications:\n\nUse the ‘Alerts & Notifications’ feature to schedule automated messages.\nDefine the conditions under which messages should be sent (e.g., survey completion reminders).\n\nAutomated Messaging:\n\nSet up automated messaging sequences. (Storylines) for interventions or follow-ups.\nConfigure the timing and content of each message in the sequence.\n\n\nFor detailed instructions, you can refer to the Mosio REDCap Direct guide\nIf you encounter any specific issues or need further assistance, feel free to ask!",
     "crumbs": [
       "External Connectivity",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mosio</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Mosio</span>"
     ]
   },
   {
     "objectID": "external/mosio.html#sec-external-mosio-monitoring",
     "href": "external/mosio.html#sec-external-mosio-monitoring",
-    "title": "14  Mosio",
-    "section": "14.8 Monitoring Usage",
-    "text": "14.8 Monitoring Usage\n\nHow can I monitor my Mosio usage?\n\nTo monitor your Mosio usage, you can use the following methods:\n\nDashboard Overview:\n\nLog into your Mosio account and access the dashboard.\nThe dashboard provides a summary of your messaging activity, including the number of messages sent, received, and scheduled.\n\nStorylines Monitoring:\n\nUse the Storylines module to track the progress of automated messaging sequences.\nIn the Monitor section, you can view the real-time status of message history, survey completions, and participant engagement.\n\nMessage History:\n\nAccess the message history to see detailed logs of all messages sent and received.\nThis includes timestamps, message content, and participant responses.\n\nUsage Reports:\n\nGenerate usage reports to get a comprehensive view of your messaging activity over a specific period.\nThese reports can help you analyze trends and optimize your communication strategy.\n\nAlerts and Notifications:\n\nSet up alerts and notifications to receive updates on key metrics, such as message delivery rates and participant responses\n\n\nFor more detailed instructions, you can refer to the Mosio Training Guides.",
+    "title": "15  Mosio",
+    "section": "15.8 Monitoring Usage",
+    "text": "15.8 Monitoring Usage\n\nHow can I monitor my Mosio usage?\n\nTo monitor your Mosio usage, you can use the following methods:\n\nDashboard Overview:\n\nLog into your Mosio account and access the dashboard.\nThe dashboard provides a summary of your messaging activity, including the number of messages sent, received, and scheduled.\n\nStorylines Monitoring:\n\nUse the Storylines module to track the progress of automated messaging sequences.\nIn the Monitor section, you can view the real-time status of message history, survey completions, and participant engagement.\n\nMessage History:\n\nAccess the message history to see detailed logs of all messages sent and received.\nThis includes timestamps, message content, and participant responses.\n\nUsage Reports:\n\nGenerate usage reports to get a comprehensive view of your messaging activity over a specific period.\nThese reports can help you analyze trends and optimize your communication strategy.\n\nAlerts and Notifications:\n\nSet up alerts and notifications to receive updates on key metrics, such as message delivery rates and participant responses\n\n\nFor more detailed instructions, you can refer to the Mosio Training Guides.",
     "crumbs": [
       "External Connectivity",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mosio</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Mosio</span>"
     ]
   },
   {
     "objectID": "external/mosio.html#sec-external-mosio-examples",
     "href": "external/mosio.html#sec-external-mosio-examples",
-    "title": "14  Mosio",
-    "section": "14.9 Usage Examples",
-    "text": "14.9 Usage Examples\n\nWhat are some examples of using Mosio?\n\nPeople are using Mosio in REDCap for various purposes to enhance their research projects. Here are some common uses:\n\nSurvey Distribution:\n\nResearchers send survey invitations via text message, ensuring participants receive timely reminders and links to complete surveys.\n\nAutomated Reminders:\n\nAutomated reminders are set up to nudge participants to complete surveys, attend appointments, or adhere to study protocols.\n\nData Collection:\n\nText messages are used to collect data directly from participants, which can then be automatically imported into REDCap.\n\nIntervention Campaigns:\n\nResearchers deploy text-based interventions, such as health tips or motivational messages, to improve participant outcomes.\n\nIncentives and Rewards:\n\nParticipants receive gift codes or other incentives via text message for completing surveys or other study tasks.\n\n\nThese features help streamline communication, improve participant engagement, and enhance data collection efficiency. If you have a specific use case in mind, feel free to share, and I can provide more detailed guidance!",
+    "title": "15  Mosio",
+    "section": "15.9 Usage Examples",
+    "text": "15.9 Usage Examples\n\nWhat are some examples of using Mosio?\n\nPeople are using Mosio in REDCap for various purposes to enhance their research projects. Here are some common uses:\n\nSurvey Distribution:\n\nResearchers send survey invitations via text message, ensuring participants receive timely reminders and links to complete surveys.\n\nAutomated Reminders:\n\nAutomated reminders are set up to nudge participants to complete surveys, attend appointments, or adhere to study protocols.\n\nData Collection:\n\nText messages are used to collect data directly from participants, which can then be automatically imported into REDCap.\n\nIntervention Campaigns:\n\nResearchers deploy text-based interventions, such as health tips or motivational messages, to improve participant outcomes.\n\nIncentives and Rewards:\n\nParticipants receive gift codes or other incentives via text message for completing surveys or other study tasks.\n\n\nThese features help streamline communication, improve participant engagement, and enhance data collection efficiency. If you have a specific use case in mind, feel free to share, and I can provide more detailed guidance!",
     "crumbs": [
       "External Connectivity",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mosio</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Mosio</span>"
     ]
   },
   {
     "objectID": "external/mosio.html#sec-external-mosio-privacy",
     "href": "external/mosio.html#sec-external-mosio-privacy",
-    "title": "14  Mosio",
-    "section": "14.10 Privacy Policy",
-    "text": "14.10 Privacy Policy\n\nWhat is Mosio’s privacy policy?\n\nMosio does not sell or share any data with third parties, except to perform the services of the platform. This means text messages will be sent to mobile carriers so they can be delivered to the participants’ phones. Emails will also route through our email providers. Mosio only works with vendors who also do not resell any information. The full details are in the Mosio privacy policy.\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "title": "15  Mosio",
+    "section": "15.10 Privacy Policy",
+    "text": "15.10 Privacy Policy\n\nWhat is Mosio’s privacy policy?\n\nMosio does not sell or share any data with third parties, except to perform the services of the platform. This means text messages will be sent to mobile carriers so they can be delivered to the participants’ phones. Emails will also route through our email providers. Mosio only works with vendors who also do not resell any information. The full details are in the Mosio privacy policy.\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in October 2024. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "External Connectivity",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mosio</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Mosio</span>"
     ]
   },
   {
     "objectID": "adminser/security.html",
     "href": "adminser/security.html",
-    "title": "15  Security Considerations",
+    "title": "16  Security Considerations",
     "section": "",
-    "text": "15.1 Motivations\nChapter Leads: Will Beasley\nSecurity is one of the most important roles as a REDCap administrator. The server is a target because most installations are a public-facing website that can access PHI. In recent years, as REDCap has become essential to medical research projects and institutions, it is a target for its potential for user credentials it might have in common with other institutional assets (e.g., Beyond the Battlefield: Threats to the Defense Industrial Base, Google Threat Intelligence Group, 2026).",
+    "text": "16.1 Motivations\nChapter Leads: Will Beasley\nSecurity is one of the most important roles as a REDCap administrator. The server is a target because most installations are a public-facing website that can access PHI. In recent years, as REDCap has become essential to medical research projects and institutions, it is a target for its potential for user credentials it might have in common with other institutional assets (e.g., Beyond the Battlefield: Threats to the Defense Industrial Base, Google Threat Intelligence Group, 2026).",
     "crumbs": [
       "Server Admin",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Security Considerations</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Security Considerations</span>"
     ]
   },
   {
     "objectID": "adminser/security.html#involve-others",
     "href": "adminser/security.html#involve-others",
-    "title": "15  Security Considerations",
-    "section": "15.2 Involve Others",
-    "text": "15.2 Involve Others\n\nInvolve the IT’s security and operational teams\nRead the installation manual carefully\nReview community posts for relevant question\nAsk if in doubt\nDocument the installation steps\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in March 2026. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "title": "16  Security Considerations",
+    "section": "16.2 Involve Others",
+    "text": "16.2 Involve Others\n\nInvolve the IT’s security and operational teams\nRead the installation manual carefully\nReview community posts for relevant question\nAsk if in doubt\nDocument the installation steps\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in March 2026. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Server Admin",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Security Considerations</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Security Considerations</span>"
     ]
   },
   {
     "objectID": "adminser/upgrade.html",
     "href": "adminser/upgrade.html",
-    "title": "16  Upgrade REDCap Version",
+    "title": "17  Upgrade REDCap Version",
     "section": "",
-    "text": "16.1 Preparation\nChapter Leads: Will Beasley",
+    "text": "17.1 Preparation\nChapter Leads: Will Beasley",
     "crumbs": [
       "Server Admin",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Upgrade REDCap Version</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Upgrade REDCap Version</span>"
     ]
   },
   {
     "objectID": "adminser/upgrade.html#sec-adminser-upgrade-prep",
     "href": "adminser/upgrade.html#sec-adminser-upgrade-prep",
-    "title": "16  Upgrade REDCap Version",
+    "title": "17  Upgrade REDCap Version",
     "section": "",
-    "text": "16.1.1 Release Cadence\nFor the reasons explained in Chapter 15, REDCap should be upgraded soon after versions are released.\nA notification that a new version has been released will appear in the control center. So as the server administrator is attending to the TODO list periodically in the day, they should check for updates as well.\nHowever most regular releases occur Friday afternoons, so your admin team should schedule time to upgrade the server during this window.\nAllowing for a minimal regiment of testing and validation (say, 15 minutes), the following procedure should take about 30 minutes per server after you’ve performed for it a few weeks. It can be completed faster if you rush, but we suggest blocking off at least 30 minutes so you can be more observant and patient if something doesn’t look right.\n\n\n16.1.2 Avoid Easy Upgrade Feature\nAs of February 2026, best practices recommended not using the “Easy Upgrade” procedure. See Community Post 272424 for further details.\n\n\n16.1.3 Offline vs Online Upgrade\nMost upgrades require minor changes to the underlying MariaDB database, and the developers do not recommend taking the server offline during the process. However occasional upgrades are substantial enough, and the Upgrade Module will recommend the administrator take the instance offline. The warning appears in the “Obtain SQL Update Code” section.\nIn these cases, consider upgrading the nonproduction instance during the week, and the production instance during the weekends or nights to minimize\n\n\n16.1.4 Version Skipping\n\n16.1.4.1 Little Skips\nIf you upgrade every week, there won’t be much opportunity to skip over versions, say from 10.2.3 to 10.2.6. Go ahead and make a small jump like this, especially if the versions were released quickly in succession to address bugs.\n\n\n16.1.4.2 Big Hops\nHowever if your installation is months behind, say from 10.2.3 to 12.4.2, the chance of an unhappy upgrade increases. Not only is more PHP code changing, which is interacting with external components like LDAP or FHIR, but the MariaDB database structure is changing more too.\nSo given the larger risks of big hops we recommend:\n\nUpgrading and validating the non-production instances first.\nTaking the production instance offline.\nUpgrading only ~3 months of versions at a time.\nSnapshotting before each jump (and don’t delete them until the entire upgrade process is complete)\nValidating after each jump.\n\n\n\n\n16.1.5 OS Updates\nConsider checking if your OS and related packages are up-to-date. On RHEL, use the dnf command.\nsudo dnf upgrade",
+    "text": "17.1.1 Release Cadence\nFor the reasons explained in Chapter 16, REDCap should be upgraded soon after versions are released.\nA notification that a new version has been released will appear in the control center. So as the server administrator is attending to the TODO list periodically in the day, they should check for updates as well.\nHowever most regular releases occur Friday afternoons, so your admin team should schedule time to upgrade the server during this window.\nAllowing for a minimal regiment of testing and validation (say, 15 minutes), the following procedure should take about 30 minutes per server after you’ve performed for it a few weeks. It can be completed faster if you rush, but we suggest blocking off at least 30 minutes so you can be more observant and patient if something doesn’t look right.\n\n\n17.1.2 Avoid Easy Upgrade Feature\nAs of February 2026, best practices recommended not using the “Easy Upgrade” procedure. See Community Post 272424 for further details.\n\n\n17.1.3 Offline vs Online Upgrade\nMost upgrades require minor changes to the underlying MariaDB database, and the developers do not recommend taking the server offline during the process. However occasional upgrades are substantial enough, and the Upgrade Module will recommend the administrator take the instance offline. The warning appears in the “Obtain SQL Update Code” section.\nIn these cases, consider upgrading the nonproduction instance during the week, and the production instance during the weekends or nights to minimize\n\n\n17.1.4 Version Skipping\n\n17.1.4.1 Little Skips\nIf you upgrade every week, there won’t be much opportunity to skip over versions, say from 10.2.3 to 10.2.6. Go ahead and make a small jump like this, especially if the versions were released quickly in succession to address bugs.\n\n\n17.1.4.2 Big Hops\nHowever if your installation is months behind, say from 10.2.3 to 12.4.2, the chance of an unhappy upgrade increases. Not only is more PHP code changing, which is interacting with external components like LDAP or FHIR, but the MariaDB database structure is changing more too.\nSo given the larger risks of big hops we recommend:\n\nUpgrading and validating the non-production instances first.\nTaking the production instance offline.\nUpgrading only ~3 months of versions at a time.\nSnapshotting before each jump (and don’t delete them until the entire upgrade process is complete)\nValidating after each jump.\n\n\n\n\n17.1.5 OS Updates\nConsider checking if your OS and related packages are up-to-date. On RHEL, use the dnf command.\nsudo dnf upgrade",
     "crumbs": [
       "Server Admin",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Upgrade REDCap Version</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Upgrade REDCap Version</span>"
     ]
   },
   {
     "objectID": "adminser/upgrade.html#test-and-production-instances",
     "href": "adminser/upgrade.html#test-and-production-instances",
-    "title": "16  Upgrade REDCap Version",
-    "section": "16.2 Test and Production Instances",
-    "text": "16.2 Test and Production Instances\nThe steps above pertain to updating a single instance of REDCap. In addition to your production instance, we strongly suggest you host a test or development too. 1 If so, perform these steps on the non-production server and verify things operate correctly to minimize the chance the research will be disrupted when you upgrade the production instance.",
+    "title": "17  Upgrade REDCap Version",
+    "section": "17.2 Test and Production Instances",
+    "text": "17.2 Test and Production Instances\nThe steps above pertain to updating a single instance of REDCap. In addition to your production instance, we strongly suggest you host a test or development too. 1 If so, perform these steps on the non-production server and verify things operate correctly to minimize the chance the research will be disrupted when you upgrade the production instance.",
     "crumbs": [
       "Server Admin",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Upgrade REDCap Version</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Upgrade REDCap Version</span>"
     ]
   },
   {
     "objectID": "adminser/upgrade.html#steps",
     "href": "adminser/upgrade.html#steps",
-    "title": "16  Upgrade REDCap Version",
-    "section": "16.3 Steps",
-    "text": "16.3 Steps\n\n16.3.1 Snapshot VM\nIn addition to any MariaDB-level backup, we recommend taking a snapshot immediately before upgrading. This should involve a snapshot of both the database server and the web server.\nFor cost and performance considerations, we typically retain only the most recent snapshot of each server.\n\n\n16.3.2 Download\nLog into the REDCap Community site and download the latest version. Make sure you select the correct value among these three dimensions: (i) LTS vs Standard, (ii) “Update” (as opposed to the “Fresh Installation”), and (iii) version number.\n\n\n16.3.3 Transfer file\nTransfer the zipped file from your client machine to the web server, using a tool like WinSCP. For this scenario, say it’s transferred to the “Downloads/upgrades” directory of the user’s home directory.\n\n\n16.3.4 Update Web Server\nThe first component to be upgraded is the PHP code residing on the web server, so log into the web server.\nDecompressed the files and move them to the appropriate REDCap folder where they are visible and available to users.\nOn a Linux distribution like RHEL, the code is:\n# Delete any 'redcap' directory unzipped from previous upgrades\ncd ~/Downloads/upgrades\nrm -rf redcap\n\n# Unzip the file into a directory.\n# If sudo is required, you're probably in the wrong directory\n# If you unzipped previous versions, you'll be asked to override\n# * Upgrade_Instructions.txt and\n# * REDCap_License.txt.\nunzip ~/Downloads/upgrades/redcap*_upgrade.zip\n\n# Move the directory to a redcap subdirectory.\nsudo mv ~/Downloads/upgrades/redcap/redcap_v*/ /var/www/html/redcap/\n\n# Verify it was moved to the correct location.\ncd /var/www/html/redcap/\n\n# Should see the new directory, as well as the existing one\nls\n\n\n16.3.5 Obtain SQL Update Code\nThe second component to upgrade is the database, which involves executing SQL code that REDCap’s installation process provides you.\nAfter moving the PHP code, go to &lt;redcap-installation&gt;/&lt;redcap_version&gt;/ControlCenter/, from your desktop. Near the top of the page, click a green banner proclaiming something like, “Ready to upgrade to REDCap 12.3.4! Click here to navigate to the REDCap upgrade page.”\nThis will take you to the “Upgrade Module”, which should indicate that the previous step was successful and provide SQL code. Choose “Option C: Download the SQL upgrade script as a file” to save the code as a sql file to your desktop machine along the lines of “redcap_upgrade_120304.sql”.\n\n\n\nUpgrade Module\n\n\nTransfer the file from your desktop to the database server, specifically ~/redcap-upgrades. For the sake of consistency, use the same approach as you transferred the PHP code to the web server in the previous step.2\n\n\n16.3.6 Update Database Server\nLog into the database server and open a database IDE. Open the new upgrade sql file.3 Execute the entire file.\nAlthough the entire file should be executed eventually, but you can chose either line-by-line or all-at-once. If it’s a small hop between versions and the upgrade went smoothly on the non-production instance, consider making your life easier and hitting the Run button just once.\nHowever if there were previous problems, we recommend a more conservative approach. Possibly there were problems upgrading the non-production instance. Or perhaps that ran smoothly, but the production upgrade failed, so you rolled back to your VM snapshot. Run small snippets of the code individually. This incremental approach will help you identify where the code failed, and therefore be more suggestive how to solve the problem.\n\n\n\n\n\n\nNoteDatabase Context\n\n\n\nYou don’t need to learn SQL to upgrade REDCap, but a little understanding of the process could help if the process doesn’t go smoothly.\nAll upgrades will involve a least one line of DML SQL code that adjust configuration values, like the one that increases redcap_version.\nMore substantial upgrades involve DDL SQL code that modifies the structure of the database, like adding a table to support a new feature.\n\n\n\n\n16.3.7 Verify Installation\n\n16.3.7.1 Configuration Check\nAfter updating the database, the Upgrade Module will redirect to the Configuration Check. Inspect that all the “Basic” and “Secondary” tests pass.\n\n\n\nConfiguration Check\n\n\n\n\n16.3.7.2 Test and Validate\nThe next step should be to follow your institution’s procedure for testing the instance again. Furthermore, we recommend reading the ChangeLog on the Community site, and focusing on any new features within the release.\nFor example, if some features or fixes involve the Clinical Data Interoperability Services (CDIS), check that the basic FHIR operations are performing as you expect.\n\n\n\n16.3.8 Clean Up\n\nDelete Previous Versions\n\n# Be very careful that you specify the *previous/old* version(s) correctly.\nsudo rm -rf /var/www/html/redcap/redcap_v12.1.2\n\nUpdate OS and packages\nUpgrading REDCap may also be a good time to ensure that other layers of the software stack are up-to-date. This includes things like MariaDB, PHP, and the OS.\nIf you’re running RHEL, the following command will install dnf packages, and reboot the server at 3am that night. Depending on the size and activity of your REDCap instance, consider if people should be notified ahead of time.\nsudo bash -c 'command -v at &gt;/dev/null 2&gt;&1 || (yum -y install at || dnf -y install at || apt-get update -y && apt-get install -y at); systemctl enable --now atd; echo \"reboot\" | at 3am tomorrow'; exit 0\nTypically we’ll initially upgrade the packages interactively with sudo dnf upgrade and confirm that everything completed successfully. Then we’ll terminate the session with the previous snippet to make sure any upgrades requiring a reboot are fulfilled.\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in March 2026. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "title": "17  Upgrade REDCap Version",
+    "section": "17.3 Steps",
+    "text": "17.3 Steps\n\n17.3.1 Snapshot VM\nIn addition to any MariaDB-level backup, we recommend taking a snapshot immediately before upgrading. This should involve a snapshot of both the database server and the web server.\nFor cost and performance considerations, we typically retain only the most recent snapshot of each server.\n\n\n17.3.2 Download\nLog into the REDCap Community site and download the latest version. Make sure you select the correct value among these three dimensions: (i) LTS vs Standard, (ii) “Update” (as opposed to the “Fresh Installation”), and (iii) version number.\n\n\n17.3.3 Transfer file\nTransfer the zipped file from your client machine to the web server, using a tool like WinSCP. For this scenario, say it’s transferred to the “Downloads/upgrades” directory of the user’s home directory.\n\n\n17.3.4 Update Web Server\nThe first component to be upgraded is the PHP code residing on the web server, so log into the web server.\nDecompressed the files and move them to the appropriate REDCap folder where they are visible and available to users.\nOn a Linux distribution like RHEL, the code is:\n# Delete any 'redcap' directory unzipped from previous upgrades\ncd ~/Downloads/upgrades\nrm -rf redcap\n\n# Unzip the file into a directory.\n# If sudo is required, you're probably in the wrong directory\n# If you unzipped previous versions, you'll be asked to override\n# * Upgrade_Instructions.txt and\n# * REDCap_License.txt.\nunzip ~/Downloads/upgrades/redcap*_upgrade.zip\n\n# Move the directory to a redcap subdirectory.\nsudo mv ~/Downloads/upgrades/redcap/redcap_v*/ /var/www/html/redcap/\n\n# Verify it was moved to the correct location.\ncd /var/www/html/redcap/\n\n# Should see the new directory, as well as the existing one\nls\n\n\n17.3.5 Obtain SQL Update Code\nThe second component to upgrade is the database, which involves executing SQL code that REDCap’s installation process provides you.\nAfter moving the PHP code, go to &lt;redcap-installation&gt;/&lt;redcap_version&gt;/ControlCenter/, from your desktop. Near the top of the page, click a green banner proclaiming something like, “Ready to upgrade to REDCap 12.3.4! Click here to navigate to the REDCap upgrade page.”\nThis will take you to the “Upgrade Module”, which should indicate that the previous step was successful and provide SQL code. Choose “Option C: Download the SQL upgrade script as a file” to save the code as a sql file to your desktop machine along the lines of “redcap_upgrade_120304.sql”.\n\n\n\nUpgrade Module\n\n\nTransfer the file from your desktop to the database server, specifically ~/redcap-upgrades. For the sake of consistency, use the same approach as you transferred the PHP code to the web server in the previous step.2\n\n\n17.3.6 Update Database Server\nLog into the database server and open a database IDE. Open the new upgrade sql file.3 Execute the entire file.\nAlthough the entire file should be executed eventually, but you can chose either line-by-line or all-at-once. If it’s a small hop between versions and the upgrade went smoothly on the non-production instance, consider making your life easier and hitting the Run button just once.\nHowever if there were previous problems, we recommend a more conservative approach. Possibly there were problems upgrading the non-production instance. Or perhaps that ran smoothly, but the production upgrade failed, so you rolled back to your VM snapshot. Run small snippets of the code individually. This incremental approach will help you identify where the code failed, and therefore be more suggestive how to solve the problem.\n\n\n\n\n\n\nNoteDatabase Context\n\n\n\nYou don’t need to learn SQL to upgrade REDCap, but a little understanding of the process could help if the process doesn’t go smoothly.\nAll upgrades will involve a least one line of DML SQL code that adjust configuration values, like the one that increases redcap_version.\nMore substantial upgrades involve DDL SQL code that modifies the structure of the database, like adding a table to support a new feature.\n\n\n\n\n17.3.7 Verify Installation\n\n17.3.7.1 Configuration Check\nAfter updating the database, the Upgrade Module will redirect to the Configuration Check. Inspect that all the “Basic” and “Secondary” tests pass.\n\n\n\nConfiguration Check\n\n\n\n\n17.3.7.2 Test and Validate\nThe next step should be to follow your institution’s procedure for testing the instance again. Furthermore, we recommend reading the ChangeLog on the Community site, and focusing on any new features within the release.\nFor example, if some features or fixes involve the Clinical Data Interoperability Services (CDIS), check that the basic FHIR operations are performing as you expect.\n\n\n\n17.3.8 Clean Up\n\nDelete Previous Versions\n\n# Be very careful that you specify the *previous/old* version(s) correctly.\nsudo rm -rf /var/www/html/redcap/redcap_v12.1.2\n\nUpdate OS and packages\nUpgrading REDCap may also be a good time to ensure that other layers of the software stack are up-to-date. This includes things like MariaDB, PHP, and the OS.\nIf you’re running RHEL, the following command will install dnf packages, and reboot the server at 3am that night. Depending on the size and activity of your REDCap instance, consider if people should be notified ahead of time.\nsudo bash -c 'command -v at &gt;/dev/null 2&gt;&1 || (yum -y install at || dnf -y install at || apt-get update -y && apt-get install -y at); systemctl enable --now atd; echo \"reboot\" | at 3am tomorrow'; exit 0\nTypically we’ll initially upgrade the packages interactively with sudo dnf upgrade and confirm that everything completed successfully. Then we’ll terminate the session with the previous snippet to make sure any upgrades requiring a reboot are fulfilled.\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in March 2026. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Server Admin",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Upgrade REDCap Version</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Upgrade REDCap Version</span>"
     ]
   },
   {
     "objectID": "adminser/upgrade.html#footnotes",
     "href": "adminser/upgrade.html#footnotes",
-    "title": "16  Upgrade REDCap Version",
+    "title": "17  Upgrade REDCap Version",
     "section": "",
     "text": "The distinction between a test instance and development instance is important to some aspects of server administration, but not to this aspect. Update all the nonproduction servers you have before your production servers.↩︎\nIt may be possible to copy the code from the web page and paste it into the database IDE, but we prefer the proposed approach for two reasons:\n\nThe sql file helps document changes if you need to reconstruct something.\nIt’s tricky moving the code across machines if the Linux server-client protocol doesn’t support copy-paste operations.\n\n↩︎\nMySQL Workbench and phpMyAdmin are popular tools for MariaDB/MySQL databases. Our slight preference is DBeaver.↩︎",
     "crumbs": [
       "Server Admin",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Upgrade REDCap Version</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Upgrade REDCap Version</span>"
     ]
   },
   {
     "objectID": "check/testing.html",
     "href": "check/testing.html",
-    "title": "17  Checklist for Testing a REDCap Project",
+    "title": "18  Checklist for Testing a REDCap Project",
     "section": "",
-    "text": "17.1 Before Testing\nChapter Leads: Lise DeShea\nCongratulations on completing your REDCap project! When someone requests a REDCap project to be moved into production (i.e., to go live for data collection) the REDCap Administrator must ask: Has this project been adequately tested? Just as a company will test a new product and all of its parts before going into mass production, your REDCap project needs to be well-tested before going live.\nThoroughly testing your REDCap project before going live is important because you can lose data if you make changes to the survey/form after data collection has begun. If skip patterns are not correct, necessary questions can be skipped or data may be collected that is not required. If the question format is not correct, it may be difficult to analyze after data collection ends.\nWhy do we tell project developers to try to break their REDCap project?\nBreaking a project means testing your survey from a perspective of a naïve user who knows nothing about the project’s purpose or the data being collected. You need to think of all the ways the project could fail or be misunderstood, and try to make that happen. We created this checklist to guide your REDCap testing:\nBefore sending your instruments or survey for testing, the designer (you) will need to:",
+    "text": "18.1 Before Testing\nChapter Leads: Lise DeShea\nCongratulations on completing your REDCap project! When someone requests a REDCap project to be moved into production (i.e., to go live for data collection) the REDCap Administrator must ask: Has this project been adequately tested? Just as a company will test a new product and all of its parts before going into mass production, your REDCap project needs to be well-tested before going live.\nThoroughly testing your REDCap project before going live is important because you can lose data if you make changes to the survey/form after data collection has begun. If skip patterns are not correct, necessary questions can be skipped or data may be collected that is not required. If the question format is not correct, it may be difficult to analyze after data collection ends.\nWhy do we tell project developers to try to break their REDCap project?\nBreaking a project means testing your survey from a perspective of a naïve user who knows nothing about the project’s purpose or the data being collected. You need to think of all the ways the project could fail or be misunderstood, and try to make that happen. We created this checklist to guide your REDCap testing:\nBefore sending your instruments or survey for testing, the designer (you) will need to:",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing.html#sec-check-testing-before",
     "href": "check/testing.html#sec-check-testing-before",
-    "title": "17  Checklist for Testing a REDCap Project",
+    "title": "18  Checklist for Testing a REDCap Project",
     "section": "",
-    "text": "17.1.1 Field Type\nCheck the field type for every variable\nMake sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as YYYY-MM-DD? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button or a drop-down menu. In contrast, a checkbox field allows multiple responses to be chosen on a multiple-choice item.\n\n\n17.1.2 Use clear language\n\nMany surveys/instruments are completed or used by people of different literacy levels or for whom English is a second language, so it is crucial to be as clear as possible.\nMake sure labels are clear and the logic between items is easy to follow. Vague labels and difficult-to-follow logic can lead to items being skipped and data to be missing, or incorrect responses may be entered. Example:\n\n\n\n\n\n\n\nFigure 17.1: Ambiguous “Name”.\n\n\n\nWhose name? The person filling out the form? Their first name? Last name? The last name of a family in the home? What if they have different last names? The survey might be clear to the person creating the project, but a second or third set of eyes may catch items that are unclear.\n\n\n17.1.3 Anticipate Analysis\nInspect each field and think about what the data will look like for the person eventually analyzing the data\nExample:\nWith a fill-in-the-blank text field like the one above, here are some of the ways that someone may report a birthday:\nJanuary 8, 1999    08 January 1999    Jan 8, 99   1-8-1999\nJan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99\nA subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birth date. And forget about being able to calculate someone’s current age based on these data! Use REDCap’s built-in data validation capability whenever possible. Go through your items and figure out if you can validate each field in some way. Even something like “Child’s age” could be entered numerous ways in a free-text field:\nSeven    7 years old        Don't know      8 on his next birthday\n7        7 years, 4 months  I don't know\nYou might modify your item to specify “Child’s age (in years)” and use data validation to require the person to enter an integer greater than 0 and less than 18.\n\n\n17.1.4 Necessary Data\nCheck whether your project is failing to collect necessary data, either by fields not being completed or fields being left off the form\n\nGo back to the original plan for the project and check your work.\nWhat was the purpose of the project? Did every needed field get included in your instruments/survey?\nWill the fields in your instruments/survey collect the information required to to fulfill the needs that motivated the project?\n\n\n\n17.1.5 Test the survey yourself\nTest the survey yourself\n\nMany times, omissions or errors can be found by testing the survey/instrument yourself.\nEnter test data. If you are testing a survey, follow along with the paper survey and see if it matches with what is in REDCap.\nReview the data you just entered and see if the data is what you expected.\nCheck all branching logic and make sure the fields that are supposed to become available to the respondent actually open up for data entry.",
+    "text": "18.1.1 Field Type\nCheck the field type for every variable\nMake sure the field type is what you had meant to select. For instance, is the date field using the correct validation, such as YYYY-MM-DD? Does a multiple-choice item allow only one response? If so, then it needs to be a radio button or a drop-down menu. In contrast, a checkbox field allows multiple responses to be chosen on a multiple-choice item.\n\n\n18.1.2 Use clear language\n\nMany surveys/instruments are completed or used by people of different literacy levels or for whom English is a second language, so it is crucial to be as clear as possible.\nMake sure labels are clear and the logic between items is easy to follow. Vague labels and difficult-to-follow logic can lead to items being skipped and data to be missing, or incorrect responses may be entered. Example:\n\n\n\n\n\n\n\nFigure 18.1: Ambiguous “Name”.\n\n\n\nWhose name? The person filling out the form? Their first name? Last name? The last name of a family in the home? What if they have different last names? The survey might be clear to the person creating the project, but a second or third set of eyes may catch items that are unclear.\n\n\n18.1.3 Anticipate Analysis\nInspect each field and think about what the data will look like for the person eventually analyzing the data\nExample:\nWith a fill-in-the-blank text field like the one above, here are some of the ways that someone may report a birthday:\nJanuary 8, 1999    08 January 1999    Jan 8, 99   1-8-1999\nJan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99\nA subsequent analysis would report there were 8 different dates entered, instead of 8 people with the same birth date. And forget about being able to calculate someone’s current age based on these data! Use REDCap’s built-in data validation capability whenever possible. Go through your items and figure out if you can validate each field in some way. Even something like “Child’s age” could be entered numerous ways in a free-text field:\nSeven    7 years old        Don't know      8 on his next birthday\n7        7 years, 4 months  I don't know\nYou might modify your item to specify “Child’s age (in years)” and use data validation to require the person to enter an integer greater than 0 and less than 18.\n\n\n18.1.4 Necessary Data\nCheck whether your project is failing to collect necessary data, either by fields not being completed or fields being left off the form\n\nGo back to the original plan for the project and check your work.\nWhat was the purpose of the project? Did every needed field get included in your instruments/survey?\nWill the fields in your instruments/survey collect the information required to to fulfill the needs that motivated the project?\n\n\n\n18.1.5 Test the survey yourself\nTest the survey yourself\n\nMany times, omissions or errors can be found by testing the survey/instrument yourself.\nEnter test data. If you are testing a survey, follow along with the paper survey and see if it matches with what is in REDCap.\nReview the data you just entered and see if the data is what you expected.\nCheck all branching logic and make sure the fields that are supposed to become available to the respondent actually open up for data entry.",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing.html#sec-check-testing-others",
     "href": "check/testing.html#sec-check-testing-others",
-    "title": "17  Checklist for Testing a REDCap Project",
-    "section": "17.2 Select Testers",
-    "text": "17.2 Select Testers\nWhen you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project\n\n17.2.1 First Tester\nAsk at least one other person to enter test data in your instruments or survey_\n\nSometimes the person creating the project is too close to it and can’t see its limitations. A second, third or fourth set of eyes is crucial, and they can enter many test records with different scenarios in mind.\nCould any of the items be misunderstood by a naïve user?\nCheck the data entered to see if the questions meet the goals of the project? Example:\n\nIf people with diabetes need to answer extra questions, has the branching logic been set up correctly so that those items only appear when someone says they have diabetes? Your tester(s) should enter data for different kinds of study participants. This step is important to complete before a project is moved into production because you may not be able to test changes in branching logic at a later point.\n\nDoes the survey work equally well on a cell phone vs. a computer? Having multiple testers will allow you to have them test the project on different platforms.\nIs there enough room in the text box for answers or do you need to change it to a notes box?\n\nTesting a public survey\n\nPublic surveys can be distributed from the REDCap email system or through an OU email with an embedded link. The tester’s email address is required.\nIf there is a paper survey, send selected individuals a copy and have them check to see if it matches what they see in REDCap. Other testers can test the survey without using the paper survey.\n\nTesting data collection forms that are not surveys\n\nTesting data collection forms used only within REDCap (i.e., it is not a public survey) will need to be done by individuals within your group or by individuals who will have temporary access to the project for testing only. They will need to be removed from the project prior to pushing the project to production and prior to starting actual data collection.\n\n\n\n17.2.2 Compared to Printed Versions\nHave at least one other person who is familiar with the study or investigation check whether the REDCap project matches any printed documents, like IRB protocols and approved procedures\n\nIs the project accurate and staying within the bounds of what has been intended or IRB-approved?\nIs the wording correct on all instruments?\nIs everything spelled correctly?\nIs the skip logic correct? Does the skip logic match what is in the printed survey?\nAre all the items present?\nHave any items been added that were not approved by the IRB (and therefore should be deleted)?\nAre calculated variables producing correct answers?\nCan the investigators confirm who has been approved as key personnel by the IRB so only those people are given access to the REDCap project?\n\n\n\n17.2.3 User-Friendly Appearance\nAsk the individuals testing your instruments/survey if the forms/surveys are user-friendly in its appearance\n\nAre the colors easy on the eyes?\nAre colors acceptable for people who are color-blind?\nIf a team will be entering data directly into REDCap (i.e., it is not a public survey), are the instruments too long? Could the instrument be broken up into shorter instruments so the data entry person doesn’t feel like they’re working on the Great Wall of China?\nCould some items be put into a table using the rich text editor in a descriptive field? These tables can save space and require less scrolling by the data entry person. Ask your REDCap Administrator how to do that.",
+    "title": "18  Checklist for Testing a REDCap Project",
+    "section": "18.2 Select Testers",
+    "text": "18.2 Select Testers\nWhen you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project\n\n18.2.1 First Tester\nAsk at least one other person to enter test data in your instruments or survey_\n\nSometimes the person creating the project is too close to it and can’t see its limitations. A second, third or fourth set of eyes is crucial, and they can enter many test records with different scenarios in mind.\nCould any of the items be misunderstood by a naïve user?\nCheck the data entered to see if the questions meet the goals of the project? Example:\n\nIf people with diabetes need to answer extra questions, has the branching logic been set up correctly so that those items only appear when someone says they have diabetes? Your tester(s) should enter data for different kinds of study participants. This step is important to complete before a project is moved into production because you may not be able to test changes in branching logic at a later point.\n\nDoes the survey work equally well on a cell phone vs. a computer? Having multiple testers will allow you to have them test the project on different platforms.\nIs there enough room in the text box for answers or do you need to change it to a notes box?\n\nTesting a public survey\n\nPublic surveys can be distributed from the REDCap email system or through an OU email with an embedded link. The tester’s email address is required.\nIf there is a paper survey, send selected individuals a copy and have them check to see if it matches what they see in REDCap. Other testers can test the survey without using the paper survey.\n\nTesting data collection forms that are not surveys\n\nTesting data collection forms used only within REDCap (i.e., it is not a public survey) will need to be done by individuals within your group or by individuals who will have temporary access to the project for testing only. They will need to be removed from the project prior to pushing the project to production and prior to starting actual data collection.\n\n\n\n18.2.2 Compared to Printed Versions\nHave at least one other person who is familiar with the study or investigation check whether the REDCap project matches any printed documents, like IRB protocols and approved procedures\n\nIs the project accurate and staying within the bounds of what has been intended or IRB-approved?\nIs the wording correct on all instruments?\nIs everything spelled correctly?\nIs the skip logic correct? Does the skip logic match what is in the printed survey?\nAre all the items present?\nHave any items been added that were not approved by the IRB (and therefore should be deleted)?\nAre calculated variables producing correct answers?\nCan the investigators confirm who has been approved as key personnel by the IRB so only those people are given access to the REDCap project?\n\n\n\n18.2.3 User-Friendly Appearance\nAsk the individuals testing your instruments/survey if the forms/surveys are user-friendly in its appearance\n\nAre the colors easy on the eyes?\nAre colors acceptable for people who are color-blind?\nIf a team will be entering data directly into REDCap (i.e., it is not a public survey), are the instruments too long? Could the instrument be broken up into shorter instruments so the data entry person doesn’t feel like they’re working on the Great Wall of China?\nCould some items be put into a table using the rich text editor in a descriptive field? These tables can save space and require less scrolling by the data entry person. Ask your REDCap Administrator how to do that.",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing.html#sec-check-testing-completed",
     "href": "check/testing.html#sec-check-testing-completed",
-    "title": "17  Checklist for Testing a REDCap Project",
-    "section": "17.3 After testing",
-    "text": "17.3 After testing\nWhen the testers have completed their testing\n\n17.3.1 Necessary Changes\nMake any necessary changes to the survey or data instrument\n\n\n17.3.2 Respond to Feedback\nReview suggested changes and make changes based on their feedback\n\n\n17.3.3 Inspect Test Data\nLook at the data that the testers entered into REDCap\n\nClick on Data Exports, Reports and Stats on the left side of your screen, then click on the View Report button to see the entered data.\nDoes any of the information look like it would be unusable or is not as expected?\nCan the field be modified with data validation settings?\nMake corrections to the field if necessary. These corrections need to be done before the project is in production for actual data collection because you can lose data by changing the variables in production.\n\n\n\n17.3.4 Convert to Notes\nAre there any text boxes that need to be turned into notes fields?",
+    "title": "18  Checklist for Testing a REDCap Project",
+    "section": "18.3 After testing",
+    "text": "18.3 After testing\nWhen the testers have completed their testing\n\n18.3.1 Necessary Changes\nMake any necessary changes to the survey or data instrument\n\n\n18.3.2 Respond to Feedback\nReview suggested changes and make changes based on their feedback\n\n\n18.3.3 Inspect Test Data\nLook at the data that the testers entered into REDCap\n\nClick on Data Exports, Reports and Stats on the left side of your screen, then click on the View Report button to see the entered data.\nDoes any of the information look like it would be unusable or is not as expected?\nCan the field be modified with data validation settings?\nMake corrections to the field if necessary. These corrections need to be done before the project is in production for actual data collection because you can lose data by changing the variables in production.\n\n\n\n18.3.4 Convert to Notes\nAre there any text boxes that need to be turned into notes fields?",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/testing.html#sec-check-testing-satisfied",
     "href": "check/testing.html#sec-check-testing-satisfied",
-    "title": "17  Checklist for Testing a REDCap Project",
-    "section": "17.4 Once Satisfied",
-    "text": "17.4 Once Satisfied\nWhen you are satisfied that everything is perfect\n\n17.4.1 Project Setup\nMove your project to production status by (1) clicking on “Project Setup” tab\n\n\n17.4.2 Move project to production\nThen scroll down, and (2) click on the button “Move project to production.”\n\n\n17.4.3 Keep ALL data saved so far\nIf you have real data entered and don’t want to lose it, click on “Keep ALL data saved so far.”\n\n\n17.4.4 If everything is test data,\n\nIf so, remember to click on “Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys, and all archived data export files stored in the File Repository, and any logged events that pertain to data collection.”\n\n\n\n17.4.5 Request Admin to Move\nClick on the button “Yes, Request Admin to Move to Production Status.”",
+    "title": "18  Checklist for Testing a REDCap Project",
+    "section": "18.4 Once Satisfied",
+    "text": "18.4 Once Satisfied\nWhen you are satisfied that everything is perfect\n\n18.4.1 Project Setup\nMove your project to production status by (1) clicking on “Project Setup” tab\n\n\n18.4.2 Move project to production\nThen scroll down, and (2) click on the button “Move project to production.”\n\n\n18.4.3 Keep ALL data saved so far\nIf you have real data entered and don’t want to lose it, click on “Keep ALL data saved so far.”\n\n\n18.4.4 If everything is test data,\n\nIf so, remember to click on “Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys, and all archived data export files stored in the File Repository, and any logged events that pertain to data collection.”\n\n\n\n18.4.5 Request Admin to Move\nClick on the button “Yes, Request Admin to Move to Production Status.”",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Checklist for Testing a REDCap Project</span>"
     ]
   },
   {
     "objectID": "check/part11.html",
     "href": "check/part11.html",
-    "title": "18  21 CFR Part 11 Requirements of the Researcher",
+    "title": "19  21 CFR Part 11 Requirements of the Researcher",
     "section": "",
-    "text": "18.1 Background\nChapter Leads: Thomas Wilson and William H. Beasley",
+    "text": "19.1 Background\nChapter Leads: Thomas Wilson and William H. Beasley",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
     ]
   },
   {
     "objectID": "check/part11.html#sec-check-part11-background",
     "href": "check/part11.html#sec-check-part11-background",
-    "title": "18  21 CFR Part 11 Requirements of the Researcher",
+    "title": "19  21 CFR Part 11 Requirements of the Researcher",
     "section": "",
-    "text": "18.1.1 Overview\n21 CFR Part 11 (frequently shortened to just “Part 11”) compliance is much more than just demonstrating a REDCap instance is compliant. Your specific REDCap project must be compliant too, as well as surrounding components like your procedures for data collections and training for the research team.\nThis chapter helps walk you through the process.\nBegin by contacting IT security to receive their most recent Part 11 compliance document. Some parts will be completed by REDCap admin team, and other parts will be completed by your research team.\nSee below for example responses by researchers using the OU REDCap instance. Of course, review each entry carefully, and tailor it to your specific research protocol.\n\n\n18.1.2 Glossary\n\nRA: REDCap Administrators. OU employees who are responsible for the overall instance on campus. This includes some OCRI employees (like Thomas Wilson) who train users and manage the back-end servers. It also includes OU IT employees who are experts in virtual servers and Linux.\nRD: REDCap Developer. Vandy {Come back to this.}\nRT: Research Team. These are the people managing the research project. Their typical duties include designing the study, collecting data, analyzing the results, and publishing the findings.\nThese are the individuals who are responsible for the daily operations of the study, and how a study is reflected in a REDCap project.\nThe RT is different from the people who design the REDCap software (at Vanderbilt University) and from the people who administer the local REDCap instance (in OCRI and OU IT).",
+    "text": "19.1.1 Overview\n21 CFR Part 11 (frequently shortened to just “Part 11”) compliance is much more than just demonstrating a REDCap instance is compliant. Your specific REDCap project must be compliant too, as well as surrounding components like your procedures for data collections and training for the research team.\nThis chapter helps walk you through the process.\nBegin by contacting IT security to receive their most recent Part 11 compliance document. Some parts will be completed by REDCap admin team, and other parts will be completed by your research team.\nSee below for example responses by researchers using the OU REDCap instance. Of course, review each entry carefully, and tailor it to your specific research protocol.\n\n\n19.1.2 Glossary\n\nRA: REDCap Administrators. OU employees who are responsible for the overall instance on campus. This includes some OCRI employees (like Thomas Wilson) who train users and manage the back-end servers. It also includes OU IT employees who are experts in virtual servers and Linux.\nRD: REDCap Developer. Vandy {Come back to this.}\nRT: Research Team. These are the people managing the research project. Their typical duties include designing the study, collecting data, analyzing the results, and publishing the findings.\nThese are the individuals who are responsible for the daily operations of the study, and how a study is reflected in a REDCap project.\nThe RT is different from the people who design the REDCap software (at Vanderbilt University) and from the people who administer the local REDCap instance (in OCRI and OU IT).",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
     ]
   },
   {
     "objectID": "check/part11.html#sec-check-part11-system",
     "href": "check/part11.html#sec-check-part11-system",
-    "title": "18  21 CFR Part 11 Requirements of the Researcher",
-    "section": "18.2 System Validation And Change Control (Sec A)",
-    "text": "18.2 System Validation And Change Control (Sec A)\nRTs are not responsible for content in this section.",
+    "title": "19  21 CFR Part 11 Requirements of the Researcher",
+    "section": "19.2 System Validation And Change Control (Sec A)",
+    "text": "19.2 System Validation And Change Control (Sec A)\nRTs are not responsible for content in this section.",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
     ]
   },
   {
     "objectID": "check/part11.html#sec-check-part11-access",
     "href": "check/part11.html#sec-check-part11-access",
-    "title": "18  21 CFR Part 11 Requirements of the Researcher",
-    "section": "18.3 Access Control And Security (Sec B)",
-    "text": "18.3 Access Control And Security (Sec B)\n\n18.3.1 User Authentication (Subsec B1)\nRTs are not responsible for content in this section.\n\n\n18.3.2 Role-Based Permissions (Subsec B2)\n\n18.3.2.1 Are roles and permissions in REDCap configured to ensure that users only have the minimum necessary access to perform their job functions?\nREDCap allows fine-grained permissions to users and groups within each project.\nIt is the RT’s responsibility to assign other study team members the appropriate permissions, while following the principles of least privilege.\n\n\n18.3.2.2 Are permission sets periodically reviewed to confirm they still align with user job functions?\nYes, the REDCap dashboard to allow someone to quickly review the study’s users, groups, and permissions. It is the RT’s responsibility to periodically review this dashboard.\n\n\n18.3.2.3 Do you enforce the principle of least privilege (admins vs. data entry vs. monitors)?\nThe RT works with their team members and should be aware of their roles approved by the IRB.\nIt is the RT’s responsibility to assign the appropriate levels of privileges.\n\n\n\n18.3.3 Account Provisioning and Deprovisioning (Subsec B3)\n\n18.3.3.1 Is there a clear process to grant, modify, or revoke system access when personnel changes roles or leave the organization?\nYes, the REDCap user rights dashboard allows RT staff to easily grant, modify, or revoke system access when personnel changes occur.\nIt is the RT’s responsibility to monitor staff changes and make the appropriate system access modifications when necessary.\n\n\n18.3.3.2 Must accounts be removed within a certain time frame (e.g., 24 hours) after staff departure\nYes, REDCap allows for the expedient removal of staff from the appropriate REDCap projects.\nIt is the RT’s responsibility to monitor staff changes and remove accounts from the projects.\n\n\n18.3.3.3 Do new users undergo formal training or competency checks before access is granted?\nYes, the RA team provides general REDCap training on how to operate the system. The RT will be responsible for training and competency check for the specific project that new staff will be using.\n\n\n\n18.3.4 Audit Trail Review (Subsec C3)\n\n18.3.4.1 Is there a process for periodically reviewing audit trails and investigating any anomalies?\nYes, REDCap maintains an audit log for all transactions within a specific project. It is easily accessible and downloadable as a .csv file.\nIt is the responsibility of the RT to review the audit logs and investigate any anomalies.\n\n\n18.3.4.2 Is there a routine schedule (monthly, quarterly) for audit trail reviews?\nWith the accessibility of the REDCap audit log, scheduling of reviews can be done at any appropriate schedule.\nIt is the responsibility of the RT to schedule the audit trail reviews.\n\n\n18.3.4.3 Who is responsible for these reviews, and are they qualified to interpret logs?\nREDCap maintains the audit log in an accessible and downloadable format.\nThe RT is responsible for assigning the reviewer and determining their qualification to interpret the logs.\n\n\n18.3.4.4 Do you conduct forensic reviews if suspicious activity is detected?\nThe RT is responsible for conducting forensic reviews if suspicious activity is detected.\n\n\n\n18.3.5 Data Entry and Validation Checks (Subsec C4)\n\n18.3.5.1 Do you conduct forensic reviews if suspicious activity is detected?\nYes, REDCap allows data fields to be configured with multiple data validation rules. These rules include format checks, ranges for dates and numeric entries, required fields, and designating that a field is an identifier. REDCap also utilizes functionality called “Action Tags” to further ensure that data are collected in an accurate, efficient manner. The RA team can train the RT on all of these features, but it is the responsibility of the RT to implement the features into their projects.\n\n\n18.3.5.2 How do you handle data corrections or errors (formal data query, edit check process)?\nREDCap allows for users with appropriate permissions to correct data or errors within a project. Any changes to the data are recorded in the REDCap audit log. Additionally, REDCap has a field comment log for each field. The field comment log allows users to record the reason they are making a modification to the data for each field that needs to be corrected.\nIt is the responsibility of the RT to make data corrections or address errors.\n\n\n18.3.5.3 When data collection instruments are updated, is the previous version retained to show how data were collected at any point in time?\nYes, REDCap, when in production mode, creates a snapshot of all data collection instruments whenever a change is requested.\nIt is the responsibility of the RT to ensure that REDCap is in production mode prior to collecting research data.\n\n\n18.3.5.4 Does the system lock old forms when a new version is released, preventing retrospective changes?\nYes, when a new version of a form is released, the old form is retired from data entry.\n\n\n18.3.5.5 How do you inform users about updated forms (e.g., release notes, training)?\nWhen a REDCap project is in production and updates are requested, the individual on the RT requesting the changes will receive an email notification from the system when the changes have been approved.\nIt is the responsibility of the change requestor to inform the remainder of the RT of any changes that have been made.\n\n\n18.3.5.6 Do you use encryption of secure FTP for high-risk data transfers?\nREDCap stores data in secure VMs (virtual machines) on the OU campus. It is the responsibility of the RT to ensure the security of that data when it has been extracted from REDCap.\n\n\n18.3.5.7 How do you ensure integrity if data are exported for analysis outside of REDCap?\nIt is the responsibility of the RT to ensure the security of data if it has been exported outside of REDCap for analysis.",
+    "title": "19  21 CFR Part 11 Requirements of the Researcher",
+    "section": "19.3 Access Control And Security (Sec B)",
+    "text": "19.3 Access Control And Security (Sec B)\n\n19.3.1 User Authentication (Subsec B1)\nRTs are not responsible for content in this section.\n\n\n19.3.2 Role-Based Permissions (Subsec B2)\n\n19.3.2.1 Are roles and permissions in REDCap configured to ensure that users only have the minimum necessary access to perform their job functions?\nREDCap allows fine-grained permissions to users and groups within each project.\nIt is the RT’s responsibility to assign other study team members the appropriate permissions, while following the principles of least privilege.\n\n\n19.3.2.2 Are permission sets periodically reviewed to confirm they still align with user job functions?\nYes, the REDCap dashboard to allow someone to quickly review the study’s users, groups, and permissions. It is the RT’s responsibility to periodically review this dashboard.\n\n\n19.3.2.3 Do you enforce the principle of least privilege (admins vs. data entry vs. monitors)?\nThe RT works with their team members and should be aware of their roles approved by the IRB.\nIt is the RT’s responsibility to assign the appropriate levels of privileges.\n\n\n\n19.3.3 Account Provisioning and Deprovisioning (Subsec B3)\n\n19.3.3.1 Is there a clear process to grant, modify, or revoke system access when personnel changes roles or leave the organization?\nYes, the REDCap user rights dashboard allows RT staff to easily grant, modify, or revoke system access when personnel changes occur.\nIt is the RT’s responsibility to monitor staff changes and make the appropriate system access modifications when necessary.\n\n\n19.3.3.2 Must accounts be removed within a certain time frame (e.g., 24 hours) after staff departure\nYes, REDCap allows for the expedient removal of staff from the appropriate REDCap projects.\nIt is the RT’s responsibility to monitor staff changes and remove accounts from the projects.\n\n\n19.3.3.3 Do new users undergo formal training or competency checks before access is granted?\nYes, the RA team provides general REDCap training on how to operate the system. The RT will be responsible for training and competency check for the specific project that new staff will be using.\n\n\n\n19.3.4 Audit Trail Review (Subsec C3)\n\n19.3.4.1 Is there a process for periodically reviewing audit trails and investigating any anomalies?\nYes, REDCap maintains an audit log for all transactions within a specific project. It is easily accessible and downloadable as a .csv file.\nIt is the responsibility of the RT to review the audit logs and investigate any anomalies.\n\n\n19.3.4.2 Is there a routine schedule (monthly, quarterly) for audit trail reviews?\nWith the accessibility of the REDCap audit log, scheduling of reviews can be done at any appropriate schedule.\nIt is the responsibility of the RT to schedule the audit trail reviews.\n\n\n19.3.4.3 Who is responsible for these reviews, and are they qualified to interpret logs?\nREDCap maintains the audit log in an accessible and downloadable format.\nThe RT is responsible for assigning the reviewer and determining their qualification to interpret the logs.\n\n\n19.3.4.4 Do you conduct forensic reviews if suspicious activity is detected?\nThe RT is responsible for conducting forensic reviews if suspicious activity is detected.\n\n\n\n19.3.5 Data Entry and Validation Checks (Subsec C4)\n\n19.3.5.1 Do you conduct forensic reviews if suspicious activity is detected?\nYes, REDCap allows data fields to be configured with multiple data validation rules. These rules include format checks, ranges for dates and numeric entries, required fields, and designating that a field is an identifier. REDCap also utilizes functionality called “Action Tags” to further ensure that data are collected in an accurate, efficient manner. The RA team can train the RT on all of these features, but it is the responsibility of the RT to implement the features into their projects.\n\n\n19.3.5.2 How do you handle data corrections or errors (formal data query, edit check process)?\nREDCap allows for users with appropriate permissions to correct data or errors within a project. Any changes to the data are recorded in the REDCap audit log. Additionally, REDCap has a field comment log for each field. The field comment log allows users to record the reason they are making a modification to the data for each field that needs to be corrected.\nIt is the responsibility of the RT to make data corrections or address errors.\n\n\n19.3.5.3 When data collection instruments are updated, is the previous version retained to show how data were collected at any point in time?\nYes, REDCap, when in production mode, creates a snapshot of all data collection instruments whenever a change is requested.\nIt is the responsibility of the RT to ensure that REDCap is in production mode prior to collecting research data.\n\n\n19.3.5.4 Does the system lock old forms when a new version is released, preventing retrospective changes?\nYes, when a new version of a form is released, the old form is retired from data entry.\n\n\n19.3.5.5 How do you inform users about updated forms (e.g., release notes, training)?\nWhen a REDCap project is in production and updates are requested, the individual on the RT requesting the changes will receive an email notification from the system when the changes have been approved.\nIt is the responsibility of the change requestor to inform the remainder of the RT of any changes that have been made.\n\n\n19.3.5.6 Do you use encryption of secure FTP for high-risk data transfers?\nREDCap stores data in secure VMs (virtual machines) on the OU campus. It is the responsibility of the RT to ensure the security of that data when it has been extracted from REDCap.\n\n\n19.3.5.7 How do you ensure integrity if data are exported for analysis outside of REDCap?\nIt is the responsibility of the RT to ensure the security of data if it has been exported outside of REDCap for analysis.",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
     ]
   },
   {
     "objectID": "check/part11.html#sec-check-part11-esignatures",
     "href": "check/part11.html#sec-check-part11-esignatures",
-    "title": "18  21 CFR Part 11 Requirements of the Researcher",
-    "section": "18.4 Electronic Signatures (Sec E)",
-    "text": "18.4 Electronic Signatures (Sec E)\n\n18.4.1 Long-Term Accessibility (Subsec E2)\n\n18.4.1.1 Does the signature record include the printed name of the signer, date/time of signing, and the meaning of the signature (e.g., review, approval)?\nYes, REDCap has the capability of collecting all of these various signature components. These components must be incorporated into the design of the REDCap survey.\nIt is the responsibility of the RT to ensure that all required signature components are included in their REDCap survey.\n\n\n18.4.1.2 Is the date/time automatically captured by the system (vs. user-entered)?\nYes, REDCap automatically captures the survey completion date/time. REDCap also has the capability of capturing the date in a separate field, which can be either manually entered or automatically captured.\nIt is the responsibility of the RT to design and implement the appropriate date/time capture as is appropriate for their study.\n\n\n18.4.1.3 Can different signature “meanings” be captured (reviewed, approved, verified)?\nYes, REDCap can have multiple signature field meanings. Each signature meaning can have a custom definition based on the specific needs of the study.\nIt is the responsibility of the RT to design and define any and all signature fields for their study.",
+    "title": "19  21 CFR Part 11 Requirements of the Researcher",
+    "section": "19.4 Electronic Signatures (Sec E)",
+    "text": "19.4 Electronic Signatures (Sec E)\n\n19.4.1 Long-Term Accessibility (Subsec E2)\n\n19.4.1.1 Does the signature record include the printed name of the signer, date/time of signing, and the meaning of the signature (e.g., review, approval)?\nYes, REDCap has the capability of collecting all of these various signature components. These components must be incorporated into the design of the REDCap survey.\nIt is the responsibility of the RT to ensure that all required signature components are included in their REDCap survey.\n\n\n19.4.1.2 Is the date/time automatically captured by the system (vs. user-entered)?\nYes, REDCap automatically captures the survey completion date/time. REDCap also has the capability of capturing the date in a separate field, which can be either manually entered or automatically captured.\nIt is the responsibility of the RT to design and implement the appropriate date/time capture as is appropriate for their study.\n\n\n19.4.1.3 Can different signature “meanings” be captured (reviewed, approved, verified)?\nYes, REDCap can have multiple signature field meanings. Each signature meaning can have a custom definition based on the specific needs of the study.\nIt is the responsibility of the RT to design and define any and all signature fields for their study.",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
     ]
   },
   {
     "objectID": "check/part11.html#sec-check-part11-sop",
     "href": "check/part11.html#sec-check-part11-sop",
-    "title": "18  21 CFR Part 11 Requirements of the Researcher",
-    "section": "18.5 Organizational Policies and SOPs (Sec F)",
-    "text": "18.5 Organizational Policies and SOPs (Sec F)\n\n18.5.1 User Training (Subsec F2)\n\n18.5.1.1 Are all users (administrators and end-users) trained on system use, Part 11 awareness, and data integrity principles?\nYes, the REDCap admin team offers training on system use and data integrity principles. It is the responsibility of the RT to schedule training for their staff.\n\n\n18.5.1.2 Is there role-specific training (admin vs. standard user vs. data manager)?\nIt is the responsibility of the RT to determine the role-based needs for their staff and implement training.\n\n\n18.5.1.3 Are competency tests used to confirm user understanding of Part 11 principles?\nIt is the responsibility of the RT to confirm user understanding of Part 11 principles. The RT may develop a competency test for their team, if desired.",
+    "title": "19  21 CFR Part 11 Requirements of the Researcher",
+    "section": "19.5 Organizational Policies and SOPs (Sec F)",
+    "text": "19.5 Organizational Policies and SOPs (Sec F)\n\n19.5.1 User Training (Subsec F2)\n\n19.5.1.1 Are all users (administrators and end-users) trained on system use, Part 11 awareness, and data integrity principles?\nYes, the REDCap admin team offers training on system use and data integrity principles. It is the responsibility of the RT to schedule training for their staff.\n\n\n19.5.1.2 Is there role-specific training (admin vs. standard user vs. data manager)?\nIt is the responsibility of the RT to determine the role-based needs for their staff and implement training.\n\n\n19.5.1.3 Are competency tests used to confirm user understanding of Part 11 principles?\nIt is the responsibility of the RT to confirm user understanding of Part 11 principles. The RT may develop a competency test for their team, if desired.",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
     ]
   },
   {
     "objectID": "check/part11.html#sec-check-part11-retention",
     "href": "check/part11.html#sec-check-part11-retention",
-    "title": "18  21 CFR Part 11 Requirements of the Researcher",
-    "section": "18.6 Record Retention (Sec G)",
-    "text": "18.6 Record Retention (Sec G)\n\n18.6.1 Long-Term Accessibility (Subsec G2)\n\n18.6.1.1 Are file formats chosen to ensure long-term readability (e.g., PDF, CSV)?\nREDCap provides the export formats shown in Figure 18.1, ranging from the highly-portable (e.g., .csv: comma separate value) to the specialized and proprietary (e.g., .sas7bdat: SAS files).\nTo promote portability and long-term usefulness, we recommend exporting data as a csv. Even if you want something specialized in the short-term (e.g., an SPSS file), we recommend exporting and storing second copy (as a csv) to improve the options available to others in the future.\n\n\n\n\n\n\nFigure 18.1: Data Export Formats.\n\n\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in March 2025. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
+    "title": "19  21 CFR Part 11 Requirements of the Researcher",
+    "section": "19.6 Record Retention (Sec G)",
+    "text": "19.6 Record Retention (Sec G)\n\n19.6.1 Long-Term Accessibility (Subsec G2)\n\n19.6.1.1 Are file formats chosen to ensure long-term readability (e.g., PDF, CSV)?\nREDCap provides the export formats shown in Figure 19.1, ranging from the highly-portable (e.g., .csv: comma separate value) to the specialized and proprietary (e.g., .sas7bdat: SAS files).\nTo promote portability and long-term usefulness, we recommend exporting data as a csv. Even if you want something specialized in the short-term (e.g., an SPSS file), we recommend exporting and storing second copy (as a csv) to improve the options available to others in the future.\n\n\n\n\n\n\nFigure 19.1: Data Export Formats.\n\n\n\n\n\n\n\n\n\nNoteAdditional Chapter Details\n\n\n\nThis chapter was started in March 2025. If you have suggested modifications or additions, please see How to Contribute on the book’s welcome page.",
     "crumbs": [
       "Checklists",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>21 CFR Part 11 Requirements of the Researcher</span>"
     ]
   },
   {
     "objectID": "trouble/login.html",
     "href": "trouble/login.html",
-    "title": "19  Can’t log in",
+    "title": "20  Can’t log in",
     "section": "",
     "text": "Chapter Leads: Thomas Wilson",
     "crumbs": [
       "Troubleshooting",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Can't log in</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Can't log in</span>"
     ]
   }
 ]

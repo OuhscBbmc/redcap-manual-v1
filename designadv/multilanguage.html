@@ -9,7 +9,7 @@
 <meta name="author" content="Lise DeShea">
 <meta name="author" content="Thomas Wilson">
 
-<title>5&nbsp; Record Status Dashboard – REDCap Manual for OU</title>
+<title>12&nbsp; Multi-Language Management – REDCap Manual for OU</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -38,8 +38,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../begin/randomize.html" rel="next">
-<link href="../begin/create.html" rel="prev">
+<link href="../designadv/randomstatic.html" rel="next">
+<link href="../designadv/econsent.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -97,8 +97,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="../assets/font-awesome.css">
 <link rel="stylesheet" href="../assets/tables.css">
-<meta name="citation_title" content="[[5]{.chapter-number}&nbsp; [Record Status Dashboard]{.chapter-title}]{#sec-begin-dashboard .quarto-section-identifier}">
-<meta name="citation_abstract" content="Learn about the Record Status Dashboard helps you to find and edit records in a REDCap project.">
+<meta name="citation_title" content="[[12]{.chapter-number}&nbsp; [Multi-Language Management]{.chapter-title}]{#sec-designadv-multilanguage .quarto-section-identifier}">
+<meta name="citation_abstract" content="Use multil-language management to extend projects to more populations.">
 <meta name="citation_author" content="Lise DeShea">
 <meta name="citation_author" content="Thomas Wilson">
 <meta name="citation_language" content="en">
@@ -354,7 +354,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../begin/support.html">Data Entry for New Users</a></li><li class="breadcrumb-item"><a href="../begin/dashboard.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Record Status Dashboard</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../designadv/autoinvite.html">Project Design (Advanced)</a></li><li class="breadcrumb-item"><a href="../designadv/multilanguage.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Multi-Language Management</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -441,7 +441,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../begin/dashboard.html" class="sidebar-item-text sidebar-link active">
+  <a href="../begin/dashboard.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Record Status Dashboard</span></span></a>
   </div>
 </li>
@@ -516,7 +516,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../designadv/multilanguage.html" class="sidebar-item-text sidebar-link">
+  <a href="../designadv/multilanguage.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Multi-Language Management</span></span></a>
   </div>
 </li>
@@ -635,28 +635,24 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-begin-dashboard-purpose" id="toc-sec-begin-dashboard-purpose" class="nav-link active" data-scroll-target="#sec-begin-dashboard-purpose"><span class="header-section-number">5.1</span> Purpose</a></li>
-  <li><a href="#sec-begin-dashboard-complex" id="toc-sec-begin-dashboard-complex" class="nav-link" data-scroll-target="#sec-begin-dashboard-complex"><span class="header-section-number">5.2</span> A more complex dashboard</a></li>
-  <li><a href="#sec-begin-dashboard-parsing" id="toc-sec-begin-dashboard-parsing" class="nav-link" data-scroll-target="#sec-begin-dashboard-parsing"><span class="header-section-number">5.3</span> Parsing the dashboard</a></li>
-  <li><a href="#sec-begin-dashboard-customizingrecords" id="toc-sec-begin-dashboard-customizingrecords" class="nav-link" data-scroll-target="#sec-begin-dashboard-customizingrecords"><span class="header-section-number">5.4</span> Customizing Records</a></li>
-  <li><a href="#sec-begin-dashboard-homepage" id="toc-sec-begin-dashboard-homepage" class="nav-link" data-scroll-target="#sec-begin-dashboard-homepage"><span class="header-section-number">5.5</span> Navigating a record’s homepage</a></li>
-  <li><a href="#sec-begin-dashboard-buttons" id="toc-sec-begin-dashboard-buttons" class="nav-link" data-scroll-target="#sec-begin-dashboard-buttons"><span class="header-section-number">5.6</span> Buttons on a dashboard</a></li>
-  <li><a href="#sec-begin-dashboard-repeated" id="toc-sec-begin-dashboard-repeated" class="nav-link" data-scroll-target="#sec-begin-dashboard-repeated"><span class="header-section-number">5.7</span> Repeated instances of a form</a></li>
-  <li><a href="#sec-begin-dashboard-customizindashboard" id="toc-sec-begin-dashboard-customizindashboard" class="nav-link" data-scroll-target="#sec-begin-dashboard-customizindashboard"><span class="header-section-number">5.8</span> Customizing the dashboard</a></li>
-  <li><a href="#sec-begin-dashboard-trouble" id="toc-sec-begin-dashboard-trouble" class="nav-link" data-scroll-target="#sec-begin-dashboard-trouble"><span class="header-section-number">5.9</span> Troubleshooting</a>
-  <ul class="collapse">
-  <li><a href="#sec-begin-dashboard-trouble-notallrecords" id="toc-sec-begin-dashboard-trouble-notallrecords" class="nav-link" data-scroll-target="#sec-begin-dashboard-trouble-notallrecords"><span class="header-section-number">5.9.1</span> Can’t see all your records?</a></li>
-  </ul></li>
+  <li><a href="#sec-designadv-mlmpurpose" id="toc-sec-designadv-mlmpurpose" class="nav-link active" data-scroll-target="#sec-designadv-mlmpurpose"><span class="header-section-number">12.1</span> What is the Purpose of Multi-Language Management?</a></li>
+  <li><a href="#sec-designadv-mlmtiming" id="toc-sec-designadv-mlmtiming" class="nav-link" data-scroll-target="#sec-designadv-mlmtiming"><span class="header-section-number">12.2</span> When to Enable MLM in an e-Consent</a></li>
+  <li><a href="#sec-designadv-mlmenable" id="toc-sec-designadv-mlmenable" class="nav-link" data-scroll-target="#sec-designadv-mlmenable"><span class="header-section-number">12.3</span> Enabling MLM</a></li>
+  <li><a href="#sec-designadv-mlmtabs" id="toc-sec-designadv-mlmtabs" class="nav-link" data-scroll-target="#sec-designadv-mlmtabs"><span class="header-section-number">12.4</span> Touring the MLM Tabs</a></li>
+  <li><a href="#sec-designadv-mlmtranslations" id="toc-sec-designadv-mlmtranslations" class="nav-link" data-scroll-target="#sec-designadv-mlmtranslations"><span class="header-section-number">12.5</span> Creating Translations</a></li>
+  <li><a href="#enable-e-consent-framework" id="toc-enable-e-consent-framework" class="nav-link" data-scroll-target="#enable-e-consent-framework"><span class="header-section-number">12.6</span> Enable e-Consent Framework</a></li>
+  <li><a href="#test-the-e-consent" id="toc-test-the-e-consent" class="nav-link" data-scroll-target="#test-the-e-consent"><span class="header-section-number">12.7</span> Test the e-Consent</a></li>
+  <li><a href="#updating-consent-forms" id="toc-updating-consent-forms" class="nav-link" data-scroll-target="#updating-consent-forms"><span class="header-section-number">12.8</span> Updating Consent Forms</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/begin/dashboard.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/begin/dashboard.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designadv/multilanguage.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designadv/multilanguage.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../begin/support.html">Data Entry for New Users</a></li><li class="breadcrumb-item"><a href="../begin/dashboard.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Record Status Dashboard</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../designadv/autoinvite.html">Project Design (Advanced)</a></li><li class="breadcrumb-item"><a href="../designadv/multilanguage.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Multi-Language Management</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-begin-dashboard" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Record Status Dashboard</span></span></h1>
+<h1 class="title"><span id="sec-designadv-multilanguage" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Multi-Language Management</span></span></h1>
 </div>
 
 
@@ -696,7 +692,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    Learn about the Record Status Dashboard helps you to find and edit records in a REDCap project.
+    Use multil-language management to extend projects to more populations.
   </div>
 </div>
 
@@ -704,170 +700,271 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </header>
 
 
-<p><strong>Chapter Leads</strong>: Lise DeShea and Thomas Wilson</p>
-<section id="sec-begin-dashboard-purpose" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="sec-begin-dashboard-purpose"><span class="header-section-number">5.1</span> Purpose</h2>
-<p>Imagine you are in a building with several floors. You want to know about all the offices in the building. Where might you look? One place you could look is near the elevator, where you often will find a directory listing everyone with offices in the building.</p>
-<p>That directory is similar to the Record Status Dashboard within a REDCap project. When you want to find all the records in a project, you can navigate to the Record Status Dashboard by going into the project and following the link on the left side of your screen.</p>
+<p><strong>Chapter Leads</strong>: Lise DeShea, Thomas Wilson</p>
+<section id="sec-designadv-mlmpurpose" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="sec-designadv-mlmpurpose"><span class="header-section-number">12.1</span> What is the Purpose of Multi-Language Management?</h2>
+<p>Researchers often need to recruit study participants from a variety of backgrounds. A study with greater variability in participants may be more generalizable to a larger population. Language can be a barrier to some participants joining a study. When researchers can offer a survey in the participants’ languages, there is a better chance of expanding the patient pool, which might be crucial if the researchers are studying a rare condition.</p>
+<p>The first step toward enrolling patients in most studies is obtaining informed consent. Electronic consent is possible in REDCap, and we have provided a chapter on that topic <strong>callout here</strong> Creating an e-consent process that also allows multiple languages means the e-consent chapter must go hand-in-hand with this one. This chapter will assume you are at a spot in creating an e-consent where you need to enable Multi-Language Management (MLM) and will lead you through the process. MLM also can be used with surveys and other uses. The information presented here can be generalized beyond the e-consent process.</p>
+</section>
+<section id="sec-designadv-mlmtiming" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="sec-designadv-mlmtiming"><span class="header-section-number">12.2</span> When to Enable MLM in an e-Consent</h2>
+<p>We will start at the point in an e-consent project where you already have created the instruments for Consent and HIPAA; uploaded pdf files of those forms; created fields for every spot where the patients will need to enter information or sign their names; and designated the forms as surveys.</p>
+<p>The e-Consent Framework is the REDCap module that was designed to handle electronic consenting processes. <strong>Before</strong> you enable e-Consent Framework, you must enable Multi-Language Management (MLM). If you do these two steps in the wrong order, you will have to re-create a lot of the work you already completed.</p>
+</section>
+<section id="sec-designadv-mlmenable" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="sec-designadv-mlmenable"><span class="header-section-number">12.3</span> Enabling MLM</h2>
+<p>The left-hand column in your project has the REDCap logo. Under the second <strong>Applications</strong> you will see Multi-Language Management (MLM). Click that link.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/dashboard/dashboard-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Navigating to the dashboard"><img src="images/dashboard/dashboard-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Navigating to the dashboard"></a></p>
-<figcaption>Navigating to the dashboard</figcaption>
+<p><a href="images/multilanguage/mlmlink.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Multi-Language Management"><img src="images/multilanguage/mlmlink.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Multi-Language Management"></a></p>
+<figcaption>Multi-Language Management</figcaption>
 </figure>
 </div>
-<p>When you click the link, you see a summary of all the records in the project. What is a record? It’s where all the information is kept about a specific person or entity on which data are collected. For our example project illustrated here, there are only three records and three forms:</p>
+<p>Follow the instructions in the Languages tab of the page, as shown below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/dashboard/dashboard-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Initial view of the dashboard"><img src="images/dashboard/dashboard-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Initial view of the dashboard"></a></p>
-<figcaption>Initial view of the dashboard</figcaption>
+<p><a href="images/multilanguage/mlminstructions.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="REDCap MLM Instructions"><img src="images/multilanguage/mlminstructions.jpg" class="img-fluid figure-img" style="width:80.0%" alt="REDCap MLM Instructions"></a></p>
+<figcaption>REDCap MLM Instructions</figcaption>
+</figure>
+</div>
+<p>You see the above instructions because no languages have been specified in the MLM. Read those instructions carefully. MLM is picky and has a lot of details. We will be following those steps: specifying the languages being used in the e-consent (or survey), providing translations of REDCap features, and testing the project. We will start by specifying a base language, which usually is English. Click the green button that says, “+ Add a new language.” You will see the window shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/multilanguage/addlanguage.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Add New Language"><img src="images/multilanguage/addlanguage.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Add New Language"></a></p>
+<figcaption>Add New Language</figcaption>
+</figure>
+</div>
+<p>There is a white button that is barely visible next to the red words “by creating the language from scratch.” Click there, then Continue. We are starting with English as the base language. Type the Language ID for English, which is en. “Language Display Name” is what will appear to people who will be asked to sign the e-consent. Type English there. So the window now looks like this.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/multilanguage/addenglish.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Adding English"><img src="images/multilanguage/addenglish.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Adding English"></a></p>
+<figcaption>Adding English</figcaption>
+</figure>
+</div>
+<p>Click the blue “+ Add Language” button. The window will close, and now the page shows English as the base language. Let’s add Spanish as the next language. Click the green “+ Add a new language” button again. Again, click the nearly invisible button next to “by creating the language from scratch,” then Continue. We will use es as the Language ID. For Language Display Name, we need it in Spanish for those who will select that language: Español. To get the tilde over the n in this word, you can google Espanol and copy it from a webpage and paste it in this box. Then click the blue “+ Add Language” button.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/multilanguage/mlmpage.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Updated MLM Page"><img src="images/multilanguage/mlmpage.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Updated MLM Page"></a></p>
+<figcaption>Updated MLM Page</figcaption>
+</figure>
+</div>
+<p>You may notice the yellow-orange button that says Save Changes. Unlike many functions in REDCap, this module has the save function at the top of the page, not the bottom. This same button will be used for changing any of the tabs to its left. If it is yellow, then changes have not been saved. Click it now to save the changes made so far. You should see the button change to gray font.</p>
+</section>
+<section id="sec-designadv-mlmtabs" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="sec-designadv-mlmtabs"><span class="header-section-number">12.4</span> Touring the MLM Tabs</h2>
+<p>MLM has tabs embedded in tabs – and tabs embedded within those tabs! It is easy to get lost and sometimes hard to find certain functions. Let’s click through these tabs and familiarize ourselves with them.</p>
+<p>The <strong>Forms/Surveys</strong> tab has two tabs embedded within it: English and Español. First you see the base language with a blue tab and an asterisk to the left of the word English. When you click on the word Español, you are switched to that tab, which now is the blue one.</p>
+<p>We will not cover the next two tabs, <strong>Alerts</strong> and <strong>Misc</strong> because they usually are not used in e-consent projects.</p>
+<p>Click on the <strong>User Interface</strong> tab. If you left the Forms/Surveys tab on its embedded Español tab, then that’s the tab in blue here. The purpose of the User Interface tab is to translate some text that the user of the e-consent will see from the base language (English) to our second language (Spanish). Notice that this page has a third layer of embedded tabs, shown in the blue box below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/multilanguage/embeddedtabs.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Embedded tabs"><img src="images/multilanguage/embeddedtabs.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Embedded tabs"></a></p>
+<figcaption>Embedded tabs</figcaption>
+</figure>
+</div>
+<p>Let’s click through those tabs.</p>
+<ul>
+<li>We could look at everything option under the All tab, but that can be overwhelming.</li>
+<li>By default the Common tab is selected. You can scroll down to see the kinds of notifications to the user that you could translate. For an e-consent project, you often have only a few of these notifications that need to be translated.</li>
+<li>Now click on the Field Types tab. If your project has Yes/No fields, then you would need to translate “Yes/No” on this tab. If your project has a Date field that uses a “Today” button, you will need to translate that word. There are far more options on this tab than you are likely to need to translate.</li>
+<li>Let’s click next on the Settings tab. We won’t make any changes on this tab in this chapter.</li>
+</ul>
+<p>At this point we have put English as the base language and Spanish as the second language. But we have not activated them. On the Languages tab, toggle the sliders to Active.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/multilanguage/activate.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Activate the languages"><img src="images/multilanguage/activate.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Activate the languages"></a></p>
+<figcaption>Activate the languages</figcaption>
+</figure>
+</div>
+<p>Notice the Save Changes button is yellow-orange again. Click it to save your current settings.</p>
+</section>
+<section id="sec-designadv-mlmtranslations" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="sec-designadv-mlmtranslations"><span class="header-section-number">12.5</span> Creating Translations</h2>
+<p>Go to the Forms/Surveys tab and select the Español tab. Toggle the sliders in the column under Survey. These sliders will enable the e-consent user to view the translated version of the instruments. Be sure to click the yellow-orange Save Changes button. It doesn’t hurt to click that button after every change you make! It’s better than losing your work.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/multilanguage/savechanges.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Save Changes Often"><img src="images/multilanguage/savechanges.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Save Changes Often"></a></p>
+<figcaption>Save Changes Often</figcaption>
+</figure>
+</div>
+<p>Notice in the above screenshot that the word Translate appears next to each instrument in the Fields and Survey Settings columns. There are more functions to access by clicking each place that it says Translate. Let’s start with Translate under the Fields column on the Consent row. This page shows the variable names inside REDCap. The Spanish-speaking participant using the e-consent survey will never see those variable names. Unless you have staff needing translation inside the REDCap project, we don’t have to make any changes here. This Fields page will show a link to the Survey Settings for this instrument. Click that link.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/multilanguage/formssurveys.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Inside the Forms/Surveys Tab"><img src="images/multilanguage/formssurveys.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Inside the Forms/Surveys Tab"></a></p>
+<figcaption>Inside the Forms/Surveys Tab</figcaption>
+</figure>
+</div>
+<p>This is where you can translate the survey title and prompts that users will see as they go through the e-consent process. For example, the e-consent used as an example in this chapter is set up so that upon completing the e-consent, the user sees a message, “Thank you!” Below is shown the translation of that message.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/multilanguage/surveycompletion.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Translating Survey Completion Text"><img src="images/multilanguage/surveycompletion.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Translating Survey Completion Text"></a></p>
+<figcaption>Translating Survey Completion Text</figcaption>
+</figure>
+</div>
+<p>As always, click the yellow-orange Save Changes button. To look at translations needed on the HIPAA form, click the Languages tab and back to the Forms/Surveys tab. Now you will see the two rows marked Consent and HIPAA again. Click Translate in the Fields column to make any changes needed there. Then click Translate in the Survey Settings column to make any changes needed on the HIPPA instrument. If the Save Changes button has not turned yellow-orange, then click outside of the field your cursor was on, and the color will change.</p>
+<p>Now let’s do translations in the User Interface tab. Again, staying on Español next to <strong>Select a language</strong>, click the Common tab. Make any translations needed, then click Save Changes.</p>
+<p>The next tab inside User Interface is Field Types. Look for any fields your e-consent or survey will need translated, enter the translations, and click Save Changes.</p>
+<p>We will skip the Data Entry tab inside User Interface. In the Survey tab of User Interface, you may find several items that need to be translated. Here are some messages listed under the eConsent section of the Survey tab:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/multilanguage/econsentmessages.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Messages to user of e-consent"><img src="images/multilanguage/econsentmessages.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Messages to user of e-consent"></a></p>
+<figcaption>Messages to user of e-consent</figcaption>
+</figure>
+</div>
+<p>Look for any fields that you need to translate. Here are a couple of common ones.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/multilanguage/mlmsignature.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Translation for “Add signature”"><img src="images/multilanguage/mlmsignature.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Translation for “Add signature”"></a></p>
+<figcaption>Translation for “Add signature”</figcaption>
 </figure>
 </div>
 </section>
-<section id="sec-begin-dashboard-complex" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="sec-begin-dashboard-complex"><span class="header-section-number">5.2</span> A more complex dashboard</h2>
-<p>Let’s look at a dashboard with many more records. Will all of them show up on one page? It depends. Take a look at the screenshot below. (FYI, no private health information, PHI, will appear in these screenshots.)</p>
+<section id="enable-e-consent-framework" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="enable-e-consent-framework"><span class="header-section-number">12.6</span> Enable e-Consent Framework</h2>
+<p>Finally we can enable the e-Consent Framework, the REDCap module that was designed to handle electronic consenting processes. This step must occur after the surveys (Consent and HIPAA) are created. In Online Designer we click the <em>Enable</em> button under Survey Options, shown above the list of instruments.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/dashboard/dashboard-3.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Paged view of a dashboard with many records"><img src="images/dashboard/dashboard-3.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Paged view of a dashboard with many records"></a></p>
-<figcaption>Paged view of a dashboard with many records</figcaption>
+<p><a href="images/econsent/enable-4.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Enable e-consent"><img src="images/econsent/enable-4.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Enable e-consent"></a></p>
+<figcaption>Enable e-consent</figcaption>
 </figure>
 </div>
-<p>It appears there are 103 records in the project, and this screen is showing the first of three pages of records. The drop-down menu at the right shows the page was set to display 50 records at a time. But the “Displaying record” field shows the records are numbered 1 through 54. That is because the creator of this project deleted a few records. The drop-down menu on the right can be set to show all records in the project.</p>
+<p>You will be taken to a page called <em>Settings for e-Consent &amp; PDF Snapshots.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/enable-5.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="E-consent settings"><img src="images/econsent/enable-5.jpg" class="img-fluid figure-img" style="width:80.0%" alt="E-consent settings"></a></p>
+<figcaption>E-consent settings</figcaption>
+</figure>
+</div>
+<p>Click the big green button that says <em>Enable the e-Consent Framework for a survey.</em> You will get a window that says <em>Enable e-Consent for a Survey.</em> You will select Consent from the drop-down menu.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/choose-consent.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Select consent form"><img src="images/econsent/choose-consent.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Select consent form"></a></p>
+<figcaption>Select consent form</figcaption>
+</figure>
+</div>
+<p>Another window will open, called <em>Enable e-Consent.</em></p>
+<ul>
+<li><p>Under <em>Primary settings,</em> the first two fields ask you to specify the variables for the first and last names of the participant.</p></li>
+<li><p>Scroll down to <em>Additional settings</em> and use the drop-down menu for <em>Signature field #1</em> to select the participant’s signature, as shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/signature-participant.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Select participant’s signature field"><img src="images/econsent/signature-participant.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Select participant’s signature field"></a></p>
+<figcaption>Select participant’s signature field</figcaption>
+</figure>
+</div></li>
+<li><p>Scroll down to <em>Location(s) to save the signed consent snapshot.</em></p></li>
+<li><p>A copy of the signed form should be saved in the File Repository because the IRB sometimes audits these e-consent REDCaps to make sure the study’s protocol is being followed and patients’ rights have been respected.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/save-consent.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Save consent snapshot"><img src="images/econsent/save-consent.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Save consent snapshot"></a></p>
+<figcaption>Save consent snapshot</figcaption>
+</figure>
+</div></li>
+</ul>
+<p>Save those settings to close the window. You will return to the page that says <em>e-Consent Framework Settings.</em> This is where you will upload the pdf of the consent form. Click on the link that says <em>Add consent form.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/add-consent.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Add consent form"><img src="images/econsent/add-consent.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Add consent form"></a></p>
+<figcaption>Add consent form</figcaption>
+</figure>
+</div>
+<ul>
+<li><p>Number the consent form (e.g., 1.0) next to <em>Consent form version.</em></p></li>
+<li><p>Use the dropdown menu next to <em>Placement of consent form</em> to choose the placeholder variable you called <em>consent.</em></p></li>
+<li><p>Click on the tab for *Consent Form (Inline PDF).</p></li>
+<li><p>Click <em>Browse</em> and find the pdf on your computer.</p></li>
+<li><p>Click <em>Add new consent form</em> to save your work</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/upload-consent.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="Upload consent form"><img src="images/econsent/upload-consent.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Upload consent form"></a></p>
+<figcaption>Upload consent form</figcaption>
+</figure>
+</div></li>
+</ul>
+<p>Next we need to get a snapshot pdf of the signed HIPAA form.</p>
+<ul>
+<li><p>Click on the tab for <em>PDF Snapshots of Records.</em></p></li>
+<li><p>Click on the button that says <em>Add new trigger.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/add-trigger.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Add trigger for HIPAA snapshot"><img src="images/econsent/add-trigger.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Add trigger for HIPAA snapshot"></a></p>
+<figcaption>Add trigger for HIPAA snapshot</figcaption>
+</figure>
+</div></li>
+<li><p>Name the trigger and select the HIPAA survey</p></li>
+<li><p>Under <em>STEP 2: Scope of the snapshot,</em> click the pencil in the box</p></li>
+<li><p>Deselect the consent form, leaving only the HIPAA form as a trigger; the consent form is being saved separately</p></li>
+<li><p>Save these settings</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/add-trigger-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-21" title="Name trigger, select HIPAA survey"><img src="images/econsent/add-trigger-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Name trigger, select HIPAA survey"></a></p>
+<figcaption>Name trigger, select HIPAA survey</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/scope-hipaa.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-22" title="Limit snapshot to HIPAA"><img src="images/econsent/scope-hipaa.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Limit snapshot to HIPAA"></a></p>
+<figcaption>Limit snapshot to HIPAA</figcaption>
+</figure>
+</div></li>
+</ul>
 </section>
-<section id="sec-begin-dashboard-parsing" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="sec-begin-dashboard-parsing"><span class="header-section-number">5.3</span> Parsing the dashboard</h2>
-<p>What else can we learn from this page? Well, the first column of the table is labeled Project. The purpose of this REDCap project is to track the status of all research projects that involve a specific statistician at OUHC; she created the REDCap to make notes on the status of all active projects. The column label, Project, is the label on the record number. As you recall, a record is where we save all the information about a specific person or entity. Here, the entity is the name of the project. So “Record ID” was changed to “Project” to be more descriptive for the user who is tracking many research projects.</p>
-<p>By default, nothing is shown but the number, as we see in the second screenshot on this page. With this study tracking REDCap, the first column has the number assigned to each research project, as well as the name of the research project. Displaying the name of the research project is a customization of this REDCap project. On another project, you might want the customization to show the date that a patient enrolled in a study, or some other data point that was collected.</p>
+<section id="test-the-e-consent" class="level2" data-number="12.7">
+<h2 data-number="12.7" class="anchored" data-anchor-id="test-the-e-consent"><span class="header-section-number">12.7</span> Test the e-Consent</h2>
+<p>Before putting any REDCap project into production, it is important to test it and make sure everything is working right and looks correct. It is a good idea to enlist the researchers and those who will collect e-consent in the testing process.</p>
+<p>In the REDCap project, click on <em>Survey Distribution Tools</em> in the left column</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/survey-tools.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-23" title="Survey Distribution Tools"><img src="images/econsent/survey-tools.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Survey Distribution Tools"></a></p>
+<figcaption>Survey Distribution Tools</figcaption>
+</figure>
+</div>
+<p>This page will provide you with a public survey link that you can email to the researchers and consent collectors. To test the project yourself, click <em>Open public survey.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/survey-link.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-24" title="Link to the consent survey"><img src="images/econsent/survey-link.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Link to the consent survey"></a></p>
+<figcaption>Link to the consent survey</figcaption>
+</figure>
+</div>
+<p>You will be taken to the e-consent as it will appear to participants.</p>
+<ul>
+<li><p>Scroll through pages, fill out the pertinent fields with names like <em>Test Subject,</em> and sign it.</p></li>
+<li><p>After you submit the HIPAA form, you will get an “end of survey” message.</p></li>
+<li><p>Go back into the REDCap project.</p></li>
+<li><p>On the left side you will see a link for <em>File Repository,</em> which you will click.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/file-repository.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-25" title="Link to File Repository"><img src="images/econsent/file-repository.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Link to File Repository"></a></p>
+<figcaption>Link to File Repository</figcaption>
+</figure>
+</div></li>
+<li><p>Click on the folder labeled <em>PDF Snapshot Archive.</em></p></li>
+<li><p>You will see a list of pdfs that were automatically created for the test records.</p></li>
+<li><p>Click on any of those pdfs and see how REDCap saved the original pdf, plus the fields you created in REDCap, and the data and signature added by the participant or test subject.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/econsent/pdf-snapshots.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-26" title="PDF Snapshots in File Repository"><img src="images/econsent/pdf-snapshots.jpg" class="img-fluid figure-img" style="width:80.0%" alt="PDF Snapshots in File Repository"></a></p>
+<figcaption>PDF Snapshots in File Repository</figcaption>
+</figure>
+</div></li>
+</ul>
 </section>
-<section id="sec-begin-dashboard-customizingrecords" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="sec-begin-dashboard-customizingrecords"><span class="header-section-number">5.4</span> Customizing Records</h2>
-<p>Here is how to customize what is shown next to the record ID. On the left side of the screen, look for the link called <em>Setup</em>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/setup.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Navigating to Project Setup"><img src="images/dashboard/setup.jpg" class="img-fluid figure-img" style="width:40.0%" alt="Navigating to Project Setup"></a></p>
-<figcaption>Navigating to Project Setup</figcaption>
-</figure>
-</div>
-<p>Then look for the button that says <em>Additional customizations</em>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/customization-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Navigating to Additional Customizations"><img src="images/dashboard/customization-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Navigating to Additional Customizations"></a></p>
-<figcaption>Navigating to Additional Customizations</figcaption>
-</figure>
-</div>
-<p>Clicking that button opens a window, with the first customization option being <em>Set a Custom Record Label</em>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/customization-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Editing Additional Customizations"><img src="images/dashboard/customization-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Editing Additional Customizations"></a></p>
-<figcaption>Editing Additional Customizations</figcaption>
-</figure>
-</div>
-<p>In the box labeled Custom Record Label, you can see that two variable names have been listed inside square brackets, <code>[last_name_primary_contact]</code> and <code>[project_name]</code>, with a comma and a space between the variable names. Any words typed that are not variable names inside square brackets also can be typed there. After you have decided on your custom label for each record, click Save and go back to the Record Status Dashboard to see how the custom label looks.</p>
-<p>Each record on the Dashboard has a Record ID, usually a number automatically assigned by REDCap. Each number is a link to that record. The REDCap that tracks research studies has another link on the same row. Look for the column labeled Support Request. That is the only instrument in this project. As researchers request the statistician’s services, information is collected about that request. The green circles in the Support Request column are links to each project.</p>
-</section>
-<section id="sec-begin-dashboard-homepage" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="sec-begin-dashboard-homepage"><span class="header-section-number">5.5</span> Navigating a record’s homepage</h2>
-<p>Clicking the record number takes you to the <em>Record Home Page</em>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/record-home-page.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="A record’s home page"><img src="images/dashboard/record-home-page.jpg" class="img-fluid figure-img" style="width:80.0%" alt="A record’s home page"></a></p>
-<figcaption>A record’s home page</figcaption>
-</figure>
-</div>
-<p>The legend in the top right of the following screenshot tells us the meaning of the Status circle’s color. A green circle, or button, means the record has been saved as complete. Clicking the green button takes us into the form for this research project. Let’s look at where the button’s color was determined. Look for the word Complete at the bottom of the form; that setting is responsible for the button’s color.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/complete.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Complete the data entry for a record"><img src="images/dashboard/complete.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Complete the data entry for a record"></a></p>
-<figcaption>Complete the data entry for a record</figcaption>
-</figure>
-</div>
-</section>
-<section id="sec-begin-dashboard-buttons" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="sec-begin-dashboard-buttons"><span class="header-section-number">5.6</span> Buttons on a dashboard</h2>
-<p>Let’s take a look at a more complicated REDCap project with many instruments. The project we will examine was created for data entry people in a certain research study to practice entering data in a REDCap project identical to the one that was going to be used to collect actual data from patients. This practice project has made-up data.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/dashboard-4.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="A dashboard with many instruments"><img src="images/dashboard/dashboard-4.jpg" class="img-fluid figure-img" style="width:80.0%" alt="A dashboard with many instruments"></a></p>
-<figcaption>A dashboard with many instruments</figcaption>
-</figure>
-</div>
-<p>The first column of this dashboard is labeled Record ID, the default name used by REDCap for assigning unique record numbers to each patient or entity for data collection. This column also has the word “Enrolled” followed by a date. This information was specified as an additional customization. This study had seven instruments: Enrollment, Randomize, Demographics, DR Information, Outcomes, Serious Adverse Event Form, and Protocol Deviations. Now we see many colors of buttons. The legend tells use red means Incomplete, yellow means Unverified, green means Complete, gray means no data was saved on that form for that patient, and overlapping buttons mean there is more than one copy of that form saved in the project. Blue overlapping buttons mean the multiple copies of the form have different statuses. If the overlapping buttons are red, yellow, or green, the multiple copies have the same status, as indicated by the color.</p>
-</section>
-<section id="sec-begin-dashboard-repeated" class="level2" data-number="5.7">
-<h2 data-number="5.7" class="anchored" data-anchor-id="sec-begin-dashboard-repeated"><span class="header-section-number">5.7</span> Repeated instances of a form</h2>
-<p>When would you have multiple copies of the same form? Let’s use this REDCap project as an example. The study involved enrolling those who were about to have a baby. Those expecting twins could participate in the study. Once the twins were born, data were collected about each twin separately – birth weight, kind of respiratory support given immediately after birth, etc.</p>
-<p>Suppose you have entered the data on the first twin and you need to enter data about the second twin. You would find the row for that mother, go to a form you needed to complete about what happened to the second twin in the delivery room (the DR Information form), and look for the plus sign in the gray box.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/plus-sign.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Plus sign for adding an repeated instance"><img src="images/dashboard/plus-sign.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Plus sign for adding an repeated instance"></a></p>
-<figcaption>Plus sign for adding an repeated instance</figcaption>
-</figure>
-</div>
-<p>Clicking that plus sign creates another copy of the same DR Information form and is a link to that copy. Data entry can proceed from there.</p>
-</section>
-<section id="sec-begin-dashboard-customizindashboard" class="level2" data-number="5.8">
-<h2 data-number="5.8" class="anchored" data-anchor-id="sec-begin-dashboard-customizindashboard"><span class="header-section-number">5.8</span> Customizing the dashboard</h2>
-<p>The Record Status Dashboard can be used to create custom dashboards as well. Look for the box toward the top of the page.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/custom-dashboard-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Navigating to create a Custom Dashboard"><img src="images/dashboard/custom-dashboard-1.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Navigating to create a Custom Dashboard"></a></p>
-<figcaption>Navigating to create a Custom Dashboard</figcaption>
-</figure>
-</div>
-<p>Clicking that box opens a form for creating the custom dashboard.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/custom-dashboard-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="A Custom Dashboard, before modifying"><img src="images/dashboard/custom-dashboard-2.jpg" class="img-fluid figure-img" style="width:80.0%" alt="A Custom Dashboard, before modifying"></a></p>
-<figcaption>A Custom Dashboard, before modifying</figcaption>
-</figure>
-</div>
-<p>Suppose we want to create a dashboard that shows data only for the mothers who signed up in Oklahoma for this multi-site study. We will need the record number, plus the instruments called Enrollment and Demographics. We can click on the little pencil icon next to <em>Select instruments</em> and specify those instruments.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/select-instruments.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Selecting instruments in a dashboard"><img src="images/dashboard/select-instruments.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Selecting instruments in a dashboard"></a></p>
-<figcaption>Selecting instruments in a dashboard</figcaption>
-</figure>
-</div>
-<p>Then we can create filter logic that gives a statement that must be true in order to get only the records we want. In this example, we need the variable called site to equal Oklahoma. When we click in the <em>Filter logic</em> box, we get a <em>Logic Editor</em> window where the logical statement is written.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/logic-editor.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Logic editor in a dashboard"><img src="images/dashboard/logic-editor.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Logic editor in a dashboard"></a></p>
-<figcaption>Logic editor in a dashboard</figcaption>
-</figure>
-</div>
-<p>The name of the variable is in square brackets, then there is an equals sign, then the value that we want site to equal: Oklahoma. But notice: in this project, Oklahoma is the <em>label</em> for the site; it is not the data point that is saved in REDCap. In this project, the label Oklahoma was assigned to the number 1. The logic editor must give the data value, not the label Oklahoma. We click “Update &amp; Close Editor,” then we click the blue button that says <em>Save dashboard</em>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/custom-dashboard-3.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="A Custom Dashboard, after modifying"><img src="images/dashboard/custom-dashboard-3.jpg" class="img-fluid figure-img" style="width:80.0%" alt="A Custom Dashboard, after modifying"></a></p>
-<figcaption>A Custom Dashboard, after modifying</figcaption>
-</figure>
-</div>
-<p>We get a message that the custom dashboard was saved, and we can click the gray button that says <em>View dashboard</em>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/successfully-saved.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Confirmation after customizing a dashboard"><img src="images/dashboard/successfully-saved.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Confirmation after customizing a dashboard"></a></p>
-<figcaption>Confirmation after customizing a dashboard</figcaption>
-</figure>
-</div>
-<p>Then we will see the custom dashboard that we created.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/oklahoma-mothers.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Viewing our customizing a dashboard"><img src="images/dashboard/oklahoma-mothers.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Viewing our customizing a dashboard"></a></p>
-<figcaption>Viewing our customizing a dashboard</figcaption>
-</figure>
-</div>
-</section>
-<section id="sec-begin-dashboard-trouble" class="level2" data-number="5.9">
-<h2 data-number="5.9" class="anchored" data-anchor-id="sec-begin-dashboard-trouble"><span class="header-section-number">5.9</span> Troubleshooting</h2>
-<section id="sec-begin-dashboard-trouble-notallrecords" class="level3" data-number="5.9.1">
-<h3 data-number="5.9.1" class="anchored" data-anchor-id="sec-begin-dashboard-trouble-notallrecords"><span class="header-section-number">5.9.1</span> Can’t see all your records?</h3>
-<p>If you ever look in your REDCap project and can’t see all your records, check the settings at the top of the Record Status Dashboard and see if you have navigated to a custom dashboard that shows only some of the records. You can switch dashboards by using the drop-down menu toward the top of the page and selecting <em>Default dashboard</em>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/dashboard/default-dashboard.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Switching to default dashboard"><img src="images/dashboard/default-dashboard.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Switching to default dashboard"></a></p>
-<figcaption>Switching to default dashboard</figcaption>
-</figure>
-</div>
+<section id="updating-consent-forms" class="level2" data-number="12.8">
+<h2 data-number="12.8" class="anchored" data-anchor-id="updating-consent-forms"><span class="header-section-number">12.8</span> Updating Consent Forms</h2>
+<p>Studies with IRB oversight must check in annually and update the IRB about the study’s status. Among other tasks the researchers must obtain re-approval of their consent form. When you create an e-consent project, it is a good idea to put a note on your Outlook calendar reminding you to check with the researchers before their consent form expires. Then you will be ready to replace the consent and HIPAA forms with the latest versions, with the new expiration date given.</p>
+<p>When it is time to replace the consent form with a new one:</p>
+<ol type="1">
+<li>Notify the people who will be collecting the study’s informed consent that you will be working on the e-consent in REDCap and that they should pause using the e-consent until you inform them the new forms have been uploaded</li>
+<li>In Online Designer, there will be a yellow box at the top saying the project is in production status and asking if you want to enter draft mode to make changes; click the <em>Enter Draft Mode</em> button.</li>
+<li>Where the Data Collection Instruments are listed in Designer, click on the e-Consent button under Survey Options.</li>
+<li>Click <em>Add Consent Form</em></li>
+<li>Specify the version number and upload the consent form</li>
+<li>Save the new version</li>
+<li>Ask for the project to be moved back into Production Mode</li>
+<li>After being notified that the project is in production, go to the survey and create a test record by completing the forms, using a name like <em>Testing REDCap</em></li>
+<li>If everything is working correctly, notify those collecting informed consent that the e-consent REDCap is back in production with the new forms, and they may see a test record in REDCap</li>
+<li>Congratulate yourself, because it is no small accomplishment to complete an e-consent REDCap project!</li>
+</ol>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -878,12 +975,11 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This chapter was last edited in October 2025. If you have suggested modifications or additions, please see <a href="../index.html#sec-welcome-contribute">How to Contribute</a> on the book’s welcome page.</p>
+<p>This chapter was last edited in April 2026. If you have suggested modifications or additions, please see <a href="../index.html#sec-welcome-contribute">How to Contribute</a> on the book’s welcome page.</p>
 </div>
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1307,13 +1403,13 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../begin/create.html" class="pagination-link" aria-label="Creating Records">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Creating Records</span></span>
+      <a href="../designadv/econsent.html" class="pagination-link" aria-label="Electronic Consent">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Electronic Consent</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../begin/randomize.html" class="pagination-link" aria-label="Randomizing Participants">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Randomizing Participants</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../designadv/randomstatic.html" class="pagination-link" aria-label="Static Randomization of Patients">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Static Randomization of Patients</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1325,7 +1421,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/begin/dashboard.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/begin/dashboard.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/designadv/multilanguage.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/designadv/multilanguage.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Part of <a href="https://ouhsc.edu/">OU Health Campus</a>.</p>
 </div>
