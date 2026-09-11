@@ -97,6 +97,7 @@ book:
     chapters:
     - designadv/autoinvite.md
     - designadv/econsent.md
+    - designadv/multilanguage.md
     - designadv/randomstatic.md
 
   - part: Project Admin
