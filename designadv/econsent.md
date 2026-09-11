@@ -26,7 +26,7 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Lise DeShea, Vignesh Murugan, Thomas Wilson
 
-## What is the Purpose of e-Consent? {#sec-designadv-purpose}
+## What is the Purpose of e-Consent? {#sec-designadv-econsent-purpose}
 
 Many research studies conducted at the University of Oklahoma Health Campus involve obtaining participant consent.
 The Institutional Review Board examines and approves the protocol for research studies involving people.
@@ -177,13 +177,13 @@ Place a checkmark in the box *Auto-continue to the next survey* because we want 
 
 ## Decide If You Need Multiple Languages
 
-**Before** you enable to e-Consent Framework, which is the REDcap module for this kind of project, check with the study team on whether multiple languages will be needed. If so, Multi-Language Management must be enabled **before** the e-Consent Framework. If you need to have multiple languages in your e-consent, go to our chapter on this process, which will pick up at this point in your work. **call-out to MLM chapter goes here**
+**Before** you enable to e-Consent Framework, which is the REDcap module for this kind of project, check with the study team on whether multiple languages will be needed. If so, Multi-Language Management must be enabled **before** the e-Consent Framework. If you need to have multiple languages in your e-consent, go to our chapter on this process, which will pick up at this point in your work. @sec-designadv-multilanguage 
 
 ## Enable e-Consent Framework
 
 Finally we can enable the e-Consent Framework, the REDCap module that was designed to handle electronic consenting processes.
-This step must occur after the surveys (Consent and HIPAA) are created.
-In Online Designer we click the *Enable* button under Survey Options, shown above the list of instruments.
+This step must occur after the surveys (Consent and HIPAA) are created (and, if applicable, Multilanguage Management settings have been saved).
+In Online Designer click the *Enable* button under Survey Options, shown above the list of instruments.
 
    ![Enable e-consent](images/econsent/enable-4.jpg){width="80%"}
 
@@ -199,7 +199,7 @@ You will select Consent from the drop-down menu.
 
 Another window will open, called *Enable e-Consent.*
 
-- Under *Primary settings,* the first two fields ask you to specify the variables for the first and last names of the participant.
+- Under *Primary settings,* the first two fields ask you to specify the variables for the first and last names of the participant. If your consent form has only one field for the participant's name, put it in the first name field.
 - Scroll down to *Additional settings* and use the drop-down menu for *Signature field #1* to select the participant's signature, as shown below.
 
    ![Select participant's signature field](images/econsent/signature-participant.jpg){width="80%"}
@@ -219,7 +219,7 @@ Click on the link that says *Add consent form.*
 - Number the consent form (e.g., 1.0) next to *Consent form version.*
 - Use the dropdown menu next to *Placement of consent form* to choose the placeholder variable you called *consent.*
 - Click on the tab for *Consent Form (Inline PDF).
-- Click *Browse* and find the pdf on your computer.
+- Click *Browse* and find the pdf on your computer. Open it.
 - Click *Add new consent form* to save your work
 
    ![Upload consent form](images/econsent/upload-consent.jpg){width="80%"}
@@ -234,7 +234,7 @@ Next we need to get a snapshot pdf of the signed HIPAA form.
 - Name the trigger and select the HIPAA survey
 - Under *STEP 2: Scope of the snapshot,* click the pencil in the box
 - Deselect the consent form, leaving only the HIPAA form as a trigger; the consent form is being saved separately
-- Save these settings
+- Click Update, then Save
 
    ![Name trigger, select HIPAA survey](images/econsent/add-trigger-2.jpg){width="80%"}
 
