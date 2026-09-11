@@ -40,10 +40,10 @@ The information presented here can be generalized beyond the e-consent process.
 
 ## When to Enable MLM in an e-Consent {#sec-designadv-mlmtiming}
 
-We will start at the point in an e-consent project where you already have created the instruments for Consent and HIPAA; uploaded pdf files of those forms; created fields for every spot where the patients will need to enter information or sign their names; and designated the forms as surveys. 
+We will start at the point in an e-consent project where you already have created the instruments for Consent and HIPAA; uploaded pdf files of those forms; created fields for every spot where the patients will need to enter information or sign their names; and designated the forms as surveys.
 
 The e-Consent Framework is the REDCap module that was designed to handle electronic consenting processes.
-**Before** you enable e-Consent Framework, you must enable Multi-Language Management (MLM). 
+**Before** you enable e-Consent Framework, you must enable Multi-Language Management (MLM).
 If you do these two steps in the wrong order, you will have to re-create a lot of the work you already completed.
 
 ## Enabling MLM {#sec-designadv-mlmenable}
@@ -57,15 +57,15 @@ Follow the instructions in the Languages tab of the page, as shown below.
 
    ![REDCap MLM Instructions](images/multilanguage/mlminstructions.jpg){width="80%"}
 
-You see the above instructions because no languages have been specified in the MLM. 
+You see the above instructions because no languages have been specified in the MLM.
 Read those instructions carefully.
 MLM is picky and has a lot of details.
 We will be following those steps: specifying the languages being used in the e-consent (or survey), providing translations of REDCap features, and testing the project.
-We will start by specifying a base language, which usually is English. 
+We will start by specifying a base language, which usually is English.
 Click the green button that says, "+ Add a new language."
 You will see the window shown below.
 
-   ![Add New Language](images/multilanguage/addlanguage.jpg){width="80%"}
+   ![Add New Language](images/multilanguage/mlmaddlanguage.jpg){width="80%"}
 
 There is a white button that is barely visible next to the red words "by creating the language from scratch." Click there, then Continue.
 We are starting with English as the base language.
@@ -74,11 +74,11 @@ Type the Language ID for English, which is en.
 Type English there.
 So the window now looks like this.
 
-   ![Adding English](images/multilanguage/addenglish.jpg){width="80%"}
+   ![Adding English](images/multilanguage/mlmaddenglish.jpg){width="80%"}
 
 Click the blue "+ Add Language" button.
-The window will close, and now the page shows English as the base language. 
-Let's add Spanish as the next language. 
+The window will close, and now the page shows English as the base language.
+Let's add Spanish as the next language.
 Click the green "+ Add a new language" button again.
 Again, click the nearly invisible button next to "by creating the language from scratch," then Continue.
 We will use es as the Language ID.
@@ -88,8 +88,8 @@ Then click the blue "+ Add Language" button.
 
    ![Updated MLM Page](images/multilanguage/mlmpage.jpg){width="80%"}
 
-You may notice the yellow-orange button that says Save Changes. 
-Unlike many functions in REDCap, this module has the save function at the top of the page, not the bottom. 
+You may notice the yellow-orange button that says Save Changes.
+Unlike many functions in REDCap, this module has the save function at the top of the page, not the bottom.
 This same button will be used for changing any of the tabs to its left.
 If it is yellow, then changes have not been saved.
 Click it now to save the changes made so far.
@@ -112,7 +112,7 @@ If you left the Forms/Surveys tab on its embedded Español tab, then that's the 
 The purpose of the User Interface tab is to translate some text that the user of the e-consent will see from the base language (English) to our second language (Spanish).
 Notice that this page has a third layer of embedded tabs, shown in the blue box below.
 
-   ![Embedded tabs](images/multilanguage/embeddedtabs.jpg){width="80%"}
+   ![Embedded tabs](images/multilanguage/mlmembeddedtabs.jpg){width="80%"}
 
 Let's click through those tabs.
 
@@ -131,7 +131,7 @@ At this point we have put English as the base language and Spanish as the second
 But we have not activated them.
 On the Languages tab, toggle the sliders to Active.
 
-   ![Activate the languages](images/multilanguage/activate.jpg){width="80%"}
+   ![Activate the languages](images/multilanguage/mlmactivate.jpg){width="80%"}
 
 Notice the Save Changes button is yellow-orange again. Click it to save your current settings.
 
@@ -155,19 +155,26 @@ Unless you have staff needing translation inside the REDCap project, we don't ha
 This Fields page will show a link to the Survey Settings for this instrument.
 Click that link.
 
-   ![Inside the Forms/Surveys Tab](images/multilanguage/formssurveys.jpg){width="80%"}
+   ![Inside the Forms/Surveys Tab](images/multilanguage/mlmformssurveys.jpg){width="80%"}
 
 This is where you can translate the survey title and prompts that users will see as they go through the e-consent process.
 For example, the e-consent used as an example in this chapter is set up so that upon completing the e-consent, the user sees a message, "Thank you!" Below is shown the translation of that message.
 
-   ![Translating Survey Completion Text](images/multilanguage/surveycompletion.jpg){width="80%"}
+   ![Translating Survey Completion Text](images/multilanguage/mlmsurveycompletion.jpg){width="80%"}
 
+Notice on the top row of text in the above screenshot, there is a link to Fields.
+Click that link.
+Now you will see the Field Labels that correspond to the variables in your e-consent.
+You will need to translate those Field Labels.
+For example, if you have "PARTICIPANT NAME (printed)" as the label for a field called participant_name_printed, you would need to enter the translation "NOMBRE DEL PARTICIPANTE (en letra imprenta)."
 As always, click the yellow-orange Save Changes button.
+
 To look at translations needed on the HIPAA form, click the Languages tab and back to the Forms/Surveys tab.
-Now you will see the two rows marked Consent and HIPAA again.
-Click Translate in the Fields column to make any changes needed there.
-Then click Translate in the Survey Settings column to make any changes needed on the HIPPA instrument.
-If the Save Changes button has not turned yellow-orange, then click outside of the field your cursor was on, and the color will change.
+
+* Now you will see the two rows marked Consent and HIPAA again.
+* Click Translate in the Fields column to make any changes needed there.
+* Then click Translate in the Survey Settings column to make any changes needed on the HIPAA instrument.
+* If the Save Changes button has not turned yellow-orange, then click outside of the field your cursor was on, and the color will change.
 
 Now let's do translations in the User Interface tab.
 Again, staying on Español next to **Select a language**, click the Common tab.
@@ -179,7 +186,7 @@ Look for any fields your e-consent or survey will need translated, enter the tra
 We will skip the Data Entry tab inside User Interface.
 In the Survey tab of User Interface, you may find several items that need to be translated. Here are some messages listed under the eConsent section of the Survey tab:
 
-   ![Messages to user of e-consent](images/multilanguage/econsentmessages.jpg){width="80%"}
+   ![Messages to user of e-consent](images/multilanguage/mlmeconsentmessages.jpg){width="80%"}
 
  Look for any fields that you need to translate. Here are a couple of common ones.
 
@@ -189,6 +196,10 @@ In the Survey tab of User Interface, you may find several items that need to be 
 ## Enable e-Consent Framework
 
 Finally we can enable the e-Consent Framework, the REDCap module that was designed to handle electronic consenting processes.
+
+**Link here to return to the chapter on e-Consent**
+
+
 This step must occur after the surveys (Consent and HIPAA) are created.
 In Online Designer we click the *Enable* button under Survey Options, shown above the list of instruments.
 
