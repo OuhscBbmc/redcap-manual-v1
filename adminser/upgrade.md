@@ -281,7 +281,7 @@ sudo rm -rf /var/www/html/redcap/redcap_v12.1.2
 
    If you're running RHEL, the following command will install dnf packages, and reboot the server at 3am that night.
    Depending on the size and activity of your REDCap instance, consider if people should be notified ahead of time.
-   
+
    ```bash
    sudo bash -c 'command -v at >/dev/null 2>&1 || (yum -y install at || dnf -y install at || apt-get update -y && apt-get install -y at); systemctl enable --now atd; echo "reboot" | at 3am tomorrow'; exit 0
    ```
