@@ -29,12 +29,13 @@ csl: ../assets/csl/apa-7e.csl
 ## What is the Purpose of e-Consent? {#sec-designadv-econsent-purpose}
 
 Many research studies conducted at the University of Oklahoma Health Campus involve obtaining participant consent.
-The Institutional Review Board examines and approves the protocol for research studies involving people.
+The Institutional Review Board (IRB) examines and approves the protocol for research studies involving people.
 This approval includes a careful review of consent forms, which inform potential participants of their rights as well as the risks and benefits of participating in the study.
-Researchers increasingly are using electronic consent forms.
-The e-consent capability of REDCap provides the environment for collecting participants' informed consent via electronic forms. This chapter will lead you through the process of setting up an e-consent project.
+After receiving IRB approval, researchers increasingly are using electronic consent forms.
+The e-consent capability of REDCap provides the environment for collecting participants' informed consent via electronic forms.
+This chapter will lead you through the process of setting up an e-consent project.
 
-## Request a New Project
+## Request a New Project {#sec-designadv-econsent-newproject}
 
 For most studies we recommend having the e-consent process separate from any REDCap project created for the purpose of collecting participant data.
 Data collection often is de-identified or has limited identifiers, such as a participant ID that the researchers link to the participants' identities in a secure file outside of REDCap.
@@ -42,17 +43,19 @@ Because participants are identified in consent forms, the e-consent should be in
 
 To learn how to request a new project, see [Best Way to Learn](../designbas/variable.md#sec-designbas-variable-howtolearn).
 
-## Preparing to Build the e-Consent
+## Preparing to Build the e-Consent {#sec-designadv-econsent-preparetobuild}
 
 You will need pdf copies of the researchers' *current* IRB-approved consent form and HIPAA form, which notifies potential participants of their rights to the privacy of their personal health information.
-It often is a good idea to obtain a copy of the IRB-approved protocol as well, so that you are familiar with the study and the role of e-consent within the study.
+You can check whether the form is current by looking at the date in the IRB seal at the bottom of the form.
+It may be a good idea to obtain a copy of the IRB-approved protocol as well, so that you are familiar with the study and the role of e-consent within the study.
+You also will need to know who is approved by the IRB as key personnel to collect consent from participants so you can add them to this completed project.
 
 To understand how the e-consent project will work, you should know that researchers typically email a link to an online survey containing the consent and HIPAA forms.
 There is a field for the signature of the person obtaining the consent.
 But the form is completed by the participant.
 The person obtaining consent will have access to the REDCap project and will add his/her signature inside REDCap after the participant submits the online forms.
 
-## Starting an e-Consent Project
+## Starting an e-Consent Project {#sec-designadv-econsent-starteconsent}
 
 - Click on your list of projects at the top of the landing page for REDCap.
 - Click on the e-consent project name.
@@ -63,7 +66,7 @@ The person obtaining consent will have access to the REDCap project and will add
 
    ![View of existing project in Designer](images/econsent/online-designer-2.jpg){width="80%"}
 
-You will need to create two instruments: one for the consent form and one for the HIPAA form (if applicable).
+You will need to create two instruments: one for the consent form and one for the HIPAA form.
 
 - Change the name of Form 1 to Consent by clicking on the gray button labeled *Choose actions" to the right of Form 1.
 - Select *Rename.*
@@ -84,9 +87,9 @@ A green button will appear, as shown below. Click that button and enter *HIPAA* 
 These two REDCap instruments will contain pdfs for the consent and HIPAA forms.
 Next we will create the fields needed for these forms to allow completion within REDCap.
 
-## Modifying the REDCap Instruments for Consent and HIPAA
+## Modifying the REDCap Instruments for Consent and HIPAA {#sec-designadv-econsent-modifyinstruments}
 
-We will be collecting signatures electronically for the consent form, which participants previously would sign on paper.
+We will be collecting signatures electronically for the consent and HIPAA forms, which participants previously would sign on paper.
 We need to create fields in REDCap that the participants would have filled out on paper.
 The consent and HIPAA forms shown below are templates from the OUHC IRB.
 Please ignore the old dates.
@@ -103,17 +106,18 @@ Let's say participants in our example need to fill out only the fields shown bel
 In REDCap, click on the *Consent* form in Online Designer to get to the screen where we will create variables to replicate the fields shown above.
 We will have the following fields and variable types:
 
-- A signature field for the participant's signature.
-- Separate text variables for the participant's first and last names, even if they do not appear as separate fields on the pdf; separate fields are required in the e-Consent Framework in REDCap
+- If you will be using multiple languages, a multiple-choice language selection field. For example, you might have English recorded as en and Español recorded as es. **Important note:** You will need to add the action tag @LANGUAGE-SET when creating this field.
+- A signature field for the participant's signature
+- The participant's name. The e-Consent Framework in REDCap will ask for first and last name, but if it is one field, you can put it in place of first name in the e-Consent Framework.
 - A date variable for the date of signature
-- A signature field for the person obtaining consent
+- A signature field for the person obtaining consent. REDCap now has a field type *Enhanced Signature,* which allows the person completing the e-consent form to either sign their name with their finger/mouse or to type their name, which will be displayed in script.
 - A text variable for the typed name of the person obtaining consent
 - A date variable for the consent obtainer's date of signature.
 
-Other consent forms may have fields for a witness to sign and for a child to sign indicating his or her assent.
+Other consent forms may have other fields for you to create.
+For example, there may be fields for a witness to sign and for a child to sign indicating his or her assent.
 (Children cannot sign a legal form granting consent; the parent or guardian must grant consent.
 But obtaining assent from a child old enough to understand that s/he will be participating in a study is the ethical choice.)
-You will create those fields as well.
 
 Create the needed consent fields listed above.
 Make sure the participant's signature is a **required** field by clicking the button shown below.
@@ -122,29 +126,32 @@ Make sure the participant's signature is a **required** field by clicking the bu
 
    ![Consent Fields in REDCap](images/econsent/consent-fields.jpg){width="80%"}
 
+If you create a table using a descriptive field and Rich Text Editor to organize these fields visually, please note that the signature field *cannot* be in a table.
 The project now has the parts of the consent form that need to be filled out.
 But our REDCap project needs to provide the potential participant with the pdf of the consent form.
-Create a new *Descriptive Text* variable at the top of the Consent instrument (after Record ID) by clicking the *Add Field* button, shown below.
+
+Create a new *Descriptive Text* variable at the top of the Consent instrument (after Record ID and, if applicable, the language field) by clicking the *Add Field* button, shown below.
 
    ![Add a Descriptive Text field](images/econsent/add-field.jpg){width="80%"}
 
 You won't put anything in the box called *Field Label.*
+And you will not upload the consent form to this field.
 In fact, the only specifications for you to make in this field is to name the variable *consent* and make it a Descriptive Text field.
-This field is a placeholder for the pdf of the consent form, which we will upload in the e-Consent Framework.
+This field is a placeholder for the pdf of the consent form, which we will upload later.
 
-### HIPAA Form
+### HIPAA Form {#sec-designadv-econsent-hipaaform}
 
 Now follow the same process for the HIPAA form:
 
 - Identify all elements that would be filled out on a printed HIPAA form
 - Go into the HIPAA instrument on REDCap and create those fields
-- Be sure to include the Descriptive Field called *hipaa* and upload the HIPAA pdf, setting it to appear inline
+- In place of the Descriptive Field called *consent*, you will have one called *hipaa*
 
-## Enabling Surveys
+## Enabling Surveys {#sec-designadv-econsent-enablesurveys}
 
 Before the consent form can be designated as such in the e-Consent Framework (that is, the REDCap module for electronic consent), we must specify that the forms are on a survey.
 
-### Tell REDCap to Allow Surveys
+### Tell REDCap to Allow Surveys {#sec-designadv-econsent-allowsurveys}
 
 On the Project Setup tab, click the *Enable* button next to the words "Use surveys in this project."
 
@@ -158,6 +165,8 @@ You will be taken to a new screen, shown below, where you will specify how the s
 We will illustrate only the most important details.
 
    ![Editing survey details](images/econsent/enable-3.jpg){width="80%"}
+
+Choose Enhanced radios and checkboxes, which will make those objects appear larger for easier use on a smartphone.
 
 Scroll down to Survey Theme. The default theme is black, white, and light blue.
 A common choice for a theme at OU is Red Brick because the colors are similar to those of the university.
@@ -175,11 +184,11 @@ Place a checkmark in the box *Auto-continue to the next survey* because we want 
 - Now click the *Enable* button on the HIPAA line.
 - Select the *Survey Theme* to match the one you used on the consent form, then click *Save Changes.*
 
-## Decide If You Need Multiple Languages
+## Decide If You Need Multiple Languages {#sec-designadv-econsent-decidelanguages}
 
-**Before** you enable to e-Consent Framework, which is the REDcap module for this kind of project, check with the study team on whether multiple languages will be needed. If so, Multi-Language Management must be enabled **before** the e-Consent Framework. If you need to have multiple languages in your e-consent, go to our chapter on this process, which will pick up at this point in your work. @sec-designadv-multilanguage 
+**Before** you enable to e-Consent Framework, which is the REDcap module for this kind of project, check with the study team on whether multiple languages will be needed. If so, Multi-Language Management must be enabled **before** the e-Consent Framework. If you need to have multiple languages in your e-consent, go to our chapter on this process, which will pick up at this point in your work. @sec-designadv-multilanguage
 
-## Enable e-Consent Framework
+## Enable e-Consent Framework {#sec-designadv-econsent-enableeconsent}
 
 Finally we can enable the e-Consent Framework, the REDCap module that was designed to handle electronic consenting processes.
 This step must occur after the surveys (Consent and HIPAA) are created (and, if applicable, Multilanguage Management settings have been saved).
@@ -200,7 +209,7 @@ You will select Consent from the drop-down menu.
 Another window will open, called *Enable e-Consent.*
 
 - Under *Primary settings,* the first two fields ask you to specify the variables for the first and last names of the participant. If your consent form has only one field for the participant's name, put it in the first name field.
-- Scroll down to *Additional settings* and use the drop-down menu for *Signature field #1* to select the participant's signature, as shown below.
+- Scroll down to *Force signature field(s) to be erased if participant clicks Previous Page button while on the certification page?* section. Use the drop-down menu for *Signature field #1* to select the participant's signature, as shown below.
 
    ![Select participant's signature field](images/econsent/signature-participant.jpg){width="80%"}
 
@@ -216,13 +225,15 @@ Click on the link that says *Add consent form.*
 
    ![Add consent form](images/econsent/add-consent.jpg){width="80%"}
 
-- Number the consent form (e.g., 1.0) next to *Consent form version.*
+- Number the consent form (e.g., 1.0) next to *Consent form version.* If you have used Multi-Language Management, you should type "1.0 en" to indicate the English version of the form.
 - Use the dropdown menu next to *Placement of consent form* to choose the placeholder variable you called *consent.*
 - Click on the tab for *Consent Form (Inline PDF).
 - Click *Browse* and find the pdf on your computer. Open it.
 - Click *Add new consent form* to save your work
 
    ![Upload consent form](images/econsent/upload-consent.jpg){width="80%"}
+
+Next, we will upload the HIPAA form on the same screen where we uploaded the consent form. Click on the green box that says *+Enable the e-Consent Framework for a survey.*  
 
 Next we need to get a snapshot pdf of the signed HIPAA form.
 
@@ -231,7 +242,7 @@ Next we need to get a snapshot pdf of the signed HIPAA form.
 
    ![Add trigger for HIPAA snapshot](images/econsent/add-trigger.jpg){width="80%"}
 
-- Name the trigger and select the HIPAA survey
+- Under *STEP 1: Trigger conditions,* name the trigger (e.g.,*HIPAA en*) and select the HIPAA survey from the drop-down menu
 - Under *STEP 2: Scope of the snapshot,* click the pencil in the box
 - Deselect the consent form, leaving only the HIPAA form as a trigger; the consent form is being saved separately
 - Click Update, then Save
@@ -240,7 +251,7 @@ Next we need to get a snapshot pdf of the signed HIPAA form.
 
    ![Limit snapshot to HIPAA](images/econsent/scope-hipaa.jpg){width="80%"}
 
-## Test the e-Consent
+## Test the e-Consent {#sec-designadv-econsent-testeconsent}
 
 Before putting any REDCap project into production, it is important to test it and make sure everything is working right and looks correct.
 It is a good idea to enlist the researchers and those who will collect e-consent in the testing process.
@@ -269,7 +280,7 @@ You will be taken to the e-consent as it will appear to participants.
 
    ![PDF Snapshots in File Repository](images/econsent/pdf-snapshots.jpg){width="80%"}
 
-## Updating Consent Forms
+## Updating Consent Forms {#sec-designadv-econsent-updateconsent}
 
 Studies with IRB oversight must check in annually and update the IRB about the study's status.
 Among other tasks the researchers must obtain re-approval of their consent form.
@@ -291,8 +302,8 @@ When it is time to replace the consent form with a new one:
 
 ::: {.callout-note appearance="simple"}
 
-## Additional Chapter Details
+## Additional Chapter Details {#sec-designadv-econsent-chapterdetails}
 
-This chapter was last edited in April 2026.
+This chapter was last edited in September 2026.
 If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's welcome page.
 :::
