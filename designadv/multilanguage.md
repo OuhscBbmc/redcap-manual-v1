@@ -1,5 +1,5 @@
 ---
-abstract: Use multil-language management to extend projects to more populations.
+abstract: Use multi-language management to extend projects to more populations.
 
 author:
   - name: Lise DeShea
@@ -24,7 +24,7 @@ csl: ../assets/csl/apa-7e.csl
 
 **Chapter Leads**: Lise DeShea, Thomas Wilson
 
-## What is the Purpose of Multi-Language Management? {#sec-designadv-mlmpurpose}
+## What is the Purpose of Multi-Language Management? {#sec-designadv-multilanguage-purpose}
 
 Researchers often need to recruit study participants from a variety of backgrounds.
 A study with greater variability in participants may be more generalizable to a larger population.
@@ -32,13 +32,14 @@ Language can be a barrier to some participants joining a study.
 When researchers can offer a survey in the participants' languages, there is a better chance of expanding the patient pool, which might be crucial if the researchers are studying a rare condition.
 
 The first step toward enrolling patients in most studies is obtaining informed consent.
-Electronic consent is possible in REDCap, and we have provided a chapter on that topic **callout here**
+Electronic consent is possible in REDCap, and we have provided a chapter on that topic. @sec-designadv-econsent
+
 Creating an e-consent process that also allows multiple languages means the e-consent chapter must go hand-in-hand with this one.
 This chapter will assume you are at a spot in creating an e-consent where you need to enable Multi-Language Management (MLM) and will lead you through the process.
 MLM also can be used with surveys and other uses.
 The information presented here can be generalized beyond the e-consent process.
 
-## When to Enable MLM in an e-Consent {#sec-designadv-mlmtiming}
+## When to Enable MLM in an e-Consent {#sec-designadv-multilanguage-timing}
 
 We will start at the point in an e-consent project where you already have created the instruments for Consent and HIPAA; uploaded pdf files of those forms; created fields for every spot where the patients will need to enter information or sign their names; and designated the forms as surveys.
 
@@ -46,7 +47,7 @@ The e-Consent Framework is the REDCap module that was designed to handle electro
 **Before** you enable e-Consent Framework, you must enable Multi-Language Management (MLM).
 If you do these two steps in the wrong order, you will have to re-create a lot of the work you already completed.
 
-## Enabling MLM {#sec-designadv-mlmenable}
+## Enabling MLM {#sec-designadv-multilanguage-enable}
 
 The left-hand column in your project has the REDCap logo. Under the second **Applications** you will see Multi-Language Management (MLM).
 Click that link.
@@ -91,19 +92,19 @@ Then click the blue "+ Add Language" button.
 You may notice the yellow-orange button that says Save Changes.
 Unlike many functions in REDCap, this module has the save function at the top of the page, not the bottom.
 This same button will be used for changing any of the tabs to its left.
-If it is yellow, then changes have not been saved.
+If it is yellow-orange, then changes have not been saved.
 Click it now to save the changes made so far.
 You should see the button change to gray font.
 
-## Touring the MLM Tabs {#sec-designadv-mlmtabs}
+## Touring the MLM Tabs {#sec-designadv-multilanguage-tabs}
 
 MLM has tabs embedded in tabs -- and tabs embedded within those tabs!
 It is easy to get lost and sometimes hard to find certain functions.
 Let's click through these tabs and familiarize ourselves with them.
 
 The **Forms/Surveys** tab has two tabs embedded within it: English and Español.
-First you see the base language with a blue tab and an asterisk to the left of the word English.
-When you click on the word Español, you are switched to that tab, which now is the blue one.
+First you see the base language with a blue tab that says "*English."
+When you click on the word Español, you are switched to that tab, which now is the blue tab.
 
 We will not cover the next two tabs, **Alerts** and **Misc** because they usually are not used in e-consent projects.
 
@@ -125,7 +126,7 @@ If your project has Yes/No fields, then you would need to translate "Yes/No" on 
 If your project has a Date field that uses a "Today" button, you will need to translate that word.
 There are far more options on this tab than you are likely to need to translate.
 * Let's click next on the Settings tab.
-We won't make any changes on this tab in this chapter.
+You might wish to click the slider next to "Discourage browser-based translation of survey pages," because you are providing the translations.
 
 At this point we have put English as the base language and Spanish as the second language.
 But we have not activated them.
@@ -135,14 +136,14 @@ On the Languages tab, toggle the sliders to Active.
 
 Notice the Save Changes button is yellow-orange again. Click it to save your current settings.
 
-## Creating Translations {#sec-designadv-mlmtranslations}
+## Creating Translations {#sec-designadv-multilanguage-translations}
 
 Go to the Forms/Surveys tab and select the Español tab.
-Toggle the sliders in the column under Survey.
+Toggle the sliders in the column under Data Entry and Survey.
 These sliders will enable the e-consent user to view the translated version of the instruments.
 Be sure to click the yellow-orange Save Changes button.
 It doesn't hurt to click that button after every change you make!
-It's better than losing your work.
+At any point when you make a change and the Save Changes button stays gray, click outside of the field you just changed to make it turn yellow-orange.
 
    ![Save Changes Often](images/multilanguage/savechanges.jpg){width="80%"}
 
@@ -192,125 +193,44 @@ In the Survey tab of User Interface, you may find several items that need to be 
 
    ![Translation for "Add signature"](images/multilanguage/mlmsignature.jpg){width="80%"}
 
-
-## Enable e-Consent Framework
+## Enable e-Consent Framework {#sec-designadv-mlmbacktoeconsent}
 
 Finally we can enable the e-Consent Framework, the REDCap module that was designed to handle electronic consenting processes.
-
-**Link here to return to the chapter on e-Consent**
-
-
-This step must occur after the surveys (Consent and HIPAA) are created.
-In Online Designer we click the *Enable* button under Survey Options, shown above the list of instruments.
-
-   ![Enable e-consent](images/econsent/enable-4.jpg){width="80%"}
-
-You will be taken to a page called *Settings for e-Consent & PDF Snapshots.*
-
-   ![E-consent settings](images/econsent/enable-5.jpg){width="80%"}
-
-Click the big green button that says *Enable the e-Consent Framework for a survey.*
-You will get a window that says *Enable e-Consent for a Survey.*
-You will select Consent from the drop-down menu.
-
-   ![Select consent form](images/econsent/choose-consent.jpg){width="80%"}
-
-Another window will open, called *Enable e-Consent.*
-
-- Under *Primary settings,* the first two fields ask you to specify the variables for the first and last names of the participant.
-- Scroll down to *Additional settings* and use the drop-down menu for *Signature field #1* to select the participant's signature, as shown below.
-
-   ![Select participant's signature field](images/econsent/signature-participant.jpg){width="80%"}
-
-- Scroll down to *Location(s) to save the signed consent snapshot.*
-- A copy of the signed form should be saved in the File Repository because the IRB sometimes audits these e-consent REDCaps to make sure the study's protocol is being followed and patients' rights have been respected.
-
-   ![Save consent snapshot](images/econsent/save-consent.jpg){width="80%"}
-
-Save those settings to close the window.
-You will return to the page that says *e-Consent Framework Settings.*
-This is where you will upload the pdf of the consent form.
-Click on the link that says *Add consent form.*
-
-   ![Add consent form](images/econsent/add-consent.jpg){width="80%"}
-
-- Number the consent form (e.g., 1.0) next to *Consent form version.*
-- Use the dropdown menu next to *Placement of consent form* to choose the placeholder variable you called *consent.*
-- Click on the tab for *Consent Form (Inline PDF).
-- Click *Browse* and find the pdf on your computer.
-- Click *Add new consent form* to save your work
-
-   ![Upload consent form](images/econsent/upload-consent.jpg){width="80%"}
-
-Next we need to get a snapshot pdf of the signed HIPAA form.
-
-- Click on the tab for *PDF Snapshots of Records.*
-- Click on the button that says *Add new trigger.*
-
-   ![Add trigger for HIPAA snapshot](images/econsent/add-trigger.jpg){width="80%"}
-
-- Name the trigger and select the HIPAA survey
-- Under *STEP 2: Scope of the snapshot,* click the pencil in the box
-- Deselect the consent form, leaving only the HIPAA form as a trigger; the consent form is being saved separately
-- Save these settings
-
-   ![Name trigger, select HIPAA survey](images/econsent/add-trigger-2.jpg){width="80%"}
-
-   ![Limit snapshot to HIPAA](images/econsent/scope-hipaa.jpg){width="80%"}
-
-## Test the e-Consent
-
-Before putting any REDCap project into production, it is important to test it and make sure everything is working right and looks correct.
-It is a good idea to enlist the researchers and those who will collect e-consent in the testing process.
-
-In the REDCap project, click on *Survey Distribution Tools* in the left column
-
-   ![Survey Distribution Tools](images/econsent/survey-tools.jpg){width="80%"}
-
-This page will provide you with a public survey link that you can email to the researchers and consent collectors.
-To test the project yourself, click *Open public survey.*
-
-   ![Link to the consent survey](images/econsent/survey-link.jpg){width="80%"}
-
-You will be taken to the e-consent as it will appear to participants.
-
-- Scroll through pages, fill out the pertinent fields with names like *Test Subject,* and sign it.
-- After you submit the HIPAA form, you will get an "end of survey" message.
-- Go back into the REDCap project.
-- On the left side you will see a link for *File Repository,* which you will click.
-
-   ![Link to File Repository](images/econsent/file-repository.jpg){width="80%"}
-
-- Click on the folder labeled *PDF Snapshot Archive.*
-- You will see a list of pdfs that were automatically created for the test records.
-- Click on any of those pdfs and see how REDCap saved the original pdf, plus the fields you created in REDCap, and the data and signature added by the participant or test subject.
-
-   ![PDF Snapshots in File Repository](images/econsent/pdf-snapshots.jpg){width="80%"}
-
-## Updating Consent Forms
-
-Studies with IRB oversight must check in annually and update the IRB about the study's status.
-Among other tasks the researchers must obtain re-approval of their consent form.
-When you create an e-consent project, it is a good idea to put a note on your Outlook calendar reminding you to check with the researchers before their consent form expires.
-Then you will be ready to replace the consent and HIPAA forms with the latest versions, with the new expiration date given.
-
-When it is time to replace the consent form with a new one:
-
-1. Notify the people who will be collecting the study's informed consent that you will be working on the e-consent in REDCap and that they should pause using the e-consent until you inform them the new forms have been uploaded
-2. In Online Designer, there will be a yellow box at the top saying the project is in production status and asking if you want to enter draft mode to make changes; click the *Enter Draft Mode* button.
-3. Where the Data Collection Instruments are listed in Designer, click on the e-Consent button under Survey Options.
-4. Click *Add Consent Form*
-5. Specify the version number and upload the consent form
-6. Save the new version
-7. Ask for the project to be moved back into Production Mode
-8. After being notified that the project is in production, go to the survey and create a test record by completing the forms, using a name like *Testing REDCap*
-9. If everything is working correctly, notify those collecting informed consent that the e-consent REDCap is back in production with the new forms, and they may see a test record in REDCap
-10. Congratulate yourself, because it is no small accomplishment to complete an e-consent REDCap project!
+Go back to that chapter to complete the e-consent project. @sec-designadv-econsent
 
 ::: {.callout-note appearance="simple"}
 
-## Additional Chapter Details
+## Common fields requiring translation into Spanish {#sec-designadv-mlmspanishterms}
 
-This chapter was last edited in April 2026.
+Spanish is the most common language used in the OU REDCap's MLM.
+Investigators will have to arrange for their own consent and HIPAA forms to be translated.
+Here are some commonly used User Interface words/phrases in English that we have translated into Spanish:
+
+* Must provide value: debe aportar valor
+* PARTICIPANT NAME (printed): NOMBRE DEL PARTICIPANTE (en letra imprenta)
+* PARENT SIGNATURE: FIRMA DEL PADRE/MADRE
+* Date: Fecha
+* SIGNATURE OF PERSON OBTAINING CONSENT: FIRMA DE LA PERSONA OBTENCION DEL CONSENTIMIENTO
+* Printed name: Nombre impreso
+* Initials: Iniciales
+* Today: Hoy
+* Signature of Legal Representative: Firma del Representante legal**
+* Next page: Página siguiente
+* Previous page: Página anterior
+* Submit: Enviar
+* The M-D-Y date format indicator: Mes-Día-Año
+* Add signature: Agregar firma
+* Remove signature: Eliminar firma
+* Use a mouse, finger, or stylus to draw your signature in the area below: Utilice el ratón, el dedo o un lápiz óptico para dibujar su firma en el área de abajo
+* Type signature: Firma de tipo
+* Type your signature: Escribe tu firma
+* Draw signature: Dibujar firma
+* I certify that all of my information in the document above is correct. I understand that clicking 'Submit' will electronically sign the form and that signing this form electronically is the equivalent of signing a physical document: Yo certifico que toda mi información en el documento anterior es correcta. Yo entiendo que al hacer clic en "Enviar" se firmará electrónicamente el formulario y que firmarlo electrónicamente equivale a firmar un documento físico.
+* If any information above is not correct, you may click the 'Previous Page' button to go back and correct it: Si alguna información anterior es incorrecta, puede hacer clic en el botón "Página anterior" para corregirla.
+
+
+## Additional Chapter Details {#sec-designadv-multilanguage-chapterdetails}
+
+This chapter was last edited in September 2026.
 If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's welcome page.
 :::
