@@ -879,11 +879,9 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <section id="clean-up" class="level3" data-number="17.3.8">
 <h3 data-number="17.3.8" class="anchored" data-anchor-id="clean-up"><span class="header-section-number">17.3.8</span> Clean Up</h3>
 <ol type="1">
-<li>Delete Previous Versions</li>
-</ol>
+<li><p>Delete Previous Versions</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Be very careful that you specify the *previous/old* version(s) correctly.</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> rm <span class="at">-rf</span> /var/www/html/redcap/redcap_v12.1.2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<ol type="1">
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> rm <span class="at">-rf</span> /var/www/html/redcap/redcap_v12.1.2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Update OS and packages</p>
 <p>Upgrading REDCap may also be a good time to ensure that other layers of the software stack are up-to-date. This includes things like MariaDB, PHP, and the OS.</p>
 <p>If you’re running RHEL, the following command will install dnf packages, and reboot the server at 3am that night. Depending on the size and activity of your REDCap instance, consider if people should be notified ahead of time.</p>
