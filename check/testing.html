@@ -802,14 +802,14 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
 <ul>
 <li>Many times, omissions or errors can be found by testing the survey/instrument yourself.</li>
 <li>Enter test data. If you are testing a survey, follow along with the paper survey and see if it matches with what is in REDCap.</li>
-<li>Review the data you just entered and see if the data is what you expected.</li>
+<li>Review the data you just entered and see if the information is what you expected.</li>
 <li>Check all branching logic and make sure the fields that are supposed to become available to the respondent actually open up for data entry.</li>
 </ul>
 </section>
 </section>
 <section id="sec-check-testing-others" class="level2" data-number="18.2">
 <h2 data-number="18.2" class="anchored" data-anchor-id="sec-check-testing-others"><span class="header-section-number">18.2</span> Select Testers</h2>
-<p><em>When you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) that you want to test your project</em></p>
+<p><em>When you decide you are ready to have individuals enter test data on your instrument or survey, select the individual(s) whom you want to test your project</em></p>
 <section id="sec-check-testing-others-person" class="level3" data-number="18.2.1">
 <h3 data-number="18.2.1" class="anchored" data-anchor-id="sec-check-testing-others-person"><span class="header-section-number">18.2.1</span> First Tester</h3>
 <p>Ask at least one other person to enter test data in your instruments or survey_</p>
@@ -876,7 +876,7 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
 <li>Click on Data Exports, Reports and Stats on the left side of your screen, then click on the View Report button to see the entered data.</li>
 <li>Does any of the information look like it would be unusable or is not as expected?</li>
 <li>Can the field be modified with data validation settings?</li>
-<li>Make corrections to the field if necessary. These corrections need to be done before the project is in production for actual data collection because you can lose data by changing the variables in production.</li>
+<li>Make corrections to the field if necessary. These corrections need to be done before the project is in production for actual data collection because you can lose data by changing the variables after the project is in production.</li>
 </ul>
 </section>
 <section id="sec-check-testing-completed-notes" class="level3" data-number="18.3.4">
@@ -887,16 +887,16 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
 <section id="sec-check-testing-production" class="level2" data-number="18.4">
 <h2 data-number="18.4" class="anchored" data-anchor-id="sec-check-testing-production"><span class="header-section-number">18.4</span> Once Satisfied for Production</h2>
 <p><em>When you are satisfied that everything is ready for collecting high-quality research data, move your project from “development” status to “production” status:</em></p>
-<p>You gain several important protections when a project is in production.</p>
+<p>We will lead you through this step below. First we will explain how you gain several important protections when a project is in production.</p>
 <!-- REDCap administrator review of changes to verify that no previously collected data will be affected by the changes
 with the snapshots come a lot of who made the changes and what changes were made -->
 <section id="sec-check-testing-production-advantages" class="level3" data-number="18.4.1">
 <h3 data-number="18.4.1" class="anchored" data-anchor-id="sec-check-testing-production-advantages"><span class="header-section-number">18.4.1</span> Production Advantages:</h3>
 <ol type="1">
-<li><p>Data Integrity Protection: Production mode prevents direct, unrestricted changes to field names, dropdown choices, and form structures that could accidentally invalidate or delete collected data.</p>
+<li><p>Data Integrity Protection: Production mode prevents direct, unrestricted changes to field names, dropdown choices, and form structures that could accidentally invalidate or delete already collected data.</p>
 <p>If a mistake is made, your chances of recovering lost data are vastly improved if the project was protected in production status.</p></li>
 <li><p>Controlled Modifications via Draft Mode: The production status allows you to make form updates safely using Draft Mode, where critical changes require an administrator review.</p>
-<p>Each institution can choose their own threshold for “critical change”. Currently OU allows new fields to be added automatically; because no existing data can be corrupted, we argue that the admin oversight is unnecessary.</p></li>
+<p>Each institution can choose their own threshold for “critical change.” Currently OU allows new fields to be added automatically; because no existing data can be corrupted, we argue that the admin oversight is unnecessary.</p></li>
 <li><p>Revision Tracking: When in production, REDCap audits project modifications and history and who made them, so you can document changes and review past data dictionary versions.</p></li>
 <li><p>Enhanced Security and Compliance: The oversight strengthens the project’s compliance during live research. This helps ensure proper data retention, long-term security, and adherence to institutional review requirements.</p></li>
 </ol>
@@ -906,23 +906,23 @@ with the snapshots come a lot of who made the changes and what changes were made
 <p>Move your project to production status by following these steps:</p>
 <ol type="1">
 <li><p>Click on “Project Setup” tab.</p></li>
-<li><p>Click on the button “Move project to production”.</p></li>
+<li><p>Click on the button “Move project to production.”</p></li>
 <li><p>Decide if you want to Keep ALL data saved so far.</p>
 <ul>
-<li>If you have real data entered and don’t want to lose it, click “Keep ALL data saved so far”.</li>
+<li>If you have real data entered and don’t want to lose it, click “Keep ALL data saved so far.”</li>
 <li>Alternatively, if everything is test data, you’ll want to delete the fake data, so click “Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys, and all archived data export files stored in the File Repository, and any logged events that pertain to data collection.”</li>
 </ul></li>
-<li><p>Finally, request that the Server Admin approve your proposal and click on the button “Yes, Request Admin to Move to Production Status.”</p></li>
+<li><p>Finally, request that the REDCap Administrator approve your proposal. Click on the button, “Yes, Request Admin to Move to Production Status.”</p></li>
 </ol>
 </section>
 <section id="sec-check-testing-production-modify" class="level3" data-number="18.4.3">
 <h3 data-number="18.4.3" class="anchored" data-anchor-id="sec-check-testing-production-modify"><span class="header-section-number">18.4.3</span> Modify while in Production</h3>
-<p>Of course some projects will need to be modified as the investigation continues for years. We to try to strike a balance that affords both (a) agility to researchers to adapt to unforeseen circumstances and (b) protection against accidental data corruption.</p>
+<p>Of course, some projects will need to be modified, particularly if the investigation continues for years. We to try to strike a balance that affords both (a) agility to researchers to adapt to unforeseen circumstances and (b) protection against accidental data corruption.</p>
 <p>Here are the steps that OU (and many other institutions) require to change a project in production:</p>
 <ol type="1">
-<li>Place the designer in “Draft Mode”,</li>
-<li>Edit or add variables in the designer,</li>
-<li>“Submit” the changes for review.</li>
+<li>Place the designer in “Draft Mode”</li>
+<li>Edit or add variables in the designer</li>
+<li>“Submit” the changes for review</li>
 </ol>
 <p>At this point, your proposal appears on the REDCap server admin’s “To-Do List”. The admin then will review the proposed changes before they are “committed” to the live version that respondents are interacting with.</p>
 <p>The server admins at most REDCap institutions attend lots of training, calls, and conferences. We have managed hundreds of projects, which allows us to spot possible problems in your draft. If we do suspect a potential problem, we’ll likely contact you and describe the concern, and verify that it matches your intent. So if you are submitting changes, please monitor your work email until it’s approved. OU admins typically review the changes at least hourly during weekdays, and periodically over weekends and holidays.</p>
