@@ -52,9 +52,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ffb0a06babcc4b522879a26088bebfe0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-7d967e198cb89ddbdcfd31cc41bd68f9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-ffb0a06babcc4b522879a26088bebfe0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-84605d2c76d7b5c6b46b1b528301da4a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0189c80276ba8a7eff868595f23a8764.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-84605d2c76d7b5c6b46b1b528301da4a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -658,13 +658,11 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <li><a href="#sec-check-testing-completed-inspect" id="toc-sec-check-testing-completed-inspect" class="nav-link" data-scroll-target="#sec-check-testing-completed-inspect"><span class="header-section-number">18.3.3</span> Inspect Test Data</a></li>
   <li><a href="#sec-check-testing-completed-notes" id="toc-sec-check-testing-completed-notes" class="nav-link" data-scroll-target="#sec-check-testing-completed-notes"><span class="header-section-number">18.3.4</span> Convert to Notes</a></li>
   </ul></li>
-  <li><a href="#sec-check-testing-satisfied" id="toc-sec-check-testing-satisfied" class="nav-link" data-scroll-target="#sec-check-testing-satisfied"><span class="header-section-number">18.4</span> Once Satisfied</a>
+  <li><a href="#sec-check-testing-production" id="toc-sec-check-testing-production" class="nav-link" data-scroll-target="#sec-check-testing-production"><span class="header-section-number">18.4</span> Once Satisfied for Production</a>
   <ul class="collapse">
-  <li><a href="#sec-check-testing-satisfied-setup" id="toc-sec-check-testing-satisfied-setup" class="nav-link" data-scroll-target="#sec-check-testing-satisfied-setup"><span class="header-section-number">18.4.1</span> Project Setup</a></li>
-  <li><a href="#sec-check-testing-satisfied-move" id="toc-sec-check-testing-satisfied-move" class="nav-link" data-scroll-target="#sec-check-testing-satisfied-move"><span class="header-section-number">18.4.2</span> Move project to production</a></li>
-  <li><a href="#sec-check-testing-satisfied-keep" id="toc-sec-check-testing-satisfied-keep" class="nav-link" data-scroll-target="#sec-check-testing-satisfied-keep"><span class="header-section-number">18.4.3</span> Keep ALL data saved so far</a></li>
-  <li><a href="#sec-check-testing-satisfied-fake" id="toc-sec-check-testing-satisfied-fake" class="nav-link" data-scroll-target="#sec-check-testing-satisfied-fake"><span class="header-section-number">18.4.4</span> If everything is test data,</a></li>
-  <li><a href="#sec-check-testing-satisfied-request" id="toc-sec-check-testing-satisfied-request" class="nav-link" data-scroll-target="#sec-check-testing-satisfied-request"><span class="header-section-number">18.4.5</span> Request Admin to Move</a></li>
+  <li><a href="#sec-check-testing-production-advantages" id="toc-sec-check-testing-production-advantages" class="nav-link" data-scroll-target="#sec-check-testing-production-advantages"><span class="header-section-number">18.4.1</span> Production Advantages:</a></li>
+  <li><a href="#sec-check-testing-production-move" id="toc-sec-check-testing-production-move" class="nav-link" data-scroll-target="#sec-check-testing-production-move"><span class="header-section-number">18.4.2</span> Move to Production</a></li>
+  <li><a href="#sec-check-testing-production-modify" id="toc-sec-check-testing-production-modify" class="nav-link" data-scroll-target="#sec-check-testing-production-modify"><span class="header-section-number">18.4.3</span> Modify while in Production</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/check/testing.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/check/testing.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
@@ -873,30 +871,47 @@ Jan. 8, 1999      jan 8 1999          1999-1-8    8 Jan ‘99</code></pre>
 <p><em>Are there any text boxes that need to be turned into notes fields?</em></p>
 </section>
 </section>
-<section id="sec-check-testing-satisfied" class="level2" data-number="18.4">
-<h2 data-number="18.4" class="anchored" data-anchor-id="sec-check-testing-satisfied"><span class="header-section-number">18.4</span> Once Satisfied</h2>
-<p><em>When you are satisfied that everything is perfect</em></p>
-<section id="sec-check-testing-satisfied-setup" class="level3" data-number="18.4.1">
-<h3 data-number="18.4.1" class="anchored" data-anchor-id="sec-check-testing-satisfied-setup"><span class="header-section-number">18.4.1</span> Project Setup</h3>
-<p><em>Move your project to production status by (1) clicking on “Project Setup” tab</em></p>
+<section id="sec-check-testing-production" class="level2" data-number="18.4">
+<h2 data-number="18.4" class="anchored" data-anchor-id="sec-check-testing-production"><span class="header-section-number">18.4</span> Once Satisfied for Production</h2>
+<p><em>When you are satisfied that everything is ready for collecting high-quality research data, move your project from “development” status to “production” status:</em></p>
+<p>You gain several important protections when a project is in production.</p>
+<!-- REDCap administrator review of changes to verify that no previously collected data will be affected by the changes
+with the snapshots come a lot of who made the changes and what changes were made -->
+<section id="sec-check-testing-production-advantages" class="level3" data-number="18.4.1">
+<h3 data-number="18.4.1" class="anchored" data-anchor-id="sec-check-testing-production-advantages"><span class="header-section-number">18.4.1</span> Production Advantages:</h3>
+<ol type="1">
+<li><p>Data Integrity Protection: Production mode prevents direct, unrestricted changes to field names, dropdown choices, and form structures that could accidentally invalidate or delete collected data.</p></li>
+<li><p>Controlled Modifications via Draft Mode: The production status allows you to make form updates safely using Draft Mode, where critical changes require an administrator review.</p>
+<p>Each institution can choose their own threshold for “critical change”. Currently OU allows new fields to be added automatically; because no existing data can be corrupted, we argue that the admin oversight is unnecessary.</p></li>
+<li><p>Revision Tracking: When in production, REDCap tracks project modifications and history and who made them, so you can document changes and review past data dictionary versions.</p></li>
+<li><p>Enhanced Security and Compliance: The oversight strengthens the project’s compliance during live research. This helps ensure proper data retention, long-term security, and adherence to institutional review requirements.</p></li>
+</ol>
 </section>
-<section id="sec-check-testing-satisfied-move" class="level3" data-number="18.4.2">
-<h3 data-number="18.4.2" class="anchored" data-anchor-id="sec-check-testing-satisfied-move"><span class="header-section-number">18.4.2</span> Move project to production</h3>
-<p><em>Then scroll down, and (2) click on the button “Move project to production.”</em></p>
-</section>
-<section id="sec-check-testing-satisfied-keep" class="level3" data-number="18.4.3">
-<h3 data-number="18.4.3" class="anchored" data-anchor-id="sec-check-testing-satisfied-keep"><span class="header-section-number">18.4.3</span> Keep ALL data saved so far</h3>
-<p><em>If you have real data entered and don’t want to lose it, click on “Keep ALL data saved so far.”</em></p>
-</section>
-<section id="sec-check-testing-satisfied-fake" class="level3" data-number="18.4.4">
-<h3 data-number="18.4.4" class="anchored" data-anchor-id="sec-check-testing-satisfied-fake"><span class="header-section-number">18.4.4</span> If everything is test data,</h3>
+<section id="sec-check-testing-production-move" class="level3" data-number="18.4.2">
+<h3 data-number="18.4.2" class="anchored" data-anchor-id="sec-check-testing-production-move"><span class="header-section-number">18.4.2</span> Move to Production</h3>
+<p>Move your project to production status by following these steps:</p>
+<ol type="1">
+<li><p>Click on “Project Setup” tab.</p></li>
+<li><p>Click on the button “Move project to production”.</p></li>
+<li><p>Decide if you want to Keep ALL data saved so far.</p>
 <ul>
-<li>If so, remember to click on “Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys, and all archived data export files stored in the File Repository, and any logged events that pertain to data collection.”</li>
-</ul>
+<li>If you have real data entered and don’t want to lose it, click “Keep ALL data saved so far”.</li>
+<li>Alternatively, if everything is test data, you’ll want to delete the fake data, so click “Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys, and all archived data export files stored in the File Repository, and any logged events that pertain to data collection.”</li>
+</ul></li>
+<li><p>Finally, request that the Server Admin approve your proposal and click on the button “Yes, Request Admin to Move to Production Status.”</p></li>
+</ol>
 </section>
-<section id="sec-check-testing-satisfied-request" class="level3" data-number="18.4.5">
-<h3 data-number="18.4.5" class="anchored" data-anchor-id="sec-check-testing-satisfied-request"><span class="header-section-number">18.4.5</span> Request Admin to Move</h3>
-<p><em>Click on the button “Yes, Request Admin to Move to Production Status.”</em></p>
+<section id="sec-check-testing-production-modify" class="level3" data-number="18.4.3">
+<h3 data-number="18.4.3" class="anchored" data-anchor-id="sec-check-testing-production-modify"><span class="header-section-number">18.4.3</span> Modify while in Production</h3>
+<p>Of course some projects will need to be modified as the investigation continues for years. We to try to strike a balance that affords both (a) agility to researchers to adapt to unforeseen circumstances and (b) protection against accidental data corruption.</p>
+<p>Here are the steps that OU (and many other institutions) require to change a project in production:</p>
+<ol type="1">
+<li>Place the designer in “Draft Mode”,</li>
+<li>Edit or add variables in the designer,</li>
+<li>“Submit” the changes for review.</li>
+</ol>
+<p>At this point, your proposal appears on the REDCap server admin’s “To-Do List”. The admin then will review the proposed changes before they are “committed” to the live version that respondents are interacting with.</p>
+<p>The server admins at most REDCap institutions attend lots of training, calls, and conferences. We have managed hundreds of projects, which allows us to spot possible problems in your draft. If we do suspect a potential problem, we’ll likely contact you and describe the concern, and verify that it matches your intent. So if you are submitting something, monitor your work email until it’s approved.</p>
 
 
 </section>
