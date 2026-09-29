@@ -197,6 +197,9 @@ with the snapshots come a lot of who made the changes and what changes were made
 1. Data Integrity Protection:
    Production mode prevents direct, unrestricted changes to field names, dropdown choices, and form structures that could accidentally invalidate or delete collected data.
 
+   If a mistake is made, your chances of recovering lost data are vastly improved
+   if the project was protected in production status.
+
 1. Controlled Modifications via Draft Mode:
    The production status allows you to make form updates safely using Draft Mode,
    where critical changes require an administrator review.
@@ -206,7 +209,7 @@ with the snapshots come a lot of who made the changes and what changes were made
    because no existing data can be corrupted, we argue that the admin oversight is unnecessary.
 
 1. Revision Tracking:
-   When in production, REDCap tracks project modifications and history and who made them,
+   When in production, REDCap audits project modifications and history and who made them,
    so you can document changes and review past data dictionary versions.
 
 1. Enhanced Security and Compliance:
@@ -252,4 +255,6 @@ The server admins at most REDCap institutions attend lots of training, calls, an
 We have managed hundreds of projects, which allows us to spot possible problems in your draft.
 If we do suspect a potential problem, we'll likely contact you and describe the concern,
 and verify that it matches your intent.
-So if you are submitting something, monitor your work email until it's approved.
+So if you are submitting changes, please monitor your work email until it's approved.
+OU admins typically review the changes at least hourly during weekdays,
+and periodically over weekends and holidays.
