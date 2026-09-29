@@ -880,10 +880,11 @@ with the snapshots come a lot of who made the changes and what changes were made
 <section id="sec-check-testing-production-advantages" class="level3" data-number="18.4.1">
 <h3 data-number="18.4.1" class="anchored" data-anchor-id="sec-check-testing-production-advantages"><span class="header-section-number">18.4.1</span> Production Advantages:</h3>
 <ol type="1">
-<li><p>Data Integrity Protection: Production mode prevents direct, unrestricted changes to field names, dropdown choices, and form structures that could accidentally invalidate or delete collected data.</p></li>
+<li><p>Data Integrity Protection: Production mode prevents direct, unrestricted changes to field names, dropdown choices, and form structures that could accidentally invalidate or delete collected data.</p>
+<p>If a mistake is made, your chances of recovering lost data are vastly improved if the project was protected in production status.</p></li>
 <li><p>Controlled Modifications via Draft Mode: The production status allows you to make form updates safely using Draft Mode, where critical changes require an administrator review.</p>
 <p>Each institution can choose their own threshold for “critical change”. Currently OU allows new fields to be added automatically; because no existing data can be corrupted, we argue that the admin oversight is unnecessary.</p></li>
-<li><p>Revision Tracking: When in production, REDCap tracks project modifications and history and who made them, so you can document changes and review past data dictionary versions.</p></li>
+<li><p>Revision Tracking: When in production, REDCap audits project modifications and history and who made them, so you can document changes and review past data dictionary versions.</p></li>
 <li><p>Enhanced Security and Compliance: The oversight strengthens the project’s compliance during live research. This helps ensure proper data retention, long-term security, and adherence to institutional review requirements.</p></li>
 </ol>
 </section>
@@ -911,7 +912,7 @@ with the snapshots come a lot of who made the changes and what changes were made
 <li>“Submit” the changes for review.</li>
 </ol>
 <p>At this point, your proposal appears on the REDCap server admin’s “To-Do List”. The admin then will review the proposed changes before they are “committed” to the live version that respondents are interacting with.</p>
-<p>The server admins at most REDCap institutions attend lots of training, calls, and conferences. We have managed hundreds of projects, which allows us to spot possible problems in your draft. If we do suspect a potential problem, we’ll likely contact you and describe the concern, and verify that it matches your intent. So if you are submitting something, monitor your work email until it’s approved.</p>
+<p>The server admins at most REDCap institutions attend lots of training, calls, and conferences. We have managed hundreds of projects, which allows us to spot possible problems in your draft. If we do suspect a potential problem, we’ll likely contact you and describe the concern, and verify that it matches your intent. So if you are submitting changes, please monitor your work email until it’s approved. OU admins typically review the changes at least hourly during weekdays, and periodically over weekends and holidays.</p>
 
 
 </section>
