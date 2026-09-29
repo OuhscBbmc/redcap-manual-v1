@@ -269,10 +269,10 @@ check that the basic FHIR operations are performing as you expect.
 
 1. Delete Previous Versions
 
-```bash
-# Be very careful that you specify the *previous/old* version(s) correctly.
-sudo rm -rf /var/www/html/redcap/redcap_v12.1.2
-```
+   ```bash
+   # Be very careful that you specify the *previous/old* version(s) correctly.
+   sudo rm -rf /var/www/html/redcap/redcap_v12.1.2
+   ```
 
 1. Update OS and packages
 
