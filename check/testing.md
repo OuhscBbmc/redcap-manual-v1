@@ -184,8 +184,34 @@ _Are there any text boxes that need to be turned into notes fields?_
 
 ## Once Satisfied for Production {#sec-check-testing-production}
 
-_When you are satisfied that everything is ready for collecting high-quality research data:_
+_When you are satisfied that everything is ready for collecting high-quality research data,
+move your project from "development" status to "production" status:_
 
+You gain several important protections when a project is in production.
+
+<!-- REDCap administrator review of changes to verify that no previously collected data will be affected by the changes
+with the snapshots come a lot of who made the changes and what changes were made -->
+
+### Production Advantages: {#sec-check-testing-production-advantages}
+
+1. Data Integrity Protection:
+   Production mode prevents direct, unrestricted changes to field names, dropdown choices, and form structures that could accidentally invalidate or delete collected data.
+
+1. Controlled Modifications via Draft Mode:
+   The production status allows you to make form updates safely using Draft Mode,
+   where critical changes require an administrator review.
+
+   Each institution can choose their own threshold for "critical change".
+   Currently OU allows new fields to be added automatically;
+   because no existing data can be corrupted, we argue that the admin oversight is unnecessary.
+
+1. Revision Tracking:
+   When in production, REDCap tracks project modifications and history and who made them,
+   so you can document changes and review past data dictionary versions.
+
+1. Enhanced Security and Compliance:
+   The oversight strengthens the project's compliance during live research.
+   This helps ensure proper data retention, long-term security, and adherence to institutional review requirements.
 
 ### Project Setup {#sec-check-testing-production-setup}
 
