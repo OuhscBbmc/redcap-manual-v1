@@ -21,6 +21,11 @@ author:
     email: thomas-wilson@ou.edu
     orcid: 0009-0009-1239-1348
 
+  - name: Will Beasley
+    affiliation: University of Oklahoma Health Campus
+    affiliation-url: https://ouhsc.edu/bbmc/
+    email: wibeasley@hotmail.com
+    orcid: 0000-0002-5613-5006
 
 csl: ../assets/csl/apa-7e.csl
 ---
