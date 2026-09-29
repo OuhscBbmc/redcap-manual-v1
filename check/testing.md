@@ -182,27 +182,25 @@ _Look at the data that the testers entered into REDCap_
 
 _Are there any text boxes that need to be turned into notes fields?_
 
-## Once Satisfied {#sec-check-testing-satisfied}
+## Once Satisfied for Production {#sec-check-testing-production}
 
-_When you are satisfied that everything is perfect_
+_When you are satisfied that everything is ready for collecting high-quality research data:_
 
-### Project Setup {#sec-check-testing-satisfied-setup}
 
-_Move your project to production status by (1) clicking on "Project Setup" tab_
+### Project Setup {#sec-check-testing-production-setup}
 
-### Move project to production {#sec-check-testing-satisfied-move}
+Move your project to production status by following these steps:
 
-_Then scroll down, and (2) click on the button "Move project to production."_
+1. Click on "Project Setup" tab.
 
-### Keep ALL data saved so far {#sec-check-testing-satisfied-keep}
+1. Click on the button "Move project to production".
 
-_If you have real data entered and don't want to lose it, click on "Keep ALL data saved so far."_
+1. Decide if you want to Keep ALL data saved so far.
+   * If you have real data entered and don't want to lose it, click "Keep ALL data saved so far".
+   * Alternatively, if everything is test data, you'll want to delete the fake data,
+     so click
+     "Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys,
+     and all archived data export files stored in the File Repository, and any logged events that pertain to data collection."
 
-### If everything is test data,  {#sec-check-testing-satisfied-fake}
-
-* If so, remember to click on "Delete ALL data in the project (including any survey responses), calendar events, documents uploaded onto forms/surveys,
-  and all archived data export files stored in the File Repository, and any logged events that pertain to data collection."
-
-### Request Admin to Move  {#sec-check-testing-satisfied-request}
-
-_Click on the button "Yes, Request Admin to Move to Production Status."_
+1. Finally, request that the Server Admin approve your proposal and
+   click on the button "Yes, Request Admin to Move to Production Status."
