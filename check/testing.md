@@ -213,7 +213,7 @@ with the snapshots come a lot of who made the changes and what changes were made
    The oversight strengthens the project's compliance during live research.
    This helps ensure proper data retention, long-term security, and adherence to institutional review requirements.
 
-### Project Setup {#sec-check-testing-production-setup}
+### Move to Production {#sec-check-testing-production-move}
 
 Move your project to production status by following these steps:
 
@@ -230,3 +230,26 @@ Move your project to production status by following these steps:
 
 1. Finally, request that the Server Admin approve your proposal and
    click on the button "Yes, Request Admin to Move to Production Status."
+
+### Modify while in Production {#sec-check-testing-production-modify}
+
+Of course some projects will need to be modified as the investigation continues for years.
+We to try to strike a balance that affords both
+(a) agility to researchers to adapt to unforeseen circumstances and
+(b) protection against accidental data corruption.
+
+Here are the steps that OU (and many other institutions) require to change a project in production:
+
+1. Place the designer in "Draft Mode",
+1. Edit or add variables in the designer,
+1. "Submit" the changes for review.
+
+At this point, your proposal appears on the REDCap server admin's "To-Do List".
+The admin then will review the proposed changes before they are "committed"
+to the live version that respondents are interacting with.
+
+The server admins at most REDCap institutions attend lots of training, calls, and conferences.
+We have managed hundreds of projects, which allows us to spot possible problems in your draft.
+If we do suspect a potential problem, we'll likely contact you and describe the concern,
+and verify that it matches your intent.
+So if you are submitting something, monitor your work email until it's approved.
