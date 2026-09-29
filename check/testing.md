@@ -263,3 +263,9 @@ and verify that it matches your intent.
 So if you are submitting changes, please monitor your work email until it's approved.
 OU admins typically review the changes at least hourly during weekdays,
 and periodically over weekends and holidays.
+
+### Further Reading {#sec-check-testing-production-further}
+
+For more information, see [Bas de Veer](https://www.linkedin.com/in/basdeveer/)'s REDCap Knowledge Base regarding
+[Production Status](https://bdeveer.github.io/REDCap_KB_RAG/RC-PROJ-01_Project-Lifecycle-Status-and-Settings/#22-production),
+and its place in the overall life cycle of a project.
