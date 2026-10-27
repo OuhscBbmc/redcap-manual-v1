@@ -1032,12 +1032,23 @@
   {
     "objectID": "trouble/login.html",
     "href": "trouble/login.html",
-    "title": "20  Can’t log in",
+    "title": "20  Trouble Logging into a REDCap Server",
     "section": "",
-    "text": "Chapter Leads: Thomas Wilson",
+    "text": "20.1 ERR_TOO_MANY_REDIRECTS Error\nChapter Leads: Thomas Wilson\nSuggested Explanation and Solution:\nSometimes the authentication mechanism gets confused if you’ve logged into different OU or OU Health accounts. Fortunately there is an easy way to reset the credentials cached in your computer.",
     "crumbs": [
       "Troubleshooting",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Can't log in</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Trouble Logging into a REDCap Server</span>"
+    ]
+  },
+  {
+    "objectID": "trouble/login.html#sec-trouble-login-toomanyredirects",
+    "href": "trouble/login.html#sec-trouble-login-toomanyredirects",
+    "title": "20  Trouble Logging into a REDCap Server",
+    "section": "",
+    "text": "NoteProblem Description\n\n\n\nThis problem appears differently, depending on your browser. But all of the browsers ultimately display ERR_TOO_MANY_REDIRECTS.\n\n\n\n\n\nFirst, visit https://outlook.office.com and complete login. Use your conventional OU credentials.\nSecond, visit https://bbmc.ouhsc.edu/. Use your conventional OU credentials again.",
+    "crumbs": [
+      "Troubleshooting",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Trouble Logging into a REDCap Server</span>"
     ]
   }
 ]
