@@ -145,7 +145,7 @@ Be sure to click the yellow-orange Save Changes button.
 It doesn't hurt to click that button after every change you make!
 At any point when you make a change and the Save Changes button stays gray, click outside of the field you just changed to make it turn yellow-orange.
 
-   ![Save Changes Often](images/multilanguage/savechanges.jpg){width="80%"}
+   ![Save Changes Often](images/multilanguage/mlmsavechanges.jpg){width="80%"}
 
 Notice in the above screenshot that the word Translate appears next to each instrument in the Fields and Survey Settings columns.
 There are more functions to access by clicking each place that it says Translate.
