@@ -279,11 +279,17 @@ check that the basic FHIR operations are performing as you expect.
    Upgrading REDCap may also be a good time to ensure that other layers of the software stack are up-to-date.
    This includes things like MariaDB, PHP, and the OS.
 
-   If you're running RHEL, the following command will install dnf packages, and reboot the server at 3am that night.
+   If you're running RHEL, the following command will
+   * clear temporary files cached by the dnf package manager,
+   * schedule for 3am that night, an install dnf packages and reboot the server, and
+   * close the terminal (which is useful if you're juggling multiple instances).
+
    Depending on the size and activity of your REDCap instance, consider if people should be notified ahead of time.
 
    ```bash
-   sudo bash -c 'command -v at >/dev/null 2>&1 || (yum -y install at || dnf -y install at || apt-get update -y && apt-get install -y at); systemctl enable --now atd; echo "reboot" | at 3am tomorrow'; exit 0
+   sudo dnf clean all
+   sudo bash -c 'command -v at >/dev/null 2>&1 || (yum -y install at || dnf -y install at || apt-get update -y && apt-get install -y at); systemctl enable --now atd; echo "reboot" | at 3am tomorrow'
+   exit 0
    ```
 
    Typically we'll initially upgrade the packages interactively with `sudo dnf upgrade` and confirm that everything completed successfully.
