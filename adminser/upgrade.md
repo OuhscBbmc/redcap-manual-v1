@@ -279,21 +279,39 @@ check that the basic FHIR operations are performing as you expect.
    Upgrading REDCap may also be a good time to ensure that other layers of the software stack are up-to-date.
    This includes things like MariaDB, PHP, and the OS.
 
-   If you're running RHEL, the following command will
-   * clear temporary files cached by the dnf package manager,
-   * schedule for 3am that night, an install dnf packages and reboot the server, and
-   * close the terminal (which is useful if you're juggling multiple instances).
+   1. Run once, to set up the `at` utility and create a custom function to check if server should be restarted.
 
-   Depending on the size and activity of your REDCap instance, consider if people should be notified ahead of time.
+      ```bash
+      sudo dnf -y install at dnf-utils
+      sudo systemctl enable --now atd
 
-   ```bash
-   sudo dnf clean all
-   sudo bash -c 'command -v at >/dev/null 2>&1 || (yum -y install at || dnf -y install at || apt-get update -y && apt-get install -y at); systemctl enable --now atd; echo "reboot" | at 3am tomorrow'
-   exit 0
-   ```
+      sudo tee /usr/local/sbin/needs-reboot >/dev/null <<'EOF'
+      #!/bin/bash
+      # Exit 0 if a reboot is warranted: core packages updated OR any service is running stale code.
+      needs-restarting -r >/dev/null 2>&1 || exit 0
+      [ -n "$(needs-restarting -s 2>/dev/null)" ] && exit 0
+      exit 1
+      EOF
+      sudo chmod 755 /usr/local/sbin/needs-reboot
+      ```
 
-   Typically we'll initially upgrade the packages interactively with `sudo dnf upgrade` and confirm that everything completed successfully.
-   Then we'll terminate the session with the previous snippet to make sure any upgrades requiring a reboot are fulfilled.
+   1. Run weekly, or after each REDCap upgrade.
+
+      ```bash
+      sudo dnf clean all   # Clear temporary files
+      sudo dnf -y upgrade  # Upgrade packages
+
+      # Reboot if anything on the server requires it.
+      if sudo /usr/local/sbin/needs-reboot; then
+        echo 'systemctl reboot' | sudo at 03:00 tomorrow
+        sudo atq
+      else
+        echo "No reboot required."
+      fi
+
+      # Close the terminal (which is useful if you're juggling multiple instances).
+      exit 0
+      ```
 
 ::: {.callout-note appearance="simple"}
 
