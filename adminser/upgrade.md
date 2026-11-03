@@ -279,35 +279,50 @@ check that the basic FHIR operations are performing as you expect.
    Upgrading REDCap may also be a good time to ensure that other layers of the software stack are up-to-date.
    This includes things like MariaDB, PHP, and the OS.
 
-   1. Run once, to set up the `at` utility and create a custom function to check if server should be restarted.
+   1. Create the file 
+      `/usr/local/sbin/update-and-reboot-if-required.sh`
+      with the following contents.  
+      It updates OS files, and if necessary, reboots the server at 3am the next morning.
 
       ```bash
-      sudo dnf -y install at dnf-utils
-      sudo systemctl enable --now atd
-
-      sudo tee /usr/local/sbin/needs-reboot >/dev/null <<'EOF'
       #!/bin/bash
-      # Exit 0 if a reboot is warranted: core packages updated OR any service is running stale code.
-      needs-restarting -r >/dev/null 2>&1 || exit 0
-      [ -n "$(needs-restarting -s 2>/dev/null)" ] && exit 0
-      exit 1
-      EOF
-      sudo chmod 755 /usr/local/sbin/needs-reboot
+      # Cleans packages, upgrades the server, and schedules a reboot if needed.
+      
+      # Variable for reboot time
+      REBOOTTIME="3am tomorrow"
+      
+      # Cleaning up the files
+      echo "Cleaning files..."
+      sudo dnf clean all
+      
+      # Doing the upgrade
+      echo "Upgrading..."
+      sudo dnf update -y
+      
+      # Making sure atq is up and running.
+      echo "Scheduling a reboot, if needed..."
+      
+      # Logic check for rebooting, setting the exit code. Zero means no reboot required. Exit code 1 means required.
+      sudo dnf needs-restarting -r
+      NEEDSREBOOT=$(echo $?)
+      
+      # If statement to check if reboot is required
+      if [[  $NEEDSREBOOT -eq 1  ]]; then
+              sudo systemctl enable --now atd
+          echo "INFO - Reboot is required!"
+          echo "sudo reboot" | at $REBOOTTIME
+      else
+          echo "INFO - Reboot is not required, moving on..."
+      fi
+          
+      echo "All done!"
+      exit 0
       ```
 
    1. Run weekly, or after each REDCap upgrade.
 
       ```bash
-      sudo dnf clean all   # Clear temporary files
-      sudo dnf -y upgrade  # Upgrade packages
-
-      # Reboot if anything on the server requires it.
-      if sudo /usr/local/sbin/needs-reboot; then
-        echo 'systemctl reboot' | sudo at 03:00 tomorrow
-        sudo atq
-      else
-        echo "No reboot required."
-      fi
+      bash update-and-reboot-if-required.sh
 
       # Close the terminal (which is useful if you're juggling multiple instances).
       exit 0
