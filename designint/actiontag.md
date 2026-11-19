@@ -14,6 +14,11 @@ author:
     affiliation-url: https://ouhsc.edu/bbmc/
     email: thomas-wilson@ou.edu
     orcid: 0009-0009-1239-1348
+  - name: Will Beasley
+    affiliation: University of Oklahoma Health Campus
+    affiliation-url: https://ouhsc.edu/bbmc/
+    email: wibeasley@hotmail.com
+    orcid: 0000-0002-5613-5006
 
 csl: ../assets/csl/apa-7e.csl
 ---
@@ -121,6 +126,32 @@ Then we click on the Action Tags/Field Annotation box to open the Logic Editor, 
 
 ![MAXCHECKED action tag](images/actiontag/maxchecked.jpg){width=80%}
 
+### `@HIDDEN` {#sec-designint-action-common-hidden}
+
+> Hides the field on the survey page, the data entry form, and in the REDCap mobile app. Field will stay hidden even if branching logic attempts to make it visible.
+> (Official definition from REDCap 17.6.2.)
+
+Hiding an entire variable is useful in two scenarios:
+retiring an existing variable and concealing a calculated variable.
+
+#### Retire an existing variable {#sec-designint-action-common-hidden-retire}
+
+As a production project evolves over time, some variables are added,
+while some variables become irrelevant to future respondents.
+It's encouraged to "remove" irrelevant variables so your instrument remains as stream-lined as possible,
+for the sake of the respondents' time and the dataset's quality.
+
+For most carefully-designed projects, these obsolete variables contain information that is still relevant
+during later analysis.
+In this case, use the `@HIDDEN` action tag to simply conceal the variable from the respondent, while retaining its data values in the database.
+
+#### Conceal a calculated variable {#sec-designint-action-common-hidden-calculated}
+
+Calculated variables/fields are described in @sec-designbas-variable-types-calculated.
+Sometimes these derived values are useful to (to something like the branching logic or to an analyst),
+but could confuse a respondent.
+So use the `@HIDDEN` action tag to conceal it.
+
 ## Less Common {#sec-designint-action-lesscommon}
 
 ### `@SETVALUE` {#sec-designint-action-lesscommon-setvalue}
@@ -132,7 +163,7 @@ Then we click on the Action Tags/Field Annotation box to open the Logic Editor, 
 > * NOTE: A field with `@SETVALUE` will have its value updated ONLY when the page loads, which means that its value will not be updated in real-time if you modify other fields on the same page that are piped into the `@SETVALUE` tag.
 > * NOTE: If being used on a date or datetime field, the date value inside the quotes must be in Y-M-D format - e.g., `@SETVALUE='2007-12-25'` - regardless of the field's set date format.
 > * NOTE: The only difference between `@SETVALUE` and `@DEFAULT` is that `@DEFAUL`T is only applied when an instrument has no data yet, whereas `@SETVALU`E will always be applied on an instrument, meaning that `@SETVALUE` will ALWAYS overwrite the value if a field value already exists.
-> * TIP: To pipe the value of one multiple choice field into another multiple choice field, make sure you append ':value' to the variable being piped - e.g., `@SETVALUE='[my_dropdown:value]'`. (In earlier versions of REDCap, the `@SETVALUE` action tag went by the name @PREFILL, which still works equivalently to `@SETVALUE` for backward compatibility purposes.)
+> * TIP: To pipe the value of one multiple choice field into another multiple choice field, make sure you append ':value' to the variable being piped - e.g., `@SETVALUE='[my_dropdown:value]'`. (In earlier versions of REDCap, the `@SETVALUE` action tag went by the name `@PREFILL`, which still works equivalently to `@SETVALUE` for backward compatibility purposes.)
 >
 > (Official definition from REDCap 17.6.2.)
 
