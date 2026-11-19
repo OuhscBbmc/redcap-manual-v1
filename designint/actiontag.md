@@ -38,6 +38,9 @@ We will explain some of the more common action tags, then we will cover a few of
 
 ### `@HIDEBUTTON` {#sec-designint-action-common-hide}
 
+> Hides the 'Now' or 'Today' button that is typically displayed to the right of date, time, and date/time fields.
+> (Official definition from REDCap 17.6.2.)
+
 By default, date fields appear with a button labeled Today.
 Clicking that button fills in today's date.
 Sometimes a project designer does not want that button available.
@@ -56,6 +59,14 @@ Now the Today button no longer appears next to the date field.
 
 ### `@DEFAULT` {#sec-designint-action-common-default}
 
+> Sets a field's initial value. This allows a field to have a specified default value when viewing the field on a survey or data entry form that has not yet had any data saved for it (i.e., when the form status icon is gray or when a survey page has not had any data entered yet). The format must follow the pattern `@DEFAULT="????"`, in which the desired default value should be inside single or double quotes. For checkbox fields, simply separate multiple checkbox values with commas - e.g., `@DEFAULT='1,3,6'`.
+> For text fields, you may even perform Piping inside the default value to pipe data from another field in the project - e.g., `@DEFAULT='Name: [first_name] [last_name], DOB: [dob]'`.
+>
+> * NOTE: The default value does *not* get applied during any data imports (via API or Data Import Tool) but only operates when viewing survey pages and data entry forms.
+> * NOTE: If being used on a date or datetime field, the date value inside the quotes must be in Y-M-D format - e.g., `@DEFAULT='2007-12-25'` - regardless of the field's set date format. TIP: To pipe the value of one multiple choice field into another multiple choice field, make sure you append `':value'` to the variable being piped - e.g., `@DEFAULT='[my_dropdown:value]'`.
+>
+> (Official definition from REDCap 17.6.2.)
+
 Sometimes a project designer can use an action tag to make things easier for the people doing data entry inside REDCap.
 The action tag `@DEFAULT = '____'` can be used to set the starting value for a variable.
 In this example, you would put a default value in the blank.
@@ -73,6 +84,14 @@ It appears in a record, if you click the *Add/Edit Record* link on the left side
 
 ### `@NONEOFTHEABOVE` {#sec-designint-action-common-none}
 
+> Allows for the designation of a checkbox choice to be a 'none of the above' option, thus ensuring that no other choices are checked if that one choice is selected. This means that if that particular option is selected, it will alert the user that all other checked-off choices will be unchecked.
+> And if the 'none of the above' option is already checked when the user checks off another choice, it will automatically uncheck the 'none of the above' option. This action tag makes it possible to have a 'none of the above' option without the risk of users mistakenly having other choices selected at the same time.
+> The format must follow the pattern `@NONEOFTHEABOVE=??`, in which ?? is the coded value of the 'none of the above' checkbox choice - e.g., `@NONEOFTHEABOVE=98`. Alternatively, it is possible to set multiple options as a 'none of the above' option at the same time, in which the coded values must be comma delimited inside single or double quotes - e.g., `@NONEOFTHEABOVE='45,99'`. This is useful for certain situations, such as if you have a 'none of the above' option and also have a 'refuse to answer' option, thus allowing either of those to be the only option that can be selected at a time.
+>
+> * NOTE: This action tag can only be utilized by Checkbox fields.
+>
+> (Official definition from REDCap 17.6.2.)
+
 Let's say we have a REDCap project that allows people signing up for a conference to indicate their preferences for lunch.
 We create a checkbox multiple-choice item where the respondents can indicate all of the acceptable options for lunch.
 One option is none of the above.
@@ -89,6 +108,12 @@ When a numeric value is used to indicate "None of the above," then the number re
 
 ### `@MAXCHECKED` {#sec-designint-action-common-maxchecked}
 
+> Allows a checkbox field to have a maximum number of checkboxes that can be checked. If other checkbox options are clicked after the maximum has been reached, those choices will not be able to be checked. The format must be `@MAXCHECKED=#`, in which # is a positive integer. For example, `@MAXCHECKED=3` will allow a maximum of 3 checkbox choices to be checked.
+>
+> * NOTE: This action tag can only be utilized by Checkbox fields, and it does not get enforced during data imports.
+>
+> (Official definition from REDCap 17.6.2.)
+
 Suppose we do not want everyone to check every option in our list of lunch choices in this checkbox field.
 We can use the `@MAXCHECKED` action tag to limit everyone to their top 2 or 3 preferences.
 We can change the Field label to "Indicate your top 3 preferences for lunch."
@@ -99,6 +124,17 @@ Then we click on the Action Tags/Field Annotation box to open the Logic Editor, 
 ## Less Common {#sec-designint-action-lesscommon}
 
 ### `@SETVALUE` {#sec-designint-action-lesscommon-setvalue}
+
+> Sets a field's value to static text or dynamic/piped text whenever a data entry form or survey page is loaded, in which it will always overwrite an existing value of the field. The format must follow the pattern `@SETVALUE="????"`, in which the desired value should be inside single or double quotes. For text fields, you may pipe and concatenate values from other fields in the project - e.g., `@SETVALUE='Name: [first_name] [last_name], DOB: [dob]'`.
+> For checkbox fields, simply separate multiple checkbox values with commas - e.g., `@SETVALUE='1,3,[other_field:value]'`.
+>
+> * NOTE: The piped value does *not* get applied during any data imports (via API or Data Import Tool) but only operates when viewing survey pages and data entry forms.
+> * NOTE: A field with `@SETVALUE` will have its value updated ONLY when the page loads, which means that its value will not be updated in real-time if you modify other fields on the same page that are piped into the `@SETVALUE` tag.
+> * NOTE: If being used on a date or datetime field, the date value inside the quotes must be in Y-M-D format - e.g., `@SETVALUE='2007-12-25'` - regardless of the field's set date format.
+> * NOTE: The only difference between `@SETVALUE` and `@DEFAULT` is that `@DEFAUL`T is only applied when an instrument has no data yet, whereas `@SETVALU`E will always be applied on an instrument, meaning that `@SETVALUE` will ALWAYS overwrite the value if a field value already exists.
+> * TIP: To pipe the value of one multiple choice field into another multiple choice field, make sure you append ':value' to the variable being piped - e.g., `@SETVALUE='[my_dropdown:value]'`. (In earlier versions of REDCap, the `@SETVALUE` action tag went by the name @PREFILL, which still works equivalently to `@SETVALUE` for backward compatibility purposes.)
+>
+> (Official definition from REDCap 17.6.2.)
 
 Sometimes we want to help out the data entry people by setting the value of a field.
 A project may have a form especially for interviewing the first child in a family.
@@ -117,6 +153,10 @@ One caution: If you change the name that is piped into this field, it will rever
 
 ### `@READONLY` {#sec-designint-action-lesscommon-readonly}
 
+> Makes the field read-only (i.e., disabled) on the survey page, the data entry form, and in the REDCap mobile app so that its value cannot be changed.
+>
+> (Official definition from REDCap 17.6.2.)
+
 Adding the `@READONLY` action tag on the next line after `@SETVALUE = '[variablename]'` will make the field read-only for the data entry people.
 
 ![READONLY action tag](images/actiontag/readonly-1.jpg){width=80%}
@@ -124,6 +164,10 @@ Adding the `@READONLY` action tag on the next line after `@SETVALUE = '[variable
 The child's name piped into the family's record will be in slightly gray font and cannot be edited.
 
 ### `@PLACEHOLDER` {#sec-designint-action-lesscommon-placeholder}
+
+> Is used to specify a short hint that describes the expected value of a Text field or Notes field (e.g. a sample value or a short description of the expected format). The placeholder is displayed inside the field before a value is entered. The format must follow the pattern `@PLACEHOLDER='????'`, in which the text to be displayed should be inside single or double quotes.
+>
+> (Official definition from REDCap 17.6.2.)
 
 The `@PLACEHOLDER` action tag will not record any data.
 It is used as a hint to the person filling out the form.
