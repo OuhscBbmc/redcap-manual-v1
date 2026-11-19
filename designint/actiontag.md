@@ -152,6 +152,30 @@ Sometimes these derived values are useful to (to something like the branching lo
 but could confuse a respondent.
 So use the `@HIDDEN` action tag to conceal it.
 
+### `@HIDECHOICE` {#sec-designint-action-common-hidechoice}
+
+> Hides one or more choices of a multiple choice field. This action tag is useful if you wish to retire a particular choice after utilizing it for a while in data collection, thus allowing you to hide the choice from that point afterward without orphaning any of the choice's data, which would happen if you simply deleted the choice. The format must follow the pattern `@HIDECHOICE='??'`, in which the coded values should be inside single or double quotes for the choice(s) you wish to hide. If more than one choice needs to be hidden, then provide all the coded values separated by commas.
+> For example, to hide the choice `'Monday (1)'`, you would have `@HIDECHOICE='1'`, but if you wanted to additionally hide `'Tuesday (2)'`, you would have `@HIDECHOICE='1,2'`.
+>
+> * NOTE: If the hidden choice has already been selected for a given record, then the choice will not be hidden on the survey or form for that record/event.
+> * NOTE: Hidden choices will still appear in reports and data exports.
+> * NOTE: This action tag can only be utilized for the following field types: Checkbox, Radio, Drop-down, Yes-No, and True-False.
+> * NOTE: This action tag works only in limited fashion with a matrix of fields, in which it will simply hide the checkbox/radio for a field in the matrix but still display the column for that choice in the matrix.
+> * NOTE: This action tag supports piping into its argument.
+>
+> (Official definition from REDCap 17.6.2.)
+
+Similar to [retiring an obsolete variable](actiontag.md#sec-designint-action-common-hidden-retire),
+sometimes its best to remove an obsolete option from a multiple choice field.
+Imagine a variable where a respondent selects their preferred training workshop:
+they should no longer be able to select a workshop that already occurred.
+The `@HIDECHOICE` action tag will conceal it from view,
+while retaining its values in the underlying database,
+so it can be analyzed later.
+
+(Also see the [`@MAXCHECKED`](actiontag.md#sec-designint-action-common-maxchecked) action tag
+to prevent too many respondents from selecting the same choice.)
+
 ## Less Common {#sec-designint-action-lesscommon}
 
 ### `@SETVALUE` {#sec-designint-action-lesscommon-setvalue}
