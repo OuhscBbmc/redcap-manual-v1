@@ -269,10 +269,25 @@ check that the basic FHIR operations are performing as you expect.
 
 1. Delete Previous Versions
 
-```bash
-# Be very careful that you specify the *previous/old* version(s) correctly.
-sudo rm -rf /var/www/html/redcap/redcap_v12.1.2
-```
+    ```bash
+    # Be very careful that you specify the *previous/old* version correctly.
+    sudo rm -rf /var/www/html/redcap/redcap_v12.1.2
+    ```
+
+    Alternatively, create a directory to contain old versions[^not-gio],
+    such as `mkdir ~/old-versions`.
+    Then move the old version of REDCap to that directory:
+
+    ```bash
+    sudo mv redcap_v12.1.2/ ~/old-versions
+    ```
+
+    Periodically, clean out that directory,
+    because each version consumes around 200MB of disk space.
+
+    [^not-gio]:
+      A bash utility like `gio trash` works only on mounts that have a trash folder;
+      server paths like `/var/www/html` do not have a trash folder.
 
 ::: {.callout-note appearance="simple"}
 
