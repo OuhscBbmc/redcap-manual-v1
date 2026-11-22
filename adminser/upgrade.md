@@ -289,6 +289,60 @@ check that the basic FHIR operations are performing as you expect.
       A bash utility like `gio trash` works only on mounts that have a trash folder;
       server paths like `/var/www/html` do not have a trash folder.
 
+1. Update OS and packages
+
+   Upgrading REDCap may also be a good time to ensure that other layers of the software stack are up-to-date.
+   This includes things like MariaDB, PHP, and the OS.
+
+   1. Create the file
+      `/usr/local/sbin/update-and-reboot-if-required.sh`
+      with the following contents.
+      It updates OS files, and if necessary, reboots the server at 3am the next morning.
+
+      ```bash
+      #!/bin/bash
+      # Cleans packages, upgrades the server, and schedules a reboot if needed.
+
+      # Variable for reboot time
+      REBOOTTIME="3am tomorrow"
+
+      # Cleaning up the files
+      echo "Cleaning files..."
+      sudo dnf clean all
+
+      # Doing the upgrade
+      echo "Upgrading..."
+      sudo dnf update -y
+
+      # Making sure atq is up and running.
+      echo "Scheduling a reboot, if needed..."
+
+      # Logic check for rebooting, setting the exit code. Zero means no reboot required. Exit code 1 means required.
+      sudo dnf needs-restarting -r
+      NEEDSREBOOT=$(echo $?)
+
+      # If statement to check if reboot is required
+      if [[  $NEEDSREBOOT -eq 1  ]]; then
+              sudo systemctl enable --now atd
+          echo "INFO - Reboot is required!"
+          echo "sudo reboot" | at $REBOOTTIME
+      else
+          echo "INFO - Reboot is not required, moving on..."
+      fi
+
+      echo "All done!"
+      exit 0
+      ```
+
+   1. Run weekly, or after each REDCap upgrade.
+
+      ```bash
+      bash update-and-reboot-if-required.sh
+
+      # Close the terminal (which is useful if you're juggling multiple instances).
+      exit 0
+      ```
+
 ::: {.callout-note appearance="simple"}
 
 ## Additional Chapter Details
