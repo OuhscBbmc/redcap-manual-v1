@@ -828,7 +828,14 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> update-and-reboot-if-required.sh</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Close the terminal (which is useful if you're juggling multiple instances).</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="bu">exit</span> 0</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="bu">exit</span> 0</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If you happen to run this twice in the same day, it might create a second cronjob to reboot. Avoid this, because the results can be unpredictable.</p>
+<ul>
+<li>If a reboot is <em>not</em> scheduled, it’s fine to run the script again.</li>
+<li>If a reboot is <em>already</em> scheduled, but you want to update again, simply run <code>sudo dnf upgrade -y</code>.</li>
+<li>To check if two reboots are scheduled, execute <a href="https://linux.die.net/man/1/atq"><code>atq</code></a>.<br>
+If two entries are present (say, ‘24’ and ‘25’), remove the last one like <code>atrm 25</code>.</li>
+</ul></li>
 </ol></li>
 </ol>
 <div class="callout callout-style-simple callout-note callout-titled">
