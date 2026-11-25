@@ -51,9 +51,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-331e3fffd4fc47e618120fa5cf6f1c72.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-45649d7254bada39fd16a3a0b8a0b231.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-331e3fffd4fc47e618120fa5cf6f1c72.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-c13dd7301d55acd7c4cfdfae70e7cd8b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-bbd106cbc2db64d28de6435ba23713a9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-c13dd7301d55acd7c4cfdfae70e7cd8b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -548,11 +548,22 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <li><a href="#tips-to-avoid-additional-correspondence" id="toc-tips-to-avoid-additional-correspondence" class="nav-link" data-scroll-target="#tips-to-avoid-additional-correspondence">Tips to avoid additional correspondence</a></li>
   <li><a href="#to-confirm-your-intent" id="toc-to-confirm-your-intent" class="nav-link" data-scroll-target="#to-confirm-your-intent">To confirm your intent</a></li>
   </ul></li>
-  <li><a href="#sec-trouble-productionchanges-deletevariable" id="toc-sec-trouble-productionchanges-deletevariable" class="nav-link" data-scroll-target="#sec-trouble-productionchanges-deletevariable"><span class="header-section-number">21.3</span> Deleting a variable with data</a>
+  <li><a href="#sec-trouble-productionchanges-deletevariable" id="toc-sec-trouble-productionchanges-deletevariable" class="nav-link" data-scroll-target="#sec-trouble-productionchanges-deletevariable"><span class="header-section-number">21.3</span> Deleting a variable</a>
   <ul class="collapse">
   <li><a href="#background-1" id="toc-background-1" class="nav-link" data-scroll-target="#background-1">Background</a></li>
   <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best Practices</a></li>
   <li><a href="#to-confirm-your-intent-1" id="toc-to-confirm-your-intent-1" class="nav-link" data-scroll-target="#to-confirm-your-intent-1">To confirm your intent</a></li>
+  </ul></li>
+  <li><a href="#sec-trouble-productionchanges-deletemcoption" id="toc-sec-trouble-productionchanges-deletemcoption" class="nav-link" data-scroll-target="#sec-trouble-productionchanges-deletemcoption"><span class="header-section-number">21.4</span> Deleting a multiple choice option</a>
+  <ul class="collapse">
+  <li><a href="#background-2" id="toc-background-2" class="nav-link" data-scroll-target="#background-2">Background</a></li>
+  <li><a href="#best-practices-1" id="toc-best-practices-1" class="nav-link" data-scroll-target="#best-practices-1">Best Practices</a></li>
+  <li><a href="#to-confirm-your-intent-2" id="toc-to-confirm-your-intent-2" class="nav-link" data-scroll-target="#to-confirm-your-intent-2">To confirm your intent</a></li>
+  </ul></li>
+  <li><a href="#sec-trouble-productionchanges-rewordmcoption" id="toc-sec-trouble-productionchanges-rewordmcoption" class="nav-link" data-scroll-target="#sec-trouble-productionchanges-rewordmcoption"><span class="header-section-number">21.5</span> Rewording a multiple choice option</a>
+  <ul class="collapse">
+  <li><a href="#background-3" id="toc-background-3" class="nav-link" data-scroll-target="#background-3">Background</a></li>
+  <li><a href="#best-practices-2" id="toc-best-practices-2" class="nav-link" data-scroll-target="#best-practices-2">Best Practices</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/trouble/productionchanges.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/trouble/productionchanges.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
@@ -622,17 +633,16 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <li>the proposed changes from the <em>project admin</em> are submitted to the <em>server admin</em>. And finally,</li>
 <li>the server admin reviews the proposals before deciding to accept or reject all the changes at once. There is not a mechanism that allows acceptance of some changes but rejects others.</li>
 </ol>
-<p>If the modifications raise no concerns to the server admin, it’s accepted without further correspondence. However some modifications might raise concerns, in which case, the server admin will likely contact the project admin to verify they understand the ramifications.</p>
-<p>In this role, the server admin relies on their (typically year of) research experience, as well as familiarity with REDCap mechanisms to avoid problems.</p>
-<p>Most of the concerns involve unintentional destruction or corruption of data.</p>
+<p>If the modification raises no concerns of the server admin, then it’s accepted without further correspondence. However, for a modification that raises concerns, the server admin will contact the project admin to verify the ramifications are understood.</p>
+<p>In this role, the server admin relies on their (typically year of) research experience, as well as familiarity with REDCap mechanisms to avoid problems that are difficult to undo. Most of the concerns involve unintentional destruction or corruption of data.</p>
 </section>
 <section id="sec-trouble-productionchanges-deleterecords" class="level2" data-number="21.2">
 <h2 data-number="21.2" class="anchored" data-anchor-id="sec-trouble-productionchanges-deleterecords"><span class="header-section-number">21.2</span> Large number of records to be deleted before moving to production</h2>
 <section id="background" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="background">Background</h3>
-<p>When a project is moved to production, the software will ask the project admin if they want to delete the existing records. In fact, that’s the default selection because it’s assumed that the project was <a href="../check/testing.html">thoroughly tested</a> during development with fake records, and now is transitioning to real records.</p>
+<p>When a project is moved to production, the software will ask the project admin if the existing records should be deleted. In fact deletion is the default selection, because it’s assumed that the project was <a href="../check/testing.html">thoroughly tested</a> during development with fake records, and now is transitioning to real records.</p>
 <p>When reviewing the proposal, the software informs the server admin how many records will be deleted, assuming the project admin selected “Delete All Records”. If the server admin sees that 10-20 records will be deleted, they’ll believe this is a reasonable volume of test records and accept the deletion as the project moves to production.</p>
-<p>However, a larger volume like 50+ records might raise concerns that real data might have been entered. The server admin will likely email you to confirm all the records should be wiped. Notice it’s not desirable to delete these test records once the project is in production, because they’ll be included in the logs, and could confuse someone later auditing the project.</p>
+<p>However, a larger volume like 50+ records might raise concerns that real data might have been entered, and now would be lost accidentally. The server admin will likely email the requester, in order to confirm all the records should be wiped. Notice it’s not desirable to delete these test records once the project is in production, because the records will be included in the logs, and could confuse someone later auditing the project.</p>
 </section>
 <section id="tips-to-avoid-additional-correspondence" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="tips-to-avoid-additional-correspondence">Tips to avoid additional correspondence</h3>
@@ -644,11 +654,11 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </section>
 </section>
 <section id="sec-trouble-productionchanges-deletevariable" class="level2" data-number="21.3">
-<h2 data-number="21.3" class="anchored" data-anchor-id="sec-trouble-productionchanges-deletevariable"><span class="header-section-number">21.3</span> Deleting a variable with data</h2>
+<h2 data-number="21.3" class="anchored" data-anchor-id="sec-trouble-productionchanges-deletevariable"><span class="header-section-number">21.3</span> Deleting a variable</h2>
 <section id="background-1" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="background-1">Background</h3>
 <p>You’ve deleted a variable that contains data.</p>
-<p>In the review screen, the server admin will a warning like:</p>
+<p>In the review screen, the server admin will see a warning like:</p>
 <blockquote class="blockquote">
 <p>Fields to be DELETED:</p>
 <ul>
@@ -656,15 +666,117 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <li><code>county</code> “County of Residence” (98 records affected)</li>
 </ul>
 </blockquote>
-<p>This can raise the server admin’s concerns that the project admin meant to delete a different variable, or is unaware of the benefits of the <code>@HIDDEN</code> action tag.</p>
+<p>This can raise concerns that the project admin meant to delete a different variable, or is unaware of the benefits of the <code>@HIDDEN</code> action tag.</p>
 </section>
 <section id="best-practices" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="best-practices">Best Practices</h3>
-<p>Instead of deleting a variable, consider using the <code>@HIDDEN</code> action tag. Read about its uses in <a href="../designint/actiontag.html#sec-designint-action-common-hidden" class="quarto-xref"><span>Section 9.2.5</span></a>.</p>
+<p>Instead of deleting the variable, consider using the <code>@HIDDEN</code> action tag. Read about its uses in <a href="../designint/actiontag.html#sec-designint-action-common-hidden" class="quarto-xref"><span>Section 9.2.5</span></a>.</p>
 </section>
 <section id="to-confirm-your-intent-1" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="to-confirm-your-intent-1">To confirm your intent</h3>
-<p><em>If the server admin asks you about this issue…</em> : In your response email, be clear that you really want the variable’s data erased forever. And explain why it’s not adequate to merely conceal the variable from the user.</p>
+<p><em>If the server admin asks you about this issue…</em> :<br> In your response email, be clear that you really want the variable’s data erased forever. And explain why it’s not adequate merely to conceal the variable from the user.</p>
+</section>
+</section>
+<section id="sec-trouble-productionchanges-deletemcoption" class="level2" data-number="21.4">
+<h2 data-number="21.4" class="anchored" data-anchor-id="sec-trouble-productionchanges-deletemcoption"><span class="header-section-number">21.4</span> Deleting a multiple choice option</h2>
+<section id="background-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="background-2">Background</h3>
+<p>You’ve deleted an option (within a multiple choice variable) that contains data. This scenario is a close relative of <a href="#sec-trouble-productionchanges-deletevariable" class="quarto-xref"><span>Section 21.3</span></a>.</p>
+<p>This can raise concerns that the project admin meant to delete a different option, or is unaware of the benefits of the <code>@HIDECHOICE</code> action tag.</p>
+</section>
+<section id="best-practices-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="best-practices-1">Best Practices</h3>
+<p>Instead of deleting the response option, consider using the <code>@HIDECHOICE</code> action tag. Read about its uses in <a href="../designint/actiontag.html#sec-designint-action-common-hidechoice" class="quarto-xref"><span>Section 9.2.6</span></a>.</p>
+</section>
+<section id="to-confirm-your-intent-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="to-confirm-your-intent-2">To confirm your intent</h3>
+<p><em>If the server admin asks you about this issue…</em> :<br> In your response email, be clear that you really want the variable options’s data erased forever. And explain why it’s not adequate to merely conceal the choice from the user.</p>
+</section>
+</section>
+<section id="sec-trouble-productionchanges-rewordmcoption" class="level2" data-number="21.5">
+<h2 data-number="21.5" class="anchored" data-anchor-id="sec-trouble-productionchanges-rewordmcoption"><span class="header-section-number">21.5</span> Rewording a multiple choice option</h2>
+<section id="background-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="background-3">Background</h3>
+<p>Sometimes multiple choice options need to be reworded during production, either because additional respondents have found ambiguities undiscovered during the pilot, or because the real world has changed.</p>
+<p>A server admin will quickly approve a change like this, because it’s clear the old wording and new wording are reflecting the same concept. In other words, it’s safe to combine all the old 1s (ie, “mail”) with the new 1s (ie, “male”) in the same eventual bucket.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Old Code</th>
+<th>Old Label</th>
+<th>New Code</th>
+<th>New Label</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>mail</td>
+<td>1</td>
+<td>male</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>female</td>
+<td>2</td>
+<td>female</td>
+</tr>
+</tbody>
+</table>
+<p>However, this modification will corrupt the variable;s data. In other words, it’s <em>unsafe</em> to combine the old 1s (ie, “male”) with the new 1s (ie, “female”). During the analysis, all the respondents answering 1 will be combined, and the before/male values will be indistinguishable from the after/female values.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Old Code</th>
+<th>Old Label</th>
+<th>New Code</th>
+<th>New Label</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>male</td>
+<td>1</td>
+<td>female</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>female</td>
+<td>2</td>
+<td>male</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="best-practices-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="best-practices-2">Best Practices</h3>
+<p>If you simply want to reorder the options presented to the user, then do it. Just make sure to keep the code-label pair consistent, like this revision does. The codes do not need to be sorted in numeric order. (In fact, the codes don’t even need to be numeric.)</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Old Code</th>
+<th>Old Label</th>
+<th>New Code</th>
+<th>New Label</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>male</td>
+<td>2</td>
+<td>female</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>female</td>
+<td>1</td>
+<td>male</td>
+</tr>
+</tbody>
+</table>
+<p>If the necessary changes are more complex, and involve rewording, reordering, creating, and/or deleting choices, then employ a combination of this section and <a href="#sec-trouble-productionchanges-deletemcoption" class="quarto-xref"><span>Section 21.4</span></a>.</p>
 
 
 </section>
