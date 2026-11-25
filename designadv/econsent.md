@@ -106,7 +106,7 @@ Let's say participants in our example need to fill out only the fields shown bel
 In REDCap, click on the *Consent* form in Online Designer to get to the screen where we will create variables to replicate the fields shown above.
 We will have the following fields and variable types:
 
-- If you will be using multiple languages, a multiple-choice language selection field. For example, you might have English recorded as en and Español recorded as es. **Important note:** You will need to add the action tag @LANGUAGE-SET when creating this field.
+- If you will be using multiple languages, a multiple-choice language selection field. For example, you might have English recorded as en and Español recorded as es. **Important note:** You will need to add the action tag `@LANGUAGE-SET` when creating this field.
 - A signature field for the participant's signature
 - The participant's name. The e-Consent Framework in REDCap will ask for first and last name, but if it is one field, you can put it in place of first name in the e-Consent Framework.
 - A date variable for the date of signature
@@ -233,7 +233,7 @@ Click on the link that says *Add consent form.*
 
    ![Upload consent form](images/econsent/upload-consent.jpg){width="80%"}
 
-Next, we will upload the HIPAA form on the same screen where we uploaded the consent form. Click on the green box that says *+Enable the e-Consent Framework for a survey.*  
+Next, we will upload the HIPAA form on the same screen where we uploaded the consent form. Click on the green box that says *+Enable the e-Consent Framework for a survey.*
 
 Next we need to get a snapshot pdf of the signed HIPAA form.
 
