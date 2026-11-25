@@ -528,6 +528,12 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Trouble Logging into a REDCap Server</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../trouble/productionchanges.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Proposed Changes to a Project in Production</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -702,7 +708,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </div>
 <p>In REDCap, click on the <em>Consent</em> form in Online Designer to get to the screen where we will create variables to replicate the fields shown above. We will have the following fields and variable types:</p>
 <ul>
-<li>If you will be using multiple languages, a multiple-choice language selection field. For example, you might have English recorded as en and Español recorded as es. <strong>Important note:</strong> You will need to add the action tag <span class="citation" data-cites="LANGUAGE-SET">(<a href="#ref-LANGUAGE-SET" role="doc-biblioref"><strong>LANGUAGE-SET?</strong></a>)</span> when creating this field.</li>
+<li>If you will be using multiple languages, a multiple-choice language selection field. For example, you might have English recorded as en and Español recorded as es. <strong>Important note:</strong> You will need to add the action tag <code>@LANGUAGE-SET</code> when creating this field.</li>
 <li>A signature field for the participant’s signature</li>
 <li>The participant’s name. The e-Consent Framework in REDCap will ask for first and last name, but if it is one field, you can put it in place of first name in the e-Consent Framework.</li>
 <li>A date variable for the date of signature</li>
