@@ -51,9 +51,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c13dd7301d55acd7c4cfdfae70e7cd8b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-bbd106cbc2db64d28de6435ba23713a9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-c13dd7301d55acd7c4cfdfae70e7cd8b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-331e3fffd4fc47e618120fa5cf6f1c72.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-45649d7254bada39fd16a3a0b8a0b231.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-331e3fffd4fc47e618120fa5cf6f1c72.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -542,7 +542,18 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
    
   <ul>
   <li><a href="#sec-trouble-productionchanges-introduction" id="toc-sec-trouble-productionchanges-introduction" class="nav-link active" data-scroll-target="#sec-trouble-productionchanges-introduction"><span class="header-section-number">21.1</span> Introduction</a></li>
-  <li><a href="#sec-trouble-productionchanges-deleterecords" id="toc-sec-trouble-productionchanges-deleterecords" class="nav-link" data-scroll-target="#sec-trouble-productionchanges-deleterecords"><span class="header-section-number">21.2</span> Large number of records to be deleted before moving to production</a></li>
+  <li><a href="#sec-trouble-productionchanges-deleterecords" id="toc-sec-trouble-productionchanges-deleterecords" class="nav-link" data-scroll-target="#sec-trouble-productionchanges-deleterecords"><span class="header-section-number">21.2</span> Large number of records to be deleted before moving to production</a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#tips-to-avoid-additional-correspondence" id="toc-tips-to-avoid-additional-correspondence" class="nav-link" data-scroll-target="#tips-to-avoid-additional-correspondence">Tips to avoid additional correspondence</a></li>
+  <li><a href="#to-confirm-your-intent" id="toc-to-confirm-your-intent" class="nav-link" data-scroll-target="#to-confirm-your-intent">To confirm your intent</a></li>
+  </ul></li>
+  <li><a href="#sec-trouble-productionchanges-deletevariable" id="toc-sec-trouble-productionchanges-deletevariable" class="nav-link" data-scroll-target="#sec-trouble-productionchanges-deletevariable"><span class="header-section-number">21.3</span> Deleting a variable with data</a>
+  <ul class="collapse">
+  <li><a href="#background-1" id="toc-background-1" class="nav-link" data-scroll-target="#background-1">Background</a></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best Practices</a></li>
+  <li><a href="#to-confirm-your-intent-1" id="toc-to-confirm-your-intent-1" class="nav-link" data-scroll-target="#to-confirm-your-intent-1">To confirm your intent</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/edit/main/trouble/productionchanges.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/OuhscBbmc/redcap-manual-v1/blob/main/trouble/productionchanges.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -617,24 +628,46 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </section>
 <section id="sec-trouble-productionchanges-deleterecords" class="level2" data-number="21.2">
 <h2 data-number="21.2" class="anchored" data-anchor-id="sec-trouble-productionchanges-deleterecords"><span class="header-section-number">21.2</span> Large number of records to be deleted before moving to production</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Background
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="background" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="background">Background</h3>
 <p>When a project is moved to production, the software will ask the project admin if they want to delete the existing records. In fact, that’s the default selection because it’s assumed that the project was <a href="../check/testing.html">thoroughly tested</a> during development with fake records, and now is transitioning to real records.</p>
-</div>
-</div>
 <p>When reviewing the proposal, the software informs the server admin how many records will be deleted, assuming the project admin selected “Delete All Records”. If the server admin sees that 10-20 records will be deleted, they’ll believe this is a reasonable volume of test records and accept the deletion as the project moves to production.</p>
-<p>However, a larger volume like 50+ records might raise concerns that real data might have been entered. They’ll likely email you to confirm all the records should be wiped.</p>
-<p>By all means, please create and employ a large volume of records to test….</p>
+<p>However, a larger volume like 50+ records might raise concerns that real data might have been entered. The server admin will likely email you to confirm all the records should be wiped. Notice it’s not desirable to delete these test records once the project is in production, because they’ll be included in the logs, and could confuse someone later auditing the project.</p>
+</section>
+<section id="tips-to-avoid-additional-correspondence" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="tips-to-avoid-additional-correspondence">Tips to avoid additional correspondence</h3>
+<p>By all means, please create and employ a large volume of records to test. If you have created a lot of test records and don’t want to risk a delay, you can mass delete them before requesting the move to production. In the “Other Functionality” tab, click “Erase all data”.</p>
+</section>
+<section id="to-confirm-your-intent" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="to-confirm-your-intent">To confirm your intent</h3>
+<p><em>If the server admin asks you about this issue…</em> : In your response email, be clear that the large volume of records are in fact test records that should be discarded.</p>
+</section>
+</section>
+<section id="sec-trouble-productionchanges-deletevariable" class="level2" data-number="21.3">
+<h2 data-number="21.3" class="anchored" data-anchor-id="sec-trouble-productionchanges-deletevariable"><span class="header-section-number">21.3</span> Deleting a variable with data</h2>
+<section id="background-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="background-1">Background</h3>
+<p>You’ve deleted a variable that contains data.</p>
+<p>In the review screen, the server admin will a warning like:</p>
+<blockquote class="blockquote">
+<p>Fields to be DELETED:</p>
+<ul>
+<li><code>zip_code</code> “Zip Code of Residence” (106 records affected)</li>
+<li><code>county</code> “County of Residence” (98 records affected)</li>
+</ul>
+</blockquote>
+<p>This can raise the server admin’s concerns that the project admin meant to delete a different variable, or is unaware of the benefits of the <code>@HIDDEN</code> action tag.</p>
+</section>
+<section id="best-practices" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="best-practices">Best Practices</h3>
+<p>Instead of deleting a variable, consider using the <code>@HIDDEN</code> action tag. Read about its uses in <a href="../designint/actiontag.html#sec-designint-action-common-hidden" class="quarto-xref"><span>Section 9.2.5</span></a>.</p>
+</section>
+<section id="to-confirm-your-intent-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="to-confirm-your-intent-1">To confirm your intent</h3>
+<p><em>If the server admin asks you about this issue…</em> : In your response email, be clear that you really want the variable’s data erased forever. And explain why it’s not adequate to merely conceal the variable from the user.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
