@@ -87,7 +87,7 @@ _If the server admin asks you about this issue..._ :
 In your response email, be clear that the large volume of records
 are in fact test records that should be discarded.
 
-## Deleting a variable containing data {#sec-trouble-productionchanges-deletevariable}
+## Deleting a variable {#sec-trouble-productionchanges-deletevariable}
 
 ### Background  {.unnumbered}
 
@@ -114,7 +114,7 @@ _If the server admin asks you about this issue..._ :<br>
 In your response email, be clear that you really want the variable's data erased forever.
 And explain why it's not adequate merely to conceal the variable from the user.
 
-## Deleting a multiple choice option containing data {#sec-trouble-productionchanges-deletemcoption}
+## Deleting a multiple choice option {#sec-trouble-productionchanges-deletemcoption}
 
 ### Background  {.unnumbered}
 
@@ -134,3 +134,51 @@ Read about its uses in @sec-designint-action-common-hidechoice.
 _If the server admin asks you about this issue..._ :<br>
 In your response email, be clear that you really want the variable options's data erased forever.
 And explain why it's not adequate to merely conceal the choice from the user.
+
+## Rewording a multiple choice option {#sec-trouble-productionchanges-rewordmcoption}
+
+### Background  {.unnumbered}
+
+Sometimes multiple choice options need to be reworded during production,
+either because additional respondents have found ambiguities undiscovered during the pilot,
+or because the real world has changed.
+
+A server admin will quickly approve a change like this, because
+it's clear the old wording and new wording are reflecting the same concept.
+In other words, it's safe to combine all the old 1s (ie, "mail")
+with the new 1s (ie, "male") in the same eventual bucket.
+
+| Old Code | Old Label | New Code | New Label |
+|----------|-----------|----------|-----------|
+| 1        | mail      | 1        | male      |
+| 2        | female    | 2        | female    |
+
+However, this modification will corrupt the variable;s data.
+In other words, it's _unsafe_ to combine the old 1s (ie, "male")
+with the new 1s (ie, "female").
+During the analysis, all the respondents answering 1 will be combined,
+and the before/male values will be indistinguishable
+from the after/female values.
+
+| Old Code | Old Label | New Code | New Label |
+|----------|-----------|----------|-----------|
+| 1        | male      | 1        | female    |
+| 2        | female    | 2        | male      |
+
+### Best Practices {.unnumbered}
+
+If you simply want to reorder the options presented to the user,
+then do it.  Just make sure to keep the code-label pair consistent,
+like this revision does.
+The codes do not need to be sorted in numeric order.
+(In fact, the codes don't even need to be numeric.)
+
+| Old Code | Old Label | New Code | New Label |
+|----------|-----------|----------|-----------|
+| 1        | male      | 2        | female    |
+| 2        | female    | 1        | male      |
+
+If the necessary changes are more complex, and involve
+rewording, reordering, creating, and/or deleting choices,
+then employ a combination of this section
+and @sec-trouble-productionchanges-deletemcoption.
