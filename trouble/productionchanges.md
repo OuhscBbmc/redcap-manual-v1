@@ -53,16 +53,13 @@ Most of the concerns involve unintentional destruction or corruption of data.
 
 ## Large number of records to be deleted before moving to production {#sec-trouble-productionchanges-deleterecords}
 
-::: {.callout-note}
-
-## Background
+### Background {.unnumbered}
 
 When a project is moved to production,
 the software will ask the project admin if they want to delete the existing records.
 In fact, that's the default selection because it's assumed that the project was
 [thoroughly tested](../check/testing.md) during development with fake records,
 and now is transitioning to real records.
-:::
 
 When reviewing the proposal, the software informs the server admin how many
 records will be deleted,
@@ -86,6 +83,33 @@ In the "Other Functionality" tab, click "Erase all data".
 
 ### To confirm your intent {.unnumbered}
 
-_If the server admin asks you about this issue..._:
+_If the server admin asks you about this issue..._ :
 In your response email, be clear that the large volume of records
 are in fact test records that should be discarded.
+
+## Deleting a variable with data {#sec-trouble-productionchanges-deletevariable}
+
+### Background  {.unnumbered}
+
+You've deleted a variable that contains data.
+
+In the review screen, the server admin will a warning like:
+
+> Fields to be DELETED:
+>
+> * `zip_code` "Zip Code of Residence" (106 records affected)
+> * `county` "County of Residence" (98 records affected)
+
+This can raise the server admin's concerns that the project admin meant to delete a different variable,
+or is unaware of the benefits of the `@HIDDEN` action tag.
+
+### Best Practices {.unnumbered}
+
+Instead of deleting a variable, consider using the `@HIDDEN` action tag.
+Read about its uses in @sec-designint-action-common-hidden.
+
+### To confirm your intent {.unnumbered}
+
+_If the server admin asks you about this issue..._ :
+In your response email, be clear that you really want the variable's data erased forever.
+And explain why it's not adequate to merely conceal the variable from the user.
