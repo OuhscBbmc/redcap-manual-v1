@@ -25,6 +25,10 @@ format:
     lightbox:
       match: auto
       effect: zoom
+  typst:
+    author: "William H Beasley, Thomas Wilson (Eds.)"
+    toc: true
+    papersize: us-letter
   # pdf:
   #   documentclass: scrreprt
   # epub:
@@ -46,6 +50,7 @@ book:
   repo-actions: [edit, issue, source]
   sharing: [twitter, facebook]
   # downloads: [epub]
+  downloads: [pdf]
   # downloads: [pdf, epub]
   google-analytics: G-H3G33LRV8Y
 
