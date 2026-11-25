@@ -87,7 +87,7 @@ _If the server admin asks you about this issue..._ :
 In your response email, be clear that the large volume of records
 are in fact test records that should be discarded.
 
-## Deleting a variable with data {#sec-trouble-productionchanges-deletevariable}
+## Deleting a variable containing data {#sec-trouble-productionchanges-deletevariable}
 
 ### Background  {.unnumbered}
 
@@ -105,11 +105,32 @@ or is unaware of the benefits of the `@HIDDEN` action tag.
 
 ### Best Practices {.unnumbered}
 
-Instead of deleting a variable, consider using the `@HIDDEN` action tag.
+Instead of deleting the variable, consider using the `@HIDDEN` action tag.
 Read about its uses in @sec-designint-action-common-hidden.
 
 ### To confirm your intent {.unnumbered}
 
-_If the server admin asks you about this issue..._ :
+_If the server admin asks you about this issue..._ :<br>
 In your response email, be clear that you really want the variable's data erased forever.
 And explain why it's not adequate to merely conceal the variable from the user.
+
+## Deleting a multiple choice option containing data {#sec-trouble-productionchanges-deletemcoption}
+
+### Background  {.unnumbered}
+
+You've deleted an option (within a multiple choice variable) that contains data.
+This scenario is a close relative of @sec-trouble-productionchanges-deletevariable.
+
+This can raise the server admin's concerns that the project admin meant to delete a different option,
+or is unaware of the benefits of the `@HIDECHOICE` action tag.
+
+### Best Practices {.unnumbered}
+
+Instead of deleting the option, consider using the `@HIDECHOICE` action tag.
+Read about its uses in @sec-designint-action-common-hidechoice.
+
+### To confirm your intent {.unnumbered}
+
+_If the server admin asks you about this issue..._ :<br>
+In your response email, be clear that you really want the variable options's data erased forever.
+And explain why it's not adequate to merely conceal the choice from the user.
