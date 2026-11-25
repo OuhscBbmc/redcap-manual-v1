@@ -73,6 +73,19 @@ and accept the deletion as the project moves to production.
 
 However, a larger volume like 50+ records might raise concerns that real data might
 have been entered.
-They'll likely email you to confirm all the records should be wiped.
+The server admin will likely email you to confirm all the records should be wiped.
+Notice it's not desirable to delete these test records once the project is in production,
+because they'll be included in the logs, and could confuse someone later auditing the project.
 
-By all means, please create and employ a large volume of records to test....
+### Tips to avoid additional correspondence {.unnumbered}
+
+By all means, please create and employ a large volume of records to test.
+If you have created a lot of test records and don't want to risk a delay,
+you can mass delete them before requesting the move to production.
+In the "Other Functionality" tab, click "Erase all data".
+
+### To confirm your intent {.unnumbered}
+
+_If the server admin asks you about this issue..._:
+In your response email, be clear that the large volume of records
+are in fact test records that should be discarded.
