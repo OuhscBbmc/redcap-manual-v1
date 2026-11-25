@@ -40,15 +40,15 @@ When changes are desired to a production project:
 1. the server admin reviews the proposals before deciding to accept or reject all the changes at once.
    There is not a mechanism that allows acceptance of some changes but rejects others.
 
-If the modifications raise no concerns to the server admin,
+If the modification raises no concerns of the server admin, then
 it's accepted without further correspondence.
-However some modifications might raise concerns, in which case,
-the server admin will likely contact the project admin to verify
-they understand the ramifications.
+However, for a modification that raises concerns,
+the server admin will contact the project admin to verify
+the ramifications are understood.
 
 In this role, the server admin relies on their (typically year of) research experience,
-as well as familiarity with REDCap mechanisms to avoid problems.
-
+as well as familiarity with REDCap mechanisms to avoid problems
+that are difficult to undo.
 Most of the concerns involve unintentional destruction or corruption of data.
 
 ## Large number of records to be deleted before moving to production {#sec-trouble-productionchanges-deleterecords}
@@ -56,8 +56,8 @@ Most of the concerns involve unintentional destruction or corruption of data.
 ### Background {.unnumbered}
 
 When a project is moved to production,
-the software will ask the project admin if they want to delete the existing records.
-In fact, that's the default selection because it's assumed that the project was
+the software will ask the project admin if the existing records should be deleted.
+In fact deletion is the default selection, because it's assumed that the project was
 [thoroughly tested](../check/testing.md) during development with fake records,
 and now is transitioning to real records.
 
@@ -69,10 +69,10 @@ they'll believe this is a reasonable volume of test records
 and accept the deletion as the project moves to production.
 
 However, a larger volume like 50+ records might raise concerns that real data might
-have been entered.
-The server admin will likely email you to confirm all the records should be wiped.
+have been entered, and now would be lost accidentally.
+The server admin will likely email the requester, in order to confirm all the records should be wiped.
 Notice it's not desirable to delete these test records once the project is in production,
-because they'll be included in the logs, and could confuse someone later auditing the project.
+because the records will be included in the logs, and could confuse someone later auditing the project.
 
 ### Tips to avoid additional correspondence {.unnumbered}
 
@@ -93,14 +93,14 @@ are in fact test records that should be discarded.
 
 You've deleted a variable that contains data.
 
-In the review screen, the server admin will a warning like:
+In the review screen, the server admin will see a warning like:
 
 > Fields to be DELETED:
 >
 > * `zip_code` "Zip Code of Residence" (106 records affected)
 > * `county` "County of Residence" (98 records affected)
 
-This can raise the server admin's concerns that the project admin meant to delete a different variable,
+This can raise concerns that the project admin meant to delete a different variable,
 or is unaware of the benefits of the `@HIDDEN` action tag.
 
 ### Best Practices {.unnumbered}
@@ -112,7 +112,7 @@ Read about its uses in @sec-designint-action-common-hidden.
 
 _If the server admin asks you about this issue..._ :<br>
 In your response email, be clear that you really want the variable's data erased forever.
-And explain why it's not adequate to merely conceal the variable from the user.
+And explain why it's not adequate merely to conceal the variable from the user.
 
 ## Deleting a multiple choice option containing data {#sec-trouble-productionchanges-deletemcoption}
 
@@ -121,12 +121,12 @@ And explain why it's not adequate to merely conceal the variable from the user.
 You've deleted an option (within a multiple choice variable) that contains data.
 This scenario is a close relative of @sec-trouble-productionchanges-deletevariable.
 
-This can raise the server admin's concerns that the project admin meant to delete a different option,
+This can raise concerns that the project admin meant to delete a different option,
 or is unaware of the benefits of the `@HIDECHOICE` action tag.
 
 ### Best Practices {.unnumbered}
 
-Instead of deleting the option, consider using the `@HIDECHOICE` action tag.
+Instead of deleting the response option, consider using the `@HIDECHOICE` action tag.
 Read about its uses in @sec-designint-action-common-hidechoice.
 
 ### To confirm your intent {.unnumbered}
