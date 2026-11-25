@@ -121,6 +121,7 @@ book:
   - part: Troubleshooting
     chapters:
     - trouble/login.md
+    - trouble/productionchanges.md
   # - part: Back Matter
   #   chapters:
   #   - chapters/funding.md
