@@ -59,7 +59,7 @@ and the Upgrade Module will recommend the administrator take the instance offlin
 The warning appears in the "Obtain SQL Update Code" section.
 
 In these cases, consider upgrading the nonproduction instance during the week,
-and the production instance during the weekends or nights to minimize
+and the production instance during the weekends or nights to minimize the chance of disruption.
 
 ### Version Skipping
 
