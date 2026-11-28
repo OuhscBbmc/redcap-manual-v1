@@ -159,7 +159,7 @@ On the Project Setup tab, click the *Enable* button next to the words "Use surve
 
 Return to Online Designer and click on the *Enable* button on the line showing the Consent instrument.
 
-   ![Enable Consent as a survey](images/econsent/enable-1.jpg){width="80%"}
+   ![Enable Consent as a survey](images/econsent/enable-2.jpg){width="80%"}
 
 You will be taken to a new screen, shown below, where you will specify how the survey will look and perform.
 We will illustrate only the most important details.
