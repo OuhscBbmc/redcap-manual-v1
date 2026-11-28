@@ -255,7 +255,7 @@ We have specified the lowest possible value is 1, and the highest possible value
 We also have selected the option allowing the respondent to see the number associated with the place on the scale where they move the button.
 We can see the slider in Online Designer.
 
-![Slider field in editor](images/variable/slider-2.jpg){width=80%}
+![Slider field in designer](images/variable/slider-2.jpg){width=80%}
 
 ### Descriptive Text {#sec-designbas-variable-fieldtypes-descriptive}
 
