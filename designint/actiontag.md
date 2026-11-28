@@ -81,7 +81,8 @@ We could set `@DEFAULT = 'OK'` so that Oklahoma shows up as the default state wh
 ![DEFAULT action tag](images/actiontag/state-default-1.jpg){width=80%}
 
 Notice that the value recorded in the data, OK, is the default value, not "Oklahoma," which is the label.
-This action tag works only once, when the record is created.
+This action tag works only once, when the record is first opened
+(technically, when a form without any saved data is opened --ie, the gray status.)
 If the data entry people or survey respondent needed to change it to Texas, they can use the drop-down menu to do so.
 Their entry will not be overwritten with Oklahoma at a later time.
 The default does not appear on the form you are creating in Online Designer.
