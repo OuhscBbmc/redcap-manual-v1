@@ -3,7 +3,7 @@
 Welcome to [*REDCap Manual for OU: Training Material for REDCap Users*](https://OuhscBbmc.github.io/redcap-manual-v1/).
 This collection of documents will help you learn how to use REDCap for research and operations.
 
-Just as the REDCap software expands to meet the needs of more people, this book will grow to accommodate help more types of users learn these tools more efficiently.
+Just as the REDCap software expands to meet the needs of more people, this book will grow to accommodate more types of users learn these tools more efficiently.
 As you read the following chapters and sections,
 we hope you feel comfortable editing existing material or adding new lessons,
 in order to improve the quality of all our work.
