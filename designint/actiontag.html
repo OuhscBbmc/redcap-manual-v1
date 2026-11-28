@@ -384,7 +384,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../begin/security.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Security Consideration for Beginners</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Security Considerations for Beginners</span></span></a>
   </div>
 </li>
       </ul>
@@ -554,8 +554,9 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
   <li><a href="#sec-designint-action-common-default" id="toc-sec-designint-action-common-default" class="nav-link" data-scroll-target="#sec-designint-action-common-default"><span class="header-section-number">9.2.2</span> <code>@DEFAULT</code></a></li>
   <li><a href="#sec-designint-action-common-none" id="toc-sec-designint-action-common-none" class="nav-link" data-scroll-target="#sec-designint-action-common-none"><span class="header-section-number">9.2.3</span> <code>@NONEOFTHEABOVE</code></a></li>
   <li><a href="#sec-designint-action-common-maxchecked" id="toc-sec-designint-action-common-maxchecked" class="nav-link" data-scroll-target="#sec-designint-action-common-maxchecked"><span class="header-section-number">9.2.4</span> <code>@MAXCHECKED</code></a></li>
-  <li><a href="#sec-designint-action-common-hidden" id="toc-sec-designint-action-common-hidden" class="nav-link" data-scroll-target="#sec-designint-action-common-hidden"><span class="header-section-number">9.2.5</span> <code>@HIDDEN</code></a></li>
-  <li><a href="#sec-designint-action-common-hidechoice" id="toc-sec-designint-action-common-hidechoice" class="nav-link" data-scroll-target="#sec-designint-action-common-hidechoice"><span class="header-section-number">9.2.6</span> <code>@HIDECHOICE</code></a></li>
+  <li><a href="#sec-designint-action-common-maxchoice" id="toc-sec-designint-action-common-maxchoice" class="nav-link" data-scroll-target="#sec-designint-action-common-maxchoice"><span class="header-section-number">9.2.5</span> <code>@MAXCHOICE</code></a></li>
+  <li><a href="#sec-designint-action-common-hidden" id="toc-sec-designint-action-common-hidden" class="nav-link" data-scroll-target="#sec-designint-action-common-hidden"><span class="header-section-number">9.2.6</span> <code>@HIDDEN</code></a></li>
+  <li><a href="#sec-designint-action-common-hidechoice" id="toc-sec-designint-action-common-hidechoice" class="nav-link" data-scroll-target="#sec-designint-action-common-hidechoice"><span class="header-section-number">9.2.7</span> <code>@HIDECHOICE</code></a></li>
   </ul></li>
   <li><a href="#sec-designint-action-lesscommon" id="toc-sec-designint-action-lesscommon" class="nav-link" data-scroll-target="#sec-designint-action-lesscommon"><span class="header-section-number">9.3</span> Less Common</a>
   <ul class="collapse">
@@ -678,7 +679,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <figcaption>DEFAULT action tag</figcaption>
 </figure>
 </div>
-<p>Notice that the value recorded in the data, OK, is the default value, not “Oklahoma,” which is the label. This action tag works only once, when the record is created. If the data entry people or survey respondent needed to change it to Texas, they can use the drop-down menu to do so. Their entry will not be overwritten with Oklahoma at a later time. The default does not appear on the form you are creating in Online Designer. It appears in a record, if you click the <em>Add/Edit Record</em> link on the left side of the screen and create a new record (see <a href="../begin/create.html">Creating Records</a>).</p>
+<p>Notice that the value recorded in the data, OK, is the default value, not “Oklahoma,” which is the label. This action tag works only once, when the record is first opened (technically, when a form without any saved data is opened –ie, the gray status.) If the data entry people or survey respondent needed to change it to Texas, they can use the drop-down menu to do so. Their entry will not be overwritten with Oklahoma at a later time. The default does not appear on the form you are creating in Online Designer. It appears in a record, if you click the <em>Add/Edit Record</em> link on the left side of the screen and create a new record (see <a href="../begin/create.html">Creating Records</a>).</p>
 </section>
 <section id="sec-designint-action-common-none" class="level3" data-number="9.2.3">
 <h3 data-number="9.2.3" class="anchored" data-anchor-id="sec-designint-action-common-none"><span class="header-section-number">9.2.3</span> <code>@NONEOFTHEABOVE</code></h3>
@@ -722,24 +723,35 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </figure>
 </div>
 </section>
-<section id="sec-designint-action-common-hidden" class="level3" data-number="9.2.5">
-<h3 data-number="9.2.5" class="anchored" data-anchor-id="sec-designint-action-common-hidden"><span class="header-section-number">9.2.5</span> <code>@HIDDEN</code></h3>
+<section id="sec-designint-action-common-maxchoice" class="level3" data-number="9.2.5">
+<h3 data-number="9.2.5" class="anchored" data-anchor-id="sec-designint-action-common-maxchoice"><span class="header-section-number">9.2.5</span> <code>@MAXCHOICE</code></h3>
+<blockquote class="blockquote">
+<p>Causes one or more specified choices to be disabled (i.e., displayed but not usable) for a checkbox, radio button, or drop-down field after a specified amount of records have been saved with that choice. For example, <code>@MAXCHOICE(0=50,1=75,2=50)</code> would imply that once 50 records have selected the ‘0’ coded choice, that choice will become disabled for any record viewed afterward that does not have that choice saved, such as when the form/survey is opened for a new record, and thus 75 records for choice ‘1’, 50 for choice ‘2’, etc. The format must be the action tag name followed by the choice designations inside parentheses, in which each will follow the format of ChoiceCode=MaxCount with each choice separated by commas.</p>
+<ul>
+<li>Note: For longitudinal projects, when counting the number of choices saved for records, it will treat all events as separate, meaning that in the example above, choice ‘0’ can have a max number of 50 selections in EACH event in the project.</li>
+</ul>
+<p>(Official definition from REDCap 17.6.6.)</p>
+</blockquote>
+<p>Where <a href="sec-designint-action-common-maxchecked"><code>@MAXCHECKED</code></a> limits the selections for a checkbox, <code>@MAXCHOICE</code> limits the selections for a choice within a radio button or drop-down variable.</p>
+</section>
+<section id="sec-designint-action-common-hidden" class="level3" data-number="9.2.6">
+<h3 data-number="9.2.6" class="anchored" data-anchor-id="sec-designint-action-common-hidden"><span class="header-section-number">9.2.6</span> <code>@HIDDEN</code></h3>
 <blockquote class="blockquote">
 <p>Hides the field on the survey page, the data entry form, and in the REDCap mobile app. Field will stay hidden even if branching logic attempts to make it visible. (Official definition from REDCap 17.6.2.)</p>
 </blockquote>
 <p>Hiding an entire variable is useful in two scenarios: retiring an existing variable and concealing a calculated variable.</p>
-<section id="sec-designint-action-common-hidden-retire" class="level4" data-number="9.2.5.1">
-<h4 data-number="9.2.5.1" class="anchored" data-anchor-id="sec-designint-action-common-hidden-retire"><span class="header-section-number">9.2.5.1</span> Retire an existing variable</h4>
-<p>As a production project evolves over time, some variables are added, while some variables become irrelevant to future respondents. It’s encouraged to “remove” irrelevant variables so your instrument remains as stream-lined as possible, for the sake of the respondents’ time and the dataset’s quality.</p>
+<section id="sec-designint-action-common-hidden-retire" class="level4" data-number="9.2.6.1">
+<h4 data-number="9.2.6.1" class="anchored" data-anchor-id="sec-designint-action-common-hidden-retire"><span class="header-section-number">9.2.6.1</span> Retire an existing variable</h4>
+<p>As a production project evolves over time, some variables are added, while some variables become irrelevant to future respondents. It’s encouraged to “remove” irrelevant variables so your instrument remains as streamlined as possible, for the sake of the respondents’ time and the dataset’s quality.</p>
 <p>For most carefully-designed projects, these obsolete variables contain information that is still relevant during later analysis. In this case, use the <code>@HIDDEN</code> action tag to simply conceal the variable from the respondent, while retaining its data values in the database.</p>
 </section>
-<section id="sec-designint-action-common-hidden-calculated" class="level4" data-number="9.2.5.2">
-<h4 data-number="9.2.5.2" class="anchored" data-anchor-id="sec-designint-action-common-hidden-calculated"><span class="header-section-number">9.2.5.2</span> Conceal a calculated variable</h4>
-<p>Calculated variables/fields are described in <a href="../designbas/variable.html#sec-designbas-variable-types-calculated" class="quarto-xref"><span>Section 8.4.2</span></a>. Sometimes these derived values are useful to (to something like the branching logic or to an analyst), but could confuse a respondent. So use the <code>@HIDDEN</code> action tag to conceal it.</p>
+<section id="sec-designint-action-common-hidden-calculated" class="level4" data-number="9.2.6.2">
+<h4 data-number="9.2.6.2" class="anchored" data-anchor-id="sec-designint-action-common-hidden-calculated"><span class="header-section-number">9.2.6.2</span> Conceal a calculated variable</h4>
+<p>Calculated variables/fields are described in <a href="../designbas/variable.html#sec-designbas-variable-types-calculated" class="quarto-xref"><span>Section 8.4.2</span></a>. Sometimes these derived values are useful (to something like the branching logic or to an analyst), but could confuse a respondent. So use the <code>@HIDDEN</code> action tag to conceal it.</p>
 </section>
 </section>
-<section id="sec-designint-action-common-hidechoice" class="level3" data-number="9.2.6">
-<h3 data-number="9.2.6" class="anchored" data-anchor-id="sec-designint-action-common-hidechoice"><span class="header-section-number">9.2.6</span> <code>@HIDECHOICE</code></h3>
+<section id="sec-designint-action-common-hidechoice" class="level3" data-number="9.2.7">
+<h3 data-number="9.2.7" class="anchored" data-anchor-id="sec-designint-action-common-hidechoice"><span class="header-section-number">9.2.7</span> <code>@HIDECHOICE</code></h3>
 <blockquote class="blockquote">
 <p>Hides one or more choices of a multiple choice field. This action tag is useful if you wish to retire a particular choice after utilizing it for a while in data collection, thus allowing you to hide the choice from that point afterward without orphaning any of the choice’s data, which would happen if you simply deleted the choice. The format must follow the pattern <code>@HIDECHOICE='??'</code>, in which the coded values should be inside single or double quotes for the choice(s) you wish to hide. If more than one choice needs to be hidden, then provide all the coded values separated by commas. For example, to hide the choice <code>'Monday (1)'</code>, you would have <code>@HIDECHOICE='1'</code>, but if you wanted to additionally hide <code>'Tuesday (2)'</code>, you would have <code>@HIDECHOICE='1,2'</code>.</p>
 <ul>
@@ -751,8 +763,8 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </ul>
 <p>(Official definition from REDCap 17.6.2.)</p>
 </blockquote>
-<p>Similar to <a href="../designint/actiontag.html#sec-designint-action-common-hidden-retire">retiring an obsolete variable</a>, sometimes its best to remove an obsolete option from a multiple choice field. Imagine a variable where a respondent selects their preferred training workshop: they should no longer be able to select a workshop that already occurred. The <code>@HIDECHOICE</code> action tag will conceal it from view, while retaining its values in the underlying database, so it can be analyzed later.</p>
-<p>(Also see the <a href="../designint/actiontag.html#sec-designint-action-common-maxchecked"><code>@MAXCHECKED</code></a> action tag to prevent too many respondents from selecting the same choice.)</p>
+<p>Similar to <a href="../designint/actiontag.html#sec-designint-action-common-hidden-retire">retiring an obsolete variable</a>, sometimes it’s best to remove an obsolete option from a multiple choice field. Imagine a variable where a respondent selects their preferred training workshop: they should no longer be able to select a workshop that already occurred. The <code>@HIDECHOICE</code> action tag will conceal it from view, while retaining its values in the underlying database, so it can be analyzed later.</p>
+<p>(Also see the <a href="../designint/actiontag.html#sec-designint-action-common-maxchoice"><code>@MAXCHOICE</code></a> action tag to prevent too many respondents from selecting the same choice.)</p>
 </section>
 </section>
 <section id="sec-designint-action-lesscommon" class="level2" data-number="9.3">
@@ -765,7 +777,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <li>NOTE: The piped value does <em>not</em> get applied during any data imports (via API or Data Import Tool) but only operates when viewing survey pages and data entry forms.</li>
 <li>NOTE: A field with <code>@SETVALUE</code> will have its value updated ONLY when the page loads, which means that its value will not be updated in real-time if you modify other fields on the same page that are piped into the <code>@SETVALUE</code> tag.</li>
 <li>NOTE: If being used on a date or datetime field, the date value inside the quotes must be in Y-M-D format - e.g., <code>@SETVALUE='2007-12-25'</code> - regardless of the field’s set date format.</li>
-<li>NOTE: The only difference between <code>@SETVALUE</code> and <code>@DEFAULT</code> is that <code>@DEFAUL</code>T is only applied when an instrument has no data yet, whereas <code>@SETVALU</code>E will always be applied on an instrument, meaning that <code>@SETVALUE</code> will ALWAYS overwrite the value if a field value already exists.</li>
+<li>NOTE: The only difference between <code>@SETVALUE</code> and <code>@DEFAULT</code> is that <code>@DEFAULT</code> is only applied when an instrument has no data yet, whereas <code>@SETVALUE</code> will always be applied on an instrument, meaning that <code>@SETVALUE</code> will ALWAYS overwrite the value if a field value already exists.</li>
 <li>TIP: To pipe the value of one multiple choice field into another multiple choice field, make sure you append ‘:value’ to the variable being piped - e.g., <code>@SETVALUE='[my_dropdown:value]'</code>. (In earlier versions of REDCap, the <code>@SETVALUE</code> action tag went by the name <code>@PREFILL</code>, which still works equivalently to <code>@SETVALUE</code> for backward compatibility purposes.)</li>
 </ul>
 <p>(Official definition from REDCap 17.6.2.)</p>

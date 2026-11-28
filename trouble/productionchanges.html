@@ -378,7 +378,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../begin/security.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Security Consideration for Beginners</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Security Considerations for Beginners</span></span></a>
   </div>
 </li>
       </ul>
@@ -634,7 +634,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 <li>the server admin reviews the proposals before deciding to accept or reject all the changes at once. There is not a mechanism that allows acceptance of some changes but rejects others.</li>
 </ol>
 <p>If the modification raises no concerns of the server admin, then it’s accepted without further correspondence. However, for a modification that raises concerns, the server admin will contact the project admin to verify the ramifications are understood.</p>
-<p>In this role, the server admin relies on their (typically year of) research experience, as well as familiarity with REDCap mechanisms to avoid problems that are difficult to undo. Most of the concerns involve unintentional destruction or corruption of data.</p>
+<p>In this role, the server admin relies on their (typically years of) research experience, as well as familiarity with REDCap mechanisms to avoid problems that are difficult to undo. Most of the concerns involve unintentional destruction or corruption of data.</p>
 </section>
 <section id="sec-trouble-productionchanges-deleterecords" class="level2" data-number="21.2">
 <h2 data-number="21.2" class="anchored" data-anchor-id="sec-trouble-productionchanges-deleterecords"><span class="header-section-number">21.2</span> Large number of records to be deleted before moving to production</h2>
@@ -670,7 +670,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </section>
 <section id="best-practices" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="best-practices">Best Practices</h3>
-<p>Instead of deleting the variable, consider using the <code>@HIDDEN</code> action tag. Read about its uses in <a href="../designint/actiontag.html#sec-designint-action-common-hidden" class="quarto-xref"><span>Section 9.2.5</span></a>.</p>
+<p>Instead of deleting the variable, consider using the <code>@HIDDEN</code> action tag. Read about its uses in <a href="../designint/actiontag.html#sec-designint-action-common-hidden" class="quarto-xref"><span>Section 9.2.6</span></a>.</p>
 </section>
 <section id="to-confirm-your-intent-1" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="to-confirm-your-intent-1">To confirm your intent</h3>
@@ -686,11 +686,11 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </section>
 <section id="best-practices-1" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="best-practices-1">Best Practices</h3>
-<p>Instead of deleting the response option, consider using the <code>@HIDECHOICE</code> action tag. Read about its uses in <a href="../designint/actiontag.html#sec-designint-action-common-hidechoice" class="quarto-xref"><span>Section 9.2.6</span></a>.</p>
+<p>Instead of deleting the response option, consider using the <code>@HIDECHOICE</code> action tag. Read about its uses in <a href="../designint/actiontag.html#sec-designint-action-common-hidechoice" class="quarto-xref"><span>Section 9.2.7</span></a>.</p>
 </section>
 <section id="to-confirm-your-intent-2" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="to-confirm-your-intent-2">To confirm your intent</h3>
-<p><em>If the server admin asks you about this issue…</em> :<br> In your response email, be clear that you really want the variable options’s data erased forever. And explain why it’s not adequate to merely conceal the choice from the user.</p>
+<p><em>If the server admin asks you about this issue…</em> :<br> In your response email, be clear that you really want the variable option’s data erased forever. And explain why it’s not adequate to merely conceal the choice from the user.</p>
 </section>
 </section>
 <section id="sec-trouble-productionchanges-rewordmcoption" class="level2" data-number="21.5">
@@ -723,7 +723,7 @@ gtag('config', 'G-H3G33LRV8Y', { 'anonymize_ip': true});
 </tr>
 </tbody>
 </table>
-<p>However, this modification will corrupt the variable;s data. In other words, it’s <em>unsafe</em> to combine the old 1s (ie, “male”) with the new 1s (ie, “female”). During the analysis, all the respondents answering 1 will be combined, and the before/male values will be indistinguishable from the after/female values.</p>
+<p>However, this modification will corrupt the variable’s data. In other words, it’s <em>unsafe</em> to combine the old 1s (ie, “male”) with the new 1s (ie, “female”). During the analysis, all the respondents answering 1 will be combined, and the before/male values will be indistinguishable from the after/female values.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
