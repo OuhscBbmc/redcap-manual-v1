@@ -159,7 +159,7 @@ retiring an existing variable and concealing a calculated variable.
 
 As a production project evolves over time, some variables are added,
 while some variables become irrelevant to future respondents.
-It's encouraged to "remove" irrelevant variables so your instrument remains as stream-lined as possible,
+It's encouraged to "remove" irrelevant variables so your instrument remains as streamlined as possible,
 for the sake of the respondents' time and the dataset's quality.
 
 For most carefully-designed projects, these obsolete variables contain information that is still relevant
@@ -169,7 +169,7 @@ In this case, use the `@HIDDEN` action tag to simply conceal the variable from t
 #### Conceal a calculated variable {#sec-designint-action-common-hidden-calculated}
 
 Calculated variables/fields are described in @sec-designbas-variable-types-calculated.
-Sometimes these derived values are useful to (to something like the branching logic or to an analyst),
+Sometimes these derived values are useful (to something like the branching logic or to an analyst),
 but could confuse a respondent.
 So use the `@HIDDEN` action tag to conceal it.
 
@@ -187,7 +187,7 @@ So use the `@HIDDEN` action tag to conceal it.
 > (Official definition from REDCap 17.6.2.)
 
 Similar to [retiring an obsolete variable](actiontag.md#sec-designint-action-common-hidden-retire),
-sometimes its best to remove an obsolete option from a multiple choice field.
+sometimes it's best to remove an obsolete option from a multiple choice field.
 Imagine a variable where a respondent selects their preferred training workshop:
 they should no longer be able to select a workshop that already occurred.
 The `@HIDECHOICE` action tag will conceal it from view,
@@ -207,7 +207,7 @@ to prevent too many respondents from selecting the same choice.)
 > * NOTE: The piped value does *not* get applied during any data imports (via API or Data Import Tool) but only operates when viewing survey pages and data entry forms.
 > * NOTE: A field with `@SETVALUE` will have its value updated ONLY when the page loads, which means that its value will not be updated in real-time if you modify other fields on the same page that are piped into the `@SETVALUE` tag.
 > * NOTE: If being used on a date or datetime field, the date value inside the quotes must be in Y-M-D format - e.g., `@SETVALUE='2007-12-25'` - regardless of the field's set date format.
-> * NOTE: The only difference between `@SETVALUE` and `@DEFAULT` is that `@DEFAUL`T is only applied when an instrument has no data yet, whereas `@SETVALU`E will always be applied on an instrument, meaning that `@SETVALUE` will ALWAYS overwrite the value if a field value already exists.
+> * NOTE: The only difference between `@SETVALUE` and `@DEFAULT` is that `@DEFAULT` is only applied when an instrument has no data yet, whereas `@SETVALUE` will always be applied on an instrument, meaning that `@SETVALUE` will ALWAYS overwrite the value if a field value already exists.
 > * TIP: To pipe the value of one multiple choice field into another multiple choice field, make sure you append ':value' to the variable being piped - e.g., `@SETVALUE='[my_dropdown:value]'`. (In earlier versions of REDCap, the `@SETVALUE` action tag went by the name `@PREFILL`, which still works equivalently to `@SETVALUE` for backward compatibility purposes.)
 >
 > (Official definition from REDCap 17.6.2.)
