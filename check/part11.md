@@ -84,7 +84,7 @@ while following the principles of
 
 #### Are permission sets periodically reviewed to confirm they still align with user job functions? {#sec-check-part11-access-role-periodically}
 
-Yes, the REDCap dashboard to allow someone to quickly review the study's users, groups, and permissions.
+Yes, the REDCap dashboard allows someone to quickly review the study's users, groups, and permissions.
 It is the RT's responsibility to periodically review this dashboard.
 
 #### Do you enforce the principle of least privilege (admins vs. data entry vs. monitors)? {#sec-check-part11-access-role-least}
@@ -182,7 +182,7 @@ from the system when the changes have been approved.
 It is the responsibility of the change requestor to inform the remainder of the RT
 of any changes that have been made.
 
-#### Do you use encryption of secure FTP for high-risk data transfers? {#sec-check-part11-dataentry-validation-transferencryption}
+#### Do you use encryption or secure FTP for high-risk data transfers? {#sec-check-part11-dataentry-validation-transferencryption}
 
 REDCap stores data in secure VMs (virtual machines) on the OU campus.
 It is the responsibility of the RT to ensure the security of that data when it has been
@@ -245,13 +245,13 @@ The RT may develop a competency test for their team, if desired.
 #### Are file formats chosen to ensure long-term readability (e.g., PDF, CSV)?{#sec-check-part11-retention-accessibility-longterm}
 
 REDCap provides the export formats shown in @fig-check-part11-200-export-formats,
-ranging from the highly-portable (_e.g._, .csv: comma separate value)
+ranging from the highly-portable (_e.g._, .csv: comma-separated values)
 to the specialized and proprietary (_e.g._, .sas7bdat: SAS files).
 
 To promote portability and long-term usefulness,
 we recommend exporting data as a csv.
 Even if you want something specialized in the short-term (_e.g._, an SPSS file),
-we recommend exporting and storing second copy (as a csv) to improve the options available
+we recommend exporting and storing a second copy (as a csv) to improve the options available
 to others in the future.
 
 ![Data Export Formats.](images/part11/fig-check-part11-200-export-formats.png){#fig-check-part11-200-export-formats width=50% fig-alt="Data Export Formats"}
