@@ -94,7 +94,7 @@ Let's change it to *visit_note* and add a label to match, then click Save.
 
 Let's look at *variable_2*.
 This variable was created as a *Text Box (Short Text, Number, Date/Time, ...)*.
-Let's change the variable name to capture a participant's first name
+Let's change the variable name to capture a participant's first name.
 
 ![Change variable name](images/variable/name-first.jpg){width=80%}
 
@@ -204,7 +204,7 @@ We have 3 format options available to us: day-month-year,
 month-day-year, or year-month-day.
 Keeping with our recommendation of going from general to
 specific, we will choose Y-M-D.
-(This recommendation is in keeping with the International Organization for Standardization 8601, which you can find online.
+(This recommendation is in keeping with the International Organization for Standardization [8601](https://en.wikipedia.org/wiki/ISO_8601), which you can find online.
 This format eases sorting data by earliest to latest date.)
 
 ### True/False and Yes/No variables {#sec-designbas-variable-fieldtypes-boolean}
@@ -300,7 +300,7 @@ phone number without an area code, an error message will say an invalid number w
 
 ### Matrix of Fields {#sec-designbas-variable-new-matrix}
 
-REDCap allows you to create a table that will hold many items similar to the slider field, except it has buttons and labels are possible for each rating.
+You can create a table that will hold many items similar to the slider field, except it has buttons and labels for each rating.
 This is called a *Matrix of Fields*.
 It is created in a different way from the Add Variable button.
 You click the "Add Matrix of Fields" button.
