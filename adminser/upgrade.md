@@ -35,9 +35,9 @@ However most regular releases occur Friday afternoons,
 so your admin team should schedule time to upgrade the server
 during this window.
 
-Allowing for a minimal regiment of testing and validation (say, 15 minutes),
+Allowing for a minimal regimen of testing and validation (say, 15 minutes),
 the following procedure should take about 30 minutes per server
-after you've performed for it a few weeks.
+after you've performed it for a few weeks.
 It can be completed faster if you rush,
 but we suggest blocking off at least 30 minutes
 so you can be more observant and patient if something
@@ -141,7 +141,7 @@ of the user's home directory.
 The first component to be upgraded is the PHP code residing on the web server,
 so log into the web server.
 
-Decompressed the files and
+Decompress the files and
 move them to the appropriate REDCap folder
 where they are visible and available to users.
 
@@ -154,7 +154,7 @@ rm -rf redcap
 
 # Unzip the file into a directory.
 # If sudo is required, you're probably in the wrong directory
-# If you unzipped previous versions, you'll be asked to override
+# If you unzipped previous versions, you'll be asked to overwrite
 # * Upgrade_Instructions.txt and
 # * REDCap_License.txt.
 unzip ~/Downloads/upgrades/redcap*_upgrade.zip
@@ -213,7 +213,7 @@ Our slight preference is [DBeaver](https://dbeaver.io/).]
 Execute the entire file.
 
 Although the entire file should be executed eventually,
-but you can chose either line-by-line or all-at-once.
+you can choose either line-by-line or all-at-once.
 If it's a small hop between versions and the upgrade went smoothly
 on the non-production instance,
 consider making your life easier and hitting the Run button just once.
@@ -234,7 +234,7 @@ You don't need to learn SQL to upgrade REDCap,
 but a little understanding of the process
 could help if the process doesn't go smoothly.
 
-All upgrades will involve a least one line of
+All upgrades will involve at least one line of
 [DML SQL](https://www.datacamp.com/tutorial/sql-dml-commands-mastering-data-manipulation-in-sql)
 code that adjust configuration values,
 like the one that increases `redcap_version`.
