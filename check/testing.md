@@ -101,7 +101,7 @@ _Check whether your project is failing to collect necessary data, either by fiel
 
 * Go back to the original plan for the project and check your work.
 * What was the purpose of the project? Did every needed field get included in your instruments/survey?
-* Will the fields in your instruments/survey collect the information required to to fulfill the needs that motivated the project?
+* Will the fields in your instruments/survey collect the information required to fulfill the needs that motivated the project?
 
 ### Test the survey yourself {#sec-check-testing-before-yourself}
 
@@ -118,7 +118,7 @@ _When you decide you are ready to have individuals enter test data on your instr
 
 ### First Tester {#sec-check-testing-others-person}
 
-Ask at least one other person to enter test data in your instruments or survey_
+Ask at least one other person to enter test data in your instruments or survey.
 
 * Sometimes the person creating the project is too close to it and can't see its limitations. A second, third or fourth set of eyes is crucial, and they can enter many test records with different scenarios in mind.
 * Could any of the items be misunderstood by a naïve user?
@@ -238,7 +238,7 @@ Move your project to production status by following these steps:
 ### Modify while in Production {#sec-check-testing-production-modify}
 
 Of course, some projects will need to be modified, particularly if the investigation continues for years.
-We to try to strike a balance that affords both
+We try to strike a balance that affords both
 (a) agility to researchers to adapt to unforeseen circumstances and
 (b) protection against accidental data corruption.
 
