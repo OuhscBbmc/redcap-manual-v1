@@ -193,7 +193,7 @@ The `@HIDECHOICE` action tag will conceal it from view,
 while retaining its values in the underlying database,
 so it can be analyzed later.
 
-(Also see the [`@MAXCHECKED`](actiontag.md#sec-designint-action-common-maxchecked) action tag
+(Also see the [`@MAXCHOICE`](actiontag.md#sec-designint-action-common-maxchoice) action tag
 to prevent too many respondents from selecting the same choice.)
 
 ## Less Common {#sec-designint-action-lesscommon}
