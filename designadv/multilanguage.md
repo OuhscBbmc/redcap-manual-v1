@@ -117,7 +117,7 @@ Notice that this page has a third layer of embedded tabs, shown in the blue box 
 
 Let's click through those tabs.
 
-* We could look at everything option under the All tab, but that can be overwhelming.
+* We could look at every option under the All tab, but that can be overwhelming.
 * By default the Common tab is selected.
 You can scroll down to see the kinds of notifications to the user that you could translate.
 For an e-consent project, you often have only a few of these notifications that need to be translated.

@@ -42,7 +42,7 @@ and how to ask OU's [Server Administrators](../adminpr/user.md#sec-adminpr-user-
 > How much does Mosio Cost?
 
 Mosio offers several pricing plans tailored to different needs.
-Outbound messages beyond what is listed below can be purchased at an addition price.
+Outbound messages beyond what is listed below can be purchased at an additional price.
 For exact pricing and to get a quote tailored to your specific needs, it's best to contact Mosio directly through their
 [website](https://www.mosio.com/).
 
