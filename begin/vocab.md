@@ -19,11 +19,11 @@ csl: ../assets/csl/apa-7e.csl
 
 ## General {#sec-begin-vocab-general}
 
-These general terms for beginners reading Chapters [-@sec-begin-support] through [-@sec-begin-security].
+These general terms are for beginners reading Chapters [-@sec-begin-support] through [-@sec-begin-security].
 
 ### Username {#sec-begin-vocab-general-username}
 
-The credential required to login to REDCap.  This username will be one of three things: OUHSC username, OU username, or a table-based username for non-OUHSC collaborators.  Tabled-based accounts are created and maintained by OUHSC REDCap admins.
+The credential required to login to REDCap.  This username will be one of three things: OUHSC username, OU username, or a table-based username for non-OUHSC collaborators.  Table-based accounts are created and maintained by OUHSC REDCap admins.
 
 ### Project {#sec-begin-vocab-general-project}
 
@@ -57,7 +57,7 @@ but not always...
 
 ### Data Collection Instrument (DCI or Instrument) {#sec-begin-vocab-general-instrument}
 
-An electronic form used to collect data.  An instrument can have one of two configurations: an data collection form or a survey.
+An electronic form used to collect data.  An instrument can have one of two configurations: a  data collection form or a survey.
 
 ### Data Collection Form {#sec-begin-vocab-general-form}
 
@@ -69,12 +69,12 @@ Instrument used to collect data without a REDCap login.  Surveys are most often 
 
 ### Event {#sec-begin-vocab-general-event}
 
-A REDCap _event_ is a nested inside a [record](vocab.md#sec-begin-vocab-general-record),
+A REDCap _event_ is nested inside a [record](vocab.md#sec-begin-vocab-general-record),
 typically to facilitate longitudinal data collection within the same [participant](vocab.md#sec-begin-vocab-general-participant).
 
 ### User {#sec-begin-vocab-general-user}
 
-Many types of REDCap *user*s can be interact with a single [project](vocab.md#sec-begin-vocab-general-project).
+Many types of REDCap *user*s can interact with a single [project](vocab.md#sec-begin-vocab-general-project).
 See @sec-adminpr-user-role-research for a list of common roles, ranging from a participant responding to a public survey to a project administrator.
 
 ::: {.callout-note appearance="simple"}
