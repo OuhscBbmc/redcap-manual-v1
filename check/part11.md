@@ -195,7 +195,7 @@ if it has been exported outside of REDCap for analysis.
 
 ## Electronic Signatures (Sec E) {#sec-check-part11-esignatures}
 
-### Long-Term Accessibility (Subsec E2) {#sec-check-part11-esignatures-components}
+### Signature Components (Subsec E2) {#sec-check-part11-esignatures-components}
 
 #### Does the signature record include the printed name of the signer, date/time of signing, and the meaning of the signature (e.g., review, approval)? {#sec-check-part11-esignatures-components-signature}
 
