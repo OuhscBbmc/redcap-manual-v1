@@ -13,7 +13,7 @@ author:
 csl: ../assets/csl/apa-7e.csl
 ---
 
-# Security Consideration for Beginners {#sec-begin-security}
+# Security Considerations for Beginners {#sec-begin-security}
 
 **Chapter Leads**: Thomas Wilson
 

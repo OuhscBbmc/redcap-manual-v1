@@ -46,7 +46,7 @@ However, for a modification that raises concerns,
 the server admin will contact the project admin to verify
 the ramifications are understood.
 
-In this role, the server admin relies on their (typically year of) research experience,
+In this role, the server admin relies on their (typically years of) research experience,
 as well as familiarity with REDCap mechanisms to avoid problems
 that are difficult to undo.
 Most of the concerns involve unintentional destruction or corruption of data.
@@ -132,7 +132,7 @@ Read about its uses in @sec-designint-action-common-hidechoice.
 ### To confirm your intent {.unnumbered}
 
 _If the server admin asks you about this issue..._ :<br>
-In your response email, be clear that you really want the variable options's data erased forever.
+In your response email, be clear that you really want the variable option's data erased forever.
 And explain why it's not adequate to merely conceal the choice from the user.
 
 ## Rewording a multiple choice option {#sec-trouble-productionchanges-rewordmcoption}
@@ -153,7 +153,7 @@ with the new 1s (ie, "male") in the same eventual bucket.
 | 1        | mail      | 1        | male      |
 | 2        | female    | 2        | female    |
 
-However, this modification will corrupt the variable;s data.
+However, this modification will corrupt the variable's data.
 In other words, it's _unsafe_ to combine the old 1s (ie, "male")
 with the new 1s (ie, "female").
 During the analysis, all the respondents answering 1 will be combined,
