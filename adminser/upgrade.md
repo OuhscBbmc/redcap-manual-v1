@@ -343,12 +343,15 @@ check that the basic FHIR operations are performing as you expect.
       exit 0
       ```
 
-      If you happen to run this twice in the same day, it might create a second cronjob to reboot.
+      If you happen to run this twice in the same day, it might create a second
+      [`at`](https://linux.die.net/man/1/at)
+      job to reboot.
+      ^[`at` is essentially a one-time cronjob.]
       Avoid this, because the results can be unpredictable.
       * If a reboot is _not_ scheduled, it's fine to run the script again.
       * If a reboot is _already_ scheduled, but you want to update again, simply run `sudo dnf upgrade -y`.
-      * To check if two reboots are scheduled, execute [`atq`](https://linux.die.net/man/1/atq).  
-        If two entries are present (say, '24' and '25'), 
+      * To check if two reboots are scheduled, execute [`atq`](https://linux.die.net/man/1/atq).
+        If two entries are present (say, '24' and '25'),
         remove the last one like `atrm 25`.
 
 ::: {.callout-note appearance="simple"}
