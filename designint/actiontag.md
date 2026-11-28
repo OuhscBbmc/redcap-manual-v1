@@ -126,6 +126,26 @@ Then we click on the Action Tags/Field Annotation box to open the Logic Editor, 
 
 ![MAXCHECKED action tag](images/actiontag/maxchecked.jpg){width=80%}
 
+### `@MAXCHOICE` {#sec-designint-action-common-maxchoice}
+
+> Causes one or more specified choices to be disabled (i.e., displayed but not usable)
+> for a checkbox, radio button, or drop-down field after a specified amount of records have been saved with that choice.
+> For example, `@MAXCHOICE(0=50,1=75,2=50)` would imply that once 50 records have selected the '0' coded choice,
+> that choice will become disabled for any record viewed afterward that does not have that choice saved,
+> such as when the form/survey is opened for a new record,
+> and thus 75 records for choice '1', 50 for choice '2', etc.
+> The format must be the action tag name followed by the choice designations inside parentheses,
+> in which each will follow the format of ChoiceCode=MaxCount with each choice separated by commas.
+>
+> * Note: For longitudinal projects, when counting the number of choices saved for records,
+>   it will treat all events as separate, meaning that in the example above,
+>   choice '0' can have a max number of 50 selections in EACH event in the project.
+>
+> (Official definition from REDCap 17.6.6.)
+
+Where [`@MAXCHECKED`](sec-designint-action-common-maxchecked) limits the selections for a checkbox,
+`@MAXCHOICE` limits the selections for a choice within a radio button or drop-down variable.
+
 ### `@HIDDEN` {#sec-designint-action-common-hidden}
 
 > Hides the field on the survey page, the data entry form, and in the REDCap mobile app. Field will stay hidden even if branching logic attempts to make it visible.
