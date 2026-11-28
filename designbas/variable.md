@@ -270,7 +270,7 @@ In the Edit Field window, you will see this item was created using HTML and imag
 
 ![Descriptive text field in editor](images/variable/descriptivetext-2.jpg){width=80%}
 
-The image above shows a red box around the HTML, a green box where the image, file, or audio was attached, and the blood box shows we have selected "Inline image/PDF" so that the uploaded image appears with the HTML note.
+The image above shows a red box around the HTML, a green box where the image, file, or audio was attached, and the blue box shows we have selected "Inline image/PDF" so that the uploaded image appears with the HTML note.
 
 ### Begin New Section {#sec-designbas-variable-fieldtypes-newsection}
 
