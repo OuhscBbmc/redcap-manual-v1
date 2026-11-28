@@ -32,7 +32,7 @@ csl: ../assets/csl/apa-7e.csl
 ## Chapter Draft
 
 This chapter is being written currently,
-as is available during development in case the preliminary version is helpful to someone.
+and is available during development in case the preliminary version is helpful to someone.
 
 If you have suggested modifications or additions, please see [How to Contribute](../index.qmd#sec-welcome-contribute) on the book's welcome page.
 :::
