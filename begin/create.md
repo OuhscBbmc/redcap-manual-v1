@@ -67,7 +67,7 @@ After clicking that button, we see the *Record Home Page* for the new record:
 
 This page summarizes the status of the forms for Record ID 51.
 We see a list of 7 instruments.
-The gray circles to the right of each instrument is a link to that instrument.
+The gray circles to the right of each instrument are a link to that instrument.
 Notice the *Legend for status icons* box.
 It shows different colors of circles. A gray circle means the
 form has no data saved in it.
@@ -132,7 +132,7 @@ next instrument in the project.
 
 ## Repeating instances of a form {#sec-begin-create-repeatinstance}
 
-Sometimes forms are set up as repeating instruments, meaning it can be completed more than one for the same person.
+Sometimes forms are set up as repeating instruments, meaning it can be completed more than once for the same person.
 In this practice project, the study
 allowed twins to be enrolled.
 The initial Enrollment form pertained to the mother, but the
