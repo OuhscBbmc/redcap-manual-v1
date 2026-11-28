@@ -136,7 +136,7 @@ REDCap maintains the audit log in an accessible and downloadable format.
 
 The RT is responsible for assigning the reviewer and determining their qualification to interpret the logs.
 
-#### Do you conduct forensic reviews if suspicious activity is detected? {#sec-check-part11-audit-trail-forensicreview}
+#### Who is responsible for these reviews, and are they qualified to interpret logs? {#sec-check-part11-audit-trail-forensicreview}
 
 The RT is responsible for conducting forensic reviews if suspicious activity is detected.
 
