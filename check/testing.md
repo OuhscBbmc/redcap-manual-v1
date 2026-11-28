@@ -75,7 +75,7 @@ _Inspect each field and think about what the data will look like for the person 
 
 Example:
 
-With a fill-in-the-blank text field like the one above, here are some of the ways that someone may report a birthday:
+With a fill-in-the-blank text field, here are some of the ways that someone may report a birthday:
 
 ```csv
 January 8, 1999    08 January 1999    Jan 8, 99   1-8-1999
