@@ -214,7 +214,7 @@ Here are some commonly used User Interface words/phrases in English that we have
 * Printed name: Nombre impreso
 * Initials: Iniciales
 * Today: Hoy
-* Signature of Legal Representative: Firma del Representante legal**
+* Signature of Legal Representative: Firma del Representante legal
 * Next page: Página siguiente
 * Previous page: Página anterior
 * Submit: Enviar
