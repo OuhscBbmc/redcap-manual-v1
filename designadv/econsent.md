@@ -68,12 +68,12 @@ The person obtaining consent will have access to the REDCap project and will add
 
 You will need to create two instruments: one for the consent form and one for the HIPAA form.
 
-- Change the name of Form 1 to Consent by clicking on the gray button labeled *Choose actions" to the right of Form 1.
+- Change the name of Form 1 to Consent by clicking on the gray button labeled *Choose actions* to the right of Form 1.
 - Select *Rename.*
 - Modify the information in the window that pops up, as shown below.
 - The first box is the name that will appear in Designer, and the second box is how the form will be referenced inside the REDCap data collection.
 - Once these changes are made, click *Apply.*
--
+
    ![Rename the default Form 1](images/econsent/rename-form-1.jpg){width="80%"}
 
 Now create a new instrument called HIPAA by clicking on the button that says *Create.*
@@ -136,7 +136,7 @@ Create a new *Descriptive Text* variable at the top of the Consent instrument (a
 
 You won't put anything in the box called *Field Label.*
 And you will not upload the consent form to this field.
-In fact, the only specifications for you to make in this field is to name the variable *consent* and make it a Descriptive Text field.
+In fact, the only specifications for you to make in this field are to name the variable *consent* and make it a Descriptive Text field.
 This field is a placeholder for the pdf of the consent form, which we will upload later.
 
 ### HIPAA Form {#sec-designadv-econsent-hipaaform}
@@ -186,7 +186,7 @@ Place a checkmark in the box *Auto-continue to the next survey* because we want 
 
 ## Decide If You Need Multiple Languages {#sec-designadv-econsent-decidelanguages}
 
-**Before** you enable to e-Consent Framework, which is the REDcap module for this kind of project, check with the study team on whether multiple languages will be needed. If so, Multi-Language Management must be enabled **before** the e-Consent Framework. If you need to have multiple languages in your e-consent, go to our chapter on this process, which will pick up at this point in your work. @sec-designadv-multilanguage
+**Before** you enable to e-Consent Framework, which is the REDCap module for this kind of project, check with the study team on whether multiple languages will be needed. If so, Multi-Language Management must be enabled **before** the e-Consent Framework. If you need to have multiple languages in your e-consent, go to our chapter on this process, which will pick up at this point in your work. @sec-designadv-multilanguage
 
 ## Enable e-Consent Framework {#sec-designadv-econsent-enableeconsent}
 
@@ -227,7 +227,7 @@ Click on the link that says *Add consent form.*
 
 - Number the consent form (e.g., 1.0) next to *Consent form version.* If you have used Multi-Language Management, you should type "1.0 en" to indicate the English version of the form.
 - Use the dropdown menu next to *Placement of consent form* to choose the placeholder variable you called *consent.*
-- Click on the tab for *Consent Form (Inline PDF).
+- Click on the tab for *Consent Form* (Inline PDF).
 - Click *Browse* and find the pdf on your computer. Open it.
 - Click *Add new consent form* to save your work
 
