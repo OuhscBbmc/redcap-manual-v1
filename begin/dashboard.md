@@ -1,5 +1,5 @@
 ---
-abstract: Learn about the Record Status Dashboard helps you to find and edit records in a REDCap project.
+abstract: Learn about the Record Status Dashboard to help to find and edit records in a REDCap project.
 
 author:
   - name: Lise DeShea
@@ -51,7 +51,7 @@ example project illustrated here, there are only three records and three forms:
 Let's look at a dashboard with many more records.
 Will all of them show up on one page?
 It depends.
-Take a look at the screenshot below. (FYI, no private health information, PHI,
+Take a look at the screenshot below. (FYI, no protected health information, PHI,
 will appear in these screenshots.)
 
 ![Paged view of a dashboard with many records](images/dashboard/dashboard-3.jpg){width=80%}
@@ -168,7 +168,7 @@ This study had seven instruments: Enrollment,
 Randomize, Demographics, DR Information, Outcomes, Serious Adverse Event Form, and
 Protocol Deviations.
 Now we see many colors of buttons.
-The legend tells use red means Incomplete,
+The legend tells us red means Incomplete,
 yellow means Unverified, green means Complete, gray means no data was saved on that form
 for that patient, and overlapping buttons mean there is more than one copy of that form
 saved in the project.
@@ -194,7 +194,7 @@ You would find the row for that mother, go to a form you needed to complete
 about what happened to the second twin in the delivery room (the DR Information form), and look
 for the plus sign in the gray box.
 
-![Plus sign for adding an repeated instance](images/dashboard/plus-sign.jpg){width=80%}
+![Plus sign for adding a repeated instance](images/dashboard/plus-sign.jpg){width=80%}
 
 Clicking that plus sign creates another copy of the same DR Information form and is a link
 to that copy.
@@ -249,7 +249,7 @@ that says *View dashboard*.
 
 Then we will see the custom dashboard that we created.
 
-![Viewing our customizing a dashboard](images/dashboard/oklahoma-mothers.jpg){width=80%}
+![Viewing our customized dashboard](images/dashboard/oklahoma-mothers.jpg){width=80%}
 
 ## Troubleshooting {#sec-begin-dashboard-trouble}
 
